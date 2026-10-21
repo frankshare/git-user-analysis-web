@@ -1,6 +1,19 @@
 # 部署说明
 
-## 当前状态
+## ✅ 已上线（2026-10-21）
+
+**永久地址：https://frankshare.github.io/git-user-analysis-web/**
+
+| 项 | 值 |
+| --- | --- |
+| 公网地址 | https://frankshare.github.io/git-user-analysis-web/ （永久） |
+| 仓库 | https://github.com/frankshare/git-user-analysis-web |
+| 部署方式 | GitHub Actions（push 到 main 自动构建部署） |
+| 构建 | Astro 5 + Tailwind 4，28 页 |
+
+> 部署过程中排掉的坑见文末「部署踩过的坑」。
+
+## 原部署记录
 
 | 项 | 值 |
 | --- | --- |
@@ -75,3 +88,27 @@ taskkill /F /PID <PID>
 
 **页面样式丢失**
 `dist/_astro/*.css` 未生成。跑 `pnpm run build` 时确认没有报错，并检查 `sync-data.mjs` 是否成功（它负责把 vault 数据同步到 `src/data`）。
+
+## 部署踩过的坑（补充：PAT 权限篇）
+
+| 坑 | 现象 | 解法 |
+| --- | --- | --- |
+| **fine-grained PAT 默认只给读** | X-OAuth-Scopes 头为空；GET 全 200，PUT /contents 全 403 | token 设置里把 **Repository permissions → Contents** 改成 **Read and write** |
+| **OAuth App ≠ PAT** | gh auth login --web 拿到的 token 只有读权限 | gh 内置 client_id 是 OAuth App，device flow 的 scope 参数对它无效；必须用 fine-grained PAT |
+| **仓库权限 ≠ 写内容权限** | GET /collaborators/.../permission 返回 dmin，但推不上去 | fine-grained PAT 按 API 端点分别授权，dmin 不代表有 Contents 写权限 |
+| **git 协议被拒但 API 可写** | git push 403，但 POST /issues 201 | fine-grained PAT 的写权限落在 REST API 上；改用 Contents API 逐文件上传（scripts/deploy.mjs） |
+| **建仓接口 404** | POST /user/repos 返回 404 | token 缺 Account permission → Create repositories；或仓库已存在（用 contents 探测判断） |
+| **Pages 用 legacy Jekyll 构建失败** | Build with Jekyll 步骤失败 | 把 Pages 的 build_type 切成 workflow，并提供 .github/workflows/deploy.yml |
+| **setup-node 步骤顺序错** | Unable to locate executable file: pnpm | setup-node 的 cache:'pnpm' 需要 pnpm 先装好，**pnpm/action-setup 必须放在 setup-node 之前** |
+| **写 contents 返回 422** | 不是权限问题 | 422 = **分支不存在**。先建分支（写一次探针文件即可） |
+
+## 一键部署
+
+\\\powershell
+ = "github_pat_xxx"
+cd E:\dev\git-user-analysis-web
+node scripts/deploy.mjs
+\\\
+
+脚本会：诊断权限 → 探测/创建仓库 → Contents API 逐文件上传 → 开 Pages。
+缺权限时直接输出修复指引，不会半途失败。

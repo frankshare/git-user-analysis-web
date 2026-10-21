@@ -62,11 +62,37 @@ if (!canWrite) {
 
 // ---- 确保仓库存在 ----
 const repoRes = await api('/');
+// 建仓前先确认：GET repo 返回 404 有两种含义——仓库不存在，或 token 无权读该仓库元信息。
+// 用「能否读 contents」做二次判断，避免把「无权读」误判成「不存在」而重复建仓。
 if (repoRes.status === 404) {
-  console.log('[deploy] 创建仓库…');
-  const created = await api('/user/repos', 'POST', { name, description: 'Git 用户深度画像与高星 Skill 复用库', private: false, auto_init: false });
-  if (created.status >= 400) { console.error(created.text.slice(0, 200)); process.exit(1); }
-  console.log(`  已创建 ${created.json.html_url}`);
+  // 直接试写一个探针文件：能写说明仓库存在且有 Contents 写权限
+  const probe = await api('/contents/.deploy-probe', 'PUT', {
+    message: 'probe', content: 'cHJvYmU=', branch: BRANCH,
+  });
+  if (probe.status < 400) {
+    console.log(`[deploy] 仓库已存在且可写：${REPO}`);
+    // 清理探针
+    const pr = await api('/contents/.deploy-probe?ref=' + BRANCH);
+    if (pr.status === 200) {
+      await api('/contents/.deploy-probe', 'DELETE', {
+        message: 'cleanup probe', sha: pr.json.sha, branch: BRANCH,
+      });
+    }
+  } else {
+    console.log('[deploy] 仓库不存在或不可写，尝试创建…');
+    const created = await api('/user/repos', 'POST', { name, description: 'Git 用户深度画像与高星 Skill 复用库', private: false, auto_init: false });
+    if (created.status >= 400) {
+      if (created.json?.errors?.some(e => e.code === 'already_exists' || e.message?.includes('already exists'))) {
+        console.log(`  仓库已存在：${REPO}`);
+      } else {
+        console.error(created.text.slice(0, 200));
+        console.error('  若提示 404/403，通常是 token 缺少 Account permission → Create repositories。');
+        process.exit(1);
+      }
+    } else {
+      console.log(`  已创建 ${created.json.html_url}`);
+    }
+  }
 } else {
   console.log(`[deploy] 仓库存在 ${repoRes.json.html_url}`);
 }
