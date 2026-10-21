@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { getAllOrgs, type OrgSnapshot } from './orgs';
 
 export interface SkillAnalysis {
   name: string;
@@ -108,6 +109,58 @@ export function getAllUsers(): UserSnapshot[] {
 export function getUserByLogin(login: string): UserSnapshot | undefined {
   const users = getAllUsers();
   return users.find(u => u.profile.login.toLowerCase() === login.toLowerCase());
+}
+
+/** 统一条目：个人创作者 + 平台方 */
+export type Entry = {
+  kind: 'creator' | 'platform';
+  profile: UserSnapshot['profile'] & {
+    platform_role?: OrgSnapshot['profile']['platform_role'];
+  };
+  stats: UserSnapshot['stats'];
+  repos: UserSnapshot['repos'];
+  skills: UserSnapshot['skills'];
+  skill_analyses?: SkillAnalysis[];
+  patterns: UserSnapshot['patterns'];
+  standards?: OrgSnapshot['standards'];
+  snapshot: UserSnapshot['snapshot'];
+  sources?: string[];
+};
+
+/** 创作者 + 平台方，合并成一个列表 */
+export function getAllEntries(): Entry[] {
+  const creators: Entry[] = getAllUsers().map((u) => ({
+    kind: 'creator',
+    profile: u.profile,
+    stats: u.stats,
+    repos: u.repos,
+    skills: u.skills,
+    skill_analyses: u.skill_analyses,
+    patterns: u.patterns,
+    snapshot: u.snapshot,
+    sources: u.sources,
+  }));
+
+  const platforms: Entry[] = getAllOrgs().map((o) => ({
+    kind: 'platform',
+    profile: { ...o.profile, strategy: 'hybrid' as const },
+    stats: o.stats,
+    repos: o.repos,
+    skills: o.skills,
+    skill_analyses: o.skill_analyses,
+    patterns: o.patterns,
+    standards: o.standards,
+    snapshot: o.snapshot,
+    sources: o.sources,
+  }));
+
+  return [...creators, ...platforms].sort(
+    (a, b) => b.stats.total_stars_source - a.stats.total_stars_source
+  );
+}
+
+export function getEntryByLogin(login: string): Entry | undefined {
+  return getAllEntries().find((e) => e.profile.login.toLowerCase() === login.toLowerCase());
 }
 
 export function getAllPatterns(): Array<{

@@ -1,17 +1,20 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Avatar from '../../components/Avatar.astro';
-import { getAllUsers, type UserSnapshot } from '../../lib/data';
+import { getAllEntries, type Entry } from '../../lib/data';
+import { ROLE_LABELS } from '../../lib/orgs';
 const BASE = import.meta.env.BASE_URL;
 
 export function getStaticPaths() {
-  return getAllUsers().map((u) => ({ params: { login: u.profile.login }, props: { user: u } }));
+  return getAllEntries().map((u) => ({ params: { login: u.profile.login }, props: { user: u } }));
 }
 
 interface Props {
-  user: UserSnapshot;
+  user: Entry;
 }
 const { user } = Astro.props;
+const isPlatform = user.kind === 'platform';
+const role = isPlatform ? ROLE_LABELS[user.profile.platform_role || 'community_hub'] : null;
 
 const p = user.profile;
 const s = user.stats;
@@ -49,11 +52,14 @@ const patterns = user.patterns || [];
 const kfmt = (n: number) =>
   n >= 10000 ? `${(n / 10000).toFixed(1).replace('.0', '')}w` : n.toLocaleString('en-US');
 
-const rank = getAllUsers()
+const allEntries = getAllEntries();
+const rank = allEntries
   .map((u) => ({ login: u.profile.login, stars: num(u.stats.total_stars_source) }))
   .sort((a, b) => b.stars - a.stars)
   .findIndex((u) => u.login === p.login);
 const idx = String(rank + 1).padStart(3, '0');
+const totalEntries = allEntries.length;
+const standards = user.standards || [];
 
 const links = [
   { href: `https://github.com/${p.login}`, label: 'GitHub', show: true },
@@ -71,6 +77,38 @@ const links = [
   <section class="wrap pt-6">
     <a href={`${BASE}`} class="labelmono ulink inline-flex items-center gap-1">← 回人物画廊</a>
   </section>
+
+  <!-- 分段导航 -->
+  {
+    !isPlatform && (
+      <nav class="wrap mt-5 flex flex-wrap items-center gap-1.5 border-b border-slate-800 pb-3">
+        <span class="labelmono mr-1">本档案</span>
+        <a href="#works" class="rounded-[2px] border border-slate-800 px-2.5 py-1 text-[12px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]">
+          作品 {sourceRepos.length}
+        </a>
+        {skills.length > 0 && (
+          <a href="#skills" class="rounded-[2px] border border-slate-800 px-2.5 py-1 text-[12px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]">
+            Skills {skills.length}
+          </a>
+        )}
+        {patterns.length > 0 && (
+          <a href="#methods" class="rounded-[2px] border border-slate-800 px-2.5 py-1 text-[12px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]">
+            方法 {patterns.length}
+          </a>
+        )}
+        {analyses.length > 0 && (
+          <a href="#dive" class="rounded-[2px] border border-slate-800 px-2.5 py-1 text-[12px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]">
+            深度拆解 {analyses.length}
+          </a>
+        )}
+        {isPlatform && (
+          <a href="#standards" class="rounded-[2px] border border-slate-800 px-2.5 py-1 text-[12px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]">
+            标准 {standards.length}
+          </a>
+        )}
+      </nav>
+    )
+  }
 
   <!-- 档案头 -->
   <section class="wrap mt-4">
@@ -93,8 +131,22 @@ const links = [
 
       <div class="min-w-0 flex-1">
         <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
-          <span class="labelmono">档案 {idx} / 029</span>
-          <span class="seal">{strategyLabel}</span>
+          <span class="labelmono">档案 {idx} / {totalEntries}</span>
+          {isPlatform ? (
+            <span class="seal">{role?.label}</span>
+          ) : (
+            <span class="seal">{strategyLabel}</span>
+          )}
+          {!isPlatform && skills.length >= 12 && (
+            <span class="rounded-[2px] border border-[#b23a2b] px-1.5 py-0.5 font-mono text-[10px] text-[#b23a2b]">
+              体系型 · {skills.length} skills
+            </span>
+          )}
+          {!isPlatform && skills.length > 0 && skills.length < 12 && (
+            <span class="rounded-[2px] border border-slate-800 px-1.5 py-0.5 font-mono text-[10px] text-slate-500">
+              {skills.length} skills
+            </span>
+          )}
           <span class="labelmono">快照 {user.snapshot.date}</span>
         </div>
 
@@ -147,6 +199,54 @@ const links = [
       </dl>
     </div>
   </section>
+
+  <!-- 平台方：定的是标准，不是作品 -->
+  {
+    isPlatform && standards.length > 0 && (
+      <section id="standards" class="wrap mt-8">
+        <div class="flex items-end justify-between gap-4 border-b border-slate-800 pb-2">
+          <h2 class="tick font-display text-[19px] font-semibold">他们定的标准</h2>
+          <span class="labelmono">{standards.length} 条</span>
+        </div>
+        <p class="mt-2 max-w-2xl text-[12.5px] leading-relaxed text-slate-500">
+          {role?.desc}。下面每条都是被广泛采用、且能从公开文档里核对的规范——
+          它们和个人的方法不同：个人方法是被<strong class="text-slate-300">发现</strong>的，标准是被<strong class="text-slate-300">制定</strong>的。
+        </p>
+
+        <div class="mt-4 space-y-2">
+          {standards.map((sd, i) => (
+            <details class="group/std rounded-[2px] border border-slate-800 bg-[#fbf5e7]/50">
+              <summary class="flex cursor-pointer list-none items-start gap-3 px-3.5 py-2.5">
+                <span class="mt-0.5 font-mono text-[11px] text-slate-600">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <span class="flex-1 font-display text-[14.5px] font-semibold leading-snug text-slate-100">
+                  {sd.name}
+                </span>
+                <span class="mt-0.5 shrink-0 font-mono text-[10.5px] text-slate-600 transition-transform duration-300 group-open/std:rotate-90">
+                  →
+                </span>
+              </summary>
+              <div class="space-y-2.5 border-t border-slate-800 px-3.5 py-3 text-[12.5px] leading-[1.8]">
+                <div>
+                  <span class="labelmono mr-2">是什么</span>
+                  <span class="text-slate-400">{sd.what}</span>
+                </div>
+                <div>
+                  <span class="labelmono mr-2">证据</span>
+                  <span class="text-slate-500">{sd.evidence}</span>
+                </div>
+                <div>
+                  <span class="labelmono mr-2">谁在用</span>
+                  <span class="text-slate-500">{sd.adopted_by}</span>
+                </div>
+              </div>
+            </details>
+          ))}
+        </div>
+      </section>
+    )
+  }
 
   <!-- 分布 + 口径 -->
   <section class="wrap mt-8 grid gap-8 lg:grid-cols-[1.6fr_1fr]">
@@ -226,7 +326,7 @@ const links = [
   </section>
 
   <!-- 作品 -->
-  <section class="wrap mt-12">
+  <section id="works" class="wrap mt-12">
     <div class="flex items-end justify-between gap-4 border-b border-slate-800 pb-2">
       <h2 class="tick font-display text-[19px] font-semibold">作品</h2>
       <span class="labelmono">按星数 · 前 {topRepos.length} / 共 {sourceRepos.length}</span>
@@ -275,7 +375,7 @@ const links = [
   <!-- Skills -->
   {
     skills.length > 0 && (
-      <section class="wrap mt-12">
+      <section id="skills" class="wrap mt-12">
         <div class="flex items-end justify-between gap-4 border-b border-slate-800 pb-2">
           <h2 class="tick font-display text-[19px] font-semibold">收录的 Skills</h2>
           <span class="labelmono">{skills.length} 条</span>
@@ -303,7 +403,7 @@ const links = [
   <!-- Patterns -->
   {
     patterns.length > 0 && (
-      <section class="wrap mt-12">
+      <section id="methods" class="wrap mt-12">
         <div class="flex items-end justify-between gap-4 border-b border-slate-800 pb-2">
           <h2 class="tick font-display text-[19px] font-semibold">提炼出的方法</h2>
           <span class="labelmono">{patterns.length} 条</span>
@@ -324,7 +424,7 @@ const links = [
   <!-- 五问拆解（折叠） -->
   {
     analyses.length > 0 && (
-      <section class="wrap mt-12">
+      <section id="dive" class="wrap mt-12">
         <div class="flex items-end justify-between gap-4 border-b border-slate-800 pb-2">
           <h2 class="tick font-display text-[19px] font-semibold">深度拆解</h2>
           <span class="labelmono">{analyses.length} 个 skill · 五问</span>

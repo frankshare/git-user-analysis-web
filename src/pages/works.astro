@@ -35,7 +35,7 @@ const works: Work[] = users
         url: r.url,
         stars: num(r.stars),
         lang: r.language || '—',
-        layer: (r as any).layer || '',
+        layer: (r as any).layer || 'other',
         cat: (r as any).category || '',
         desc: r.description || '',
         updated: (r.updated_at || '').slice(0, 10),
@@ -46,13 +46,53 @@ const works: Work[] = users
   })
   .sort((a, b) => b.stars - a.stars);
 
-const shown = works.slice(0, 150);
 const totalStars = works.reduce((a, w) => a + w.stars, 0);
-const skillCount = works.filter((w) => w.layer === 'skill').length;
+
+// —— 分类：layer 为主，category 为辅 ——
+// 把细的 layer 归到大类，避免十几个碎标签
+const LAYER_GROUP: Record<string, string> = {
+  skill: 'Skill 与知识库',
+  persona: 'Skill 与知识库',
+  catalog: 'Skill 与知识库',
+  book: 'Skill 与知识库',
+  tool: '工具与库',
+  framework: '工具与库',
+  app: '应用与客户端',
+  profile: '应用与客户端',
+  ecosystem: '生态与集成',
+  research: '研究与写作',
+  writing: '研究与写作',
+  other: '其他',
+};
+
+const GROUP_ORDER = [
+  'Skill 与知识库',
+  '工具与库',
+  '应用与客户端',
+  '生态与集成',
+  '研究与写作',
+  '其他',
+];
+
+const groups = GROUP_ORDER.map((g) => {
+  const items = works.filter((w) => (LAYER_GROUP[w.layer] ?? '其他') === g);
+  const cats = new Map<string, number>();
+  for (const w of items) {
+    const c = w.cat || '未分类';
+    cats.set(c, (cats.get(c) || 0) + 1);
+  }
+  return {
+    name: g,
+    items,
+    stars: items.reduce((a, w) => a + w.stars, 0),
+    top: [...cats.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6),
+  };
+}).filter((g) => g.items.length > 0);
 
 const fmt = (n: number) => n.toLocaleString('en-US');
 const kfmt = (n: number) =>
   n >= 10000 ? `${(n / 10000).toFixed(1).replace('.0', '')}w` : fmt(n);
+const LIMIT = 40;
 ---
 
 <BaseLayout title="卷二 · 作品 · 星册" active="works">
@@ -61,14 +101,13 @@ const kfmt = (n: number) =>
       <div>
         <div class="mb-4 flex items-center gap-3">
           <span class="seal">卷二 · 作品</span>
-          <span class="labelmono">{fmt(works.length)} 件 / 展示前 {shown.length}</span>
+          <span class="labelmono">{fmt(works.length)} 件</span>
         </div>
         <h1 class="display text-[2.4rem] sm:text-[3.4rem]">
           <span class="line-up"><span>他们造出来的东西</span></span>
         </h1>
         <p class="mt-4 max-w-xl text-[14.5px] leading-[1.85] text-slate-400">
-          同一批创作者的作品，合并成一张按星数排的清单。每条都标着作者——看到顺眼的，
-          顺着名字回去看那个人。
+          同一批创作者的作品，按类别折叠。每类先看星数最高的几件，其余收在「更多」里。
         </p>
       </div>
       <dl class="grid grid-cols-3 gap-x-8 gap-y-3">
@@ -77,8 +116,8 @@ const kfmt = (n: number) =>
           <dd class="font-mono text-[22px] leading-tight">{fmt(works.length)}</dd>
         </div>
         <div>
-          <dt class="labelmono">Skills</dt>
-          <dd class="font-mono text-[22px] leading-tight">{fmt(skillCount)}</dd>
+          <dt class="labelmono">类别</dt>
+          <dd class="font-mono text-[22px] leading-tight">{groups.length}</dd>
         </div>
         <div>
           <dt class="labelmono">总星</dt>
@@ -88,139 +127,131 @@ const kfmt = (n: number) =>
     </div>
   </section>
 
-  <section class="wrap sticky top-14 z-10 bg-[#f2e9d6]/92 py-3 backdrop-blur-sm">
-    <div class="flex flex-wrap items-center gap-2">
-      <span class="labelmono mr-1">筛选</span>
-      {
-        [
-          ['all', '全部'],
-          ['skill', 'Skill 类'],
-          ['big', '千星以上'],
-          ['zh', '中文作者'],
-          ['new', '今年仍在更新'],
-        ].map(([k, l], i) => (
-          <button
-            type="button"
-            data-f={k}
-            class:list={[
-              'rounded-[2px] border px-2.5 py-1 text-[12.5px] transition-colors',
-              i === 0
-                ? 'border-[#b23a2b] bg-[#b23a2b] text-[#fbf5e7]'
-                : 'border-slate-800 text-slate-400 hover:border-slate-600 hover:text-slate-200',
-            ]}
-          >
-            {l}
-          </button>
-        ))
-      }
-      <input
-        id="q"
-        type="search"
-        placeholder="搜作品名 / 描述 / 作者…"
-        class="ml-auto w-full max-w-[240px] rounded-[2px] border border-slate-800 bg-[#fbf5e7] px-2.5 py-1 text-[12.5px] text-slate-200 placeholder:text-slate-600 focus:border-[#b23a2b] focus:outline-none"
-      />
-      <span class="font-mono text-[11px] text-slate-500" id="cnt"></span>
-      <span class="labelmono w-full text-[10px] sm:w-auto">中文作者 = 名称含中文，或前 20 个仓库中 ≥25% 描述为中文</span>
-    </div>
-  </section>
-
-  <section class="wrap mt-4">
-    <div class="hidden grid-cols-[40px_1fr_120px_90px_70px] gap-3 border-b border-slate-800 px-2 pb-2 sm:grid">
-      <span class="labelmono">序号</span>
-      <span class="labelmono">作品</span>
-      <span class="labelmono">作者</span>
-      <span class="labelmono text-right">星数</span>
-      <span class="labelmono text-right">更新</span>
-    </div>
-
-    <ol id="list" class="divide-y divide-slate-800/60">
-      {
-        shown.map((w, i) => (
-          <li
-            class="row group grid grid-cols-[32px_1fr] items-start gap-x-3 gap-y-1 px-2 py-3 transition-colors hover:bg-[#fbf5e7]/70 sm:grid-cols-[40px_1fr_120px_90px_70px] sm:items-center"
-            data-k={`${w.layer === 'skill' ? 'skill ' : ''}${w.stars >= 1000 ? 'big ' : ''}${w.zh ? 'zh ' : ''}${w.updated >= '2026-01-01' ? 'new' : ''}`}
-            data-s={`${w.name} ${w.desc} ${w.author} ${w.authorName}`.toLowerCase()}
-          >
-            <span class="font-mono text-[11px] text-slate-600 sm:text-[12px]">
-              {String(i + 1).padStart(3, '0')}
-            </span>
-
-            <div class="min-w-0">
-              <a
-                href={w.url}
-                target="_blank"
-                rel="noopener"
-                class="ulink font-mono text-[13px] font-medium text-slate-100"
-              >
-                {w.name}
-              </a>
-              {w.layer && (
-                <span class="ml-2 rounded-[2px] border border-slate-800 px-1 py-px font-mono text-[10px] text-slate-500">
-                  {w.layer}
+  <!-- 分类折叠 -->
+  <section class="wrap mt-6 space-y-3">
+    {
+      groups.map((g, gi) => (
+        <details class="group/rv overflow-hidden rounded-[2px] border border-slate-800 bg-[#fbf5e7]/60" open={gi === 0}>
+          <summary class="flex cursor-pointer list-none items-center gap-3 px-4 py-3 transition-colors hover:bg-[#f6efdf]">
+            <span class="font-mono text-[11px] text-slate-600">{String(gi + 1).padStart(2, '0')}</span>
+            <h2 class="font-display text-[17px] font-semibold">{g.name}</h2>
+            <span class="font-mono text-[11px] text-slate-500">{g.items.length} 件</span>
+            <span class="font-mono text-[11px] text-slate-500">★{kfmt(g.stars)}</span>
+            <span class="ml-auto hidden flex-wrap items-center gap-1.5 sm:flex">
+              {g.top.map(([c, n]) => (
+                <span class="rounded-[2px] border border-slate-800 px-1.5 py-px text-[10.5px] text-slate-500">
+                  {c} <span class="font-mono text-slate-600">{n}</span>
                 </span>
-              )}
-              <p class="mt-0.5 line-clamp-1 text-[12px] leading-relaxed text-slate-500">
-                {w.desc || '—'}
-              </p>
-              <div class="mt-1 flex items-center gap-2 font-mono text-[10.5px] text-slate-600 sm:hidden">
-                <a href={`${BASE}u/${w.author}/`} class="text-slate-400">@{w.author}</a>
-                <span>★{kfmt(w.stars)}</span>
-                <span>{w.updated}</span>
-              </div>
-            </div>
+              ))}
+            </span>
+            <span class="shrink-0 font-mono text-xs text-slate-500 transition-transform duration-300 group-open/rv:rotate-90">
+              →
+            </span>
+          </summary>
 
-            <a
-              href={`${BASE}u/${w.author}/`}
-              class="hidden truncate font-mono text-[11.5px] text-slate-400 transition-colors hover:text-[#b23a2b] sm:block"
-            >
-              @{w.author}
-            </a>
-            <span class="hidden text-right font-mono text-[12px] text-slate-300 sm:block">
-              {kfmt(w.stars)}
-            </span>
-            <span class="hidden text-right font-mono text-[10.5px] text-slate-600 sm:block">
-              {w.updated.slice(2)}
-            </span>
-          </li>
-        ))
-      }
-    </ol>
+          <div class="border-t border-slate-800">
+            <ol class="divide-y divide-slate-800/60">
+              {g.items.slice(0, LIMIT).map((w, i) => (
+                <li class="flex items-start gap-3 px-4 py-2.5 transition-colors hover:bg-[#f6efdf]">
+                  <span class="mt-0.5 w-7 shrink-0 font-mono text-[11px] text-slate-600">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <div class="min-w-0 flex-1">
+                    <div class="flex flex-wrap items-baseline gap-x-2">
+                      <a
+                        href={w.url}
+                        target="_blank"
+                        rel="noopener"
+                        class="ulink font-mono text-[13px] font-medium text-slate-100"
+                      >
+                        {w.name}
+                      </a>
+                      {w.cat && (
+                        <span class="rounded-[2px] border border-slate-800 px-1 font-mono text-[10px] text-slate-500">
+                          {w.cat}
+                        </span>
+                      )}
+                      {w.lang !== '—' && (
+                        <span class="font-mono text-[10.5px] text-slate-600">{w.lang}</span>
+                      )}
+                    </div>
+                    {w.desc && (
+                      <p class="mt-0.5 line-clamp-1 text-[12px] leading-relaxed text-slate-500">
+                        {w.desc}
+                      </p>
+                    )}
+                    <div class="mt-1 flex items-center gap-2 font-mono text-[10.5px] text-slate-600 sm:hidden">
+                      <a href={`${BASE}u/${w.author}/`} class="text-slate-400">@{w.author}</a>
+                      <span>★{kfmt(w.stars)}</span>
+                    </div>
+                  </div>
+                  <a
+                    href={`${BASE}u/${w.author}/`}
+                    class="hidden w-[120px] shrink-0 truncate font-mono text-[11.5px] text-slate-400 transition-colors hover:text-[#b23a2b] sm:block"
+                  >
+                    @{w.author}
+                  </a>
+                  <span class="hidden w-[70px] shrink-0 text-right font-mono text-[12px] text-slate-300 sm:block">
+                    {kfmt(w.stars)}
+                  </span>
+                  <span class="hidden w-[60px] shrink-0 text-right font-mono text-[10.5px] text-slate-600 sm:block">
+                    {w.updated.slice(2)}
+                  </span>
+                </li>
+              ))}
+            </ol>
+
+            {g.items.length > LIMIT && (
+              <details class="group/more border-t border-slate-800">
+                <summary class="cursor-pointer list-none px-4 py-2.5 text-center font-mono text-[11.5px] text-slate-500 transition-colors hover:bg-[#f6efdf] hover:text-[#b23a2b]">
+                  更多 {g.items.length - LIMIT} 件 ▾
+                </summary>
+                <ol class="divide-y divide-slate-800/60 border-t border-slate-800">
+                  {g.items.slice(LIMIT).map((w, i) => (
+                    <li class="flex items-start gap-3 px-4 py-2.5 transition-colors hover:bg-[#f6efdf]">
+                      <span class="mt-0.5 w-7 shrink-0 font-mono text-[11px] text-slate-600">
+                        {String(LIMIT + i + 1).padStart(2, '0')}
+                      </span>
+                      <div class="min-w-0 flex-1">
+                        <a
+                          href={w.url}
+                          target="_blank"
+                          rel="noopener"
+                          class="ulink font-mono text-[13px] font-medium text-slate-100"
+                        >
+                          {w.name}
+                        </a>
+                        {w.desc && (
+                          <p class="mt-0.5 line-clamp-1 text-[12px] leading-relaxed text-slate-500">
+                            {w.desc}
+                          </p>
+                        )}
+                      </div>
+                      <a
+                        href={`${BASE}u/${w.author}/`}
+                        class="hidden w-[120px] shrink-0 truncate font-mono text-[11.5px] text-slate-400 transition-colors hover:text-[#b23a2b] sm:block"
+                      >
+                        @{w.author}
+                      </a>
+                      <span class="hidden w-[70px] shrink-0 text-right font-mono text-[12px] text-slate-300 sm:block">
+                        {kfmt(w.stars)}
+                      </span>
+                    </li>
+                  ))}
+                </ol>
+              </details>
+            )}
+          </div>
+        </details>
+      ))
+    }
   </section>
 
-  <script>
-    const btns = document.querySelectorAll<HTMLButtonElement>('[data-f]');
-    const rows = Array.from(document.querySelectorAll<HTMLLIElement>('.row'));
-    const q = document.getElementById('q') as HTMLInputElement | null;
-    const cnt = document.getElementById('cnt');
-    let cur = 'all';
-
-    function run() {
-      const s = (q?.value || '').trim().toLowerCase();
-      let n = 0;
-      rows.forEach((r) => {
-        const keys = (r.dataset.k || '').split(' ');
-        const okF = cur === 'all' || keys.includes(cur);
-        const okQ = !s || (r.dataset.s || '').includes(s);
-        const show = okF && okQ;
-        r.style.display = show ? '' : 'none';
-        if (show) n++;
-      });
-      if (cnt) cnt.textContent = `${n} / ${rows.length}`;
-    }
-
-    btns.forEach((b) =>
-      b.addEventListener('click', () => {
-        btns.forEach((x) => {
-          x.classList.remove('border-[#b23a2b]', 'bg-[#b23a2b]', 'text-[#fbf5e7]');
-          x.classList.add('border-slate-800', 'text-slate-400');
-        });
-        b.classList.remove('border-slate-800', 'text-slate-400');
-        b.classList.add('border-[#b23a2b]', 'bg-[#b23a2b]', 'text-[#fbf5e7]');
-        cur = b.dataset.f || 'all';
-        run();
-      })
-    );
-    q?.addEventListener('input', run);
-    run();
-  </script>
+  <section class="wrap mt-10 border-t border-slate-800 pt-6">
+    <p class="max-w-2xl text-[12.5px] leading-[1.9] text-slate-500">
+      分类依据仓库的 <code class="font-mono text-slate-400">layer</code> 字段（工具 / 应用 / Skill / 人格 / 生态…），
+      同类下再按中文语义类（<span class="text-slate-400">category</span>）细分。
+      只收录 <code class="font-mono text-slate-400">type=source</code> 仓库，排除 fork。
+    </p>
+  </section>
 </BaseLayout>

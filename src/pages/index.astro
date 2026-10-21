@@ -3,10 +3,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Avatar from '../components/Avatar.astro';
 import Portrait from '../components/Portrait.astro';
 import NoBadge from '../components/NoBadge.astro';
-import { getAllUsers } from '../lib/data';
+import { getAllEntries } from '../lib/data';
+import { ROLE_LABELS } from '../lib/orgs';
 const BASE = import.meta.env.BASE_URL;
 
-const users = getAllUsers();
+const users = getAllEntries();
 
 const num = (v: unknown) => (typeof v === 'number' ? v : parseInt(String(v ?? 0), 10) || 0);
 const CJK = '一-龥';
@@ -16,6 +17,9 @@ const hasCjk = (s: string) => new RegExp('[' + CJK + ']').test(s || '');
 type Layout = 'banner' | 'portrait' | 'seal' | 'plain';
 
 type Row = {
+  kind: 'creator' | 'platform';
+  platformRole: string;
+  standardsCount: number;
   login: string;
   name: string;
   bio: string;
@@ -54,6 +58,9 @@ const rows: Row[] = users
       ? sample.filter((r) => hasCjk(r.description || '')).length / sample.length
       : 0;
     return {
+      kind: u.kind,
+      platformRole: (u.profile as any).platform_role || '',
+      standardsCount: (u as any).standards?.length || 0,
       login: u.profile.login,
       name: u.profile.name || u.profile.login,
       bio: u.profile.bio || '',
@@ -81,46 +88,17 @@ const layoutQuota: Record<Layout, number> = {
   plain: 30,
 };
 
-// 逐张定版式：先按内容选「自然版式」，若与前两张重复，则从配额里挑一个还够用且不重复的。
-// 单遍贪心，不用交换——交换会互相破坏。
-const used: Record<string, number> = { banner: 0, seal: 0, portrait: 0, plain: 0 };
-rows.forEach((r, i) => {
-  const natural: Layout =
-    r.repoCount >= 100
-      ? 'banner'
-      : r.skillCount >= 12
-        ? 'seal'
-        : r.repoCount <= 25
-          ? 'portrait'
-          : 'plain';
+// 逐张定版式（在 creatorRows 上执行，见下方）：先按内容选「自然版式」，
+// 若与前两张重复，则从配额里挑一个还够用且不重复的。单遍贪心，不用交换——交换会互相破坏。
+const usedLayout: Record<string, number> = { banner: 0, seal: 0, portrait: 0, plain: 0 };
 
-  const lastTwo = [rows[i - 1]?.layout, rows[i - 2]?.layout];
-  const order: Layout[] = [natural, 'plain', 'portrait', 'seal', 'banner'];
 
-  let pick = natural;
-  if (lastTwo[0] === natural && lastTwo[1] === natural) {
-    const alt = order.find(
-      (l) =>
-        l !== natural &&
-        lastTwo[0] !== l &&
-        lastTwo[1] !== l &&
-        used[l] < layoutQuota[l]
-    );
-    if (alt) pick = alt;
-  }
-  r.layout = pick;
-  used[pick] += 1;
-});
 
-const layoutStats = rows.reduce((acc, r) => {
-  acc[r.layout] = (acc[r.layout] || 0) + 1;
-  return acc;
-}, {} as Record<string, number>);
-
-const totalStars = rows.reduce((a, r) => a + r.stars, 0);
-const totalWorks = rows.reduce((a, r) => a + r.works.length, 0);
-const totalSkills = rows.reduce((a, r) => a + r.skillCount, 0);
-const zhCount = rows.filter((r) => r.zh).length;
+// 统计口径：只算 29 位创作者；平台方单独计
+const totalStars = rows.filter((r) => r.kind === 'creator').reduce((a, r) => a + r.stars, 0);
+const totalWorks = rows.filter((r) => r.kind === 'creator').reduce((a, r) => a + r.works.length, 0);
+const totalSkills = rows.filter((r) => r.kind === 'creator').reduce((a, r) => a + r.skillCount, 0);
+const zhCount = rows.filter((r) => r.kind === 'creator' && r.zh).length;
 
 // 策略配色：纸墨体系内的低饱和色，靠色相区分「深度 / 广度 / 混合」
 const strategyAccent: Record<string, string> = {
@@ -135,8 +113,41 @@ const strategyLabel: Record<string, string> = {
   hybrid: '两者兼有',
 };
 
-const top = rows[0];
-const rest = rows.slice(1);
+// 创作者与平台方分开：前者表达方法，后者制定标准
+const creatorRows = rows.filter((r) => r.kind === 'creator');
+const platformRows = rows.filter((r) => r.kind === 'platform');
+
+const top = creatorRows[0];
+const rest = creatorRows.slice(1);
+
+// 版式只在创作者里分配
+creatorRows.forEach((r) => {
+  const natural: Layout =
+    r.repoCount >= 100
+      ? 'banner'
+      : r.skillCount >= 12
+        ? 'seal'
+        : r.repoCount <= 25
+          ? 'portrait'
+          : 'plain';
+
+  const lastTwo = [creatorRows[creatorRows.indexOf(r) - 1]?.layout, creatorRows[creatorRows.indexOf(r) - 2]?.layout];
+  const order: Layout[] = [natural, 'plain', 'portrait', 'seal', 'banner'];
+  let pick = natural;
+  if (lastTwo[0] === natural && lastTwo[1] === natural) {
+    const alt = order.find(
+      (l) => l !== natural && lastTwo[0] !== l && lastTwo[1] !== l && usedLayout[l] < layoutQuota[l]
+    );
+    if (alt) pick = alt;
+  }
+  r.layout = pick;
+  usedLayout[pick] += 1;
+});
+
+const layoutStats = creatorRows.reduce((acc, r) => {
+  acc[r.layout] = (acc[r.layout] || 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
 
 const fmt = (n: number) => n.toLocaleString('en-US');
 const kfmt = (n: number) =>
@@ -163,7 +174,8 @@ const kfmt = (n: number) =>
         </h1>
 
         <p class="mt-5 max-w-xl text-[15px] leading-[1.85] text-slate-400">
-          收录 <strong class="font-medium text-slate-200">{rows.length} 位</strong>创作者与他们的作品。
+          收录 <strong class="font-medium text-slate-200">{creatorRows.length} 位</strong>创作者与他们的作品，
+            另加 <strong class="font-medium text-slate-200">{platformRows.length} 家</strong>制定标准的平台方。
           不看排行榜名次，看三件事：<span class="text-slate-200">他是谁</span>、<span class="text-slate-200"
             >代表作是哪个</span
           >、<span class="text-slate-200">往哪看</span>。点开卡片，就是这个人的完整档案。
@@ -174,7 +186,7 @@ const kfmt = (n: number) =>
       <dl class="grid w-full grid-cols-2 gap-x-8 gap-y-4 sm:w-auto sm:grid-cols-4 sm:gap-x-10">
         {
           [
-            ['创作者', fmt(rows.length), `中文作品 ${zhCount} / 英文 ${rows.length - zhCount}`],
+            ['创作者', fmt(creatorRows.length), `中文作品 ${zhCount} / 英文 ${creatorRows.length - zhCount}`],
             ['作品', fmt(totalWorks), 'source 仓库'],
             ['Skills', fmt(totalSkills), '可复用技能条目'],
             ['总星数', kfmt(totalStars), '合计，排除 fork'],
@@ -202,6 +214,7 @@ const kfmt = (n: number) =>
           ['depth', '单点深挖'],
           ['breadth', '矩阵铺开'],
           ['hybrid', '两者兼有'],
+          ['platform', '平台方'],
         ].map(([key, label], i) => (
           <button
             type="button"
@@ -509,6 +522,71 @@ const kfmt = (n: number) =>
     }
   </section>
 
+  <!-- ============ 平台方 ============ -->
+  {
+    platformRows.length > 0 && (
+      <section id="platform-section" class="wrap mt-12">
+        <div class="flex flex-wrap items-end justify-between gap-4 border-b border-slate-800 pb-3">
+          <div>
+            <div class="mb-1.5 flex items-center gap-3">
+              <span class="seal">另一类</span>
+              <span class="labelmono">{platformRows.length} 家</span>
+            </div>
+            <h2 class="font-display text-[24px] font-semibold">制定标准的平台方</h2>
+            <p class="mt-1.5 max-w-xl text-[13px] leading-relaxed text-slate-500">
+              上面 29 位是在<strong class="text-slate-300">表达自己的方法</strong>；这 3 家在
+              <strong class="text-slate-300">定义标准</strong>——它们决定 skill 长什么样、装在哪、怎么被调用。
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-5 grid gap-3 sm:grid-cols-3">
+          {platformRows.map((pl) => {
+            const rl = ROLE_LABELS[pl.platformRole] || ROLE_LABELS['community_hub'];
+            return (
+              <a
+                href={`${BASE}u/${pl.login}/`}
+                class="card reveal group flex flex-col p-4"
+                data-key={`platform ${pl.platformRole}`}
+              >
+                <div class="flex items-start justify-between gap-3">
+                  <div class="min-w-0">
+                    <div class="labelmono">{rl.label}</div>
+                    <h3 class="mt-1 truncate font-display text-[19px] font-semibold leading-tight">
+                      {pl.name}
+                    </h3>
+                  </div>
+                  <span class="shrink-0 font-mono text-[13px] text-slate-400">★{kfmt(pl.stars)}</span>
+                </div>
+
+                <p class="mt-2 line-clamp-3 text-[12.5px] leading-[1.7] text-slate-400">{pl.bio}</p>
+
+                <div class="mt-3 flex flex-wrap items-center gap-1.5 border-t border-slate-800 pt-2.5 font-mono text-[10.5px] text-slate-500">
+                  <span>{pl.repoCount} 仓</span>
+                  <span>·</span>
+                  <span>{pl.skillCount} skills</span>
+                  {pl.standardsCount > 0 && (
+                    <>
+                      <span>·</span>
+                      <span class="text-[#b23a2b]">{pl.standardsCount} 条标准</span>
+                    </>
+                  )}
+                </div>
+
+                <div class="mt-auto pt-2.5 font-mono text-[10px] text-slate-500">
+                  <span class="opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    打开档案 →
+                  </span>
+                </div>
+                <span class="stamp">标准方</span>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    )
+  }
+
   <!-- ============ 两条去路 ============ -->
   <section class="wrap mt-14 grid gap-4 border-t border-slate-800 pt-8 sm:grid-cols-2">
     <a
@@ -546,17 +624,27 @@ const kfmt = (n: number) =>
   <script>
     const buttons = document.querySelectorAll<HTMLButtonElement>('[data-filter]');
     const cards = document.querySelectorAll<HTMLAnchorElement>('.card[data-key]');
+    const creatorCards = Array.from(cards).filter(
+      (c) => !(c.dataset.key || '').startsWith('platform')
+    );
     const count = document.getElementById('count');
 
     function apply(key: string) {
       let n = 0;
       cards.forEach((c) => {
         const k = c.dataset.key || '';
+        const isPlatform = k.startsWith('platform');
         const show = key === 'all' || k.split(' ').includes(key);
         c.style.display = show ? '' : 'none';
-        if (show) n++;
+        if (show && !isPlatform) n++;
       });
-      if (count) count.textContent = `${n} / ${cards.length}`;
+      if (count) count.textContent = `${n} / ${creatorCards.length}`;
+      // 平台方整栏随筛选显隐
+      const pSection = document.getElementById('platform-section');
+      if (pSection) {
+        const showPlatform = key === 'all' || key === 'platform';
+        pSection.style.display = showPlatform ? '' : 'none';
+      }
     }
 
     buttons.forEach((b) => {
