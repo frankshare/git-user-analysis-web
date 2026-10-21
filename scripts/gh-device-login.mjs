@@ -4,7 +4,7 @@
 import { execFileSync } from 'node:child_process';
 
 const CLIENT_ID = process.env.GH_CLIENT_ID || 'Iv1.b231c327f1eaa229';
-const SCOPES = 'repo workflow admin:public_key';
+const SCOPES = 'repo public_repo workflow admin:public_key';
 
 const headers = {
   Accept: 'application/json',
