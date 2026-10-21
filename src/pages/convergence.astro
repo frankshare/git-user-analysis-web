@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getConvergence } from '../lib/convergence';
 import { getAllUsers } from '../lib/data';
+const BASE = import.meta.env.BASE_URL;
 
 const conv = getConvergence();
 const users = getAllUsers();
@@ -86,7 +87,7 @@ const userName = (login: string) => users.find(u => u.profile.login === login)?.
                   {c.members.map(m => (
                     <tr class="hover:bg-slate-900/40 transition-colors">
                       <td class="px-5 py-3 align-top">
-                        <a href={`/u/${m.user}`} class="text-indigo-400 hover:text-indigo-300 transition-colors font-medium">
+                        <a href={`${BASE}u/${m.user}/`} class="text-indigo-400 hover:text-indigo-300 transition-colors font-medium">
                           {userName(m.user)}
                         </a>
                         <div class="text-[10px] font-mono text-slate-600 mt-0.5">@{m.user}</div>

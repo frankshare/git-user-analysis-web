@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getAllUsers } from '../lib/data';
+const BASE = import.meta.env.BASE_URL;
 
 const users = getAllUsers();
 
@@ -67,10 +68,10 @@ const totalAnalyses = users.reduce((acc, u) => acc + (u.skill_analyses?.length |
       <span class="text-xs text-slate-400">五问拆解完成</span>
       <span class="text-lg font-bold text-emerald-400 font-mono">{totalAnalyses}</span>
       <span class="text-xs text-slate-500">个 skill 通过「解决什么 / 核心机制 / 工程约束 / 能搬走什么 / 局限」全项拆解</span>
-      <a href="/convergence" class="text-xs text-emerald-400 hover:text-emerald-300 transition-colors inline-flex items-center gap-1">
+      <a href={`${BASE}convergence/`} class="text-xs text-emerald-400 hover:text-emerald-300 transition-colors inline-flex items-center gap-1">
         查看跨作者收敛簇 →
       </a>
-      <a href="/platforms" class="text-xs text-amber-400 hover:text-amber-300 transition-colors inline-flex items-center gap-1">
+      <a href={`${BASE}platforms/`} class="text-xs text-amber-400 hover:text-amber-300 transition-colors inline-flex items-center gap-1">
         平台方供给 →
       </a>
     </div>
@@ -117,7 +118,7 @@ const totalAnalyses = users.reduce((acc, u) => acc + (u.skill_analyses?.length |
             <!-- 基本信息 -->
             <div class="space-y-3 flex-1">
               <div class="flex items-center gap-3 flex-wrap">
-                <a href={`/u/${u.profile.login}`} class="text-2xl font-bold text-white hover:text-indigo-400 transition-colors">
+                <a href={`${BASE}u/${u.profile.login}/`} class="text-2xl font-bold text-white hover:text-indigo-400 transition-colors">
                   {u.profile.name}
                 </a>
                 <span class="text-sm font-mono text-slate-400">@{u.profile.login}</span>
@@ -183,7 +184,7 @@ const totalAnalyses = users.reduce((acc, u) => acc + (u.skill_analyses?.length |
               </div>
 
               <a 
-                href={`/u/${u.profile.login}`}
+                href={`${BASE}u/${u.profile.login}/`}
                 class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-all shadow-sm hover:shadow-indigo-500/20"
               >
                 查看完整拆解 →

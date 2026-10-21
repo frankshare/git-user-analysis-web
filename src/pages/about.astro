@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getAllUsers } from '../lib/data';
+const BASE = import.meta.env.BASE_URL;
 
 const users = getAllUsers();
 const totalStars = users.reduce((a, u) => a + u.stats.total_stars_source, 0);
@@ -74,7 +75,7 @@ const totalPatterns = users.reduce((a, u) => a + (u.patterns?.length || 0), 0);
 
         <div class="mt-4 pt-4 border-t border-slate-800 space-y-2">
           {users.map(u => (
-            <a href={`/u/${u.profile.login}`} class="flex items-center justify-between p-2.5 rounded-lg bg-slate-950/30 border border-slate-800/50 hover:border-slate-700 transition-colors group">
+            <a href={`${BASE}u/${u.profile.login}/`} class="flex items-center justify-between p-2.5 rounded-lg bg-slate-950/30 border border-slate-800/50 hover:border-slate-700 transition-colors group">
               <div>
                 <div class="text-sm text-slate-200 group-hover:text-indigo-400 transition-colors font-medium">{u.profile.name}</div>
                 <div class="text-[10px] font-mono text-slate-500">@{u.profile.login}</div>

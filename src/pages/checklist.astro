@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getConvergence } from '../lib/convergence';
 import { getAllUsers } from '../lib/data';
+const BASE = import.meta.env.BASE_URL;
 
 const conv = getConvergence();
 const users = getAllUsers();
@@ -110,7 +111,7 @@ const CHECKLIST = [
       <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800 text-slate-300">
         覆盖 <strong class="text-white font-mono">{CHECKLIST.length}</strong> 组收敛方法
       </span>
-      <a href="/convergence" class="text-xs text-emerald-400 hover:text-emerald-300 transition-colors">查看收敛簇证据 →</a>
+      <a href={`${BASE}convergence/`} class="text-xs text-emerald-400 hover:text-emerald-300 transition-colors">查看收敛簇证据 →</a>
     </div>
   </section>
 
