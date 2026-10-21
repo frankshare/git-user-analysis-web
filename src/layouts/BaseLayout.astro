@@ -5,12 +5,24 @@ const BASE = import.meta.env.BASE_URL;
 interface Props {
   title?: string;
   description?: string;
+  active?: 'people' | 'works' | 'research' | 'about';
+  /** 页脚用小字说明 */
+  note?: string;
 }
 
-const { 
-  title = 'Git 用户分析 · 高星 Skill 拆解与复用平台', 
-  description = '剖析顶级开发者作品体系，拆解高质量 Agent Skill，提炼可复用工程方法论' 
+const {
+  title = '星册 · 高星创作者档案馆',
+  description = '收录高星 GitHub 创作者与他们的作品：谁在做什么、代表作是哪个、往哪看。',
+  active = 'people',
+  note,
 } = Astro.props;
+
+const nav = [
+  { key: 'people', label: '人物', href: `${BASE}` },
+  { key: 'works', label: '作品', href: `${BASE}works/` },
+  { key: 'research', label: '研究', href: `${BASE}research/` },
+  { key: 'about', label: '关于', href: `${BASE}about/` },
+] as const;
 ---
 
 <!doctype html>
@@ -21,68 +33,92 @@ const {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href={`${BASE}favicon.svg`} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans selection:bg-indigo-500 selection:text-white">
-    <!-- 顶部导航 -->
-    <header class="border-b border-slate-800/80 bg-slate-900/60 backdrop-blur-md sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <a href={BASE} class="flex items-center gap-2.5 group">
-          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-sm shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
-            ⚡
-          </div>
-          <div>
-            <span class="font-bold text-base tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
-              Git 用户分析
-            </span>
-            <span class="hidden sm:inline-block ml-2 text-xs px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-mono">
-              High-Star Skill Hub
-            </span>
-          </div>
+  <body class="min-h-screen flex flex-col">
+    <!-- 顶部书脊 -->
+    <header class="relative z-20 sticky top-0 border-b border-slate-800 bg-[#f6efdf]/88 backdrop-blur-md">
+      <div class="wrap flex h-14 items-center justify-between gap-4">
+        <a href={`${BASE}`} class="group flex items-center gap-2.5">
+          <span
+            class="grid h-7 w-7 place-items-center rounded-[2px] bg-[#b23a2b] font-display text-[13px] font-semibold leading-none text-[#fbf5e7] transition-transform duration-500 group-hover:-rotate-6"
+            >星</span
+          >
+          <span class="flex items-baseline gap-2">
+            <span class="font-display text-[17px] font-semibold tracking-tight">星册</span>
+            <span class="labelmono hidden sm:inline">high-star archive</span>
+          </span>
         </a>
 
-        <nav class="flex items-center gap-1 sm:gap-2 overflow-x-auto max-w-[68%] sm:max-w-none whitespace-nowrap [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          <a href={BASE} class="px-3 py-1.5 rounded-md text-sm font-medium shrink-0 text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors" title="29 位创作者 + 3 家平台方的数据大盘，按 star / 集中度 / 策略类型排">
-            榜单大盘
-          </a>
-          <a href={`${BASE}convergence/`} class="px-3 py-1.5 rounded-md text-sm font-medium shrink-0 text-emerald-400 hover:text-emerald-300 hover:bg-slate-800/60 transition-colors" title="7 组跨作者复现的方法，以及每组的证据">
-            方法收敛簇
-          </a>
-          <a href={`${BASE}checklist/`} class="px-3 py-1.5 rounded-md text-sm font-medium shrink-0 text-sky-400 hover:text-sky-300 hover:bg-slate-800/60 transition-colors" title="29 条自查项，每条带出处">
-            检查清单
-          </a>
-          <a href={`${BASE}patterns/`} class="px-3 py-1.5 rounded-md text-sm font-medium shrink-0 text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors" title="157 条 Patterns 全库检索">
-            方法模式库
-          </a>
-          <a href={`${BASE}platforms/`} class="px-3 py-1.5 rounded-md text-sm font-medium shrink-0 text-amber-400 hover:text-amber-300 hover:bg-slate-800/60 transition-colors" title="Anthropic / MCP / ShareAI Lab 三家平台的标准与仓库">
-            平台方供给
-          </a>
-          <a href={`${BASE}format/`} class="px-3 py-1.5 rounded-md text-sm font-medium shrink-0 text-sky-400 hover:text-sky-300 hover:bg-slate-800/60 transition-colors" title="SKILL.md 字段与 description 写法的实测数据">
-            格式研究
-          </a>
-          <a href={`${BASE}about/`} class="px-3 py-1.5 rounded-md text-sm font-medium shrink-0 text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors" title="数据口径、采集方法、边界声明">
-            关于
-          </a>
+        <nav class="flex items-center gap-0.5 sm:gap-1 overflow-x-auto whitespace-nowrap [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          {
+            nav.map((n) => (
+              <a
+                href={n.href}
+                aria-current={active === n.key ? 'page' : undefined}
+                class:list={[
+                  'relative px-2.5 py-1.5 text-sm transition-colors sm:px-3',
+                  active === n.key
+                    ? 'text-white'
+                    : 'text-slate-400 hover:text-slate-200',
+                ]}
+              >
+                {n.label}
+                {active === n.key && (
+                  <span class="absolute inset-x-2.5 -bottom-[13px] h-[2px] bg-[#b23a2b] sm:inset-x-3" />
+                )}
+              </a>
+            ))
+          }
         </nav>
       </div>
     </header>
 
-    <!-- 主体区域 -->
-    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <main class="relative z-10 flex-1">
       <slot />
     </main>
 
-    <!-- 底部注脚 -->
-    <footer class="border-t border-slate-800/80 bg-slate-900/40 text-slate-500 text-xs py-8">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div class="flex items-center gap-2">
-          <span>Git User Analysis Platform</span>
-          <span>·</span>
-          <span>严格遵守单数据源（Single Source of Truth）规范</span>
+    <footer class="relative z-10 mt-16 border-t border-slate-800">
+      <div class="wrap flex flex-col gap-4 py-8 text-xs text-slate-500 sm:flex-row sm:items-end sm:justify-between">
+        <div class="space-y-1.5">
+          <div class="flex items-center gap-2">
+            <span class="seal">星册</span>
+            <span class="labelmono">since 2026·10</span>
+          </div>
+          <p class="max-w-md leading-relaxed">
+            {note ?? '数据来自 GitHub 公开 API 快照；星数为 type=source 仓库合计，排除 fork。每个数字都带日期，口径写在「关于」里。'}
+          </p>
         </div>
-        <div class="text-slate-600">
-          基于 Astro + Tailwind CSS 构建 · 避开 C 盘纯绿色落盘
+        <div class="flex items-center gap-4 font-mono text-[11px]">
+          <a href="https://github.com/frankshare/git-user-analysis-web" class="ulink" target="_blank" rel="noopener">source</a>
+          <a href={`${BASE}about/`} class="ulink">口径</a>
+          <a href={`${BASE}research/`} class="ulink">研究</a>
         </div>
       </div>
     </footer>
+
+    <script>
+      // 滚动入场
+      const io = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (e.isIntersecting) {
+              e.target.classList.add('in');
+              io.unobserve(e.target);
+            }
+          }
+        },
+        { rootMargin: '0px 0px -8% 0px', threshold: 0.06 }
+      );
+      document.querySelectorAll('.reveal').forEach((el, i) => {
+        (el as HTMLElement).style.animationDelay = `${Math.min(i * 45, 420)}ms`;
+        io.observe(el);
+      });
+    </script>
   </body>
 </html>

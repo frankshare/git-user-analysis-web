@@ -9,42 +9,43 @@ const users = getAllUsers();
 const userName = (login: string) => users.find(u => u.profile.login === login)?.profile.name || login;
 ---
 
-<BaseLayout title="方法收敛簇 · Git 用户分析" description="互不相识的创作者，在不同领域独立收敛出的同一套方法">
-  <section class="py-6 border-b border-slate-800/80 mb-8">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium mb-4">
-      <span>本站的核心发现 · {conv?.stats.users_analyzed ?? 0} 位创作者 · {conv?.stats.patterns_total ?? 0} 条 Patterns · 第 {conv?.snapshot.revision ?? 1} 版复核</span>
+<BaseLayout title="方法收敛簇 · Git 用户分析" description="互不相识的创作者，在不同领域独立收敛出的同一套方法" active="research">
+  <section class="wrap pt-10 sm:pt-14">
+    <div class="border-b border-slate-800 pb-8">
+      <div class="mb-4 flex flex-wrap items-center gap-3">
+        <span class="seal">附录 · 收敛簇</span>
+        <span class="labelmono">{conv?.stats.users_analyzed ?? 0} 位创作者 · {conv?.stats.patterns_total ?? 0} 条 Patterns · 第 {conv?.snapshot.revision ?? 1} 版复核</span>
+      </div>
+      <h1 class="display text-[2.2rem] sm:text-[3.1rem]">
+        <span class="line-up"><span>方法收敛簇</span></span>
+      </h1>
+      <p class="mt-4 max-w-2xl text-[14.5px] leading-[1.85] text-slate-400">
+        一个技巧只在一个仓库出现过，那只是偏好。<strong class="text-slate-200">当同一个方法在 3 位以上互不相识的创作者、不同领域里独立出现</strong>，它才配叫方法。
+      </p>
     </div>
-    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-4">
-      方法收敛簇
-    </h1>
-    <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-3xl">
-      一个技巧只在一个仓库出现过，那只是偏好。<strong class="text-slate-200">当同一个方法在 3 位以上互不相识的创作者、不同领域里独立出现</strong>，它才配叫方法。
-    </p>
-    <p class="text-slate-500 text-sm mt-3 max-w-3xl">
-      这一页是本站与 star 排行榜的根本区别：排行榜告诉你「谁红」，这里告诉你「什么是真的方法」。
-    </p>
   </section>
+
 
   {conv && (
     <>
       <!-- 聚合看板 -->
-      <section class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
-        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+      <section class="wrap grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
+        <div class="bg-slate-900/60 border border-slate-800 rounded-[2px] p-4 sm:p-5">
           <div class="text-xs text-slate-400 font-medium">分析创作者</div>
           <div class="text-2xl sm:text-3xl font-bold text-white mt-1 font-mono">{conv.stats.users_analyzed}</div>
           <div class="text-xs text-slate-500 mt-1">互不相识、不同领域</div>
         </div>
-        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+        <div class="bg-slate-900/60 border border-slate-800 rounded-[2px] p-4 sm:p-5">
           <div class="text-xs text-slate-400 font-medium">收敛簇</div>
           <div class="text-2xl sm:text-3xl font-bold text-emerald-400 mt-1 font-mono">{conv.stats.clusters}</div>
           <div class="text-xs text-slate-500 mt-1">最大簇含 {Math.max(...conv.clusters.map(c => c.coverage))} 位作者</div>
         </div>
-        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+        <div class="bg-slate-900/60 border border-slate-800 rounded-[2px] p-4 sm:p-5">
           <div class="text-xs text-slate-400 font-medium">Patterns 总数</div>
           <div class="text-2xl sm:text-3xl font-bold text-indigo-400 mt-1 font-mono">{conv.stats.patterns_total}</div>
           <div class="text-xs text-slate-500 mt-1">method {conv.stats.methods} / technique {conv.stats.techniques}</div>
         </div>
-        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+        <div class="bg-slate-900/60 border border-slate-800 rounded-[2px] p-4 sm:p-5">
           <div class="text-xs text-slate-400 font-medium">五问拆解卡</div>
           <div class="text-2xl sm:text-3xl font-bold text-purple-400 mt-1 font-mono">{conv.stats.analyses_total}</div>
           <div class="text-xs text-slate-500 mt-1">每张都有「局限」</div>
@@ -52,9 +53,9 @@ const userName = (login: string) => users.find(u => u.profile.login === login)?.
       </section>
 
       <!-- 簇列表 -->
-      <section class="space-y-6">
+      <section class="wrap space-y-6">
         {conv.clusters.map(c => (
-          <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden">
+          <div class="bg-slate-900/60 border border-slate-800 rounded-[3px] overflow-hidden">
             <div class="p-6 border-b border-slate-800/70">
               <div class="flex items-start gap-3 mb-3">
                 <span class="font-mono text-xs text-emerald-500/70 pt-1 shrink-0">{c.id}</span>
@@ -62,12 +63,12 @@ const userName = (login: string) => users.find(u => u.profile.login === login)?.
                   <h2 class="text-lg font-bold text-white">{c.name}</h2>
                   <p class="text-sm text-slate-300 mt-2 leading-relaxed">{c.summary}</p>
                 </div>
-                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shrink-0">
+                <span class="px-2.5 py-0.5 rounded-[2px] text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shrink-0">
                   {c.members.length} 位作者
                 </span>
               </div>
 
-              <div class="bg-slate-950/40 border border-slate-800/60 rounded-lg px-4 py-3 mt-4">
+              <div class="bg-slate-950/40 border border-slate-800/60 rounded-[2px] px-4 py-3 mt-4">
                 <div class="text-[11px] font-bold text-amber-400 mb-1.5">为什么重要</div>
                 <p class="text-sm text-slate-300 leading-relaxed">{c.why_it_matters}</p>
               </div>
@@ -108,7 +109,7 @@ const userName = (login: string) => users.find(u => u.profile.login === login)?.
                 <div class="text-[11px] font-bold text-slate-400 mb-1.5">收敛判定</div>
                 <p class="text-sm text-slate-300 leading-relaxed">{c.verdict}</p>
               </div>
-              <div class="bg-emerald-500/5 border border-emerald-500/20 rounded-lg px-4 py-3">
+              <div class="bg-emerald-500/5 border border-emerald-500/20 rounded-[2px] px-4 py-3">
                 <div class="text-[11px] font-bold text-emerald-400 mb-1.5">可执行动作</div>
                 <p class="text-sm text-slate-200 leading-relaxed">{c.actionable}</p>
               </div>
@@ -118,19 +119,19 @@ const userName = (login: string) => users.find(u => u.profile.login === login)?.
       </section>
 
       <!-- 判定方法 -->
-      <section class="mt-10 bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6 sm:p-8">
+      <section class="mt-10 bg-slate-900/40 border border-slate-800/60 rounded-[3px] p-6 sm:p-8">
         <h2 class="text-lg font-bold text-white mb-3">收敛是怎么判定的</h2>
         <p class="text-sm text-slate-400 leading-relaxed mb-4">{conv.methodology}</p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-          <div class="bg-slate-950/40 p-4 rounded-xl border border-slate-800/50">
+          <div class="bg-slate-950/40 p-4 rounded-[2px] border border-slate-800/50">
             <div class="font-bold text-emerald-400 mb-1.5">1 · 跨作者复现</div>
             <p class="text-slate-400 leading-relaxed">同一方法在 ≥3 位互不相识的创作者手里出现，且各自领域不同。</p>
           </div>
-          <div class="bg-slate-950/40 p-4 rounded-xl border border-slate-800/50">
+          <div class="bg-slate-950/40 p-4 rounded-[2px] border border-slate-800/50">
             <div class="font-bold text-indigo-400 mb-1.5">2 · 有具体机制</div>
             <p class="text-slate-400 leading-relaxed">每人给的是可执行的机制（文件、脚本、测试、协议），不是同一句口号。</p>
           </div>
-          <div class="bg-slate-950/40 p-4 rounded-xl border border-slate-800/50">
+          <div class="bg-slate-950/40 p-4 rounded-[2px] border border-slate-800/50">
             <div class="font-bold text-purple-400 mb-1.5">3 · 排他性</div>
             <p class="text-slate-400 leading-relaxed">不是所有聪明人都这么做；否则它只是常识，不值得收录。</p>
           </div>

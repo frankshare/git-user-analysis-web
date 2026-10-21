@@ -21,24 +21,27 @@ for (const v of verified) {
 const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
 ---
 
-<BaseLayout title="格式采用率研究 · Git 用户分析" description="SKILL.md 的 name+description 双字段是否已成为跨语言的事实标准">
-  <section class="py-6 border-b border-slate-800/80 mb-8">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-medium mb-4">
-      <span>严格验证 · 直接抓真实 SKILL.md 解析 frontmatter</span>
+<BaseLayout title="格式采用率研究 · Git 用户分析" description="SKILL.md 的 name+description 双字段是否已成为跨语言的事实标准" active="research">
+  <section class="wrap pt-10 sm:pt-14">
+    <div class="border-b border-slate-800 pb-8">
+      <div class="mb-4 flex flex-wrap items-center gap-3">
+        <span class="seal">附录 · 格式</span>
+        <span class="labelmono">严格验证 · 直接抓真实 SKILL.md 解析 frontmatter</span>
+      </div>
+      <h1 class="display text-[2.2rem] sm:text-[3.1rem]">
+        <span class="line-up"><span>格式趋同：平台推动的收敛</span></span>
+      </h1>
+      <p class="mt-4 max-w-2xl text-[14.5px] leading-[1.85] text-slate-400">
+        这是本站发现的<strong class="text-slate-200">第一类由平台推动的收敛</strong>。C1–C7 是创作者<strong>独立发现</strong>的共同方法；这一类不同——它是被标准制定者<strong>设计出来</strong>，然后被采用。
+      </p>
     </div>
-    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-4">
-      格式趋同：平台推动的收敛
-    </h1>
-    <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-3xl">
-      这是本站发现的<strong class="text-slate-200">第一类由平台推动的收敛</strong>。
-      C1–C7 是创作者<strong>独立发现</strong>的共同方法；这一类不同——它是被标准制定者<strong>设计出来</strong>，然后被采用。
-    </p>
   </section>
 
+
   {data && (
-    <>
+    <div class="wrap">
       <!-- 核心结论 -->
-      <section class="bg-sky-500/5 border border-sky-500/20 rounded-2xl p-6 sm:p-8 mb-10">
+      <section class="bg-sky-500/5 border border-sky-500/20 rounded-[3px] p-6 sm:p-8 mb-10">
         <h2 class="text-lg font-bold text-white mb-3">核心结论</h2>
         <p class="text-slate-300 leading-relaxed mb-4">
           <strong class="text-sky-300">SKILL.md 的 <code class="font-mono text-sm">name</code> + <code class="font-mono text-sm">description</code> 双字段，已成为跨语言、跨平台的实际事实标准。</strong>
@@ -52,22 +55,22 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
 
       <!-- 统计 -->
       <section class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
-        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+        <div class="bg-slate-900/60 border border-slate-800 rounded-[2px] p-4 sm:p-5">
           <div class="text-xs text-slate-400 font-medium">已验证 skill 仓</div>
           <div class="text-2xl sm:text-3xl font-bold text-white mt-1 font-mono">{verified.length}</div>
           <div class="text-xs text-slate-500 mt-1">直接读 SKILL.md</div>
         </div>
-        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+        <div class="bg-slate-900/60 border border-slate-800 rounded-[2px] p-4 sm:p-5">
           <div class="text-xs text-slate-400 font-medium">canonical 格式</div>
           <div class="text-2xl sm:text-3xl font-bold text-sky-400 mt-1 font-mono">{canonical.length}</div>
           <div class="text-xs text-slate-500 mt-1">含 name + description</div>
         </div>
-        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+        <div class="bg-slate-900/60 border border-slate-800 rounded-[2px] p-4 sm:p-5">
           <div class="text-xs text-slate-400 font-medium">扩展用法</div>
           <div class="text-2xl sm:text-3xl font-bold text-amber-400 mt-1 font-mono">{extended.length}</div>
           <div class="text-xs text-slate-500 mt-1">在标准上加自有元数据</div>
         </div>
-        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+        <div class="bg-slate-900/60 border border-slate-800 rounded-[2px] p-4 sm:p-5">
           <div class="text-xs text-slate-400 font-medium">第三字段</div>
           <div class="text-2xl sm:text-3xl font-bold text-emerald-400 mt-1 font-mono">
             {fieldCount['metadata'] || 0}
@@ -77,7 +80,7 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
       </section>
 
       <!-- 字段排名 -->
-      <section class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 mb-10">
+      <section class="bg-slate-900/60 border border-slate-800 rounded-[3px] p-6 sm:p-8 mb-10">
         <h2 class="text-base font-bold text-white mb-1">字段使用排名</h2>
         <p class="text-xs text-slate-500 mb-5">
           分母为 {verified.length} 个已验证仓。注意 <code class="font-mono">name</code> 与 <code class="font-mono">description</code> 是压倒性的，
@@ -106,7 +109,7 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
       <!-- 逐仓明细 -->
       <section class="mb-10">
         <h2 class="text-base font-bold text-white mb-4">逐仓验证明细</h2>
-        <div class="overflow-x-auto rounded-2xl border border-slate-800">
+        <div class="overflow-x-auto rounded-[3px] border border-slate-800">
           <table class="w-full text-sm">
             <thead class="bg-slate-900/80 text-slate-400 text-xs uppercase tracking-wider">
               <tr>
@@ -155,7 +158,7 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
       </section>
 
       {/* 未使用 SKILL.md 的 */}
-      <section class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6 sm:p-8 mb-10">
+      <section class="bg-slate-900/40 border border-slate-800/60 rounded-[3px] p-6 sm:p-8 mb-10">
         <h2 class="text-base font-bold text-white mb-1">走的是另一条路线的资产</h2>
         <p class="text-xs text-slate-500 mb-4">
           不是所有 skill 资产都用 SKILL.md。这几家用的是<strong class="text-slate-300">插件 / 扩展点</strong>路线——
@@ -173,7 +176,7 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
 
       {/* 解读与边界 */}
       <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6">
+        <div class="bg-slate-900/40 border border-slate-800/60 rounded-[3px] p-6">
           <h2 class="text-base font-bold text-white mb-3">为什么这条发现重要</h2>
           <p class="text-sm text-slate-400 leading-relaxed">
             C1–C7 讲的是「怎么做才可靠」，是创作者在实践中撞出来的。
@@ -187,7 +190,7 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
           </p>
         </div>
 
-        <div class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6">
+        <div class="bg-slate-900/40 border border-slate-800/60 rounded-[3px] p-6">
           <h2 class="text-base font-bold text-white mb-3">边界（对自己诚实）</h2>
           <ul class="space-y-2 text-sm text-slate-400">
             {(data.interpretation?.caveats || []).map((c: string) => (
@@ -201,7 +204,7 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
       </section>
 
       {/* 方法说明 */}
-      <section class="mt-10 bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6 sm:p-8">
+      <section class="mt-10 bg-slate-900/40 border border-slate-800/60 rounded-[3px] p-6 sm:p-8">
         <h2 class="text-base font-bold text-white mb-3">验证方法</h2>
         <p class="text-sm text-slate-400 leading-relaxed mb-3">{data.methodology}</p>
         <p class="text-xs text-slate-500 leading-relaxed">
@@ -215,7 +218,7 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
       {/* ===== 第三类发现：写法趋同 ===== */}
       {style && (
         <section class="mt-14 pt-10 border-t border-slate-800">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-300 text-xs font-medium mb-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-[2px] bg-violet-500/10 border border-violet-500/20 text-violet-300 text-xs font-medium mb-4">
             <span>第三类发现 · 字段之内的写法</span>
           </div>
           <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mb-4">
@@ -229,9 +232,9 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
             绝大多数人<strong class="text-violet-300">自发写成了同一种两段式</strong>。
           </p>
 
-          <div class="bg-violet-500/5 border border-violet-500/20 rounded-2xl p-6 sm:p-8 mb-8">
+          <div class="bg-violet-500/5 border border-violet-500/20 rounded-[3px] p-6 sm:p-8 mb-8">
             <p class="text-sm text-slate-400 mb-3">主流结构（不是句首 Use when，而是「先陈述、后触发」）</p>
-            <pre class="font-mono text-xs sm:text-sm text-violet-200 bg-slate-950/60 rounded-xl p-4 overflow-x-auto whitespace-pre-wrap">能力陈述句。Use when 场景A。Use when 场景B。
+            <pre class="font-mono text-xs sm:text-sm text-violet-200 bg-slate-950/60 rounded-[2px] p-4 overflow-x-auto whitespace-pre-wrap">能力陈述句。Use when 场景A。Use when 场景B。
 能力陈述。…… 当用户提到「短语1」「短语2」时使用。</pre>
             <p class="text-xs text-slate-500 mt-3 leading-relaxed">
               这不是平台规定的，是社区自己长出来的写法惯例——<strong class="text-slate-300">格式给了空位，社区把空位填成了同一个形状。</strong>
@@ -239,22 +242,22 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
           </div>
 
           <section class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
-            <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+            <div class="bg-slate-900/60 border border-slate-800 rounded-[2px] p-4 sm:p-5">
               <div class="text-xs text-slate-400 font-medium">采集 SKILL.md</div>
               <div class="text-2xl sm:text-3xl font-bold text-white mt-1 font-mono">{style.sample.skill_md}</div>
               <div class="text-xs text-slate-500 mt-1">{style.sample.repos_with_skill_md} 仓 · 上限 6/仓</div>
             </div>
-            <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+            <div class="bg-slate-900/60 border border-slate-800 rounded-[2px] p-4 sm:p-5">
               <div class="text-xs text-slate-400 font-medium">英文含触发句</div>
               <div class="text-2xl sm:text-3xl font-bold text-violet-400 mt-1 font-mono">{pct(style.en.with_trigger, style.sample.en)}%</div>
               <div class="text-xs text-slate-500 mt-1">{style.en.with_trigger}/{style.sample.en} 条</div>
             </div>
-            <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+            <div class="bg-slate-900/60 border border-slate-800 rounded-[2px] p-4 sm:p-5">
               <div class="text-xs text-slate-400 font-medium">中文含触发表述</div>
               <div class="text-2xl sm:text-3xl font-bold text-violet-400 mt-1 font-mono">{pct(style.zh.with_trigger, style.sample.zh)}%</div>
               <div class="text-xs text-slate-500 mt-1">{style.zh.with_trigger}/{style.sample.zh} 条</div>
             </div>
-            <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+            <div class="bg-slate-900/60 border border-slate-800 rounded-[2px] p-4 sm:p-5">
               <div class="text-xs text-slate-400 font-medium">description 中位数</div>
               <div class="text-2xl sm:text-3xl font-bold text-white mt-1 font-mono">{style.length.median}</div>
               <div class="text-xs text-slate-500 mt-1">字符 · 34% 超 320</div>
@@ -262,7 +265,7 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
           </section>
 
           <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6">
+            <div class="bg-slate-900/40 border border-slate-800/60 rounded-[3px] p-6">
               <h3 class="text-base font-bold text-white mb-4">中英两圈，同一结构，不同标记</h3>
               <table class="w-full text-sm">
                 <thead>
@@ -301,14 +304,14 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
               </p>
             </div>
 
-            <div class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6">
+            <div class="bg-slate-900/40 border border-slate-800/60 rounded-[3px] p-6">
               <h3 class="text-base font-bold text-white mb-4">跨作者：{style.by_author.filter((a) => a.rate >= 50).length} 位过半使用</h3>
               <div class="space-y-1.5 max-h-80 overflow-y-auto pr-1">
                 {style.by_author.map((a: any) => (
                   <div class="flex items-center gap-2 text-xs">
                     <span class="w-28 shrink-0 text-slate-400 font-mono truncate">{a.login}</span>
-                    <div class="flex-1 h-1.5 bg-slate-800 rounded-full overflow-hidden">
-                      <div class={`h-full rounded-full ${a.rate >= 80 ? 'bg-violet-400' : a.rate >= 50 ? 'bg-violet-500/70' : a.rate > 0 ? 'bg-slate-500' : 'bg-rose-500/60'}`} style={`width:${Math.max(a.rate, 2)}%`}></div>
+                    <div class="flex-1 h-1.5 bg-slate-800 rounded-[2px] overflow-hidden">
+                      <div class={`h-full rounded-[2px] ${a.rate >= 80 ? 'bg-violet-400' : a.rate >= 50 ? 'bg-violet-500/70' : a.rate > 0 ? 'bg-slate-500' : 'bg-rose-500/60'}`} style={`width:${Math.max(a.rate, 2)}%`}></div>
                     </div>
                     <span class="w-12 text-right font-mono text-slate-400">{a.rate}%</span>
                     <span class="w-10 text-right font-mono text-slate-600">{a.with_trigger}/{a.samples}</span>
@@ -323,9 +326,9 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
           </section>
 
           <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6">
+            <div class="bg-slate-900/40 border border-slate-800/60 rounded-[3px] p-6">
               <h3 class="text-base font-bold text-white mb-3">可以立刻用的模板</h3>
-              <pre class="font-mono text-xs text-slate-300 bg-slate-950/60 rounded-xl p-4 overflow-x-auto whitespace-pre-wrap">能力陈述（动词开头）。产出/差异。
+              <pre class="font-mono text-xs text-slate-300 bg-slate-950/60 rounded-[2px] p-4 overflow-x-auto whitespace-pre-wrap">能力陈述（动词开头）。产出/差异。
 Use when 场景1、场景2、场景3，
 或用户说 "口语说法1"、"口语说法2"。</pre>
               <ul class="space-y-2 text-sm text-slate-400 mt-4">
@@ -334,7 +337,7 @@ Use when 场景1、场景2、场景3，
                 <li class="flex gap-2"><span class="text-violet-400 shrink-0">3</span><span>200–300 字符是甜区</span></li>
               </ul>
             </div>
-            <div class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6">
+            <div class="bg-slate-900/40 border border-slate-800/60 rounded-[3px] p-6">
               <h3 class="text-base font-bold text-white mb-3">三类发现的区别</h3>
               <ul class="space-y-3 text-sm text-slate-400">
                 <li><strong class="text-slate-200">C1–C7 收敛簇</strong> —— 方法机制，互不相识的人独立撞上同一堵墙</li>
@@ -359,4 +362,6 @@ Use when 场景1、场景2、场景3，
           </p>
         </section>
       )}
+    </div>
+  )}
 </BaseLayout>

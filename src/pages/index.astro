@@ -1,295 +1,324 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Avatar from '../components/Avatar.astro';
 import { getAllUsers } from '../lib/data';
 const BASE = import.meta.env.BASE_URL;
 
 const users = getAllUsers();
 
-// 基础统计聚合
-const totalStars = users.reduce((acc, u) => acc + u.stats.total_stars_source, 0);
-const totalSourceRepos = users.reduce((acc, u) => acc + u.profile.source_repos, 0);
-const totalSkills = users.reduce((acc, u) => acc + (u.skills?.count || 0), 0);
-const totalPatterns = users.reduce((acc, u) => acc + (u.patterns?.length || 0), 0);
-const totalAnalyses = users.reduce((acc, u) => acc + (u.skill_analyses?.length || 0), 0);
+const num = (v: unknown) => (typeof v === 'number' ? v : parseInt(String(v ?? 0), 10) || 0);
+const CJK = '一-龥';
+const hasCjk = (s: string) => new RegExp('[' + CJK + ']').test(s || '');
+
+type Row = {
+  login: string;
+  name: string;
+  bio: string;
+  x: string;
+  website: string;
+  stars: number;
+  median: number;
+  top4: number;
+  strategy: string;
+  zh: boolean;
+  works: { name: string; stars: number; desc: string; layer: string }[];
+  skillCount: number;
+};
+
+const rows: Row[] = users
+  .map((u) => {
+    const works = (u.repos || [])
+      .filter((r) => !r.fork)
+      .map((r) => ({
+        name: r.name,
+        stars: num(r.stars),
+        desc: r.description || '',
+        layer: (r as any).layer || '',
+      }))
+      .sort((a, b) => b.stars - a.stars);
+    const sample = (u.repos || []).filter((r) => !r.fork).slice(0, 20);
+    const zhDescRatio = sample.length
+      ? sample.filter((r) => hasCjk(r.description || '')).length / sample.length
+      : 0;
+    return {
+      login: u.profile.login,
+      name: u.profile.name || u.profile.login,
+      bio: u.profile.bio || '',
+      x: u.profile.x || '',
+      website: u.profile.website || '',
+      stars: num(u.stats.total_stars_source),
+      median: num(u.stats.median_stars),
+      top4: num(u.stats.top4_share),
+      strategy: u.profile.strategy || 'hybrid',
+      zh: hasCjk(u.profile.name || '') || zhDescRatio >= 0.25,
+      works,
+      skillCount: u.skills?.count || 0,
+    };
+  })
+  .sort((a, b) => b.stars - a.stars);
+
+const totalStars = rows.reduce((a, r) => a + r.stars, 0);
+const totalWorks = rows.reduce((a, r) => a + r.works.length, 0);
+const totalSkills = rows.reduce((a, r) => a + r.skillCount, 0);
+const zhCount = rows.filter((r) => r.zh).length;
+
+const strategyLabel: Record<string, string> = {
+  depth: '单点深挖',
+  breadth: '矩阵铺开',
+  hybrid: '两者兼有',
+};
+
+const top = rows[0];
+const rest = rows.slice(1);
+
+const fmt = (n: number) => n.toLocaleString('en-US');
+const kfmt = (n: number) =>
+  n >= 10000 ? `${(n / 10000).toFixed(1).replace('.0', '')}w` : fmt(n);
 ---
 
-<BaseLayout title="Git 用户分析与高星 Skill 拆解">
-  <!-- 头部 Hero -->
-  <section class="py-6 sm:py-10 border-b border-slate-800/80 mb-8">
-    <div class="max-w-3xl">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-medium mb-4">
-        <span>前置分析验证 · Week 1 MVP</span>
-      </div>
-      <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-4">
-        Git 用户深度画像与高星 Skill 复用库
-      </h1>
-      <p class="text-slate-400 text-base sm:text-lg leading-relaxed">
-        这是一个<strong class="text-slate-200">「怎么把别人写得好的 Agent Skill 学过来」</strong>的研究站。
-        不是 star 排行榜，也不是 skill 下载站——它回答三个具体问题：
-      </p>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-5">
-        <a href={`${BASE}convergence/`} class="group bg-slate-900/50 border border-slate-800 rounded-xl p-4 hover:border-emerald-500/40 transition-colors">
-          <div class="text-sm font-semibold text-emerald-300 mb-1">① 他们的方法是什么</div>
-          <div class="text-xs text-slate-400 leading-relaxed">29 位互不相识的创作者，反复撞上同样 7 堵墙。<span class="text-slate-500 group-hover:text-slate-300">→ 方法收敛簇</span></div>
-        </a>
-        <a href={`${BASE}checklist/`} class="group bg-slate-900/50 border border-slate-800 rounded-xl p-4 hover:border-sky-500/40 transition-colors">
-          <div class="text-sm font-semibold text-sky-300 mb-1">② 我怎么照着做</div>
-          <div class="text-xs text-slate-400 leading-relaxed">把方法变成 29 条可勾选的自查项，每条带证据来源。<span class="text-slate-500 group-hover:text-slate-300">→ 检查清单</span></div>
-        </a>
-        <a href={`${BASE}format/`} class="group bg-slate-900/50 border border-slate-800 rounded-xl p-4 hover:border-violet-500/40 transition-colors">
-          <div class="text-sm font-semibold text-violet-300 mb-1">③ 怎么写才被认出来</div>
-          <div class="text-xs text-slate-400 leading-relaxed">SKILL.md 怎么写、description 用什么句式，有实测数据。<span class="text-slate-500 group-hover:text-slate-300">→ 格式研究</span></div>
-        </a>
-      </div>
-    </div>
-
-    <!-- 顶层聚合看板 -->
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
-      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
-        <div class="text-xs text-slate-400 font-medium">收录用户总 Star</div>
-        <div class="text-2xl sm:text-3xl font-bold text-white mt-1 font-mono">
-          {totalStars.toLocaleString()}
+<BaseLayout title="星册 · 高星创作者档案馆" active="people">
+  <!-- ============ 封面 ============ -->
+  <section class="wrap pt-10 sm:pt-16">
+    <div class="flex flex-wrap items-end justify-between gap-6 border-b border-slate-800 pb-8">
+      <div class="max-w-2xl">
+        <div class="mb-5 flex items-center gap-3">
+          <span class="seal seal-drop">卷一 · 人物</span>
+          <span class="labelmono">No.01 — 2026.10</span>
         </div>
-        <div class="text-xs text-slate-500 mt-1">源仓库聚合，排除 fork</div>
-      </div>
 
-      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
-        <div class="text-xs text-slate-400 font-medium">深度拆解自有仓库</div>
-        <div class="text-2xl sm:text-3xl font-bold text-indigo-400 mt-1 font-mono">
-          {totalSourceRepos}
-        </div>
-        <div class="text-xs text-slate-500 mt-1">中位数与长尾全面归纳</div>
-      </div>
+        <h1 class="display text-[2.7rem] leading-[0.95] sm:text-[4.1rem]">
+          <span class="line-up"><span style="animation-delay:60ms">高星创作者</span></span>
+          <span class="line-up"
+            ><span style="animation-delay:150ms"
+              >都在<em class="not-italic text-[#b23a2b]">做</em>什么</span
+            ></span
+          >
+        </h1>
 
-      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
-        <div class="text-xs text-slate-400 font-medium">收录高星 Skills</div>
-        <div class="text-2xl sm:text-3xl font-bold text-emerald-400 mt-1 font-mono">
-          {totalSkills}
-        </div>
-        <div class="text-xs text-slate-500 mt-1">覆盖设计/TDD/审查/工作流</div>
-      </div>
-
-      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
-        <div class="text-xs text-slate-400 font-medium">提炼工程 Patterns</div>
-        <div class="text-2xl sm:text-3xl font-bold text-purple-400 mt-1 font-mono">
-          {totalPatterns}
-        </div>
-        <div class="text-xs text-slate-500 mt-1">通过三重验证跨域复现</div>
-      </div>
-    </div>
-
-    <!-- 深度拆解指标条 -->
-    <div class="mt-4 flex items-center gap-3 flex-wrap bg-slate-900/40 border border-slate-800/60 rounded-xl px-4 py-3">
-      <span class="text-xs text-slate-400">五问拆解完成</span>
-      <span class="text-lg font-bold text-emerald-400 font-mono">{totalAnalyses}</span>
-      <span class="text-xs text-slate-500">个 skill 通过「解决什么 / 核心机制 / 工程约束 / 能搬走什么 / 局限」全项拆解</span>
-      <a href={`${BASE}convergence/`} class="text-xs text-emerald-400 hover:text-emerald-300 transition-colors inline-flex items-center gap-1">
-        查看跨作者收敛簇 →
-      </a>
-      <a href={`${BASE}platforms/`} class="text-xs text-amber-400 hover:text-amber-300 transition-colors inline-flex items-center gap-1">
-        平台方供给 →
-      </a>
-    </div>
-  </section>
-
-  <!-- 榜单与策略对比核心区 -->
-  <section class="space-y-6">
-    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-      <div>
-        <h2 class="text-xl font-bold text-white flex items-center gap-2">
-          <span>核心收录作者榜</span>
-          <span class="text-xs font-normal text-slate-400">（支持策略与集中度多维分析）</span>
-        </h2>
-        <p class="text-sm text-slate-400 mt-1">
-          注意：<strong>单点爆款（深度）</strong>与<strong>矩阵开花（广度）</strong>是两种完全不同的成功路径，切勿仅凭 Star 粗暴归类。
+        <p class="mt-5 max-w-xl text-[15px] leading-[1.85] text-slate-400">
+          收录 <strong class="font-medium text-slate-200">{rows.length} 位</strong>创作者与他们的作品。
+          不看排行榜名次，看三件事：<span class="text-slate-200">他是谁</span>、<span class="text-slate-200"
+            >代表作是哪个</span
+          >、<span class="text-slate-200">往哪看</span>。点开卡片，就是这个人的完整档案。
         </p>
       </div>
 
-      <!-- 客户端策略过滤组件触发按钮 -->
-      <div class="inline-flex items-center p-1 bg-slate-900 border border-slate-800 rounded-lg text-xs flex-wrap" id="filter-group">
-        <button data-filter="all" class="filter-btn px-3 py-1.5 rounded-md font-medium bg-indigo-600 text-white transition-all">
-          全部作者
-        </button>
-        <button data-filter="breadth" class="filter-btn px-3 py-1.5 rounded-md font-medium text-slate-400 hover:text-white transition-all">
-          广度矩阵型
-        </button>
-        <button data-filter="depth" class="filter-btn px-3 py-1.5 rounded-md font-medium text-slate-400 hover:text-white transition-all">
-          深度工程型
-        </button>
-        <button data-filter="hybrid" class="filter-btn px-3 py-1.5 rounded-md font-medium text-slate-400 hover:text-white transition-all">
-          混合型
-        </button>
-      </div>
-    </div>
-
-    <!-- 用户卡片列表 -->
-    <div class="grid grid-cols-1 gap-6" id="user-cards">
-      {users.map(u => (
-        <article 
-          class="user-card bg-slate-900/80 border border-slate-800 hover:border-slate-700/80 rounded-2xl p-6 transition-all shadow-sm hover:shadow-md"
-          data-strategy={u.profile.strategy}
-        >
-          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-            <!-- 基本信息 -->
-            <div class="space-y-3 flex-1">
-              <div class="flex items-center gap-3 flex-wrap">
-                <a href={`${BASE}u/${u.profile.login}/`} class="text-2xl font-bold text-white hover:text-indigo-400 transition-colors">
-                  {u.profile.name}
-                </a>
-                <span class="text-sm font-mono text-slate-400">@{u.profile.login}</span>
-
-                <!-- 策略 Tag -->
-                {u.profile.strategy === 'breadth' ? (
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                    广度矩阵策略（品类覆盖）
-                  </span>
-                ) : u.profile.strategy === 'depth' ? (
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20">
-                    深度工程策略（方法论做深）
-                  </span>
-                ) : (
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-500/10 text-purple-400 border border-purple-500/20">
-                    混合策略（体系 + 复制品）
-                  </span>
-                )}
-
-                <span class="text-xs text-slate-500 font-mono">
-                  快照：{u.snapshot.date}
-                </span>
-              </div>
-
-              <p class="text-slate-300 text-sm leading-relaxed max-w-3xl">
-                {u.profile.bio}
-              </p>
-
-              <!-- 核心方法标签 -->
-              <div class="flex items-center gap-2 flex-wrap pt-1">
-                <span class="text-xs text-slate-500">核心提炼 Patterns：</span>
-                {u.patterns.slice(0, 4).map(p => (
-                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-xs border border-slate-700/60 font-mono">
-                    {p.name}
-                  </span>
-                ))}
-              </div>
+      <!-- 索引数字 -->
+      <dl class="grid w-full grid-cols-2 gap-x-8 gap-y-4 sm:w-auto sm:grid-cols-4 sm:gap-x-10">
+        {
+          [
+            ['创作者', fmt(rows.length), `中文作品 ${zhCount} / 英文 ${rows.length - zhCount}`],
+            ['作品', fmt(totalWorks), 'source 仓库'],
+            ['Skills', fmt(totalSkills), '可复用技能条目'],
+            ['总星数', kfmt(totalStars), '合计，排除 fork'],
+          ].map(([k, v, s]) => (
+            <div>
+              <dt class="labelmono">{k}</dt>
+              <dd class="font-mono text-[26px] font-medium leading-tight tracking-tight">{v}</dd>
+              <dd class="mt-0.5 text-[11px] text-slate-500">{s}</dd>
             </div>
+          ))
+        }
+      </dl>
+    </div>
+  </section>
 
-            <!-- 数据盘与入口 -->
-            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-6 lg:border-l lg:border-slate-800 lg:pl-6">
-              <div class="grid grid-cols-3 sm:grid-cols-3 gap-4 text-center">
-                <div class="bg-slate-950/40 p-3 rounded-lg border border-slate-800/60 min-w-[90px]">
-                  <div class="text-xs text-slate-400">总 Star</div>
-                  <div class="text-lg font-bold text-white font-mono mt-0.5">
-                    {u.stats.total_stars_source.toLocaleString()}
-                  </div>
-                </div>
+  <!-- ============ 筛选 ============ -->
+  <section class="wrap sticky top-14 z-10 -mx-0 bg-[#f2e9d6]/92 py-3 backdrop-blur-sm">
+    <div class="flex items-center gap-1.5 overflow-x-auto whitespace-nowrap [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <span class="labelmono mr-2 shrink-0">筛选</span>
+      {
+        [
+          ['all', '全部'],
+          ['zh', '中文作品'],
+          ['en', '英文作品'],
+          ['depth', '单点深挖'],
+          ['breadth', '矩阵铺开'],
+          ['hybrid', '两者兼有'],
+        ].map(([key, label], i) => (
+          <button
+            type="button"
+            data-filter={key}
+            class:list={[
+              'shrink-0 rounded-[2px] border px-3 py-1 text-[13px] transition-colors',
+              i === 0
+                ? 'border-[#b23a2b] bg-[#b23a2b] text-[#fbf5e7]'
+                : 'border-slate-800 text-slate-400 hover:border-slate-600 hover:text-slate-200',
+            ]}
+          >
+            {label}
+          </button>
+        ))
+      }
+      <span class="ml-auto hidden shrink-0 font-mono text-[11px] text-slate-500 sm:block" id="count"></span>
+    </div>
+  </section>
 
-                <div class="bg-slate-950/40 p-3 rounded-lg border border-slate-800/60 min-w-[90px]">
-                  <div class="text-xs text-slate-400">中位数</div>
-                  <div class="text-lg font-bold text-indigo-400 font-mono mt-0.5">
-                    {u.stats.median_stars}
-                  </div>
-                </div>
+  <!-- ============ 画廊 ============ -->
+  <section class="wrap mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <!-- 首位：加大卡 -->
+    <a
+      href={`${BASE}u/${top.login}/`}
+      class="card reveal group sm:col-span-2"
+      data-key={`${top.zh ? 'zh' : 'en'} ${top.strategy}`}
+      style="padding:1.5rem 1.5rem 1.3rem 1.8rem"
+    >
+      <div class="flex items-start gap-5">
+        <Avatar login={top.login} name={top.name} size={96} eager class="rounded-[3px]" />
+        <div class="min-w-0 flex-1">
+          <div class="flex items-center gap-2">
+            <span class="labelmono">001 · 星最多的那位</span>
+            <span class="seal">首卷</span>
+          </div>
+          <h2 class="mt-1 truncate font-display text-[26px] font-semibold leading-tight">
+            {top.name}
+          </h2>
+          <div class="mt-0.5 flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-[11px] text-slate-500">
+            <span>@{top.login}</span>
+            <span class="text-[#b23a2b]">{strategyLabel[top.strategy] ?? top.strategy}</span>
+            {top.x && <span class="text-slate-400">X ↗</span>}
+          </div>
+          <p class="mt-2 line-clamp-2 text-[13.5px] leading-[1.75] text-slate-400">{top.bio}</p>
+        </div>
+        <div class="shrink-0 text-right">
+          <div class="font-mono text-[30px] font-medium leading-none tracking-tight">
+            {kfmt(top.stars)}
+          </div>
+          <div class="labelmono mt-1">stars</div>
+        </div>
+      </div>
 
-                <div class="bg-slate-950/40 p-3 rounded-lg border border-slate-800/60 min-w-[90px]">
-                  <div class="text-xs text-slate-400">集中度</div>
-                  <div class="text-lg font-bold text-amber-400 font-mono mt-0.5">
-                    {u.profile.strategy === 'depth' ? `top1: ${u.stats.top1_share}%` : `top4: ${u.stats.top4_share}%`}
-                  </div>
-                </div>
+      <div class="mt-5 grid gap-2 sm:grid-cols-3">
+        {
+          top.works.slice(0, 3).map((w, i) => (
+            <div class="rounded-[2px] border border-slate-800 bg-[#f6efdf]/60 px-3 py-2">
+              <div class="flex items-baseline justify-between gap-2">
+                <span class="truncate font-mono text-[12px] text-slate-200">
+                  {String(i + 1).padStart(2, '0')} {w.name}
+                </span>
+                <span class="shrink-0 font-mono text-[11px] text-[#b23a2b]">★{kfmt(w.stars)}</span>
               </div>
+              <p class="mt-1 line-clamp-2 text-[11.5px] leading-snug text-slate-500">{w.desc}</p>
+            </div>
+          ))
+        }
+      </div>
+      <span class="stamp">已收录</span>
+    </a>
 
-              <a 
-                href={`${BASE}u/${u.profile.login}/`}
-                class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-all shadow-sm hover:shadow-indigo-500/20"
-              >
-                查看完整拆解 →
-              </a>
+    <!-- 其余 -->
+    {
+      rest.map((r, i) => (
+        <a
+          href={`${BASE}u/${r.login}/`}
+          class="card reveal group"
+          data-key={`${r.zh ? 'zh' : 'en'} ${r.strategy}`}
+        >
+          <div class="flex items-start gap-3.5">
+            <Avatar login={r.login} name={r.name} size={52} class="rounded-[2px]" />
+            <div class="min-w-0 flex-1">
+              <div class="flex items-baseline justify-between gap-2">
+                <h3 class="truncate font-display text-[17px] font-semibold leading-tight">
+                  {r.name}
+                </h3>
+                <span class="shrink-0 font-mono text-[12px] text-slate-400">★{kfmt(r.stars)}</span>
+              </div>
+              <div class="mt-0.5 flex items-center gap-2 font-mono text-[10.5px] text-slate-500">
+                <span class="text-slate-600">{String(i + 2).padStart(3, '0')}</span>
+                <span class="truncate">@{r.login}</span>
+                <span class="text-[#b23a2b]">·</span>
+                <span class="shrink-0 text-[#b23a2b]">{strategyLabel[r.strategy] ?? r.strategy}</span>
+              </div>
             </div>
           </div>
-        </article>
-      ))}
-    </div>
+
+          <p class="mt-2.5 line-clamp-2 text-[12.5px] leading-[1.7] text-slate-400">{r.bio}</p>
+
+          <div class="mt-3 space-y-1 border-t border-slate-800 pt-2.5">
+            {r.works.slice(0, 2).map((w) => (
+              <div class="flex items-baseline justify-between gap-2">
+                <span class="truncate font-mono text-[11.5px] text-slate-300">{w.name}</span>
+                <span class="shrink-0 font-mono text-[10.5px] text-slate-500">★{kfmt(w.stars)}</span>
+              </div>
+            ))}
+            {r.works.length === 0 && (
+              <div class="font-mono text-[11px] text-slate-600">— 无 source 仓库 —</div>
+            )}
+          </div>
+
+          <div class="mt-2.5 flex items-center justify-between font-mono text-[10px] text-slate-500">
+            <span>{r.skillCount > 0 ? `${r.skillCount} skills` : `${r.works.length} repos`}</span>
+            <span class="opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              打开档案 →
+            </span>
+          </div>
+          <span class="stamp">已收录</span>
+        </a>
+      ))
+    }
   </section>
 
-  <!-- 对照策略说明卡片 -->
-  <section class="mt-12 bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6 sm:p-8">
-    <h3 class="text-lg font-bold text-white mb-3">
-      💡 为什么我们要建立「策略分类（Strategy Dimension）」？
-    </h3>
-    <p class="text-sm text-slate-400 leading-relaxed mb-5">
-      5 位创作者，5 种完全不同的资产结构。只按总 star 排序会把它们混为一谈——
-      但它们的风险、抗压能力与该抄的东西，恰恰是最不一样的地方。
-    </p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-sm text-slate-400 leading-relaxed">
-      <div class="space-y-2 bg-slate-950/40 p-4 rounded-xl border border-slate-800/50">
-        <h4 class="text-white font-semibold flex items-center gap-1.5 text-emerald-400">
-          <span>🌿</span> 广度矩阵型（花叔 58 个 skill / 逸尘 21 项协议）
-        </h4>
-        <p>
-          中位数高（177 / 116），多品类铺开。抗单点风险强——一个 skill 凉了还有几十个。
-          质量手段靠约束与门文件。
+  <!-- ============ 两条去路 ============ -->
+  <section class="wrap mt-14 grid gap-4 border-t border-slate-800 pt-8 sm:grid-cols-2">
+    <a
+      href={`${BASE}works/`}
+      class="group flex items-start justify-between gap-4 rounded-[2px] p-2 transition-colors hover:bg-[#fbf5e7]/70"
+    >
+      <div>
+        <div class="labelmono">卷二</div>
+        <h3 class="mt-1 font-display text-[22px] font-semibold">作品</h3>
+        <p class="mt-1 max-w-sm text-[13px] leading-relaxed text-slate-400">
+          不按人看，按作品看：{fmt(totalWorks)} 个 source 仓库，按星数排，标着作者与语言。
         </p>
       </div>
-
-      <div class="space-y-2 bg-slate-950/40 p-4 rounded-xl border border-slate-800/50">
-        <h4 class="text-white font-semibold flex items-center gap-1.5 text-blue-400">
-          <span>⚡</span> 深度工程型（obra 一套方法论）
-        </h4>
-        <p>
-          97.7% 的星来自一个仓库，中位数仅 8。靠极深的方法论与跨 harness 兼容筑墙。
-          风险是平台一旦内建同类工作流，护城河迅速变浅。
+      <span class="mt-1 shrink-0 font-mono text-sm text-slate-500 transition-transform duration-300 group-hover:translate-x-1"
+        >→</span
+      >
+    </a>
+    <a
+      href={`${BASE}research/`}
+      class="group flex items-start justify-between gap-4 rounded-[2px] p-2 transition-colors hover:bg-[#fbf5e7]/70"
+    >
+      <div>
+        <div class="labelmono">附录</div>
+        <h3 class="mt-1 font-display text-[22px] font-semibold">研究</h3>
+        <p class="mt-1 max-w-sm text-[13px] leading-relaxed text-slate-400">
+          拆解过程中的副产品：方法收敛、自查清单、SKILL.md 格式实测。想看方法论的进这里。
         </p>
       </div>
-
-      <div class="space-y-2 bg-slate-950/40 p-4 rounded-xl border border-slate-800/50">
-        <h4 class="text-white font-semibold flex items-center gap-1.5 text-purple-400">
-          <span>🎨</span> 混合型（归藏视觉体系 / 姚金刚治理体系）
-        </h4>
-        <p>
-          一个爆款引流 + 一套可复制的体系横向铺开（归藏 2 套视觉语言；姚金刚 IR + 编译 + 评测）。
-          中位数反而比广度型还高（281 / 164），因为体系本身就在复制。
-        </p>
-      </div>
-
-      <div class="space-y-2 bg-slate-950/40 p-4 rounded-xl border border-slate-800/50">
-        <h4 class="text-white font-semibold flex items-center gap-1.5 text-amber-400">
-          <span>🧱</span> 协议型（逸尘的硬规则）
-        </h4>
-        <p>
-          7 个仓库、8,127 星，但工程密度全在 335 星的记忆库里。星数与约束强度负相关——
-          选样若只看 star，会完全错过这套东西。
-        </p>
-      </div>
-    </div>
+      <span class="mt-1 shrink-0 font-mono text-sm text-slate-500 transition-transform duration-300 group-hover:translate-x-1"
+        >→</span
+      >
+    </a>
   </section>
-</BaseLayout>
 
-<script>
-  // 简易前台交互：过滤策略
-  const buttons = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.user-card');
+  <script>
+    const buttons = document.querySelectorAll<HTMLButtonElement>('[data-filter]');
+    const cards = document.querySelectorAll<HTMLAnchorElement>('.card[data-key]');
+    const count = document.getElementById('count');
 
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const filter = btn.getAttribute('data-filter');
-      
-      // 样式切换
-      buttons.forEach(b => {
-        b.classList.remove('bg-indigo-600', 'text-white');
-        b.classList.add('text-slate-400');
+    function apply(key: string) {
+      let n = 0;
+      cards.forEach((c) => {
+        const k = c.dataset.key || '';
+        const show = key === 'all' || k.split(' ').includes(key);
+        c.style.display = show ? '' : 'none';
+        if (show) n++;
       });
-      btn.classList.add('bg-indigo-600', 'text-white');
-      btn.classList.remove('text-slate-400');
+      if (count) count.textContent = `${n} / ${cards.length}`;
+    }
 
-      // 卡片展示过滤
-      cards.forEach(card => {
-        const strat = card.getAttribute('data-strategy');
-        if (filter === 'all' || strat === filter) {
-          (card as HTMLElement).style.display = 'block';
-        } else {
-          (card as HTMLElement).style.display = 'none';
-        }
+    buttons.forEach((b) => {
+      b.addEventListener('click', () => {
+        buttons.forEach((x) => {
+          x.classList.remove('border-[#b23a2b]', 'bg-[#b23a2b]', 'text-[#fbf5e7]');
+          x.classList.add('border-slate-800', 'text-slate-400');
+        });
+        b.classList.remove('border-slate-800', 'text-slate-400');
+        b.classList.add('border-[#b23a2b]', 'bg-[#b23a2b]', 'text-[#fbf5e7]');
+        apply(b.dataset.filter || 'all');
       });
     });
-  });
-</script>
+    apply('all');
+  </script>
+</BaseLayout>

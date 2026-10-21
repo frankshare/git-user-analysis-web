@@ -1,0 +1,226 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAllUsers } from '../lib/data';
+const BASE = import.meta.env.BASE_URL;
+
+const users = getAllUsers();
+const num = (v: unknown) => (typeof v === 'number' ? v : parseInt(String(v ?? 0), 10) || 0);
+const CJK = '\u4e00-\u9fa5';
+const hasCjk = (s: string) => new RegExp('[' + CJK + ']').test(s || '');
+
+type Work = {
+  name: string;
+  url: string;
+  stars: number;
+  lang: string;
+  layer: string;
+  cat: string;
+  desc: string;
+  updated: string;
+  author: string;
+  authorName: string;
+  zh: boolean;
+};
+
+const works: Work[] = users
+  .flatMap((u) => {
+    const sample = (u.repos || []).filter((r) => !r.fork).slice(0, 20);
+    const zhRatio = sample.length
+      ? sample.filter((r) => hasCjk(r.description || '')).length / sample.length
+      : 0;
+    return (u.repos || [])
+      .filter((r) => !r.fork)
+      .map((r) => ({
+        name: r.name,
+        url: r.url,
+        stars: num(r.stars),
+        lang: r.language || '—',
+        layer: (r as any).layer || '',
+        cat: (r as any).category || '',
+        desc: r.description || '',
+        updated: (r.updated_at || '').slice(0, 10),
+        author: u.profile.login,
+        authorName: u.profile.name || u.profile.login,
+        zh: hasCjk(u.profile.name || '') || zhRatio >= 0.25,
+      }));
+  })
+  .sort((a, b) => b.stars - a.stars);
+
+const shown = works.slice(0, 150);
+const totalStars = works.reduce((a, w) => a + w.stars, 0);
+const skillCount = works.filter((w) => w.layer === 'skill').length;
+
+const fmt = (n: number) => n.toLocaleString('en-US');
+const kfmt = (n: number) =>
+  n >= 10000 ? `${(n / 10000).toFixed(1).replace('.0', '')}w` : fmt(n);
+---
+
+<BaseLayout title="卷二 · 作品 · 星册" active="works">
+  <section class="wrap pt-10 sm:pt-14">
+    <div class="flex flex-wrap items-end justify-between gap-6 border-b border-slate-800 pb-7">
+      <div>
+        <div class="mb-4 flex items-center gap-3">
+          <span class="seal">卷二 · 作品</span>
+          <span class="labelmono">{fmt(works.length)} 件 / 展示前 {shown.length}</span>
+        </div>
+        <h1 class="display text-[2.4rem] sm:text-[3.4rem]">
+          <span class="line-up"><span>他们造出来的东西</span></span>
+        </h1>
+        <p class="mt-4 max-w-xl text-[14.5px] leading-[1.85] text-slate-400">
+          同一批创作者的作品，合并成一张按星数排的清单。每条都标着作者——看到顺眼的，
+          顺着名字回去看那个人。
+        </p>
+      </div>
+      <dl class="grid grid-cols-3 gap-x-8 gap-y-3">
+        <div>
+          <dt class="labelmono">作品</dt>
+          <dd class="font-mono text-[22px] leading-tight">{fmt(works.length)}</dd>
+        </div>
+        <div>
+          <dt class="labelmono">Skills</dt>
+          <dd class="font-mono text-[22px] leading-tight">{fmt(skillCount)}</dd>
+        </div>
+        <div>
+          <dt class="labelmono">总星</dt>
+          <dd class="font-mono text-[22px] leading-tight">{kfmt(totalStars)}</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="wrap sticky top-14 z-10 bg-[#f2e9d6]/92 py-3 backdrop-blur-sm">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="labelmono mr-1">筛选</span>
+      {
+        [
+          ['all', '全部'],
+          ['skill', 'Skill 类'],
+          ['big', '千星以上'],
+          ['zh', '中文作者'],
+          ['new', '今年仍在更新'],
+        ].map(([k, l], i) => (
+          <button
+            type="button"
+            data-f={k}
+            class:list={[
+              'rounded-[2px] border px-2.5 py-1 text-[12.5px] transition-colors',
+              i === 0
+                ? 'border-[#b23a2b] bg-[#b23a2b] text-[#fbf5e7]'
+                : 'border-slate-800 text-slate-400 hover:border-slate-600 hover:text-slate-200',
+            ]}
+          >
+            {l}
+          </button>
+        ))
+      }
+      <input
+        id="q"
+        type="search"
+        placeholder="搜作品名 / 描述 / 作者…"
+        class="ml-auto w-full max-w-[240px] rounded-[2px] border border-slate-800 bg-[#fbf5e7] px-2.5 py-1 text-[12.5px] text-slate-200 placeholder:text-slate-600 focus:border-[#b23a2b] focus:outline-none"
+      />
+      <span class="font-mono text-[11px] text-slate-500" id="cnt"></span>
+      <span class="labelmono w-full text-[10px] sm:w-auto">中文作者 = 名称含中文，或前 20 个仓库中 ≥25% 描述为中文</span>
+    </div>
+  </section>
+
+  <section class="wrap mt-4">
+    <div class="hidden grid-cols-[40px_1fr_120px_90px_70px] gap-3 border-b border-slate-800 px-2 pb-2 sm:grid">
+      <span class="labelmono">序号</span>
+      <span class="labelmono">作品</span>
+      <span class="labelmono">作者</span>
+      <span class="labelmono text-right">星数</span>
+      <span class="labelmono text-right">更新</span>
+    </div>
+
+    <ol id="list" class="divide-y divide-slate-800/60">
+      {
+        shown.map((w, i) => (
+          <li
+            class="row group grid grid-cols-[32px_1fr] items-start gap-x-3 gap-y-1 px-2 py-3 transition-colors hover:bg-[#fbf5e7]/70 sm:grid-cols-[40px_1fr_120px_90px_70px] sm:items-center"
+            data-k={`${w.layer === 'skill' ? 'skill ' : ''}${w.stars >= 1000 ? 'big ' : ''}${w.zh ? 'zh ' : ''}${w.updated >= '2026-01-01' ? 'new' : ''}`}
+            data-s={`${w.name} ${w.desc} ${w.author} ${w.authorName}`.toLowerCase()}
+          >
+            <span class="font-mono text-[11px] text-slate-600 sm:text-[12px]">
+              {String(i + 1).padStart(3, '0')}
+            </span>
+
+            <div class="min-w-0">
+              <a
+                href={w.url}
+                target="_blank"
+                rel="noopener"
+                class="ulink font-mono text-[13px] font-medium text-slate-100"
+              >
+                {w.name}
+              </a>
+              {w.layer && (
+                <span class="ml-2 rounded-[2px] border border-slate-800 px-1 py-px font-mono text-[10px] text-slate-500">
+                  {w.layer}
+                </span>
+              )}
+              <p class="mt-0.5 line-clamp-1 text-[12px] leading-relaxed text-slate-500">
+                {w.desc || '—'}
+              </p>
+              <div class="mt-1 flex items-center gap-2 font-mono text-[10.5px] text-slate-600 sm:hidden">
+                <a href={`${BASE}u/${w.author}/`} class="text-slate-400">@{w.author}</a>
+                <span>★{kfmt(w.stars)}</span>
+                <span>{w.updated}</span>
+              </div>
+            </div>
+
+            <a
+              href={`${BASE}u/${w.author}/`}
+              class="hidden truncate font-mono text-[11.5px] text-slate-400 transition-colors hover:text-[#b23a2b] sm:block"
+            >
+              @{w.author}
+            </a>
+            <span class="hidden text-right font-mono text-[12px] text-slate-300 sm:block">
+              {kfmt(w.stars)}
+            </span>
+            <span class="hidden text-right font-mono text-[10.5px] text-slate-600 sm:block">
+              {w.updated.slice(2)}
+            </span>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <script>
+    const btns = document.querySelectorAll<HTMLButtonElement>('[data-f]');
+    const rows = Array.from(document.querySelectorAll<HTMLLIElement>('.row'));
+    const q = document.getElementById('q') as HTMLInputElement | null;
+    const cnt = document.getElementById('cnt');
+    let cur = 'all';
+
+    function run() {
+      const s = (q?.value || '').trim().toLowerCase();
+      let n = 0;
+      rows.forEach((r) => {
+        const keys = (r.dataset.k || '').split(' ');
+        const okF = cur === 'all' || keys.includes(cur);
+        const okQ = !s || (r.dataset.s || '').includes(s);
+        const show = okF && okQ;
+        r.style.display = show ? '' : 'none';
+        if (show) n++;
+      });
+      if (cnt) cnt.textContent = `${n} / ${rows.length}`;
+    }
+
+    btns.forEach((b) =>
+      b.addEventListener('click', () => {
+        btns.forEach((x) => {
+          x.classList.remove('border-[#b23a2b]', 'bg-[#b23a2b]', 'text-[#fbf5e7]');
+          x.classList.add('border-slate-800', 'text-slate-400');
+        });
+        b.classList.remove('border-slate-800', 'text-slate-400');
+        b.classList.add('border-[#b23a2b]', 'bg-[#b23a2b]', 'text-[#fbf5e7]');
+        cur = b.dataset.f || 'all';
+        run();
+      })
+    );
+    q?.addEventListener('input', run);
+    run();
+  </script>
+</BaseLayout>

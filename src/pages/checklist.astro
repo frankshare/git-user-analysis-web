@@ -92,34 +92,37 @@ const CHECKLIST = [
 ];
 ---
 
-<BaseLayout title="方法检查清单 · Git 用户分析" description="把 23 位创作者独立收敛出的方法，变成你可以逐条自查的行动清单">
-  <section class="py-6 border-b border-slate-800/80 mb-8">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-medium mb-4">
-      <span>可执行版 · {conv?.stats.users_analyzed ?? 0} 位创作者 · {conv?.stats.patterns_total ?? 0} 条 Patterns 的收敛结论</span>
-    </div>
-    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-4">
-      方法检查清单
-    </h1>
-    <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-3xl">
-      这不是我的建议清单，是 <strong class="text-slate-200">{conv?.stats.users_analyzed ?? 0} 位互不相识的创作者独立收敛出来的东西</strong>。
-      每一条下面都标了证据来自谁——你不同意可以驳，但请先看看有多少人用了不同手段得出同一个结论。
-    </p>
-    <div class="mt-5 flex items-center gap-3 flex-wrap text-sm">
-      <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800 text-slate-300">
-        共 <strong class="text-white font-mono">{CHECKLIST.reduce((n, c) => n + c.items.length, 0)}</strong> 条自查项
-      </span>
-      <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800 text-slate-300">
-        覆盖 <strong class="text-white font-mono">{CHECKLIST.length}</strong> 组收敛方法
-      </span>
-      <a href={`${BASE}convergence/`} class="text-xs text-emerald-400 hover:text-emerald-300 transition-colors">查看收敛簇证据 →</a>
+<BaseLayout title="方法检查清单 · Git 用户分析" description="把 23 位创作者独立收敛出的方法，变成你可以逐条自查的行动清单" active="research">
+  <section class="wrap pt-10 sm:pt-14">
+    <div class="border-b border-slate-800 pb-8">
+      <div class="mb-4 flex flex-wrap items-center gap-3">
+        <span class="seal">附录 · 清单</span>
+        <span class="labelmono">可执行版 · {conv?.stats.users_analyzed ?? 0} 位创作者的收敛结论</span>
+      </div>
+      <h1 class="display text-[2.2rem] sm:text-[3.1rem]">
+        <span class="line-up"><span>方法检查清单</span></span>
+      </h1>
+      <p class="mt-4 max-w-2xl text-[14.5px] leading-[1.85] text-slate-400">
+        这不是我的建议清单，是 <strong class="text-slate-200">{conv?.stats.users_analyzed ?? 0} 位互不相识的创作者独立收敛出来的东西</strong>。每一条下面都标了证据来自谁——你不同意可以驳，但请先看看有多少人用了不同手段得出同一个结论。
+      </p>
+      <div class="mt-5 flex flex-wrap items-center gap-3 text-sm">
+        <span class="rounded-[2px] border border-slate-800 bg-slate-900/60 px-3 py-1.5 text-slate-300">
+          共 <strong class="font-mono text-white">{CHECKLIST.reduce((n, c) => n + c.items.length, 0)}</strong> 条自查项
+        </span>
+        <span class="rounded-[2px] border border-slate-800 bg-slate-900/60 px-3 py-1.5 text-slate-300">
+          覆盖 <strong class="font-mono text-white">{CHECKLIST.length}</strong> 组收敛方法
+        </span>
+        <a href={`${BASE}convergence/`} class="ulink text-xs text-emerald-400">查看收敛簇证据 →</a>
+      </div>
     </div>
   </section>
 
-  <section class="space-y-6">
+
+  <section class="wrap space-y-6">
     {CHECKLIST.map((c, ci) => {
       const cluster = conv?.clusters.find(x => x.id === c.cluster);
       return (
-        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden">
+        <div class="bg-slate-900/60 border border-slate-800 rounded-[3px] overflow-hidden">
           <div class="p-6 border-b border-slate-800/70">
             <div class="flex items-start gap-3 mb-2">
               <span class="font-mono text-xs text-sky-500/70 pt-1 shrink-0">{c.cluster}</span>
@@ -128,7 +131,7 @@ const CHECKLIST = [
                 <p class="text-sm text-slate-300 mt-2 leading-relaxed">{c.why}</p>
               </div>
               {cluster && (
-                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-sky-500/10 text-sky-400 border border-sky-500/20 shrink-0">
+                <span class="px-2.5 py-0.5 rounded-[2px] text-xs font-medium bg-sky-500/10 text-sky-400 border border-sky-500/20 shrink-0">
                   {cluster.coverage} 位作者
                 </span>
               )}
@@ -165,8 +168,8 @@ const CHECKLIST = [
   </section>
 
   <!-- 使用方式 -->
-  <section class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6">
+  <section class="wrap mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="bg-slate-900/40 border border-slate-800/60 rounded-[3px] p-6">
       <h2 class="text-base font-bold text-white mb-3">怎么用这份清单</h2>
       <ol class="space-y-2.5 text-sm text-slate-400 list-decimal list-inside">
         <li>先只做 <strong class="text-slate-200">C1</strong>——它的一栏是「门」，任何 skill 缺了门，其他五条都撑不住。</li>
@@ -176,7 +179,7 @@ const CHECKLIST = [
       </ol>
     </div>
 
-    <div class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6">
+    <div class="bg-slate-900/40 border border-slate-800/60 rounded-[3px] p-6">
       <h2 class="text-base font-bold text-white mb-3">关于本站这份清单的可信度</h2>
       <ul class="space-y-2 text-sm text-slate-400">
         <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>收敛不是算法判定，是关键词匹配 + 人工核对。换一个归类者可能有不同结果。</li>

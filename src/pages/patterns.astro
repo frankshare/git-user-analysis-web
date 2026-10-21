@@ -18,45 +18,47 @@ for (const p of patterns) {
 }
 ---
 
-<BaseLayout title="可复用方法模式库 · Git 用户分析" description="经过三重验证的跨域可复用工程方法论">
-  <!-- Hero -->
-  <section class="py-6 border-b border-slate-800/80 mb-8">
-    <div class="max-w-3xl">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-medium mb-4">
-        <span>三重验证 · 跨域复现 · 生成力 · 排他性</span>
+<BaseLayout title="可复用方法模式库 · Git 用户分析" description="经过三重验证的跨域可复用工程方法论" active="research">
+  <section class="wrap pt-10 sm:pt-14">
+    <div class="border-b border-slate-800 pb-8">
+      <div class="mb-4 flex flex-wrap items-center gap-3">
+        <span class="seal">附录 · 模式库</span>
+        <span class="labelmono">三重验证 · 跨域复现 · 生成力 · 排他性</span>
       </div>
-      <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-4">
-        可复用的工程方法模式库
+      <h1 class="display text-[2.2rem] sm:text-[3.1rem]">
+        <span class="line-up"><span>可复用的工程方法模式库</span></span>
       </h1>
-      <p class="text-slate-400 text-base sm:text-lg leading-relaxed">
+      <p class="mt-4 max-w-2xl text-[14.5px] leading-[1.85] text-slate-400">
         一个技巧只在一个仓库出现过，那只是偏好。在 ≥3 个不同领域复现、能指导新任务、且不是所有人都在做的，才配叫方法。
       </p>
     </div>
+  </section>
 
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
-      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4">
+  <section class="wrap mt-6">
+    <div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <div class="rounded-[2px] border border-slate-800 bg-slate-900/60 p-4">
         <div class="text-xs text-slate-400 font-medium">Patterns 总数</div>
-        <div class="text-2xl sm:text-3xl font-bold text-white mt-1 font-mono">{patterns.length}</div>
+        <div class="mt-1 font-mono text-2xl font-bold text-white sm:text-3xl">{patterns.length}</div>
       </div>
-      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4">
+      <div class="rounded-[2px] border border-slate-800 bg-slate-900/60 p-4">
         <div class="text-xs text-slate-400 font-medium">方法（method）</div>
-        <div class="text-2xl sm:text-3xl font-bold text-indigo-400 mt-1 font-mono">{methods.length}</div>
-        <div class="text-xs text-slate-500 mt-1">全三关通过</div>
+        <div class="mt-1 font-mono text-2xl font-bold text-indigo-400 sm:text-3xl">{methods.length}</div>
+        <div class="mt-1 text-xs text-slate-500">全三关通过</div>
       </div>
-      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4">
+      <div class="rounded-[2px] border border-slate-800 bg-slate-900/60 p-4">
         <div class="text-xs text-slate-400 font-medium">技巧（technique）</div>
-        <div class="text-2xl sm:text-3xl font-bold text-slate-400 mt-1 font-mono">{techniques.length}</div>
-        <div class="text-xs text-slate-500 mt-1">局部有效</div>
+        <div class="mt-1 font-mono text-2xl font-bold text-slate-400 sm:text-3xl">{techniques.length}</div>
+        <div class="mt-1 text-xs text-slate-500">局部有效</div>
       </div>
-      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4">
+      <div class="rounded-[2px] border border-slate-800 bg-slate-900/60 p-4">
         <div class="text-xs text-slate-400 font-medium">来源作者</div>
-        <div class="text-2xl sm:text-3xl font-bold text-emerald-400 mt-1 font-mono">{users.length}</div>
+        <div class="mt-1 font-mono text-2xl font-bold text-emerald-400 sm:text-3xl">{users.length}</div>
       </div>
     </div>
   </section>
 
   <!-- 按作者分组的 Patterns -->
-  <section class="space-y-10">
+  <section class="wrap mt-10 space-y-10">
     {users.map(u => {
       const list = byUser.get(u.profile.login) || [];
       if (list.length === 0) return null;
@@ -67,7 +69,7 @@ for (const p of patterns) {
               {u.profile.name}
             </a>
             <span class="font-mono text-sm text-slate-500">@{u.profile.login}</span>
-            <span class={`px-2 py-0.5 rounded-full text-[10px] ${
+            <span class={`px-2 py-0.5 rounded-[2px] text-[10px] ${
               u.profile.strategy === 'depth'
                 ? 'bg-blue-500/10 text-blue-400 border border-blue-500/20'
                 : 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20'
@@ -79,7 +81,7 @@ for (const p of patterns) {
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             {list.map(p => (
-              <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition-colors flex flex-col">
+              <div class="bg-slate-900/60 border border-slate-800 rounded-[2px] p-5 hover:border-slate-700 transition-colors flex flex-col">
                 <div class="flex items-start justify-between gap-3 mb-2">
                   <h3 class="font-bold text-white text-sm leading-snug">{p.name}</h3>
                   <span class={`px-2 py-0.5 rounded text-[10px] font-medium shrink-0 ${
@@ -110,22 +112,22 @@ for (const p of patterns) {
   </section>
 
   <!-- 验证方法说明 -->
-  <section class="mt-12 bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6 sm:p-8">
+  <section class="mt-12 bg-slate-900/40 border border-slate-800/60 rounded-[3px] p-6 sm:p-8">
     <h2 class="text-lg font-bold text-white mb-4">三重验证是怎么做的</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-sm">
-      <div class="bg-slate-950/40 p-4 rounded-xl border border-slate-800/50">
+      <div class="bg-slate-950/40 p-4 rounded-[2px] border border-slate-800/50">
         <div class="font-bold text-indigo-400 mb-1.5">1 · 跨域复现</div>
         <p class="text-slate-400 leading-relaxed">
           是否在 ≥3 个不同仓库或不同领域出现过？方法要跨域，技巧只要 1–2 处。
         </p>
       </div>
-      <div class="bg-slate-950/40 p-4 rounded-xl border border-slate-800/50">
+      <div class="bg-slate-950/40 p-4 rounded-[2px] border border-slate-800/50">
         <div class="font-bold text-emerald-400 mb-1.5">2 · 生成力</div>
         <p class="text-slate-400 leading-relaxed">
           能不能指导一个我还没见过的新任务？只能复述旧案例的，降级为技巧。
         </p>
       </div>
-      <div class="bg-slate-950/40 p-4 rounded-xl border border-slate-800/50">
+      <div class="bg-slate-950/40 p-4 rounded-[2px] border border-slate-800/50">
         <div class="font-bold text-amber-400 mb-1.5">3 · 排他性</div>
         <p class="text-slate-400 leading-relaxed">
           是不是所有聪明人都这么做？是的话就不值得收录，直接丢弃。

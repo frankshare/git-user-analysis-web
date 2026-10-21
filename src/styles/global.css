@@ -1,1 +1,368 @@
 @import "tailwindcss";
+
+/* =========================================================
+   星册 · 档案馆视觉系统
+   纸（暖米）+ 墨（近黑）+ 朱红印章，唯一强调色
+   ========================================================= */
+
+@theme {
+  /* —— 纸与墨：覆盖 slate 命名，令既有页面自动落到新配色 —— */
+  --color-slate-950: #f2e9d6; /* 纸底 */
+  --color-slate-900: #fbf5e7; /* 卡面 */
+  --color-slate-800: #e2d5b8; /* 细线 */
+  --color-slate-700: #cdbe9d;
+  --color-slate-600: #ab9d81;
+  --color-slate-500: #8b7e66;
+  --color-slate-400: #6f6453;
+  --color-slate-300: #4d463a;
+  --color-slate-200: #322d25;
+  --color-slate-100: #221f19;
+  --color-white: #17140f; /* 标题墨色 */
+
+  /* —— 强调色：全部收进「旧印刷」色域 —— */
+  --color-indigo-300: #6d8098;
+  --color-indigo-400: #3f5a72;
+  --color-indigo-500: #34506b;
+  --color-indigo-600: #2a4257;
+  --color-emerald-300: #65825f;
+  --color-emerald-400: #4a7250;
+  --color-emerald-500: #3c5f43;
+  --color-sky-300: #6f93a2;
+  --color-sky-400: #4a7488;
+  --color-sky-500: #3c6377;
+  --color-amber-200: #d3a86a;
+  --color-amber-300: #c08a3e;
+  --color-amber-400: #a9722a;
+  --color-amber-500: #8c5c20;
+  --color-violet-200: #8b6b7d;
+  --color-violet-300: #7a5668;
+  --color-violet-400: #6d4a5c;
+  --color-violet-500: #5a3b4a;
+  --color-purple-400: #6d4a5c;
+  --color-purple-500: #5a3b4a;
+  --color-purple-600: #4a2f3c;
+  --color-rose-400: #b8483a;
+  --color-rose-500: #a33325;
+
+  /* —— 语义色 —— */
+  --color-paper: #f2e9d6;
+  --color-paper-2: #fbf5e7;
+  --color-ink: #17140f;
+  --color-ink-soft: #4d463a;
+  --color-seal: #b23a2b;
+  --color-rule: #e2d5b8;
+
+  --font-display: "Fraunces", "Songti SC", "STSong", "SimSun", "Noto Serif SC", Georgia, serif;
+  --font-body: "IBM Plex Sans", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "Cascadia Mono", Consolas, monospace;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    /* 纸：顶部受光 + 极淡横线（账本纸） */
+    background-image:
+      radial-gradient(1100px 520px at 50% -8%, #fffaef 0%, rgba(255, 250, 239, 0) 62%),
+      repeating-linear-gradient(
+        0deg,
+        rgba(23, 20, 15, 0.032) 0 1px,
+        rgba(23, 20, 15, 0) 1px 30px
+      );
+    background-attachment: fixed, fixed;
+  }
+
+  /* 纸纹颗粒 */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.32;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.42'/%3E%3C/svg%3E");
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.012em;
+  }
+
+  ::selection {
+    background: var(--color-seal);
+    color: #fbf5e7;
+  }
+
+  /* 细滚动条，墨色 */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #d8c9a9;
+    border-radius: 99px;
+    border: 3px solid var(--color-paper);
+  }
+}
+
+@layer components {
+  /* 版心 */
+  .wrap {
+    width: 100%;
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 640px) {
+    .wrap {
+      padding-inline: 2rem;
+    }
+  }
+
+  /* 大标题：印刷品般的紧排 */
+  .display {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 0.98;
+    letter-spacing: -0.025em;
+  }
+
+  /* 等宽小标签：档案编号感 */
+  .labelmono {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-slate-500);
+  }
+
+  /* 朱红印章 */
+  .seal {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    color: var(--color-seal);
+    border: 1.5px solid var(--color-seal);
+    border-radius: 3px;
+    padding: 0.18rem 0.4rem;
+    transform: rotate(-4deg);
+    box-shadow: inset 0 0 0 1px rgba(178, 58, 43, 0.35);
+    background: rgba(178, 58, 43, 0.04);
+  }
+
+  /* 档案卡 */
+  .card {
+    position: relative;
+    display: block;
+    background: var(--color-paper-2);
+    border: 1px solid var(--color-rule);
+    border-radius: 4px;
+    padding: 1.15rem 1.15rem 1rem 1.45rem;
+    transition:
+      transform 0.42s cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 0.42s cubic-bezier(0.16, 1, 0.3, 1),
+      border-color 0.3s ease;
+    box-shadow: 0 1px 0 rgba(23, 20, 15, 0.04);
+    overflow: hidden;
+  }
+  /* 左侧打孔 */
+  .card::before {
+    content: "";
+    position: absolute;
+    left: 0.62rem;
+    top: 1.45rem;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid #d5c6a6;
+    background: var(--color-paper);
+    box-shadow: inset 0 1px 1px rgba(23, 20, 15, 0.14);
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    border-color: #cfbd97;
+    box-shadow:
+      0 18px 34px -18px rgba(23, 20, 15, 0.3),
+      0 2px 0 rgba(23, 20, 15, 0.05);
+  }
+
+  /* 卡片 hover 时盖下的印章 */
+  .card .stamp {
+    position: absolute;
+    right: 0.95rem;
+    bottom: 0.9rem;
+    font-family: var(--font-mono);
+    font-size: 0.58rem;
+    letter-spacing: 0.16em;
+    color: var(--color-seal);
+    border: 1.5px solid var(--color-seal);
+    border-radius: 3px;
+    padding: 0.14rem 0.36rem;
+    opacity: 0;
+    transform: rotate(-9deg) scale(1.35);
+    transition:
+      opacity 0.26s ease,
+      transform 0.34s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+  }
+  .card:hover .stamp {
+    opacity: 0.92;
+    transform: rotate(-9deg) scale(1);
+  }
+
+  /* 黑白头像 -> hover 复原 */
+  .portrait {
+    filter: grayscale(1) contrast(1.06);
+    transition:
+      filter 0.5s ease,
+      transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid #d8c9a9;
+  }
+  .card:hover .portrait {
+    filter: grayscale(0) contrast(1);
+    transform: scale(1.04);
+  }
+
+  /* 下划线强调 */
+  .ulink {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: #c9b895;
+    transition:
+      text-decoration-color 0.25s ease,
+      color 0.25s ease;
+  }
+  .ulink:hover {
+    color: var(--color-seal);
+    text-decoration-color: var(--color-seal);
+  }
+
+  /* 章节标题前的小方块 */
+  .tick::before {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0.55rem;
+    background: var(--color-seal);
+    transform: translateY(-1px);
+  }
+
+  /* 划线纸表格 */
+  .ledger {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .ledger th {
+    font-family: var(--font-mono);
+    font-size: 0.66rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-slate-500);
+    text-align: left;
+    padding: 0.5rem 0.6rem;
+    border-bottom: 1px solid var(--color-rule);
+    font-weight: 400;
+  }
+  .ledger td {
+    padding: 0.6rem;
+    border-bottom: 1px solid rgba(226, 213, 184, 0.6);
+    vertical-align: top;
+  }
+  .ledger tr:hover td {
+    background: rgba(255, 250, 239, 0.75);
+  }
+
+  /* 入场动画 */
+  .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  .reveal.in {
+    animation: rise 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  @keyframes rise {
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* 首屏：印章落下 */
+  .seal-drop {
+    animation: sealdrop 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+  }
+  @keyframes sealdrop {
+    0% {
+      opacity: 0;
+      transform: rotate(-4deg) scale(2.1);
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(-4deg) scale(1);
+    }
+  }
+
+  /* 大标题分行上浮 */
+  .line-up {
+    display: block;
+    overflow: hidden;
+  }
+  .line-up > span {
+    display: block;
+    animation: lineup 0.95s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  @keyframes lineup {
+    from {
+      transform: translateY(108%);
+    }
+    to {
+      transform: none;
+    }
+  }
+
+  /* 细横线（账本） */
+  .rule {
+    height: 1px;
+    background: linear-gradient(90deg, var(--color-rule), rgba(226, 213, 184, 0.15));
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal.in,
+    .seal-drop,
+    .line-up > span {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    .card,
+    .portrait {
+      transition: none !important;
+    }
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}

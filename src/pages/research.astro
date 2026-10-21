@@ -1,0 +1,99 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const BASE = import.meta.env.BASE_URL;
+
+const items = [
+  {
+    href: `${BASE}convergence/`,
+    no: '01',
+    title: '方法收敛簇',
+    sub: 'C1–C7',
+    desc: '29 位互不相识的创作者，反复撞上同样的 7 堵墙。每一簇都有跨作者证据。',
+    tag: '这张最像「结论」',
+  },
+  {
+    href: `${BASE}checklist/`,
+    no: '02',
+    title: '自查清单',
+    sub: '29 条',
+    desc: '把方法收敛簇压成可勾选的条目，每条标出来源作者，能直接拿去改自己的 skill。',
+    tag: '最实用',
+  },
+  {
+    href: `${BASE}patterns/`,
+    no: '03',
+    title: '方法模式库',
+    sub: '157 条',
+    desc: '全部 Patterns 的可检索版本：三重验证（跨域复现 / 生成力 / 排他性）通过才收。',
+    tag: '检索用',
+  },
+  {
+    href: `${BASE}format/`,
+    no: '04',
+    title: 'SKILL.md 格式实测',
+    sub: '219 仓',
+    desc: 'SKILL.md 的字段采用率，以及 description 到底怎么写——187 个真实文件抽样的统计。',
+    tag: '最硬的数据',
+  },
+  {
+    href: `${BASE}platforms/`,
+    no: '05',
+    title: '平台方供给',
+    sub: '3 家',
+    desc: 'Anthropic / MCP / ShareAI Lab：官方与准官方在供给什么样的 skill，和个人的差别在哪。',
+    tag: '另一种视角',
+  },
+];
+---
+
+<BaseLayout
+  title="附录 · 研究 · 星册"
+  active="research"
+  note="这一栏是拆解过程中的副产品，不是收录本身。想看人和作品，回「人物」或「作品」。"
+>
+  <section class="wrap pt-10 sm:pt-14">
+    <div class="max-w-2xl border-b border-slate-800 pb-8">
+      <div class="mb-4 flex items-center gap-3">
+        <span class="seal">附录 · 研究</span>
+        <span class="labelmono">5 份</span>
+      </div>
+      <h1 class="display text-[2.4rem] sm:text-[3.4rem]">
+        <span class="line-up"><span>拆解时的草稿</span></span>
+      </h1>
+      <p class="mt-4 text-[14.5px] leading-[1.85] text-slate-400">
+        这些页不是给访客看门面的，是我在做收录时攒下来的工作稿：为什么判断某个方法是「方法」，
+        凭什么说 SKILL.md 已经格式趋同。想核对数字或质疑结论，都从这里进。
+      </p>
+    </div>
+  </section>
+
+  <section class="wrap mt-6 grid gap-3 sm:grid-cols-2">
+    {
+      items.map((it) => (
+        <a href={it.href} class="card reveal group">
+          <div class="flex items-start justify-between gap-3">
+            <div class="flex items-baseline gap-2.5">
+              <span class="font-mono text-[11px] text-slate-600">{it.no}</span>
+              <h2 class="font-display text-[20px] font-semibold leading-tight">{it.title}</h2>
+              <span class="font-mono text-[11px] text-[#b23a2b]">{it.sub}</span>
+            </div>
+            <span class="shrink-0 font-mono text-xs text-slate-600 transition-transform duration-300 group-hover:translate-x-1">
+              →
+            </span>
+          </div>
+          <p class="mt-2 text-[13px] leading-[1.75] text-slate-400">{it.desc}</p>
+          <div class="mt-3 font-mono text-[10.5px] text-slate-600">{it.tag}</div>
+          <span class="stamp">待阅</span>
+        </a>
+      ))
+    }
+  </section>
+
+  <section class="wrap mt-10 border-t border-slate-800 pt-6">
+    <p class="max-w-2xl text-[12.5px] leading-[1.9] text-slate-500">
+      提醒：这一栏里的比例都是<strong class="text-slate-300">抽样</strong>结果（格式研究 85/219 仓、187 个 SKILL.md，
+      单仓上限 6 个），句式统计用正则匹配，属于<strong class="text-slate-300">下界</strong>。
+      当成方向看可以，当成精确统计不行。
+    </p>
+  </section>
+</BaseLayout>
