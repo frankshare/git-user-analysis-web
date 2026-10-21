@@ -1,0 +1,182 @@
+{
+ "schema_version": "1.0",
+ "snapshot": {
+  "date": "2026-10-22",
+  "method": "git/trees 定位 SKILL.md → git/blobs 取原文 → 解析 YAML frontmatter 的 description"
+ },
+ "sample": {
+  "candidate_repos": 219,
+  "filtered_repos": 85,
+  "repos_with_skill_md": 72,
+  "skill_md": 187,
+  "with_description": 184,
+  "en": 129,
+  "zh": 55,
+  "cap_per_repo": 6,
+  "filter_rule": [
+   "A: 总星 >= 2000",
+   "B: 近 120 天更新 且 >= 200 星",
+   "C: layer == flagship"
+  ]
+ },
+ "length": {
+  "median": 250.0,
+  "mean": 298,
+  "max": 1018,
+  "en_median": 282,
+  "zh_median": 163,
+  "over_320": 62
+ },
+ "en": {
+  "with_trigger": 87,
+  "two_part": 52,
+  "trigger_first": 14,
+  "no_when_clause": 38,
+  "explicit_triggers_field": 12,
+  "with_trigger_narrow_when": 87,
+  "with_trigger_broad": 102
+ },
+ "zh": {
+  "with_trigger": 28,
+  "two_part": 27,
+  "trigger_first": 1,
+  "corner_bracket_list": 22,
+  "no_trigger_words": 21
+ },
+ "by_author": [
+  {
+   "login": "alchaincyf",
+   "samples": 42,
+   "with_trigger": 27,
+   "rate": 64
+  },
+  {
+   "login": "yaojingang",
+   "samples": 21,
+   "with_trigger": 13,
+   "rate": 62
+  },
+  {
+   "login": "addyosmani",
+   "samples": 19,
+   "with_trigger": 12,
+   "rate": 63
+  },
+  {
+   "login": "alirezarezvani",
+   "samples": 12,
+   "with_trigger": 12,
+   "rate": 100
+  },
+  {
+   "login": "antfu",
+   "samples": 12,
+   "with_trigger": 7,
+   "rate": 58
+  },
+  {
+   "login": "op7418",
+   "samples": 9,
+   "with_trigger": 5,
+   "rate": 56
+  },
+  {
+   "login": "coleam00",
+   "samples": 7,
+   "with_trigger": 7,
+   "rate": 100
+  },
+  {
+   "login": "affaan-m",
+   "samples": 6,
+   "with_trigger": 6,
+   "rate": 100
+  },
+  {
+   "login": "lijigang",
+   "samples": 6,
+   "with_trigger": 3,
+   "rate": 50
+  },
+  {
+   "login": "mcncarl",
+   "samples": 6,
+   "with_trigger": 2,
+   "rate": 33
+  },
+  {
+   "login": "numman-ali",
+   "samples": 6,
+   "with_trigger": 4,
+   "rate": 67
+  },
+  {
+   "login": "obra",
+   "samples": 6,
+   "with_trigger": 5,
+   "rate": 83
+  },
+  {
+   "login": "sickn33",
+   "samples": 6,
+   "with_trigger": 0,
+   "rate": 0
+  },
+  {
+   "login": "steipete",
+   "samples": 6,
+   "with_trigger": 0,
+   "rate": 0
+  },
+  {
+   "login": "wshobson",
+   "samples": 6,
+   "with_trigger": 6,
+   "rate": 100
+  },
+  {
+   "login": "yan5xu",
+   "samples": 6,
+   "with_trigger": 5,
+   "rate": 83
+  },
+  {
+   "login": "yanhua1010",
+   "samples": 6,
+   "with_trigger": 0,
+   "rate": 0
+  },
+  {
+   "login": "mvanhorn",
+   "samples": 1,
+   "with_trigger": 0,
+   "rate": 0
+  },
+  {
+   "login": "yetone",
+   "samples": 1,
+   "with_trigger": 1,
+   "rate": 100
+  }
+ ],
+ "findings": {
+  "structure": "趋同的不是句式开头，而是结构：能力陈述句 + 触发条件",
+  "en_rate": "英文 67% 含严格 when 触发从句（87/129）；若把「Use … for/to」也算上为 79%（102/129）。两段式 40%，句首 Use when 仅 11%",
+  "zh_rate": "中文 51% 含触发表述；两段式 49%，句首「当」仅 2%",
+  "zh_marker": "中文 40% 用「」列举触发短语，是中文圈独有标记",
+  "length": "中位 250 字符，34% 超过 320 字符 —— description 已从「简短描述」变成「触发条件清单」",
+  "cross_author": "19 位创作者中 14 位过半使用（≥50%），4 位 100%，4 位 0%；全样本触发句合计 115/184"
+ },
+ "interpretation": {
+  "claim": "description 的两段式写法（能力陈述 + 触发条件）是跨语言、跨作者的社区自发惯例，性质不同于「平台定义的格式」",
+  "caveats": [
+   "抽样：219→85 仓，单仓上限 6 个，非全量",
+   "语言判定为中英文字符占比启发式",
+   "句式统计为正则匹配，40%/49% 是下界",
+   "相关性非因果，未做 A/B",
+   "仅看 description，未含 name 命名规律"
+  ],
+  "boundary_ratio": "两段式占比是下界：写成「Use when… 也用于…」的形态未被计入"
+ },
+ "definition_note": "触发句口径：严格=含 when/whenever 从句或 when the user；宽=再加上 Use ... for/to 这类用途引导。两者都在数据里给出。"
+}

@@ -88,15 +88,21 @@ export interface UserSnapshot {
 export function getAllUsers(): UserSnapshot[] {
   const dataDir = path.resolve('src/data');
   if (!fs.existsSync(dataDir)) return [];
-  // 非用户数据集：收敛簇数据、格式采用率研究
-  const NON_USER = new Set(['convergence.json', 'format-adoption.json']);
+  // 非用户数据集：收敛簇、格式采用率、写法研究等
+  const NON_USER = new Set(['convergence.json', 'format-adoption.json', 'desc-style.json', 'skill-descriptions.json']);
   const files = fs.readdirSync(dataDir)
     .filter(f => f.endsWith('.json'))
     .filter(f => !NON_USER.has(f));
-  return files.map(file => {
-    const raw = fs.readFileSync(path.join(dataDir, file), 'utf-8');
-    return JSON.parse(raw) as UserSnapshot;
-  });
+  // 双保险：只接受带 profile 字段的才是用户快照
+  return files
+    .map(file => {
+      try {
+        return JSON.parse(fs.readFileSync(path.join(dataDir, file), 'utf-8')) as UserSnapshot;
+      } catch {
+        return null;
+      }
+    })
+    .filter((x): x is UserSnapshot => !!x && !!(x as any).profile && !!(x as any).stats);
 }
 
 export function getUserByLogin(login: string): UserSnapshot | undefined {

@@ -6,6 +6,11 @@ import path from 'node:path';
 const file = path.resolve('src/data/format-adoption.json');
 const data = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf-8')) : null;
 
+// 写法趋同（第三类发现）：description 内部结构
+const styleFile = path.resolve('src/data/desc-style.json');
+const style = fs.existsSync(styleFile) ? JSON.parse(fs.readFileSync(styleFile, 'utf-8')) : null;
+const pct = (a: number, b: number) => (b ? Math.round((a / b) * 100) : 0);
+
 const verified = data?.verified || [];
 const canonical = verified.filter((v: any) => v.canonical);
 const extended = verified.filter((v: any) => v.extended);
@@ -206,4 +211,152 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
       </section>
     </>
   )}
+
+      {/* ===== 第三类发现：写法趋同 ===== */}
+      {style && (
+        <section class="mt-14 pt-10 border-t border-slate-800">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-300 text-xs font-medium mb-4">
+            <span>第三类发现 · 字段之内的写法</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mb-4">
+            写法趋同：<code class="font-mono text-xl">description</code> 已经变成「触发条件清单」
+          </h2>
+          <p class="text-slate-400 leading-relaxed max-w-3xl mb-8">
+            上一节证明的是<strong class="text-slate-200">字段</strong>趋同。这一节往下再挖一层：
+            字段里面的字<strong class="text-slate-200">怎么写</strong>，是否也趋同？
+            官方规范只说「写个 description」，没说怎么写——但 {style.sample.skill_md} 个真实 SKILL.md
+            （{style.sample.repos_with_skill_md} 个仓、{style.by_author.length} 位创作者）里，
+            绝大多数人<strong class="text-violet-300">自发写成了同一种两段式</strong>。
+          </p>
+
+          <div class="bg-violet-500/5 border border-violet-500/20 rounded-2xl p-6 sm:p-8 mb-8">
+            <p class="text-sm text-slate-400 mb-3">主流结构（不是句首 Use when，而是「先陈述、后触发」）</p>
+            <pre class="font-mono text-xs sm:text-sm text-violet-200 bg-slate-950/60 rounded-xl p-4 overflow-x-auto whitespace-pre-wrap">能力陈述句。Use when 场景A。Use when 场景B。
+能力陈述。…… 当用户提到「短语1」「短语2」时使用。</pre>
+            <p class="text-xs text-slate-500 mt-3 leading-relaxed">
+              这不是平台规定的，是社区自己长出来的写法惯例——<strong class="text-slate-300">格式给了空位，社区把空位填成了同一个形状。</strong>
+            </p>
+          </div>
+
+          <section class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+            <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+              <div class="text-xs text-slate-400 font-medium">采集 SKILL.md</div>
+              <div class="text-2xl sm:text-3xl font-bold text-white mt-1 font-mono">{style.sample.skill_md}</div>
+              <div class="text-xs text-slate-500 mt-1">{style.sample.repos_with_skill_md} 仓 · 上限 6/仓</div>
+            </div>
+            <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+              <div class="text-xs text-slate-400 font-medium">英文含触发句</div>
+              <div class="text-2xl sm:text-3xl font-bold text-violet-400 mt-1 font-mono">{pct(style.en.with_trigger, style.sample.en)}%</div>
+              <div class="text-xs text-slate-500 mt-1">{style.en.with_trigger}/{style.sample.en} 条</div>
+            </div>
+            <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+              <div class="text-xs text-slate-400 font-medium">中文含触发表述</div>
+              <div class="text-2xl sm:text-3xl font-bold text-violet-400 mt-1 font-mono">{pct(style.zh.with_trigger, style.sample.zh)}%</div>
+              <div class="text-xs text-slate-500 mt-1">{style.zh.with_trigger}/{style.sample.zh} 条</div>
+            </div>
+            <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+              <div class="text-xs text-slate-400 font-medium">description 中位数</div>
+              <div class="text-2xl sm:text-3xl font-bold text-white mt-1 font-mono">{style.length.median}</div>
+              <div class="text-xs text-slate-500 mt-1">字符 · 34% 超 320</div>
+            </div>
+          </section>
+
+          <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6">
+              <h3 class="text-base font-bold text-white mb-4">中英两圈，同一结构，不同标记</h3>
+              <table class="w-full text-sm">
+                <thead>
+                  <tr class="text-xs text-slate-500 border-b border-slate-800">
+                    <th class="text-left py-2 font-medium">特征</th>
+                    <th class="text-right py-2 font-medium">英文</th>
+                    <th class="text-right py-2 font-medium">中文</th>
+                  </tr>
+                </thead>
+                <tbody class="text-slate-300">
+                  <tr class="border-b border-slate-800/60">
+                    <td class="py-2">两段式（能力 + 触发）</td>
+                    <td class="py-2 text-right font-mono text-violet-300">{pct(style.en.two_part, style.sample.en)}%</td>
+                    <td class="py-2 text-right font-mono text-violet-300">{pct(style.zh.two_part, style.sample.zh)}%</td>
+                  </tr>
+                  <tr class="border-b border-slate-800/60">
+                    <td class="py-2">触发句放句首</td>
+                    <td class="py-2 text-right font-mono">{pct(style.en.trigger_first, style.sample.en)}%</td>
+                    <td class="py-2 text-right font-mono">{pct(style.zh.trigger_first, style.sample.zh)}%</td>
+                  </tr>
+                  <tr class="border-b border-slate-800/60">
+                    <td class="py-2">完全没有触发表述</td>
+                    <td class="py-2 text-right font-mono">{pct(style.en.no_when_clause, style.sample.en)}%</td>
+                    <td class="py-2 text-right font-mono">{pct(style.zh.no_trigger_words, style.sample.zh)}%</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2">用「」列举触发短语</td>
+                    <td class="py-2 text-right font-mono text-slate-500">—</td>
+                    <td class="py-2 text-right font-mono text-violet-300">{pct(style.zh.corner_bracket_list, style.sample.zh)}%</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="text-xs text-slate-500 mt-4 leading-relaxed">
+                中文圈几乎不把触发句放句首（{style.zh.trigger_first}/{style.sample.zh}），
+                而是先讲清能干什么，最后一句列「」。{pct(style.zh.corner_bracket_list, style.sample.zh)}% 用「」当检索标记——这是中文圈独有的。
+              </p>
+            </div>
+
+            <div class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6">
+              <h3 class="text-base font-bold text-white mb-4">跨作者：{style.by_author.filter((a) => a.rate >= 50).length} 位过半使用</h3>
+              <div class="space-y-1.5 max-h-80 overflow-y-auto pr-1">
+                {style.by_author.map((a: any) => (
+                  <div class="flex items-center gap-2 text-xs">
+                    <span class="w-28 shrink-0 text-slate-400 font-mono truncate">{a.login}</span>
+                    <div class="flex-1 h-1.5 bg-slate-800 rounded-full overflow-hidden">
+                      <div class={`h-full rounded-full ${a.rate >= 80 ? 'bg-violet-400' : a.rate >= 50 ? 'bg-violet-500/70' : a.rate > 0 ? 'bg-slate-500' : 'bg-rose-500/60'}`} style={`width:${Math.max(a.rate, 2)}%`}></div>
+                    </div>
+                    <span class="w-12 text-right font-mono text-slate-400">{a.rate}%</span>
+                    <span class="w-10 text-right font-mono text-slate-600">{a.with_trigger}/{a.samples}</span>
+                  </div>
+                ))}
+              </div>
+              <p class="text-xs text-slate-500 mt-4 leading-relaxed">
+                <strong class="text-slate-300">反例同样重要</strong>：sickn33、steipete、yanhua1010 是 0%——
+                说明这不是强制。但没有一位是靠「写得更有文采」取胜。
+              </p>
+            </div>
+          </section>
+
+          <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6">
+              <h3 class="text-base font-bold text-white mb-3">可以立刻用的模板</h3>
+              <pre class="font-mono text-xs text-slate-300 bg-slate-950/60 rounded-xl p-4 overflow-x-auto whitespace-pre-wrap">能力陈述（动词开头）。产出/差异。
+Use when 场景1、场景2、场景3，
+或用户说 "口语说法1"、"口语说法2"。</pre>
+              <ul class="space-y-2 text-sm text-slate-400 mt-4">
+                <li class="flex gap-2"><span class="text-violet-400 shrink-0">1</span><span>必须有能力陈述，不能只有触发词</span></li>
+                <li class="flex gap-2"><span class="text-violet-400 shrink-0">2</span><span>触发条件要具体到用户的原话</span></li>
+                <li class="flex gap-2"><span class="text-violet-400 shrink-0">3</span><span>200–300 字符是甜区</span></li>
+              </ul>
+            </div>
+            <div class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6">
+              <h3 class="text-base font-bold text-white mb-3">三类发现的区别</h3>
+              <ul class="space-y-3 text-sm text-slate-400">
+                <li><strong class="text-slate-200">C1–C7 收敛簇</strong> —— 方法机制，互不相识的人独立撞上同一堵墙</li>
+                <li><strong class="text-slate-200">格式趋同</strong> —— 平台定标准、创作者采用，<em class="text-slate-500">被设计出来的</em></li>
+                <li><strong class="text-violet-300">写法趋同</strong> —— 格式给了空位，社区把空位填成同一个形状，<em class="text-slate-500">自发涌现的惯例</em></li>
+              </ul>
+              <div class="mt-4 pt-4 border-t border-slate-800/60">
+                <p class="text-xs text-slate-500 mb-2">边界</p>
+                <ul class="space-y-1.5 text-xs text-slate-500">
+                  {(style.interpretation?.caveats || []).map((c: string) => (
+                    <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span><span>{c}</span></li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <p class="text-xs text-slate-500 mt-6 leading-relaxed">
+            采集口径：候选 219 个 skill 仓 → 按「总星 ≥2000 / 近 120 天更新且 ≥200 星 / flagship 层」筛到
+            {style.sample.filtered_repos} 仓 → 每仓最多取 6 个 SKILL.md（根目录优先）。
+            明细数据见 <code class="font-mono">_data/skill-descriptions.json</code>。
+          </p>
+        </section>
+      )}
 </BaseLayout>

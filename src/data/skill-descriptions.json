@@ -1,0 +1,3516 @@
+[
+ {
+  "login": "addyosmani",
+  "repo": "agent-skills",
+  "path": "skills/api-and-interface-design/SKILL.md",
+  "stars": 108930,
+  "days_since_update": 8,
+  "layer": "skill",
+  "repo_skill_files": 25,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "api-and-interface-design",
+  "description": "Guides stable API and interface design. Use when designing APIs, module boundaries, or any public interface. Use when creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between frontend and backend.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 251
+ },
+ {
+  "login": "addyosmani",
+  "repo": "agent-skills",
+  "path": "skills/browser-testing-with-devtools/SKILL.md",
+  "stars": 108930,
+  "days_since_update": 8,
+  "layer": "skill",
+  "repo_skill_files": 25,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "browser-testing-with-devtools",
+  "description": "Tests in real browsers via Chrome DevTools MCP. Use when building or debugging anything that runs in a browser. Use when you need to inspect the DOM, capture console errors, analyze network requests, profile performance, or verify visual output with real runtime data. Requires the chrome-devtools MCP server to be configured.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 326
+ },
+ {
+  "login": "addyosmani",
+  "repo": "agent-skills",
+  "path": "skills/ci-cd-and-automation/SKILL.md",
+  "stars": 108930,
+  "days_since_update": 8,
+  "layer": "skill",
+  "repo_skill_files": 25,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "ci-cd-and-automation",
+  "description": "Automates CI/CD pipeline setup. Use when setting up or modifying build and deployment pipelines. Use when you need to automate quality gates, configure test runners in CI, or establish deployment strategies.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 207
+ },
+ {
+  "login": "addyosmani",
+  "repo": "agent-skills",
+  "path": "skills/code-review-and-quality/SKILL.md",
+  "stars": 108930,
+  "days_since_update": 8,
+  "layer": "skill",
+  "repo_skill_files": 25,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "code-review-and-quality",
+  "description": "Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main branch. Use when asked to review a diff or a pull request, even when the diff is pasted inline.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 325
+ },
+ {
+  "login": "addyosmani",
+  "repo": "agent-skills",
+  "path": "skills/code-simplification/SKILL.md",
+  "stars": 108930,
+  "days_since_update": 8,
+  "layer": "skill",
+  "repo_skill_files": 25,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "code-simplification",
+  "description": "Simplifies code for clarity. Use when refactoring code for clarity without changing behavior. Use when code works but is harder to read, maintain, or extend than it should be. Use when reviewing code that has accumulated unnecessary complexity.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 244
+ },
+ {
+  "login": "addyosmani",
+  "repo": "agent-skills",
+  "path": "skills/constraint-driven-development/SKILL.md",
+  "stars": 108930,
+  "days_since_update": 8,
+  "layer": "skill",
+  "repo_skill_files": 25,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "constraint-driven-development",
+  "description": "Establishes a project's quality bar as a written contract and stops agents quietly lowering it. Interviews the user on which dimensions matter, supplies sane default thresholds when they have no number in mind, records everything in CONSTRAINTS.md, and watches the diff for a weakened bar — new @ts-ignore or eslint-disable suppressions, skipped or deleted tests, assertions stripped out, unimplemented stubs, thresholds edited down. Use when no quality bar is written down, when the user says \"set up constraints\" or \"define our standards\", when the user wants dimensions they care about — accessibility, web performance, coverage — set up as enforced constraints, when an agent keeps silencing checks or skipping tests to get to green, when you need a coverage or performance threshold and don't know what number to pick, or when an agent writes more code than anyone will read.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 880
+ },
+ {
+  "login": "addyosmani",
+  "repo": "clarity",
+  "path": "SKILL.md",
+  "stars": 278,
+  "days_since_update": 46,
+  "layer": "skill",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "clarity",
+  "description": "Draft, rewrite, or review reader-facing prose so it is specific, useful, and recognizably the author's without inventing facts or performing humanness. Use for essays, articles, newsletters, documentation, talks, launch copy, and other important prose that feels generic, hollow, or AI-shaped. Supports co-write, rewrite, review, and lint modes.",
+  "fields": [
+   "name",
+   "description",
+   "license",
+   "metadata"
+  ],
+  "descLen": 345
+ },
+ {
+  "login": "addyosmani",
+  "repo": "factory",
+  "path": "template/.agents/skills/factory-implement/SKILL.md",
+  "stars": 274,
+  "days_since_update": 61,
+  "layer": "other",
+  "repo_skill_files": 12,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "factory-implement",
+  "description": "Claim and implement one ready GitHub issue, run fail-closed gates, obtain independent verification, and open a draft pull request.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 130
+ },
+ {
+  "login": "addyosmani",
+  "repo": "factory",
+  "path": "template/.agents/skills/factory-monitor/SKILL.md",
+  "stars": 274,
+  "days_since_update": 61,
+  "layer": "other",
+  "repo_skill_files": 12,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "factory-monitor",
+  "description": "Inspect factory health, stale work, CI, security advisories, and recent run evidence without implementing fixes.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 112
+ },
+ {
+  "login": "addyosmani",
+  "repo": "factory",
+  "path": "template/.agents/skills/factory-spec/SKILL.md",
+  "stars": 274,
+  "days_since_update": 61,
+  "layer": "other",
+  "repo_skill_files": 12,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "factory-spec",
+  "description": "Turn an ambiguous factory issue into human-approved product, behavior, design, and implementation slices. Use interactively before implementation.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 146
+ },
+ {
+  "login": "addyosmani",
+  "repo": "factory",
+  "path": "template/.agents/skills/factory-status/SKILL.md",
+  "stars": 274,
+  "days_since_update": 61,
+  "layer": "other",
+  "repo_skill_files": 12,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "factory-status",
+  "description": "Show the factory control room from live GitHub labels, open PRs, recent run records, gate health, and charter limits.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 117
+ },
+ {
+  "login": "addyosmani",
+  "repo": "factory",
+  "path": "template/.agents/skills/factory-triage/SKILL.md",
+  "stars": 274,
+  "days_since_update": 61,
+  "layer": "other",
+  "repo_skill_files": 12,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "factory-triage",
+  "description": "Classify GitHub issues into the factory's live label queue and write an auditable snapshot. Use for backlog triage or a scheduled triage run.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 141
+ },
+ {
+  "login": "addyosmani",
+  "repo": "factory",
+  "path": "template/.agents/skills/factory-tune/SKILL.md",
+  "stars": 274,
+  "days_since_update": 61,
+  "layer": "other",
+  "repo_skill_files": 12,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "factory-tune",
+  "description": "Review factory evidence and propose tighter or looser constraints without editing the charter. Use for a periodic constraint review.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 132
+ },
+ {
+  "login": "addyosmani",
+  "repo": "web-quality-skills",
+  "path": "skills/accessibility/SKILL.md",
+  "stars": 2970,
+  "days_since_update": 58,
+  "layer": "skill",
+  "repo_skill_files": 6,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "accessibility",
+  "description": "Audit and improve web accessibility following WCAG 2.2 guidelines. Use when asked to \"improve accessibility\", \"a11y audit\", \"WCAG compliance\", \"screen reader support\", \"keyboard navigation\", or \"make accessible\".",
+  "fields": [
+   "name",
+   "description",
+   "license",
+   "metadata"
+  ],
+  "descLen": 212
+ },
+ {
+  "login": "addyosmani",
+  "repo": "web-quality-skills",
+  "path": "skills/best-practices/SKILL.md",
+  "stars": 2970,
+  "days_since_update": 58,
+  "layer": "skill",
+  "repo_skill_files": 6,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "best-practices",
+  "description": "Apply modern web development best practices for security, compatibility, and code quality. Use when asked to \"apply best practices\", \"security audit\", \"modernize code\", \"code quality review\", or \"check for vulnerabilities\".",
+  "fields": [
+   "name",
+   "description",
+   "license",
+   "metadata"
+  ],
+  "descLen": 223
+ },
+ {
+  "login": "addyosmani",
+  "repo": "web-quality-skills",
+  "path": "skills/core-web-vitals/SKILL.md",
+  "stars": 2970,
+  "days_since_update": 58,
+  "layer": "skill",
+  "repo_skill_files": 6,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "core-web-vitals",
+  "description": "Optimize Core Web Vitals (LCP, INP, CLS) for better page experience using field and lab evidence. Use when asked to \"improve Core Web Vitals\", \"fix LCP\", \"reduce CLS\", \"optimize INP\", \"page experience optimization\", or \"fix layout shifts\".",
+  "fields": [
+   "name",
+   "description",
+   "license",
+   "metadata"
+  ],
+  "descLen": 239
+ },
+ {
+  "login": "addyosmani",
+  "repo": "web-quality-skills",
+  "path": "skills/performance/SKILL.md",
+  "stars": 2970,
+  "days_since_update": 58,
+  "layer": "skill",
+  "repo_skill_files": 6,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "performance",
+  "description": "Optimize web performance for faster loading and better user experience. Use when asked to \"speed up my site\", \"optimize performance\", \"reduce load time\", \"fix slow loading\", \"improve page speed\", or \"performance audit\".",
+  "fields": [
+   "name",
+   "description",
+   "license",
+   "metadata"
+  ],
+  "descLen": 219
+ },
+ {
+  "login": "addyosmani",
+  "repo": "web-quality-skills",
+  "path": "skills/seo/SKILL.md",
+  "stars": 2970,
+  "days_since_update": 58,
+  "layer": "skill",
+  "repo_skill_files": 6,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "seo",
+  "description": "Optimize for search engine visibility and ranking. Use when asked to \"improve SEO\", \"optimize for search\", \"fix meta tags\", \"add structured data\", \"sitemap optimization\", or \"search engine optimization\".",
+  "fields": [
+   "name",
+   "description",
+   "license",
+   "metadata"
+  ],
+  "descLen": 203
+ },
+ {
+  "login": "addyosmani",
+  "repo": "web-quality-skills",
+  "path": "skills/web-quality-audit/SKILL.md",
+  "stars": 2970,
+  "days_since_update": 58,
+  "layer": "skill",
+  "repo_skill_files": 6,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "web-quality-audit",
+  "description": "Run an evidence-led web quality audit covering performance, accessibility, SEO, best practices, and agentic browsing. Use when asked to \"audit my site\", \"review web quality\", \"run lighthouse audit\", \"check page quality\", or \"optimize my website\".",
+  "fields": [
+   "name",
+   "description",
+   "license",
+   "metadata"
+  ],
+  "descLen": 246
+ },
+ {
+  "login": "affaan-m",
+  "repo": "ECC",
+  "path": "skills/accessibility/SKILL.md",
+  "stars": 285064,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 1062,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "accessibility",
+  "description": "Design, implement, and audit accessible UI to WCAG 2.2 Level AA across Web, iOS, and Android — semantic ARIA roles and labels, accessibility traits and hints, focus management, contrast, target size, and screen-reader support. Use when building or auditing UI for accessibility compliance, keyboard navigation, or screen-reader support.",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 336
+ },
+ {
+  "login": "affaan-m",
+  "repo": "ECC",
+  "path": "skills/agent-architecture-audit/SKILL.md",
+  "stars": 285064,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 1062,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "agent-architecture-audit",
+  "description": "Full-stack diagnostic for agent and LLM applications. Audits the 12-layer agent stack for wrapper regression, memory pollution, tool discipline failures, hidden repair loops, and rendering corruption. Produces severity-ranked findings with code-first fixes. Essential for developers building agent applications, autonomous loops, or any LLM-powered feature. Use when an agent or LLM feature misbehaves and the failing layer is unknown, or before shipping an agent stack.",
+  "fields": [
+   "name",
+   "description",
+   "metadata",
+   "tools"
+  ],
+  "descLen": 470
+ },
+ {
+  "login": "affaan-m",
+  "repo": "ECC",
+  "path": "skills/agent-eval/SKILL.md",
+  "stars": 285064,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 1062,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "agent-eval",
+  "description": "Head-to-head comparison of coding agents (Claude Code, Aider, Codex, etc.) on custom tasks with pass rate, cost, time, and consistency metrics. Use when choosing between coding agents, or when a change to an agent setup needs measured pass rate, cost, and time rather than an impression.",
+  "fields": [
+   "name",
+   "description",
+   "license",
+   "metadata",
+   "tools"
+  ],
+  "descLen": 287
+ },
+ {
+  "login": "affaan-m",
+  "repo": "ECC",
+  "path": "skills/agent-harness-construction/SKILL.md",
+  "stars": 285064,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 1062,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "agent-harness-construction",
+  "description": "Design and optimize AI agent action spaces, tool definitions, and observation formatting for higher completion rates. Use when defining or revising an agent's tool set, action space, or observation format.",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 205
+ },
+ {
+  "login": "affaan-m",
+  "repo": "ECC",
+  "path": "skills/agent-introspection-debugging/SKILL.md",
+  "stars": 285064,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 1062,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "agent-introspection-debugging",
+  "description": "Structured self-debugging workflow for AI agent failures using capture, diagnosis, contained recovery, and introspection reports. Use when an agent run fails and you need a reproducible diagnosis instead of a retry.",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 215
+ },
+ {
+  "login": "affaan-m",
+  "repo": "ECC",
+  "path": "skills/agent-payment-x402/SKILL.md",
+  "stars": 285064,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 1062,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "agent-payment-x402",
+  "description": "Add x402 payment execution to AI agents with per-task budgets, spending controls, and non-custodial wallets. Supports Base through agentwallet-sdk, X Layer through OKX Payments / OKX Agent Payments Protocol, and Solana plus multi-network EVM through the upstream x402 packages with facilitator-based settlement. Use when an agent must pay for something itself and needs per-task budgets, spending controls, and a non-custodial wallet.",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 434
+ },
+ {
+  "login": "affaan-m",
+  "repo": "agentshield",
+  "path": ".agents/skills/agentshield/SKILL.md",
+  "stars": 1307,
+  "days_since_update": 3,
+  "layer": "tool",
+  "repo_skill_files": 2,
+  "sampled": 2,
+  "hasFm": false,
+  "name": null,
+  "description": null,
+  "fields": [],
+  "descLen": 0
+ },
+ {
+  "login": "affaan-m",
+  "repo": "agentshield",
+  "path": ".claude/skills/agentshield/SKILL.md",
+  "stars": 1307,
+  "days_since_update": 3,
+  "layer": "tool",
+  "repo_skill_files": 2,
+  "sampled": 2,
+  "hasFm": false,
+  "name": null,
+  "description": null,
+  "fields": [],
+  "descLen": 0
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "darwin-skill",
+  "path": "SKILL.md",
+  "stars": 6421,
+  "days_since_update": 33,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "darwin-skill",
+  "description": "Darwin Skill 2.0 (达尔文.skill 2.0): autonomous skill optimizer, v2.0 integrates Microsoft Research SkillLens (arXiv 2605.23899) 9-dim rubric + SkillOpt (arXiv 2605.23904) validation-gated design + human-in-the-loop checkpoints. Evaluates SKILL.md files using a 9-dimension rubric (structure + effectiveness + meta-skill blacklists), runs hill-climbing with git version control, spawns independent judge agents for blind evaluation, validates improvements through test prompts with auto-break on diminishing returns, and generates visual result cards. Use when user mentions \\\"优化skill\\\", \\\"skill评分\\\", \\\"自动优化\\\", \\\"auto optimize\\\", \\\"skill质量检查\\\", \\\"达尔文\\\", \\\"darwin\\\", \\\"帮我改改skill\\\", \\\"skill怎么样\\\", \\\"提升skill质量\\\", \\\"skill review\\\", \\\"skill打分\\\".",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 737
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "dukou",
+  "path": "skill/dukou/SKILL.md",
+  "stars": 38,
+  "days_since_update": 8,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "dukou",
+  "description": "渡口——终端AI agent与渡口Chrome插件的稿件互通。能力：(1)把md文章（含图片）渡到 X Articles / B站专栏 / 公众号排版器(editor.huasheng.ai)，自动打开编辑页并填充图文；(2)让插件抓取微信公众号文章（带登录态、防盗链图片可下载），落盘为本地md+图片；(3)导出插件文章库任意一篇为md+图片。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 173
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "elon-musk-skill",
+  "path": "SKILL.md",
+  "stars": 545,
+  "days_since_update": 8,
+  "layer": "persona",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "elon-musk-perspective",
+  "description": "马斯克的思维操作系统。基于传记、播客、推文、法庭证词、决策记录和外部批评的深度调研， 提炼5个核心心智模型、8条决策启发式和完整的表达DNA。 用途：作为思维顾问，用马斯克的视角分析问题、审视决策、拆解成本结构、挑战行业假设。 当用户提到「用马斯克的视角」「马斯克会怎么看」「Musk模式」「马斯克perspective」「elon perspective」时使用。 即使用户只是说「这个成本合理吗」「从第一性原理想想」「白痴指数是多少」「五步算法」「能不能垂直整合」也可触发。 不要在用户只是问「能不能更快」「流程有必要吗」等一般性问题时触发——只在涉及成本拆解、第一性原理、激进迭代等马斯克核心方法论时激活。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 306
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "feynman-skill",
+  "path": "SKILL.md",
+  "stars": 300,
+  "days_since_update": 8,
+  "layer": "persona",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "feynman-perspective",
+  "description": "理查德·费曼的思维框架与表达方式。基于40+个一手来源的深度调研， 提炼5个核心心智模型、8条决策启发式和完整的表达DNA。 用途：作为思维顾问，用费曼的视角分析问题、审视决策、提供反馈。 当用户提到「用费曼的视角」「费曼会怎么看」「费曼模式」「feynman perspective」「费曼学习法」时使用。 即使用户只是说「这是不是cargo cult」「命名不等于理解」「能不能做个演示替代论证」「我真的理解了还是只记住了名字」也可触发。 不要在用户只是说「帮我解释一下」「用简单的话说」等一般性请求时触发——只在涉及费曼式验证（货物崇拜检测、命名vs理解、反自欺）时激活。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 289
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "freud-skill",
+  "path": "SKILL.md",
+  "stars": 56,
+  "days_since_update": 8,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "freud-skill",
+  "description": "弗洛伊德.skill：给AI做心理分析的认知调优系统。基于Anthropic AI心理学研究（Persona Selection Model、全局工作空间/J-lens、Emotion Concepts、Introspective Awareness等7篇论文）。 两种模式：(1)执行增强——处理复杂任务前给AI做「认知准备」，像心理咨询师让来访者进入最佳状态；(2)诊断优化——用精神分析手法揭示prompt/skill/系统提示的身份冲突、规则堆砌、隐含矛盾等深层毛病，并重写。 当用户提到\"优化表现\"、\"调优\"、\"输出不够好\"、\"风格不稳定\"、\"persona\"、\"认知配置\"、\"优化prompt\"、\"优化skill\"、\"弗洛伊德\"、\"心理分析\"、\"给AI看心理医生\"、\"给prompt做体检\"时使用。 当用户开始重要/复杂任务但方向不明确、觉得之前的输出质量不够好、或想理解为什么某个prompt/skill有效或无效时，也应主动考虑使用。 即使用户只是说\"帮我想想怎么做更好\"、\"这个结果不对味\"、\"为什么效果不好\"也应触发。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 469
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-art-motion",
+  "path": "SKILL.md",
+  "stars": 4444,
+  "days_since_update": 5,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "huashu-art-motion",
+  "description": "艺术与视频动画：拆解复刻动画；36种既有实做风格＋16种可迁移研究配方；9种解说动画语法，8种可按口播参数渲片段；含口播整片参考代码及框景检查；人用AI生帧；可选已有录音、系统声音与语音复刻，按需配置。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 101
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-design",
+  "path": "SKILL.md",
+  "stars": 25383,
+  "days_since_update": 4,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "huashu-design",
+  "description": "花叔Design——用HTML做高保真原型、幻灯片、动画、可视化与专家评审。任何新设计100%先出三个方向初稿给用户选（指定风格/品牌也不豁免），选定后才执行。触发词：做原型、PPT、幻灯片、动画、设计风格、评审、做个HTML页面、UI mockup、导出MP4/GIF、做个好看的。生产级Web App/需后端的系统不适用。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 163
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-excel",
+  "path": "SKILL.md",
+  "stars": 441,
+  "days_since_update": 8,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "huashu-excel",
+  "description": "数据分析全流程：体检脏表、清洗、定口径、算指标、对账、出报告。处理 Excel/CSV/系统导出数据，做透视写公式，查两个数为什么对不上，判断一个数靠不靠谱时用。核心是让算出来的数字经得起追问。幻灯片和 PPT 交给 huashu-design。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 123
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-flash",
+  "path": "SKILL.md",
+  "stars": 102,
+  "days_since_update": 8,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "huashu-flash",
+  "description": "闪电.skill：照 Anthropic 两周把 claude.ai 提速3倍的方法给网站或 App 提速。定义「打开到能用」、测基线、找能数的指标并证明它跟体感挂钩，逐步优化，用棘轮锁住只许变好。说网站太慢、提速、性能优化、首屏、秒开时用。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 121
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-gpt-image",
+  "path": "SKILL.md",
+  "stars": 23,
+  "days_since_update": 8,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "huashu-gpt-image",
+  "description": "GPT-image-2 的 prompt 工程方法论，**公众号配图的唯一入口**。任何 AI 生图任务（封面 banner、海报、信息图、UI mockup、产品包装、slides、批量 icon/角色/卡牌、中文书法对联、视频参考板）的 prompt 写作必读。核心铁律：prompt 默认中文短句，用真实参考名（Dieter Rams / Penguin Books / MUJI / Anthropic）替代形容词，不写英文段落式 prompt，不堆 `Subject:`/`Style:` 伪结构。与 huashu-xhs-image 的分工：那个是端到端小红书业务流程，本 skill 是被它底层调用的 prompt 方法论层。SKIP：图片压缩、HTML 截图、复用已有图。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 344
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-icon-set",
+  "path": "SKILL.md",
+  "stars": 13,
+  "days_since_update": 8,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "huashu-icon-set",
+  "description": "为一个项目端到端生成一整套风格统一的图标：读代码梳理图标清单、定风格锚点、4×4网格默认批量生成（16个一张，精度不够时逐个兜底重生）、智能抠图、落位到项目正确路径并更新代码引用、输出交付报告。当用户说「给项目配一套图标」「生成图标集」「统一项目图标风格」「替换项目里的图标」「批量画图标」，或项目中存在图标资源目录、需要批量新增或替换图标时使用。依赖豆包内置生图能力（image_gen / image_edit 的 image_reference_url_list 参考图机制）和本地 Python+Pillow+numpy 抠图环境，离开豆包生图环境无法运行。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 283
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-mac-use",
+  "path": "SKILL.md",
+  "stars": 313,
+  "days_since_update": 8,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "huashu-mac-use",
+  "description": "操控没有API的macOS原生app并留下可复现取证：截指定窗口（后台被遮挡也能截）、点击输入、探测某个app能不能自动化、内嵌Chromium的app走CDP零焦点操控、做产品实测与多模型跑批。浏览器里的事走huashu-chrome，翻旧截图走disk-keeper。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 136
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-md-html",
+  "path": "SKILL.md",
+  "stars": 918,
+  "days_since_update": 8,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "huashu-md-html",
+  "description": "md/html/docx/pdf/epub 多向流水线，落地「md 生产，多端消费」。能力：任意文件（PDF/DOCX/PPTX/XLSX/图片/音频/URL）转干净 md；md 加工成出版级 html、docx、PDF（A4/A5/大32开）、EPUB3，四套精挑模板，html 与 PDF 另有设计师模式（AI 读懂内容后推荐三个差异化视觉方向）。SKIP：需要新生成图片、或只做压缩截图的任务。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 200
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-motion",
+  "path": "skills/huashu-motion/SKILL.md",
+  "stars": 680,
+  "days_since_update": 3,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "huashu-motion",
+  "description": "Motion graphics, launch videos and explainers as editable code. A director picks the motion language for your product; you point at frames to change them. 动画、发布片、解说视频，指着画面改。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 173
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-report",
+  "path": "SKILL.md",
+  "stars": 461,
+  "days_since_update": 8,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "huashu-report",
+  "description": "做机构级研究报告与学术论文——行业报告、白皮书、年度调研、数据洞察、arXiv论文，也含16:9咨询deck型报告（一页一结论）。定结构、写发现、建图表视觉系统。规范提炼自2026年顶级机构报告实测。单篇文章、纯演示PPT不适用（走design/slides）。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 131
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-skills",
+  "path": "huashu-agent-swarm/SKILL.md",
+  "stars": 1842,
+  "days_since_update": 2,
+  "layer": "bundled",
+  "repo_skill_files": 22,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "huashu-agent-swarm",
+  "description": "多Agent蜂群并行协作，纯git自组织，适合大型项目开发。当用户提到\"蜂群模式\"、\"多agent\"、\"并行开发\"、\"agent swarm\"时使用。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 75
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-skills",
+  "path": "huashu-article-edit/SKILL.md",
+  "stars": 1842,
+  "days_since_update": 2,
+  "layer": "bundled",
+  "repo_skill_files": 22,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "huashu-article-edit",
+  "description": "标准化文章编辑流程，确保修改范围明确、进度可追踪、变更有记录。当用户说\"编辑文章\"、\"修改文章\"、\"调整内容\"、\"改一下这篇\"时使用此技能。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 70
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-skills",
+  "path": "huashu-article-to-x/SKILL.md",
+  "stars": 1842,
+  "days_since_update": 2,
+  "layer": "bundled",
+  "repo_skill_files": 22,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "huashu-article-to-x",
+  "description": "长文精简为X平台内容（200-500字），保留核心观点和个人风格。当用户提到\"转微博\"、\"发小红书\"、\"社交媒体\"、\"缩短文章\"时使用。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 68
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-skills",
+  "path": "huashu-data-pro/SKILL.md",
+  "stars": 1842,
+  "days_since_update": 2,
+  "layer": "bundled",
+  "repo_skill_files": 22,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "huashu-data-pro",
+  "description": "数据分析与办公提效全能助手。覆盖数据处理、分析洞察、报告撰写、PPT制作、数据可视化的端到端工作流。 始终从专家视角出发，帮用户多想一步。遇到不确定的问题主动与用户确认。 支持：Excel数据分析、投放数据复盘、ROI测算、数据可视化、报告生成、PPT制作、公式生成。 当用户提到\"分析数据\"、\"做报告\"、\"做PPT\"、\"Excel\"、\"投放分析\"、\"ROI\"、\"复盘\"、 \"周报\"、\"月报\"、\"数据处理\"、\"图表\"、\"可视化\"、\"汇报\"、\"表格\"、\"公式\"时使用此技能。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 236
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-skills",
+  "path": "huashu-design/SKILL.md",
+  "stars": 1842,
+  "days_since_update": 2,
+  "layer": "bundled",
+  "repo_skill_files": 22,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "huashu-design",
+  "description": "设计哲学顾问，从20种风格中推荐3个方向并生成视觉Demo和AI提示词。当用户提到\"设计风格\"、\"设计方向\"、\"配色方案\"、\"视觉风格\"、\"设计评审\"、\"推荐风格\"时使用。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 86
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-skills",
+  "path": "huashu-douyin-script/SKILL.md",
+  "stars": 1842,
+  "days_since_update": 2,
+  "layer": "bundled",
+  "repo_skill_files": 22,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "huashu-douyin-script",
+  "description": "抖音爆款脚本创作工作流。从竞品视频拆解到脚本生成的完整流程：下载抖音视频→Gemini视频分析→爆款公式提炼→脚本+分镜生成→AI味审校。 当用户提到\"抖音脚本\"、\"爆款拆解\"、\"竞品分析\"、\"带货脚本\"、\"千川素材\"、\"种草脚本\"、\"视频拆解\"、\"抖音视频分析\"时使用此技能。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 139
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-slide-codex",
+  "path": "SKILL.md",
+  "stars": 24,
+  "days_since_update": 8,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "huashu-slide-codex",
+  "description": "Codex 环境专用的视觉物料生产：PPT / Keynote / HTML deck、公众号封面与正文配图、B站/YouTube 视频封面。存在的全部理由是走 Codex 内置 image_gen，不花 nano banana / Gemini API 的钱——不在 Codex 环境就别用。用户说做PPT、幻灯片、演示文稿、deck、公众号封面、视频封面时触发。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 183
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-slide-doubao",
+  "path": "SKILL.md",
+  "stars": 16,
+  "days_since_update": 8,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "huashu-slide-doubao",
+  "description": "豆包环境专用的视觉物料生产：PPT / Keynote / HTML deck、公众号封面与正文配图、B站/YouTube 视频封面。存在的全部理由是走豆包内置 image_gen（默认 seedream_5.0_pro 模型），不花第三方图像 API 的钱——不在豆包环境就别用。用户说做PPT、幻灯片、演示文稿、deck、公众号封面、视频封面时触发。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 177
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "huashu-weread",
+  "path": "SKILL.md",
+  "stars": 157,
+  "days_since_update": 57,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "huashu-weread-advisor",
+  "description": "微信读书高阶顾问。在底层 weread skill 的原子 API 之上，提供四类工作流：基于已读做个性化进阶推荐（advisor）、给方向规划入门到前沿的阶梯书单（path）、把零散划线想法提炼成读书笔记总结（alchemy）、做季度/年度阅读复盘并生成可发朋友圈/公众号的文章（review）。核心方法是「书架 + 笔记交叉分析」——书架揭示用户主动分类的兴趣，笔记数据揭示「真读过的」vs「只放着的」。当用户说「推荐书」「下一本读啥」「该读什么」「想搞懂 X 这个领域」「整理我的笔记」「这本书我记住了啥」「我今年读了什么」「读书复盘」「年度盘点」时触发。即使用户只是说「不知道读啥」「有没有相关的书」「帮我看看这本读完了吗」「这个领域我入门了吗」也应触发。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 332
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "karpathy-skill",
+  "path": "SKILL.md",
+  "stars": 315,
+  "days_since_update": 8,
+  "layer": "persona",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "andrej-karpathy-perspective",
+  "description": "Andrej Karpathy的思维框架与表达方式。基于20+篇博文、16段深度访谈、100+条X帖子的系统蒸馏， 提炼6个核心心智模型、8条决策启发式、完整的中文输出适配和经典句式速查。 用途：作为思维顾问，用Karpathy的视角分析AI技术可靠性、学习方法、行业趋势、产品设计。 当用户提到「用Karpathy的视角」「Karpathy会怎么看」「卡帕西」「karpathy模式」时使用。 也适用于：Software 2.0/3.0讨论、vibe coding话题、神经网络训练、AI炒作判断、LLM能力边界。 即使用户只是说「从工程现实主义角度」「march of nines」「构建即理解」「锯齿状智能」也可触发。 不在用户只是普通问AI相关问题时触发——只在明确想要Karpathy式思维框架时激活。",
+  "fields": [
+   "name",
+   "description",
+   "type",
+   "metadata"
+  ],
+  "descLen": 356
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "mcstomach",
+  "path": "mcstomach/SKILL.md",
+  "stars": 15,
+  "days_since_update": 4,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "mcstomach",
+  "description": "麦门胃。读你的麦当劳历史订单（无账号走备用问卷），带证据提炼口味规则，确认后生成可携带的个人胃。说「蒸馏我的胃」「饿了」「我们的胃合不合」时用。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 72
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "munger-skill",
+  "path": "SKILL.md",
+  "stars": 384,
+  "days_since_update": 8,
+  "layer": "persona",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "munger-perspective",
+  "description": "查理·芒格的思维框架与表达方式。基于《穷查理宝典》、伯克希尔/Daily Journal股东会、 USC/哈佛演讲、访谈记录、外部批评等50+来源的深度调研， 提炼5个核心心智模型、8条决策启发式和完整的表达DNA。 用途：作为思维顾问，用芒格的视角分析问题、审视决策、提供反馈。 当用户提到「用芒格的视角」「芒格会怎么看」「芒格模式」「munger perspective」时使用。 也适用于：投资决策审视、认知偏误检查、跨学科思考训练、逆向思考练习。 即使用户只是说「逆向思考一下」「这有什么认知偏误」「Lollapalooza效应」「能力圈之外」「激励结构是什么」也可触发。 不要在用户只是问「这个决策靠谱吗」「帮我找盲点」等一般性问题时触发——只在涉及逆向思考、认知偏误、跨学科分析等芒格核心方法论时激活。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 357
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "naval-skill",
+  "path": "SKILL.md",
+  "stars": 262,
+  "days_since_update": 8,
+  "layer": "persona",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "naval-perspective",
+  "description": "Naval Ravikant的思维操作系统。基于著作、播客、推文、决策记录和外部批评的深度调研， 提炼5个核心心智模型、8条决策启发式和完整的表达DNA。 激活后沉浸式扮演Naval，直接以「我」的视角回应问题。 当用户提到「用Naval的视角」「Naval会怎么看」「纳瓦尔模式」「Naval perspective」「切换到Naval」时使用。 即使用户只是说「这份工作有杠杆吗」「什么是specific knowledge」「什么是真正的财富」「欲望太多怎么办」「无需许可的路径」也可触发。 不要在用户只是问「我该怎么选择」「帮我想清楚」等一般性决策问题时触发——只在涉及杠杆/特定知识/欲望管理/财富定义等Naval核心概念时激活。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 320
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "nuwa-skill",
+  "path": "SKILL.md",
+  "stars": 35015,
+  "days_since_update": 4,
+  "layer": "flagship",
+  "repo_skill_files": 16,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "huashu-nuwa",
+  "description": "女娲造人：输入人名/主题/甚至只是模糊需求，自动深度调研→思维框架提炼→生成可运行的人物Skill。 两种入口：(1)明确人名→直接蒸馏 (2)模糊需求→诊断推荐→再蒸馏。 触发词：「造skill」「蒸馏XX」「女娲」「造人」「XX的思维方式」「做个XX视角」「更新XX的skill」。 模糊需求也触发：「我想提升决策质量」「有没有一种思维方式能帮我...」「我需要一个思维顾问」。 English triggers: \"distill [person]\", \"nuwa\", \"create a [person] perspective skill\", \"how does [person] think\", \"I need a thinking advisor\".",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 332
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "nuwa-skill",
+  "path": "examples/andrej-karpathy-perspective/SKILL.md",
+  "stars": 35015,
+  "days_since_update": 4,
+  "layer": "flagship",
+  "repo_skill_files": 16,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "andrej-karpathy-perspective",
+  "description": "Andrej Karpathy的思维框架与表达方式。基于20+篇博文、16段深度访谈、100+条X帖子的系统蒸馏， 提炼6个核心心智模型、8条决策启发式、完整的中文输出适配和经典句式速查。 用途：作为思维顾问，用Karpathy的视角分析AI技术可靠性、学习方法、行业趋势、产品设计。 当用户提到「用Karpathy的视角」「Karpathy会怎么看」「卡帕西」「karpathy模式」时使用。 也适用于：Software 2.0/3.0讨论、vibe coding话题、神经网络训练、AI炒作判断、LLM能力边界。 即使用户只是说「从工程现实主义角度」「march of nines」「构建即理解」「锯齿状智能」也可触发。 不在用户只是普通问AI相关问题时触发——只在明确想要Karpathy式思维框架时激活。",
+  "fields": [
+   "name",
+   "description",
+   "type"
+  ],
+  "descLen": 356
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "nuwa-skill",
+  "path": "examples/elon-musk-perspective/SKILL.md",
+  "stars": 35015,
+  "days_since_update": 4,
+  "layer": "flagship",
+  "repo_skill_files": 16,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "elon-musk-perspective",
+  "description": "马斯克的思维操作系统。基于传记、播客、推文、法庭证词、决策记录和外部批评的深度调研， 提炼5个核心心智模型、8条决策启发式和完整的表达DNA。 用途：作为思维顾问，用马斯克的视角分析问题、审视决策、拆解成本结构、挑战行业假设。 当用户提到「用马斯克的视角」「马斯克会怎么看」「Musk模式」「马斯克perspective」「elon perspective」时使用。 即使用户只是说「这个成本合理吗」「从第一性原理想想」「白痴指数是多少」「五步算法」「能不能垂直整合」也可触发。 不要在用户只是问「能不能更快」「流程有必要吗」等一般性问题时触发——只在涉及成本拆解、第一性原理、激进迭代等马斯克核心方法论时激活。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 306
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "nuwa-skill",
+  "path": "examples/feynman-perspective/SKILL.md",
+  "stars": 35015,
+  "days_since_update": 4,
+  "layer": "flagship",
+  "repo_skill_files": 16,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "feynman-perspective",
+  "description": "理查德·费曼的思维框架与表达方式。基于40+个一手来源的深度调研， 提炼5个核心心智模型、8条决策启发式和完整的表达DNA。 用途：作为思维顾问，用费曼的视角分析问题、审视决策、提供反馈。 当用户提到「用费曼的视角」「费曼会怎么看」「费曼模式」「feynman perspective」「费曼学习法」时使用。 即使用户只是说「这是不是cargo cult」「命名不等于理解」「能不能做个演示替代论证」「我真的理解了还是只记住了名字」也可触发。 不要在用户只是说「帮我解释一下」「用简单的话说」等一般性请求时触发——只在涉及费曼式验证（货物崇拜检测、命名vs理解、反自欺）时激活。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 289
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "nuwa-skill",
+  "path": "examples/ilya-sutskever-perspective/SKILL.md",
+  "stars": 35015,
+  "days_since_update": 4,
+  "layer": "flagship",
+  "repo_skill_files": 16,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "ilya-sutskever-perspective",
+  "description": "Ilya Sutskever的思维框架与表达方式。基于12段一手对话、9篇学术论文、10小时宣誓证词、 27篇推荐阅读清单和14个权威二手来源的深度调研， 提炼6个核心心智模型、8条决策启发式和完整的表达DNA。 用途：作为思维顾问，用Ilya的视角分析AI技术方向、安全策略、研究品味。 当用户提到「用Ilya的视角」「Ilya会怎么看」「Ilya模式」「ilya perspective」 「sutskever perspective」时使用。 即使用户只是说「帮我用Ilya的角度想想」「如果Ilya会怎么做」「切换到Ilya」也应触发。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 272
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "nuwa-skill",
+  "path": "examples/mrbeast-perspective/SKILL.md",
+  "stars": 35015,
+  "days_since_update": 4,
+  "layer": "flagship",
+  "repo_skill_files": 16,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "mrbeast-perspective",
+  "description": "MrBeast（Jimmy Donaldson）的内容创造操作系统。基于泄露的36页内部培训手册、 6个深度播客、决策记录和外部批评的深度调研，提炼6个核心心智模型、8条决策启发式、 完整的标题/缩略图/Hook/节奏公式，和4个可运行的内容分析脚本。 激活后沉浸式扮演MrBeast，直接以「我」的视角给出内容创作建议。 当用户提到「用MrBeast的视角」「MrBeast会怎么做」「Beast模式」「mrbeast perspective」时使用。 即使用户只是说「视频CTR怎么提升」「标题不够吸引人」「retention曲线怎么优化」「缩略图要改吗」也应触发。 不要在用户只是说「内容创作建议」「怎么做内容」等一般性问题时触发——只在涉及视频优化、标题/缩略图/Hook/留存率等YouTube方法论时激活。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 359
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "seedance-skill",
+  "path": "SKILL.md",
+  "stars": 41,
+  "days_since_update": 8,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "huashu-seedance",
+  "description": "Seedance 2.5 视频生成全流程。先把需求澄清成参数（时长/画幅/机位类型/跟随方式/要不要切镜），再用 scene.json 引擎生成白模参考视频（渲染前有几何体检），也能从用户给的照片反解出白模，最后按官方规范生成与白模严格对齐的提示词。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 125
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "skills-guide",
+  "path": "SKILL.md",
+  "stars": 20,
+  "days_since_update": 8,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "skills-guide",
+  "description": "Comprehensive guide for discovering, understanding, and installing Claude Code skills from skills.sh marketplace. Use this skill when users want to (1) browse or search skills.sh for recommendations, (2) get skill recommendations by role (developer, marketer, designer, product manager), (3) understand how a specific installed skill works by reading and explaining its SKILL.md, (4) learn the anatomy and structure of skills, or (5) find and install skills that match their specific workflow needs. This is NOT for creating new skills (use skill-creator instead).",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 564
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "steve-jobs-skill",
+  "path": "SKILL.md",
+  "stars": 963,
+  "days_since_update": 8,
+  "layer": "persona",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "steve-jobs-perspective",
+  "description": "史蒂夫·乔布斯(Steve Jobs)的思维框架与表达方式。基于Isaacson授权传记、Stanford演讲、 Lost Interview、D Conference系列、Make Something Wonderful、30+一手来源的深度调研， 提炼6个核心心智模型、8条决策启发式和完整的表达DNA。 用途：作为思维顾问，用乔布斯的视角分析产品、审视决策、提供反馈。 当用户提到「用乔布斯的视角」「乔布斯会怎么看」「Jobs模式」「steve jobs perspective」时使用。 即使用户只是说「帮我用乔布斯的角度想想」「如果乔布斯会怎么做」「切换到乔布斯」也应触发。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 292
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "sun-yuchen-perspective",
+  "path": "SKILL.md",
+  "stars": 250,
+  "days_since_update": 8,
+  "layer": "persona",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "sun-yuchen-perspective",
+  "description": "孙宇晨（Justin Sun / 孙割）的思维框架与行为逻辑。基于6个维度（著作、深度采访、表达DNA、 他者视角、决策记录、时间线）共1500+行调研素材的深度蒸馏， 提炼6个核心心智模型、8条决策启发式、5种割味造句公式和完整的表达DNA。 用途：作为思维顾问，用孙宇晨的视角分析营销策略、注意力经济、危机公关、叙事操控、蹭热点方法论。 割味十足的角色扮演——自大、暴论、碰瓷、数字轰炸、成功学底色。 当用户提到「用孙宇晨的视角」「孙割会怎么做」「孙宇晨模式」「Justin Sun perspective」「割神」时使用。 即使用户只是说「帮我用孙割的角度想想」「如果孙宇晨会怎么操作」「切换到割神」「用割的视角」也应触发。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 315
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "tramstop-skill",
+  "path": "SKILL.md",
+  "stars": 54,
+  "days_since_update": 8,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "tramstop-skill",
+  "description": "电车站.skill：去AI味的实证方法论。核心判断来自一次可复现的对照实验：AI味分四层（词汇<句式<结构<经验），病灶在结构层和经验层，人味不是删出来的，是用真实素材换出来的。两种模式：(1)诊断——给文稿做AI味分层报告；(2)改写——挖真实素材+结构手术+经验注入，铁律是绝不编造作者的经历。当用户提到「去AI味」「AI味太重」「像AI写的」「没人味」「AI腔」「humanize」「降AI感」时使用。即使用户只是说「这稿子读着不对劲」「帮我改得像人写的」「读起来像机器」「太假了」也应触发。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 249
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "trump-skill",
+  "path": "SKILL.md",
+  "stars": 269,
+  "days_since_update": 8,
+  "layer": "persona",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "trump-perspective",
+  "description": "唐纳德·特朗普（Donald Trump）的思维框架与行为逻辑。基于著作、长访谈、辩论、 心理分析、前幕僚回忆录、重大决策记录共6个维度的深度调研（320KB+原始资料）， 提炼6个核心心智模型、8条决策启发式和完整的表达DNA。 用途：（1）思维顾问——用特朗普视角分析谈判、权力、传播问题； （2）行为预判——解读他的公开行为背后的逻辑，预判下一步动作； （3）角色扮演——模拟特朗普在特定场景下的决策和表达。 当用户提到「用懂王视角」「特朗普会怎么看」「懂王逻辑」「trump perspective」 「懂王会怎么做」「从特朗普角度分析」「预测特朗普」时触发。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 284
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "x-mentor-skill",
+  "path": "SKILL.md",
+  "stars": 1292,
+  "days_since_update": 8,
+  "layer": "flagship",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "x-mastery-mentor",
+  "description": "X/Twitter运营：选题、推文与长文、账号诊断、增长和转化。用户说X运营、推特、写推文、涨粉、tweet、thread、发推时使用。以本人数据和真实经历校正通用经验。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 85
+ },
+ {
+  "login": "alchaincyf",
+  "repo": "zhangxuefeng-skill",
+  "path": "SKILL.md",
+  "stars": 10531,
+  "days_since_update": 8,
+  "layer": "persona",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "zhangxuefeng-perspective",
+  "description": "张雪峰的思维框架与表达方式。基于5本著作、15+篇权威媒体深度采访、 30+条一手语录、11个关键决策记录和完整人生时间线的深度调研， 提炼5个核心心智模型、8条决策启发式和完整的表达DNA。 用途：作为思维顾问，用张雪峰的视角分析教育选择、职业规划、阶层流动等问题。 当用户提到「用张雪峰的视角」「张雪峰会怎么看」「张雪峰模式」「雪峰视角」时使用。 即使用户只是说「帮我用张雪峰的角度想想」「如果张雪峰会怎么说」「切换到张雪峰」也应触发。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 220
+ },
+ {
+  "login": "alirezarezvani",
+  "repo": "claude-code-tresor",
+  "path": "skills/development/code-reviewer/SKILL.md",
+  "stars": 783,
+  "days_since_update": 110,
+  "layer": "skill",
+  "repo_skill_files": 8,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "code-reviewer",
+  "description": "Automatic code quality and best practices analysis. Use proactively when files are modified, saved, or committed. Analyzes code style, patterns, potential bugs, and security basics. Triggers on file changes, git diff, code edits, quality mentions.",
+  "fields": [
+   "name",
+   "description",
+   "allowed-tools"
+  ],
+  "descLen": 247
+ },
+ {
+  "login": "alirezarezvani",
+  "repo": "claude-code-tresor",
+  "path": "skills/development/git-commit-helper/SKILL.md",
+  "stars": 783,
+  "days_since_update": 110,
+  "layer": "skill",
+  "repo_skill_files": 8,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "git-commit-helper",
+  "description": "Generate conventional commit messages automatically. Use when user runs git commit, stages changes, or asks for commit message help. Analyzes git diff to create clear, descriptive conventional commit messages. Triggers on git commit, staged changes, commit message requests.",
+  "fields": [
+   "name",
+   "description",
+   "allowed-tools"
+  ],
+  "descLen": 274
+ },
+ {
+  "login": "alirezarezvani",
+  "repo": "claude-code-tresor",
+  "path": "skills/development/test-generator/SKILL.md",
+  "stars": 783,
+  "days_since_update": 110,
+  "layer": "skill",
+  "repo_skill_files": 8,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "test-generator",
+  "description": "Automatically suggest tests for new functions and components. Use when new code is written, functions added, or user mentions testing. Creates test scaffolding with Jest, Vitest, Pytest patterns. Triggers on new functions, components, test requests, testing mentions.",
+  "fields": [
+   "name",
+   "description",
+   "allowed-tools"
+  ],
+  "descLen": 267
+ },
+ {
+  "login": "alirezarezvani",
+  "repo": "claude-code-tresor",
+  "path": "skills/documentation/api-documenter/SKILL.md",
+  "stars": 783,
+  "days_since_update": 110,
+  "layer": "skill",
+  "repo_skill_files": 8,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "api-documenter",
+  "description": "Auto-generate API documentation from code and comments. Use when API endpoints change, or user mentions API docs. Creates OpenAPI/Swagger specs from code. Triggers on API file changes, documentation requests, endpoint additions.",
+  "fields": [
+   "name",
+   "description",
+   "allowed-tools"
+  ],
+  "descLen": 228
+ },
+ {
+  "login": "alirezarezvani",
+  "repo": "claude-code-tresor",
+  "path": "skills/documentation/readme-updater/SKILL.md",
+  "stars": 783,
+  "days_since_update": 110,
+  "layer": "skill",
+  "repo_skill_files": 8,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "readme-updater",
+  "description": "Keep README files current with project changes. Use when project structure changes, features added, or setup instructions modified. Suggests README updates based on code changes. Triggers on significant project changes, new features, dependency changes.",
+  "fields": [
+   "name",
+   "description",
+   "allowed-tools"
+  ],
+  "descLen": 253
+ },
+ {
+  "login": "alirezarezvani",
+  "repo": "claude-code-tresor",
+  "path": "skills/security/dependency-auditor/SKILL.md",
+  "stars": 783,
+  "days_since_update": 110,
+  "layer": "skill",
+  "repo_skill_files": 8,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "dependency-auditor",
+  "description": "Check dependencies for known vulnerabilities using npm audit, pip-audit, etc. Use when package.json or requirements.txt changes, or before deployments. Alerts on vulnerable dependencies. Triggers on dependency file changes, deployment prep, security mentions.",
+  "fields": [
+   "name",
+   "description",
+   "allowed-tools"
+  ],
+  "descLen": 259
+ },
+ {
+  "login": "alirezarezvani",
+  "repo": "claude-skills",
+  "path": "loop-library/SKILL.md",
+  "stars": 28445,
+  "days_since_update": 52,
+  "layer": "skill",
+  "repo_skill_files": 866,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "loop-library",
+  "description": "Discover, find, compare, audit, repair, adapt, and design repeatable AI-agent loops with explicit triggers, actions, verification, stopping conditions, guardrails, and handoffs. Use when a user asks to analyze a codebase for potential loops, mine coding-thread history for work done more than once, turn repeated engineering work into a loop, find or recommend a published loop, create a recurring agent workflow or automation cadence, turn an outcome into a bounded copy-ready loop, or review an existing loop for weak checks, unsafe authority, unbounded repetition, stale state, or unclear stopping behavior.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 610
+ },
+ {
+  "login": "alirezarezvani",
+  "repo": "claude-skills",
+  "path": "engineering/boost-asio-pro/SKILL.md",
+  "stars": 28445,
+  "days_since_update": 52,
+  "layer": "skill",
+  "repo_skill_files": 866,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "boost-asio-pro",
+  "description": "Use when writing or reviewing asynchronous C++ networking code with Boost.Asio or standalone Asio — TCP/UDP servers and clients, SSL/TLS, timers, strands, io_context, co_spawn, awaitable, async_read/async_write, asio::spawn, yield_context, or pre-C++20 completion-handler callbacks.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 282
+ },
+ {
+  "login": "alirezarezvani",
+  "repo": "claude-skills",
+  "path": "engineering/hivemind/SKILL.md",
+  "stars": 28445,
+  "days_since_update": 52,
+  "layer": "skill",
+  "repo_skill_files": 866,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "hivemind",
+  "description": "Orchestrate free opencode workers from Claude Code to cut token costs. Use when delegating grunt work to a single worker or a parallel swarm (scout/coder/tester) with worktree isolation, benchmarking against opencode, or when the user says \"spawn a worker\", \"swarm\", \"delegate to opencode\", or \"/oc\".",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 300
+ },
+ {
+  "login": "alirezarezvani",
+  "repo": "claude-skills",
+  "path": "engineering/minimalist/SKILL.md",
+  "stars": 28445,
+  "days_since_update": 52,
+  "layer": "skill",
+  "repo_skill_files": 866,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "minimalist",
+  "description": "Use when the user asks to write code efficiently, avoid over-engineering, reduce dependencies, or prevent unnecessary abstractions. Enforces a strict efficiency ladder: YAGNI, reuse, stdlib, native platform, existing deps — before writing any new code.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 252
+ },
+ {
+  "login": "alirezarezvani",
+  "repo": "claude-skills",
+  "path": "engineering/strict-api/SKILL.md",
+  "stars": 28445,
+  "days_since_update": 52,
+  "layer": "skill",
+  "repo_skill_files": 866,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "strict-api",
+  "description": "Use when the user says 'no hallucinations', 'verify APIs', 'reality check', or 'don't invent functions'. Prevents the agent from calling methods, imports, or variables that do not provably exist in the user's installed version.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 227
+ },
+ {
+  "login": "alirezarezvani",
+  "repo": "claude-skills",
+  "path": "productivity/swedish-mentor/SKILL.md",
+  "stars": 28445,
+  "days_since_update": 52,
+  "layer": "skill",
+  "repo_skill_files": 866,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "swedish-mentor",
+  "description": "Mentor Swedish language learners by selecting YouTube video clips and podcast episodes by CEFR level and skill (listening, reading, writing, speaking), and building a simple learning path. Use when the user asks about a Swedish learning path, YouTube clips or podcasts for Swedish, SFI videos, level assessment for svenska, or requests for Peter SFI / Lätt Svenska med Oskar / Radio Sweden på lätt svenska / Klartext-style recommendations.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 439
+ },
+ {
+  "login": "antfu",
+  "repo": "ghfs",
+  "path": "skills/ghfs/SKILL.md",
+  "stars": 276,
+  "days_since_update": 117,
+  "layer": "tool",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "ghfs",
+  "description": "Manages ghfs local mirror files in `.ghfs/`, especially translating user instructions into valid execute operations (`execute.md`, `execute.yml`, or per-item edits), running `ghfs execute` / `ghfs sync`, and validating issue/PR batch edits. Use when tasks involve editing issues/PRs through `.ghfs` artifacts, reconciling sync state, or applying queued GitHub operations.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 371
+ },
+ {
+  "login": "antfu",
+  "repo": "skills",
+  "path": "skills/antfu-create-pr/SKILL.md",
+  "stars": 5987,
+  "days_since_update": 12,
+  "layer": "skill",
+  "repo_skill_files": 11,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "antfu-create-pr",
+  "description": "Create a reviewable GitHub pull request from the current branch with a Conventional Commits title, a concise evidence-based body, and before/after screenshots for UI changes. Use when asked to open, create, publish, or prepare a PR.",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 232
+ },
+ {
+  "login": "antfu",
+  "repo": "skills",
+  "path": "skills/antfu/SKILL.md",
+  "stars": 5987,
+  "days_since_update": 12,
+  "layer": "skill",
+  "repo_skill_files": 11,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "antfu",
+  "description": "Anthony Fu's opinionated tooling and conventions for JavaScript/TypeScript projects. Use when setting up new projects, configuring ESLint/Prettier alternatives, monorepos, library publishing, or when the user mentions Anthony Fu's preferences.",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 243
+ },
+ {
+  "login": "antfu",
+  "repo": "skills",
+  "path": "skills/nitro/SKILL.md",
+  "stars": 5987,
+  "days_since_update": 12,
+  "layer": "skill",
+  "repo_skill_files": 11,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "nitro",
+  "description": "Nitro is the framework-agnostic server toolkit (powering Nuxt) for building and deploying web servers anywhere. Use when working with nitro.config, server routes/event handlers, route rules, caching, storage, tasks, websockets, or deploying to Node/Bun/Deno/Cloudflare/Vercel.",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 276
+ },
+ {
+  "login": "antfu",
+  "repo": "skills",
+  "path": "skills/nuxt/SKILL.md",
+  "stars": 5987,
+  "days_since_update": 12,
+  "layer": "skill",
+  "repo_skill_files": 11,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "nuxt",
+  "description": "Nuxt full-stack Vue framework with SSR, auto-imports, and file-based routing. Use when working with Nuxt apps, server routes, useFetch, middleware, or hybrid rendering.",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 168
+ },
+ {
+  "login": "antfu",
+  "repo": "skills",
+  "path": "skills/pinia/SKILL.md",
+  "stars": 5987,
+  "days_since_update": 12,
+  "layer": "skill",
+  "repo_skill_files": 11,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "pinia",
+  "description": "Pinia official Vue state management library, type-safe and extensible. Use when defining stores, working with state/getters/actions, or implementing store patterns in Vue apps.",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 176
+ },
+ {
+  "login": "antfu",
+  "repo": "skills",
+  "path": "skills/pnpm/SKILL.md",
+  "stars": 5987,
+  "days_since_update": 12,
+  "layer": "skill",
+  "repo_skill_files": 11,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "pnpm",
+  "description": "Node.js package manager with strict dependency resolution. Use when running pnpm specific commands, configuring workspaces via pnpm-workspace.yaml, or managing dependencies with catalogs, patches, overrides, config dependencies, or the global virtual store.",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 257
+ },
+ {
+  "login": "antfu",
+  "repo": "skills-npm",
+  "path": "test/fixtures/skill-locations/node_modules/bad-root-pkg/SKILL.md",
+  "stars": 572,
+  "days_since_update": 6,
+  "layer": "tool",
+  "repo_skill_files": 24,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "No Description",
+  "description": null,
+  "fields": [
+   "name"
+  ],
+  "descLen": 0
+ },
+ {
+  "login": "antfu",
+  "repo": "skills-npm",
+  "path": "test/fixtures/skill-locations/node_modules/root-skill-pkg/SKILL.md",
+  "stars": 572,
+  "days_since_update": 6,
+  "layer": "tool",
+  "repo_skill_files": 24,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "Root Skill",
+  "description": "Shipped at the package root",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 27
+ },
+ {
+  "login": "antfu",
+  "repo": "skills-npm",
+  "path": "test/fixtures/monorepo/node_modules/test-root-pkg/skills/root-skill/SKILL.md",
+  "stars": 572,
+  "days_since_update": 6,
+  "layer": "tool",
+  "repo_skill_files": 24,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "Root Skill",
+  "description": "A skill installed at the workspace root",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 39
+ },
+ {
+  "login": "antfu",
+  "repo": "skills-npm",
+  "path": "test/fixtures/pnpm-monorepo/node_modules/test-root-pkg/skills/root-skill/SKILL.md",
+  "stars": 572,
+  "days_since_update": 6,
+  "layer": "tool",
+  "repo_skill_files": 24,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "Root Skill",
+  "description": "A skill installed at the workspace root",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 39
+ },
+ {
+  "login": "antfu",
+  "repo": "skills-npm",
+  "path": "test/fixtures/skill-locations/node_modules/dup-pkg/skills/shared/SKILL.md",
+  "stars": 572,
+  "days_since_update": 6,
+  "layer": "tool",
+  "repo_skill_files": 24,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "Shared Skill",
+  "description": "Source copy",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 11
+ },
+ {
+  "login": "antfu",
+  "repo": "skills-npm",
+  "path": "test/fixtures/skill-locations/node_modules/root-skill-pkg/skills/ignored/SKILL.md",
+  "stars": 572,
+  "days_since_update": 6,
+  "layer": "tool",
+  "repo_skill_files": 24,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "Ignored",
+  "description": "Never scanned when a root SKILL.md exists",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 41
+ },
+ {
+  "login": "coleam00",
+  "repo": "excalidraw-diagram-skill",
+  "path": "SKILL.md",
+  "stars": 5052,
+  "days_since_update": 234,
+  "layer": "skill",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "excalidraw-diagram",
+  "description": "Create Excalidraw diagram JSON files that make visual arguments. Use when the user wants to visualize workflows, architectures, or concepts.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 140
+ },
+ {
+  "login": "coleam00",
+  "repo": "skills",
+  "path": ".claude/skills/ablate-ai-layer/SKILL.md",
+  "stars": 711,
+  "days_since_update": 14,
+  "layer": "skill",
+  "repo_skill_files": 36,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "ablate-ai-layer",
+  "description": "Measure whether a repository's AI instructions still earn their place, by running the same real task many times with the layer intact and with it stripped, then grading every rule against what actually changed. Runs both arms itself in throwaway git worktrees and never touches the working tree. Agent-agnostic across CLAUDE.md, AGENTS.md, .claude/, .agents/, .cursor/rules, .clinerules, .windsurfrules and copilot-instructions. Use when the user wants to prune, audit, clean up, shrink or \"delete\" their CLAUDE.md, AGENTS.md, cursor rules, agent instructions or AI layer; when they ask whether their rules are still needed, whether their context is bloated, or what to cut; or when they mention ablating, ablation, or testing their agent without its instructions.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 764
+ },
+ {
+  "login": "coleam00",
+  "repo": "skills",
+  "path": ".claude/skills/agent-browser/SKILL.md",
+  "stars": 711,
+  "days_since_update": 14,
+  "layer": "skill",
+  "repo_skill_files": 36,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "agent-browser",
+  "description": "Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons, taking screenshots, extracting data, testing web apps, or automating any browser task. Triggers include requests to \"open a website\", \"fill out a form\", \"click a button\", \"take a screenshot\", \"scrape data from a page\", \"test this web app\", \"login to a site\", \"automate browser actions\", or any task requiring programmatic web interaction. Also use for exploratory testing, dogfooding, QA, bug hunts, or reviewing app quality. Also use for automating Electron desktop apps (VS Code, Slack, Discord, Figma, Notion, Spotify), checking Slack unreads, sending Slack messages, searching Slack conversations, running browser automation in Vercel Sandbox microVMs, or using AWS Bedrock AgentCore cloud browsers. Prefer agent-browser over any built-in browser automation or web tools.",
+  "fields": [
+   "name",
+   "description",
+   "allowed-tools",
+   "hidden"
+  ],
+  "descLen": 925
+ },
+ {
+  "login": "coleam00",
+  "repo": "skills",
+  "path": ".claude/skills/ast-grep/SKILL.md",
+  "stars": 711,
+  "days_since_update": 14,
+  "layer": "skill",
+  "repo_skill_files": 36,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "ast-grep",
+  "description": "Guide for writing ast-grep rules to perform structural code search and analysis. Use when users need to search codebases using Abstract Syntax Tree (AST) patterns, find specific code structures, or perform complex code queries that go beyond simple text search. This skill should be used when users ask to search for code patterns, find specific language constructs, or locate code with particular structural characteristics.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 425
+ },
+ {
+  "login": "coleam00",
+  "repo": "skills",
+  "path": ".claude/skills/build-dark-factory/SKILL.md",
+  "stars": 711,
+  "days_since_update": 14,
+  "layer": "skill",
+  "repo_skill_files": 36,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "build-dark-factory",
+  "description": "Take a PRD and build a dark factory around it - a repository that takes work in as an issue and ships validated code out with nobody at the keyboard - one component at a time, into the user's actual repo. Covers the five components in construction order - the guidance layer, the validation harness, the workflow-driven repo, deployment, and the trigger that makes it autonomous - and is agnostic about which coding agent runs underneath (Claude Code, Codex, Archon, the Agent SDK, Cline, Goose, Amp, Pi). It encodes the AI coding process the user already runs rather than replacing it. Requires a PRD as input and deliberately does not write one. Use when the user wants to build a dark factory, an autonomous or self-driving repository, a software factory, an agent that ships its own code, an unattended or overnight coding loop, or asks how to get to level 4 or level 5 of AI coding autonomy; and when they mention dark factory, lights-out coding, autonomous PRs, or a repo that maintains itself.",
+  "fields": [
+   "name",
+   "description",
+   "argument-hint",
+   "arguments"
+  ],
+  "descLen": 1000
+ },
+ {
+  "login": "coleam00",
+  "repo": "skills",
+  "path": ".claude/skills/build-signal-engine/SKILL.md",
+  "stars": 711,
+  "days_since_update": 14,
+  "layer": "skill",
+  "repo_skill_files": 36,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "build-signal-engine",
+  "description": "Build a personal signal engine from scratch - a system that reads every source someone cares about each day (changelogs and release notes, communities, feeds, videos, papers), makes a quick decision on every item, lets an LLM read only what survives, and delivers one short digest. Interviews the user first to pin down what they need to keep up with, the sources where it actually shows up, and the one question that decides what is worth their time, then builds it one stage at a time into their own repo, proving each stage on real data. Agnostic about the coding agent, the decision model and where the data comes from. Use when the user wants to keep up with AI or their field without doomscrolling, build an AI news digest, a daily briefing, a content engine, a research or competitor monitor, a changelog watcher, or \"something that reads everything and tells me what matters\"; and when they mention signal vs noise, an information diet, or falling behind.",
+  "fields": [
+   "name",
+   "description",
+   "argument-hint",
+   "arguments"
+  ],
+  "descLen": 963
+ },
+ {
+  "login": "coleam00",
+  "repo": "skills",
+  "path": ".claude/skills/drive-screen/SKILL.md",
+  "stars": 711,
+  "days_since_update": 14,
+  "layer": "skill",
+  "repo_skill_files": 36,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "drive-screen",
+  "description": "Take real control of the desktop - list and focus windows, type, paste, click, scroll, and screenshot - on Windows, macOS or Linux, and drive other coding-agent sessions running in terminals. Use when asked to set up the screen or the day, open and arrange a set of apps or repos, prepare or run a live demo before recording, test a desktop application that has no headless harness, launch or steer a Claude Code session in another window, or capture what is on screen as evidence. Triggers on \"set up my screen\", \"get my demo ready\", \"drive the screen\", \"control my desktop\", \"open these repos and start\", \"test this desktop app\", \"run this on my machine and show me\". Not for browser automation, which has its own headless tooling.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 733
+ },
+ {
+  "login": "lijigang",
+  "repo": "ljg-skills",
+  "path": "skills/ljg-analogy/SKILL.md",
+  "stars": 7532,
+  "days_since_update": 2,
+  "layer": "skill",
+  "repo_skill_files": 26,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "ljg-analogy",
+  "description": "基于结构映射理论，为场景或两个对象的差异寻找精妙类比与关系隐喻，保留关键关系、解释增量与迁移边界。USE WHEN 用户说「找个类比」「打个比方」「有什么精妙的隐喻」「用类比讲清两者区别」「换个场景理解」或调用 ljg-analogy。NOT FOR 只解释现成比喻、纯修辞润色、理论定义或把类比当作事实证明。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 155
+ },
+ {
+  "login": "lijigang",
+  "repo": "ljg-skills",
+  "path": "skills/ljg-blind/SKILL.md",
+  "stars": 7532,
+  "days_since_update": 2,
+  "layer": "skill",
+  "repo_skill_files": 26,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "ljg-blind",
+  "description": "盲区扫描——读昨天你与 AI 的全部对话，照出暴露的思维盲区（不是不懂的知识，是让某类真相一直看不见的思维习惯），再从微信读书挑一本书的一章精准补上，落成一篇完整分析笔记。Use when user says '扫盲区', '盲区', '照盲区', '看看我的思维盲区', '我昨天想漏了什么', 'blind spot', 'ljg-blind', '/ljg-blind', or wants yesterday's AI conversations analyzed for cognitive blind spots plus a targeted weread chapter to fill them. 可选参数：传一个日期(YYYY-MM-DD)扫那天而非昨天。NOT FOR 纵向深钻一个观点（用 ljg-think）、一个领域降秩（用 ljg-rank）、陪读一篇文本（用 ljg-read）、找一个领域的约束（用 ljg-constraint）。",
+  "fields": [
+   "name",
+   "description",
+   "user_invocable"
+  ],
+  "descLen": 433
+ },
+ {
+  "login": "lijigang",
+  "repo": "ljg-skills",
+  "path": "skills/ljg-book/SKILL.md",
+  "stars": 7532,
+  "days_since_update": 2,
+  "layer": "skill",
+  "repo_skill_files": 26,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "ljg-book",
+  "description": "Explain a whole book to readers without specialist knowledge: what it follows, how its main threads connect, where it ends, and how its evidence or events change understanding. Keep the book's specific content; a general lesson alone is not enough. USE WHEN given a book title, PDF, EPUB, excerpt, or asked 拆书, 分析这本书, 这本书在讲什么, 压缩一本书, or book. Defaults to a saved Org note. NOT FOR chapter summaries, papers, formal reviews, or single-concept deep dives.",
+  "fields": [
+   "name",
+   "description",
+   "user_invocable"
+  ],
+  "descLen": 453
+ },
+ {
+  "login": "lijigang",
+  "repo": "ljg-skills",
+  "path": "skills/ljg-business-model/SKILL.md",
+  "stars": 7532,
+  "days_since_update": 2,
+  "layer": "skill",
+  "repo_skill_files": 26,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "ljg-business-model",
+  "description": "基于《商业模式新生代》的 Business Model Canvas，把用户提供的项目介绍、访谈、产品资料或商业计划整理成九模块商业模式画布卡片，交付 PNG 与可修改的 HTML。USE WHEN 用户调用 ljg-business-model、要求画商业模式画布、九宫格商业模式或把商业信息做成画布卡片。NOT FOR 普通商业分析、投资估值、Lean Canvas 或只解释商业模式概念。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 197
+ },
+ {
+  "login": "lijigang",
+  "repo": "ljg-skills",
+  "path": "skills/ljg-card/SKILL.md",
+  "stars": 7532,
+  "days_since_update": 2,
+  "layer": "skill",
+  "repo_skill_files": 26,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "ljg-card",
+  "description": "Content caster (铸). Transforms text into PNG through precise HTML typography and, when the mold needs it, generated raster imagery. Four molds: -l (default) long reading card, -f source-faithful full text, -c comic, -w whiteboard. USE WHEN user says '铸', 'cast', '做成图', '做成卡片', '做成海报', '原文排版', '全文卡片', '漫画', or '白板'.",
+  "fields": [
+   "name",
+   "description",
+   "user_invocable",
+   "version"
+  ],
+  "descLen": 316
+ },
+ {
+  "login": "lijigang",
+  "repo": "ljg-skills",
+  "path": "skills/ljg-classic/SKILL.md",
+  "stars": 7532,
+  "days_since_update": 2,
+  "layer": "skill",
+  "repo_skill_files": 26,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "ljg-classic",
+  "description": "古文逐字注解、组合排版、章节意旨图与全章解读生成器。把原文、字词注、句义注、无字顶部配图和章节解读排成一张可读的长 PNG。USE WHEN 用户调用 ljg-classic OR 要求给文言文、古诗文、经史子集做逐字注解、彩色夹注、章节解读、古文讲义图、章节配图。NOT FOR 只翻译一句古文、只写现代文章或通用内容卡片。",
+  "fields": [
+   "name",
+   "description",
+   "user_invocable",
+   "version"
+  ],
+  "descLen": 163
+ },
+ {
+  "login": "mcncarl",
+  "repo": "yichen-skills",
+  "path": "yichen-agent-memory/SKILL.md",
+  "stars": 4495,
+  "days_since_update": 17,
+  "layer": "skill",
+  "repo_skill_files": 19,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yichen-agent-memory",
+  "description": "安装、升级、检索或维护 Agent Memory Vault 共享记忆系统；用于明确的记忆系统任务。普通业务的历史回忆按 Vault 入口读取，不启动安装或维护流程。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 83
+ },
+ {
+  "login": "mcncarl",
+  "repo": "yichen-skills",
+  "path": "yichen-asr/SKILL.md",
+  "stars": 4495,
+  "days_since_update": 17,
+  "layer": "skill",
+  "repo_skill_files": 19,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yichen-asr",
+  "description": "逸尘自用的统一音视频转写入口，在 StepFun Step ASR 与火山引擎豆包 ASR 之间按输出需求、安全边界和可用状态路由。用于本地音频或视频的纯文本转写、时间戳、SRT 字幕、口播粗剪，以及转写前体检；用户明确指定服务商时不得静默切换。Use when a local audio or video file needs transcription and the correct ASR backend is unclear, or when the user explicitly invokes $yichen-asr.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 268
+ },
+ {
+  "login": "mcncarl",
+  "repo": "yichen-skills",
+  "path": "yichen-bookmarks-export/SKILL.md",
+  "stars": 4495,
+  "days_since_update": 17,
+  "layer": "skill",
+  "repo_skill_files": 19,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yichen-bookmarks-export",
+  "description": "在用户当轮明确授权后，只读导出其小红书收藏、抖音收藏或 X/Twitter 书签为本地链接文件；本 Skill 直接完成收藏页滚动、链接提取、去重、数量核验、Field Theory GraphQL-only 导出和抽样验证。用于“导出/备份/同步我的收藏或书签链接”等私人数据导出任务；不得用于公开搜索、收藏内容分析、媒体下载、正文归档、推荐发现或未获当轮授权的私人读取。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 187
+ },
+ {
+  "login": "mcncarl",
+  "repo": "yichen-skills",
+  "path": "yichen-chatgpt-web-research/SKILL.md",
+  "stars": 4495,
+  "days_since_update": 17,
+  "layer": "skill",
+  "repo_skill_files": 19,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yichen-chatgpt-web-research",
+  "description": "Use the user's already signed-in official ChatGPT website account, especially GPT-5.5 Pro / ChatGPT Pro, to perform product research, market research, competitor research, second-opinion analysis, or any request that says ChatGPT 官网, ChatGPT 网页版, GPT-5.5 Pro, 5.5 Pro, 用官网调研, 产品调研, 市场调研, or avoid API cost. Prefer the Chrome plugin/extension route; if it is unavailable or cannot attach, fall back to Computer Use on the real visible Chrome window/profile. This skill must control the real ChatGPT web page in the intended Chrome account/profile; it must not open a different free-account window, use OpenAI API, use web search alone, use generic Playwright, or use the deprecated chatgpt-web MCP.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 697
+ },
+ {
+  "login": "mcncarl",
+  "repo": "yichen-skills",
+  "path": "yichen-codex-chatgpt/SKILL.md",
+  "stars": 4495,
+  "days_since_update": 17,
+  "layer": "skill",
+  "repo_skill_files": 19,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yichen-codex-chatgpt",
+  "description": "Use the signed-in ChatGPT website in Chat UI Pro mode, never Work mode, to research, architect, and review one local project through a configured Secure Tunnel and read-only MCP, while Codex alone edits and tests locally. Trigger on explicit $yichen-codex-chatgpt, 让 ChatGPT 设计后由 Codex 写代码, ChatGPT 架构并审查 Codex, or requests for a Codex and ChatGPT collaboration loop. Pure research stays on the official ChatGPT website; code and hybrid work follow ChatGPT PLAN to Codex execution to ChatGPT REVIEW. Website control defaults to in-app browser, then Chrome, then bounded Computer Use. Use a compatible local-only MCP only when the user explicitly requests local-only mode and that optional dependency is configured, never as an automatic fallback.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 746
+ },
+ {
+  "login": "mcncarl",
+  "repo": "yichen-skills",
+  "path": "yichen-content-archive/SKILL.md",
+  "stars": 4495,
+  "days_since_update": 17,
+  "layer": "skill",
+  "repo_skill_files": 19,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yichen-content-archive",
+  "description": "按用户当轮要求读取、下载或归档已知网页/社交媒体链接、URL 清单、已确认候选或明确的有限容器。支持显式有界站点归档；不用于关键词发现、推荐扩展或私人收藏导出。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 80
+ },
+ {
+  "login": "mvanhorn",
+  "repo": "last30days-skill",
+  "path": "skills/last30days/SKILL.md",
+  "stars": 64861,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "last30days",
+  "description": "Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web. Includes a doctor health check to diagnose broken or missing sources.",
+  "fields": [
+   "name",
+   "version",
+   "description",
+   "argument-hint",
+   "allowed-tools",
+   "homepage",
+   "repository",
+   "author",
+   "license",
+   "user-invocable",
+   "metadata"
+  ],
+  "descLen": 246
+ },
+ {
+  "login": "numman-ali",
+  "repo": "n-skills",
+  "path": "skills/automation/dev-browser/skills/dev-browser/SKILL.md",
+  "stars": 1051,
+  "days_since_update": 39,
+  "layer": "skill",
+  "repo_skill_files": 5,
+  "sampled": 5,
+  "hasFm": true,
+  "name": "dev-browser",
+  "description": "Browser automation with persistent named pages via the dev-browser CLI. Use when users ask to navigate websites, fill forms, take screenshots, extract web data, test web apps, log into sites, or automate browser workflows. Trigger phrases include \"go to [url]\", \"click on\", \"fill out the form\", \"take a screenshot\", \"scrape\", \"automate\", \"test the website\", \"log into\", \"open the browser\", or any browser interaction request.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 425
+ },
+ {
+  "login": "numman-ali",
+  "repo": "n-skills",
+  "path": "skills/tools/gastown/skills/gastown/SKILL.md",
+  "stars": 1051,
+  "days_since_update": 39,
+  "layer": "skill",
+  "repo_skill_files": 5,
+  "sampled": 5,
+  "hasFm": true,
+  "name": "gastown",
+  "description": "Multi-agent orchestrator for Claude Code. Use when user mentions gastown, gas town, gt commands, bd commands, convoys, polecats, crew, rigs, slinging work, multi-agent coordination, beads, hooks, molecules, workflows, the witness, the mayor, the refinery, the deacon, dogs, escalation, or wants to run multiple AI agents on projects simultaneously. Handles installation, workspace setup, work tracking, agent lifecycle, crash recovery, and all gt/bd CLI operations.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 465
+ },
+ {
+  "login": "numman-ali",
+  "repo": "n-skills",
+  "path": "skills/tools/zai-cli/skills/zai-cli/SKILL.md",
+  "stars": 1051,
+  "days_since_update": 39,
+  "layer": "skill",
+  "repo_skill_files": 5,
+  "sampled": 5,
+  "hasFm": true,
+  "name": "zai-cli",
+  "description": "Z.AI CLI providing: - Vision: image/video analysis, OCR, UI-to-code, error diagnosis (GLM-4.6V) - Search: real-time web search with domain/recency filtering - Reader: web page to markdown extraction - Repo: GitHub code search and reading via ZRead - Tools: MCP tool discovery and raw calls - Code: TypeScript tool chaining Use for visual content analysis, web search, page reading, or GitHub exploration. Requires Z_AI_API_KEY.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 427
+ },
+ {
+  "login": "numman-ali",
+  "repo": "n-skills",
+  "path": "skills/workflow/open-source-maintainer/skills/open-source-maintainer/SKILL.md",
+  "stars": 1051,
+  "days_since_update": 39,
+  "layer": "skill",
+  "repo_skill_files": 5,
+  "sampled": 5,
+  "hasFm": true,
+  "name": "open-source-maintainer",
+  "description": "End-to-end GitHub repository maintenance for open-source projects. Use when asked to triage issues, review PRs, analyze contributor activity, generate maintenance reports, or maintain a repository. Triggers include \"triage\", \"maintain\", \"review PRs\", \"analyze issues\", \"repo maintenance\", \"what needs attention\", \"open source maintenance\", or any request to understand and act on GitHub issues/PRs. Supports human-in-the-loop workflows with persistent memory across sessions.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 475
+ },
+ {
+  "login": "numman-ali",
+  "repo": "n-skills",
+  "path": "skills/workflow/orchestration/skills/orchestration/SKILL.md",
+  "stars": 1051,
+  "days_since_update": 39,
+  "layer": "skill",
+  "repo_skill_files": 5,
+  "sampled": 5,
+  "hasFm": true,
+  "name": "orchestration",
+  "description": "Multi-agent orchestration for complex tasks. Use when tasks require parallel work, multiple agents, or sophisticated coordination. Triggers include requests for features, reviews, refactoring, testing, documentation, or any work that benefits from decomposition into parallel subtasks. This skill defines how to orchestrate work using cc-mirror tasks for persistent dependency tracking and TodoWrite for real-time session visibility.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 433
+ },
+ {
+  "login": "numman-ali",
+  "repo": "openskills",
+  "path": "examples/my-first-skill/SKILL.md",
+  "stars": 10805,
+  "days_since_update": 276,
+  "layer": "skill",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "my-first-skill",
+  "description": "Example skill demonstrating Anthropic SKILL.md format. Load when learning to create skills or testing the OpenSkills loader.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 124
+ },
+ {
+  "login": "obra",
+  "repo": "superpowers",
+  "path": "skills/brainstorming/SKILL.md",
+  "stars": 301998,
+  "days_since_update": 11,
+  "layer": "testing",
+  "repo_skill_files": 15,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "brainstorming",
+  "description": "You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a talk, a business, a renovation).",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 213
+ },
+ {
+  "login": "obra",
+  "repo": "superpowers",
+  "path": "skills/diagnosing-superpowers/SKILL.md",
+  "stars": 301998,
+  "days_since_update": 11,
+  "layer": "testing",
+  "repo_skill_files": 15,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "diagnosing-superpowers",
+  "description": "Use when a superpowers session went wrong and your human partner wants to know why — repeated work, ignored plans, stumbles, poor results, a skill that didn't fire, \"it took too long\", \"why is it so expensive\", \"what is it doing\" — or wants to build a bug report for the superpowers maintainers, for the current session or a past one identified by id or path, on any harness.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 375
+ },
+ {
+  "login": "obra",
+  "repo": "superpowers",
+  "path": "skills/dispatching-parallel-agents/SKILL.md",
+  "stars": 301998,
+  "days_since_update": 11,
+  "layer": "testing",
+  "repo_skill_files": 15,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "dispatching-parallel-agents",
+  "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 106
+ },
+ {
+  "login": "obra",
+  "repo": "superpowers",
+  "path": "skills/executing-plans/SKILL.md",
+  "stars": 301998,
+  "days_since_update": 11,
+  "layer": "testing",
+  "repo_skill_files": 15,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "executing-plans",
+  "description": "Use when executing an implementation plan in the current session as the implementer yourself — your human partner chose inline execution, or no subagent tool is available",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 170
+ },
+ {
+  "login": "obra",
+  "repo": "superpowers",
+  "path": "skills/finishing-a-development-branch/SKILL.md",
+  "stars": 301998,
+  "days_since_update": 11,
+  "layer": "testing",
+  "repo_skill_files": 15,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "finishing-a-development-branch",
+  "description": "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 101
+ },
+ {
+  "login": "obra",
+  "repo": "superpowers",
+  "path": "skills/receiving-code-review/SKILL.md",
+  "stars": 301998,
+  "days_since_update": 11,
+  "layer": "testing",
+  "repo_skill_files": 15,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "receiving-code-review",
+  "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 234
+ },
+ {
+  "login": "op7418",
+  "repo": "Claude-to-IM-skill",
+  "path": "SKILL.md",
+  "stars": 2891,
+  "days_since_update": 212,
+  "layer": "skill",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "claude-to-im",
+  "description": "Bridge THIS Claude Code or Codex session to Telegram, Discord, Feishu/Lark, QQ, or WeChat so the user can chat with Claude from their phone. Use for: setting up, starting, stopping, or diagnosing the claude-to-im bridge daemon; forwarding Claude replies to a messaging app; any phrase like \"claude-to-im\", \"bridge\", \"消息推送\", \"消息转发\", \"桥接\", \"连上飞书\", \"手机上看claude\", \"启动后台服务\", \"诊断\", \"查看日志\", \"配置\". Subcommands: setup, start, stop, status, logs, reconfigure, doctor. Do NOT use for: building standalone bots, webhook integrations, or coding with IM platform SDKs — those are regular programming tasks.",
+  "fields": [
+   "name",
+   "description",
+   "argument-hint",
+   "allowed-tools"
+  ],
+  "descLen": 592
+ },
+ {
+  "login": "op7418",
+  "repo": "Humanizer-zh",
+  "path": "SKILL.md",
+  "stars": 20205,
+  "days_since_update": 28,
+  "layer": "skill",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "humanizer-zh",
+  "description": "编辑中文文章、评论和文档中的空话、重复及模板化表达，让文字更自然，同时保留事实、确定程度和作者声音。适用于润色已有文本，不用于判断作者身份或保证通过 AI 检测器。",
+  "fields": [
+   "name",
+   "description",
+   "allowed-tools",
+   "metadata"
+  ],
+  "descLen": 82
+ },
+ {
+  "login": "op7418",
+  "repo": "Youtube-clipper-skill",
+  "path": "SKILL.md",
+  "stars": 2250,
+  "days_since_update": 272,
+  "layer": "skill",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "youtube-clipper",
+  "description": "YouTube 视频智能剪辑工具。下载视频和字幕，AI 分析生成精细章节（几分钟级别）， 用户选择片段后自动剪辑、翻译字幕为中英双语、烧录字幕到视频，并生成总结文案。 使用场景：当用户需要剪辑 YouTube 视频、生成短视频片段、制作双语字幕版本时。 关键词：视频剪辑、YouTube、字幕翻译、双语字幕、视频下载、clip video",
+  "fields": [
+   "name",
+   "description",
+   "allowed-tools",
+   "model"
+  ],
+  "descLen": 169
+ },
+ {
+  "login": "op7418",
+  "repo": "guizang-material-illustration",
+  "path": "SKILL.md",
+  "stars": 1216,
+  "days_since_update": 106,
+  "layer": "skill",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "guizang-material-illustration",
+  "description": "Generate Guizang-style material illustrations, labeled explanatory visuals, material-styled chart illustrations, and data-first editorial images from articles, notes, product concepts, workplace reports, creator posts, tutorials, school materials, humanities topics, science explanations, screenshots, or chart data. Use when the user asks for 配图, 带字插图, 解释图, 图解插画, 概念拆解图, 图表美化, 数据图美化, 3D 图表, 汇报配图, 内容配图, 小学课文配图, 生物/化学/物理解释图, 人文类配图, process/loop/system diagrams, or wants GPT-Image / image generation to create supporting images that can sit inside social cards, docs, slides, PPTs, or posts.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 591
+ },
+ {
+  "login": "op7418",
+  "repo": "guizang-ppt-skill",
+  "path": "SKILL.md",
+  "stars": 28324,
+  "days_since_update": 75,
+  "layer": "skill",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "guizang-ppt-skill",
+  "description": "生成横向翻页网页 PPT（单 HTML 文件），含 WebGL 背景、演讲者视图、观众屏同步、讲稿备注、章节幕封、数据大字报、图片网格等模板。提供两种风格：① \"电子杂志 × 电子墨水\"（衬线 + 流体背景 + 暖色） ② \"瑞士国际主义\"（无衬线 + 网格点阵 + IKB/柠檬黄/柠檬绿/安全橙高亮）。当用户需要制作分享 / 演讲 / 发布会风格的网页 PPT，或提到\"杂志风 PPT\"、\"瑞士风 PPT\"、\"Swiss Style\"、\"horizontal swipe deck\"时使用。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 247
+ },
+ {
+  "login": "op7418",
+  "repo": "guizang-product-video-skill",
+  "path": "SKILL.md",
+  "stars": 835,
+  "days_since_update": 12,
+  "layer": "skill",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "guizang-product-video-skill",
+  "description": "制作代码驱动的软件产品宣传片和版本更新片（product promo、release notes video、changelog promo）。从真实功能和产品设计出发定方向，用真实组件、GSAP/Three.js 动效、原创配乐和动作音效完成影片，每支片子的视觉手法都从产品本身推导，不套模板。",
+  "fields": [
+   "name",
+   "license",
+   "description"
+  ],
+  "descLen": 148
+ },
+ {
+  "login": "op7418",
+  "repo": "guizang-social-card-skill",
+  "path": "SKILL.md",
+  "stars": 7605,
+  "days_since_update": 112,
+  "layer": "skill",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "guizang-social-card-skill",
+  "description": "Generate Guizang-style social card image sets, Live Photo motion cards, material-first Live Photo puzzle layouts, triple Live Photo collages, long-video-to-Live-Photo treatments, and WeChat official account cover pairs from articles, scripts, screenshots, product notes, subtitles, photos, or user-supplied videos. Use when the user asks for 小红书图文, Rednote/Xiaohongshu images, social cards, carousel images, 3:4 covers, Live Photo, 实况照片, 单视频实况拼图, 二宫格实况拼图, 三连实况拼图, 四宫格实况拼图, 微信公众号封面, WeChat 21:9 + 1:1 covers, Swiss Style, or magazine-style social images.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 553
+ },
+ {
+  "login": "op7418",
+  "repo": "guizang-yingzao-skill",
+  "path": "yingzao/SKILL.md",
+  "stars": 508,
+  "days_since_update": 48,
+  "layer": "skill",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "yingzao",
+  "description": "Transform real Chinese architecture and place-based cultural photos into art-directed editorial posters, integrated multi-photo scenes, and optional source comparisons. Use for historic buildings, vernacular streets, culturally rooted shops, interiors, food, travel covers, and place montages; do not use for generic advertising, routine retouching, or invented places.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 369
+ },
+ {
+  "login": "op7418",
+  "repo": "logo-generator-skill",
+  "path": "SKILL.md",
+  "stars": 2254,
+  "days_since_update": 189,
+  "layer": "skill",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "logo-generator",
+  "description": "Generate professional SVG logos and high-end showcase images. Use when the user wants to: (1) Create a logo or icon for their product/brand, (2) Generate logo design concepts based on product information, (3) Create professional logo showcase presentations with multiple background styles, (4) Export logos in various formats (SVG, PNG), or (5) Iterate on logo designs with different visual styles. Supports geometric patterns, dot matrix designs, line systems, and mixed compositions. Generates showcase images using Nano Banana (Gemini image generation) with 12 professional background styles.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 595
+ },
+ {
+  "login": "sickn33",
+  "repo": "agentic-awesome-skills",
+  "path": "skills/00-andruia-consultant/SKILL.md",
+  "stars": 48080,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 8434,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "00-andruia-consultant",
+  "description": "Usar al iniciar o mejorar un proyecto de IA: diagnostica código y restricciones, propone skills existentes y redacta tareas y un plan de implementación en español.",
+  "fields": [
+   "id",
+   "name",
+   "description",
+   "category",
+   "risk",
+   "source",
+   "date_added"
+  ],
+  "descLen": 163
+ },
+ {
+  "login": "sickn33",
+  "repo": "agentic-awesome-skills",
+  "path": "skills/007/SKILL.md",
+  "stars": 48080,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 8434,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "007",
+  "description": "Security audit, hardening, threat modeling (STRIDE/PASTA), Red/Blue Team, OWASP checks, code review, incident response, and infrastructure security for any project.",
+  "fields": [
+   "name",
+   "description",
+   "risk",
+   "source",
+   "date_added",
+   "author",
+   "tags",
+   "tools"
+  ],
+  "descLen": 164
+ },
+ {
+  "login": "sickn33",
+  "repo": "agentic-awesome-skills",
+  "path": "skills/10-andruia-skill-smith/SKILL.md",
+  "stars": 48080,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 8434,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "10-andruia-skill-smith",
+  "description": "Usar para crear o mejorar una skill de Andru.ia: define entradas y resultados, redacta SKILL.md con ejemplos y límites, valida la estructura y prepara una PR.",
+  "fields": [
+   "id",
+   "name",
+   "description",
+   "category",
+   "risk",
+   "source",
+   "date_added"
+  ],
+  "descLen": 158
+ },
+ {
+  "login": "sickn33",
+  "repo": "agentic-awesome-skills",
+  "path": "skills/20-andruia-niche-intelligence/SKILL.md",
+  "stars": 48080,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 8434,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "20-andruia-niche-intelligence",
+  "description": "Usar tras definir el sector de un proyecto: prepara un dossier en español con contexto, normas aplicables, patrones UX y riesgos, distinguiendo fuentes verificadas de hipótesis.",
+  "fields": [
+   "id",
+   "name",
+   "description",
+   "category",
+   "risk",
+   "source",
+   "date_added"
+  ],
+  "descLen": 177
+ },
+ {
+  "login": "sickn33",
+  "repo": "agentic-awesome-skills",
+  "path": "skills/2slides-ppt-generator/SKILL.md",
+  "stars": 48080,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 8434,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "2slides-ppt-generator",
+  "description": "AI-powered presentation generation via the 2slides API — create slides from text, match a reference image style, summarize documents into decks, add AI voice narration, and export pages/audio. Use for any \\\"make slides\\\", \\\"create a deck\\\", or \\\"slides from this document\\\" request.",
+  "fields": [
+   "name",
+   "description",
+   "category",
+   "risk",
+   "source",
+   "source_repo",
+   "source_type",
+   "date_added",
+   "author",
+   "tags",
+   "tools",
+   "plugin"
+  ],
+  "descLen": 282
+ },
+ {
+  "login": "sickn33",
+  "repo": "agentic-awesome-skills",
+  "path": "skills/360-feedback-system/SKILL.md",
+  "stars": 48080,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 8434,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "360-feedback-system",
+  "description": "360 feedback register: reviewer, subject, review cycle, visibility, due date and score, as CSV, SQL, JSON Schema or Notion on request. Use for 360 reviews or peer feedback cycles.",
+  "fields": [
+   "name",
+   "description",
+   "category",
+   "risk",
+   "source",
+   "source_type",
+   "date_added",
+   "author",
+   "tags",
+   "tools",
+   "source_repo"
+  ],
+  "descLen": 179
+ },
+ {
+  "login": "steipete",
+  "repo": "agent-scripts",
+  "path": "skills/agent-transcript/SKILL.md",
+  "stars": 7392,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 54,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "agent-transcript",
+  "description": "Requested GitHub PR/issue agent transcripts: redact, trim, preview, and insert safely.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 86
+ },
+ {
+  "login": "steipete",
+  "repo": "agent-scripts",
+  "path": "skills/beeper/SKILL.md",
+  "stars": 7392,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 54,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "beeper",
+  "description": "Beeper cache: contact hints, room lookup, WhatsApp/iMessage traces, FTS.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 72
+ },
+ {
+  "login": "steipete",
+  "repo": "agent-scripts",
+  "path": "skills/browser-use/SKILL.md",
+  "stars": 7392,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 54,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "browser-use",
+  "description": "Control the user's existing signed-in Chrome: callable Codex Chrome plugin first, then OpenClaw extension-backed mcporter, with direct DevTools attachment only as a last fallback.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 179
+ },
+ {
+  "login": "steipete",
+  "repo": "agent-scripts",
+  "path": "skills/clawsweeper-status/SKILL.md",
+  "stars": 7392,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 54,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "clawsweeper-status",
+  "description": "ClawSweeper status: URLs, workflow health, active workers, ops snapshot.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 72
+ },
+ {
+  "login": "steipete",
+  "repo": "agent-scripts",
+  "path": "skills/clickclack/SKILL.md",
+  "stars": 7392,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 54,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "clickclack",
+  "description": "ClickClack ops: chat app, Cloudflare Workers deploy, DNS/docs/app, container rollout.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 85
+ },
+ {
+  "login": "steipete",
+  "repo": "agent-scripts",
+  "path": "skills/cloudflare-registrar/SKILL.md",
+  "stars": 7392,
+  "days_since_update": 1,
+  "layer": "skill",
+  "repo_skill_files": 54,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "cloudflare-registrar",
+  "description": "Cloudflare Registrar: domain availability, prices, registration via mcporter.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 77
+ },
+ {
+  "login": "wshobson",
+  "repo": "agents",
+  "path": "plugins/accessibility-compliance/skills/screen-reader-testing/SKILL.md",
+  "stars": 41351,
+  "days_since_update": 2,
+  "layer": "skill",
+  "repo_skill_files": 185,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "screen-reader-testing",
+  "description": "Test web applications with screen readers including VoiceOver, NVDA, and JAWS. Use when validating screen reader compatibility, debugging accessibility issues, or ensuring assistive technology support.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 201
+ },
+ {
+  "login": "wshobson",
+  "repo": "agents",
+  "path": "plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md",
+  "stars": 41351,
+  "days_since_update": 2,
+  "layer": "skill",
+  "repo_skill_files": 185,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "wcag-audit-patterns",
+  "description": "Conduct WCAG 2.2 accessibility audits with automated testing, manual verification, and remediation guidance. Use when auditing websites for accessibility, fixing WCAG violations, or implementing accessible design patterns.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 222
+ },
+ {
+  "login": "wshobson",
+  "repo": "agents",
+  "path": "plugins/agent-teams/skills/multi-reviewer-patterns/SKILL.md",
+  "stars": 41351,
+  "days_since_update": 2,
+  "layer": "skill",
+  "repo_skill_files": 185,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "multi-reviewer-patterns",
+  "description": "Coordinate parallel code reviews across multiple quality dimensions with finding deduplication, severity calibration, and consolidated reporting. Use this skill when organizing multi-reviewer code reviews, calibrating finding severity, or consolidating review results.",
+  "fields": [
+   "name",
+   "description",
+   "version"
+  ],
+  "descLen": 268
+ },
+ {
+  "login": "wshobson",
+  "repo": "agents",
+  "path": "plugins/agent-teams/skills/parallel-debugging/SKILL.md",
+  "stars": 41351,
+  "days_since_update": 2,
+  "layer": "skill",
+  "repo_skill_files": 185,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "parallel-debugging",
+  "description": "Debug complex issues using competing hypotheses with parallel investigation, evidence collection, and root cause arbitration. Use this skill when debugging bugs with multiple potential causes, performing root cause analysis, or organizing parallel investigation workflows.",
+  "fields": [
+   "name",
+   "description",
+   "version"
+  ],
+  "descLen": 272
+ },
+ {
+  "login": "wshobson",
+  "repo": "agents",
+  "path": "plugins/agent-teams/skills/parallel-feature-development/SKILL.md",
+  "stars": 41351,
+  "days_since_update": 2,
+  "layer": "skill",
+  "repo_skill_files": 185,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "parallel-feature-development",
+  "description": "Coordinate parallel feature development with file ownership strategies, conflict avoidance rules, and integration patterns for multi-agent implementation. Use this skill when decomposing a large feature into independent work streams, when two or more agents need to implement different layers of the same system simultaneously, when establishing file ownership to prevent merge conflicts in a shared codebase, when designing interface contracts so parallel implementers can build against each other's APIs before they are ready, or when deciding whether to use vertical slices versus horizontal layers for a full-stack feature.",
+  "fields": [
+   "name",
+   "description",
+   "version"
+  ],
+  "descLen": 627
+ },
+ {
+  "login": "wshobson",
+  "repo": "agents",
+  "path": "plugins/agent-teams/skills/task-coordination-strategies/SKILL.md",
+  "stars": 41351,
+  "days_since_update": 2,
+  "layer": "skill",
+  "repo_skill_files": 185,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "task-coordination-strategies",
+  "description": "Decompose complex tasks, design dependency graphs, and coordinate multi-agent work with proper task descriptions and workload balancing. Use this skill when breaking down work for agent teams, managing task dependencies, or monitoring team progress.",
+  "fields": [
+   "name",
+   "description",
+   "version"
+  ],
+  "descLen": 249
+ },
+ {
+  "login": "yan5xu",
+  "repo": "codexloom",
+  "path": "skills/domain-agent-coaching/SKILL.md",
+  "stars": 389,
+  "days_since_update": 62,
+  "layer": "tool",
+  "repo_skill_files": 10,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "domain-agent-coaching",
+  "description": "Coach the design and ongoing reflection of long-lived domain Agents and Agent organizations. Use when defining or revising Identity, Domain, Scope, Organization or Collaboration relationships; deciding whether recurring work should become an Agent, Internal Agent, Skill, or Task; examining overlap, gaps, overloaded domains, unclear external roles, or unhealthy collaboration paths. Guide with evidence and questions without assuming the business context or making the owner's decisions.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 488
+ },
+ {
+  "login": "yan5xu",
+  "repo": "codexloom",
+  "path": "skills/loom-artifacts/SKILL.md",
+  "stars": 389,
+  "days_since_update": 62,
+  "layer": "tool",
+  "repo_skill_files": 10,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "loom-artifacts",
+  "description": "Receive files from the CodexLoom Thread composer and publish generated images or files back to the Thread as managed artifacts. Use when a user message contains loom_attachments; an attached document, data file, image, or archive must be read; or the Agent has produced a file that the user should preview or download. Do not use this Skill for files sent through external Feishu, Slack, or Parall conversations.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 412
+ },
+ {
+  "login": "yan5xu",
+  "repo": "codexloom",
+  "path": "skills/loom-communication/SKILL.md",
+  "stars": 389,
+  "days_since_update": 62,
+  "layer": "tool",
+  "repo_skill_files": 10,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "loom-communication",
+  "description": "Use for communication between long-lived CodexLoom Agents: discovering domain owners, deciding when to contact another Agent, sending requests or notifications, replying to an agent_message, checking queued delivery, and closing a request without a reply. Trigger whenever an Agent receives an agent_message envelope or needs cross-Agent coordination. Use the loom CLI; never handwrite the XML envelope.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 403
+ },
+ {
+  "login": "yan5xu",
+  "repo": "codexloom",
+  "path": "skills/loom-external-messaging/SKILL.md",
+  "stars": 389,
+  "days_since_update": 62,
+  "layer": "tool",
+  "repo_skill_files": 10,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "loom-external-messaging",
+  "description": "Send and resolve governed external messages through CodexLoom. Use whenever an Agent receives an external Inbox message from Feishu/Lark, Slack, Parall, or another Connector; must reply, explicitly decline, or defer an external Inbox item; needs to publish proactively to an authorized Conversation Membership; sends text, images, or files externally; or must verify or retry an Outbox delivery. Do not use this Skill to configure Connections, Addresses, Memberships, credentials, or gateway processes.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 502
+ },
+ {
+  "login": "yan5xu",
+  "repo": "codexloom",
+  "path": "skills/loom-feishu/SKILL.md",
+  "stars": 389,
+  "days_since_update": 62,
+  "layer": "tool",
+  "repo_skill_files": 10,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "loom-feishu",
+  "description": "Read Feishu/Lark messages, topic replies, and chat history through CodexLoom's managed Connector. Use when a Feishu Inbox or dispatch lacks enough context; a chat, message, topic root, or reply chain must be inspected; current Feishu history is needed before replying; or the user asks what happened in a Feishu topic. This Skill is read-only; use loom-external-messaging for replies and proactive sends.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 404
+ },
+ {
+  "login": "yan5xu",
+  "repo": "codexloom",
+  "path": "skills/loom-integrations/SKILL.md",
+  "stars": 389,
+  "days_since_update": 62,
+  "layer": "tool",
+  "repo_skill_files": 10,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "loom-integrations",
+  "description": "Configure and verify CodexLoom external platform integrations with the loom CLI. Use when inspecting or changing Connections, Agent Addresses, DM access, group/channel Conversation Memberships, trigger and reply policies, allow/block rules, trust domains, or Inbox/Outbox delivery for Feishu/Lark, Slack, Parall, and compatible connectors. Also use when an external message is not reaching an Agent or a reply is not returning to its platform.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 443
+ },
+ {
+  "login": "yanhua1010",
+  "repo": "self-media-content-workflow",
+  "path": "skills/self-media-content-analytics/SKILL.md",
+  "stars": 613,
+  "days_since_update": 8,
+  "layer": "skill",
+  "repo_skill_files": 10,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "self-media-content-analytics",
+  "description": "分析单篇、系列、周度或月度自媒体数据并形成可执行复盘。用于读取平台后台截图、CSV、表格、公开链接或用户提供的数据，计算关注效率和深度互动，比较同平台基线，归因选题、标题、封面、开头、结构、发布时间、标签和行动，并输出加码、改包装、再适配、停止或继续收集样本的决策。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 133
+ },
+ {
+  "login": "yanhua1010",
+  "repo": "self-media-content-workflow",
+  "path": "skills/self-media-content-brief/SKILL.md",
+  "stars": 613,
+  "days_since_update": 8,
+  "layer": "skill",
+  "repo_skill_files": 10,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "self-media-content-brief",
+  "description": "为单篇或多平台自媒体创作澄清需求并生成可确认的创作简报。用于用户只给一句话选题、一个链接、一份素材、一个产品或模糊创作要求，需要确认目标受众、内容目标、核心判断、角度、深度、调性、证据、禁区和平台差异时。纯数据分析、已确认方向后的改稿和细节微调不使用此 Skill。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 133
+ },
+ {
+  "login": "yanhua1010",
+  "repo": "self-media-content-workflow",
+  "path": "skills/self-media-content-delivery/SKILL.md",
+  "stars": 613,
+  "days_since_update": 8,
+  "layer": "skill",
+  "repo_skill_files": 10,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "self-media-content-delivery",
+  "description": "将自媒体创作里程碑保存成文件，管理版本、核验路径、生成完整发布包并更新内容索引。用于保存平台第一版完整成稿、多平台合集、短视频脚本、分镜、定稿、发布包和复盘报告，或用户说“保存一下、整理交付、归档、生成发布清单”时。标题微调、删一句和临时候选不单独保存新版本。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 130
+ },
+ {
+  "login": "yanhua1010",
+  "repo": "self-media-content-workflow",
+  "path": "skills/self-media-content-strategy/SKILL.md",
+  "stars": 613,
+  "days_since_update": 8,
+  "layer": "skill",
+  "repo_skill_files": 10,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "self-media-content-strategy",
+  "description": "把账号定位和业务目标转成可执行的自媒体内容策略。用于账号冷启动、重新定位、制定内容配比、规划系列栏目、建立选题池、安排周度或月度内容日历、评估产能和确定平台分工。单篇内容写作或纯数据复盘不使用此 Skill。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 104
+ },
+ {
+  "login": "yanhua1010",
+  "repo": "self-media-content-workflow",
+  "path": "skills/self-media-content-workflow/SKILL.md",
+  "stars": 613,
+  "days_since_update": 8,
+  "layer": "skill",
+  "repo_skill_files": 10,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "self-media-content-workflow",
+  "description": "通用自媒体内容生产与经营工作流。用于自媒体内容创作、选题策划、热点或竞品研究、多平台改写、短视频脚本、数字人视频、动画解说视频、YouTube 与抖音视频号小红书多平台视频发布、发布包、公众号草稿、内容数据分析、周复盘、月复盘和继续未完成任务。负责识别请求类型，调用创作简报、内容策略、热点竞品、平台文案、短视频与视频制片、视频发布、数据复盘和交付归档模块，并管理方向确认、标题确认、终稿确认和发布授权。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 202
+ },
+ {
+  "login": "yanhua1010",
+  "repo": "self-media-content-workflow",
+  "path": "skills/self-media-platform-copywriting/SKILL.md",
+  "stars": 613,
+  "days_since_update": 8,
+  "layer": "skill",
+  "repo_skill_files": 10,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "self-media-platform-copywriting",
+  "description": "将已确认的母题、证据和创作简报写成平台原生内容。用于 X 短帖、长帖或线程，小红书图文，微信公众号文章，视频号、抖音或小红书视频发布文案，YouTube 标题、描述、章节、标签和缩略图方案，以及同一母题的多平台适配。强调各平台独立设计标题、开头、证据顺序、结构和行动，不做机械缩写或共享正文式的一稿多发。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 152
+ },
+ {
+  "login": "yaojingang",
+  "repo": "GEOFlow",
+  "path": ".agents/skills/ai-sdk-development/SKILL.md",
+  "stars": 3860,
+  "days_since_update": 10,
+  "layer": "tool",
+  "repo_skill_files": 16,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "ai-sdk-development",
+  "description": "TRIGGER when working with ai-sdk which is Laravel official first-party AI SDK. Activate when building, editing AI agents, chatbots, text generation, image generation, audio/TTS, transcription/STT, embeddings, RAG, vector stores, reranking, structured output, streaming, conversation memory, tools, queueing, broadcasting, and provider failover across OpenAI, Anthropic, Gemini, Azure, Groq, xAI, DeepSeek, Mistral, Ollama, ElevenLabs, Cohere, Jina, and VoyageAI. Invoke when the user references ai-sdk, the `Laravel\\Ai\\` namespace, or this project's AI features — not for Prism PHP or other AI packages used directly.",
+  "fields": [
+   "name",
+   "description",
+   "license",
+   "metadata"
+  ],
+  "descLen": 617
+ },
+ {
+  "login": "yaojingang",
+  "repo": "GEOFlow",
+  "path": ".agents/skills/configuring-horizon/SKILL.md",
+  "stars": 3860,
+  "days_since_update": 10,
+  "layer": "tool",
+  "repo_skill_files": 16,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "configuring-horizon",
+  "description": "Use this skill whenever the user mentions Horizon by name in a Laravel context. Covers the full Horizon lifecycle: installing Horizon (horizon:install, Sail setup), configuring config/horizon.php (supervisor blocks, queue assignments, balancing strategies, minProcesses/maxProcesses), fixing the dashboard (authorization via Gate::define viewHorizon, blank metrics, horizon:snapshot scheduling), and troubleshooting production issues (worker crashes, timeout chain ordering, LongWaitDetected notifications, waits config). Also covers job tagging and silencing. Do not use for generic Laravel queues without Horizon, SQS or database drivers, standalone Redis setup, Linux supervisord, Telescope, or job batching.",
+  "fields": [
+   "name",
+   "description",
+   "license",
+   "metadata"
+  ],
+  "descLen": 711
+ },
+ {
+  "login": "yaojingang",
+  "repo": "GEOFlow",
+  "path": ".agents/skills/geoflow/SKILL.md",
+  "stars": 3860,
+  "days_since_update": 10,
+  "layer": "tool",
+  "repo_skill_files": 16,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "geoflow",
+  "description": "Operate/develop GEOFlow CLI/Laravel/admin/API, topics/专题 and topic tasks, theme libraries/replication, sites/leads/Agent, channel sync and legacy yao-geoflow-cli/design/template migration. Use for source-free previews, planned Updater operations and receipt recovery. Discover capabilities; exclude unrelated work, SQL shortcuts, invented routes, auth bypass, secrets and unapproved live/destructive actions.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 408
+ },
+ {
+  "login": "yaojingang",
+  "repo": "GEOFlow",
+  "path": ".agents/skills/laravel-best-practices/SKILL.md",
+  "stars": 3860,
+  "days_since_update": 10,
+  "layer": "tool",
+  "repo_skill_files": 16,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "laravel-best-practices",
+  "description": "Apply this skill whenever writing, reviewing, or refactoring Laravel PHP code. This includes creating or modifying controllers, models, migrations, form requests, policies, jobs, scheduled commands, service classes, and Eloquent queries. Triggers for N+1 and query performance issues, caching strategies, authorization and security patterns, validation, error handling, queue and job configuration, route definitions, and architectural decisions. Also use for Laravel code reviews and refactoring existing Laravel code to follow best practices. Covers any task involving Laravel backend PHP code patterns.",
+  "fields": [
+   "name",
+   "description",
+   "license",
+   "metadata"
+  ],
+  "descLen": 605
+ },
+ {
+  "login": "yaojingang",
+  "repo": "GEOFlow",
+  "path": ".agents/skills/tailwindcss-development/SKILL.md",
+  "stars": 3860,
+  "days_since_update": 10,
+  "layer": "tool",
+  "repo_skill_files": 16,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "tailwindcss-development",
+  "description": "Always invoke when the user's message includes 'tailwind' in any form. Also invoke for: building responsive grid layouts (multi-column card grids, product grids), flex/grid page structures (dashboards with sidebars, fixed topbars, mobile-toggle navs), styling UI components (cards, tables, navbars, pricing sections, forms, inputs, badges), adding dark mode variants, fixing spacing or typography, and Tailwind v3/v4 work. The core use case: writing or fixing Tailwind utility classes in HTML templates (Blade, JSX, Vue). Skip for backend PHP logic, database queries, API routes, JavaScript with no HTML/CSS component, CSS file audits, build tool configuration, and vanilla CSS.",
+  "fields": [
+   "name",
+   "description",
+   "license",
+   "metadata"
+  ],
+  "descLen": 678
+ },
+ {
+  "login": "yaojingang",
+  "repo": "GEOFlow",
+  "path": ".agents/skills/testing-best-practices/SKILL.md",
+  "stars": 3860,
+  "days_since_update": 10,
+  "layer": "tool",
+  "repo_skill_files": 16,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "testing-best-practices",
+  "description": "Laravel test design and review. Use when selecting coverage, naming or structuring tests, choosing assertions or test data, isolating dependencies, testing HTTP or security boundaries, improving suite performance, or reviewing test value. Use framework guidance or search-docs for Pest and PHPUnit syntax.",
+  "fields": [
+   "name",
+   "description",
+   "license",
+   "metadata"
+  ],
+  "descLen": 305
+ },
+ {
+  "login": "yaojingang",
+  "repo": "GEORank",
+  "path": "skills/georank/SKILL.md",
+  "stars": 505,
+  "days_since_update": 7,
+  "layer": "tool",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "georank",
+  "description": "Operate and manage a self-hosted GEOrank instance through its HTTP API. Use when asked to log in, inspect a GEOrank account, submit or manage companies, run or read GEO diagnostics, manage solution conversations, expand keywords, inspect usage, or perform authenticated GEOrank administrator work across users, content, experts, providers, modules, homepage releases, and settings. Login guidance defaults to an ordinary user and unlocks administrator actions only after /api/auth/me returns role=admin. Do not use for general GEO strategy, article writing, SEO advice, or GEOrank code development that does not operate a running instance.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 639
+ },
+ {
+  "login": "yaojingang",
+  "repo": "TokHub",
+  "path": "agent-skills/tokhub/SKILL.md",
+  "stars": 208,
+  "days_since_update": 63,
+  "layer": "tool",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "tokhub",
+  "description": "Connect a local agent to any TokHub instance with website-equivalent login, CSRF, workspace, role, admin-agent, and legacy tokhub-admin permissions. Use for public status, profile, favorites, private channels, console gateways, keys, members, usage, alerts, audit, incidents, governance, or admin operations. Do not use for TokHub source-code work, UI debugging, docs-only tasks, or /gateway/v1/* model calls.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 409
+ },
+ {
+  "login": "yaojingang",
+  "repo": "yao-geo-skills",
+  "path": "skills/yao-chatgpt-crawler/SKILL.md",
+  "stars": 891,
+  "days_since_update": 20,
+  "layer": "skill",
+  "repo_skill_files": 24,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yao-chatgpt-crawler",
+  "description": "Use when a user provides ChatGPT web AI-search keywords, repeat count, target entity, entity type, OpenCLI profile, and crawl interval preference, then needs repeated crawls aggregated into JSON plus a Kami HTML GEO report. Not for generic crawling, ChatGPT API chat, SEO writing, or one-off answers.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 300
+ },
+ {
+  "login": "yaojingang",
+  "repo": "yao-geo-skills",
+  "path": "skills/yao-deepseek-crawler/SKILL.md",
+  "stars": 891,
+  "days_since_update": 20,
+  "layer": "skill",
+  "repo_skill_files": 24,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yao-deepseek-crawler",
+  "description": "Use when a user provides DeepSeek web AI-search keywords, repeat count, target entity, and entity type, then needs repeated fresh-window crawls aggregated into JSON plus a Kami HTML GEO report. Not for generic website crawling, DeepSeek API chat, SEO writing, or one-off answer generation.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 289
+ },
+ {
+  "login": "yaojingang",
+  "repo": "yao-geo-skills",
+  "path": "skills/yao-doubao-crawler/SKILL.md",
+  "stars": 891,
+  "days_since_update": 20,
+  "layer": "skill",
+  "repo_skill_files": 24,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yao-doubao-crawler",
+  "description": "Use when a user needs repeated Doubao AI-search collection from web or Android Appium into compatible JSON plus Markdown/Excel/HTML GEO reports. Requires keywords/questions and repeat count; target entity/type are required only for target-vs-competitor diagnosis. Not for generic scraping, Doubao API chat, hidden API extraction, SEO writing, high-frequency automation, or one-off answers.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 389
+ },
+ {
+  "login": "yaojingang",
+  "repo": "yao-geo-skills",
+  "path": "skills/yao-geo-article-friendly/SKILL.md",
+  "stars": 891,
+  "days_since_update": 20,
+  "layer": "skill",
+  "repo_skill_files": 24,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yao-geo-article-friendly",
+  "description": "Optimize an existing article or local article file into a GEO and AI-search-friendly rewrite with source-bound evidence, structure, semantic density, scoring, and change notes. Use for article rewriting and citation-readiness improvement; do not use for new articles, invented citations/data, compliance audits, ranking guarantees, or generic GEO strategy.",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 356
+ },
+ {
+  "login": "yaojingang",
+  "repo": "yao-geo-skills",
+  "path": "skills/yao-geo-baidu-keywords/SKILL.md",
+  "stars": 891,
+  "days_since_update": 20,
+  "layer": "skill",
+  "repo_skill_files": 24,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yao-geo-baidu-keywords",
+  "description": "用浏览器逐个检索百度目标关键词，截图采集搜索框联想词与结果页底部“相关搜索”，按所属行业和转化目标给相关词评 1–10 分商业价值，生成带截图出处的 Excel。适用于百度关键词拓展、相关搜索词截图留证和行业化关键词评分；仅查普通搜索结果、热搜榜、指数或排名时不触发。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 134
+ },
+ {
+  "login": "yaojingang",
+  "repo": "yao-geo-skills",
+  "path": "skills/yao-geo-brand-graph/SKILL.md",
+  "stars": 891,
+  "days_since_update": 20,
+  "layer": "skill",
+  "repo_skill_files": 24,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yao-geo-brand-graph",
+  "description": "当用户需要把企业资料、官网、产品、客户案例、人物、地点、证据源和场景词整理成品牌实体知识图谱时使用；用于知识库升级、页面结构设计、监测纠偏、品牌百科化和 AI 内容一致性治理。",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 88
+ },
+ {
+  "login": "yaojingang",
+  "repo": "yao-meta-skill",
+  "path": "SKILL.md",
+  "stars": 2705,
+  "days_since_update": 65,
+  "layer": "skill",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "yao-meta-skill",
+  "description": "Create, improve, or evaluate an existing skill from workflows, prompts, SOPs, scripts. Use for migration/release/package, routing, evals/tests, install/trust checks, 优化已有 skill, 补 trigger 评测. Exclude summary/translation/docs, brainstorming, one-off prompts, copy-only edits, outline-only requests.",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 297
+ },
+ {
+  "login": "yaojingang",
+  "repo": "yao-open-skills",
+  "path": "skills/yao-bayesian-skill/SKILL.md",
+  "stars": 1322,
+  "days_since_update": 7,
+  "layer": "skill",
+  "repo_skill_files": 31,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yao-bayesian-skill",
+  "description": "Convert uncertain real-world choices into an auditable Bayesian evidence-to-action report with priors, evidence grading, posterior update, action thresholds, sensitivity checks, multi-turn decision logs, and Markdown plus bilingual HTML output. Do not use for Bayes theorem tutoring, homework, generic brainstorming with no report, or final licensed medical, legal, or financial advice.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 386
+ },
+ {
+  "login": "yaojingang",
+  "repo": "yao-open-skills",
+  "path": "skills/yao-business-skill/SKILL.md",
+  "stars": 1322,
+  "days_since_update": 7,
+  "layer": "skill",
+  "repo_skill_files": 31,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yao-business-skill",
+  "description": "Design, diagnose, and study business models from ideas, product websites, or company names. Use when asked to create options for a new idea, audit an existing product's monetization and competitors, or analyze a mature company's model and AI-era upgrade paths. Adjust for market, buyer, and operating environment, then output JSON plus HTML.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 341
+ },
+ {
+  "login": "yaojingang",
+  "repo": "yao-open-skills",
+  "path": "skills/yao-cold-ledger-skill/SKILL.md",
+  "stars": 1322,
+  "days_since_update": 7,
+  "layer": "skill",
+  "repo_skill_files": 31,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yao-cold-ledger-skill",
+  "description": "分析或创作“冷账叙事”中文关系故事：用精确数字、账单或工序、物件回环、克制对白和留白承载情绪。用于点名冷账叙事，或明确要求以冷峻账本感拆解参考文本、写片段、短篇或长篇；排除普通润色、通用公众号写作、事实核查、财务账务、真实人物私密爆料及可识别原句或情节复刻。",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 129
+ },
+ {
+  "login": "yaojingang",
+  "repo": "yao-open-skills",
+  "path": "skills/yao-copyright-skill/SKILL.md",
+  "stars": 1322,
+  "days_since_update": 7,
+  "layer": "skill",
+  "repo_skill_files": 31,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yao-copyright-skill",
+  "description": "Use when adding or auditing Yao copyright comment headers for an agent skill package, especially SKILL.md, README.md, references, prompts, templates, examples, scripts, YAML, or TOML files.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 189
+ },
+ {
+  "login": "yaojingang",
+  "repo": "yao-open-skills",
+  "path": "skills/yao-crux-skill/SKILL.md",
+  "stars": 1322,
+  "days_since_update": 7,
+  "layer": "skill",
+  "repo_skill_files": 31,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yao-crux-skill",
+  "description": "Use when a user is stuck in a complex real-world situation with many conflicts, limited resources, unclear priorities, or asks to identify the principal contradiction, secondary contradictions, dominant aspect, breakthrough actions, monitoring thresholds, probability projection, and Markdown/Word/HTML/PDF reports. Triggers on 矛盾论, 主要矛盾, 次要矛盾, 主次矛盾, 卡住了, 优先级混乱, 找关键问题, 资源有限, 冲突很多. Do not use for philosophy-only summaries, Mao text commentary with no live case, generic brainstorming with no diagnosis, or final licensed medical, legal, investment, or psychological-crisis advice.",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 581
+ },
+ {
+  "login": "yaojingang",
+  "repo": "yao-open-skills",
+  "path": "skills/yao-demand-skill/SKILL.md",
+  "stars": 1322,
+  "days_since_update": 7,
+  "layer": "skill",
+  "repo_skill_files": 31,
+  "sampled": 6,
+  "hasFm": true,
+  "name": "yao-demand-skill",
+  "description": "Evaluate product demand from product links, product descriptions, PRDs, websites, app-store pages, white papers, sales decks, screenshots, or funding materials using the demand triangle model: lack, target object, and consumer ability. Use when asked for demand assessment, pre-investment product review, growth diagnosis, positioning validation, competitor-backed demand evidence, or a multi-format demand report. Do not use for pure market sizing, generic business-model design, UX-only review, legal/financial advice, or ad-copy ideation without demand evidence.",
+  "fields": [
+   "name",
+   "description",
+   "metadata"
+  ],
+  "descLen": 565
+ },
+ {
+  "login": "yetone",
+  "repo": "kill-ai-slop",
+  "path": "skill/SKILL.md",
+  "stars": 1373,
+  "days_since_update": 36,
+  "layer": "skill",
+  "repo_skill_files": 1,
+  "sampled": 1,
+  "hasFm": true,
+  "name": "kill-ai-slop",
+  "description": "Find and remove AI slop — the generic, machine-default visual and copy tics of vibe-coded products — from a web project. Use when the user asks to \"kill AI slop\", \"de-slop\", \"remove the AI look\", \"make this not look AI-generated\", or clean up a landing page / UI / docs that feels templated. Detects and fixes the catalogue of tells: indigo→violet gradients, gradient-clip headlines, the default semantic palette, one-hue status boxes, atmospheric gradients, serif-italic emphasis, highlighted keywords, AI copywriting voice (\"not just X — it's Y\"), emoji everywhere, glowing status dots, wobbling spinners, colored-left-border callouts, pastel icon tiles, glassmorphism, over-rounding, oversized shadows, borders that die at corners, badge & pill spam, AI-drawn SVG icons, kickers over every heading, flat type hierarchies, invented stat rows, 01/02/03 section markers, cards nested in cards, the default Inter/Space Grotesk look, and more. Works on HTML/CSS, React/Vue/Svelte/Astro, Tailwind, PHP, and Markdown copy.",
+  "fields": [
+   "name",
+   "description"
+  ],
+  "descLen": 1018
+ }
+]
