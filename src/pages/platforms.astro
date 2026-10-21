@@ -1,25 +1,80 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getAllOrgs, ROLE_LABELS } from '../lib/orgs';
+const BASE = import.meta.env.BASE_URL;
 
 const orgs = getAllOrgs();
 const totalStars = orgs.reduce((a, o) => a + o.stats.total_stars_source, 0);
 const totalRepos = orgs.reduce((a, o) => a + o.profile.source_repos, 0);
 const totalStandards = orgs.reduce((a, o) => a + o.standards.length, 0);
+
+// —— 标准主题对照 ——
+// 把 18 条标准归到 4 个主题，看谁在管哪一块
+const THEMES: { name: string; hint: string[]; note: string }[] = [
+  {
+    name: 'Skill 格式',
+    hint: ['SKILL.md 目录与 frontmatter', 'agentskills.io', 'frontmatter 校验', '分类目录', '生命周期', '教学分层'],
+    note: '一个 skill 长什么样、写什么字段、怎么被识别',
+  },
+  {
+    name: '插件与打包',
+    hint: ['插件结构规范', '插件包规范', '插件条目格式', 'mcpb', 'bundles', '打包格式'],
+    note: 'skill 怎么被打包成可分发的单元',
+  },
+  {
+    name: '协议与连接',
+    hint: ['MCP 协议规范', 'MCP Skills', 'SEP', 'server card', 'registry 条目', 'tasks 扩展', 'MCP Apps', '集成问题通道'],
+    note: 'agent 怎么和外部工具、界面打交道',
+  },
+  {
+    name: '目录与分发',
+    hint: ['目录约定', '插件市场', '分发', 'renames', '迁移映射', '不可变'],
+    note: '资产怎么被组织、命名、迁移',
+  },
+];
+
+const themeOf = (stdName: string, what: string): number => {
+  // 先用标题精确匹配，再退回全文关键词
+  for (let i = 0; i < THEMES.length; i++) {
+    if (THEMES[i].hint.some((k) => stdName.toLowerCase().includes(k.toLowerCase()))) return i;
+  }
+  const hay = (stdName + ' ' + what).toLowerCase();
+  for (let i = 0; i < THEMES.length; i++) {
+    if (THEMES[i].hint.some((k) => hay.includes(k.toLowerCase()))) return i;
+  }
+  return -1;
+};
+
+const matrix = THEMES.map((th, ti) => ({
+  ...th,
+  orgs: orgs.map((o) => {
+    const mine = o.standards.filter((s) => themeOf(s.name, s.what) === ti);
+    return { org: o, items: mine };
+  }),
+}));
+
+const shared = orgs
+  .map((o) => ({
+    org: o,
+    names: o.standards.map((s) => s.name),
+  }))
+  .filter((x) => x.names.length > 0);
 ---
 
-<BaseLayout title="平台方供给 · 星册" description="组织型（平台方）skill 资产：它们定义标准，而不是表达个人" active="research">
+<BaseLayout title="标准由谁定 · 星册" description="组织型（平台方）skill 资产：它们定义标准，而不是表达个人" active="research">
   <section class="wrap pt-10 sm:pt-14">
     <div class="border-b border-slate-800 pb-8">
       <div class="mb-4 flex flex-wrap items-center gap-3">
-        <span class="seal">附录 · 平台方</span>
-        <span class="labelmono">与个人创作者物理分开 · 不参与收敛判定</span>
+        <span class="seal">专题 · 标准制定者</span>
+        <span class="labelmono">{orgs.length} 家 · {totalStandards} 条标准 · 与创作者物理分开</span>
       </div>
       <h1 class="display text-[2.2rem] sm:text-[3.1rem]">
-        <span class="line-up"><span>平台方供给</span></span>
+        <span class="line-up"><span>标准由谁定</span></span>
       </h1>
       <p class="mt-4 max-w-2xl text-[14.5px] leading-[1.85] text-slate-400">
-        前面 29 位是<strong class="text-slate-200">个人创作者</strong>——他们在表达自己的方法。这里是<strong class="text-slate-200">组织与平台</strong>——他们在<strong class="text-slate-200">定义标准</strong>。
+        「人物」那一栏是<strong class="text-slate-200">个人创作者</strong>——他们在表达自己的方法。
+        这里是<strong class="text-slate-200">标准制定者</strong>——他们决定了 skill 长什么样、装在哪、怎么被调用。
+        下面按<strong class="text-slate-200">标准主题</strong>横向对照，而不是按组织罗列。
       </p>
       <div class="mt-5 rounded-[2px] border border-amber-500/25 bg-amber-500/5 px-4 py-3">
         <p class="text-[13px] leading-[1.8] text-amber-400/90">
@@ -33,6 +88,61 @@ const totalStandards = orgs.reduce((a, o) => a + o.standards.length, 0);
     </div>
   </section>
 
+
+  <!-- 标准主题对照 -->
+  <section class="wrap mt-8">
+    <div class="flex items-end justify-between gap-4 border-b border-slate-800 pb-2">
+      <h2 class="tick font-display text-[19px] font-semibold">标准主题对照</h2>
+      <span class="labelmono">谁在管哪一块</span>
+    </div>
+
+    <div class="mt-4 space-y-2">
+      {matrix.map((th, ti) => (
+        <div class="overflow-hidden rounded-[2px] border border-slate-800 bg-[#fbf5e7]/50">
+          <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-slate-800 px-4 py-2.5">
+            <span class="font-mono text-[11px] text-slate-600">{String(ti + 1).padStart(2, '0')}</span>
+            <h3 class="font-display text-[15.5px] font-semibold">{th.name}</h3>
+            <span class="text-[12px] text-slate-500">{th.note}</span>
+          </div>
+          <div class="divide-y divide-slate-800/60">
+            {th.orgs.map(({ org, items }) => {
+              const role = ROLE_LABELS[org.profile.platform_role] || ROLE_LABELS.community_hub;
+              return (
+                <div class="px-4 py-2.5">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <a
+                      href={`${BASE}u/${org.profile.login}/`}
+                      class="font-mono text-[12px] text-slate-200 hover:text-[#b23a2b]"
+                    >
+                      {org.profile.name}
+                    </a>
+                    <span class="rounded-[2px] border border-slate-800 px-1.5 py-px text-[10px] text-slate-500">
+                      {role.label}
+                    </span>
+                    <span class="font-mono text-[10.5px] text-slate-600">
+                      {items.length} 条
+                    </span>
+                  </div>
+                  {items.length > 0 ? (
+                    <ul class="mt-1.5 space-y-0.5">
+                      {items.map((s) => (
+                        <li class="flex gap-2 text-[12px] leading-relaxed text-slate-400">
+                          <span class="shrink-0 text-[#b23a2b]">·</span>
+                          <span>{s.name}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p class="mt-1 text-[11.5px] text-slate-600">— 本主题下未定义标准 —</p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
 
   <section class="wrap grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
     <div class="bg-slate-900/60 border border-slate-800 rounded-[2px] p-4 sm:p-5">
