@@ -13,7 +13,8 @@
     "sync": "node scripts/sync-data.mjs",
     "merge-analyses": "node scripts/merge-analyses.mjs",
     "serve": "node scripts/serve.mjs 4322 dist",
-    "validate": "pwsh -NoProfile -File scripts/validate_schema.ps1 -Path src/data/alchaincyf.json"
+    "validate": "pwsh -NoProfile -File scripts/validate_schema.ps1 -Path src/data/alchaincyf.json",
+    "deploy": "node scripts/deploy.mjs"
   },
   "type": "module",
   "name": "git-user-analysis-web"

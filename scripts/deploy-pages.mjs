@@ -63,9 +63,9 @@ async function api(pathname, method = 'GET', body = null) {
 let repoInfo = await api(`/repos/${REPO}`);
 if (repoInfo.status === 404) {
   console.log('[deploy] 仓库不存在，尝试创建…');
-  const name = repo.split('/')[1];
+  const repoName = REPO.split('/')[1];
   const created = await api(`/user/repos`, 'POST', {
-    name,
+    name: repoName,
     description: 'Git 用户深度画像与高星 Skill 复用库 — 方法收敛簇与可执行检查清单',
     private: false,
     auto_init: false,
