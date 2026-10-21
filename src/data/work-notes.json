@@ -1,0 +1,151 @@
+{
+  "_note": "24 位作者的代表作说明。key 为仓库名，value 为「这个作品解决什么」的一句话。",
+  "addyosmani": {
+    "agent-skills": "把资深工程师的隐性判断写成 Agent 可直接加载的技能目录",
+    "critical": "自动把关键 CSS 内联进 HTML，省掉一次阻塞渲染",
+    "backbone-fundamentals": "一本讲透 Backbone.js 的开放版权书，免费但成体系",
+    "essential-js-design-patterns": "用仓库讲 JavaScript 设计模式，比书更好读",
+    "es6-tools": "ES6 工具集大成：当年把 ES6 落到实处的一批库",
+    "basket.js": "用 localStorage 做缓存的脚本与资源加载器",
+    "web-quality-skills": "按 Lighthouse / Core Web Vitals 指标指导 Agent 优化网页质量",
+    "es6-equivalents-in-es5": "ES6 到 ES5 的逐个等价写法对照表",
+    "gemini-cli-tips": "Gemini CLI 的用法技巧集合",
+    "puppeteer-webperf": "用 Puppeteer 自动跑网页性能测试",
+    "tmi": "体检你网页的图片有多重，告诉你该压哪张",
+    "timing.js": "Navigation Timing API 的测量helper"
+  },
+  "antfu": {
+    "eslint-config": "Anthony Fu 的 ESLint 预设配置",
+    "skills": "策展的 Agent 技能集合",
+    "vscode-file-nesting-config": "VS Code 文件嵌套显示配置",
+    "node-modules-inspector": "可视化检查本地 node_modules 的交互界面",
+    "vscode-settings": "他的 VS Code 设置与插件清单",
+    "vue-starport": "跨路由共享组件并带动画过渡",
+    "vitesse-nuxt": "Vitesse 的 Nuxt 4 版本脚手架",
+    "esno": "tsx 的别名，更短的 TS 执行命令",
+    "drauu": "浏览器里的无头 SVG 画板",
+    "reactivue": "在 React 组件里用 Vue 的 Composition API",
+    "handle": "汉字版 Wordle",
+    "case-police": "检查大小写用法是否正确的命令行工具"
+  },
+  "op7418": {
+    "guizang-ppt-skill": "生成电子杂志 / 瑞士网格两种版式的 HTML 幻灯片",
+    "Humanizer-zh": "把 AI 写的文字改得像人写的，中文版",
+    "guizang-social-card-skill": "生成小红书轮播图与公众号封面配对图",
+    "CodePilot": "多模型 AI 桌面客户端，可挂 MCP 与技能扩展",
+    "NanoBanana-PPT-Skills": "用 AI 生成 PPT 图片与视频，含转场与交互播放",
+    "Claude-to-IM-skill": "把 Claude Code / Codex 接到 Telegram、Discord 等 IM 平台",
+    "logo-generator-skill": "生成 logo 的技能",
+    "Youtube-clipper-skill": "剪辑 YouTube 视频的技能",
+    "guizang-s-prompt": "他写过的全部 AI 提示词存档"
+  },
+  "alchaincyf": {
+    "nuwa-skill": "蒸馏任何人的思维方式：心智模型、决策启发式、表达 DNA",
+    "huashu-design": "HTML 原生的设计技能：高保真原型、幻灯片、动画",
+    "zhangxuefeng-skill": "张雪峰的认知操作系统：高考志愿、考研、职业规划",
+    "darwin-skill": "让 Skill 无限进化的系统：评估→改进→测试→保留或回滚",
+    "hermes-agent-orange-book": "Hermes Agent 从入门到精通的中文实战指南",
+    "huashu-art-motion": "35 种艺术风格 + 9 种解说语法，用代码让画动起来",
+    "huashu-skills": "他全部开源 Skill 的总目录，分层分类 + 安装协议",
+    "obsidian-ai-orange-book": "用 AI 重建你的第二大脑"
+  },
+  "simonw": {
+    "llm": "在命令行里访问各家大模型",
+    "datasette": "把数据变成可探索、可发布的网站",
+    "files-to-prompt": "把一个目录的所有文件拼成一段给 LLM 的提示词",
+    "shot-scraper": "命令行截图、录演示视频、抓取网页",
+    "sqlite-utils": "操作 SQLite 的 Python 命令行工具与库",
+    "tools": "一堆小工具，绝大部分是用 LLM 生成的",
+    "claude-code-transcripts": "把 Claude Code 会话记录发布成网页",
+    "til": "Today I Learned：每天记一条学到的东西"
+  },
+  "coleam00": {
+    "Archon": "开源的 AI 编码 harness 构建器，让 AI 编码可重复",
+    "context-engineering-intro": "上下文工程入门：AI 编码真正该学的东西",
+    "ottomator-agents": "oTTomator 平台上托管的开源 AI Agent 集合",
+    "excalidraw-diagram-skill": "让编码 Agent 画出漂亮实用的图",
+    "local-ai-packaged": "把 Ollama、Supabase、n8n、Open Web UI 一包带走",
+    "ai-agents-masterclass": "AI Agent 大师课的全部代码",
+    "mcp-crawl4ai-rag": "给 AI Agent 的网页爬取与 RAG 能力"
+  },
+  "steipete": {
+    "CodexBar": "不登录就能看 Codex 与 Claude Code 的用量",
+    "agent-scripts": "给自己各个仓库共用的 Agent 脚本",
+    "summarize": "指向任何 URL / 视频 / 文件，拿到摘要，命令行加浏览器扩展",
+    "oracle": "卡住时提问，用 GPT-5 Pro 带上你的上下文和文件",
+    "RepoBar": "在菜单栏和终端里看 GitHub 仓库状态：CI、Issue、PR",
+    "birdclaw": "把推文存成 Agent 好抓的形式"
+  },
+  "kentcdodds": {
+    "match-sorter": "简单、可预期、确定性的数组最佳匹配排序",
+    "bookshelf": "用 React 搭应用的工作坊",
+    "babel-plugin-macros": "用宏写简单的编译期库",
+    "kentcdodds.com": "他的个人网站",
+    "use-deep-compare-effect": "像 React useEffect，但输入做深比较而非引用比较",
+    "mdx-bundler": "把 MDX/TSX 字符串编译成可渲染组件，支持 import"
+  },
+  "yetone": {
+    "magpie": "菜单栏里统管各家 Agent：Codex 用 DeepSeek、Claude Code 用 Kimi",
+    "cumora": "Agent 团队的聚集地：跨平台群聊，AI Agent 是一等公民",
+    "voice-input-src": "语音输入的源码",
+    "native-feel-skill": "设计「像原生」的跨平台桌面应用的方法（源自 Raycast）",
+    "kill-ai-slop": "AI 生成产品的视觉与文案坏味道指南，附配套技能"
+  },
+  "mvanhorn": {
+    "last30days-skill": "跨 Reddit、X、YouTube、HN、Polymarket 调研任何话题并给出带出处的综述",
+    "cli-printing-press": "找出每个 API 的隐藏身份，把竞品功能全吸收",
+    "printing-press-library": "CLI Printing Press 生成的官方 CLI 库"
+  },
+  "lencx": {
+    "ChatGPT": "跨 Mac / Windows / Linux 的第三方 ChatGPT 桌面客户端",
+    "Noi": "Less chaos. More flow.",
+    "nofwl": "NoFWL 桌面应用"
+  },
+  "numman-ali": {
+    "openskills": "通用技能加载器：一条命令把 skill 装给任意编码 Agent",
+    "cc-mirror": "造出多个互相隔离的 Claude Code 变体，可换模型供应商",
+    "opencode-openai-codex-auth": "给 OpenCode 接 ChatGPT Plus/Pro 订阅的 OAuth 认证插件"
+  },
+  "yaojingang": {
+    "GEOFlow": "开源的 GEO 内容工程与多站分发平台，带 AI 质检",
+    "yao-open-prompts": "中英双语实用提示词库：工作、学习、内容、营销",
+    "yao-meta-skill": "把 Skill 制作升级成带中间表示、评测与治理的工程系统"
+  },
+  "obra": {
+    "superpowers": "把开发纪律装进 Agent 的技能框架与方法论",
+    "Youtube2Webpage": "把 YouTube 视频转成网页——他自用，我更适合看文字"
+  },
+  "wong2": {
+    "chatgpt-google-extension": "把对话入口嵌进 Google 页面（已废弃，转向新项目）",
+    "awesome-mcp-servers": "MCP server 精选清单"
+  },
+  "kevinzhow": {
+    "PNChart": "iOS 图表库，先在自家 App 里长出来才开源",
+    "PNChart-Swift": "PNChart 的 Swift 重写版"
+  },
+  "mcncarl": {
+    "yichen-skills": "21 个互相独立的 skill：把微信/小红书/抖音等私域平台的操作边界写成可执行协议",
+    "jianying-headless": "剪映草稿的原生生成、隔离编辑导出与独立 Agent Skill"
+  },
+  "affaan-m": {
+    "ECC": "Everything Claude Code：技能、本能、记忆、安全与研究优先的整套 Agent 装配"
+  },
+  "hesreallyhim": {
+    "awesome-claude-code": "Claude Code 生态的人工精选目录，条目带可核验元数据"
+  },
+  "sickn33": {
+    "agentic-awesome-skills": "技能目录的本地控制面：发现、选择、校验、规划四段流程"
+  },
+  "wshobson": {
+    "agents": "多 harness 插件市场：Claude Code、Codex、Cursor、OpenCode、Copilot 等七种工具共用一套源"
+  },
+  "alirezarezvani": {
+    "claude-skills": "380 个 Claude Code skill，另有 30+ Agent、70+ 自定义命令"
+  },
+  "lijigang": {
+    "ljg-skills": "李继刚全部提示词与 skill 的聚合仓"
+  },
+  "yan5xu": {
+    "ququ": "开源免费的 Wispr Flow 替代：本地 FunASR + 可配大模型的中文语音工作流"
+  }
+}

@@ -1,9 +1,18 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getAllUsers } from '../lib/data';
+import fs from 'node:fs';
+import path from 'node:path';
 const BASE = import.meta.env.BASE_URL;
 
 const users = getAllUsers();
+
+// 人工写的作品说明（覆盖 star 前 100）
+const notesFile = path.resolve('src/data/work-notes.json');
+const notes: Record<string, Record<string, string>> = fs.existsSync(notesFile)
+  ? JSON.parse(fs.readFileSync(notesFile, 'utf-8'))
+  : {};
+const noteOf = (author: string, repo: string) => notes[author]?.[repo] || '';
 const num = (v: unknown) => (typeof v === 'number' ? v : parseInt(String(v ?? 0), 10) || 0);
 const CJK = '\u4e00-\u9fa5';
 const hasCjk = (s: string) => new RegExp('[' + CJK + ']').test(s || '');
@@ -225,10 +234,16 @@ const LIMIT = 40;
                         <span class="font-mono text-[10.5px] text-slate-600">{w.lang}</span>
                       )}
                     </div>
-                    {w.desc && (
-                      <p class="mt-0.5 line-clamp-1 text-[12px] leading-relaxed text-slate-500">
-                        {w.desc}
+                    {noteOf(w.author, w.name) ? (
+                      <p class="mt-0.5 line-clamp-1 text-[12.5px] leading-relaxed text-slate-400">
+                        {noteOf(w.author, w.name)}
                       </p>
+                    ) : (
+                      w.desc && (
+                        <p class="mt-0.5 line-clamp-1 text-[12px] leading-relaxed text-slate-500">
+                          {w.desc}
+                        </p>
+                      )
                     )}
                     <div class="mt-1 flex items-center gap-2 font-mono text-[10.5px] text-slate-600 sm:hidden">
                       <a href={`${BASE}u/${w.author}/`} class="text-slate-400">@{w.author}</a>
@@ -271,10 +286,16 @@ const LIMIT = 40;
                         >
                           {w.name}
                         </a>
-                        {w.desc && (
-                          <p class="mt-0.5 line-clamp-1 text-[12px] leading-relaxed text-slate-500">
-                            {w.desc}
+                        {noteOf(w.author, w.name) ? (
+                          <p class="mt-0.5 line-clamp-1 text-[12.5px] leading-relaxed text-slate-400">
+                            {noteOf(w.author, w.name)}
                           </p>
+                        ) : (
+                          w.desc && (
+                            <p class="mt-0.5 line-clamp-1 text-[12px] leading-relaxed text-slate-500">
+                              {w.desc}
+                            </p>
+                          )
                         )}
                       </div>
                       <a
@@ -313,6 +334,7 @@ const LIMIT = 40;
                               target="_blank"
                               rel="noopener"
                               class="truncate font-mono text-[11.5px] text-slate-400 hover:text-[#b23a2b]"
+                              title={noteOf(w.author, w.name) || w.desc}
                             >
                               {w.name}
                             </a>

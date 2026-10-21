@@ -2,9 +2,16 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Avatar from '../../components/Avatar.astro';
 import { getAllEntries, getPeopleProfiles, type Entry } from '../../lib/data';
+import fs from 'node:fs';
+import path from 'node:path';
 import { ROLE_LABELS } from '../../lib/orgs';
 const BASE = import.meta.env.BASE_URL;
 const peopleProfiles = getPeopleProfiles();
+const notesFile = path.resolve('src/data/work-notes.json');
+const workNotes: Record<string, Record<string, string>> = fs.existsSync(notesFile)
+  ? JSON.parse(fs.readFileSync(notesFile, 'utf-8'))
+  : {};
+const noteOf = (author: string, repo: string) => workNotes[author]?.[repo] || '';
 
 export function getStaticPaths() {
   return getAllEntries().map((u) => ({ params: { login: u.profile.login }, props: { user: u } }));
@@ -391,7 +398,7 @@ const links = [
                 {r.language && <span class="font-mono text-[10.5px] text-slate-600">{r.language}</span>}
               </div>
               <p class="mt-0.5 line-clamp-1 text-[12px] leading-relaxed text-slate-500">
-                {r.description || '—'}
+                {noteOf(p.login, r.name) || r.description || '—'}
               </p>
             </div>
             <div class="shrink-0 text-right">
