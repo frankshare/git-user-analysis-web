@@ -14,3 +14,5 @@ PUBLIC_URL.txt
 .DS_Store
 dev.err
 ngrok*.err
+devicetest*.log
+devicetest*.err
