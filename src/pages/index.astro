@@ -24,8 +24,23 @@ const totalAnalyses = users.reduce((acc, u) => acc + (u.skill_analyses?.length |
         Git 用户深度画像与高星 Skill 复用库
       </h1>
       <p class="text-slate-400 text-base sm:text-lg leading-relaxed">
-        拒绝堆砌仓库名，拒绝表面数据。通过数据集中度拆解、工程纪律复现与三重验证，把开源高手的沉淀转化为可以直接安装、即刻使用的工程级 Skill。
+        这是一个<strong class="text-slate-200">「怎么把别人写得好的 Agent Skill 学过来」</strong>的研究站。
+        不是 star 排行榜，也不是 skill 下载站——它回答三个具体问题：
       </p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-5">
+        <a href={`${BASE}convergence/`} class="group bg-slate-900/50 border border-slate-800 rounded-xl p-4 hover:border-emerald-500/40 transition-colors">
+          <div class="text-sm font-semibold text-emerald-300 mb-1">① 他们的方法是什么</div>
+          <div class="text-xs text-slate-400 leading-relaxed">29 位互不相识的创作者，反复撞上同样 7 堵墙。<span class="text-slate-500 group-hover:text-slate-300">→ 方法收敛簇</span></div>
+        </a>
+        <a href={`${BASE}checklist/`} class="group bg-slate-900/50 border border-slate-800 rounded-xl p-4 hover:border-sky-500/40 transition-colors">
+          <div class="text-sm font-semibold text-sky-300 mb-1">② 我怎么照着做</div>
+          <div class="text-xs text-slate-400 leading-relaxed">把方法变成 29 条可勾选的自查项，每条带证据来源。<span class="text-slate-500 group-hover:text-slate-300">→ 检查清单</span></div>
+        </a>
+        <a href={`${BASE}format/`} class="group bg-slate-900/50 border border-slate-800 rounded-xl p-4 hover:border-violet-500/40 transition-colors">
+          <div class="text-sm font-semibold text-violet-300 mb-1">③ 怎么写才被认出来</div>
+          <div class="text-xs text-slate-400 leading-relaxed">SKILL.md 怎么写、description 用什么句式，有实测数据。<span class="text-slate-500 group-hover:text-slate-300">→ 格式研究</span></div>
+        </a>
+      </div>
     </div>
 
     <!-- 顶层聚合看板 -->
