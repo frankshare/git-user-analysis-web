@@ -75,7 +75,21 @@ const links = [
   <!-- 档案头 -->
   <section class="wrap mt-4">
     <div class="flex flex-col gap-6 border-b border-slate-800 pb-8 sm:flex-row sm:items-start">
-      <Avatar login={p.login} name={p.name} size={132} eager class="rounded-[3px]" />
+      <span class="relative shrink-0">
+        <span
+          class="pointer-events-none absolute -inset-[8px] rounded-full border border-[#cbbb95]"
+          aria-hidden="true"
+        >
+        </span>
+        <Avatar
+          login={p.login}
+          name={p.name}
+          size={132}
+          round
+          eager
+          class="h-[132px] w-[132px] shadow-[0_8px_22px_-10px_rgba(23,20,15,0.5)]"
+        />
+      </span>
 
       <div class="min-w-0 flex-1">
         <div class="flex flex-wrap items-center gap-x-3 gap-y-2">

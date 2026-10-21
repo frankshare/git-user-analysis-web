@@ -233,7 +233,6 @@
     transition:
       filter 0.5s ease,
       transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    border: 1px solid #d8c9a9;
   }
   .card:hover .portrait {
     filter: grayscale(0) contrast(1);

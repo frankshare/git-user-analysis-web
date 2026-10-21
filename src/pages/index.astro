@@ -164,13 +164,21 @@ const kfmt = (n: number) =>
       style="padding:1.5rem 1.5rem 1.3rem 1.8rem"
     >
       <div class="flex items-start gap-5">
-        <Avatar
-          login={top.login}
-          name={top.name}
-          fill
-          eager
-          class="h-[132px] w-[110px] shrink-0 rounded-[3px]"
-        />
+        <span class="relative shrink-0">
+          <span
+            class="pointer-events-none absolute -inset-[7px] rounded-full border border-[#cbbb95]"
+            aria-hidden="true"
+          >
+          </span>
+          <Avatar
+            login={top.login}
+            name={top.name}
+            size={120}
+            round
+            eager
+            class="h-[120px] w-[120px] shadow-[0_6px_18px_-8px_rgba(23,20,15,0.45)] transition-transform duration-[600ms] ease-out group-hover:scale-[1.05]"
+          />
+        </span>
         <div class="min-w-0 flex-1">
           <div class="flex items-center gap-2">
             <span class="labelmono">001 · 星最多的那位</span>
@@ -223,15 +231,28 @@ const kfmt = (n: number) =>
           class="card reveal group flex flex-col p-0"
           data-key={`${r.zh ? 'zh' : 'en'} ${r.strategy}`}
         >
-          {/* 肖像：头像为主体 */}
-          <div class="relative overflow-hidden border-b border-slate-800">
-            <div class="aspect-[4/3] w-full overflow-hidden bg-[#e6dcc4]">
-              <Avatar
-                login={r.login}
-                name={r.name}
-                fill
-                class="h-full w-full transition-transform duration-[600ms] ease-out group-hover:scale-[1.06]"
-              />
+          {/* 肖像：圆形头像居中，不裁脸 */}
+          <div class="relative overflow-hidden border-b border-slate-800 bg-[#efe6d2] px-4 pb-4 pt-6">
+            <div class="flex items-center justify-center">
+              <div class="relative">
+                <span
+                  class="pointer-events-none absolute -inset-[7px] rounded-full border border-[#cbbb95]"
+                  aria-hidden="true"
+                >
+                </span>
+                <span
+                  class="pointer-events-none absolute -inset-[12px] rounded-full border border-dashed border-[#d3c6a5] opacity-70"
+                  aria-hidden="true"
+                >
+                </span>
+                <Avatar
+                  login={r.login}
+                  name={r.name}
+                  size={104}
+                  round
+                  class="h-[104px] w-[104px] shadow-[0_6px_18px_-8px_rgba(23,20,15,0.45)] transition-transform duration-[600ms] ease-out group-hover:scale-[1.05]"
+                />
+              </div>
             </div>
             <span class="absolute left-2 top-2 rounded-[2px] bg-[#17140f]/78 px-1.5 py-0.5 font-mono text-[10px] text-[#f6efdf]">
               {String(i + 2).padStart(3, '0')}
