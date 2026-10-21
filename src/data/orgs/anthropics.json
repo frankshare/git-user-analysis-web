@@ -1,0 +1,1673 @@
+{
+  "schema_version": "1.1",
+  "kind": "organization",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub REST API（认证）抓取 org 仓库 + 官方 README 原文",
+    "caveat": "平台方供给，pattern 不参与跨作者收敛判定；星数为组织整体，不代表单个 skill 的采用度"
+  },
+  "profile": {
+    "login": "anthropics",
+    "name": "Anthropic",
+    "bio": "Claude 的官方开发组织，同时扮演 agent harness 厂商与 skill/plugin 规范制定者，自有 Agent Skills、Claude Code 插件市场与知识工作插件三条 skill 供给线。",
+    "website": "",
+    "x": "",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "platform",
+    "platform_role": "harness_vendor",
+    "public_repos": 115,
+    "source_repos": 90,
+    "fork_repos": 25
+  },
+  "stats": {
+    "total_stars_source": 685138,
+    "total_stars_all": 685721,
+    "median_stars": 377,
+    "ge_1000": 32,
+    "between_100_999": 34,
+    "between_10_99": 17,
+    "lt_10": 7,
+    "no_language": 13,
+    "top4_share": 63.1,
+    "top1_share": 26.7
+  },
+  "repos": [
+    {
+      "name": "agent-sdk-workshop",
+      "url": "https://github.com/anthropics/agent-sdk-workshop",
+      "stars": 138,
+      "language": "Python",
+      "updated_at": "2026-03-05T21:28:08Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "amulet2",
+      "url": "https://github.com/anthropics/amulet2",
+      "stars": 1,
+      "language": "C++",
+      "updated_at": "2026-08-15T23:59:43Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "anthropic-bedrock-python",
+      "url": "https://github.com/anthropics/anthropic-bedrock-python",
+      "stars": 59,
+      "language": null,
+      "updated_at": "2024-02-13T17:40:28Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "anthropic-bedrock-typescript",
+      "url": "https://github.com/anthropics/anthropic-bedrock-typescript",
+      "stars": 27,
+      "language": null,
+      "updated_at": "2024-02-14T00:12:37Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "anthropic-cli",
+      "url": "https://github.com/anthropics/anthropic-cli",
+      "stars": 692,
+      "language": "Go",
+      "updated_at": "2026-10-20T22:51:53Z",
+      "description": "The CLI for the Claude API",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "anthropic-retrieval-demo",
+      "url": "https://github.com/anthropics/anthropic-retrieval-demo",
+      "stars": 206,
+      "language": "Python",
+      "updated_at": "2024-06-30T19:18:19Z",
+      "description": "Lightweight demo using the Anthropic Python SDK to experiment with Claude's Search and Retrieval capabilities over a variety of knowledge bases (Elasticsearch, vector databases, web search, and Wikipedia).",
+      "fork": false,
+      "layer": "tool",
+      "category": "SDK"
+    },
+    {
+      "name": "anthropic-sdk-csharp",
+      "url": "https://github.com/anthropics/anthropic-sdk-csharp",
+      "stars": 338,
+      "language": "C#",
+      "updated_at": "2026-10-20T22:15:41Z",
+      "description": "Access to Anthropic's safety-first language model APIs in C#",
+      "fork": false,
+      "layer": "tool",
+      "category": "SDK"
+    },
+    {
+      "name": "anthropic-sdk-go",
+      "url": "https://github.com/anthropics/anthropic-sdk-go",
+      "stars": 1227,
+      "language": "Go",
+      "updated_at": "2026-10-20T22:10:30Z",
+      "description": "Access to Anthropic's safety-first language model APIs via Go",
+      "fork": false,
+      "layer": "tool",
+      "category": "SDK"
+    },
+    {
+      "name": "anthropic-sdk-java",
+      "url": "https://github.com/anthropics/anthropic-sdk-java",
+      "stars": 384,
+      "language": "Kotlin",
+      "updated_at": "2026-10-20T22:12:03Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "SDK"
+    },
+    {
+      "name": "anthropic-sdk-php",
+      "url": "https://github.com/anthropics/anthropic-sdk-php",
+      "stars": 193,
+      "language": "PHP",
+      "updated_at": "2026-10-20T22:15:58Z",
+      "description": "Access to Anthropic's safety-first language model APIs in PHP",
+      "fork": false,
+      "layer": "tool",
+      "category": "SDK"
+    },
+    {
+      "name": "anthropic-sdk-python",
+      "url": "https://github.com/anthropics/anthropic-sdk-python",
+      "stars": 3988,
+      "language": "Python",
+      "updated_at": "2026-10-20T22:13:00Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "SDK"
+    },
+    {
+      "name": "anthropic-sdk-ruby",
+      "url": "https://github.com/anthropics/anthropic-sdk-ruby",
+      "stars": 375,
+      "language": "Ruby",
+      "updated_at": "2026-10-20T22:16:42Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "SDK"
+    },
+    {
+      "name": "anthropic-sdk-typescript",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "stars": 2147,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T22:16:12Z",
+      "description": "Access to Anthropic's safety-first language model APIs in TypeScript",
+      "fork": false,
+      "layer": "tool",
+      "category": "SDK"
+    },
+    {
+      "name": "anthropic-tokenizer-typescript",
+      "url": "https://github.com/anthropics/anthropic-tokenizer-typescript",
+      "stars": 106,
+      "language": "TypeScript",
+      "updated_at": "2024-03-04T18:30:41Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "anthropic-tools",
+      "url": "https://github.com/anthropics/anthropic-tools",
+      "stars": 413,
+      "language": "Python",
+      "updated_at": "2024-11-04T23:34:50Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "apitools",
+      "url": "https://github.com/anthropics/apitools",
+      "stars": 25,
+      "language": "Python",
+      "updated_at": "2025-09-03T00:52:15Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "argo-cd",
+      "url": "https://github.com/anthropics/argo-cd",
+      "stars": 19,
+      "language": null,
+      "updated_at": "2026-08-20T03:00:32Z",
+      "description": "Declarative Continuous Deployment for Kubernetes",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "attribution-graphs-frontend",
+      "url": "https://github.com/anthropics/attribution-graphs-frontend",
+      "stars": 104,
+      "language": "JavaScript",
+      "updated_at": "2025-03-27T21:42:28Z",
+      "description": "https://transformer-circuits.pub/2025/attribution-graphs/methods.html",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "axt-verify",
+      "url": "https://github.com/anthropics/axt-verify",
+      "stars": 4,
+      "language": "Go",
+      "updated_at": "2026-10-13T16:57:38Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "beam",
+      "url": "https://github.com/anthropics/beam",
+      "stars": 16,
+      "language": "Java",
+      "updated_at": "2026-06-15T05:38:48Z",
+      "description": "Apache Beam is a unified programming model for Batch and Streaming data processing.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "blobfile",
+      "url": "https://github.com/anthropics/blobfile",
+      "stars": 11,
+      "language": "Python",
+      "updated_at": "2024-02-02T00:07:02Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "buffa",
+      "url": "https://github.com/anthropics/buffa",
+      "stars": 920,
+      "language": "Rust",
+      "updated_at": "2026-10-20T21:59:46Z",
+      "description": "Rust implementation of protobuf with editions support, JSON serialization, and zero-copy views",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "cargo-nix-plugin",
+      "url": "https://github.com/anthropics/cargo-nix-plugin",
+      "stars": 70,
+      "language": "Rust",
+      "updated_at": "2026-10-16T22:46:02Z",
+      "description": "A Nix plugin that resolves Cargo workspaces natively and allows for crate level builds",
+      "fork": false,
+      "layer": "skill",
+      "category": "插件市场"
+    },
+    {
+      "name": "cfaulthandler",
+      "url": "https://github.com/anthropics/cfaulthandler",
+      "stars": 10,
+      "language": null,
+      "updated_at": "2025-09-17T05:08:34Z",
+      "description": "Like Python's faulthandler module, but also prints the C call stack",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "claude-agent-sdk-demos",
+      "url": "https://github.com/anthropics/claude-agent-sdk-demos",
+      "stars": 2784,
+      "language": "TypeScript",
+      "updated_at": "2026-08-27T16:40:18Z",
+      "description": "Claude Code SDK Demos",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "claude-agent-sdk-python",
+      "url": "https://github.com/anthropics/claude-agent-sdk-python",
+      "stars": 8315,
+      "language": "Python",
+      "updated_at": "2026-10-21T04:44:35Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "claude-agent-sdk-typescript",
+      "url": "https://github.com/anthropics/claude-agent-sdk-typescript",
+      "stars": 1826,
+      "language": "Shell",
+      "updated_at": "2026-10-21T03:17:06Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "claude-ai-mcp",
+      "url": "https://github.com/anthropics/claude-ai-mcp",
+      "stars": 518,
+      "language": null,
+      "updated_at": "2026-06-08T08:48:05Z",
+      "description": "Report issues related to MCP integration with Claude here.",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "stars": 152703,
+      "language": "TypeScript",
+      "updated_at": "2026-10-21T03:16:31Z",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "claude-code-action",
+      "url": "https://github.com/anthropics/claude-code-action",
+      "stars": 9594,
+      "language": "TypeScript",
+      "updated_at": "2026-10-21T03:19:53Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "claude-code-base-action",
+      "url": "https://github.com/anthropics/claude-code-base-action",
+      "stars": 1012,
+      "language": "TypeScript",
+      "updated_at": "2026-10-21T03:18:44Z",
+      "description": "This repo is a mirror of the contents of base-action in https://github.com/anthropics/claude-code-action.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "claude-code-monitoring-guide",
+      "url": "https://github.com/anthropics/claude-code-monitoring-guide",
+      "stars": 377,
+      "language": null,
+      "updated_at": "2025-07-29T05:21:27Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "文档与教程"
+    },
+    {
+      "name": "claude-code-playground",
+      "url": "https://github.com/anthropics/claude-code-playground",
+      "stars": 270,
+      "language": "JavaScript",
+      "updated_at": "2026-10-14T07:53:11Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "claude-code-security-review",
+      "url": "https://github.com/anthropics/claude-code-security-review",
+      "stars": 6465,
+      "language": "Python",
+      "updated_at": "2026-02-11T18:01:23Z",
+      "description": "An AI-powered security review GitHub Action using Claude to analyze code changes for security vulnerabilities.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "claude-constitution",
+      "url": "https://github.com/anthropics/claude-constitution",
+      "stars": 148,
+      "language": null,
+      "updated_at": "2026-01-29T00:07:10Z",
+      "description": "The foundational document describing Claude's values and behavior",
+      "fork": false,
+      "layer": "other",
+      "category": "文档与教程"
+    },
+    {
+      "name": "claude-cookbooks",
+      "url": "https://github.com/anthropics/claude-cookbooks",
+      "stars": 53636,
+      "language": "Jupyter Notebook",
+      "updated_at": "2026-10-17T00:28:09Z",
+      "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
+      "fork": false,
+      "layer": "other",
+      "category": "文档与教程"
+    },
+    {
+      "name": "claude-desktop-buddy",
+      "url": "https://github.com/anthropics/claude-desktop-buddy",
+      "stars": 2662,
+      "language": "C++",
+      "updated_at": "2026-04-16T23:25:07Z",
+      "description": "Reference and an example for the Bluetooth API for makers in Claude Cowork & Claude Code Desktop",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "claude-for-financial-advisors",
+      "url": "https://github.com/anthropics/claude-for-financial-advisors",
+      "stars": 109,
+      "language": null,
+      "updated_at": "2026-09-24T20:40:30Z",
+      "description": "Claude for Financial Advisors: a Claude Cowork plugin with ready-to-run workflows for financial advisors, drawing on third-party connectors.",
+      "fork": false,
+      "layer": "skill",
+      "category": "插件市场"
+    },
+    {
+      "name": "claude-for-legal",
+      "url": "https://github.com/anthropics/claude-for-legal",
+      "stars": 9758,
+      "language": "Python",
+      "updated_at": "2026-10-14T09:13:39Z",
+      "description": "A suite of plugins for legal workflows",
+      "fork": false,
+      "layer": "skill",
+      "category": "插件市场"
+    },
+    {
+      "name": "claude-plugins-community",
+      "url": "https://github.com/anthropics/claude-plugins-community",
+      "stars": 4711,
+      "language": "JavaScript",
+      "updated_at": "2026-10-21T07:54:38Z",
+      "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
+      "fork": false,
+      "layer": "skill",
+      "category": "插件市场"
+    },
+    {
+      "name": "claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "stars": 43482,
+      "language": "Python",
+      "updated_at": "2026-10-21T07:42:02Z",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "fork": false,
+      "layer": "skill",
+      "category": "插件市场"
+    },
+    {
+      "name": "claude-quickstarts",
+      "url": "https://github.com/anthropics/claude-quickstarts",
+      "stars": 18921,
+      "language": "TypeScript",
+      "updated_at": "2026-10-08T17:34:23Z",
+      "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "claude-tag-plugins",
+      "url": "https://github.com/anthropics/claude-tag-plugins",
+      "stars": 63,
+      "language": "Shell",
+      "updated_at": "2026-10-07T15:23:55Z",
+      "description": "",
+      "fork": false,
+      "layer": "skill",
+      "category": "插件市场"
+    },
+    {
+      "name": "claude-tag-wif-gateway-sample",
+      "url": "https://github.com/anthropics/claude-tag-wif-gateway-sample",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2026-10-02T06:26:30Z",
+      "description": "Sample customer-side gateway for Claude Tag identity federation. Sample code; not maintained.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ClaudeForFoundationModels",
+      "url": "https://github.com/anthropics/ClaudeForFoundationModels",
+      "stars": 331,
+      "language": "Swift",
+      "updated_at": "2026-10-07T20:01:30Z",
+      "description": "Claude support for Apple Foundation Models",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "claudes-c-compiler",
+      "url": "https://github.com/anthropics/claudes-c-compiler",
+      "stars": 2822,
+      "language": "Rust",
+      "updated_at": "2026-02-05T17:14:51Z",
+      "description": "Claude Opus 4.6 wrote a dependency-free C compiler in Rust, with backends targeting x86 (64- and 32-bit), ARM, and RISC-V, capable of compiling a booting Linux kernel.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "code-migration-kit-with-claude-code",
+      "url": "https://github.com/anthropics/code-migration-kit-with-claude-code",
+      "stars": 769,
+      "language": "Python",
+      "updated_at": "2026-07-08T15:00:59Z",
+      "description": "Prompts, templates, and scripts for running large-scale language migrations with Claude Code",
+      "fork": false,
+      "layer": "tool",
+      "category": "提示词"
+    },
+    {
+      "name": "commerce-agents",
+      "url": "https://github.com/anthropics/commerce-agents",
+      "stars": 3289,
+      "language": "Python",
+      "updated_at": "2026-10-19T17:36:05Z",
+      "description": "Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "ConstitutionalHarmlessnessPaper",
+      "url": "https://github.com/anthropics/ConstitutionalHarmlessnessPaper",
+      "stars": 265,
+      "language": null,
+      "updated_at": "2022-12-21T21:05:34Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "courses",
+      "url": "https://github.com/anthropics/courses",
+      "stars": 22906,
+      "language": "Jupyter Notebook",
+      "updated_at": "2026-08-28T09:37:03Z",
+      "description": "Anthropic's educational courses",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "cryptography-research-demo",
+      "url": "https://github.com/anthropics/cryptography-research-demo",
+      "stars": 70,
+      "language": "C",
+      "updated_at": "2026-07-29T17:16:09Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "cwc-long-running-agents",
+      "url": "https://github.com/anthropics/cwc-long-running-agents",
+      "stars": 699,
+      "language": "Shell",
+      "updated_at": "2026-05-13T00:54:43Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "cwc-workshops",
+      "url": "https://github.com/anthropics/cwc-workshops",
+      "stars": 2204,
+      "language": "TypeScript",
+      "updated_at": "2026-10-16T22:26:05Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "DecompositionFaithfulnessPaper",
+      "url": "https://github.com/anthropics/DecompositionFaithfulnessPaper",
+      "stars": 31,
+      "language": "Python",
+      "updated_at": "2023-07-17T20:06:42Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "defending-code-reference-harness",
+      "url": "https://github.com/anthropics/defending-code-reference-harness",
+      "stars": 7613,
+      "language": "Python",
+      "updated_at": "2026-08-06T21:42:09Z",
+      "description": "Skills for threat modeling, scanning, triage, patching, plus an autonomous scanning harness you can /customize",
+      "fork": false,
+      "layer": "skill",
+      "category": "官方 Skill 集"
+    },
+    {
+      "name": "devcontainer-features",
+      "url": "https://github.com/anthropics/devcontainer-features",
+      "stars": 313,
+      "language": "Shell",
+      "updated_at": "2025-12-16T00:11:22Z",
+      "description": "Anthropic Dev Container Features, including Claude Code CLI",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "evals",
+      "url": "https://github.com/anthropics/evals",
+      "stars": 441,
+      "language": null,
+      "updated_at": "2024-07-02T07:36:39Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "fermats-last-theorem",
+      "url": "https://github.com/anthropics/fermats-last-theorem",
+      "stars": 1285,
+      "language": "Lean",
+      "updated_at": "2026-09-24T14:06:42Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "financial-services",
+      "url": "https://github.com/anthropics/financial-services",
+      "stars": 40588,
+      "language": "Python",
+      "updated_at": "2026-09-21T21:10:41Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "formal-math",
+      "url": "https://github.com/anthropics/formal-math",
+      "stars": 306,
+      "language": "Lean",
+      "updated_at": "2026-10-06T04:00:30Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "github-mcp-server",
+      "url": "https://github.com/anthropics/github-mcp-server",
+      "stars": 130,
+      "language": "Go",
+      "updated_at": "2025-12-09T19:28:54Z",
+      "description": "GitHub's official MCP Server",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "headvis",
+      "url": "https://github.com/anthropics/headvis",
+      "stars": 43,
+      "language": "Svelte",
+      "updated_at": "2026-05-04T20:21:11Z",
+      "description": "Head Vis Public Release",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "healthcare",
+      "url": "https://github.com/anthropics/healthcare",
+      "stars": 427,
+      "language": "JavaScript",
+      "updated_at": "2026-08-27T13:13:38Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "hh-rlhf",
+      "url": "https://github.com/anthropics/hh-rlhf",
+      "stars": 1856,
+      "language": null,
+      "updated_at": "2025-06-17T15:43:37Z",
+      "description": "Human preference data for \"Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback\"",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "homebrew-claude",
+      "url": "https://github.com/anthropics/homebrew-claude",
+      "stars": 9,
+      "language": null,
+      "updated_at": "2025-07-11T22:01:29Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "homebrew-tap",
+      "url": "https://github.com/anthropics/homebrew-tap",
+      "stars": 34,
+      "language": "Ruby",
+      "updated_at": "2026-10-20T23:06:55Z",
+      "description": "Homebrew formulae for Anthropic tools.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "html-effectiveness",
+      "url": "https://github.com/anthropics/html-effectiveness",
+      "stars": 681,
+      "language": "HTML",
+      "updated_at": "2026-07-03T17:37:46Z",
+      "description": "HTML effectiveness examples",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "httpcore",
+      "url": "https://github.com/anthropics/httpcore",
+      "stars": 22,
+      "language": "Python",
+      "updated_at": "2026-08-05T17:38:58Z",
+      "description": "A minimal HTTP client. ⚙️",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "hypercorn",
+      "url": "https://github.com/anthropics/hypercorn",
+      "stars": 20,
+      "language": "Python",
+      "updated_at": "2026-01-12T17:07:30Z",
+      "description": "Hypercorn is an ASGI and WSGI Server based on Hyper libraries and inspired by Gunicorn.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "jacobian-lens",
+      "url": "https://github.com/anthropics/jacobian-lens",
+      "stars": 2061,
+      "language": "Python",
+      "updated_at": "2026-10-10T08:22:51Z",
+      "description": " Companion code for the global workspace interpretability paper",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "k12-teacher-skills",
+      "url": "https://github.com/anthropics/k12-teacher-skills",
+      "stars": 579,
+      "language": "Python",
+      "updated_at": "2026-10-14T00:54:44Z",
+      "description": "Skills and eval rubrics for K-12 teachers, co-developed with Learning Commons",
+      "fork": false,
+      "layer": "skill",
+      "category": "官方 Skill 集"
+    },
+    {
+      "name": "knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "stars": 30926,
+      "language": "Python",
+      "updated_at": "2026-10-21T07:39:12Z",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "fork": false,
+      "layer": "skill",
+      "category": "插件市场"
+    },
+    {
+      "name": "launch-your-agent",
+      "url": "https://github.com/anthropics/launch-your-agent",
+      "stars": 1070,
+      "language": "HTML",
+      "updated_at": "2026-09-23T07:36:41Z",
+      "description": "Claude Code skills that take a founder from idea to a live Claude Managed Agent: interview, scope a v0, launch in their own account, grade it, iterate, and schedule it",
+      "fork": false,
+      "layer": "skill",
+      "category": "官方 Skill 集"
+    },
+    {
+      "name": "leptos-chartistry",
+      "url": "https://github.com/anthropics/leptos-chartistry",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2026-01-23T01:27:36Z",
+      "description": "Chartistry is an extensible charting library for Leptos",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "life-sciences",
+      "url": "https://github.com/anthropics/life-sciences",
+      "stars": 622,
+      "language": "Python",
+      "updated_at": "2026-08-14T19:59:24Z",
+      "description": "Repo for the Claude Code Marketplace to use with the Claude for Life Sciences Launch. This will continue to host the marketplace.json long-term, but not the actual MCP servers.",
+      "fork": false,
+      "layer": "skill",
+      "category": "插件市场"
+    },
+    {
+      "name": "maestro",
+      "url": "https://github.com/anthropics/maestro",
+      "stars": 26,
+      "language": null,
+      "updated_at": "2026-01-14T18:48:01Z",
+      "description": "Maestro: Netflix’s Workflow Orchestrator",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mockturtle",
+      "url": "https://github.com/anthropics/mockturtle",
+      "stars": 5,
+      "language": "C++",
+      "updated_at": "2026-08-16T00:09:50Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "model-cards",
+      "url": "https://github.com/anthropics/model-cards",
+      "stars": 25,
+      "language": null,
+      "updated_at": "2025-12-05T16:15:15Z",
+      "description": "Supplementary materials for Claude Model Cards",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "mythos-5-incident-transcript",
+      "url": "https://github.com/anthropics/mythos-5-incident-transcript",
+      "stars": 128,
+      "language": "HTML",
+      "updated_at": "2026-09-09T18:47:23Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "nix-eval-jobs",
+      "url": "https://github.com/anthropics/nix-eval-jobs",
+      "stars": 7,
+      "language": null,
+      "updated_at": "2026-01-14T11:59:31Z",
+      "description": "Parallel nix evaluator with a streamable json output [maintainers @Mic92, @adisbladis]",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "oncall-kit",
+      "url": "https://github.com/anthropics/oncall-kit",
+      "stars": 243,
+      "language": "Python",
+      "updated_at": "2026-08-06T19:11:35Z",
+      "description": "Starter kit for a Claude-assisted on-call: mines your incident history into triage playbooks, sets up through human-approved gates, and runs read-only in your Slack channel — humans deploy every fix.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "OpenROAD-flow-scripts",
+      "url": "https://github.com/anthropics/OpenROAD-flow-scripts",
+      "stars": 2,
+      "language": "Verilog",
+      "updated_at": "2026-08-12T22:06:52Z",
+      "description": "Read-only mirror of The-OpenROAD-Project/OpenROAD-flow-scripts (release tags only). No changes accepted here — contribute upstream.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "original_performance_takehome",
+      "url": "https://github.com/anthropics/original_performance_takehome",
+      "stars": 4191,
+      "language": "Python",
+      "updated_at": "2026-01-22T01:11:08Z",
+      "description": "Anthropic's original performance take-home, now open for you to try!",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "orjson",
+      "url": "https://github.com/anthropics/orjson",
+      "stars": 60,
+      "language": "Python",
+      "updated_at": "2026-08-10T00:15:03Z",
+      "description": "Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "oss-scanner",
+      "url": "https://github.com/anthropics/oss-scanner",
+      "stars": 1377,
+      "language": "Dockerfile",
+      "updated_at": "2026-10-21T06:59:49Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "political-neutrality-eval",
+      "url": "https://github.com/anthropics/political-neutrality-eval",
+      "stars": 140,
+      "language": "Python",
+      "updated_at": "2025-11-13T19:57:06Z",
+      "description": "This repo contains detailed implementation information about Anthropic's paired prompts approach for evaluating political neutrality.",
+      "fork": false,
+      "layer": "tool",
+      "category": "提示词"
+    },
+    {
+      "name": "prompt-eng-interactive-tutorial",
+      "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+      "stars": 38679,
+      "language": "Jupyter Notebook",
+      "updated_at": "2026-08-28T05:31:39Z",
+      "description": "Anthropic's Interactive Prompt Engineering Tutorial",
+      "fork": false,
+      "layer": "tool",
+      "category": "提示词"
+    },
+    {
+      "name": "PySvelte",
+      "url": "https://github.com/anthropics/PySvelte",
+      "stars": 226,
+      "language": "Python",
+      "updated_at": "2021-12-22T04:18:09Z",
+      "description": "A library for bridging Python and HTML/Javascript (via Svelte) for creating interactive visualizations",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "python-tblib",
+      "url": "https://github.com/anthropics/python-tblib",
+      "stars": 12,
+      "language": "Python",
+      "updated_at": "2023-10-06T19:31:24Z",
+      "description": "Serialization library for Exceptions and Tracebacks.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "raft-rs",
+      "url": "https://github.com/anthropics/raft-rs",
+      "stars": 3,
+      "language": null,
+      "updated_at": "2026-09-25T05:13:04Z",
+      "description": "Raft distributed consensus algorithm implemented in Rust.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rayon",
+      "url": "https://github.com/anthropics/rayon",
+      "stars": 5,
+      "language": null,
+      "updated_at": "2026-09-25T05:13:09Z",
+      "description": "Rayon: A data parallelism library for Rust",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rclone",
+      "url": "https://github.com/anthropics/rclone",
+      "stars": 43,
+      "language": null,
+      "updated_at": "2025-10-09T14:40:47Z",
+      "description": "\"rsync for cloud storage\" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "redis-py",
+      "url": "https://github.com/anthropics/redis-py",
+      "stars": 17,
+      "language": "Python",
+      "updated_at": "2025-11-24T18:25:39Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "riegeli-rs",
+      "url": "https://github.com/anthropics/riegeli-rs",
+      "stars": 9,
+      "language": null,
+      "updated_at": "2026-06-13T03:49:51Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "riv2025-long-horizon-coding-agent-demo",
+      "url": "https://github.com/anthropics/riv2025-long-horizon-coding-agent-demo",
+      "stars": 67,
+      "language": "Python",
+      "updated_at": "2026-05-07T17:58:36Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "rogue-deploy-eval",
+      "url": "https://github.com/anthropics/rogue-deploy-eval",
+      "stars": 14,
+      "language": "Python",
+      "updated_at": "2025-01-21T14:20:23Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "s5cmd",
+      "url": "https://github.com/anthropics/s5cmd",
+      "stars": 43,
+      "language": "Go",
+      "updated_at": "2026-05-19T18:38:42Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "sandbox-runtime",
+      "url": "https://github.com/anthropics/sandbox-runtime",
+      "stars": 5616,
+      "language": "TypeScript",
+      "updated_at": "2026-10-21T07:14:10Z",
+      "description": "A lightweight sandboxing tool for enforcing filesystem and network restrictions on arbitrary processes at the OS level, without requiring a container.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "scone-bench",
+      "url": "https://github.com/anthropics/scone-bench",
+      "stars": 60,
+      "language": "Python",
+      "updated_at": "2026-05-19T03:42:55Z",
+      "description": "Benchmark for evaluating LLM agents on smart-contract vulnerability discovery and exploitation",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "serde-saphyr",
+      "url": "https://github.com/anthropics/serde-saphyr",
+      "stars": 3,
+      "language": null,
+      "updated_at": "2026-09-24T19:08:04Z",
+      "description": "A strongly typed, comment-supporting YAML deserializer that deserializes YAML directly into your Rust types without constructing an intermediate tree of “abstract values.” ",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "skills",
+      "url": "https://github.com/anthropics/skills",
+      "stars": 182590,
+      "language": "Python",
+      "updated_at": "2026-10-09T18:45:52Z",
+      "description": "Public repository for Agent Skills",
+      "fork": false,
+      "layer": "skill",
+      "category": "官方 Skill 集"
+    },
+    {
+      "name": "sleeper-agents-paper",
+      "url": "https://github.com/anthropics/sleeper-agents-paper",
+      "stars": 155,
+      "language": null,
+      "updated_at": "2024-03-09T04:14:31Z",
+      "description": "Contains random samples referenced in the paper \"Sleeper Agents: Training Robustly Deceptive LLMs that Persist Through Safety Training\".",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "snix",
+      "url": "https://github.com/anthropics/snix",
+      "stars": 0,
+      "language": "Nix",
+      "updated_at": "2026-10-07T23:39:51Z",
+      "description": "Mirror of Snix (git.snix.dev/snix/snix)",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "sse-starlette",
+      "url": "https://github.com/anthropics/sse-starlette",
+      "stars": 9,
+      "language": null,
+      "updated_at": "2022-12-27T16:06:16Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "swift-markdown",
+      "url": "https://github.com/anthropics/swift-markdown",
+      "stars": 21,
+      "language": null,
+      "updated_at": "2026-05-08T15:40:46Z",
+      "description": "A Swift package for parsing, building, editing, and analyzing Markdown documents.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "swift-markdown-ui",
+      "url": "https://github.com/anthropics/swift-markdown-ui",
+      "stars": 57,
+      "language": null,
+      "updated_at": "2025-01-28T06:35:09Z",
+      "description": "Display and customize Markdown text in SwiftUI",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "sycophancy-to-subterfuge-paper",
+      "url": "https://github.com/anthropics/sycophancy-to-subterfuge-paper",
+      "stars": 25,
+      "language": null,
+      "updated_at": "2024-09-05T01:27:39Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "tailscale-hint-extension",
+      "url": "https://github.com/anthropics/tailscale-hint-extension",
+      "stars": 21,
+      "language": "HTML",
+      "updated_at": "2025-12-29T20:25:38Z",
+      "description": "Chrome extension showing helpful troubleshooting when Tailscale .local domains fail to resolve",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "terragrunt",
+      "url": "https://github.com/anthropics/terragrunt",
+      "stars": 15,
+      "language": null,
+      "updated_at": "2026-03-23T14:54:27Z",
+      "description": "Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTofu/Terraform to scale.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "tokio",
+      "url": "https://github.com/anthropics/tokio",
+      "stars": 28,
+      "language": "Rust",
+      "updated_at": "2026-09-25T05:13:07Z",
+      "description": "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ...",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "torchtyping",
+      "url": "https://github.com/anthropics/torchtyping",
+      "stars": 11,
+      "language": "Python",
+      "updated_at": "2025-10-06T17:17:03Z",
+      "description": "Type annotations and dynamic checking for a tensor's shape, dtype, names, etc.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "toy-models-of-superposition",
+      "url": "https://github.com/anthropics/toy-models-of-superposition",
+      "stars": 157,
+      "language": "Jupyter Notebook",
+      "updated_at": "2022-09-14T01:31:00Z",
+      "description": "Notebooks accompanying Anthropic's \"Toy Models of Superposition\" paper",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "triton",
+      "url": "https://github.com/anthropics/triton",
+      "stars": 26,
+      "language": "C++",
+      "updated_at": "2025-09-17T21:09:21Z",
+      "description": "Development repository for the Triton language and compiler",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "uplifting-biomolecular-modeling",
+      "url": "https://github.com/anthropics/uplifting-biomolecular-modeling",
+      "stars": 360,
+      "language": "Python",
+      "updated_at": "2026-10-20T11:29:08Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "xls",
+      "url": "https://github.com/anthropics/xls",
+      "stars": 4,
+      "language": null,
+      "updated_at": "2026-08-19T08:09:05Z",
+      "description": "Fork of google/xls — main tracks upstream; Anthropic changes live on anthropic-* branches",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/anthropics",
+    "count": 12,
+    "layers": {
+      "skill": 7,
+      "tool": 4,
+      "other": 1
+    },
+    "items": [
+      {
+        "name": "skills",
+        "layer": "skill",
+        "category": "官方 Skill 集",
+        "repo": "skills",
+        "subdir": "",
+        "summary": "Agent Skills 的官方实现仓：每个 skill 是含 SKILL.md 的自包含文件夹，同时托管 spec/（Agent Skills 规范）与 template/（skill 模板），并可作为 Claude Code 插件市场被 /plugin marketplace add anthropics/skills 挂载。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "claude-plugins-official",
+        "layer": "skill",
+        "category": "插件市场",
+        "repo": "claude-plugins-official",
+        "subdir": "",
+        "summary": "Anthropic 官方维护的插件目录，分为 /plugins（内部自研）与 /external_plugins（第三方），规定 .claude-plugin/plugin.json 清单、.mcp.json、commands/、agents/、skills/ 的目录约定，name 为不可变 slug。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "claude-plugins-community",
+        "layer": "skill",
+        "category": "社区合集",
+        "repo": "claude-plugins-community",
+        "subdir": "",
+        "summary": "面向 Claude Cowork 与 Claude Code 的社区插件市场只读镜像，提交入口外置到 clau.de/plugin-directory-submission。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "knowledge-work-plugins",
+        "layer": "skill",
+        "category": "官方 Skill 集",
+        "repo": "knowledge-work-plugins",
+        "subdir": "",
+        "summary": "为知识工作者开箱即用的 11 个岗位插件（productivity/sales/customer-support/product-management/marketing/legal/finance/data/enterprise-search/bio-research/cowork-plugin-management），全部为 markdown+JSON 文件，无代码无构建。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "defending-code-reference-harness",
+        "layer": "skill",
+        "category": "官方 Skill 集",
+        "repo": "defending-code-reference-harness",
+        "subdir": "",
+        "summary": "威胁建模、扫描、分诊、修补四类 skill 集合，并附一个可自定义的自主扫描 harness。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "k12-teacher-skills",
+        "layer": "skill",
+        "category": "官方 Skill 集",
+        "repo": "k12-teacher-skills",
+        "subdir": "",
+        "summary": "面向 K-12 教师的 skills 与评分 rubric，与 Learning Commons 联合开发。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "launch-your-agent",
+        "layer": "skill",
+        "category": "官方 Skill 集",
+        "repo": "launch-your-agent",
+        "subdir": "",
+        "summary": "Claude Code skills：把创始人从想法带到已上线的 Claude Managed Agent——访谈、定义 v0、在自有账号部署、打分、迭代与定时。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "claude-code-security-review",
+        "layer": "tool",
+        "category": "官方 Skill 集",
+        "repo": "claude-code-security-review",
+        "subdir": "",
+        "summary": "以 Claude 分析代码变更、找安全漏洞的 AI 驱动安全评审 GitHub Action（Python）。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "claude-code-action",
+        "layer": "tool",
+        "category": "CI 集成",
+        "repo": "claude-code-action",
+        "subdir": "",
+        "summary": "在 GitHub Actions 中运行 Claude Code 的官方 action，配套 claude-code-base-action 作为内容镜像。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "claude-agent-sdk-python",
+        "layer": "tool",
+        "category": "SDK / 工具链",
+        "repo": "claude-agent-sdk-python",
+        "subdir": "",
+        "summary": "Claude Agent SDK 的 Python 实现，是把 Claude Code 的 agent 能力嵌入自有应用的官方编程入口。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "claude-agent-sdk-typescript",
+        "layer": "tool",
+        "category": "SDK / 工具链",
+        "repo": "claude-agent-sdk-typescript",
+        "subdir": "",
+        "summary": "Claude Agent SDK 的 TypeScript 实现，与 claude-agent-sdk-demos 一同构成官方示例面。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "claude-ai-mcp",
+        "layer": "other",
+        "category": "协议扩展点",
+        "repo": "claude-ai-mcp",
+        "subdir": "",
+        "summary": "Claude 与 MCP 集成的官方 issue 归集仓，标记为 MCP 集成问题在此上报；github-mcp-server（fork）为其官方 MCP server 形态。",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "name": "skills",
+      "repo": "skills",
+      "stars": 182590,
+      "verdict": "把「skill」从提示词技巧升格为一个带目录规范、模板与可注册市场入口的文件格式标准，仓库自身即为该标准的参考实现。",
+      "problem": "Claude 的用户需要在特定任务上稳定复现质量（公司品牌文档、组织数据分析流程、个人自动化），但每次从零写长提示词既不稳定也无法沉淀。平台方需要一个可分发、可被模型动态加载的载体。",
+      "mechanism": [
+        "每个 skill 是自包含文件夹，核心是一个带 YAML frontmatter 的 SKILL.md，frontmatter 只强制 name 与 description 两个字段，name 为小写连字符唯一标识，description 负责说明做什么、何时用",
+        "以 spec/ 目录承载 Agent Skills 规范、以 template/ 目录提供可复制的起始模板，把「格式」与「样例」同时公开",
+        "仓库同时充当 Claude Code 插件市场源：/plugin marketplace add anthropics/skills 后可 /plugin install document-skills@anthropic-agent-skills",
+        "同一批 skill 打通三端：Claude Code 插件、Claude.ai 付费计划内置、Claude API 的 Skills API 可上传自定义 skill",
+        "docx/pdf/pptx/xlsx 四个文档 skill 以 source-available（非开源）方式放出，公开作为复杂 skill 的生产级参考"
+      ],
+      "constraints": [
+        "frontmatter 规范极简（仅 name/description 必填），能力边界靠正文 markdown 承载，缺少版本与依赖声明机制",
+        "文档类 skill 为 source-available，非 Apache 2.0，不能等同开源复用",
+        "README 明确声明仅供演示与教学，实际 Claude 行为可能与仓库中的 skill 不一致"
+      ],
+      "takeaway": [
+        "写 skill 只保留 name + description 两个必填字段，其余信息全部放正文，把「何时触发」写足",
+        "同时提供 template 与 spec 两份产物，让格式既可复制也可被论证",
+        "选一个真实生产能力（文档处理）作为参考实现样例，比堆十个玩具样例更有说服力"
+      ],
+      "limits": [
+        "依赖 Claude Code/Claude.ai/API 三端的 skill 加载机制，无法脱离 Anthropic 运行时复用",
+        "本仓库 skills 提供的只是格式参考，实际效果依赖底层模型与 harness 的加载策略"
+      ]
+    },
+    {
+      "name": "claude-plugins-official",
+      "repo": "claude-plugins-official",
+      "stars": 43482,
+      "verdict": "一个带准入审核、命名不可变规则与改名迁移表的官方插件目录，本质是把插件分发做成了有治理的注册中心。",
+      "problem": "Claude Code 生态早期插件来源混乱、更新后名称漂移会让已安装用户直接报 plugin-not-found；平台方需要一个有版本纪律的官方目录来承载内外部插件。",
+      "mechanism": [
+        "目录分层：/plugins 为 Anthropic 内部自研，/external_plugins 为伙伴与社区第三方，第三方需通过提交表并满足质量与安全标准才能上架",
+        "统一插件结构约定：.claude-plugin/plugin.json（必需元数据）、.mcp.json（可选 MCP 配置）、commands/、agents/、skills/、README.md",
+        "name 字段是不可变 slug，UI 展示名走 displayName；确需改名则在 .claude-plugin/marketplace.json 的顶层 renames 映射中登记，插件加载器在下次 sync 时透明改写旧 slug",
+        "对无 plugin.json 清单、只带 SKILL.md 的 skill-bundle 型仓库，用 strict: false + 显式 skills 数组的条目形式接入，路径相对 source.path 且可跨多层目录，skill 注册为 <plugin-name>:<skill-name>"
+      ],
+      "constraints": [
+        "插件本身可带 MCP server 与任意文件，README 明确声明 Anthropic 不控制也不验证其内容，安装前需用户自行信任",
+        "name 不可变约束使改名必须走 renames 映射，条目编辑成本高于普通 README",
+        "skill-bundle 形式要求 source 指定 url/path/ref/sha，依赖可复现的 commit 引用"
+      ],
+      "takeaway": [
+        "把分发条目的 name 定为不可变 slug，展示名与标识解耦，能一次性消灭一类「改名即破装」事故",
+        "为外部贡献者保留只读镜像 + 外部提交入口（提交表单另址），既保持目录稳定又不阻塞供给",
+        "为「只有 SKILL.md 没有清单」的仓库提供 strict:false 的降级条目，别逼贡献者补全套脚手架"
+      ],
+      "limits": [
+        "治理依赖 Anthropic 自己的人工准入与审阅，不可程序化复制",
+        "生态绑定 Claude Code 的 plugin 系统，别的 harness 无法直接消费该目录结构"
+      ]
+    },
+    {
+      "name": "knowledge-work-plugins",
+      "repo": "knowledge-work-plugins",
+      "stars": 30926,
+      "verdict": "用「岗位即插件」的粒度把领域知识、连接器与显式命令打包成纯文件资产，交付物是 markdown 与 JSON，不含任何代码。",
+      "problem": "知识工作者（如销售、财务、律师）需要的不是通用助手而是「懂我这套流程」的助手，但这些流程写在人脑和零散文档里；平台方要提供可改的起点而不是最终答案。",
+      "mechanism": [
+        "每个岗位一个插件，统一结构 .claude-plugin/plugin.json + .mcp.json + commands/ + skills/；skills 承载领域知识与分步工作流并由 Claude 自动触发，commands 是显式动作（/sales:call-prep、/data:write-query）",
+        "连接器通过 .mcp.json 指向该岗位依赖的外部系统：Slack/Notion/Jira/HubSpot/Snowflake/Databricks/BigQuery/Figma/Amplitude 等，一个插件内可挂十个量级",
+        "明确「定制是价值来源」：换连接器、加公司术语与组织结构、改写工作流步骤，官方只给通用起点",
+        "全组件文件化——无代码、无基础设施、无构建步骤；安装方式是 claude plugin marketplace add + claude plugin install，插件装好即自动生效",
+        "自带 cowork-plugin-management 插件用于创建或改造其他插件，把「造插件」也做成可交付件"
+      ],
+      "constraints": [
+        "以 Claude Cowork 为主场景、Claude Code 为兼容目标，需要宿主提供 plugin/skills/commands 的加载与自动触发能力",
+        "连接器依赖各 SaaS 的 MCP server 及其鉴权，能力上限受第三方服务开放程度限制",
+        "文件化只保证可读改，不保证跨插件无冲突与一致的风格治理"
+      ],
+      "takeaway": [
+        "以「岗位」而非「功能」划分插件目录，用户一眼能对上自己的工作",
+        "把 skills（自动触发）与 commands（显式触发）分层，是让 agent 既自动又不越权的最小结构",
+        "发布插件时把「可定制点」写进文档——换连接器、加术语、改流程，否则用户只会看到一个不合适的通用模板"
+      ],
+      "limits": [
+        "强绑定 Anthropic 平台与具体 SaaS 生态，迁移到别的 harness 需要重写接入层",
+        "为通用模板而非企业实况定制，落地效果取决于使用方是否真的做了二次编辑"
+      ]
+    },
+    {
+      "name": "claude-agent-sdk-python",
+      "repo": "claude-agent-sdk-python",
+      "stars": 8315,
+      "verdict": "官方把 Claude Code 的 agent 内核以 SDK 形式开放，使「自己写 harness」有了官方基线而非逆向实现。",
+      "problem": "开发者想把 Claude Code 的能力嵌入自己的应用或自建 agent 循环时，此前缺少受支持的程序化接口，只能靠 CLI 外包一层或逆向内部实现。",
+      "mechanism": [
+        "与 claude-agent-sdk-typescript 并列提供 Python 与 TypeScript 两套官方 SDK，与 claude-agent-sdk-demos 配套示例",
+        "配套 agent-sdk-workshop 作为教学材料，把 SDK 用法拆成可跟做的课程",
+        "SDK 之下是同一套 skill/plugin 体系，使自建应用与官方 Claude Code 共享同一资产格式"
+      ],
+      "constraints": [
+        "版本与 Anthropic 运行时强绑定，升级节奏由平台方决定",
+        "本地材料未见依据说明其对第三方 harness 的开放程度边界"
+      ],
+      "takeaway": [
+        "要做自有 harness，先用官方 SDK 承接 agent 循环，而不是自己拼提示词与工具调用",
+        "同一能力做 Python/TypeScript 双实现，降低语言选型带来的迁移成本"
+      ],
+      "limits": [
+        "仍需 Anthropic API 凭证与模型访问，脱离其服务不可用",
+        "本仓库为代码仓而非 skill 资产仓，本地材料未见依据说明其包含可直接复用的 skill 内容"
+      ]
+    },
+    {
+      "name": "defending-code-reference-harness",
+      "repo": "defending-code-reference-harness",
+      "stars": 7613,
+      "verdict": "把安全评审拆成威胁建模—扫描—分诊—修补四段 skill 链，并额外提供一个可自定义的自主扫描 harness 作为参照实现。",
+      "problem": "安全团队需要让 agent 参与代码安全分析，但通用 agent 缺少安全评审的分阶段方法与判定口径，且各家流程不同。",
+      "mechanism": [
+        "按流程阶段切分为多枚 skill：threat modeling、scanning、triage、patching，各自可被独立调用",
+        "除 skill 外附带一个 autonomous scanning harness，可直接 /customize，作为自主扫描的工程基线",
+        "与 claude-code-security-review（Claude 驱动的 GitHub Action）形成 skill 版与 CI 自动化版两条线"
+      ],
+      "constraints": [
+        "分诊与修补的判定标准依赖团队自身的漏洞分类法，通用示例需按本地规范改写",
+        "本地材料未见依据说明各 skill 的具体 frontmatter 字段约束"
+      ],
+      "takeaway": [
+        "安全类能力按流水线阶段拆 skill，每个阶段一个明确输入输出，便于接入现有 CI",
+        "提供可 /customize 的自主 harness 参考实现，比只给提示词更容易让团队落地"
+      ],
+      "limits": [
+        "自主扫描 harness 的检出效果依赖其扫描器实现与模型能力，示例不等于生产级覆盖",
+        "本地材料未见依据说明其许可与生产可用性承诺"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "以文件为唯一交付物的 skill 资产",
+      "kind": "method",
+      "evidence": [
+        "knowledge-work-plugins：「Every component is file-based — markdown and JSON, no code, no infrastructure, no build steps.」",
+        "skills：每个 skill 是自包含文件夹 + SKILL.md",
+        "knowledge-work-plugins Contributing：「Plugins are just markdown files. Fork the repo, make your changes, and submit a PR.」"
+      ],
+      "claim": "平台方刻意把 skill 与 plugin 的全部能力表达为文件（SKILL.md、plugin.json、.mcp.json、commands），使第三方能 fork、改文本、提 PR，而不需要理解或运行平台内部实现。",
+      "counted_in_convergence": false
+    },
+    {
+      "id": "P2",
+      "name": "同一份资产多端分发",
+      "kind": "technique",
+      "evidence": [
+        "skills README：「Try in Claude Code, Claude.ai, and the API」三节并列",
+        "knowledge-work-plugins：「Built for Claude Cowork, also compatible with Claude Code」",
+        "skills：仓库可直接作为 Claude Code 插件市场通过 /plugin marketplace add anthropics/skills 挂载"
+      ],
+      "claim": "一个仓库同时是规范源、示例集和插件市场源，安装动作只是把同一批文件注册进不同宿主（CLI、网页、API），避免为每个端各维护一份资产。",
+      "counted_in_convergence": false
+    },
+    {
+      "id": "P3",
+      "name": "声明式清单 + 不可变标识",
+      "kind": "method",
+      "evidence": [
+        "claude-plugins-official：插件结构含 .claude-plugin/plugin.json（required）与可选 .mcp.json / commands / agents / skills",
+        "claude-plugins-official：「Plugin names are immutable」，name 为不可变 slug，展示名走 displayName",
+        "claude-plugins-official：改名须在 marketplace.json 顶层 renames 映射登记，加载器在下次 sync 透明改写"
+      ],
+      "claim": "用声明式 JSON 清单描述插件构成，并把标识符与展示名分离、用 renames 映射承载重命名，把「分发目录」升级成有版本纪律的注册中心。",
+      "counted_in_convergence": false
+    },
+    {
+      "id": "P4",
+      "name": "自动触发与显式触发双通道",
+      "kind": "method",
+      "evidence": [
+        "knowledge-work-plugins：「Skills encode the domain expertise... Claude draws on them automatically when relevant」",
+        "knowledge-work-plugins：「Commands are explicit actions you trigger (e.g. /finance:reconciliation, /product-management:write-spec)」",
+        "skills：skill 的 description 字段要求写明「做什么和何时用」，供模型自动判断"
+      ],
+      "claim": "把知识（skills，模型按 description 自动选择）与动作（commands，用户显式点名）分层，让 agent 既有领域直觉又保留人的控制点。",
+      "counted_in_convergence": false
+    },
+    {
+      "id": "P5",
+      "name": "通用起点 + 显式定制指引",
+      "kind": "method",
+      "evidence": [
+        "knowledge-work-plugins「Making Them Yours」：Swap connectors / Add company context / Adjust workflows / Build new plugins 四步",
+        "knowledge-work-plugins：「These plugins are generic starting points. They become much more useful when you customize them」",
+        "claude-plugins-official：外部插件需通过提交表与质量安全标准准入"
+      ],
+      "claim": "官方只发布通用模板并明写定制路径（换连接器、加术语、改流程），把组织特有的知识留给使用方，从而在不给每个企业单独做定制的前提下换取采用率与共建供给。",
+      "counted_in_convergence": false
+    }
+  ],
+  "standards": [
+    {
+      "name": "Agent Skills 规范（SKILL.md 目录与 frontmatter）",
+      "what": "定义 skill 为自包含文件夹，核心文件为 SKILL.md，含 YAML frontmatter 与 markdown 正文；frontmatter 必填字段只有两个：name（小写连字符的唯一标识）与 description（说明这个 skill 做什么、何时该用它）；正文承载指令、示例与准则。规范本体存放在 skills 仓的 spec/ 目录，另有 template/ 提供可复制模板；标准另由 agentskills.io 承载。",
+      "evidence": "anthropics-skills.md：README 首行「For information about the Agent Skills standard, see agentskills.io」；「Each skill is self-contained in its own folder with a SKILL.md file」；「The frontmatter requires only two fields: name / description」；「Skill Sets」列出 ./skills、./spec（The Agent Skills specification）、./template（Skill template）",
+      "adopted_by": "anthropics/skills 自身的全部 skill（docx/pdf/pptx/xlsx 及创意、开发、企业各例）均按此格式；claude-plugins-official 的 skill-bundle 条目约定「Each path in skills is relative to source.path and points at a directory containing a SKILL.md」，即市场层也以 SKILL.md 为唯一识别物；skills README 标注合作伙伴 Notion 发布了 Notion Skills for Claude。本地材料未见依据说明具体哪些个人创作者采用了该格式。"
+    },
+    {
+      "name": "Claude Code 插件结构规范（plugin.json / .mcp.json / commands / agents / skills）",
+      "what": "规定一个插件目录的固定骨架：.claude-plugin/plugin.json 为必需元数据清单，.mcp.json 为可选 MCP server 配置，commands/ 为斜杠命令，agents/ 为 agent 定义，skills/ 为 skill 定义，README.md 为文档；并规定 marketplace 中插件 name 为不可变 slug、展示名用 displayName、改名通过 marketplace.json 顶层 renames 映射由加载器在下次 sync 透明迁移。",
+      "evidence": "anthropics-plugins.md：「Each plugin follows a standard structure」代码块列出 .claude-plugin/plugin.json（required）等目录；「Plugin names are immutable」一节说明 slug 不可变、displayName 可改、renames 映射由 Claude Code plugin loader 读取；knowledge-work-plugins.md 给出同一骨架（.claude-plugin/plugin.json、.mcp.json、commands/、skills/）并说明「Every plugin follows the same structure」",
+      "adopted_by": "claude-plugins-official 自身（/plugins 内部插件与 /external_plugins 外部插件统一遵循）、claude-plugins-community 社区市场镜像、knowledge-work-plugins 的 11 个岗位插件、claude-for-legal、claude-for-financial-advisors 等以 plugin 为单位的行业仓、以及 claude-code-action / claude-code-base-action 中的 base-action 内容。本地材料未见依据说明具体哪些个人创作者采用了该插件结构。"
+    },
+    {
+      "name": "Skill-bundle 插件条目格式（strict:false + skills 数组）",
+      "what": "为「只提供 SKILL.md、没有 .claude-plugin/plugin.json 清单」的源仓库定义市场条目写法：条目里用 strict: false 关闭严格清单校验，声明 source（source/url/path/ref/sha 指向 git 子目录）并用显式 skills 数组列出各 skill 的相对路径；路径可跨多层目录（如 ./libA/skill-1）；每个 skill 在 Claude Code 中注册为 <plugin-name>:<skill-name>。",
+      "evidence": "anthropics-plugins.md：「Skill-bundle plugins」一节给出完整 JSON 示例（strict: false、source.source: git-subdir、path、ref、sha、skills 数组、homepage），并说明「Each path in skills is relative to source.path and points at a directory containing a SKILL.md」「Paths can reach deeper than a single level」「Each skill is registered as <plugin-name>:<skill-name>」；并指向 marketplace 文档的 Strict mode 一节",
+      "adopted_by": "claude-plugins-official 目录中的第三方外部插件通过该形式接入（README 明确第三方可提交插件）；knowledge-work-plugins 的市场条目亦以此形态被 marketplace add 消费。本地材料未见依据说明具体哪些个人创作者采用了该条目格式。"
+    },
+    {
+      "name": "岗位型知识工作插件包规范（knowledge-work-plugins 目录约定）",
+      "what": "定义面向岗位的知识工作插件包：每个插件绑定一个职能（productivity/sales/customer-support/product-management/marketing/legal/finance/data/enterprise-search/bio-research），并以表格形式规定每个插件的能力描述与连接器清单；插件内 skills 自动触发、commands 显式触发、connectors 经 .mcp.json 接 MCP server；全组件为文件、无代码无构建。",
+      "evidence": "anthropics-kw.md：「Why Plugins」「Plugin Marketplace」表列出 11 个插件及其「How it helps」与「Connectors」；「How Plugins Work」一节给出目录骨架并区分 skills/commands/connectors 三种机制；「Every component is file-based — markdown and JSON, no code, no infrastructure, no build steps.」；「Making Them Yours」给出定制四步；另含 cowork-plugin-management 用于创建/改造插件",
+      "adopted_by": "claude.com/plugins 官方市场直接安装该批插件；claude-plugins-official 的 marketplace 机制承接其安装（claude plugin marketplace add anthropics/knowledge-work-plugins）；claude-plugins-community 社区市场沿用同一插件结构。本地材料未见依据说明具体哪些个人创作者采用了该岗位插件包规范。"
+    },
+    {
+      "name": "MCP 集成问题通道与官方 MCP server 形态",
+      "what": "为 MCP 与 Claude 的集成指定官方反馈入口（claude-ai-mcp 仓专门用于上报 MCP 集成问题），并以 github-mcp-server 作为官方 MCP server 的实现形态；同时在插件规范中把 .mcp.json 定为插件接入外部工具的标准挂载点，连接器一律经 MCP server 接入。",
+      "evidence": "cand_org/anthropics.json 中 claude-ai-mcp 的 description：「Report issues related to MCP integration with Claude here.」（stars 518，fork:false）；同表中 github-mcp-server「GitHub's official MCP Server」（stars 130，fork:true）；anthropics-kw.md：「Connectors wire Claude to the external tools your role depends on — CRMs, project trackers, data warehouses, design tools, and more — via MCP servers.」；anthropics-plugins.md 的插件结构含 .mcp.json（MCP server configuration）",
+      "adopted_by": "claude-plugins-official 的全部外部插件与 knowledge-work-plugins 的各岗位插件都通过 .mcp.json + MCP server 接入第三方系统；anthropics/claude-ai-mcp 本身作为集成反馈通道。本地材料未见依据说明具体哪些个人创作者采用了该通道或 server 形态。"
+    },
+    {
+      "name": "插件名不可变 + renames 迁移映射",
+      "what": "规定市场条目的 name 字段为发布后不可变的 slug（用户按该 slug 安装，改名会导致 plugin-not-found），UI 标签改用 displayName；确需重命名时在 .claude-plugin/marketplace.json 顶层 renames 映射中登记，由 Claude Code 插件加载器在用户下次 sync 时透明改写旧 slug。",
+      "evidence": "anthropics-plugins.md：「Plugin names are immutable」整节，给出 \"renames\": { \"old-name\": \"new-name\" } 示例与「The Claude Code plugin loader reads this map and transparently rewrites the old slug to the new one on the user's next sync.」",
+      "adopted_by": "claude-plugins-official 目录本身（条目级约束）；claude-plugins-community 作为其社区镜像沿用同一条目格式。本地材料未见依据说明具体哪些个人创作者采用了该不可变命名与迁移约定。"
+    }
+  ],
+  "sources": [
+    "https://github.com/anthropics",
+    "https://github.com/orgs/anthropics/repos",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

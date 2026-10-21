@@ -88,10 +88,11 @@ export interface UserSnapshot {
 export function getAllUsers(): UserSnapshot[] {
   const dataDir = path.resolve('src/data');
   if (!fs.existsSync(dataDir)) return [];
+  // 非用户数据集：收敛簇数据、格式采用率研究
+  const NON_USER = new Set(['convergence.json', 'format-adoption.json']);
   const files = fs.readdirSync(dataDir)
     .filter(f => f.endsWith('.json'))
-    // convergence.json 是收敛簇数据，不是用户数据集
-    .filter(f => f !== 'convergence.json');
+    .filter(f => !NON_USER.has(f));
   return files.map(file => {
     const raw = fs.readFileSync(path.join(dataDir, file), 'utf-8');
     return JSON.parse(raw) as UserSnapshot;

@@ -1,0 +1,856 @@
+{
+  "schema_version": "1.1",
+  "kind": "organization",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub REST API（认证）抓取 org 仓库 + 官方 README 原文",
+    "caveat": "平台方供给，pattern 不参与跨作者收敛判定；星数为组织整体，不代表单个 skill 的采用度"
+  },
+  "profile": {
+    "login": "modelcontextprotocol",
+    "name": "Model Context Protocol",
+    "bio": "MCP 协议标准制定方：通过 JSON-RPC 协议、官方多语言 SDK、注册表与协议扩展点规范 AI 与外部工具的连接方式",
+    "website": "",
+    "x": "",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "platform",
+    "platform_role": "standard_setter",
+    "public_repos": 45,
+    "source_repos": 45,
+    "fork_repos": 0
+  },
+  "stats": {
+    "total_stars_source": 191223,
+    "total_stars_all": 191223,
+    "median_stars": 171,
+    "ge_1000": 17,
+    "between_100_999": 8,
+    "between_10_99": 14,
+    "lt_10": 6,
+    "no_language": 8,
+    "top4_share": 73.6,
+    "top1_share": 47.8
+  },
+  "repos": [
+    {
+      "name": ".github",
+      "url": "https://github.com/modelcontextprotocol/.github",
+      "stars": 96,
+      "language": null,
+      "updated_at": "2026-02-19T02:59:09Z",
+      "description": "Discussions and README for Model Context Protocol",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "access",
+      "url": "https://github.com/modelcontextprotocol/access",
+      "stars": 50,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T23:38:12Z",
+      "description": "Infrastructure as Code for MCP access management",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "actions",
+      "url": "https://github.com/modelcontextprotocol/actions",
+      "stars": 8,
+      "language": "JavaScript",
+      "updated_at": "2026-07-06T18:09:01Z",
+      "description": "GitHub Actions relevant to the management of MCP repositories.",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "agents-wg",
+      "url": "https://github.com/modelcontextprotocol/agents-wg",
+      "stars": 13,
+      "language": null,
+      "updated_at": "2026-10-20T18:24:03Z",
+      "description": "Staging grounds for the Agents Working Group",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "conformance",
+      "url": "https://github.com/modelcontextprotocol/conformance",
+      "stars": 136,
+      "language": "TypeScript",
+      "updated_at": "2026-10-19T06:09:32Z",
+      "description": "Conformance Tests for MCP",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "create-python-server",
+      "url": "https://github.com/modelcontextprotocol/create-python-server",
+      "stars": 477,
+      "language": "Python",
+      "updated_at": "2025-01-23T10:06:10Z",
+      "description": "Create a Python MCP server",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "create-typescript-server",
+      "url": "https://github.com/modelcontextprotocol/create-typescript-server",
+      "stars": 171,
+      "language": "JavaScript",
+      "updated_at": "2024-11-25T18:37:30Z",
+      "description": "CLI tool to create a new TypeScript MCP server",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "csharp-sdk",
+      "url": "https://github.com/modelcontextprotocol/csharp-sdk",
+      "stars": 4592,
+      "language": "C#",
+      "updated_at": "2026-10-20T23:39:02Z",
+      "description": "The official C# SDK for Model Context Protocol servers and clients. Maintained in collaboration with Microsoft.",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "dns",
+      "url": "https://github.com/modelcontextprotocol/dns",
+      "stars": 12,
+      "language": "TypeScript",
+      "updated_at": "2026-09-16T10:36:03Z",
+      "description": "Infrastructure as Code for MCP domains / DNS management",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "docs",
+      "url": "https://github.com/modelcontextprotocol/docs",
+      "stars": 432,
+      "language": "MDX",
+      "updated_at": "2025-04-08T16:42:43Z",
+      "description": "Documentation for the Model Context Protocol (MCP)",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "example-remote-client",
+      "url": "https://github.com/modelcontextprotocol/example-remote-client",
+      "stars": 27,
+      "language": "TypeScript",
+      "updated_at": "2025-12-15T14:55:53Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "example-remote-server",
+      "url": "https://github.com/modelcontextprotocol/example-remote-server",
+      "stars": 83,
+      "language": "TypeScript",
+      "updated_at": "2026-09-09T10:19:26Z",
+      "description": "A hosted version of the Everything server - for demonstration and testing purposes, hosted at https://example-server.modelcontextprotocol.io/mcp",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "experimental-ext-file-uploads",
+      "url": "https://github.com/modelcontextprotocol/experimental-ext-file-uploads",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2026-10-21T07:09:41Z",
+      "description": "Experimental MCP extension for uploading files to tools over MCP. Maintained by the File Uploads Working Group.",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "experimental-ext-filesystems",
+      "url": "https://github.com/modelcontextprotocol/experimental-ext-filesystems",
+      "stars": 4,
+      "language": null,
+      "updated_at": "2026-10-20T21:25:11Z",
+      "description": "Experimental MCP extension for filesystem operations on Resources. Maintained by the Filesystems Working Group.",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "experimental-ext-interceptors",
+      "url": "https://github.com/modelcontextprotocol/experimental-ext-interceptors",
+      "stars": 23,
+      "language": "C#",
+      "updated_at": "2026-10-20T03:53:26Z",
+      "description": "Status: Experimental. This repository provides a multi-language reference implementation of the proposed interceptor extension for the Model Context Protocol (MCP), as described in SEP-2624.",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "experimental-ext-tool-annotations",
+      "url": "https://github.com/modelcontextprotocol/experimental-ext-tool-annotations",
+      "stars": 2,
+      "language": "MDX",
+      "updated_at": "2026-08-20T17:15:32Z",
+      "description": "Repository for the Tool Annotations Interest Group",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "experimental-ext-triggers-events",
+      "url": "https://github.com/modelcontextprotocol/experimental-ext-triggers-events",
+      "stars": 37,
+      "language": null,
+      "updated_at": "2026-10-15T22:27:57Z",
+      "description": "Incubation space for the MCP Triggers & Events Working Group",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "experimental-ext-variants",
+      "url": "https://github.com/modelcontextprotocol/experimental-ext-variants",
+      "stars": 10,
+      "language": "Go",
+      "updated_at": "2026-09-20T10:18:26Z",
+      "description": "Status: Experimental. This repository provides a multi-language reference implementation of the variants proposal for the Model Context Protocol (MCP), as described in SEP-2053.",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "ext-apps",
+      "url": "https://github.com/modelcontextprotocol/ext-apps",
+      "stars": 2988,
+      "language": "TypeScript",
+      "updated_at": "2026-09-25T15:59:03Z",
+      "description": "Official repo for spec & SDK of MCP Apps protocol - standard for UIs embedded AI chatbots, served by MCP servers",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "ext-auth",
+      "url": "https://github.com/modelcontextprotocol/ext-auth",
+      "stars": 171,
+      "language": "MDX",
+      "updated_at": "2026-06-18T08:45:56Z",
+      "description": "Extensions to authorization",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "ext-server-card",
+      "url": "https://github.com/modelcontextprotocol/ext-server-card",
+      "stars": 10,
+      "language": "TypeScript",
+      "updated_at": "2026-08-12T07:18:04Z",
+      "description": "",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "ext-skills",
+      "url": "https://github.com/modelcontextprotocol/ext-skills",
+      "stars": 742,
+      "language": "MDX",
+      "updated_at": "2026-10-16T12:09:50Z",
+      "description": "MCP Extension for Skills discovery and distribution through MCP primitives. Maintained by the Skills Over MCP Working Group.",
+      "fork": false,
+      "layer": "skill",
+      "category": "官方 Skill 集"
+    },
+    {
+      "name": "ext-tasks",
+      "url": "https://github.com/modelcontextprotocol/ext-tasks",
+      "stars": 57,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T23:40:57Z",
+      "description": "This repository provides a reference for the tasks extensions to the MCP protocol, allowing for long-running operations, such as Agent communication, in MCP.",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "financial-services-interest-group",
+      "url": "https://github.com/modelcontextprotocol/financial-services-interest-group",
+      "stars": 62,
+      "language": null,
+      "updated_at": "2026-10-10T14:07:54Z",
+      "description": "Financial Services Interest Group",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "go-sdk",
+      "url": "https://github.com/modelcontextprotocol/go-sdk",
+      "stars": 5250,
+      "language": "Go",
+      "updated_at": "2026-10-20T15:50:36Z",
+      "description": "The official Go SDK for Model Context Protocol servers and clients. Maintained in collaboration with Google.",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "governance-wg",
+      "url": "https://github.com/modelcontextprotocol/governance-wg",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-10-19T23:03:37Z",
+      "description": "Governance documentation and working materials for the MCP Governance Working Group.",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "inspector",
+      "url": "https://github.com/modelcontextprotocol/inspector",
+      "stars": 11112,
+      "language": "TypeScript",
+      "updated_at": "2026-10-21T07:17:22Z",
+      "description": "Visual testing tool for MCP servers",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "java-sdk",
+      "url": "https://github.com/modelcontextprotocol/java-sdk",
+      "stars": 3735,
+      "language": "Java",
+      "updated_at": "2026-10-20T18:14:37Z",
+      "description": "The official Java SDK for Model Context Protocol servers and clients. Maintained in collaboration with Spring AI",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "kotlin-sdk",
+      "url": "https://github.com/modelcontextprotocol/kotlin-sdk",
+      "stars": 1474,
+      "language": "Kotlin",
+      "updated_at": "2026-10-20T09:42:03Z",
+      "description": "The official Kotlin SDK for Model Context Protocol servers and clients. Maintained in collaboration with JetBrains",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "mcpb",
+      "url": "https://github.com/modelcontextprotocol/mcpb",
+      "stars": 2147,
+      "language": "TypeScript",
+      "updated_at": "2026-05-26T14:13:36Z",
+      "description": "Desktop Extensions: One-click local MCP server installation in desktop apps",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "modelcontextprotocol",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+      "stars": 9494,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T20:40:02Z",
+      "description": "Specification and documentation for the Model Context Protocol",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "php-sdk",
+      "url": "https://github.com/modelcontextprotocol/php-sdk",
+      "stars": 1634,
+      "language": "PHP",
+      "updated_at": "2026-10-20T20:12:49Z",
+      "description": "The official PHP SDK for Model Context Protocol servers and clients. Maintained in collaboration with The PHP Foundation.",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "progressive-disclosure-wg",
+      "url": "https://github.com/modelcontextprotocol/progressive-disclosure-wg",
+      "stars": 15,
+      "language": "JavaScript",
+      "updated_at": "2026-10-05T15:25:17Z",
+      "description": "About experimental exploration of organization for MCP primitives. Maintained by the Primitive Grouping Interest Group.",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "python-sdk",
+      "url": "https://github.com/modelcontextprotocol/python-sdk",
+      "stars": 24628,
+      "language": "Python",
+      "updated_at": "2026-10-17T13:54:39Z",
+      "description": "The official Python SDK for Model Context Protocol servers and clients",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "quickstart-resources",
+      "url": "https://github.com/modelcontextprotocol/quickstart-resources",
+      "stars": 1219,
+      "language": "TypeScript",
+      "updated_at": "2026-10-15T19:47:00Z",
+      "description": "A repository of servers and clients from the Model Context Protocol tutorials",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "registry",
+      "url": "https://github.com/modelcontextprotocol/registry",
+      "stars": 7388,
+      "language": "Go",
+      "updated_at": "2026-10-14T23:34:50Z",
+      "description": "A community driven registry service for Model Context Protocol (MCP) servers.",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "ruby-sdk",
+      "url": "https://github.com/modelcontextprotocol/ruby-sdk",
+      "stars": 937,
+      "language": "Ruby",
+      "updated_at": "2026-10-20T21:59:54Z",
+      "description": "The official Ruby SDK for the Model Context Protocol servers and clients.",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "rust-sdk",
+      "url": "https://github.com/modelcontextprotocol/rust-sdk",
+      "stars": 4037,
+      "language": "Rust",
+      "updated_at": "2026-10-20T11:01:55Z",
+      "description": "The official Rust SDK for the Model Context Protocol",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "servers",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "stars": 91438,
+      "language": "TypeScript",
+      "updated_at": "2026-10-19T06:46:48Z",
+      "description": "Model Context Protocol Servers",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "servers-archived",
+      "url": "https://github.com/modelcontextprotocol/servers-archived",
+      "stars": 305,
+      "language": "JavaScript",
+      "updated_at": "2025-05-28T17:57:12Z",
+      "description": "Reference MCP servers that are no longer maintained",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "static",
+      "url": "https://github.com/modelcontextprotocol/static",
+      "stars": 9,
+      "language": "HTML",
+      "updated_at": "2026-01-12T22:50:01Z",
+      "description": "want a static file hosted somewhere? static.modelcontextprotocol.io is somewhere!",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "swift-sdk",
+      "url": "https://github.com/modelcontextprotocol/swift-sdk",
+      "stars": 1512,
+      "language": "Swift",
+      "updated_at": "2026-05-07T08:37:25Z",
+      "description": "The official Swift SDK for Model Context Protocol servers and clients.",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "transports-wg",
+      "url": "https://github.com/modelcontextprotocol/transports-wg",
+      "stars": 24,
+      "language": null,
+      "updated_at": "2026-10-16T21:08:12Z",
+      "description": "Transports Working Group",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "typescript-sdk",
+      "url": "https://github.com/modelcontextprotocol/typescript-sdk",
+      "stars": 13631,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T22:11:45Z",
+      "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    },
+    {
+      "name": "use-mcp",
+      "url": "https://github.com/modelcontextprotocol/use-mcp",
+      "stars": 1030,
+      "language": "TypeScript",
+      "updated_at": "2026-01-12T22:50:06Z",
+      "description": "",
+      "fork": false,
+      "layer": "skill",
+      "category": "协议扩展点"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/modelcontextprotocol",
+    "count": 8,
+    "layers": {
+      "skill": 1,
+      "tool": 4,
+      "other": 3
+    },
+    "items": [
+      {
+        "name": "ext-skills",
+        "layer": "skill",
+        "category": "协议扩展点",
+        "repo": "ext-skills",
+        "subdir": "",
+        "summary": "MCP Skills 扩展（io.modelcontextprotocol/skills），基于 SEP-2640，用 Resources 原语承载 skill 的发现与分发，specification/stable/skills.mdx 为唯一事实源，配套决策日志与实现清单",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "mcpb",
+        "layer": "tool",
+        "category": "打包与分发",
+        "repo": "mcpb",
+        "subdir": "",
+        "summary": "MCP Bundles 规范与 CLI：把 MCP server 打包成单一 bundle，供桌面应用一键本地安装",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "ext-apps",
+        "layer": "tool",
+        "category": "协议扩展点",
+        "repo": "ext-apps",
+        "subdir": "",
+        "summary": "MCP Apps 协议规范与 SDK，规定由 MCP server 提供的、嵌入在 AI 聊天界面中的 UI 的标准形态",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "ext-tasks",
+        "layer": "other",
+        "category": "协议扩展点",
+        "repo": "ext-tasks",
+        "subdir": "",
+        "summary": "tasks 扩展参考实现，为 MCP 引入长时运行操作（如 Agent 间通信）的任务语义",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "ext-auth",
+        "layer": "other",
+        "category": "协议扩展点",
+        "repo": "ext-auth",
+        "subdir": "",
+        "summary": "对 MCP 授权模型的扩展规范",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "ext-server-card",
+        "layer": "other",
+        "category": "协议扩展点",
+        "repo": "ext-server-card",
+        "subdir": "",
+        "summary": "server card 扩展，定义 MCP server 的元数据卡片格式",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "registry",
+        "layer": "tool",
+        "category": "发现与注册",
+        "repo": "registry",
+        "subdir": "",
+        "summary": "社区驱动的 MCP server 注册表服务，为 server 提供全局可发现的元数据入口",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "inspector",
+        "layer": "tool",
+        "category": "调试工具",
+        "repo": "inspector",
+        "subdir": "",
+        "summary": "MCP server 的可视化测试工具，用于逐条检视与调试协议消息",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "name": "ext-skills",
+      "repo": "ext-skills",
+      "stars": 742,
+      "verdict": "把「skill」从各主机私有目录拉进协议层，用 Resources 原语承载分发与发现的标准扩展",
+      "problem": "MCP 生态中的 skill 原本以文件目录形式由各 AI 客户端自行加载，Claude Desktop 等主机各用一套私有目录与命名；跨客户端、跨服务器复用 skill 缺少统一发现与分发路径，第三方无法在 MCP 生态内分发可复用能力包",
+      "mechanism": [
+        "以 SEP-2640（Status: Final，PR #2640 于 2026-09-13 合入）确立规范条目，specification/stable/skills.mdx 为唯一事实源，绑定基础协议修订 2026-07-28",
+        "复用 MCP 既有的 Resources 原语承载 skill 描述与内容，不新造传输层与鉴权层，从而复用现有 client/server 协商链路",
+        "把「已发布规范」与「工作文档」物理分离：docs/ 存决策日志与设计理由，docs/archive/ 冻结 SEP 定稿前的一切过程材料，避免实现细节回流成事实标准",
+        "变更走决策日志→接受后进入新 draft 修订并随新版本发布，已发布快照不原地编辑，使规范版本可被引用与复现"
+      ],
+      "constraints": [
+        "必须依附基础协议修订（当前 2026-07-28），协议版本演进会牵动扩展规范",
+        "复用 Resources 原语意味着承载通道受限于资源语义与大小限制",
+        "规范定稿快照不原地修改，任何修正都要等下一次 draft 修订发布，变更存在滞后窗口"
+      ],
+      "takeaway": [
+        "把「规范事实源 / 决策日志 / 设计理由 / 已冻结归档」四层分目录，读者一眼能分清什么是标准、什么只是过程材料",
+        "新能力先写 SEP 并留明确的 Status 与合入 PR 号，再落规范文件，让采纳方可追溯依据",
+        "想清楚用哪个已有原语承载新概念，优先复用而非新增协议面"
+      ],
+      "limits": [
+        "本地材料未见依据：ext-skills 未在本地材料中给出被哪些具体第三方主机实现，client-matrix 页面内容未包含在本地材料中",
+        "本地材料未见依据：各主流客户端实际落地的兼容程度与采用规模",
+        "依赖基础协议版本前进，协议不演进则扩展能力受限"
+      ]
+    },
+    {
+      "name": "mcpb",
+      "repo": "mcpb",
+      "stars": 2147,
+      "verdict": "用单一 bundle 格式解决 MCP server 的安装与分发摩擦，把「一堆配置文件」变成一个可一键安装的产物",
+      "problem": "桌面端用户要接一个 MCP server，往往需要手工配置启动命令、环境变量、依赖与权限，一次配置出错即整体不可用；server 作者缺少统一的可分发安装单元",
+      "mechanism": [
+        "定义 bundle（.mcpb）打包格式，把 server 清单、运行时依赖、权限声明打成单一可分发文件",
+        "提供 CLI 与桌面应用内的一键安装路径，替代手工编辑客户端配置文件",
+        "随组织官方发布，使「桌面端 MCP 扩展」这一品类有统一安装入口而非各家自定义"
+      ],
+      "constraints": [
+        "依赖桌面应用侧的安装器实现，协议本身不保证所有宿主都支持 bundle 一键安装",
+        "bundle 携带依赖与权限声明，需要在安装时进行信任与权限审查"
+      ],
+      "takeaway": [
+        "把可分发性当作一等公民：给生态里的每个 server 配一个统一打包格式与安装入口",
+        "安装单元里显式声明依赖与权限，让用户能在安装前看清将要获得的能力"
+      ],
+      "limits": [
+        "本地材料未见依据：具体哪些桌面应用已内置 mcpb 安装支持、实际安装量",
+        "bundle 格式的版本演进与向后兼容策略在本地材料中无描述"
+      ]
+    },
+    {
+      "name": "ext-apps",
+      "repo": "ext-apps",
+      "stars": 2988,
+      "verdict": "为「MCP server 提供的 UI」定义可嵌入形态的协议规范，把工具返回从纯文本推向可交互界面",
+      "problem": "MCP server 原本只返回文本与结构化内容，需要交互式界面时各 server 自造 HTML 片段、宿主各写一套渲染逻辑，界面在客户端里既不可控也不安全",
+      "mechanism": [
+        "以官方仓库同时承载 spec 与 SDK，规范与实现同源发布",
+        "规定由 MCP server 提供的、可嵌入 AI 聊天界面的 UI 的标准表达方式，宿主按标准渲染",
+        "SDK 承接协议细节，server 作者不需自行对接各宿主渲染差异"
+      ],
+      "constraints": [
+        "UI 内容来自第三方 server，宿主必须承担渲染隔离与安全约束",
+        "与具体客户端的界面能力耦合，宿主支持度不同则能力不等价"
+      ],
+      "takeaway": [
+        "当工具输出需要交互时，不要让每个 server 各自拼 HTML，而是把 UI 也纳入协议层规范化",
+        "规范与 SDK 同仓发布，减少规范与实现漂移"
+      ],
+      "limits": [
+        "本地材料未见依据：哪些客户端已实现 MCP Apps 渲染、覆盖率如何",
+        "本地材料未见依据：UI 沙箱与权限模型的具体规定细节"
+      ]
+    },
+    {
+      "name": "registry",
+      "repo": "registry",
+      "stars": 7388,
+      "verdict": "提供社区驱动的 server 注册表，把分散的 MCP server 收拢为可检索的目录",
+      "problem": "MCP server 数量快速增长，但缺少统一发现入口；使用者不知道某个 server 是否存在、是否可信、如何配置",
+      "mechanism": [
+        "以服务端形式提供注册表 API，server 作者发布元数据，使用方按统一接口检索",
+        "社区驱动而非组织独家运营，降低新 server 进入目录的门槛",
+        "与协议本身解耦：注册表不改变协议语义，只解决发现与信任元数据的分发"
+      ],
+      "constraints": [
+        "注册表是自愿提交，条目质量与完整性依赖提交者",
+        "信任判定依赖目录方的审核与撤销机制，本地材料未见具体机制描述"
+      ],
+      "takeaway": [
+        "协议之外补齐「发现」层，能显著降低使用者接入成本",
+        "发现层与协议层解耦，协议不因目录服务的策略而变更"
+      ],
+      "limits": [
+        "本地材料未见依据：注册表的审核、恶意条目处置与撤回机制细节",
+        "目录条目与实际 server 行为的一致性无法由协议保证"
+      ]
+    },
+    {
+      "name": "inspector",
+      "repo": "inspector",
+      "stars": 11112,
+      "verdict": "组织内 star 最高的工具型仓库，用可视化方式把协议调试从读日志降为看消息流",
+      "problem": "MCP server 开发者排查「工具没被调用 / 返回不对 / 协商失败」时，只能在客户端与日志里拼凑 JSON-RPC 报文，定位成本高",
+      "mechanism": [
+        "以 Web 界面直连目标 server，逐条呈现请求与响应报文",
+        "把 initialize 协商、tools/list、tools/call 等关键交互可视化呈现，减少协议猜测",
+        "作为官方工具随规范一同发布，等于给实现者配了标准的调试环境"
+      ],
+      "constraints": [
+        "需要能够启动或连接一个真实 server，仍依赖本地环境准备",
+        "可视化呈现的是协议视角，不替代实现层面的业务调试"
+      ],
+      "takeaway": [
+        "标准制定方自带参考调试工具，能显著提高生态实现的一致性",
+        "调试工具按协议原语分屏，比按日志关键词搜索更快定位问题"
+      ],
+      "limits": [
+        "本地材料未见依据：inspector 对各家私有扩展（非标准 experimental-ext）的支持情况"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "协议层承载 skill，而非宿主私有目录",
+      "kind": "technique",
+      "evidence": [
+        "ext-skills README：扩展基于 SEP-2640，标识 io.modelcontextprotocol/skills",
+        "ext-skills README：docs/rationale.md 明确为「Resources-based extension」的设计理由"
+      ],
+      "claim": "MCP 把 skill 的发现与分发提升为协议扩展，用既有原语承载，使 skill 跨客户端可复用",
+      "counted_in_convergence": false
+    },
+    {
+      "id": "P2",
+      "name": "事实源 / 决策日志 / 冻结归档三层分离",
+      "kind": "technique",
+      "evidence": [
+        "ext-skills README：specification/stable/skills.mdx 为 source of truth，已发布快照不原地编辑",
+        "ext-skills README：docs/decisions.md 为变更提议载体，docs/archive/ 冻结 SEP 定稿前材料"
+      ],
+      "claim": "用稳定快照加带日期的决策日志加冻结归档，把规范演进与过程材料在目录层面物理隔离",
+      "counted_in_convergence": false
+    },
+    {
+      "id": "P3",
+      "name": "扩展点按工作组分仓，成熟度用 Status 标注",
+      "kind": "technique",
+      "evidence": [
+        "清单中 experimental-ext-file-uploads / filesystems / interceptors / tool-annotations / triggers-events / variants 各自独立仓库",
+        "各仓 description 统一使用「Experimental」「Incubation space」等状态标注，experimental-ext-interceptors 与 experimental-ext-variants 明确指向对应 SEP 编号（SEP-2624、SEP-2053）"
+      ],
+      "claim": "每个候选扩展单独开仓并标注状态与对应 SEP，使未通过的提案不会与已生效规范混淆",
+      "counted_in_convergence": false
+    },
+    {
+      "id": "P4",
+      "name": "多语言 SDK 由标准方与生态巨头共维",
+      "kind": "technique",
+      "evidence": [
+        "csharp-sdk 描述：与 Microsoft 协作维护",
+        "go-sdk 描述：与 Google 协作维护；java-sdk 与 Spring AI 协作；kotlin-sdk 与 JetBrains 协作；php-sdk 与 The PHP Foundation 协作"
+      ],
+      "claim": "标准方与各语言主导方共维 SDK，把语言惯用法差异吸收在 SDK 层，协议本身保持单一",
+      "counted_in_convergence": false
+    },
+    {
+      "id": "P5",
+      "name": "协议外补齐分发与发现链路",
+      "kind": "technique",
+      "evidence": [
+        "mcpb：One-click local MCP server installation in desktop apps",
+        "registry：社区驱动的 MCP server 注册表服务"
+      ],
+      "claim": "标准之外自建打包分发（mcpb）与目录发现（registry）两层，让协议能真正落地到桌面端",
+      "counted_in_convergence": false
+    }
+  ],
+  "standards": [
+    {
+      "name": "MCP Skills 扩展（io.modelcontextprotocol/skills）",
+      "what": "规定 skill 在 MCP 上的发现与分发方式：以 Resources 原语承载 skill 描述与内容；规范绑定基础协议修订 2026-07-28；变更通过带日期的决策日志提出，接受后进入新的 draft 修订随版本发布，已发布快照不原地编辑",
+      "evidence": "_gh/deep_org/mcp-ext-skills.md：specification/stable/skills.mdx 为 source of truth；SEP-2640（Status: Final，PR #2640 于 2026-09-13 合入）；docs/decisions.md、docs/rationale.md、docs/implementations.md 的职责划分",
+      "adopted_by": "本地材料未见依据（client-matrix 页面与 docs/implementations.md 的实际内容未包含在本地材料中）"
+    },
+    {
+      "name": "SEP（标准增强提案）流程",
+      "what": "标准变更的提案与定稿流程：以编号 SEP 描述扩展提案，带 Status（Experimental / Final）与合入 PR 号；定稿后旧过程材料归档冻结，规范进入下一次 draft 修订",
+      "evidence": "_gh/deep_org/mcp-ext-skills.md 中 SEP-2640 的 Status 与 PR 记录；清单中 experimental-ext-interceptors 描述指向 SEP-2624、experimental-ext-variants 描述指向 SEP-2053",
+      "adopted_by": "本地材料未见依据"
+    },
+    {
+      "name": "MCP 协议规范（modelcontextprotocol 仓库）",
+      "what": "MCP 基础协议与文档的规范来源，规定 host/client/server 之间的 JSON-RPC 交互、生命周期与能力协商等基础面",
+      "evidence": "清单中 modelcontextprotocol 仓库 9494 星，description 为 Specification and documentation for the Model Context Protocol；各 SDK 仓库以其为实现依据",
+      "adopted_by": "本地材料未见依据"
+    },
+    {
+      "name": "MCP Bundles（mcpb）打包格式",
+      "what": "规定桌面端 MCP 扩展的分发单元：把 server 清单、依赖与权限打成单一 bundle，由官方 CLI 与桌面应用提供一键本地安装",
+      "evidence": "清单中 mcpb 仓库 2147 星，description 为 Desktop Extensions: One-click local MCP server installation in desktop apps",
+      "adopted_by": "本地材料未见依据"
+    },
+    {
+      "name": "MCP Apps 协议",
+      "what": "规定由 MCP server 提供、嵌入在 AI 聊天界面中的 UI 的标准形态，规范与 SDK 在同一官方仓库发布",
+      "evidence": "清单中 ext-apps 仓库 2988 星，description 为 Official repo for spec & SDK of MCP Apps protocol - standard for UIs embedded AI chatbots, served by MCP servers",
+      "adopted_by": "本地材料未见依据"
+    },
+    {
+      "name": "server card 与 registry 条目格式",
+      "what": "ext-server-card 规定 MCP server 元数据卡片的格式；registry 以社区驱动的服务形式规定 server 元数据的提交与检索接口（Go 实现），二者共同承担发现与信任元数据",
+      "evidence": "清单中 ext-server-card（TypeScript，10 星，description 为空）与 registry（Go，7388 星，description 为 A community driven registry service for Model Context Protocol (MCP) servers.）",
+      "adopted_by": "本地材料未见依据"
+    },
+    {
+      "name": "tasks 扩展与 interceptor / variants 等实验性扩展",
+      "what": "在基础协议外定义可扩展点：ext-tasks 规定长时运行操作的任务语义；experimental-ext-interceptors（SEP-2624）与 experimental-ext-variants（SEP-2053）提供多语言参考实现；experimental-ext-file-uploads、filesystems、tool-annotations、triggers-events 由各 Working Group / Interest Group 维护并标注为实验性",
+      "evidence": "清单中 ext-tasks、experimental-ext-interceptors、experimental-ext-variants、experimental-ext-file-uploads、experimental-ext-filesystems、experimental-ext-tool-annotations、experimental-ext-triggers-events 的 description",
+      "adopted_by": "本地材料未见依据"
+    }
+  ],
+  "sources": [
+    "https://github.com/modelcontextprotocol",
+    "https://github.com/orgs/anthropics/repos",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

@@ -1,0 +1,452 @@
+{
+  "schema_version": "1.1",
+  "kind": "organization",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub REST API（认证）抓取 org 仓库 + 官方 README 原文",
+    "caveat": "平台方供给，pattern 不参与跨作者收敛判定；星数为组织整体，不代表单个 skill 的采用度"
+  },
+  "profile": {
+    "login": "shareAI-lab",
+    "name": "ShareAI Lab",
+    "bio": "以「从 0 到 1 造 agent harness」为核心的开源实验室：既产出教学型复刻项目（learn-claude-code / claw0），也提供运行时 SDK 与从真实协作工作中蒸馏出的 Skill 集合。",
+    "website": "",
+    "x": "",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "platform",
+    "platform_role": "community_hub",
+    "public_repos": 12,
+    "source_repos": 11,
+    "fork_repos": 1
+  },
+  "stats": {
+    "total_stars_source": 88955,
+    "total_stars_all": 89279,
+    "median_stars": 316,
+    "ge_1000": 3,
+    "between_100_999": 5,
+    "between_10_99": 3,
+    "lt_10": 0,
+    "no_language": 0,
+    "top4_share": 98.9,
+    "top1_share": 88.7
+  },
+  "repos": [
+    {
+      "name": "ai-cloud-station",
+      "url": "https://github.com/shareAI-lab/ai-cloud-station",
+      "stars": 116,
+      "language": "Shell",
+      "updated_at": "2026-02-18T03:39:00Z",
+      "description": "对标大厂内部研发环境建设，面向小型创业团队的云端 IDE 标准环境。 预置 VSCode 在线版与 Claude Code、Gemini、Codex 等 AI 编程工具。 专为弱网、出行、休眠与长时间 Agent 运行场景设计。 保持熟悉体验，实现持续在线的开发协作。",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "BashClaw",
+      "url": "https://github.com/shareAI-lab/BashClaw",
+      "stars": 104,
+      "language": "Shell",
+      "updated_at": "2026-06-30T16:16:09Z",
+      "description": "Bash is All You Need. A pure Bash reimplementation of OpenClaw. No dependencies. No runtime. Runs everywhere since 2006",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "claw0",
+      "url": "https://github.com/shareAI-lab/claw0",
+      "stars": 3416,
+      "language": "Python",
+      "updated_at": "2026-06-30T16:13:05Z",
+      "description": "0 - 1 learn OpenClaw: sections to build an claw-AI agent from scratch",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "kbench",
+      "url": "https://github.com/shareAI-lab/kbench",
+      "stars": 15,
+      "language": "TypeScript",
+      "updated_at": "2026-04-02T09:25:57Z",
+      "description": "benchmark-tools for agent harness",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "kode-agent-sdk",
+      "url": "https://github.com/shareAI-lab/kode-agent-sdk",
+      "stars": 406,
+      "language": "TypeScript",
+      "updated_at": "2026-07-10T23:20:01Z",
+      "description": "Open runtime for building Claude Code & Manus like Agent Product",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "Kode-CLI",
+      "url": "https://github.com/shareAI-lab/Kode-CLI",
+      "stars": 5236,
+      "language": "TypeScript",
+      "updated_at": "2026-10-16T10:24:50Z",
+      "description": "Kode CLI — Design for post-human workflows. One unit agent for every human & computer task.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "lab-handbook",
+      "url": "https://github.com/shareAI-lab/lab-handbook",
+      "stars": 17,
+      "language": "Jupyter Notebook",
+      "updated_at": "2025-08-19T09:50:37Z",
+      "description": "for be basic AI Developer within 1week.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "lab-skills",
+      "url": "https://github.com/shareAI-lab/lab-skills",
+      "stars": 316,
+      "language": "Python",
+      "updated_at": "2026-09-16T09:40:44Z",
+      "description": "Skills distilled from the Lab's real work and collaboration practices",
+      "fork": false,
+      "layer": "skill",
+      "category": "官方 Skill 集"
+    },
+    {
+      "name": "lark-channel",
+      "url": "https://github.com/shareAI-lab/lark-channel",
+      "stars": 27,
+      "language": "TypeScript",
+      "updated_at": "2026-04-01T17:18:10Z",
+      "description": "Feishu/Lark group chats connected to Claude Code agents. Per-group isolated sessions, streaming card responses, deep Feishu integration.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "learn-claude-code",
+      "url": "https://github.com/shareAI-lab/learn-claude-code",
+      "stars": 78929,
+      "language": "Python",
+      "updated_at": "2026-09-28T13:49:16Z",
+      "description": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "mini-claude-code",
+      "url": "https://github.com/shareAI-lab/mini-claude-code",
+      "stars": 373,
+      "language": "Python",
+      "updated_at": "2025-12-30T23:04:01Z",
+      "description": "Make your Cc like agent from 0 to 1.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 运行时"
+    },
+    {
+      "name": "share-best-prompt",
+      "url": "https://github.com/shareAI-lab/share-best-prompt",
+      "stars": 324,
+      "language": "Python",
+      "updated_at": "2025-04-15T09:43:08Z",
+      "description": "世界上最好的提示词 （总计估值超过300亿的提示词）外国网友x1xh成功获取了 v0、Manus、Cursor、Same.dev 和 Lovable 的完整官方系统提示词和内部工具。",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/shareAI-lab",
+    "count": 4,
+    "layers": {
+      "skill": 1,
+      "tool": 3
+    },
+    "items": [
+      {
+        "name": "lab-skills",
+        "layer": "skill",
+        "category": "官方 Skill 集",
+        "repo": "lab-skills",
+        "subdir": "",
+        "summary": "从 Lab 真实工程、研究、写作与协作工作中蒸馏出的 Skill 合集，按 research-analysis / software-engineering / team-collaboration / agent-development / content-publishing 分目录组织，对齐 Agent Skills 规范，可用 npx skills 增删改。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "Kode-CLI",
+        "layer": "tool",
+        "category": "CLI 客户端",
+        "repo": "Kode-CLI",
+        "subdir": "",
+        "summary": "TypeScript 编写的 CLI，主张「面向后人类工作流」的一体化 unit agent，覆盖人与电脑的日常任务。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "kode-agent-sdk",
+        "layer": "tool",
+        "category": "Agent 运行时 SDK",
+        "repo": "kode-agent-sdk",
+        "subdir": "",
+        "summary": "开放运行时，用来构建 Claude Code / Manus 一类的 Agent 产品，TypeScript 实现。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "lark-channel",
+        "layer": "tool",
+        "category": "协议扩展点",
+        "repo": "lark-channel",
+        "subdir": "",
+        "summary": "把飞书/Lark 群聊接到 Claude Code agent 上：每群隔离会话、卡片流式回复、深度飞书集成。",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "name": "lab-skills",
+      "repo": "lab-skills",
+      "stars": 316,
+      "verdict": "一个只放 Skill、不放教程和插件的纯 Skill 仓库，价值在于把组织内部协作习惯翻译成可被任意 agent 运行时加载的指令包。",
+      "problem": "实验室成员在 Claude Code / Codex / opencode / Cursor 之间的对话、调研和会议记录散落各处，重复劳动多；外部读者又只能从成品代码倒推他们怎么做调研、怎么开工作复盘会。面向的是「已经会用 AI 编程工具、但方法不外显」的使用者。",
+      "mechanism": [
+        "每个 Skill 写成自包含目录，含合法 name/description frontmatter，description 直接承担触发条件的职责。",
+        "分场景目录（research-analysis、software-engineering、team-collaboration、agent-development、content-publishing）而不是按作者或技术栈分。",
+        "会议指导拆成 leader / worker 两个对称 Skill，从两端分别约束同一件事。",
+        "统一走 npx skills add/use/update/remove 命令面，安装、更新、退役都作为常规操作写进 README。"
+      ],
+      "constraints": [
+        "明确声明不含插件和通用教程，范围被自我限定为 skills-only。",
+        "自述「源自实践，不是通用标准」，并要求使用者按自身工具和组织重新校准假设。",
+        "core 指令不依赖某个特定产品运行时，因此牺牲了与单一 harness 的深度耦合。"
+      ],
+      "takeaway": [
+        "Skill 的 description 就是触发器，写清「什么场景下该被选中」比写清功能更重要。",
+        "把一个流程拆成角色对称的两个 Skill（做的人 / 评的人）能覆盖完整回路。",
+        "为 skill 集合准备 add/use/update/remove 四条命令，比写一篇安装文档更能维持长期可用。"
+      ],
+      "limits": [
+        "README 未列出各 Skill 的 star / 使用量，无法判断哪一条真正被高频使用。",
+        "Apache-2.0 之外的商业化使用、以及外部贡献进入标准的门槛，本地材料未见依据。",
+        "README 未说明与 agentskills.io 规范的对齐程度细节（字段级差异未见依据）。"
+      ]
+    },
+    {
+      "name": "kode-agent-sdk",
+      "repo": "kode-agent-sdk",
+      "stars": 406,
+      "verdict": "把「造一个 Claude Code 式产品」这件事抽象成开放运行时，让上层产品竞争落在交互与领域知识而非 harness 重写。",
+      "problem": "想做 Claude Code / Manus 类 Agent 产品的团队，重复实现会话管理、工具调用循环、上下文压缩和子 agent 调度；这些属于产品无关的地基代码。",
+      "mechanism": [
+        "对外提供 runtime 层接口，把 agent 循环与业务能力解耦。",
+        "TypeScript 实现，与 Kode-CLI 同栈，便于同组织内部复用与交叉验证。",
+        "定位为「open runtime」，暗示接口可被不同前端与后端装配。",
+        "与教学型项目 learn-claude-code / claw0 形成同一实验室的方法论闭环：先从 0 复刻理解机制，再沉淀为可用 SDK。"
+      ],
+      "constraints": [
+        "本地材料未提供 SDK 的接口文档、版本策略或稳定性承诺，无法判断破坏性变更频率。",
+        "与自家 Kode-CLI 的耦合边界未见依据。",
+        "多语言/多运行时支持范围在本地材料中没有说明。"
+      ],
+      "takeaway": [
+        "harness 地基值得抽成独立 SDK，避免每个 Agent 产品重复实现会话与工具循环。",
+        "教学项目与生产 SDK 同源，是验证抽象是否真的普适的低成本办法。"
+      ],
+      "limits": [
+        "仅 406 star，说明生态规模有限，第三方接入案例本地材料未见依据。",
+        "作为「开源运行时」的治理与 breaking change 政策未知。"
+      ]
+    },
+    {
+      "name": "learn-claude-code",
+      "repo": "learn-claude-code",
+      "stars": 78929,
+      "verdict": "单仓库承担了组织 88.7% 的星标，是把 agent harness 内部机制做成可读教程的传播主入口。",
+      "problem": "想搞懂「Claude Code 这类 harness 到底由哪些部件构成」的人，只能读压缩过的闭源实现或拼凑各家文章；教学缺口明显。",
+      "mechanism": [
+        "主打 Bash-only 实现，零依赖、零运行时，强调可读性优先于工程完备性。",
+        "从 0 到 1 逐层搭建 agent harness，读者可跟随代码顺序理解会话与工具机制。",
+        "低成本可复现：极简依赖意味着任何人 clone 后即可在本地跑通全链路。",
+        "作为组织头部门碑，把 lab-skills 等实践资产吸引到同一入口下。"
+      ],
+      "constraints": [
+        "Bash-only 是教学取舍，不适用于生产环境。",
+        "10 万级星标带来的维护压力与教学清晰度之间存在张力，README 未说明取舍。",
+        "跟随的是某一版本 Claude Code 的机制，harness 快速演进后可能过时。"
+      ],
+      "takeaway": [
+        "要讲清一个 harness，用最少的运行时部件手写一遍是有效的解释手段。",
+        "教学仓库的传播价值可以为同组织的其他资产导流。"
+      ],
+      "limits": [
+        "依赖 Bash 与类 Unix 环境，Windows 原生不可用。",
+        "机制理解可复制，具体实现不可直接用于生产。"
+      ]
+    },
+    {
+      "name": "claw0",
+      "repo": "claw0",
+      "stars": 3416,
+      "verdict": "learn-claude-code 的 Python 复刻路线，把「0→1 学 agent」拆成分节递进，验证了同一教学 IP 的多语言可迁移性。",
+      "problem": "Python 使用者无法在不脱离自己语言栈的前提下学习 agent harness 结构；learn-claude-code 的 Bash 实现对 Python 团队门槛偏高。",
+      "mechanism": [
+        "以 sections 形式组织，每节完成一个可运行增量，降低单次认知负荷。",
+        "Python 实现，直接对接主流 LLM SDK 生态。",
+        "与 lab-handbook（1 周上手 AI 开发）、mini-claude-code 形成从入门到进阶的学习阶梯。",
+        "同一 IP 多语言分发，复用内容结构而非重写方法论。"
+      ],
+      "constraints": [
+        "教学分节会牺牲工程的抽象完整度。",
+        "语言绑定 Python，无法覆盖其他栈。",
+        "与同组织 BashClaw（纯 Bash 复刻 OpenClaw）存在定位重叠，本地材料未说明边界。"
+      ],
+      "takeaway": [
+        "同一套教学内容按语言/栈重写能显著扩大受众，且结构可复用。",
+        "分节式增量构建比一次性给出完整框架更适合「0 到 1」定位。"
+      ],
+      "limits": [
+        "多个仓库（claw0 / mini-claude-code / learn-claude-code / BashClaw）职责边界重叠，长期维护成本高。",
+        "基于特定框架 API，框架升级即失效。"
+      ]
+    },
+    {
+      "name": "lark-channel",
+      "repo": "lark-channel",
+      "stars": 27,
+      "verdict": "把 agent 从个人终端扩展到企业 IM 通道的窄而深的集成尝试，价值在会话隔离与流式卡片回复两点。",
+      "problem": "团队成员的 agent 会话彼此隔离在各自终端，无法在飞书群里被共同调用或复盘；跨设备继续工作也缺少入口。",
+      "mechanism": [
+        "按群聊隔离 session，避免多个成员的 agent 上下文互相污染。",
+        "用飞书流式卡片承载 agent 的增量输出，保持对话体验原生。",
+        "深度接入飞书事件与消息接口，而非仅做单向转发。",
+        "与 ai-cloud-station（云端常驻 IDE 环境）共同覆盖「agent 持续在线」诉求。"
+      ],
+      "constraints": [
+        "强绑定飞书/Lark，迁移到 Slack、企微需重写。",
+        "需要飞书应用凭证与权限配置，非技术成员部署门槛高。",
+        "27 star，属实验性资产而非成熟方案。"
+      ],
+      "takeaway": [
+        "让 agent 进入团队协作通道时，「按会话隔离」是第一约束，不能共享单一上下文。",
+        "IM 内的流式卡片比纯文本推送更能承载 agent 的长时任务反馈。"
+      ],
+      "limits": [
+        "单平台依赖，企业内同时用多 IM 时价值折损。",
+        "会话状态与权限模型在本地材料中未见依据。"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "自建 Skill 安装面（npx skills add/use/update/remove）",
+      "kind": "technique",
+      "evidence": [
+        "lab-skills README 的 Installation / Keeping Skills Updated 章节统一使用 npx skills 系列命令",
+        "支持 --list 预览、--skill '*' 批量安装、--project/--global 分域更新与批量 remove 重命名"
+      ],
+      "claim": "组织不发布插件包，而是把 Skill 交付收敛到一条 CLI 命令面，把安装、更新、退役都变成可脚本化的常规操作。",
+      "counted_in_convergence": false
+    },
+    {
+      "id": "P2",
+      "name": "实践蒸馏式 Skill 编写法",
+      "kind": "method",
+      "evidence": [
+        "README 首段：Skills distilled from the Lab's real engineering, research, publishing, and collaboration work",
+        "README 明示 The collection is practice-derived, not a universal standard，并要求按自身上下文调整假设",
+        "Contributing 要求 Start from a concrete use case or observed failure"
+      ],
+      "claim": "每个 Skill 必须锚定一个真实发生过的工作场景或失败，来源被写进仓库元叙事而非默认成立。",
+      "counted_in_convergence": false
+    },
+    {
+      "id": "P3",
+      "name": "角色对称拆分流程 Skill",
+      "kind": "technique",
+      "evidence": [
+        "team-collaboration 下同时提供 meeting-coach-leader 与 meeting-coach-worker",
+        "两个 Skill 分别覆盖会前准备/会中主持/会后评估，与员工侧的期待反推/交付就绪判断/下一步动作",
+        "README 说明二者可配合但各自独立可用"
+      ],
+      "claim": "把同一协作流程按参与方拆成两个独立可触发的 Skill，既能单端使用又能组合成完整回路。",
+      "counted_in_convergence": false
+    },
+    {
+      "id": "P4",
+      "name": "Skill 自诊断元技能",
+      "kind": "technique",
+      "evidence": [
+        "agent-development/skill-judge：以实践派生的诊断量表评估并改进 Skill 包",
+        "检查项包括 SKILL.md 是否在正确时机触发、是否真正增加专家知识、指令是否发散、引用是否薄弱、自由度校准与完成判据是否清晰"
+      ],
+      "claim": "在 Skill 集合内部再放一个评审 Skill，用显式量表把「写得对不对」从作者自觉变成可执行检查。",
+      "counted_in_convergence": false
+    },
+    {
+      "id": "P5",
+      "name": "运行时无关的 Skill 编写约束",
+      "kind": "technique",
+      "evidence": [
+        "README：core instructions do not depend on one specific product runtime",
+        "Some packages may include optional agent-facing metadata",
+        "README 示例同时点名 Claude Code、Codex、opencode、Grok Build、Cursor"
+      ],
+      "claim": "把产品特定的元数据降级为可选层，核心指令保持跨运行时可移植。",
+      "counted_in_convergence": false
+    }
+  ],
+  "standards": [
+    {
+      "name": "Agent Skills 规范对齐（agentskills.io）",
+      "what": "lab-skills 明确声明本仓库面向支持 Agent Skills 规范的 AI 编程 agent 与系统，隐含采纳了以 SKILL.md 为单位、目录自包含、按 description 触发发现的标准组织形式。",
+      "evidence": "lab-skills README 开头段：The repository is designed for AI coding agents and other systems that support the Agent Skills specification (https://agentskills.io/specification)。",
+      "adopted_by": "本地材料未见依据"
+    },
+    {
+      "name": "Skill 目录与 frontmatter 校验规范",
+      "what": "规定 Skill 为自包含目录，且必须携带合法的 name 与 description frontmatter；同时要求校验单 Skill 结构与仓库默认发现两条路径，只打包该 Skill 真正需要的 references/scripts/assets/agent 元数据。",
+      "evidence": "lab-skills README 的 Contributing 第 3–5 条；以及 skill-judge 对 SKILL.md 触发时机与指令质量的检查项。",
+      "adopted_by": "本地材料未见依据"
+    },
+    {
+      "name": "Skill 分类目录约定",
+      "what": "规定按工作场景而非作者或实现技术划分 Skill 所属目录，当前固定为 research-analysis、software-engineering、team-collaboration、agent-development、content-publishing 五类。",
+      "evidence": "lab-skills README 的 Skill Catalog 章节分组，以及 Contributing 第 2 条：Select the scenario that matches the work context rather than the author or implementation technology。",
+      "adopted_by": "本地材料未见依据"
+    },
+    {
+      "name": "Skill 生命周期维护规范",
+      "what": "规定 Skill 是持续维护的在用资产：暴露缺口即改、随工具与质量标准对齐、重叠则合并、场景不符则重分类、不可靠则替换或下线，并配套 npx skills update/remove 的操作路径。",
+      "evidence": "lab-skills README 的 Maintenance 章节与 Keeping Skills Updated 章节（含重命名后先 remove 旧名再 add 新名的迁移示例）。",
+      "adopted_by": "本地材料未见依据"
+    },
+    {
+      "name": "语言实现教学分层约定",
+      "what": "以「从 0 到 1 造一个 agent harness」为统一命题，按语言与深度形成分层：learn-claude-code（Bash、nano harness）、claw0（Python、分节递进）、mini-claude-code（Python、进阶）、lab-handbook（1 周入门）、BashClaw（纯 Bash 复刻 OpenClaw）。",
+      "evidence": "各仓库 description 字段中的同构表述（Bash is all you need / 0 - 1 learn OpenClaw / Make your Cc like agent from 0 to 1 / for be basic AI Developer within 1week）。",
+      "adopted_by": "本地材料未见依据"
+    }
+  ],
+  "sources": [
+    "https://github.com/shareAI-lab",
+    "https://github.com/orgs/anthropics/repos",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

@@ -32,6 +32,17 @@ if (fs.existsSync(VAULT_DATA_DIR)) {
       console.log(`[sync] Copied _analyses/${file} -> src/data/_analyses/`);
     }
   }
+
+  // 组织型资产（平台方供给），单独一个目录
+  const orgsSrc = path.join(VAULT_DATA_DIR, 'orgs');
+  const orgsDst = path.join(LOCAL_DATA_DIR, 'orgs');
+  if (fs.existsSync(orgsSrc)) {
+    fs.mkdirSync(orgsDst, { recursive: true });
+    for (const file of fs.readdirSync(orgsSrc).filter(f => f.endsWith('.json'))) {
+      fs.copyFileSync(path.join(orgsSrc, file), path.join(orgsDst, file));
+      console.log(`[sync] Copied orgs/${file} -> src/data/orgs/`);
+    }
+  }
 } else {
   console.log(`[sync] Vault data dir not found, using existing local files in src/data/`);
 }

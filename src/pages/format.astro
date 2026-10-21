@@ -1,0 +1,209 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const file = path.resolve('src/data/format-adoption.json');
+const data = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf-8')) : null;
+
+const verified = data?.verified || [];
+const canonical = verified.filter((v: any) => v.canonical);
+const extended = verified.filter((v: any) => v.extended);
+const fieldCount: Record<string, number> = {};
+for (const v of verified) {
+  for (const f of v.fields) fieldCount[f] = (fieldCount[f] || 0) + 1;
+}
+const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
+---
+
+<BaseLayout title="格式采用率研究 · Git 用户分析" description="SKILL.md 的 name+description 双字段是否已成为跨语言的事实标准">
+  <section class="py-6 border-b border-slate-800/80 mb-8">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-medium mb-4">
+      <span>严格验证 · 直接抓真实 SKILL.md 解析 frontmatter</span>
+    </div>
+    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-4">
+      格式趋同：平台推动的收敛
+    </h1>
+    <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-3xl">
+      这是本站发现的<strong class="text-slate-200">第一类由平台推动的收敛</strong>。
+      C1–C7 是创作者<strong>独立发现</strong>的共同方法；这一类不同——它是被标准制定者<strong>设计出来</strong>，然后被采用。
+    </p>
+  </section>
+
+  {data && (
+    <>
+      <!-- 核心结论 -->
+      <section class="bg-sky-500/5 border border-sky-500/20 rounded-2xl p-6 sm:p-8 mb-10">
+        <h2 class="text-lg font-bold text-white mb-3">核心结论</h2>
+        <p class="text-slate-300 leading-relaxed mb-4">
+          <strong class="text-sky-300">SKILL.md 的 <code class="font-mono text-sm">name</code> + <code class="font-mono text-sm">description</code> 双字段，已成为跨语言、跨平台的实际事实标准。</strong>
+        </p>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          {verified.length} 个已验证的 skill 仓中，<strong class="text-slate-200">{canonical.length} 个</strong>使用这个双字段格式——
+          中文圈（花叔、归藏、obra、李继刚、姚金刚）与英文圈（addyosmani、sickn33）用<strong>完全相同的字段名</strong>。
+          而这 11 个样本里，只有 1 个是平台官方（anthropics 自己）。
+        </p>
+      </section>
+
+      <!-- 统计 -->
+      <section class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
+        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+          <div class="text-xs text-slate-400 font-medium">已验证 skill 仓</div>
+          <div class="text-2xl sm:text-3xl font-bold text-white mt-1 font-mono">{verified.length}</div>
+          <div class="text-xs text-slate-500 mt-1">直接读 SKILL.md</div>
+        </div>
+        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+          <div class="text-xs text-slate-400 font-medium">canonical 格式</div>
+          <div class="text-2xl sm:text-3xl font-bold text-sky-400 mt-1 font-mono">{canonical.length}</div>
+          <div class="text-xs text-slate-500 mt-1">含 name + description</div>
+        </div>
+        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+          <div class="text-xs text-slate-400 font-medium">扩展用法</div>
+          <div class="text-2xl sm:text-3xl font-bold text-amber-400 mt-1 font-mono">{extended.length}</div>
+          <div class="text-xs text-slate-500 mt-1">在标准上加自有元数据</div>
+        </div>
+        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+          <div class="text-xs text-slate-400 font-medium">第三字段</div>
+          <div class="text-2xl sm:text-3xl font-bold text-emerald-400 mt-1 font-mono">
+            {fieldCount['metadata'] || 0}
+          </div>
+          <div class="text-xs text-slate-500 mt-1">metadata 最常见</div>
+        </div>
+      </section>
+
+      <!-- 字段排名 -->
+      <section class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 mb-10">
+        <h2 class="text-base font-bold text-white mb-1">字段使用排名</h2>
+        <p class="text-xs text-slate-500 mb-5">
+          分母为 {verified.length} 个已验证仓。注意 <code class="font-mono">name</code> 与 <code class="font-mono">description</code> 是压倒性的，
+          而 <code class="font-mono">allowed-tools</code> 与 <code class="font-mono">license</code> 各只有 1 例——<strong>工具限制与许可并非事实标准</strong>。
+        </p>
+        <div class="space-y-2.5">
+          {fieldRank.map(([f, c]) => (
+            <div class="flex items-center gap-3">
+              <div class="w-36 text-xs font-mono text-slate-300 shrink-0">{f}</div>
+              <div class="flex-1 h-6 bg-slate-950/60 rounded-md overflow-hidden border border-slate-800/50">
+                <div
+                  class="h-full bg-gradient-to-r from-sky-500 to-indigo-500 flex items-center justify-end pr-2 text-[11px] font-mono font-bold text-white"
+                  style={`width: ${Math.max((c / verified.length) * 100, 6)}%`}
+                >
+                  {c}
+                </div>
+              </div>
+              <div class="w-12 text-xs text-slate-500 font-mono shrink-0 text-right">
+                {Math.round((c / verified.length) * 100)}%
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- 逐仓明细 -->
+      <section class="mb-10">
+        <h2 class="text-base font-bold text-white mb-4">逐仓验证明细</h2>
+        <div class="overflow-x-auto rounded-2xl border border-slate-800">
+          <table class="w-full text-sm">
+            <thead class="bg-slate-900/80 text-slate-400 text-xs uppercase tracking-wider">
+              <tr>
+                <th class="text-left font-medium px-4 py-3">创作者</th>
+                <th class="text-left font-medium px-4 py-3">仓库</th>
+                <th class="text-left font-medium px-4 py-3">SKILL.md 路径</th>
+                <th class="text-left font-medium px-4 py-3">frontmatter 字段</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800/60">
+              {verified.map((v: any) => (
+                <tr class="hover:bg-slate-900/40 transition-colors">
+                  <td class="px-4 py-3">
+                    <span class="text-slate-200">{v.user}</span>
+                    {v.canonical && (
+                      <span class="ml-1.5 px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-400 text-[10px]">canonical</span>
+                    )}
+                    {v.extended && (
+                      <span class="ml-1.5 px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-400 text-[10px]">扩展</span>
+                    )}
+                  </td>
+                  <td class="px-4 py-3">
+                    <a href={`https://github.com/${v.user}/${v.repo}`} target="_blank" rel="noreferrer" class="font-mono text-xs text-indigo-400 hover:text-indigo-300">
+                      {v.repo}
+                    </a>
+                  </td>
+                  <td class="px-4 py-3 font-mono text-xs text-slate-500">{v.path}</td>
+                  <td class="px-4 py-3">
+                    <div class="flex flex-wrap gap-1.5">
+                      {v.fields.map((f: string) => (
+                        <span class={`px-1.5 py-0.5 rounded font-mono text-[10px] ${
+                          f === 'name' || f === 'description'
+                            ? 'bg-sky-500/15 text-sky-300 border border-sky-500/25'
+                            : 'bg-slate-800 text-slate-400 border border-slate-700/50'
+                        }`}>
+                          {f}
+                        </span>
+                      ))}
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* 未使用 SKILL.md 的 */}
+      <section class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6 sm:p-8 mb-10">
+        <h2 class="text-base font-bold text-white mb-1">走的是另一条路线的资产</h2>
+        <p class="text-xs text-slate-500 mb-4">
+          不是所有 skill 资产都用 SKILL.md。这几家用的是<strong class="text-slate-300">插件 / 扩展点</strong>路线——
+          它们的「标准」不是文件格式，而是协议。
+        </p>
+        <div class="space-y-2">
+          {(data.not_found || []).map((n: any) => (
+            <div class="flex items-start gap-3 text-sm">
+              <span class="font-mono text-xs text-slate-600 pt-0.5 shrink-0">{n.user}/{n.repo}</span>
+              <span class="text-slate-400">{n.reason}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 解读与边界 */}
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6">
+          <h2 class="text-base font-bold text-white mb-3">为什么这条发现重要</h2>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            C1–C7 讲的是「怎么做才可靠」，是创作者在实践中撞出来的。
+            这一条讲的是「怎么让别人找到你」——它有直接的操作价值：
+            <strong class="text-slate-200">想被生态发现，就用这个格式。</strong>
+          </p>
+          <p class="text-sm text-slate-400 leading-relaxed mt-3">
+            还有一个更深的含义：<strong class="text-slate-200">格式趋同让方法可以跨平台迁移。</strong>
+            一个遵循 `name`+`description` 的 skill，能被 Claude Code、Codex、Cursor 等多个 harness 加载——
+            这正是 obra 做 `everyharness`（一份清单生成 11 种 harness）的物理基础。
+          </p>
+        </div>
+
+        <div class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6">
+          <h2 class="text-base font-bold text-white mb-3">边界（对自己诚实）</h2>
+          <ul class="space-y-2 text-sm text-slate-400">
+            {(data.interpretation?.caveats || []).map((c: string) => (
+              <li class="flex gap-2">
+                <span class="text-amber-500 shrink-0">·</span>
+                <span>{c}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* 方法说明 */}
+      <section class="mt-10 bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6 sm:p-8">
+        <h2 class="text-base font-bold text-white mb-3">验证方法</h2>
+        <p class="text-sm text-slate-400 leading-relaxed mb-3">{data.methodology}</p>
+        <p class="text-xs text-slate-500 leading-relaxed">
+          注：这条研究是对 {verified.length} 个代表性 skill 仓的严格抽查（来自 29 位创作者中的 8 位），
+          不是全量普查。全量普查需要逐个 skill 目录展开，成本高但可以后续补。
+        </p>
+      </section>
+    </>
+  )}
+</BaseLayout>
