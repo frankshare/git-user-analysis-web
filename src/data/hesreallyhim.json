@@ -1,0 +1,1678 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source）+ raw README/SKILL.md；来源：司徒K《2026年X上最值得关注的120个中文博主》",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "hesreallyhim",
+    "name": "Hesreallyhim",
+    "bio": "以 awesome-claude-code 为核心的 Claude Code 生态策展者，同时自建 MCP server 与 skill 类小工具",
+    "website": "",
+    "x": "",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "breadth",
+    "public_repos": 120,
+    "source_repos": 50,
+    "fork_repos": 70
+  },
+  "stats": {
+    "total_stars_source": 57773,
+    "total_stars_all": 57876,
+    "median_stars": 2,
+    "ge_1000": 2,
+    "between_100_999": 0,
+    "between_10_99": 6,
+    "lt_10": 42,
+    "no_language": 14,
+    "top4_share": 99.7,
+    "top1_share": 97.2
+  },
+  "repos": [
+    {
+      "name": "awesome-claude-code",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "stars": 56139,
+      "language": "Python",
+      "updated_at": "2026-10-21T06:16:32Z",
+      "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC (no affilia…",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "a-list-of-claude-code-agents",
+      "url": "https://github.com/hesreallyhim/a-list-of-claude-code-agents",
+      "stars": 1355,
+      "language": null,
+      "updated_at": "2025-11-10T17:14:34Z",
+      "description": "A list of Claude Code Sub-Agents submitted by the community.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "awesome-claude-code-output-styles-that-i-really-like",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code-output-styles-that-i-really-like",
+      "stars": 87,
+      "language": null,
+      "updated_at": "2025-11-21T23:56:19Z",
+      "description": "A curated collection of probably the most awesome feature of Claude Code - Output Styles",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "diy-tools-mcp",
+      "url": "https://github.com/hesreallyhim/diy-tools-mcp",
+      "stars": 44,
+      "language": "TypeScript",
+      "updated_at": "2026-10-19T18:15:16Z",
+      "description": "An MCP server that allows users to dynamically add custom tools/functions at runtime",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "claude-code-fork",
+      "url": "https://github.com/hesreallyhim/claude-code-fork",
+      "stars": 28,
+      "language": "Shell",
+      "updated_at": "2026-02-22T07:38:58Z",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflo…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mcp-observer-server",
+      "url": "https://github.com/hesreallyhim/mcp-observer-server",
+      "stars": 24,
+      "language": "Python",
+      "updated_at": "2025-05-27T11:09:06Z",
+      "description": "An MCP server that provides server-to-client notifications for file changes that the client subscribes to",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "proton-pass-community-mcp",
+      "url": "https://github.com/hesreallyhim/proton-pass-community-mcp",
+      "stars": 21,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T13:08:36Z",
+      "description": "Unofficial MCP server that integrates with the Proton Pass CLI",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "really-claude-code",
+      "url": "https://github.com/hesreallyhim/really-claude-code",
+      "stars": 18,
+      "language": "Python",
+      "updated_at": "2026-07-05T06:50:05Z",
+      "description": "Claude Code plugins that explore the possibilities of autonomy and self-guided behavior for coding agents",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "awesome-claude-code-toolkit",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code-toolkit",
+      "stars": 13,
+      "language": "JavaScript",
+      "updated_at": "2026-05-21T09:19:22Z",
+      "description": "The most comprehensive toolkit for Claude Code -- 135 agents, 35 curated skills (+400,000 via SkillKit), 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, 26 companion app…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "claude-code-containers",
+      "url": "https://github.com/hesreallyhim/claude-code-containers",
+      "stars": 12,
+      "language": "Shell",
+      "updated_at": "2026-04-04T18:16:49Z",
+      "description": "A set of easy-install, easy-configure Docker environments/devcontainers to make life a little easier.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "github-api-usage-monitor",
+      "url": "https://github.com/hesreallyhim/github-api-usage-monitor",
+      "stars": 9,
+      "language": "TypeScript",
+      "updated_at": "2026-10-19T14:05:30Z",
+      "description": "GitHub workflow action for fine-grained, per-bucket monitoring of GitHub API usage throughout a workflow job",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "claude-skills",
+      "url": "https://github.com/hesreallyhim/claude-skills",
+      "stars": 9,
+      "language": "Python",
+      "updated_at": "2026-02-05T04:51:33Z",
+      "description": "65 Specialized Skills for Full-Stack Developers. Transform Claude Code into your expert pair programmer.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "hesreallyhim",
+      "url": "https://github.com/hesreallyhim/hesreallyhim",
+      "stars": 8,
+      "language": "Tape",
+      "updated_at": "2026-10-20T11:19:56Z",
+      "description": "The best things in life are free. (Free as in \"freedom\" not free as in \"beer\".)",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "server-nothing",
+      "url": "https://github.com/hesreallyhim/server-nothing",
+      "stars": 7,
+      "language": "JavaScript",
+      "updated_at": "2025-06-25T16:19:00Z",
+      "description": "A test MCP server that is compliant with the protocol but offers no capabilities",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "antipasta",
+      "url": "https://github.com/hesreallyhim/antipasta",
+      "stars": 6,
+      "language": "Python",
+      "updated_at": "2026-09-24T22:19:22Z",
+      "description": "A library for monitoring a variety of complexity metrics in source code and enforcing limitations in your CI/CD processes.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "claude-codepro",
+      "url": "https://github.com/hesreallyhim/claude-codepro",
+      "stars": 5,
+      "language": "Python",
+      "updated_at": "2025-12-18T09:28:06Z",
+      "description": "Professional development environment for Claude Code with spec-driven workflow, TDD enforcement, cross-session memory, semantic search, quality hooks, and modular rules 🛠️",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "svg-to-gif",
+      "url": "https://github.com/hesreallyhim/svg-to-gif",
+      "stars": 5,
+      "language": "JavaScript",
+      "updated_at": "2026-02-25T23:19:25Z",
+      "description": "Headless SVG to GIF/WebM/MP4 converter using Puppeteer + ffmpeg, with presets",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "codebase-to-course-fork",
+      "url": "https://github.com/hesreallyhim/codebase-to-course-fork",
+      "stars": 4,
+      "language": null,
+      "updated_at": "2026-03-28T11:20:45Z",
+      "description": "A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "poirot-fork",
+      "url": "https://github.com/hesreallyhim/poirot-fork",
+      "stars": 4,
+      "language": "Swift",
+      "updated_at": "2026-02-27T12:12:17Z",
+      "description": "A native macOS companion for Claude Code that lets you browse sessions, explore diffs, and re-run commands.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "MinerU-Skill-fork",
+      "url": "https://github.com/hesreallyhim/MinerU-Skill-fork",
+      "stars": 4,
+      "language": "Python",
+      "updated_at": "2026-02-28T03:11:27Z",
+      "description": "An AI Skill that transforms PDFs into clean Markdown using MinerU's VLM engine. Supports LaTeX formulas, tables, images, and batch async processing.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mcp-rando-server",
+      "url": "https://github.com/hesreallyhim/mcp-rando-server",
+      "stars": 4,
+      "language": "TypeScript",
+      "updated_at": "2025-06-09T23:16:05Z",
+      "description": "MCP server for generating random numbers, strings, diceware passphrases and other resources",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "pre-vhs",
+      "url": "https://github.com/hesreallyhim/pre-vhs",
+      "stars": 4,
+      "language": "JavaScript",
+      "updated_at": "2026-04-06T23:58:51Z",
+      "description": "An intuitive, highly configurable pre-processor for writing charmbracelet/vhs scripts with more complex command sequences in fewer words",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "my-pgp-inbox",
+      "url": "https://github.com/hesreallyhim/my-pgp-inbox",
+      "stars": 3,
+      "language": "JavaScript",
+      "updated_at": "2025-12-06T13:30:27Z",
+      "description": "A repo where you can message me by opening an Issue and encrypting the message using PGP.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "mcp-spec-assessments",
+      "url": "https://github.com/hesreallyhim/mcp-spec-assessments",
+      "stars": 3,
+      "language": null,
+      "updated_at": "2025-06-09T05:06:19Z",
+      "description": "Assessment of the MCP specification itself and its status as a technical standards document",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "harness-fork",
+      "url": "https://github.com/hesreallyhim/harness-fork",
+      "stars": 3,
+      "language": "HTML",
+      "updated_at": "2026-03-29T00:37:31Z",
+      "description": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "github-gpg-badge",
+      "url": "https://github.com/hesreallyhim/github-gpg-badge",
+      "stars": 3,
+      "language": "JavaScript",
+      "updated_at": "2026-02-28T23:21:06Z",
+      "description": "A server for generating badges that show whether a GitHub user has a GPG key publicly associated with their account",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "transfer-github-forks",
+      "url": "https://github.com/hesreallyhim/transfer-github-forks",
+      "stars": 3,
+      "language": "Shell",
+      "updated_at": "2025-10-14T04:12:39Z",
+      "description": "Simple utilities to transfer all forked repos from your account to another organization in order to declutter your profile",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "spam-this-repo",
+      "url": "https://github.com/hesreallyhim/spam-this-repo",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2025-05-29T20:30:47Z",
+      "description": "Repo for testing out all your GitHub MCP's and agents and just do whatever you want.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "claude-code-templates",
+      "url": "https://github.com/hesreallyhim/claude-code-templates",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2025-11-24T03:30:10Z",
+      "description": "CLI tool for configuring and monitoring Claude Code",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "terrible-claude-code",
+      "url": "https://github.com/hesreallyhim/terrible-claude-code",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2025-05-26T03:23:33Z",
+      "description": "A totally non-curated assemblage of garbage related to Claude Code",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "mcp-server-isitdown",
+      "url": "https://github.com/hesreallyhim/mcp-server-isitdown",
+      "stars": 2,
+      "language": "Python",
+      "updated_at": "2025-05-18T12:39:11Z",
+      "description": "An MCP server that checks if a website is currently down by querying the website https://www.isitdownrightnow.com",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "n8n-skills-pack",
+      "url": "https://github.com/hesreallyhim/n8n-skills-pack",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2026-01-04T03:08:10Z",
+      "description": "Designed specifically for AI assistants, the n8n Workflow Automation Skills Suite.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ralph-playbook",
+      "url": "https://github.com/hesreallyhim/ralph-playbook",
+      "stars": 2,
+      "language": "HTML",
+      "updated_at": "2026-01-12T23:37:25Z",
+      "description": "A comprehensive guide to running autonomous AI coding loops using Geoff Huntley's Ralph methodology. View as formatted guide below 👇",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Auto-Claude-fork",
+      "url": "https://github.com/hesreallyhim/Auto-Claude-fork",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2026-01-18T21:17:22Z",
+      "description": "Autonomous multi-session AI coding",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "naming-fork",
+      "url": "https://github.com/hesreallyhim/naming-fork",
+      "stars": 2,
+      "language": "Shell",
+      "updated_at": "2026-03-21T11:44:00Z",
+      "description": "Claude Code skill for naming products, SaaS, and brands. Metaphor-driven naming that avoids AI slop.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "streamlit-chatbot",
+      "url": "https://github.com/hesreallyhim/streamlit-chatbot",
+      "stars": 2,
+      "language": "Python",
+      "updated_at": "2025-05-22T15:58:04Z",
+      "description": "A RAG chatbot built with LangGraph and Streamlit",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "agent-skills",
+      "url": "https://github.com/hesreallyhim/agent-skills",
+      "stars": 2,
+      "language": "Python",
+      "updated_at": "2026-02-02T21:33:55Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "github-readme-stats-forked",
+      "url": "https://github.com/hesreallyhim/github-readme-stats-forked",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2026-07-02T22:54:12Z",
+      "description": "⚡ Dynamically generated stats for your github readmes (with even more data)",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "six-stars",
+      "url": "https://github.com/hesreallyhim/six-stars",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2026-05-14T17:43:08Z",
+      "description": "An app that tries to find a path between any two GitHub users in 6 direct connections or fewer (\"Six Degrees of Separation\" but for GitHub)",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "robot-in-the-loop",
+      "url": "https://github.com/hesreallyhim/robot-in-the-loop",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2026-02-03T23:23:00Z",
+      "description": "Robot In The Loop (RITL)",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "DDD-sup",
+      "url": "https://github.com/hesreallyhim/DDD-sup",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2026-02-23T15:26:00Z",
+      "description": "Design software visually as flow diagrams, let AI implement from YAML specs",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "git-miscellany",
+      "url": "https://github.com/hesreallyhim/git-miscellany",
+      "stars": 1,
+      "language": "Shell",
+      "updated_at": "2026-03-15T00:40:04Z",
+      "description": "A collection of various git helpers, utils, hooks, and aliases that I incorporate into my workflow",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "claude-codex-settings",
+      "url": "https://github.com/hesreallyhim/claude-codex-settings",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2025-12-19T12:47:46Z",
+      "description": "My personal Claude Code and OpenAI Codex setup with battle-tested skills, commands, hooks, agents and MCP servers that I use daily.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ux-audit-fork",
+      "url": "https://github.com/hesreallyhim/ux-audit-fork",
+      "stars": 1,
+      "language": "HTML",
+      "updated_at": "2026-04-16T19:24:53Z",
+      "description": "Give your AI coding assistant a design eye. 12 principles, 13 reference docs, 7 component checklists. Works with Claude Code, Cursor, Codex, and Windsurf.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pgp-inbox-template",
+      "url": "https://github.com/hesreallyhim/pgp-inbox-template",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2025-11-28T08:13:52Z",
+      "description": "Easy setup and quick-start guide for turning a public repo into an encrypted inbox.",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "the-dot-github-repo-pattern",
+      "url": "https://github.com/hesreallyhim/the-dot-github-repo-pattern",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2026-04-30T16:07:43Z",
+      "description": "A twisted repo pattern that hides everything inside the top-level dot-github folder",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "pass-cli-fork",
+      "url": "https://github.com/hesreallyhim/pass-cli-fork",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2026-02-26T13:43:57Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "composio-fork",
+      "url": "https://github.com/hesreallyhim/composio-fork",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2026-02-26T05:26:27Z",
+      "description": "Composio powers 1000+ toolkits, tool search, context management, authentication, and a sandboxed workbench to help you build AI agents that turn intent into action.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "agentpatterns",
+      "url": "https://github.com/hesreallyhim/agentpatterns",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2026-02-17T17:03:56Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "unhappychoice",
+      "url": "https://github.com/hesreallyhim/unhappychoice",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2026-02-06T12:58:46Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "serpro69",
+      "url": "https://github.com/hesreallyhim/serpro69",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2026-02-05T13:11:53Z",
+      "description": "https://github.com/serpro69",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "inkverse-fork",
+      "url": "https://github.com/hesreallyhim/inkverse-fork",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2026-01-28T06:10:23Z",
+      "description": "A fun webtoons app. All comics on Inkverse are self-hosted by the creator.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ryoppippi",
+      "url": "https://github.com/hesreallyhim/ryoppippi",
+      "stars": 1,
+      "language": "Nix",
+      "updated_at": "2026-02-05T01:47:04Z",
+      "description": "bunx ryoppippi",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Lissy93",
+      "url": "https://github.com/hesreallyhim/Lissy93",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2026-02-05T01:18:31Z",
+      "description": "🥳 Hello World!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "WarpWing",
+      "url": "https://github.com/hesreallyhim/WarpWing",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2026-02-04T00:47:12Z",
+      "description": "My own README.md repository!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "github-profile-trophy-fork",
+      "url": "https://github.com/hesreallyhim/github-profile-trophy-fork",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2026-05-30T21:11:57Z",
+      "description": "🏆 Add dynamically generated GitHub Stat Trophies on your readme",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "aeon-fork",
+      "url": "https://github.com/hesreallyhim/aeon-fork",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2026-08-03T21:20:38Z",
+      "description": "The most autonomous agent framework. No approval loops. No babysitting. Configure once, forget forever.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "danielrosehill",
+      "url": "https://github.com/hesreallyhim/danielrosehill",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2026-01-30T01:01:12Z",
+      "description": "Github homepage text",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "agentic-chunking",
+      "url": "https://github.com/hesreallyhim/agentic-chunking",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2025-02-07T06:49:26Z",
+      "description": "Demonstrates different chunking strategies, including agentic chunking",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "docs-github-fork",
+      "url": "https://github.com/hesreallyhim/docs-github-fork",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2026-09-09T12:25:10Z",
+      "description": "The open-source repo for docs.github.com",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "trackignore",
+      "url": "https://github.com/hesreallyhim/trackignore",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2025-10-09T07:57:10Z",
+      "description": "Version control your private files, protect them from public exposure, all in the same repo.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "best-practices-badge-fork",
+      "url": "https://github.com/hesreallyhim/best-practices-badge-fork",
+      "stars": 1,
+      "language": "Ruby",
+      "updated_at": "2026-09-14T22:37:39Z",
+      "description": "🏆Open Source Security Foundation (OpenSSF) Best Practices Badge (formerly Core Infrastructure Initiative (CII) Best Practices Badge)",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "python-tutorials",
+      "url": "https://github.com/hesreallyhim/python-tutorials",
+      "stars": 1,
+      "language": "Jupyter Notebook",
+      "updated_at": "2025-05-18T03:24:12Z",
+      "description": "A collection of notebooks that will make you a bona fide pythonista!",
+      "fork": false,
+      "layer": "tool",
+      "category": "记忆与知识"
+    },
+    {
+      "name": "awesome-claude-code-mods",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code-mods",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2026-10-07T22:23:07Z",
+      "description": "Community catalogue of public Claude Code mods (function hooks), scanned from GitHub with what each mod can read, write, run or send over the network. Browse https://mods.aidojo.si/",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "voicemode",
+      "url": "https://github.com/hesreallyhim/voicemode",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2025-10-15T16:12:05Z",
+      "description": "VoiceMode MCP brings natural conversations to Claude Code",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Github-Contribution-Bot-fork",
+      "url": "https://github.com/hesreallyhim/Github-Contribution-Bot-fork",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2024-03-28T08:36:28Z",
+      "description": "Manipulate your GitHub contribution graph with ease, and look like a professional developer.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "kylepls-fork",
+      "url": "https://github.com/hesreallyhim/kylepls-fork",
+      "stars": 0,
+      "language": "Jupyter Notebook",
+      "updated_at": "2025-03-22T01:05:56Z",
+      "description": "My profile overview repo.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "safetext-fork",
+      "url": "https://github.com/hesreallyhim/safetext-fork",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2025-08-06T20:32:56Z",
+      "description": "Fast profanity word, curse word, swear word, bad word filtering tool for English, Spanish, Chinese, Turkish and more.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "badges-fork",
+      "url": "https://github.com/hesreallyhim/badges-fork",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2025-08-28T14:12:50Z",
+      "description": "🎖️ A collection of badges for your projects README",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "emoji-linter-fork",
+      "url": "https://github.com/hesreallyhim/emoji-linter-fork",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2025-09-07T01:19:02Z",
+      "description": "Detect and remove emojis from your code. Keep your codebase clean and professional.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "github-calendar-fork",
+      "url": "https://github.com/hesreallyhim/github-calendar-fork",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2025-10-11T17:26:54Z",
+      "description": "📊 Embed your GitHub calendar everywhere.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ClaudeBar-fork",
+      "url": "https://github.com/hesreallyhim/ClaudeBar-fork",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2026-01-22T04:18:54Z",
+      "description": "A macOS menu bar application that monitors AI coding assistant usage quotas. Keep track of your Claude, Codex, Antigravity ,and Gemini usage at a glance.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "basic-pitch-fork",
+      "url": "https://github.com/hesreallyhim/basic-pitch-fork",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2025-10-14T12:28:02Z",
+      "description": "A lightweight yet powerful audio-to-MIDI converter with pitch bend detection",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "test-cross-branch-image-links",
+      "url": "https://github.com/hesreallyhim/test-cross-branch-image-links",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-03-16T00:11:46Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "设计与视觉"
+    },
+    {
+      "name": "bloedboemmel-fork",
+      "url": "https://github.com/hesreallyhim/bloedboemmel-fork",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2025-11-12T02:41:37Z",
+      "description": "Hey guys, this is my GitHub-Profile. At this awsome README you can play connect4. If you fork ik, please star it!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "DoubleGremlin181-fork",
+      "url": "https://github.com/hesreallyhim/DoubleGremlin181-fork",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2025-11-15T03:46:37Z",
+      "description": "Come play TicTacToe on my profile's README",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "github-profile-svg-fork",
+      "url": "https://github.com/hesreallyhim/github-profile-svg-fork",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2026-01-10T05:14:44Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "readme-stats-github-fork",
+      "url": "https://github.com/hesreallyhim/readme-stats-github-fork",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2026-01-09T08:13:58Z",
+      "description": "🔸Dynamic SVG cards for GitHub READMEs using GitHub REST &amp; GraphQL APIs",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "github-readme-stats-eo-fork",
+      "url": "https://github.com/hesreallyhim/github-readme-stats-eo-fork",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2026-01-07T11:13:30Z",
+      "description": "NOPE",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "skill-codex",
+      "url": "https://github.com/hesreallyhim/skill-codex",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2025-10-23T17:29:11Z",
+      "description": "A claude code skill to delegate prompts to codex",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "readme-contribution-stats-fork",
+      "url": "https://github.com/hesreallyhim/readme-contribution-stats-fork",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2025-12-23T18:09:37Z",
+      "description": "Dynamic SVG cards for your GitHub README displaying repositories where you've merged PRs.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "awesome-skills-fork",
+      "url": "https://github.com/hesreallyhim/awesome-skills-fork",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2025-10-27T08:51:25Z",
+      "description": "A directory of skills (for AI agents)",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mistermind",
+      "url": "https://github.com/hesreallyhim/mistermind",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2026-08-27T17:21:22Z",
+      "description": "GitHub-issue-based variation of the classic game Mastermind - all gameplay happens within the repo itself.",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "github-breakout-fork",
+      "url": "https://github.com/hesreallyhim/github-breakout-fork",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2025-10-31T13:27:02Z",
+      "description": "Generate a Breakout game SVG from a GitHub user's contributions graph",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "vhs-fork",
+      "url": "https://github.com/hesreallyhim/vhs-fork",
+      "stars": 0,
+      "language": "Go",
+      "updated_at": "2025-11-29T20:33:10Z",
+      "description": "Your CLI home video recorder 📼",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pydry",
+      "url": "https://github.com/hesreallyhim/pydry",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2026-09-23T23:21:32Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "figlet-fonts-fork",
+      "url": "https://github.com/hesreallyhim/figlet-fonts-fork",
+      "stars": 0,
+      "language": "PHP",
+      "updated_at": "2025-11-23T15:24:47Z",
+      "description": "my collection of figlet / toilet ascii art fonts",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "sciencepal",
+      "url": "https://github.com/hesreallyhim/sciencepal",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2026-01-14T05:21:59Z",
+      "description": "Woooh, it's just me, myself and I",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "qqqa-fork",
+      "url": "https://github.com/hesreallyhim/qqqa-fork",
+      "stars": 0,
+      "language": "Rust",
+      "updated_at": "2025-11-30T14:23:15Z",
+      "description": "Fast, stateless LLM for your shell: qq answers; qa runs commands",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "claude-code-docs-differ",
+      "url": "https://github.com/hesreallyhim/claude-code-docs-differ",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2025-06-03T07:11:52Z",
+      "description": "Tracks changes in the Claude Code documentation site",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "ts-to-mermaid",
+      "url": "https://github.com/hesreallyhim/ts-to-mermaid",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2025-07-28T13:46:31Z",
+      "description": "Convert TypeScript interfaces and types to Mermaid class diagrams",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "python-release-template",
+      "url": "https://github.com/hesreallyhim/python-release-template",
+      "stars": 0,
+      "language": "Makefile",
+      "updated_at": "2025-09-14T17:05:04Z",
+      "description": "Cookiecutter template for modern Python packages with automated PyPI releases via GitHub Actions",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "python-release-template-manager",
+      "url": "https://github.com/hesreallyhim/python-release-template-manager",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2025-09-14T17:05:11Z",
+      "description": "A cookiecutter template for modern Python packages with automated PyPI releases",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "mk-files",
+      "url": "https://github.com/hesreallyhim/mk-files",
+      "stars": 0,
+      "language": "Makefile",
+      "updated_at": "2025-09-30T16:10:47Z",
+      "description": "Assortment of .mk files you can include in your projects to help bootstrap and enhance your workflow",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "loc-treemap",
+      "url": "https://github.com/hesreallyhim/loc-treemap",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2025-10-29T07:30:50Z",
+      "description": "Generate a treemap visualization of your codebase based on the number of lines of code.",
+      "fork": false,
+      "layer": "tool",
+      "category": "设计与视觉"
+    },
+    {
+      "name": "claude-builds-hangman",
+      "url": "https://github.com/hesreallyhim/claude-builds-hangman",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2025-03-01T00:41:37Z",
+      "description": "A minimalist CLI implementation of the game \"hangman, written entirely by Claude Code in under 30 minutes",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "mcp-weather-service",
+      "url": "https://github.com/hesreallyhim/mcp-weather-service",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2025-02-26T05:29:34Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "sql-tutorial",
+      "url": "https://github.com/hesreallyhim/sql-tutorial",
+      "stars": 0,
+      "language": "Jupyter Notebook",
+      "updated_at": "2025-02-23T01:54:12Z",
+      "description": "Tutorial notebooks for learning the basics of SQL-dialects and relational databases",
+      "fork": false,
+      "layer": "tool",
+      "category": "记忆与知识"
+    },
+    {
+      "name": "ecmapy",
+      "url": "https://github.com/hesreallyhim/ecmapy",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2025-02-13T19:39:08Z",
+      "description": "A partial bi-directional transpiler that converts select ECMAScript syntax to python, and vice versa",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "browser-debugger-cli-fork",
+      "url": "https://github.com/hesreallyhim/browser-debugger-cli-fork",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-10-07T19:59:56Z",
+      "description": "Let Claude Code and other coding agents drive and debug Chrome from the shell. DOM, network, console and raw CDP as short commands, no screenshots and no MCP needed.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "executor-fork",
+      "url": "https://github.com/hesreallyhim/executor-fork",
+      "stars": 0,
+      "language": "Shell",
+      "updated_at": "2026-10-05T16:53:35Z",
+      "description": "Stop shipping AI slop: a multi-agent orchestration skill that makes coding agents prove their work. Claude Code, Codex, Cursor, omp.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "oss-autopilot-fork",
+      "url": "https://github.com/hesreallyhim/oss-autopilot-fork",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-09-11T06:40:27Z",
+      "description": "Claude Code plugin — AI-powered autopilot for managing open source contributions. Track PRs, respond to maintainers, discover issues, maintain velocity.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "claude-intercom-fork",
+      "url": "https://github.com/hesreallyhim/claude-intercom-fork",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-08-20T10:20:48Z",
+      "description": "Two-way communication bridge between Claude Code sessions using the Channels API",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "claude-replay-fork",
+      "url": "https://github.com/hesreallyhim/claude-replay-fork",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2026-08-04T21:16:24Z",
+      "description": "Convert AI coding agent sessions (Claude Code, Cursor, Codex, Gemini, OpenCode, Kimi Code) into self-contained, embeddable HTML replays",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "readme-chess-fork",
+      "url": "https://github.com/hesreallyhim/readme-chess-fork",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2024-02-02T12:50:00Z",
+      "description": "♟️ Play Multiplayer Chess in a README file!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Dive-into-Claude-Code-fork",
+      "url": "https://github.com/hesreallyhim/Dive-into-Claude-Code-fork",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-06-27T18:42:57Z",
+      "description": "A Systematic Analysis and Discussion of Claude Code for Designing Today's and Future AI Agent Systems",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "github-image-cache-bust",
+      "url": "https://github.com/hesreallyhim/github-image-cache-bust",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2025-11-18T18:03:10Z",
+      "description": "Demo repo for testing/validating different strategies for busting the cache and refreshing images on GitHub README",
+      "fork": false,
+      "layer": "tool",
+      "category": "设计与视觉"
+    },
+    {
+      "name": "codacy-coverage-reporter-action",
+      "url": "https://github.com/hesreallyhim/codacy-coverage-reporter-action",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-05-07T04:21:22Z",
+      "description": "GitHub Action for the codacy-coverage-reporter",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "github-special-files-and-paths-fork",
+      "url": "https://github.com/hesreallyhim/github-special-files-and-paths-fork",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-04-30T16:49:12Z",
+      "description": "GitHub special files and paths, such as README, LICENSE, .github, docs, dependabot, workflows.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "WebClients-fork",
+      "url": "https://github.com/hesreallyhim/WebClients-fork",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-04-24T20:13:09Z",
+      "description": "Monorepo hosting the proton web clients",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rossjrw-ur-game-fork",
+      "url": "https://github.com/hesreallyhim/rossjrw-ur-game-fork",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-04-03T23:27:52Z",
+      "description": "The Royal Game of Ur, asynchronous and massively-multiplayer — all you need is a Github account.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "benjaminsampica-game-fork",
+      "url": "https://github.com/hesreallyhim/benjaminsampica-game-fork",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2026-04-03T23:21:00Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "jonathangin52-connect-4-fork",
+      "url": "https://github.com/hesreallyhim/jonathangin52-connect-4-fork",
+      "stars": 0,
+      "language": "Ruby",
+      "updated_at": "2026-04-03T20:13:25Z",
+      "description": "Welcome to my profile README. Participate in my community Connect4 game!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": ".github",
+      "url": "https://github.com/hesreallyhim/.github",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2025-11-24T14:19:06Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Lunda-fork",
+      "url": "https://github.com/hesreallyhim/Lunda-fork",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2025-11-30T19:12:31Z",
+      "description": "Lunda - a lightweight GitHub Action to detect and list forgotten branches, helping you keep your repository clean, safe, and secure.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "hfo4-Pokemon-game",
+      "url": "https://github.com/hesreallyhim/hfo4-Pokemon-game",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-03-11T11:39:40Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "emoji-free-zone",
+      "url": "https://github.com/hesreallyhim/emoji-free-zone",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2025-12-07T13:09:08Z",
+      "description": "A light-hearted linter + AI-assisted auto-fixer that integrates with your CI/CD to ensure that your documentation and READMEs are sanitized of emojis",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "GRatekeeper",
+      "url": "https://github.com/hesreallyhim/GRatekeeper",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2025-12-23T09:21:03Z",
+      "description": "GRatekeeper is a lightweight GitHub API helper with proactive rate-limit throttling",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "treemap-loc",
+      "url": "https://github.com/hesreallyhim/treemap-loc",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-03-07T03:06:51Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "repo-visualizer-demo",
+      "url": "https://github.com/hesreallyhim/repo-visualizer-demo",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2021-08-03T20:33:53Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/hesreallyhim",
+    "count": 12,
+    "layers": {
+      "other": 4,
+      "tool": 7,
+      "skill": 1
+    },
+    "items": [
+      {
+        "name": "awesome-claude-code",
+        "layer": "other",
+        "category": "策展与目录",
+        "repo": "awesome-claude-code",
+        "subdir": "",
+        "summary": "分 30+ 主题章节的手工精选 Claude Code 资源目录，目录由脚本生成，条目附 created-at / last-commit / license / stars 徽章",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "a-list-of-claude-code-agents",
+        "layer": "other",
+        "category": "策展与目录",
+        "repo": "a-list-of-claude-code-agents",
+        "subdir": "",
+        "summary": "社区投稿的 Claude Code Sub-Agent 清单",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "awesome-claude-code-output-styles-that-i-really-like",
+        "layer": "other",
+        "category": "策展与目录",
+        "repo": "awesome-claude-code-output-styles-that-i-really-like",
+        "subdir": "",
+        "summary": "专攻 Claude Code Output Styles 一种扩展机制的策展列表",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "diy-tools-mcp",
+        "layer": "tool",
+        "category": "Agent 基础设施",
+        "repo": "diy-tools-mcp",
+        "subdir": "",
+        "summary": "允许用户在运行时动态注册自定义工具/函数的 MCP server",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "mcp-observer-server",
+        "layer": "tool",
+        "category": "Agent 基础设施",
+        "repo": "mcp-observer-server",
+        "subdir": "",
+        "summary": "把文件变更做成 server→client 通知的 MCP server，配合订阅模型",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "really-claude-code",
+        "layer": "skill",
+        "category": "Skill 工程",
+        "repo": "really-claude-code",
+        "subdir": "",
+        "summary": "一组探索编码 agent 自主性与自导向行为的 Claude Code 插件",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "server-nothing",
+        "layer": "tool",
+        "category": "Agent 基础设施",
+        "repo": "server-nothing",
+        "subdir": "",
+        "summary": "符合 MCP 协议但不提供任何能力的测试用 server",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "proton-pass-community-mcp",
+        "layer": "tool",
+        "category": "Agent 基础设施",
+        "repo": "proton-pass-community-mcp",
+        "subdir": "",
+        "summary": "对接 Proton Pass CLI 的非官方 MCP server",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "mcp-rando-server",
+        "layer": "tool",
+        "category": "Agent 基础设施",
+        "repo": "mcp-rando-server",
+        "subdir": "",
+        "summary": "生成随机数、字符串、diceware 口令的 MCP server",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "mcp-spec-assessments",
+        "layer": "other",
+        "category": "Agent 基础设施",
+        "repo": "mcp-spec-assessments",
+        "subdir": "",
+        "summary": "对 MCP 规范本身及其作为技术标准文档的成熟度做评估",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "claude-code-containers",
+        "layer": "tool",
+        "category": "安装与分发",
+        "repo": "claude-code-containers",
+        "subdir": "",
+        "summary": "易装易配的 Docker / devcontainer 环境集合，为隔离运行 Claude Code 提供外壳",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "antipasta",
+        "layer": "tool",
+        "category": "安装与分发",
+        "repo": "antipasta",
+        "subdir": "",
+        "summary": "度量源码复杂度并在 CI/CD 中强制阈值，防止 AI 生成代码复杂度失控",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "name": "awesome-claude-code",
+      "repo": "awesome-claude-code",
+      "stars": 56139,
+      "verdict": "把散落的 Claude Code 生态资源收进一个人工审过、分类固定、条目带可核验元数据的索引，靠策展信誉而非功能本身拿到星标。",
+      "problem": "Claude Code 的扩展面（skill、agent、hook、statusline、plugin、MCP）在几个月内从零涨到数百个项目，新用户在 GitHub 上无从判断哪些值得装；同时被收录的项目缺少可信的质量信号。",
+      "mechanism": [
+        "目录 README 的 Table of Contents 段落被显式标注为自动生成（HTML 注释「THIS PART GETS GENERATED」），说明条目入库与目录渲染是脚本化流程，人工只做选题。",
+        "每条 GitHub 条目后跟一排 shields.io 徽章（created-at、last-commit、license、stars），把维护新鲜度与许可直接摆到条目上，读者不点进去就能判断是否死掉。",
+        "固定一套 30+ 主题的章节骨架（Skills、Mods、Status Lines、Agent Orchestration、Security、Memory & Context Persistence 等），新条目按机制归位而不是按热度排序。",
+        "每条配一句作者本人的主观评述（区分「确实好用」与「写得很好但别当 slop」），把列表从索引进化成带观点的评审。"
+      ],
+      "constraints": [
+        "条目质量上限等于作者个人吞吐量，收录依赖手工 PR，星数规模与维护精力强耦合。",
+        "上一代条目被整体迁到 README_ALTERNATIVES 目录冻结不更新，说明换版式必然牺牲一部分历史可发现性。",
+        "托管在 GitHub README，纯展示层，无检索、无筛选、无离线使用。"
+      ],
+      "takeaway": [
+        "条目旁固定挂 created-at / last-commit / license / stars 四枚徽章，用元数据代替长篇介绍来做初筛。",
+        "目录与正文分离：正文只写人写的那部分，ToC 交给生成脚本，避免手工维护冲突。",
+        "按「机制/扩展点」而不是按「热度」分章，让读者能整章读完一个心智模型。"
+      ],
+      "limits": [
+        "只覆盖英文 GitHub 生态，中文/自建 skill 与非 GitHub 分发渠道无处收录。",
+        "条目是否仍可用取决于上游作者，列表自身无法验证功能是否已随 Claude Code 版本失效。",
+        "无结构化接口，机器消费只能靠解析 Markdown。"
+      ]
+    },
+    {
+      "name": "a-list-of-claude-code-agents",
+      "repo": "a-list-of-claude-code-agents",
+      "stars": 1355,
+      "verdict": "把「社区投稿」这一动作产品化，用单一机制（提交 sub-agent）撬动供给，做成 awesome-claude-code 的下游管道。",
+      "problem": "Sub-Agent 数量多且分散在个人仓库里，用户想找特定角色的 agent 没有统一入口；策展人一个人找不过来。",
+      "mechanism": [
+        "定位与主目录互补：只收 Sub-Agent 这一类，范围窄到能保持逐条审核。",
+        "以「社区提交」替代作者亲选，把选题吞吐从个人时间换成分摊成本。",
+        "沿用 awesome-claude-code 已验证的徽章式条目模板，降低维护与阅读成本。"
+      ],
+      "constraints": [
+        "完全依赖投稿质量，缺乏作者自荐时的动机筛选，容易凑量。",
+        "language 字段为空，说明仓库主体是纯文档，几乎没有可执行校验。",
+        "最后更新时间为 2025-11-10，晚于主目录，维护节奏明显慢于旗舰仓库。"
+      ],
+      "takeaway": [
+        "主目录做发现、窄目录做纵深：同一作者用两个仓库覆盖不同粒度的收录需求。",
+        "能收窄范围到单一扩展点时，优先收窄，审核质量比条目数量重要。"
+      ],
+      "limits": [
+        "无 code 可审，本质仍是链接合集，价值随投稿量波动。",
+        "只服务 Claude Code 一种宿主。"
+      ]
+    },
+    {
+      "name": "awesome-claude-code-output-styles-that-i-really-like",
+      "repo": "awesome-claude-code-output-styles-that-i-really-like",
+      "stars": 87,
+      "verdict": "对 Claude Code 的单一扩展机制做深度策展，用最小星数换取该细分领域的事实标准地位。",
+      "problem": "Output Styles 这个机制冷门、文档讲得少，用户不知道它能改什么、哪些 style 真能改变模型输出行为。",
+      "mechanism": [
+        "只攻 Output Styles 一个机制，把「风格文件」这一非代码资产也纳入策展。",
+        "描述里直接点明这是 Claude Code「probably the most awesome feature」，用作者权威做定位背书。",
+        "复用主目录的目录结构与条目模板，形成同一作者的系列化品牌。"
+      ],
+      "constraints": [
+        "无 language，说明是纯文档仓库，无自动化校验。",
+        "机制本身由 Anthropic 单方定义，上游改格式即失效。",
+        "规模小（87 星），无法支撑独立的自动化流程。"
+      ],
+      "takeaway": [
+        "冷门扩展点值得单独建目录：一件事讲透，好过在综合列表里占一行。",
+        "同一个策展人用「主目录 + 细分目录」矩阵覆盖生态，比一个巨型列表更容易长期维护。"
+      ],
+      "limits": [
+        "依赖 Output Styles 这一具体功能继续存在。",
+        "本地材料未收录该仓库 README，具体收录条目与审核标准未见依据。"
+      ]
+    },
+    {
+      "name": "diy-tools-mcp",
+      "repo": "diy-tools-mcp",
+      "stars": 44,
+      "verdict": "把 MCP 的扩展点从「安装期静态声明」改成「运行期动态注册」，解决配置反复重启的痛点。",
+      "problem": "想给 Claude Code 临时加一个自定义函数时，标准 MCP 流程要求改配置、重启会话、重新握手，中间成本高。",
+      "mechanism": [
+        "以 MCP server 形式承载动态工具注册，利用协议自身的工具发现机制承载运行时变更。",
+        "TypeScript 实现，与 Claude Code 宿主生态同栈，降低接入摩擦。",
+        "更新时间为 2026-10-19，与主目录同一批维护动作，说明仍在活跃迭代。"
+      ],
+      "constraints": [
+        "受 MCP 协议能力边界约束：只有协议支持运行时变更的工具才能热注册。",
+        "动态注册意味着工具表随时间变化，宿主侧缓存或权限提示可能不一致。",
+        "星数 44，属工具型小项目，长期维护人力有限。"
+      ],
+      "takeaway": [
+        "想降低扩展成本，优先找协议里已有的运行时扩展点，而不是做配置生成器。",
+        "同一作者的多个 MCP 小仓库共享实现思路，可视为一套可复用模板。"
+      ],
+      "limits": [
+        "依赖 MCP 协议本身，宿主不支持时功能失效。",
+        "本地材料未见该仓库 README，动态注册的具体 API 与权限模型未见依据。"
+      ]
+    },
+    {
+      "name": "mcp-observer-server",
+      "repo": "mcp-observer-server",
+      "stars": 24,
+      "verdict": "补上 MCP 协议里缺失的推送方向——让 server 主动向订阅过的 client 发文件变更通知。",
+      "problem": "MCP 的交互模型以 client 拉取为主，agent 侧无法在文件被外部改动时被动得知，只能轮询。",
+      "mechanism": [
+        "实现 server→client 通知方向，明确以「client 订阅」作为触发前提。",
+        "Python 实现，与作者主目录仓库语言一致，降低个人维护成本。",
+        "与 server-nothing、mcp-rando-server 并列成一小撮协议实验仓库，充当协议边界的实测探针。"
+      ],
+      "constraints": [
+        "通知依赖客户端实现订阅处理，多数 MCP client 未必消费这类消息。",
+        "最后更新 2025-05-27，此后未再更新，可能受协议演进影响已不适用。",
+        "无 language 之外的成熟度信号，测试覆盖情况本地材料未见依据。"
+      ],
+      "takeaway": [
+        "做 agent 集成前，先确认协议的推送方向是否可用，能省掉一层轮询逻辑。",
+        "写最小可用 server（如 server-nothing）验证协议行为，再扩展成有实际用途的 server。"
+      ],
+      "limits": [
+        "强依赖客户端订阅支持，实际可用范围窄。",
+        "更新停滞，与当前 MCP 版本兼容性未知。"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "同一主题按扩展点切成矩阵式目录群",
+      "kind": "method",
+      "evidence": [
+        "awesome-claude-code",
+        "a-list-of-claude-code-agents",
+        "awesome-claude-code-output-styles-that-i-really-like"
+      ],
+      "claim": "用一个覆盖全生态的主目录承担发现，再按 Sub-Agent、Output Styles 等单一扩展点拆出窄目录承担深度；主目录导航到窄目录，读者按兴趣逐层下钻，策展人每次只需在一个目录内维持审核标准。"
+    },
+    {
+      "id": "P2",
+      "name": "条目用可核验元数据徽章代替长介绍",
+      "kind": "technique",
+      "evidence": [
+        "awesome-claude-code",
+        "a-list-of-claude-code-agents"
+      ],
+      "claim": "每条 GitHub 条目固定挂 created-at / last-commit / license / stars 四枚 shields 徽章，把「是否还活着」和「能不能用」这两个最常见的踩坑问题变成零点击可判断的信号，同时压缩条目描述长度。"
+    },
+    {
+      "id": "P3",
+      "name": "目录渲染与条目入库分离",
+      "kind": "technique",
+      "evidence": [
+        "awesome-claude-code"
+      ],
+      "claim": "README 的 Table of Contents 段落被标注为生成内容，脚本只负责把已收录条目渲染成目录，人工只处理选题与评述，避免大文件里手工维护目录造成的合并冲突。"
+    },
+    {
+      "id": "P4",
+      "name": "以 MCP 小仓库作为协议边界的实测探针",
+      "kind": "method",
+      "evidence": [
+        "mcp-observer-server",
+        "server-nothing",
+        "mcp-rando-server",
+        "mcp-spec-assessments"
+      ],
+      "claim": "连做四个功能各异的 MCP 项目（推送通知、零能力合规 server、随机资源生成、规范评估），用最少的代码分别压协议的四个维度，把「协议到底支持什么」变成自己手里可运行的证据，而不是靠文档推测。"
+    },
+    {
+      "id": "P5",
+      "name": "给 AI 生成物加非功能约束层",
+      "kind": "method",
+      "evidence": [
+        "antipasta",
+        "emoji-free-zone",
+        "github-api-usage-monitor"
+      ],
+      "claim": "写工具去卡 agent 产出里最容易被忽略的横向属性——复杂度超阈值就拦截、文档里出现 emoji 就 lint、API 配额按桶精细监控——把质量要求从 prompt 层下沉到 CI 可执行的门禁。"
+    }
+  ],
+  "sources": [
+    "https://github.com/hesreallyhim",
+    "https://github.com/hesreallyhim?tab=repositories",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

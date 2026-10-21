@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.1",
+  "user": "wshobson",
+  "analyses": [
+    {
+      "name": "多 harness 插件市场",
+      "repo": "agents",
+      "stars": 41351,
+      "verdict": "把「写 prompt 集合」做成有适配层、有校验、有安装路由的分发工程，而非一堆散装 Markdown",
+      "problem": "同一批 agent/skill 想同时在 Claude Code、Codex CLI、Cursor、OpenCode、Antigravity、Copilot、Pi 上跑，但每家的目录结构、清单格式、模型别名和工具权限约定都不同，社区现有 skill 仓库基本是单 harness 硬绑",
+      "mechanism": [
+        "只维护 Claude Code 插件格式的 Markdown 源，94 个插件按领域（python-development、javascript-typescript、developer-essentials、security-scanning 等）分组",
+        "用 tools/adapters 下的适配器把源转成各 harness 需要的产物：Codex 的 TOML agent、OpenCode/Copilot 的生成文件与翻译过的工具权限、Antigravity 的生成插件、Pi 的 prompt 模板",
+        "模型只写 opus/sonnet/haiku/fable/inherit 这类别名，由 capabilities.py 映射到各 harness 的模型设置，部分 inherit 落到固定默认值",
+        "两条安装路径并存：原生市场（Claude Code/Codex/Cursor）直接指向源，OpenCode/Copilot/Pi 等走 make install-* 从 clone 生成",
+        "质量闸用 make generate-all / make validate STRICT=1 / make garden 做结构与文档一致性检查，再由 plugin-eval 做免模型调用的静态 skill 打分"
+      ],
+      "constraints": [
+        "Codex 有 8 KB 预算，超长 skill body 在生成副本里必须拆成引用文件，与原生安装读原始 body 的行为不一致",
+        "Pi 的 agent 需要额外的 subagent 扩展才能用，能力矩阵随 harness 能力裁剪",
+        "plugin-eval 的 LLM judge 与 Monte Carlo 层属实验性，未与人工标注对齐，只描述模型评分"
+      ],
+      "takeaway": [
+        "内容源与分发格式解耦：Markdown 只写一遍，格式问题全部压进适配器层",
+        "把「某个 harness 缺什么能力」写进显式能力矩阵（docs/harnesses.md），而不是让使用者自己踩",
+        "免模型调用的静态检查做第一道闸，LLM 评分标成实验并注明未验证"
+      ],
+      "limits": [
+        "生成产物必须随源同步，适配器与 harness 版本演进耦合",
+        "外部 marketplace 依赖（Pensyve 云端 2026-10-01 已关闭）需退回自托管",
+        "评分不构成任务成功率证明"
+      ]
+    },
+    {
+      "name": "本地股票 MCP server",
+      "repo": "maverick-mcp",
+      "stars": 707,
+      "verdict": "把金融数据能力做成本地 MCP 进程，用免 key 的核心工具换取开箱即用",
+      "problem": "AI 编码助手要做股票分析、指标计算和策略回测时，接第三方金融 API 要 key、要配额、要联网，作者本人和同类用户都被卡在这层",
+      "mechanism": [
+        "以 MCP server 形式暴露 Yahoo Finance 数据、技术分析、组合跟踪与 Python 回测工具",
+        "核心工具本地直跑且不需要 API key，降低首次接入门槛",
+        "以 Python 实现并保持本地运行，数据流不经第三方中转服务"
+      ],
+      "constraints": [
+        "依赖 Yahoo Finance 的非官方数据接口，字段与可用性受上游影响",
+        "本地进程意味着没有多用户共享的缓存与鉴权层"
+      ],
+      "takeaway": [
+        "MCP 工具集优先保证「零配置核心路径」，再把需要 key 的能力放到旁路",
+        "本地优先的实现让调试和离线复现都变简单"
+      ],
+      "limits": [
+        "免 key 是相对优势而非绝对，接口一旦收紧就失效",
+        "面向股票行情分析，与 coding agent 场景无直接耦合"
+      ]
+    },
+    {
+      "name": "LangChain 金融问答",
+      "repo": "financial-chat",
+      "stars": 236,
+      "verdict": "OpenBB 数据源 + Claude 3 Opus 的 RAG 问答样例，属早期探索性作品",
+      "problem": "个人投资者想用自然语言问行情与指标，但自己搭检索链路门槛高",
+      "mechanism": [
+        "以 LangChain 串联提问、检索与生成",
+        "数据侧接 OpenBB 终端的量化数据能力",
+        "生成侧用 Claude 3 Opus 负责自然语言解释"
+      ],
+      "constraints": [
+        "强依赖 LangChain、OpenBB 与 Anthropic API 三方，版本漂移易失效",
+        "README 材料未说明评测与数据时效处理"
+      ],
+      "takeaway": [
+        "先用现成数据终端（OpenBB）省掉数据管道，再谈自建"
+      ],
+      "limits": [
+        "本地材料未见依据说明其是否仍在维护（最近更新 2025-08）",
+        "该仓库未与 agents 仓形成代码复用关系"
+      ]
+    },
+    {
+      "name": "OpenBB Terminal Pro 自定义后端",
+      "repo": "cap_comp_openbb_example",
+      "stars": 2,
+      "verdict": "厂商后端接入样例，价值在参考而非复用",
+      "problem": "需要给 OpenBB Terminal Pro 接入定制后端的开发者缺少可抄的最小样例",
+      "mechanism": [
+        "给出 Pro 版 custom backend 的接入代码与配置位置",
+        "作为接口契约的活文档"
+      ],
+      "constraints": [
+        "绑定 OpenBB Pro 商业版，版本与授权变化即失效"
+      ],
+      "takeaway": [
+        "外部服务接入先写最小可跑样例，再谈功能"
+      ],
+      "limits": [
+        "星数极低，说明样例影响面很小",
+        "本地材料未见依据说明完整步骤"
+      ]
+    },
+    {
+      "name": "DGX Spark 推理服务",
+      "repo": "minimax-dgx-spark",
+      "stars": 17,
+      "verdict": "为特定硬件提供的模型服务封装，场景窄但形态清晰",
+      "problem": "在 NVIDIA DGX Spark 上跑 MiniMax M2 推理需要正确的服务化配置，硬件与模型组合特殊",
+      "mechanism": [
+        "用 Jinja 模板渲染部署配置",
+        "面向 DGX Spark 单一硬件目标做适配"
+      ],
+      "constraints": [
+        "绑定 DGX Spark 硬件与 MiniMax M2 模型",
+        "星数低、更新时间早，本地材料未见后续维护迹象"
+      ],
+      "takeaway": [
+        "硬件专用服务用模板化配置交付，便于版本管理"
+      ],
+      "limits": [
+        "不可移植到通用服务器",
+        "与 agent/skill 体系无关，属独立支线"
+      ]
+    }
+  ]
+}

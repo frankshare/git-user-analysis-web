@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.1",
+  "user": "steipete",
+  "analyses": [
+    {
+      "name": "Agent Scripts",
+      "repo": "agent-scripts",
+      "stars": 7392,
+      "verdict": "把「agent 该读什么规则、能调哪些 skill」从每个仓库各写一份改成一份真源加按形态生成的链接层",
+      "problem": "同一台机器上同时用 Codex 和 Claude Code 干活的开发者：两个客户端的 skill 发现规则不同（Codex 扫嵌套目录、Claude Code 只扫一层且只认 `<name>/SKILL.md`），加上一堆下游仓库，规则和 skill 会漂移或冲突",
+      "mechanism": [
+        "AGENTS.MD 作为共享硬规则的唯一副本，客户端侧全部是指针（~/.claude/CLAUDE.md 链到同一份 AGENTS.MD）",
+        "下游仓库只放指针式 AGENTS.MD（READ ~/Projects/agent-scripts/AGENTS.MD BEFORE ANYTHING），仓库特有规则写在指针下方，不复制共享块",
+        "skills/ 目录用受版本控制的相对符号链接暴露别处的 repo-owned skill（birdclaw、discrawl、gog、imsg、peekaboo、slacrawl、wacli、wacrawl），真源留在各自仓库",
+        "scripts/sync-skills 幂等地为两种客户端生成不同形态的链接镜像并打印跳过项、清理失效链接；scripts/validate-skills 校验 front matter，可挂 git hooksPath"
+      ],
+      "constraints": [
+        "SKILL.md 的 description 必须是带引号的短句且只服务于路由，不能写成文档",
+        "skill 名称必须以 ASCII 字母或数字开头，只含字母数字 . _ -，重名与未知参数一律拒绝",
+        "同步脚本不许覆盖真实文件目录；遇到真实目标冲突直接报错并让 sync 失败（legacy 嵌套自链接拓扑需显式 allowlist 的专用模式处理）"
+      ],
+      "takeaway": [
+        "把共享 agent 规则抽成一份带指针的 AGENTS.MD，下游仓库只留三行指针加自己的规则",
+        "为每种客户端的发现规则各写一个适配脚本，共享同一份 skill 真源，并做成幂等 + 打印变更 + 清理失效链接",
+        "给 skill 目录配一个提交前 hook 做 front matter 校验，别靠人肉检查"
+      ],
+      "limits": [
+        "嵌套自链接的修复在 unlink 前逐个复查，不构成原子并发保护；中途出错会留下已完成的删除且不回滚",
+        "audit 脚本只识别同名嵌套祖先环，不是完整的链接图校验器",
+        "整个方案假定 POSIX 符号链接与 ~/Projects 布局，README 未见 Windows 原生路径的依据"
+      ]
+    },
+    {
+      "name": "Summarize",
+      "repo": "summarize",
+      "stars": 6730,
+      "verdict": "把「读长内容」压成一个入口，输出摘要而非原文搬运",
+      "problem": "人机共用场景：手上有 URL、YouTube、播客或本地文件，想快速拿到 gist 而不想逐个平台换工具",
+      "mechanism": [
+        "统一入口：任意 URL/视频/播客/文件走同一条命令",
+        "双形态交付：同一能力同时给 CLI 和 Chrome 扩展，降低接入门槛"
+      ],
+      "constraints": [
+        "本地材料未见依据"
+      ],
+      "takeaway": [
+        "多输入源的能力先统一入口，再分形态交付，别为每个平台单开一个工具"
+      ],
+      "limits": [
+        "本地材料只有仓库描述，未见 README，摘要质量控制、缓存、成本策略均未见依据",
+        "依赖外部平台的可访问性，视频/播客转录路径是否稳定未知"
+      ]
+    },
+    {
+      "name": "Oracle",
+      "repo": "oracle",
+      "stars": 4061,
+      "verdict": "把「卡住时的第二意见」做成带自定义上下文和附件的一次调用",
+      "problem": "编码 agent 卡壳时的开发者：想换一个更强模型带着自己的代码与约束重新问一遍，而不是重写一遍 prompt",
+      "mechanism": [
+        "显式触发语义：只在卡住时调用，不做常驻助手",
+        "调用时支持注入自定义上下文与文件，让判断建立在真实材料上"
+      ],
+      "constraints": [
+        "依赖 GPT-5 Pro 可用性与对应凭据"
+      ],
+      "takeaway": [
+        "把「换个模型重问」做成带文件注入的一次性工具，比让 agent 自己换 prompt 更可控"
+      ],
+      "limits": [
+        "本地材料未见 README，成本控制、上下文长度上限、失败重试策略均未见依据",
+        "绑定单一模型供应商，模型不可用即整体不可用"
+      ]
+    },
+    {
+      "name": "Birdclaw",
+      "repo": "birdclaw",
+      "stars": 1668,
+      "verdict": "把自己的推文整理成 agent 可抓取的存储层",
+      "problem": "需要让编码 agent 检索自己历史推文的作者本人：推文散在时间线上，agent 读不到也搜不准",
+      "mechanism": [
+        "把内容落到 agent 可直接检索的存储，而不是靠抓取界面",
+        "定位明确写成 claw-able for agents，接口面按 agent 消费设计"
+      ],
+      "constraints": [
+        "本地材料未见依据"
+      ],
+      "takeaway": [
+        "自己产出的内容单独建一份 agent 可读的存储，比让 agent 去解析平台界面稳定"
+      ],
+      "limits": [
+        "本地材料只有仓库描述，检索接口、更新频率、存储后端均未见依据",
+        "作为数据源，受限于平台侧的可用性与导出方式"
+      ]
+    },
+    {
+      "name": "Brabble",
+      "repo": "brabble",
+      "stars": 172,
+      "verdict": "语音触发本地 agent，并在触发命令后挂 hook，全程本地执行",
+      "problem": "不想一直盯着终端的本地开发者：需要用说的方式唤起 agent，并让触发词能带出后续动作",
+      "mechanism": [
+        "以 Star Trek 式唤名（「Hey, Computer」）作为触发词做语音入口",
+        "触发命令后运行 hooks，把识别结果接到固定动作上",
+        "本地运行，作者在描述里明确写出这样做的理由（隐私）"
+      ],
+      "constraints": [
+        "本地运行换取隐私，能力受本机依赖限制",
+        "需要麦克风输入与语音识别链路"
+      ],
+      "takeaway": [
+        "语音入口 + 触发词 hook 是把 agent 从「等输入」变成「可唤醒」的低成本做法",
+        "在描述里直接写清楚为什么不云端化，这类决策理由比功能列表更能防止被误用"
+      ],
+      "limits": [
+        "本地材料未见 README，识别准确率、唤醒词冲突、后台常驻的开销均未见依据",
+        "隐私由「本地运行」保证，一旦引入远程识别这条前提即失效"
+      ]
+    }
+  ]
+}

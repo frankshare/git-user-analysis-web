@@ -67,12 +67,25 @@ const CHECKLIST = [
   {
     cluster: 'C6',
     title: '把品味封成可枚举、可复用的集合',
-    why: '11 位作者的共同选择：与其写更多形容词，不如把内容固化成具名清单、模板或规则集。这是「58 个 skill」和「1 套方法论」都能成立的原因。',
+    why: '16 位作者的共同选择：与其写更多形容词，不如把内容固化成具名清单、模板或规则集。这是「58 个 skill」和「1 套方法论」都能成立的原因。',
     items: [
       { q: '你在意的东西写成具名清单了吗？还是只有形容词？', e: '归藏：22 个具名版式 S01–S22 + 4 套锚点色', alt: 'obra：31 类失败模式与借口封堵表' },
       { q: '你禁止了「自定义」吗？不禁止的话，agent 一定会乱来。', e: '归藏：「不允许自定义 hex 值，保护美学比给自由更重要」', alt: '给一个明确的理由，否则规则会被绕' },
       { q: '内容格式化成机器能检查的格式了吗？', e: 'coleam00：Open Knowledge Format + 引用校验', alt: '李继刚：输出统一为可截图卡片' },
       { q: '目录/集合有机器可读的索引吗？', e: '花叔 skills.json；addyosmani 目录化 Skill + 独立站点', alt: 'sickn33：清单之外补上选择、校验、规划、CI 四段流程' },
+      { q: '内容是生成的还是手改的？', e: 'wshobson：Jinja 模板配置生成，产物不手改', alt: 'hesreallyhim：README 目录由脚本渲染，人工只处理选题' },
+    ],
+  },
+  {
+    cluster: 'C7',
+    title: '可核验的证据产物：结论要能被机器复算',
+    why: '第 4 版新浮现的一簇。前六簇约束「怎么做」，这一簇约束「怎么证明做对了」——也是本站 validator 能立住的原因。',
+    items: [
+      { q: '有可自动复算的判据吗？还是靠「读起来专业」？', e: 'addyosmani：判据从 Lighthouse 一路用到 Agent 评测', alt: '归藏：Playwright 实测 overflow / 底部空白 / 标题间距' },
+      { q: '产物带摘要校验吗？别人能自己验证它没被改过？', e: 'affaan-m：evidence pack 带 SHA-256 摘要与 attestation digest', alt: 'claude-swarm 把每次编排记为可回放记录' },
+      { q: '数据落在一个能复算的结构里吗？', e: 'simonw：抓取、LLM 调用、文件历史最终都落到 SQLite 表', alt: '工具链按「导入→存储→查询/发布」同一条流水线组织' },
+      { q: '条目有「是否还活着」的零点击信号吗？', e: 'hesreallyhim：created-at / last-commit / license / stars 四枚徽章', alt: 'simonw：把上游漂移用带时间戳的公开仓库持续记录' },
+      { q: '扫描器有误报治理吗？', e: 'affaan-m：false-positive-audit.md（误报分类、仓库审计表、发布门）', alt: 'kentcdodds：每个技术疑点配一个最小可复现仓库当回归样例' },
     ],
   },
 ];

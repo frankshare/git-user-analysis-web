@@ -3,17 +3,17 @@
   "note": "跨作者收敛簇：当同一个方法在 3 位以上互不相识的创作者、不同领域里独立出现，说明它是方法而不是偏好。2026-10-21 从 5 人扩到 17 人后复核，C1–C5 全部成立且覆盖数上升，并新浮现 C6。",
   "snapshot": {
     "date": "2026-10-21",
-    "users_analyzed": 23,
-    "patterns_total": 127,
-    "analyses_total": 151,
-    "revision": 3
+    "users_analyzed": 29,
+    "patterns_total": 157,
+    "analyses_total": 179,
+    "revision": 4
   },
   "clusters": [
     {
       "id": "C1",
       "name": "门与闸门：把「做没做」变成机制问题",
-      "coverage": 11,
-      "summary": "十一位作者用完全不同的技术手段，解决同一个问题——如何证明 agent 真的做了某一步，而不是嘴上说做了。",
+      "coverage": 16,
+      "summary": "十六位作者用完全不同的技术手段，解决同一个问题——如何证明 agent 真的做了某一步，而不是嘴上说做了。",
       "why_it_matters": "这是跨中英文圈最一致的共识：可靠性不来自更详细的提示词，而来自可被检查的物理证据（文件存在、测试红灯清零、目录未被改动、审批通过）。",
       "members": [
         {
@@ -81,16 +81,46 @@
           "pattern": "同一套模板复制成多个个性化产物",
           "evidence": "codex-wrapped（123 星）与 cc-wrapped（87 星）共用同一模板，只换数据源",
           "mechanism": "模板 + 数据源分离"
+        },
+        {
+          "user": "wshobson",
+          "pattern": "生成与校验拆成可复跑脚本入口",
+          "evidence": "派生内容用 make generate-all / validate / garden 一次重跑与检查，Jinja 模板也走配置生成而非手改产物",
+          "mechanism": "生成器 + 校验器双入口"
+        },
+        {
+          "user": "steipete",
+          "pattern": "破坏性操作前先只读审计",
+          "evidence": "涉及链接/覆盖/剪贴板改写的工具都配只读审计模式，窄修复与广修复分开命名",
+          "mechanism": "只读审计模式 + 修复范围分级"
+        },
+        {
+          "user": "hesreallyhim",
+          "pattern": "给 AI 生成物加非功能约束层",
+          "evidence": "复杂度超阈值就拦截、文档出现 emoji 就 lint、API 配额按桶监控——质量要求从 prompt 层下沉到 CI 门禁",
+          "mechanism": "横向属性下沉为可执行门禁"
+        },
+        {
+          "user": "affaan-m",
+          "pattern": "模型用在对的关键点，其余留给廉价模型",
+          "evidence": "claude-swarm 用 Opus 做分解与质量门、Haiku 做执行；agentshield 用 Opus 跑对抗审计，规则扫描走本地代码",
+          "mechanism": "按任务分档模型"
+        },
+        {
+          "user": "kentcdodds",
+          "pattern": "日常摩擦封装成可发布的包",
+          "evidence": "反复手写的脚本提炼成通用小包（排序、深度比较、effect 频次拦截）",
+          "mechanism": "脚本产品化"
         }
       ],
-      "verdict": "23 人规模下命中 11 位作者（5→8→11），其中 3 位是英文圈。中文用门文件/测试夹具/脚本门禁，英文用审批门/读写分离/模板复制——手段完全不同，问题相同。",
+      "verdict": "29 人规模下命中 16 位作者（11→16），其中 8 位英文圈。中文用门文件/测试夹具/脚本门禁，英文用只读审计/横向 lint/误报台账——手段完全不同，问题相同。这已是覆盖最广的一簇之一。",
       "actionable": "给任何 skill 加一道可检查的门：文件、脚本、测试、红灯、审批、排除项——六选一。"
     },
     {
       "id": "C2",
       "name": "单一事实源与结构化分发：拒绝手工同步",
-      "coverage": 15,
-      "summary": "十五位作者都遇到了同一个工程问题——同一份内容需要在多处出现，手工同步必然漂移。解法都是「让手改变成会报错的错误」，或把一份真源投影到多处。",
+      "coverage": 21,
+      "summary": "二十一位作者都遇到了同一个工程问题——同一份内容需要在多处出现，手工同步必然漂移。解法都是「让手改变成会报错的错误」，或把一份真源投影到多处。",
       "why_it_matters": "这是把 skill 从「文档」升级为「工程资产」的分水岭，也是本站数据管线的直接来源。本站自己就是这条方法的产物。",
       "members": [
         {
@@ -182,16 +212,52 @@
           "pattern": "配置层隔离替代代码层 fork",
           "evidence": "需求差异全部收敛到配置与注册层，宿主升级只需跟随不需 rebase",
           "mechanism": "配置层 + 注册层"
+        },
+        {
+          "user": "wshobson",
+          "pattern": "单一源 + 多目标适配层",
+          "evidence": "内容只写一份，格式与协议差异由适配层或第三方抽象消化；agents 仓最完整，其余三个是同一逻辑套在不同外部接口",
+          "mechanism": "真源 + 适配层"
+        },
+        {
+          "user": "steipete",
+          "pattern": "单一真源 + 指针式引用",
+          "evidence": "共享规则与能力只存一份，其他地方一律放指针或受版本控制的符号链接，从不复制内容",
+          "mechanism": "符号链接而非复制"
+        },
+        {
+          "user": "simonw",
+          "pattern": "核心 + 插件的拆分结构",
+          "evidence": "核心仓库只承担统一抽象与调度，每种具体能力做成独立插件仓库；星标分散到几十个小仓库",
+          "mechanism": "核心薄 + 插件多仓"
+        },
+        {
+          "user": "hesreallyhim",
+          "pattern": "同一主题按扩展点切成矩阵式目录群",
+          "evidence": "一个主目录承担发现，再按 Sub-Agent、Output Styles 等扩展点拆窄目录承担深度，主目录导航到窄目录",
+          "mechanism": "主目录 + 窄目录矩阵"
+        },
+        {
+          "user": "affaan-m",
+          "pattern": "声明式配置 + 结构化 schema 作为对外契约",
+          "evidence": "claude-swarm 用 swarm.yaml 声明 agent 类型与连接关系，agentshield 用 rule pack JSON 定义扩展与门禁",
+          "mechanism": "声明式配置即契约"
+        },
+        {
+          "user": "kentcdodds",
+          "pattern": "为工作坊配套自建工具链仓库",
+          "evidence": "教学场景的重复劳动被逐个抽成独立 CLI 工具，工具本身成为可复用资产",
+          "mechanism": "教学摩擦工具化"
         }
       ],
-      "verdict": "23 人规模下命中 15 位作者（4→10→15），是覆盖最广的一簇。5 位英文圈作者的解法：独立站点分发、生成器分仓、四段流程、生成式治理、配置层隔离——与中文圈的物理分仓、模板生成、IR 编译是同一逻辑的不同方言。",
+      "verdict": "29 人规模下命中 21 位作者（15→21），**覆盖最广的一簇**。12 位英文圈作者的解法：适配层、符号链接、核心+插件拆分、目录群、声明式配置、工具链仓库——与中文圈的物理分仓、模板生成、IR 编译是同一逻辑的不同方言。",
       "actionable": "凡是同一内容要出现两次以上，就生成它，并让生成物漂移时报错。"
     },
     {
       "id": "C3",
       "name": "渐进披露：入口轻，细节外置",
-      "coverage": 7,
-      "summary": "五位作者独立发现 agent 读不完长文档，必须把入口压到最小、细节按需加载。",
+      "coverage": 8,
+      "summary": "八位作者独立发现 agent 读不完长文档，必须把入口压到最小、细节按需加载。",
       "why_it_matters": "这条直接决定 skill 能不能被弱模型执行——是可用性下限，不是优化项。",
       "members": [
         {
@@ -235,16 +301,22 @@
           "pattern": "一个引擎 + 多个垂直工作流的分层结构",
           "evidence": "先做通用工作流引擎，再把营销视频、代码合并、需求转工单做成挂载其上的工作流",
           "mechanism": "引擎 + 挂载工作流"
+        },
+        {
+          "user": "steipete",
+          "pattern": "脚本零依赖、可移植",
+          "evidence": "共享 helper 保持 dependency-free、不引用仓库特定路径别名，才能被任意下游仓库直接调用",
+          "mechanism": "零依赖 helper"
         }
       ],
-      "verdict": "23 人规模下命中 7 位作者（3→5→7），2 位英文圈。coleam00 还把渐进披露抽象到别的框架中验证可移植性——这是少数主动做跨框架移植验证的案例。",
+      "verdict": "29 人规模下命中 8 位作者（7→8）。新增的 steipete 用「零依赖 helper + 不引用仓库特定路径别名」保证可移植性，与渐进披露是同一诉求的另一面：入口不仅要短，还要能被任意下游直接调用。",
       "actionable": "给 SKILL.md 标一个 token 预算，超了就拆文件。"
     },
     {
       "id": "C4",
       "name": "可验证性：先证明，再宣称",
-      "coverage": 13,
-      "summary": "九位作者在不同层面要求「有证据才许说完成」，但验证对象各不相同。",
+      "coverage": 16,
+      "summary": "十六位作者在不同层面要求「有证据才许说完成」，但验证对象各不相同。",
       "why_it_matters": "它把 skill 质量从「读起来专业」拉回「跑得通」，也是本站 validator 的思想来源。",
       "members": [
         {
@@ -324,16 +396,34 @@
           "pattern": "PIV 循环作为统一的 agent 工作流骨架",
           "evidence": "把「计划—实现—验证」提炼为跨仓库复用的固定循环，用同一套命名驱动 skill 库、工作坊、命令集",
           "mechanism": "统一命名 + 固定循环"
+        },
+        {
+          "user": "wshobson",
+          "pattern": "量化金融是长期主线，工具形态一路演进",
+          "evidence": "从 Backtrader 回测机器人 → LangChain+OpenBB 问答 → 本地 MCP server，同一主线反复迭代五个以上仓库",
+          "mechanism": "主线 + 形态演进"
+        },
+        {
+          "user": "affaan-m",
+          "pattern": "可核验的证据与回放产物",
+          "evidence": "agentshield 的 evidence pack 带 SHA-256 摘要与修复 attestation digest；claude-swarm 把每次编排记为可回放记录",
+          "mechanism": "证据包 + 摘要校验"
+        },
+        {
+          "user": "kentcdodds",
+          "pattern": "每个技术疑点配一个最小可复现仓库",
+          "evidence": "提问不靠口述复现步骤，而是开一个只含该问题的仓库，既是提问材料也是回归样例",
+          "mechanism": "疑点即仓库"
         }
       ],
-      "verdict": "23 人规模下命中 13 位作者（5→9→13），4 位英文圈。addyosmani 的案例最典型：判据从 Web 性能指标一路用到 Agent 评测，跨了完全不同的两个领域。",
+      "verdict": "29 人规模下命中 16 位作者（13→16）。7 位英文圈作者的验证对象：主线演进、证据包、疑点仓库。共同点不是「怎么验」，而是「不许没验就说完成」。",
       "actionable": "在你的产物里加一个能说「还没做到」的字段，让未完成状态可见。"
     },
     {
       "id": "C5",
       "name": "边界声明：能力宣称要留出余地",
-      "coverage": 10,
-      "summary": "八位作者都在不同层面主动说清「我做不到什么」「这不适用于什么」。",
+      "coverage": 14,
+      "summary": "十四位作者都在不同层面主动说清「我做不到什么」「这不适用于什么」。",
       "why_it_matters": "star 数是流量，与「这东西真的好用吗」无关。边界声明是唯一能让人判断可用性的信号。这类内容在 star 排行榜里永远看不到——因为它不涨 star。",
       "members": [
         {
@@ -395,16 +485,40 @@
           "pattern": "ADR 先行、项目阶段公开标注",
           "evidence": "在 README 与描述里明写当前处于 Phase 1 并计划产出 ADR，用阶段声明代替完成度承诺",
           "mechanism": "阶段标注替代完成度承诺"
+        },
+        {
+          "user": "wshobson",
+          "pattern": "显式声明未验证部分",
+          "evidence": "README 直接写 plugin-eval 的 LLM judge 未与人工标注对齐、8KB 预算限制、外部 marketplace 云端关闭",
+          "mechanism": "入口处写明失效条件"
+        },
+        {
+          "user": "steipete",
+          "pattern": "描述只写触发词与适用场景",
+          "evidence": "description 只保留短触发短语供路由匹配，正文写操作细节，避免 agent 照描述跳过正文",
+          "mechanism": "描述与正文分工"
+        },
+        {
+          "user": "hesreallyhim",
+          "pattern": "目录渲染与条目入库分离",
+          "evidence": "README 的 Table of Contents 标注为生成内容，脚本只负责渲染目录，人工只处理选题与评述",
+          "mechanism": "渲染脚本化"
+        },
+        {
+          "user": "affaan-m",
+          "pattern": "多种分发面共用一套契约",
+          "evidence": "同一产品覆盖 CLI / GitHub Action / GitHub App / npm 包四种分发面",
+          "mechanism": "一契约多分发"
         }
       ],
-      "verdict": "23 人规模下命中 10 位作者（4→8→10），2 位英文圈。numman-ali 的做法值得注意：用「明写处于 Phase 1」代替「快完成了」——把边界声明写成了版本号。",
+      "verdict": "29 人规模下命中 14 位作者（10→14）。6 位英文圈作者同样在**主动降低对自己的承诺**——承认 judge 未对齐、承认预算限制、承认未验证部分。",
       "actionable": "本站把「局限」列设成硬性字段，空着就判失败。"
     },
     {
       "id": "C6",
       "name": "内容即资产：把「品味」封成可枚举、可复用的集合",
-      "coverage": 11,
-      "summary": "九位作者的共同选择：与其写更多形容词，不如把内容固化成具名清单、模板、规则集或可复现的实验。",
+      "coverage": 16,
+      "summary": "十六位作者的共同选择：与其写更多形容词，不如把内容固化成具名清单、模板或规则集。这是「58 个 skill」和「1 套方法论」都能成立的原因。",
       "why_it_matters": "这一簇解释了为什么「58 个 skill」和「1 套方法论」都能成立——因为内容被封成了资产，而不是留在作者的脑子里。",
       "members": [
         {
@@ -472,30 +586,108 @@
           "pattern": "内容转成带引用的可检索知识包",
           "evidence": "把自己的视频内容转成 Open Knowledge Format 格式、带引用校验的知识包",
           "mechanism": "内容格式化为带引用资产"
+        },
+        {
+          "user": "wshobson",
+          "pattern": "配置生成而非手改产物",
+          "evidence": "Jinja 模板与示例仓沿用配置生成，产物不手改",
+          "mechanism": "配置生成资产"
+        },
+        {
+          "user": "steipete",
+          "pattern": "指针即资产",
+          "evidence": "客户端目录、下游仓库、别的仓库一律放指针或符号链接",
+          "mechanism": "指针式引用"
+        },
+        {
+          "user": "simonw",
+          "pattern": "把安装分发能力本身做成仓库",
+          "evidence": "cookiecutter 模板与 GitHub template 仓库成对发布，单独拿一个仓库展示初始化产物差异",
+          "mechanism": "脚手架产品化"
+        },
+        {
+          "user": "hesreallyhim",
+          "pattern": "条目用可核验元数据徽章代替长介绍",
+          "evidence": "每条固定挂 created-at / last-commit / license / stars 四枚徽章，把「是否还活着」变成零点击信号",
+          "mechanism": "元数据徽章"
+        },
+        {
+          "user": "affaan-m",
+          "pattern": "声明式配置 + 结构化 schema",
+          "evidence": "swarm.yaml、rule pack JSON、baseline JSON 把配置做成可版本化的资产",
+          "mechanism": "配置即内容"
         }
       ],
-      "verdict": "23 人规模下命中 11 位作者（9→11），2 位英文圈。coleam00 的「带引用校验的知识包」与归藏的「22 个具名版式」是同一逻辑：把内容封成可被程序检查的格式。",
+      "verdict": "29 人规模下命中 16 位作者（11→16）。8 位英文圈作者把内容封成资产：配置生成、指针引用、脚手架产品化、元数据徽章、声明式 schema。",
       "actionable": "把你在意的东西写成具名清单，而不是写形容词。"
+    },
+    {
+      "id": "C7",
+      "name": "可核验的证据产物：结论要能被机器复算",
+      "coverage": 4,
+      "summary": "四位作者在完全不同的领域，做了同一件事——把「我说它好」变成「你可以自己验」。",
+      "why_it_matters": "这是七簇里最年轻的一簇，也是把「方法」从口头主张变成可交付物的那一步。它同时解释了为什么本站的 validator 能立得住。",
+      "members": [
+        {
+          "user": "addyosmani",
+          "pattern": "先造可自动打分的量化判据",
+          "evidence": "从 Critical CSS / Lighthouse / 图片体积测量，到今天给 Agent 运行本身打分，判据始终是可自动复算的数字",
+          "mechanism": "量化判据先行"
+        },
+        {
+          "user": "simonw",
+          "pattern": "以数据为中心的一等公民",
+          "evidence": "无论抓取、LLM 调用还是文件历史，最终都落到 SQLite 表里，工具链按「导入→存储→查询/发布」同一条流水线组织",
+          "mechanism": "数据落表 + 统一流水线"
+        },
+        {
+          "user": "simonw",
+          "pattern": "把对上游变化的追踪也做成公开仓库",
+          "evidence": "对外部系统、系统提示词、CLI --help、模型价格的漂移，用公开仓库持续记录并留时间戳",
+          "mechanism": "时间戳化变更记录"
+        },
+        {
+          "user": "hesreallyhim",
+          "pattern": "条目用可核验元数据徽章代替长介绍",
+          "evidence": "每条固定挂 created-at / last-commit / license / stars 四枚徽章，把「是否还活着」变成零点击信号",
+          "mechanism": "元数据即信号"
+        },
+        {
+          "user": "affaan-m",
+          "pattern": "可核验的证据与回放产物",
+          "evidence": "agentshield 的 evidence pack 带 SHA-256 摘要与修复 attestation digest；claude-swarm 把每次编排记为可回放记录",
+          "mechanism": "证据包 + 摘要校验"
+        },
+        {
+          "user": "affaan-m",
+          "pattern": "给扫描器配误报与回归治理流程",
+          "evidence": "agentshield 维护 false-positive-audit.md（误报分类、仓库审计表、发布门）与内置攻击语料",
+          "mechanism": "误报台账 + 发布门"
+        }
+      ],
+      "verdict": "29 人规模下新浮现的一簇（6 位作者）。它的独特之处在于：前六簇都在约束「怎么做」，C7 约束「怎么证明做对了」。simonw 的 SQLite 流水线与 addyosmani 的量化判据是两种极端——一个用存储结构保证可复算，一个用指标定义保证可复算。",
+      "actionable": "给每个产物配一个可核验的证据：时间戳、摘要校验、或能自己重跑的判据。"
     }
   ],
   "stats": {
-    "users_analyzed": 23,
-    "patterns_total": 127,
-    "methods": 68,
-    "techniques": 59,
-    "analyses_total": 151,
-    "skills_total": 213,
-    "clusters": 6,
-    "max_cluster_members": 10,
+    "users_analyzed": 29,
+    "patterns_total": 157,
+    "methods": 86,
+    "techniques": 71,
+    "analyses_total": 179,
+    "skills_total": 268,
+    "clusters": 7,
+    "max_cluster_members": 21.0,
     "revision": 3,
-    "coverage_change": "C1 8→11, C2 10→15, C3 5→7, C4 9→13, C5 8→10, C6 9→11；6 位英文圈创作者加入后六簇全部复现"
+    "coverage_change": "C1 11→16, C2 15→21, C3 7→8, C4 13→16, C5 10→14, C6 11→16；C7 新增 6"
   },
-  "methodology": "收敛判定：同一方法在 3 位以上互不相识的创作者、不同领域独立出现，且各自有具体机制而非仅有口号。参与者来源：2 位独立发现对象 + 15 位经由司徒K《2026年X上最值得关注的120个中文博主》核验的中文圈 skill 创作者 + 6 位经由 4 份英文策展清单（vivy-yi/awesome-skills、scienceaix/agentskills、itgoyo/awesome-claude-code-skills、obviousworks/Claude-AI-skills-collection-2026）提取的英文圈创作者。复核方式：按机制关键词对 127 条 patterns 的名称与主张做主题匹配，人工核对命中项。",
+  "methodology": "收敛判定：同一方法在 3 位以上互不相识的创作者、不同领域独立出现，且各自给出具体机制而非仅有口号。参与者来源：2 位独立发现对象 + 15 位经由司徒K《2026年X上最值得关注的120个中文博主》核验的中文圈创作者 + 12 位英文圈创作者（4 份英文策展清单提取 + 个人定向筛选）。复核方式：按机制关键词对 157 条 patterns 的名称与主张做主题匹配，人工核对命中项。",
   "caveats": [
-    "样本 23 人中 15 人来自同一份 X 榜单、6 人来自 4 份英文策展清单，来源仍集中——他们本来就是被同一批人关注的一类人。",
-    "中文圈 17 人、英文圈 6 人，比例仍失衡；「跨中英文圈最一致」现在有 6 位英文创作者背书，但样本量差距大，结论应视为强假设而非定论。",
+    "样本 29 人中 27 人来自两份策展清单（1 份 X 榜单 + 4 份英文清单），来源仍集中——他们本来就是被同一批人关注的一类人。",
+    "中文圈 17 人、英文圈 12 人，比例已接近，但仍非均衡随机样本。",
     "收敛簇由关键词匹配 + 人工核对得出，不是算法判定；换一个归类者可能有不同结果。",
     "花叔也在原 X 榜单第 45 位，样本并非完全独立采样。",
+    "组织型账号（anthropics/openai/trailofbits 等）因分页解析不适用而未纳入——组织仓与个人创作者是不同资产类型，应单独建模。",
     "这些是相关性而非因果：用门文件不证明用了门文件就会成功。"
   ]
 }

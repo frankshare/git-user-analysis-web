@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.1",
+  "user": "simonw",
+  "analyses": [
+    {
+      "name": "llm",
+      "repo": "llm",
+      "stars": 12648,
+      "verdict": "用一个统一的命令行入口把多家模型供应商抽象成同一套 prompt/模型语法，是整个作品体系的地基。",
+      "problem": "命令行重度用户与早期 LLM 使用者，在不同供应商 API 之间切换时需要反复改代码、重写参数处理和密钥管理，且结果无法复用。",
+      "mechanism": [
+        "以单一 CLI 暴露 prompt 运行入口，把模型调用参数统一成命令行选项而非供应商专属字段",
+        "把模型接入、片段加载、工具注册等能力拆成可独立安装的插件（llm-anthropic、llm-gemini、llm-openrouter、llm-mistral、llm-mlx、llm-gguf 等均在清单内）",
+        "插件模板化：llm-plugin、llm-plugin-tools 为新增插件提供 cookiecutter 骨架，降低第三方接入门槛"
+      ],
+      "constraints": [
+        "本地材料未见其源码级约束依据；可确认的是其能力边界依赖各供应商 API，接口变化需由对应插件仓库跟进（llm-anthropic、llm-gemini 等均有独立更新日期）",
+        "抽象层越统一，越难暴露供应商特有参数"
+      ],
+      "takeaway": [
+        "核心只做统一入口与调度，把每个供应商的差异下沉到插件，接口变更的影响面被限制在单个插件内",
+        "为插件生态同时提供 cookiecutter 模板与 GitHub template 仓库（llm-plugin、llm-plugin-tools、click-app、python-lib 均成对出现）"
+      ],
+      "limits": [
+        "依赖各模型供应商的 API 稳定性，服务端下线或改协议会使对应插件直接失效",
+        "抽象不覆盖供应商独有的检索、工具调用等特性时，需要绕过统一接口"
+      ]
+    },
+    {
+      "name": "files-to-prompt",
+      "repo": "files-to-prompt",
+      "stars": 2798,
+      "verdict": "把「目录整体喂给模型」这件琐事做成一个确定性的管道式工具，是 Agent 上下文供给的标准件。",
+      "problem": "需要把代码库、文档集整目录内容交给 LLM 分析的开发者，此前只能手工拼接，容易漏文件、乱顺序、丢失路径信息。",
+      "mechanism": [
+        "遍历目录收集文件，输出拼接过的一整段提示文本，供直接粘贴或管道输入",
+        "同类思路在 docs-for-llms（Concatenated documentation for use with LLMs）中再次出现，说明这是可复用的模式而非一次性脚本"
+      ],
+      "constraints": [
+        "最终产物的 token 长度受上下文窗口限制，清单中的 ttok（按 token 计数与截断）即配套的应对工具",
+        "目录遍历是否安全（是否跟随符号链接、是否受 .gitignore 影响）本地材料未见依据"
+      ],
+      "takeaway": [
+        "先做『聚合』再做『压缩』：把目录→文本这一步独立成工具，截断交给另一个专用工具，两者不耦合",
+        "同类重复需求（files-to-prompt 与 docs-for-llms）各自独立建仓库验证，而不是塞进一个大工具"
+      ],
+      "limits": [
+        "对二进制文件与非文本内容无能为力，需要先用其他工具处理（llm-pdf-to-images、llm-video-frames 属于此类补充）",
+        "输出是一次性字符串，无法表达目录间的层级语义"
+      ]
+    },
+    {
+      "name": "claude-code-transcripts",
+      "repo": "claude-code-transcripts",
+      "stars": 1714,
+      "verdict": "把 Agent 运行过程当作一等产物来归档与发布，让过程可复核而非只留结果。",
+      "problem": "使用编码 Agent 的团队与个人，事后无法复现「当时 Agent 做了什么、依据是什么」，调试与教学都缺少可共享材料。",
+      "mechanism": [
+        "提供专门工具链把会话转成可发布的记录，而不是让用户自己翻日志目录手工整理",
+        "与 showboat（create executable documents that demonstrate an agent's work）同属一条思路：把执行证据做成可交付文档"
+      ],
+      "constraints": [
+        "记录内容可能包含敏感内容与凭据，清单中的 scan-for-secrets 说明发布前需要单独做密钥扫描这一环",
+        "本地材料未见其具体导出格式与保留策略依据"
+      ],
+      "takeaway": [
+        "把『过程留痕』做成独立工具，而不是塞进主工具的日志选项，发布者可以按需单独加固（加签名、脱敏）",
+        "会话记录天然可作为写作与教学素材，与 showboat 共享同一套交付思路"
+      ],
+      "limits": [
+        "强绑定 Claude Code 的会话格式，其他编码 Agent 的记录能否解析本地材料未见依据",
+        "会话越长归档体积越大，公开仓库发布还存在泄露风险"
+      ]
+    },
+    {
+      "name": "showboat",
+      "repo": "showboat",
+      "stars": 1239,
+      "verdict": "用一份可执行的文档承载 Agent 的演示过程，把一次性的对话输出转成可重复运行的证据。",
+      "problem": "向他人演示 Agent 的工作结果时，静态截图或粘贴的文本无法证明过程可复现，也难以在评审中逐步对照。",
+      "mechanism": [
+        "以可执行文档为载体组织叙述与运行结果，演示与代码同源",
+        "配套 showboat-demos 仓库存放演示样例，说明该工具依赖外部样例仓库被他人复用与验证"
+      ],
+      "constraints": [
+        "语言选择为 Go，与作者主力 Python 项目不同，需跨语言使用门槛（本地材料仅能确认仓库 language 字段为 Go）",
+        "可执行文档的运行环境依赖随时间推移可能失效"
+      ],
+      "takeaway": [
+        "把『演示』当作产物来设计，而不是事后补录；文档与执行步骤共用同一份内容",
+        "为工具单独建 demos 仓库做活样例，等于给使用者提供了可复制粘贴的最小用例"
+      ],
+      "limits": [
+        "演示仓库若不随上游更新会很快失效",
+        "本地材料未见依据说明其是否支持非 Agent 类别的通用文档场景"
+      ]
+    },
+    {
+      "name": "claude-skills",
+      "repo": "claude-skills",
+      "stars": 929,
+      "verdict": "这是一个被上游收编后主动退场的存档仓库，示范了如何处理自己产出的技能被官方吸收的情况。",
+      "problem": "从 Claude.ai 的 /mnt/skills 目录导出的技能内容此前只能私下流传；Anthropic 建立官方仓库后，原作者需要给出明确的迁移指引，避免使用者继续依赖过时副本。",
+      "mechanism": [
+        "先在 Claude.ai 里用一句 prompt（Create a zip file of everything in your /mnt/skills folder）批量打包环境内置技能，作为获取手段固化进 README",
+        "内容交给官方后，README 顶部直接给出 anthropics/skills 及其固定 commit 的 document-skills 路径，让旧引用可精确迁移",
+        "README 只保留背景文章与获取方法，不保留技能正文，降低副本漂移风险"
+      ],
+      "constraints": [
+        "技能导出依赖 Claude code interpreter 的 /mnt/skills 这一特定环境路径，环境调整即失效",
+        "language 字段为空，说明内容主体是文档与配置文件而非代码，自动化检索与校验能力弱",
+        "固定到具体 commit 的官方路径若被上游重构会失效"
+      ],
+      "takeaway": [
+        "当内容被上游吸收，仓库应转为迁移指引而非继续维护分叉：给出官方地址与可定位的 commit",
+        "把『怎么拿到的』写进 README（一句话 prompt 即可复现），让读者能自行获取而非依赖你的副本"
+      ],
+      "limits": [
+        "依赖 Claude.ai 的 code interpreter 环境，其他平台用户无法复现该获取路径",
+        "仓库已无独立维护价值，后续 star 增长不再对应可用内容"
+      ]
+    },
+    {
+      "name": "tools",
+      "repo": "tools",
+      "stars": 1916,
+      "verdict": "把一堆碎小工具集中公开，并如实标注其中大部分由 LLM 生成，是作者对『AI 代写工具』的一次批量披露。",
+      "problem": "个人日常积累的零散小工具分散在各处无法被他人复用，同时读者无从判断这些一次性工具的质量与来源。",
+      "mechanism": [
+        "以单仓库聚合多款工具，降低复用者的发现成本",
+        "在描述中直接写明 almost entirely generated using LLMs，把生成方式前置说明，不做隐藏"
+      ],
+      "constraints": [
+        "language 字段为 HTML，说明主体是文档与页面型工具而非可复用库",
+        "生成式工具缺少统一测试与维护承诺，清单中未给出质量依据"
+      ],
+      "takeaway": [
+        "把小工具集中到一个仓库并在描述里写清生成方式，读者能自行判断是否值得用",
+        "对『用 AI 大量产出代码』这件事，最省事的信任机制是直接声明而不是隐藏"
+      ],
+      "limits": [
+        "聚合型仓库内各工具独立演化，缺少统一版本与依赖管理（本地材料未见依据）",
+        "生成式代码的长期维护成本由作者独自承担，外部贡献意愿低"
+      ]
+    }
+  ]
+}

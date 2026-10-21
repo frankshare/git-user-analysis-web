@@ -1,0 +1,503 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source）+ raw README/SKILL.md；来源：司徒K《2026年X上最值得关注的120个中文博主》",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "affaan-m",
+    "name": "Affaan Mustafa",
+    "bio": "以 Everything Claude Code (ECC) 为核心的 agent 工具链作者，围绕 Claude Code 生态做技能库、编排、agent 安全扫描与安装分发。",
+    "website": "",
+    "x": "https://x.com/affaanmustafa",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "hybrid",
+    "public_repos": 20,
+    "source_repos": 17,
+    "fork_repos": 3
+  },
+  "stats": {
+    "total_stars_source": 287937,
+    "total_stars_all": 288031,
+    "median_stars": 31,
+    "ge_1000": 2,
+    "between_100_999": 3,
+    "between_10_99": 11,
+    "lt_10": 1,
+    "no_language": 4,
+    "top4_share": 99.8,
+    "top1_share": 99
+  },
+  "repos": [
+    {
+      "name": "ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "stars": 285064,
+      "language": "JavaScript",
+      "updated_at": "2026-10-20T23:08:28Z",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "agentshield",
+      "url": "https://github.com/affaan-m/agentshield",
+      "stars": 1307,
+      "language": "TypeScript",
+      "updated_at": "2026-10-18T02:39:18Z",
+      "description": "AI agent security scanner. Detect vulnerabilities in agent configurations, MCP servers, and tool permissions. Available as CLI, GitHub Action, ECC plugin, and GitHub App integration. 🛡️",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "JARVIS",
+      "url": "https://github.com/affaan-m/JARVIS",
+      "stars": 522,
+      "language": "Python",
+      "updated_at": "2026-06-04T00:14:31Z",
+      "description": "JARVIS: a real-time agentic intelligence-gathering platform powered by autonomous web scraping &amp; OSINT, streamed via Meta Ray-Ban smart glasses",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "claude-swarm",
+      "url": "https://github.com/affaan-m/claude-swarm",
+      "stars": 416,
+      "language": "Python",
+      "updated_at": "2026-02-11T05:00:25Z",
+      "description": "Multi-agent orchestration for Claude Code — decompose tasks, coordinate agents, visualize everything in a rich terminal UI",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "affaan-m",
+      "url": "https://github.com/affaan-m/affaan-m",
+      "stars": 338,
+      "language": null,
+      "updated_at": "2026-10-03T19:08:59Z",
+      "description": "Config files for my GitHub profile.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "x-algorithm-score",
+      "url": "https://github.com/affaan-m/x-algorithm-score",
+      "stars": 56,
+      "language": "TypeScript",
+      "updated_at": "2026-06-13T20:33:13Z",
+      "description": "Chrome extension that scores tweets based on X's recommendation algorithm",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Behavioral_RL",
+      "url": "https://github.com/affaan-m/Behavioral_RL",
+      "stars": 52,
+      "language": "HTML",
+      "updated_at": "2026-06-04T14:08:28Z",
+      "description": "Reinforcement Learning with human behavioral biases integration",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "hermes-agent",
+      "url": "https://github.com/affaan-m/hermes-agent",
+      "stars": 41,
+      "language": "Python",
+      "updated_at": "2026-09-23T18:45:42Z",
+      "description": "The agent that grows with you",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "HyperMamba",
+      "url": "https://github.com/affaan-m/HyperMamba",
+      "stars": 33,
+      "language": "Python",
+      "updated_at": "2025-02-19T05:18:23Z",
+      "description": "All Proprietary Research and Development",
+      "fork": false,
+      "layer": "tool",
+      "category": "信息获取"
+    },
+    {
+      "name": "opencode",
+      "url": "https://github.com/affaan-m/opencode",
+      "stars": 33,
+      "language": "TypeScript",
+      "updated_at": "2026-02-09T09:31:38Z",
+      "description": "The AI coding agent built for the terminal.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "agentofcommerce",
+      "url": "https://github.com/affaan-m/agentofcommerce",
+      "stars": 31,
+      "language": null,
+      "updated_at": "2025-02-09T06:49:55Z",
+      "description": "AI-powered e-commerce automation agent",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "supply-chain-ml-optimization",
+      "url": "https://github.com/affaan-m/supply-chain-ml-optimization",
+      "stars": 22,
+      "language": null,
+      "updated_at": "2026-01-23T03:43:08Z",
+      "description": "Comparing Neural Networks with Newton's Method, SVM and Random Forest for Max-Flow Optimization in Supply Chain Networks",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Sol-Onchain-Analyst",
+      "url": "https://github.com/affaan-m/Sol-Onchain-Analyst",
+      "stars": 21,
+      "language": "Rust",
+      "updated_at": "2025-05-14T14:47:31Z",
+      "description": "Current working version of the Data Aggregator + Analyst agent in one solution via the CLI",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "plugins",
+      "url": "https://github.com/affaan-m/plugins",
+      "stars": 20,
+      "language": "Python",
+      "updated_at": "2026-05-26T03:43:36Z",
+      "description": "OpenAI Plugins",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "quranic-arabic-recognition-dl",
+      "url": "https://github.com/affaan-m/quranic-arabic-recognition-dl",
+      "stars": 20,
+      "language": "Jupyter Notebook",
+      "updated_at": "2026-01-23T03:43:15Z",
+      "description": "Enhancing Handwritten Quranic Arabic Recognition through Deep Learning",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "market-manipulation-microcap-crypto",
+      "url": "https://github.com/affaan-m/market-manipulation-microcap-crypto",
+      "stars": 17,
+      "language": "Jupyter Notebook",
+      "updated_at": "2026-01-23T03:41:58Z",
+      "description": "Discovering Market Manipulation in Microcap Cryptocurrencies - Research",
+      "fork": false,
+      "layer": "tool",
+      "category": "信息获取"
+    },
+    {
+      "name": "econ-research-wi24",
+      "url": "https://github.com/affaan-m/econ-research-wi24",
+      "stars": 11,
+      "language": "Python",
+      "updated_at": "2026-01-23T03:43:36Z",
+      "description": "Economics Research - Winter 2024",
+      "fork": false,
+      "layer": "tool",
+      "category": "信息获取"
+    },
+    {
+      "name": "mcp-server-template",
+      "url": "https://github.com/affaan-m/mcp-server-template",
+      "stars": 10,
+      "language": null,
+      "updated_at": "2025-05-28T22:14:23Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "econ-research-ss24",
+      "url": "https://github.com/affaan-m/econ-research-ss24",
+      "stars": 10,
+      "language": "Python",
+      "updated_at": "2026-01-23T03:43:34Z",
+      "description": "Economics Research - Summer 2024",
+      "fork": false,
+      "layer": "tool",
+      "category": "信息获取"
+    },
+    {
+      "name": "affaan",
+      "url": "https://github.com/affaan-m/affaan",
+      "stars": 7,
+      "language": "Jupyter Notebook",
+      "updated_at": "2024-12-01T03:11:07Z",
+      "description": "Affaan's Personal Projects",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/affaan-m",
+    "count": 5,
+    "layers": {
+      "skill": 1,
+      "tool": 2,
+      "other": 2
+    },
+    "items": [
+      {
+        "name": "ECC",
+        "layer": "skill",
+        "category": "Skill 工程",
+        "repo": "ECC",
+        "subdir": "",
+        "summary": "描述为 agent harness 性能优化系统，含 skills、instincts、memory、security 与 research-first 开发，面向 Claude Code / Codex / Opencode / Cursor 等多 harness；仓库自述属 Everything Claude Code 生态。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "agentshield",
+        "layer": "tool",
+        "category": "Agent 基础设施",
+        "repo": "agentshield",
+        "subdir": "",
+        "summary": "AI agent 配置安全扫描器，检测硬编码密钥、权限过宽、hook 注入、MCP 风险与 prompt 注入面，提供 CLI、GitHub Action、ECC 插件与 GitHub App 集成。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "claude-swarm",
+        "layer": "tool",
+        "category": "Agent 基础设施",
+        "repo": "claude-swarm",
+        "subdir": "",
+        "summary": "Claude Code 多 agent 编排：Opus 任务分解成依赖图、并行执行、文件锁与预算约束、Opus 质量门、Rich 实时 TUI 与会话回放。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "JARVIS",
+        "layer": "other",
+        "category": "Agent 基础设施",
+        "repo": "JARVIS",
+        "subdir": "",
+        "summary": "实时 agent 情报平台，自主网页抓取与 OSINT，经 Meta Ray-Ban 智能眼镜流式回传。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "mcp-server-template",
+        "layer": "other",
+        "category": "策展与目录",
+        "repo": "mcp-server-template",
+        "subdir": "",
+        "summary": "MCP server 脚手架模板仓库，无语言标注与描述，具体内容本地材料未见依据。",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "name": "Everything Claude Code (ECC)",
+      "repo": "ECC",
+      "stars": 285064,
+      "verdict": "单仓库承载了整个生态的入口与品牌：285064 星占其自有仓库 star 的 99.0%，其结构决定了整个作品体系的可发现性。",
+      "problem": "面向同时使用 Claude Code、Codex、Opencode、Cursor 等多个 coding agent harness 的开发者与团队，需要一套跨 harness 的 skills / instincts / memory / security 资产，避免每换一个 harness 就重写一遍配置。",
+      "mechanism": [
+        "把 agent 能力资产沉淀为可移植的 skills / instincts / memory 三类单元，而不是散落在各个项目的私有 .claude 目录。",
+        "用「harness 性能优化」作为统一叙事，把安全（security）与 research-first 开发流程和技能包放在同一套体系内售卖。",
+        "作为整个生态的上游容器：agentshield 以 ECC plugin 形态接入，claude-swarm 在致谢中把 ECC 列为 agent 模式来源。"
+      ],
+      "constraints": [
+        "强依赖 Claude Code 及其插件/技能目录约定（.claude、SKILL.md、hooks 等），迁移到其他 harness 需要适配层。",
+        "README 中提到生态规模 42K+ stars，而本仓库自身 285064 星，两组数字口径不同（生态累计 vs 单仓库），不能混用。",
+        "本地材料未见 ECC 的 README 全文，上述机制中除描述字段与 agentshield / claude-swarm 的交叉引用外，具体实现细节未见依据。"
+      ],
+      "takeaway": [
+        "把多 harness 的重复配置收敛成一套资产目录（skills / instincts / memory），并为每个下游工具提供「插件式」接入点，而不是各自造轮子。",
+        "给上层资产库配套一个独立的安全扫描产品（agentshield），让生态同时具备分发入口与质量护栏。"
+      ],
+      "limits": [
+        "生态强绑定 Anthropic 生态与 Node/TypeScript 工具链，跨厂商复制成本高。",
+        "单一仓库体量过大带来的维护与审阅成本，在本地材料中未见对应的模块化说明。"
+      ]
+    },
+    {
+      "name": "AgentShield",
+      "repo": "agentshield",
+      "stars": 1307,
+      "verdict": "把「agent 配置安全」做成了可打分、可进 CI、可交付审计证据的工程化产品，而不是一份检查清单。",
+      "problem": "使用 Claude Code 等 agent 的开发者在安装社区 skill、接入 MCP server、配置 hooks 时没有自动化审计手段；skill 市场本身就有恶意内容（README 称某市场 341/2857 个社区 skill 为恶意），配置层的密钥、越权、hook 注入问题在变成实际利用前无人拦截。",
+      "mechanism": [
+        "以 268 条规则 / 15 个模块覆盖 secrets、permissions、hooks、MCP、agents 五类，评分从 100 分起扣（critical 25 / high 15 / medium 5 / low 2），输出 A–F 等级与分项分。",
+        "引入 runtimeConfidence 分级（active-runtime、project-local-optional、template-example、docs-example、plugin-cache、plugin-manifest、hook-code），并对低置信来源按 0.25x/0.5x/0.75x 折扣、单文件封顶 10 分扣分，抑制误报而不隐藏真实密钥。",
+        "产出机器可读接口：JSON 报告为唯一受支持接口，另有 SARIF、HTML、evidence pack（含 SHA-256 摘要）、remediation plan（稳定哈希指纹）与 compliance 映射（SOC2 / PCI / ISO）。",
+        "在同一扫描里做多模式分析：--opus 三 agent 对抗（红队/蓝队/审计）、--injection、--sandbox、--taint、--supply-chain，并以 --corpus-gate 作为回归门禁。"
+      ],
+      "constraints": [
+        "评分模型是启发式扣分：真实密钥与结构性策略问题分值权重不同，配置写法差异会直接影响等级，误报必须靠 false-positive-audit.md 与人工 triage 消化。",
+        "--opus / --injection 依赖 ANTHROPIC_API_KEY，且会把被扫描的配置内容发送到模型服务（README 明确提示 secrets 未脱敏时不要用 OrcaRouter provider）。",
+        "npm 包根导出指向 CLI 入口而非稳定语义的 scanner 库，自动化方应使用 JSON 报告而不是 import 内部模块。"
+      ],
+      "takeaway": [
+        "误报治理用「来源置信度 + 分数折扣 + 每文件封顶」三件套，而不是一刀切屏蔽规则。",
+        "把安全工具做成能进 CI 的门禁：baseline 漂移对比 + --gate + SARIF 上传 + org policy pack，让「修」比「报」更重要。",
+        "为 --fix 加 verify-after-fix：修复后重扫，分数回退或新增高危即整体回滚，并输出可核验的 attestation digest。"
+      ],
+      "limits": [
+        "覆盖重心是配置文件层（settings/CLAUDE.md/agents/hooks/MCP），对 skill-md 提示文本的注入类规则明显更窄，非 shell hook 实现也只覆盖少数语言无关信号。",
+        "示例目录启发式（docs/、examples/、tutorials/ 等）之外的教程包仍可能被当作活配置，误报面未完全收敛。",
+        "本地材料未见依据：除 268 条规则 / 15 模块与少数实现细节外的性能指标、误报率基线数据。"
+      ]
+    },
+    {
+      "name": "Claude Swarm",
+      "repo": "claude-swarm",
+      "stars": 416,
+      "verdict": "把多 agent 协作中真正会出事的三点（文件冲突、成本失控、输出不整合）做成了可执行的机制约束。",
+      "problem": "用 Claude Code 处理大型重构时，单次会话难覆盖多个互相依赖的子任务；并行开多个 agent 又会互相覆盖文件、烧钱、产出互相不一致，且事后无法复盘每个 agent 干了什么。",
+      "mechanism": [
+        "三阶段流水线：Opus 4.6 分解任务为依赖图（NetworkX 拓扑排序）→ 并行 agent 按 wave 执行（有依赖的等前置完成）→ Opus 质量门复核合并结果，worker 层用更便宜的 Haiku。",
+        "编排层加硬约束：悲观文件锁防写冲突、budget 硬上限（超限取消剩余任务）、失败任务按 --retry 重试、--max-agents 限并发。",
+        "全流程以 JSONL 事件记录，支持 claude-swarm replay <id> 复盘；Rich Live 面板实时显示进度、工具调用、成本与冲突。"
+      ],
+      "constraints": [
+        "强依赖 Claude Agent SDK (v0.1.35+) 与 Anthropic 模型，Opus 分解与质量门是必需的高成本调用点。",
+        "文件锁是悲观锁，同一文件被两个 agent 需要的任务会串行化，收益依赖分解质量。",
+        "README 自述测试 44 个用例通过，覆盖面相对工具复杂度偏薄。"
+      ],
+      "takeaway": [
+        "用「文件锁 + 预算上限 + 依赖图」三件套把并行 agent 的三类常见事故变成结构上不可能，而不是靠 prompt 提醒。",
+        "模型分层：规划与复核用强模型，执行用便宜模型，并把该选择显式写进架构说明。",
+        "把每次编排记录成可回放的事件流，事后复盘与成本归因才有依据。"
+      ],
+      "limits": [
+        "质量门只看合并输出的静态质量，跨 agent 集成缺陷与遗漏边界仍可能漏检。",
+        "本地材料未见依据：真实并发规模、冲突率、相对单 agent 的成功率对比等量化效果数据。"
+      ]
+    },
+    {
+      "name": "JARVIS",
+      "repo": "JARVIS",
+      "stars": 522,
+      "verdict": "把 OSINT 情报抓取做成可佩戴设备上的实时流式 agent，是典型的场景先行型作品。",
+      "problem": "安全研究与情报分析人员需要持续监控网页与多源信息，但传统仪表盘是轮询式、滞后且需要盯着屏幕；场景要求是戴着智能眼镜就能实时接收。",
+      "mechanism": [
+        "以自主网页抓取与 OSINT 能力组成实时 agent 管线，持续产出情报流。",
+        "通过 Meta Ray-Ban 智能眼镜做流式回传，把输出通道从屏幕搬到可穿戴设备。",
+        "Python 实现，作为独立平台而非插件形态存在。"
+      ],
+      "constraints": [
+        "输出链路绑定 Meta Ray-Ban 智能眼镜这一具体硬件形态。",
+        "自主抓取必然受目标站点反爬、频率限制与访问合规约束。"
+      ],
+      "takeaway": [
+        "选一个具体的输出终端（眼镜、手机、语音），按终端反推 agent 需要的延迟与结果粒度，而不是先做通用面板。",
+        "本地材料未见依据：抓取源清单、刷新频率、解析准确率与硬件端延迟等实现细节。"
+      ],
+      "limits": [
+        "硬件绑定与网络可达性构成硬边界。",
+        "仅凭仓库描述与 star 数无法判断情报源覆盖度与结果可靠性。"
+      ]
+    },
+    {
+      "name": "mcp-server-template",
+      "repo": "mcp-server-template",
+      "stars": 10,
+      "verdict": "一个被放在公开目录里的 MCP server 脚手架模板，价值在于作为生态入口与示例基线，而非独立产品。",
+      "problem": "写 MCP server 需要重复搭脚手架：目录结构、配置注册、权限与超时设置，新项目容易照抄到有风险（例如 npx -y 免确认安装、绑定 0.0.0.0）的配置写法。",
+      "mechanism": [
+        "提供可复制的 MCP server 模板目录，降低新 MCP server 的起步成本。",
+        "作为 ECC 生态内的示例配置，配合 agentshield 扫描器的 MCP 规则族使用。"
+      ],
+      "constraints": [
+        "仓库无语言字段、无描述，内容范围无法从清单判断。",
+        "模板类资产天然位于「示例即配置」的风险区，需要按 template-example 置信度解读而非直接当活配置。"
+      ],
+      "takeaway": [
+        "把脚手架模板纳入自家扫描器的示例路径约定（mcp-configs/ 之类），让「发货模板」不会变成「默认不安全配置」。"
+      ],
+      "limits": [
+        "本地材料未见依据：模板内容、语言栈与维护活跃度（最后更新 2025-05-28）。"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "把大模型用在两个关键点上，其余留给廉价模型",
+      "kind": "method",
+      "evidence": [
+        "claude-swarm",
+        "agentshield",
+        "ECC"
+      ],
+      "claim": "claude-swarm 用 Opus 做分解与质量门、Haiku 做执行；agentshield 用 Opus 跑红队/蓝队/审计三 agent 对抗而规则扫描走本地代码；ECC 的整体叙事是 skills/agent 资产而非单次模型调用。三处复现同一取舍：强模型负责需要全局判断的环节，规模化执行交给便宜或本地路径。"
+    },
+    {
+      "id": "P2",
+      "name": "声明式配置 + 结构化 schema 作为对外契约",
+      "kind": "method",
+      "evidence": [
+        "claude-swarm",
+        "agentshield",
+        "ECC"
+      ],
+      "claim": "claude-swarm 用 swarm.yaml 声明 agent 类型与连接关系，agentshield 用 rule pack JSON / policy JSON / baseline JSON 定义扩展与门禁，ECC 用 skills/instincts/memory 目录做资产契约。可复现的做法：把可配置的部分全部落成有 schema、可校验、fail-closed 的文件，而不是散落在代码与 prompt 里。"
+    },
+    {
+      "id": "P3",
+      "name": "同一产品覆盖 CLI / Action / App / 包四种分发面",
+      "kind": "method",
+      "evidence": [
+        "agentshield",
+        "claude-swarm",
+        "ECC"
+      ],
+      "claim": "agentshield 同时提供 CLI、GitHub Action、GitHub App 与 npm 包；claude-swarm 提供 CLI、PyPI 包与 --demo 免 key 演示；ECC 作为上游容器被多个仓库以插件/包形式引用。复现的做法是：核心逻辑一个实现，交互面按使用者所处环境（本地终端、CI 流水线、组织平台）分别包一层。"
+    },
+    {
+      "id": "P4",
+      "name": "可核验的证据与回放产物",
+      "kind": "technique",
+      "evidence": [
+        "agentshield",
+        "claude-swarm"
+      ],
+      "claim": "agentshield 的 evidence pack 带 SHA-256 摘要、evidence-pack verify/inspect/fleet 与修复 attestation digest；claude-swarm 把每次编排记为 JSONL 事件并支持 replay。适合单仓库内借鉴，但尚不足以称为跨三个仓库复现的方法。"
+    },
+    {
+      "id": "P5",
+      "name": "给扫描器/执行器配误报与回归治理流程",
+      "kind": "technique",
+      "evidence": [
+        "agentshield"
+      ],
+      "claim": "agentshield 维护 false-positive-audit.md（False-Positive Taxonomy、Repo Audit Worksheet、Release Gate）、--corpus 内置攻击语料与 --corpus-gate 门禁、针对规则族的回归测试。仅在 agentshield 一个仓库中见到完整闭环，标为局部技巧。"
+    }
+  ],
+  "sources": [
+    "https://github.com/affaan-m",
+    "https://github.com/affaan-m?tab=repositories",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

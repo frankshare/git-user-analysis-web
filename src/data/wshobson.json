@@ -1,0 +1,655 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source）+ raw README/SKILL.md；来源：司徒K《2026年X上最值得关注的120个中文博主》",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "wshobson",
+    "name": "Wes Johnson",
+    "bio": "用一套 Markdown 源做多 harness 编码代理插件市场的作者，把 202 个 agent / 185 个 skill 铺给 Claude Code、Codex、Cursor、OpenCode、Copilot 等七种编码工具",
+    "website": "",
+    "x": "",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "hybrid",
+    "public_repos": 32,
+    "source_repos": 12,
+    "fork_repos": 20
+  },
+  "stats": {
+    "total_stars_source": 42369,
+    "total_stars_all": 42474,
+    "median_stars": 17,
+    "ge_1000": 1,
+    "between_100_999": 2,
+    "between_10_99": 3,
+    "lt_10": 6,
+    "no_language": 1,
+    "top4_share": 99.9,
+    "top1_share": 97.6
+  },
+  "repos": [
+    {
+      "name": "agents",
+      "url": "https://github.com/wshobson/agents",
+      "stars": 41351,
+      "language": "Python",
+      "updated_at": "2026-10-19T18:28:14Z",
+      "description": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "maverick-mcp",
+      "url": "https://github.com/wshobson/maverick-mcp",
+      "stars": 707,
+      "language": "Python",
+      "updated_at": "2026-10-17T23:30:31Z",
+      "description": "Stock market MCP server for Yahoo Finance data, technical analysis, portfolio tracking, and Python backtesting. Runs locally with no API key for core tools.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "financial-chat",
+      "url": "https://github.com/wshobson/financial-chat",
+      "stars": 236,
+      "language": "Python",
+      "updated_at": "2025-08-10T15:00:18Z",
+      "description": "A financial chat application powered by LangChain, OpenBB, and Claude 3 Opus.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "Finance",
+      "url": "https://github.com/wshobson/Finance",
+      "stars": 39,
+      "language": "Python",
+      "updated_at": "2026-04-02T00:55:42Z",
+      "description": "150+ quantitative finance Python programs to help you gather, manipulate, and analyze stock market data",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "wshobson",
+      "url": "https://github.com/wshobson/wshobson",
+      "stars": 26,
+      "language": null,
+      "updated_at": "2026-09-30T14:56:57Z",
+      "description": "About Me",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "backhacker",
+      "url": "https://github.com/wshobson/backhacker",
+      "stars": 19,
+      "language": "Python",
+      "updated_at": "2026-03-25T20:22:22Z",
+      "description": "Legacy trading bot/backtester using Backtrader",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "minimax-dgx-spark",
+      "url": "https://github.com/wshobson/minimax-dgx-spark",
+      "stars": 17,
+      "language": "Jinja",
+      "updated_at": "2026-01-24T17:48:14Z",
+      "description": "MiniMax M2 inference server for NVIDIA DGX Spark",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "python-cheatsheet",
+      "url": "https://github.com/wshobson/python-cheatsheet",
+      "stars": 10,
+      "language": "Python",
+      "updated_at": "2023-10-03T22:41:35Z",
+      "description": "Comprehensive Python Cheatsheet",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "financial-machine-learning",
+      "url": "https://github.com/wshobson/financial-machine-learning",
+      "stars": 9,
+      "language": "Python",
+      "updated_at": "2023-10-08T01:29:49Z",
+      "description": "A curated list of practical financial machine learning tools and applications.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "RustQuant",
+      "url": "https://github.com/wshobson/RustQuant",
+      "stars": 6,
+      "language": "Rust",
+      "updated_at": "2023-06-29T21:29:32Z",
+      "description": "Rust library for quantitative finance.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "backtesting.py",
+      "url": "https://github.com/wshobson/backtesting.py",
+      "stars": 5,
+      "language": "Python",
+      "updated_at": "2023-08-24T02:06:46Z",
+      "description": "🔎 📈 🐍 💰 Backtest trading strategies in Python.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "eiten",
+      "url": "https://github.com/wshobson/eiten",
+      "stars": 5,
+      "language": "Python",
+      "updated_at": "2026-03-25T19:53:09Z",
+      "description": "Statistical and Algorithmic Investing Strategies for Everyone",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pivot-peak",
+      "url": "https://github.com/wshobson/pivot-peak",
+      "stars": 5,
+      "language": "Python",
+      "updated_at": "2026-03-30T17:37:17Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "get_all_tickers",
+      "url": "https://github.com/wshobson/get_all_tickers",
+      "stars": 4,
+      "language": "Python",
+      "updated_at": "2022-09-04T16:15:43Z",
+      "description": "Get all publicly traded tickers with this library",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "aws-generativeai-partner-samples",
+      "url": "https://github.com/wshobson/aws-generativeai-partner-samples",
+      "stars": 4,
+      "language": "Jupyter Notebook",
+      "updated_at": "2024-04-04T00:28:05Z",
+      "description": "This repository contains a collection of Generative AI samples and examples using AWS services and AWS partner products.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "volatility-trading",
+      "url": "https://github.com/wshobson/volatility-trading",
+      "stars": 3,
+      "language": "Python",
+      "updated_at": "2023-04-10T21:47:25Z",
+      "description": "A complete set of volatility estimators based on Euan Sinclair's Volatility Trading",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "report-mAIstro",
+      "url": "https://github.com/wshobson/report-mAIstro",
+      "stars": 3,
+      "language": "Jupyter Notebook",
+      "updated_at": "2025-02-01T17:30:11Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "abideify",
+      "url": "https://github.com/wshobson/abideify",
+      "stars": 3,
+      "language": "Python",
+      "updated_at": "2025-01-28T18:33:39Z",
+      "description": "PDF to Podcast, man",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ip_sniffer",
+      "url": "https://github.com/wshobson/ip_sniffer",
+      "stars": 3,
+      "language": "Rust",
+      "updated_at": "2019-01-18T00:32:26Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "awesome-ai-plugins",
+      "url": "https://github.com/wshobson/awesome-ai-plugins",
+      "stars": 2,
+      "language": "Python",
+      "updated_at": "2026-10-04T18:36:58Z",
+      "description": "A curated list of the best awesome AI plugins for AI assistants including Claude Code, OpenAI Codex / ChatGPT, Gemini, Antigravity, Pi / Oh My Pi, Grok, OpenCodek DSH, Kimi and More. https://hol.or…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "zipline_bundles",
+      "url": "https://github.com/wshobson/zipline_bundles",
+      "stars": 2,
+      "language": "Python",
+      "updated_at": "2023-09-30T17:16:44Z",
+      "description": "some zipline data bundles",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "cap_comp_openbb_example",
+      "url": "https://github.com/wshobson/cap_comp_openbb_example",
+      "stars": 2,
+      "language": "Python",
+      "updated_at": "2026-03-26T10:22:38Z",
+      "description": "OpenBB Terminal Pro Custom Backend Integration",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "notebooks",
+      "url": "https://github.com/wshobson/notebooks",
+      "stars": 2,
+      "language": "Jupyter Notebook",
+      "updated_at": "2024-03-29T06:18:18Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "programming-collective-intelligence-code",
+      "url": "https://github.com/wshobson/programming-collective-intelligence-code",
+      "stars": 2,
+      "language": "Python",
+      "updated_at": "2014-02-06T03:37:39Z",
+      "description": "Examples from Programming Collective Intelligence",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "simple_chat",
+      "url": "https://github.com/wshobson/simple_chat",
+      "stars": 2,
+      "language": "Rust",
+      "updated_at": "2019-01-18T12:16:12Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "cookbook",
+      "url": "https://github.com/wshobson/cookbook",
+      "stars": 2,
+      "language": "Jupyter Notebook",
+      "updated_at": "2024-05-23T19:38:18Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "nomad_nibbles",
+      "url": "https://github.com/wshobson/nomad_nibbles",
+      "stars": 1,
+      "language": "Elixir",
+      "updated_at": "2023-11-07T17:08:08Z",
+      "description": "NomadNibbles demo Elixir App",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "flowgre",
+      "url": "https://github.com/wshobson/flowgre",
+      "stars": 1,
+      "language": "Go",
+      "updated_at": "2025-12-28T21:02:02Z",
+      "description": "Flowgre - slinging packets since 2022!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "calendlex",
+      "url": "https://github.com/wshobson/calendlex",
+      "stars": 1,
+      "language": "Elixir",
+      "updated_at": "2026-03-03T07:04:34Z",
+      "description": "Simple Calendly clone with Phoenix LiveView",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mcp-registry",
+      "url": "https://github.com/wshobson/mcp-registry",
+      "stars": 1,
+      "language": "Go",
+      "updated_at": "2026-07-20T13:17:55Z",
+      "description": "Official Docker MCP registry",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ftcourse",
+      "url": "https://github.com/wshobson/ftcourse",
+      "stars": 1,
+      "language": "Jupyter Notebook",
+      "updated_at": "2024-05-19T07:02:54Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "wshobson.github.io",
+      "url": "https://github.com/wshobson/wshobson.github.io",
+      "stars": 0,
+      "language": "HTML",
+      "updated_at": "2026-09-30T14:43:56Z",
+      "description": "sethhobson.com — single-page personal site on GitHub Pages",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/wshobson",
+    "count": 7,
+    "layers": {
+      "skill": 1,
+      "tool": 4,
+      "other": 2
+    },
+    "items": [
+      {
+        "name": "agents",
+        "layer": "skill",
+        "category": "Agent 基础设施",
+        "repo": "agents",
+        "subdir": "",
+        "summary": "94 个插件的单一市场，含 202 agents / 185 skills / 105 commands，一份 Markdown 源 + 每 harness 的适配器生成产物",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "maverick-mcp",
+        "layer": "tool",
+        "category": "Agent 基础设施",
+        "repo": "maverick-mcp",
+        "subdir": "",
+        "summary": "本地运行的股票 MCP server，核心工具免 API key，含技术分析、组合跟踪与 Python 回测",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "financial-chat",
+        "layer": "tool",
+        "category": "Agent 基础设施",
+        "repo": "financial-chat",
+        "subdir": "",
+        "summary": "LangChain + OpenBB + Claude 3 Opus 驱动的金融问答应用",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "cap_comp_openbb_example",
+        "layer": "other",
+        "category": "Skill 工程",
+        "repo": "cap_comp_openbb_example",
+        "subdir": "",
+        "summary": "OpenBB Terminal Pro 自定义后端接入示例",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "minimax-dgx-spark",
+        "layer": "tool",
+        "category": "Agent 基础设施",
+        "repo": "minimax-dgx-spark",
+        "subdir": "",
+        "summary": "面向 NVIDIA DGX Spark 的 MiniMax M2 推理服务",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "pivot-peak",
+        "layer": "other",
+        "category": "其他",
+        "repo": "pivot-peak",
+        "subdir": "",
+        "summary": "无描述信息的 Python 仓库，本地材料未见依据",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "backhacker",
+        "layer": "tool",
+        "category": "其他",
+        "repo": "backhacker",
+        "subdir": "",
+        "summary": "基于 Backtrader 的旧版交易机器人 / 回测器",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "name": "多 harness 插件市场",
+      "repo": "agents",
+      "stars": 41351,
+      "verdict": "把「写 prompt 集合」做成有适配层、有校验、有安装路由的分发工程，而非一堆散装 Markdown",
+      "problem": "同一批 agent/skill 想同时在 Claude Code、Codex CLI、Cursor、OpenCode、Antigravity、Copilot、Pi 上跑，但每家的目录结构、清单格式、模型别名和工具权限约定都不同，社区现有 skill 仓库基本是单 harness 硬绑",
+      "mechanism": [
+        "只维护 Claude Code 插件格式的 Markdown 源，94 个插件按领域（python-development、javascript-typescript、developer-essentials、security-scanning 等）分组",
+        "用 tools/adapters 下的适配器把源转成各 harness 需要的产物：Codex 的 TOML agent、OpenCode/Copilot 的生成文件与翻译过的工具权限、Antigravity 的生成插件、Pi 的 prompt 模板",
+        "模型只写 opus/sonnet/haiku/fable/inherit 这类别名，由 capabilities.py 映射到各 harness 的模型设置，部分 inherit 落到固定默认值",
+        "两条安装路径并存：原生市场（Claude Code/Codex/Cursor）直接指向源，OpenCode/Copilot/Pi 等走 make install-* 从 clone 生成",
+        "质量闸用 make generate-all / make validate STRICT=1 / make garden 做结构与文档一致性检查，再由 plugin-eval 做免模型调用的静态 skill 打分"
+      ],
+      "constraints": [
+        "Codex 有 8 KB 预算，超长 skill body 在生成副本里必须拆成引用文件，与原生安装读原始 body 的行为不一致",
+        "Pi 的 agent 需要额外的 subagent 扩展才能用，能力矩阵随 harness 能力裁剪",
+        "plugin-eval 的 LLM judge 与 Monte Carlo 层属实验性，未与人工标注对齐，只描述模型评分"
+      ],
+      "takeaway": [
+        "内容源与分发格式解耦：Markdown 只写一遍，格式问题全部压进适配器层",
+        "把「某个 harness 缺什么能力」写进显式能力矩阵（docs/harnesses.md），而不是让使用者自己踩",
+        "免模型调用的静态检查做第一道闸，LLM 评分标成实验并注明未验证"
+      ],
+      "limits": [
+        "生成产物必须随源同步，适配器与 harness 版本演进耦合",
+        "外部 marketplace 依赖（Pensyve 云端 2026-10-01 已关闭）需退回自托管",
+        "评分不构成任务成功率证明"
+      ]
+    },
+    {
+      "name": "本地股票 MCP server",
+      "repo": "maverick-mcp",
+      "stars": 707,
+      "verdict": "把金融数据能力做成本地 MCP 进程，用免 key 的核心工具换取开箱即用",
+      "problem": "AI 编码助手要做股票分析、指标计算和策略回测时，接第三方金融 API 要 key、要配额、要联网，作者本人和同类用户都被卡在这层",
+      "mechanism": [
+        "以 MCP server 形式暴露 Yahoo Finance 数据、技术分析、组合跟踪与 Python 回测工具",
+        "核心工具本地直跑且不需要 API key，降低首次接入门槛",
+        "以 Python 实现并保持本地运行，数据流不经第三方中转服务"
+      ],
+      "constraints": [
+        "依赖 Yahoo Finance 的非官方数据接口，字段与可用性受上游影响",
+        "本地进程意味着没有多用户共享的缓存与鉴权层"
+      ],
+      "takeaway": [
+        "MCP 工具集优先保证「零配置核心路径」，再把需要 key 的能力放到旁路",
+        "本地优先的实现让调试和离线复现都变简单"
+      ],
+      "limits": [
+        "免 key 是相对优势而非绝对，接口一旦收紧就失效",
+        "面向股票行情分析，与 coding agent 场景无直接耦合"
+      ]
+    },
+    {
+      "name": "LangChain 金融问答",
+      "repo": "financial-chat",
+      "stars": 236,
+      "verdict": "OpenBB 数据源 + Claude 3 Opus 的 RAG 问答样例，属早期探索性作品",
+      "problem": "个人投资者想用自然语言问行情与指标，但自己搭检索链路门槛高",
+      "mechanism": [
+        "以 LangChain 串联提问、检索与生成",
+        "数据侧接 OpenBB 终端的量化数据能力",
+        "生成侧用 Claude 3 Opus 负责自然语言解释"
+      ],
+      "constraints": [
+        "强依赖 LangChain、OpenBB 与 Anthropic API 三方，版本漂移易失效",
+        "README 材料未说明评测与数据时效处理"
+      ],
+      "takeaway": [
+        "先用现成数据终端（OpenBB）省掉数据管道，再谈自建"
+      ],
+      "limits": [
+        "本地材料未见依据说明其是否仍在维护（最近更新 2025-08）",
+        "该仓库未与 agents 仓形成代码复用关系"
+      ]
+    },
+    {
+      "name": "OpenBB Terminal Pro 自定义后端",
+      "repo": "cap_comp_openbb_example",
+      "stars": 2,
+      "verdict": "厂商后端接入样例，价值在参考而非复用",
+      "problem": "需要给 OpenBB Terminal Pro 接入定制后端的开发者缺少可抄的最小样例",
+      "mechanism": [
+        "给出 Pro 版 custom backend 的接入代码与配置位置",
+        "作为接口契约的活文档"
+      ],
+      "constraints": [
+        "绑定 OpenBB Pro 商业版，版本与授权变化即失效"
+      ],
+      "takeaway": [
+        "外部服务接入先写最小可跑样例，再谈功能"
+      ],
+      "limits": [
+        "星数极低，说明样例影响面很小",
+        "本地材料未见依据说明完整步骤"
+      ]
+    },
+    {
+      "name": "DGX Spark 推理服务",
+      "repo": "minimax-dgx-spark",
+      "stars": 17,
+      "verdict": "为特定硬件提供的模型服务封装，场景窄但形态清晰",
+      "problem": "在 NVIDIA DGX Spark 上跑 MiniMax M2 推理需要正确的服务化配置，硬件与模型组合特殊",
+      "mechanism": [
+        "用 Jinja 模板渲染部署配置",
+        "面向 DGX Spark 单一硬件目标做适配"
+      ],
+      "constraints": [
+        "绑定 DGX Spark 硬件与 MiniMax M2 模型",
+        "星数低、更新时间早，本地材料未见后续维护迹象"
+      ],
+      "takeaway": [
+        "硬件专用服务用模板化配置交付，便于版本管理"
+      ],
+      "limits": [
+        "不可移植到通用服务器",
+        "与 agent/skill 体系无关，属独立支线"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "单一源 + 多目标适配层",
+      "kind": "method",
+      "evidence": [
+        "agents",
+        "maverick-mcp",
+        "financial-chat",
+        "cap_comp_openbb_example"
+      ],
+      "claim": "内容或数据只写一份，格式/协议差异由适配层或第三方抽象（OpenBB、MCP）消化；agents 仓最完整，其余三个是把同一逻辑套在不同外部接口上的小规模复现"
+    },
+    {
+      "id": "P2",
+      "name": "把生成与校验拆成可复跑的脚本入口",
+      "kind": "method",
+      "evidence": [
+        "agents",
+        "minimax-dgx-spark",
+        "cap_comp_openbb_example"
+      ],
+      "claim": "派生内容用 make generate-all / validate / garden 一次重跑与检查，Jinja 模板与示例仓也沿用「配置生成」而非手改产物"
+    },
+    {
+      "id": "P3",
+      "name": "量化金融是长期主线，工具形态一路演进",
+      "kind": "method",
+      "evidence": [
+        "backhacker",
+        "maverick-mcp",
+        "financial-chat",
+        "cap_comp_openbb_example"
+      ],
+      "claim": "从 Backtrader 回测机器人 → LangChain+OpenBB 问答 → 本地 MCP server，同一作者在股票数据与策略验证上反复迭代五个以上仓库"
+    },
+    {
+      "id": "P4",
+      "name": "生态资源以 fork 形式保留引用",
+      "kind": "technique",
+      "evidence": [
+        "Finance",
+        "python-cheatsheet",
+        "financial-machine-learning",
+        "backtesting.py",
+        "awesome-ai-plugins"
+      ],
+      "claim": "fork 一批上游金融/awesome 清单作为个人资料索引，只做 5–39 星的低星引用，不投入维护成本"
+    },
+    {
+      "id": "P5",
+      "name": "显式声明未验证部分",
+      "kind": "technique",
+      "evidence": [
+        "agents"
+      ],
+      "claim": "README 里直接写 plugin-eval 的 LLM judge 未与人工标注对齐、8 KB 预算限制、外部 marketplace 云端关闭，把失效条件写在入口处"
+    }
+  ],
+  "sources": [
+    "https://github.com/wshobson",
+    "https://github.com/wshobson?tab=repositories",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

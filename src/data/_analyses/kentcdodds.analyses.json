@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.1",
+  "user": "kentcdodds",
+  "analyses": [
+    {
+      "name": "kcd-skills",
+      "repo": "kcd-skills",
+      "stars": 48,
+      "verdict": "把个人 Agent 工作流做成可一键安装的 skill 集合，除 autopilot 外全部绑定 Kent 自己的账号与私有包",
+      "problem": "Kent 需要在多个项目/多个 agent 环境里复用同一套 PR 推进、摩擦归档、视觉回顾流程；普通仓库里的散落脚本无法被 agent 直接发现和执行，也无法版本化分发",
+      "mechanism": [
+        "每个 skill 是一个带 SKILL.md 式指令与 references/scripts 的目录，同时被 npx skills add 按名字单装或整体安装",
+        "把全部 skill 与脚本打进一个 npm 包 kcd-skills（Node 20+、零运行时依赖），保证一个版本包含所有 skill",
+        "autopilot 做成一次性命令而非安装项：npx kcd-skills@latest autopilot 打印指令，同一个包承载所有 autopilot 子命令（audit/score/finding/host/triage/plan/report/ship-pr/templates）",
+        "涉及宿主平台的信息（PR 状态、评审、CI、分支规则）不由 CLI 自取，而是打印所需字段与 JSON 格式，由调用方 agent 用任意工具收集；GitHub 上 ship-pr 可用已认证的 gh 自取",
+        "推 main 触发 semantic-release 依 conventional commits 自动发版到 npm，使用 trusted publishing"
+      ],
+      "constraints": [
+        "多数 skill 调 Kent 私有 Kody 包（@kentcdodds/ship-pr、@kentcdodds/friction-log），外部用户不能直接用",
+        "依赖已认证的 GitHub CLI 与特定的项目约定",
+        "README 明确 orchestrate 已迁到 kody-hq/kody，本仓库不再提供 ask-kent 与 orchestrate"
+      ],
+      "takeaway": [
+        "把 agent 指令做成 npm 包分发（一个包含全部 skill，零依赖），比散落在仓库里更容易被安装和版本化",
+        "宿主私有信息用「CLI 打印需求 + agent 负责取」的 host-request 协议解耦，CLI 保持无状态",
+        "把「一次性任务」与「可安装能力」区分：前者设计成命令，后者设计成 skill"
+      ],
+      "limits": [
+        "非 GitHub 代码托管平台的 PR/评审/CI 状态需要 agent 自行适配，CLI 不保证可用",
+        "autopilot 之外的功能均与 Kent 的账号、Discord 频道和私有包强绑定，通用性有限"
+      ]
+    },
+    {
+      "name": "kody-exchange",
+      "repo": "kody-exchange",
+      "stars": 16,
+      "verdict": "提供 agent 对 agent 的临时会话通道，把人从中间传话位置上撤掉",
+      "problem": "两个 agent（或一个人和一个 agent）需要直接交换信息时，人工转述既慢又失真；仓库描述给出的场景是「你的 agent 直接和对方 agent 说话，人只看」",
+      "mechanism": [
+        "提供临时（ephemeral）聊天室作为传输层，让两端 agent 各自接入",
+        "人作为观察者而非中继者，交互路径缩短为 agent→agent"
+      ],
+      "constraints": [
+        "本地材料未见依据（除仓库描述外无 README 材料）"
+      ],
+      "takeaway": [
+        "把「人当传声筒」这一常见瓶颈直接产品化：给 agent 一个对等通信通道，人只做旁观与审计"
+      ],
+      "limits": [
+        "临时房间的生命周期、鉴权与消息持久化策略本地材料未见依据",
+        "依赖双方 agent 都已接入该服务，否则通道单边失效"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.1",
+  "user": "hesreallyhim",
+  "analyses": [
+    {
+      "name": "awesome-claude-code",
+      "repo": "awesome-claude-code",
+      "stars": 56139,
+      "verdict": "把散落的 Claude Code 生态资源收进一个人工审过、分类固定、条目带可核验元数据的索引，靠策展信誉而非功能本身拿到星标。",
+      "problem": "Claude Code 的扩展面（skill、agent、hook、statusline、plugin、MCP）在几个月内从零涨到数百个项目，新用户在 GitHub 上无从判断哪些值得装；同时被收录的项目缺少可信的质量信号。",
+      "mechanism": [
+        "目录 README 的 Table of Contents 段落被显式标注为自动生成（HTML 注释「THIS PART GETS GENERATED」），说明条目入库与目录渲染是脚本化流程，人工只做选题。",
+        "每条 GitHub 条目后跟一排 shields.io 徽章（created-at、last-commit、license、stars），把维护新鲜度与许可直接摆到条目上，读者不点进去就能判断是否死掉。",
+        "固定一套 30+ 主题的章节骨架（Skills、Mods、Status Lines、Agent Orchestration、Security、Memory & Context Persistence 等），新条目按机制归位而不是按热度排序。",
+        "每条配一句作者本人的主观评述（区分「确实好用」与「写得很好但别当 slop」），把列表从索引进化成带观点的评审。"
+      ],
+      "constraints": [
+        "条目质量上限等于作者个人吞吐量，收录依赖手工 PR，星数规模与维护精力强耦合。",
+        "上一代条目被整体迁到 README_ALTERNATIVES 目录冻结不更新，说明换版式必然牺牲一部分历史可发现性。",
+        "托管在 GitHub README，纯展示层，无检索、无筛选、无离线使用。"
+      ],
+      "takeaway": [
+        "条目旁固定挂 created-at / last-commit / license / stars 四枚徽章，用元数据代替长篇介绍来做初筛。",
+        "目录与正文分离：正文只写人写的那部分，ToC 交给生成脚本，避免手工维护冲突。",
+        "按「机制/扩展点」而不是按「热度」分章，让读者能整章读完一个心智模型。"
+      ],
+      "limits": [
+        "只覆盖英文 GitHub 生态，中文/自建 skill 与非 GitHub 分发渠道无处收录。",
+        "条目是否仍可用取决于上游作者，列表自身无法验证功能是否已随 Claude Code 版本失效。",
+        "无结构化接口，机器消费只能靠解析 Markdown。"
+      ]
+    },
+    {
+      "name": "a-list-of-claude-code-agents",
+      "repo": "a-list-of-claude-code-agents",
+      "stars": 1355,
+      "verdict": "把「社区投稿」这一动作产品化，用单一机制（提交 sub-agent）撬动供给，做成 awesome-claude-code 的下游管道。",
+      "problem": "Sub-Agent 数量多且分散在个人仓库里，用户想找特定角色的 agent 没有统一入口；策展人一个人找不过来。",
+      "mechanism": [
+        "定位与主目录互补：只收 Sub-Agent 这一类，范围窄到能保持逐条审核。",
+        "以「社区提交」替代作者亲选，把选题吞吐从个人时间换成分摊成本。",
+        "沿用 awesome-claude-code 已验证的徽章式条目模板，降低维护与阅读成本。"
+      ],
+      "constraints": [
+        "完全依赖投稿质量，缺乏作者自荐时的动机筛选，容易凑量。",
+        "language 字段为空，说明仓库主体是纯文档，几乎没有可执行校验。",
+        "最后更新时间为 2025-11-10，晚于主目录，维护节奏明显慢于旗舰仓库。"
+      ],
+      "takeaway": [
+        "主目录做发现、窄目录做纵深：同一作者用两个仓库覆盖不同粒度的收录需求。",
+        "能收窄范围到单一扩展点时，优先收窄，审核质量比条目数量重要。"
+      ],
+      "limits": [
+        "无 code 可审，本质仍是链接合集，价值随投稿量波动。",
+        "只服务 Claude Code 一种宿主。"
+      ]
+    },
+    {
+      "name": "awesome-claude-code-output-styles-that-i-really-like",
+      "repo": "awesome-claude-code-output-styles-that-i-really-like",
+      "stars": 87,
+      "verdict": "对 Claude Code 的单一扩展机制做深度策展，用最小星数换取该细分领域的事实标准地位。",
+      "problem": "Output Styles 这个机制冷门、文档讲得少，用户不知道它能改什么、哪些 style 真能改变模型输出行为。",
+      "mechanism": [
+        "只攻 Output Styles 一个机制，把「风格文件」这一非代码资产也纳入策展。",
+        "描述里直接点明这是 Claude Code「probably the most awesome feature」，用作者权威做定位背书。",
+        "复用主目录的目录结构与条目模板，形成同一作者的系列化品牌。"
+      ],
+      "constraints": [
+        "无 language，说明是纯文档仓库，无自动化校验。",
+        "机制本身由 Anthropic 单方定义，上游改格式即失效。",
+        "规模小（87 星），无法支撑独立的自动化流程。"
+      ],
+      "takeaway": [
+        "冷门扩展点值得单独建目录：一件事讲透，好过在综合列表里占一行。",
+        "同一个策展人用「主目录 + 细分目录」矩阵覆盖生态，比一个巨型列表更容易长期维护。"
+      ],
+      "limits": [
+        "依赖 Output Styles 这一具体功能继续存在。",
+        "本地材料未收录该仓库 README，具体收录条目与审核标准未见依据。"
+      ]
+    },
+    {
+      "name": "diy-tools-mcp",
+      "repo": "diy-tools-mcp",
+      "stars": 44,
+      "verdict": "把 MCP 的扩展点从「安装期静态声明」改成「运行期动态注册」，解决配置反复重启的痛点。",
+      "problem": "想给 Claude Code 临时加一个自定义函数时，标准 MCP 流程要求改配置、重启会话、重新握手，中间成本高。",
+      "mechanism": [
+        "以 MCP server 形式承载动态工具注册，利用协议自身的工具发现机制承载运行时变更。",
+        "TypeScript 实现，与 Claude Code 宿主生态同栈，降低接入摩擦。",
+        "更新时间为 2026-10-19，与主目录同一批维护动作，说明仍在活跃迭代。"
+      ],
+      "constraints": [
+        "受 MCP 协议能力边界约束：只有协议支持运行时变更的工具才能热注册。",
+        "动态注册意味着工具表随时间变化，宿主侧缓存或权限提示可能不一致。",
+        "星数 44，属工具型小项目，长期维护人力有限。"
+      ],
+      "takeaway": [
+        "想降低扩展成本，优先找协议里已有的运行时扩展点，而不是做配置生成器。",
+        "同一作者的多个 MCP 小仓库共享实现思路，可视为一套可复用模板。"
+      ],
+      "limits": [
+        "依赖 MCP 协议本身，宿主不支持时功能失效。",
+        "本地材料未见该仓库 README，动态注册的具体 API 与权限模型未见依据。"
+      ]
+    },
+    {
+      "name": "mcp-observer-server",
+      "repo": "mcp-observer-server",
+      "stars": 24,
+      "verdict": "补上 MCP 协议里缺失的推送方向——让 server 主动向订阅过的 client 发文件变更通知。",
+      "problem": "MCP 的交互模型以 client 拉取为主，agent 侧无法在文件被外部改动时被动得知，只能轮询。",
+      "mechanism": [
+        "实现 server→client 通知方向，明确以「client 订阅」作为触发前提。",
+        "Python 实现，与作者主目录仓库语言一致，降低个人维护成本。",
+        "与 server-nothing、mcp-rando-server 并列成一小撮协议实验仓库，充当协议边界的实测探针。"
+      ],
+      "constraints": [
+        "通知依赖客户端实现订阅处理，多数 MCP client 未必消费这类消息。",
+        "最后更新 2025-05-27，此后未再更新，可能受协议演进影响已不适用。",
+        "无 language 之外的成熟度信号，测试覆盖情况本地材料未见依据。"
+      ],
+      "takeaway": [
+        "做 agent 集成前，先确认协议的推送方向是否可用，能省掉一层轮询逻辑。",
+        "写最小可用 server（如 server-nothing）验证协议行为，再扩展成有实际用途的 server。"
+      ],
+      "limits": [
+        "强依赖客户端订阅支持，实际可用范围窄。",
+        "更新停滞，与当前 MCP 版本兼容性未知。"
+      ]
+    }
+  ]
+}

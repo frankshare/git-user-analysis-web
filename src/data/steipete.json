@@ -1,0 +1,2298 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source）+ raw README/SKILL.md；来源：司徒K《2026年X上最值得关注的120个中文博主》",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "steipete",
+    "name": "Peter Steinberger",
+    "bio": "以 Swift/macOS 小工具与面向编码 agent 的脚本、CLI 基础设施为主的高产独立开发者",
+    "website": "steipete.me",
+    "x": "",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "breadth",
+    "public_repos": 182,
+    "source_repos": 60,
+    "fork_repos": 122
+  },
+  "stats": {
+    "total_stars_source": 50946,
+    "total_stars_all": 51713,
+    "median_stars": 81,
+    "ge_1000": 6,
+    "between_100_999": 18,
+    "between_10_99": 30,
+    "lt_10": 6,
+    "no_language": 8,
+    "top4_share": 80.2,
+    "top1_share": 44.6
+  },
+  "repos": [
+    {
+      "name": "CodexBar",
+      "url": "https://github.com/steipete/CodexBar",
+      "stars": 22699,
+      "language": "Swift",
+      "updated_at": "2026-10-21T05:37:34Z",
+      "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "agent-scripts",
+      "url": "https://github.com/steipete/agent-scripts",
+      "stars": 7392,
+      "language": "Shell",
+      "updated_at": "2026-10-20T04:35:51Z",
+      "description": "Scripts for agents, shared between my repositories.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "summarize",
+      "url": "https://github.com/steipete/summarize",
+      "stars": 6730,
+      "language": "TypeScript",
+      "updated_at": "2026-10-21T05:34:35Z",
+      "description": "Point at any URL/YouTube/Podcast or file. Get the gist. CLI and Chrome Extension.",
+      "fork": false,
+      "layer": "tool",
+      "category": "音视频处理"
+    },
+    {
+      "name": "oracle",
+      "url": "https://github.com/steipete/oracle",
+      "stars": 4061,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T20:22:53Z",
+      "description": "Ask the oracle when you're stuck. Invoke GPT-5 Pro with a custom context and files.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "RepoBar",
+      "url": "https://github.com/steipete/RepoBar",
+      "stars": 2216,
+      "language": "Swift",
+      "updated_at": "2026-10-20T23:34:14Z",
+      "description": "Show status of GitHub Repos right in your menu bar and terminal: CI, Issues, Pull Requests, Latest Release.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "birdclaw",
+      "url": "https://github.com/steipete/birdclaw",
+      "stars": 1668,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T23:50:12Z",
+      "description": "Stores all your tweets nicely claw-able for agents.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "Trimmy",
+      "url": "https://github.com/steipete/Trimmy",
+      "stars": 751,
+      "language": "Swift",
+      "updated_at": "2026-10-21T03:32:25Z",
+      "description": "\"Paste once, run once.\" — Trimmy flattens those multi-line shell snippets you copy so they actually paste and run.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "sag",
+      "url": "https://github.com/steipete/sag",
+      "stars": 583,
+      "language": "Go",
+      "updated_at": "2026-10-21T04:08:36Z",
+      "description": "Like the macOS say command, but with a modern voice.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "poltergeist",
+      "url": "https://github.com/steipete/poltergeist",
+      "stars": 447,
+      "language": "TypeScript",
+      "updated_at": "2026-10-21T00:26:34Z",
+      "description": "The ghost that keeps your builds fresh - Universal hot reload, file watcher and build automation for any language.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "steipete.me",
+      "url": "https://github.com/steipete/steipete.me",
+      "stars": 445,
+      "language": "JavaScript",
+      "updated_at": "2026-10-19T16:59:10Z",
+      "description": "My personal website.",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "Demark",
+      "url": "https://github.com/steipete/Demark",
+      "stars": 256,
+      "language": "Swift",
+      "updated_at": "2026-10-19T12:07:49Z",
+      "description": "HTML in. MD out. Blink-fast. The little helper that chomps HTML and spits pristine Markdown. Goodbye &lt;div&gt;, hello ##.",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "speaking",
+      "url": "https://github.com/steipete/speaking",
+      "stars": 238,
+      "language": null,
+      "updated_at": "2026-10-02T17:59:23Z",
+      "description": "Upcoming and past speaking engagements for Peter Steinberger @steipete",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "tmuxwatch",
+      "url": "https://github.com/steipete/tmuxwatch",
+      "stars": 228,
+      "language": "Go",
+      "updated_at": "2026-10-19T13:57:41Z",
+      "description": "A simple TUI to watch tmux sessions",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "sweet-cookie",
+      "url": "https://github.com/steipete/sweet-cookie",
+      "stars": 223,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T21:11:03Z",
+      "description": "Extract cookies out of your browser. TypeScript. Any OS.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "sonoscli",
+      "url": "https://github.com/steipete/sonoscli",
+      "stars": 188,
+      "language": "Go",
+      "updated_at": "2026-09-04T11:50:06Z",
+      "description": "Control SONOS speakers from your terminal.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "brabble",
+      "url": "https://github.com/steipete/brabble",
+      "stars": 172,
+      "language": "Go",
+      "updated_at": "2026-10-21T03:50:53Z",
+      "description": "\"Hey, Computer\" from Star Trek. Talk to your agent. Run hooks after trigger comands. Runs locally, cause shit's scary.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "sweetlink",
+      "url": "https://github.com/steipete/sweetlink",
+      "stars": 169,
+      "language": "TypeScript",
+      "updated_at": "2026-10-16T08:13:58Z",
+      "description": "Connect your agent to your web app. Like playwright, but works in your current tab. Close the loop.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "TauTUI",
+      "url": "https://github.com/steipete/TauTUI",
+      "stars": 157,
+      "language": "Swift",
+      "updated_at": "2026-10-19T10:04:02Z",
+      "description": "Port of pi-tui - a simple yet powerful tui for Swift.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "camsnap",
+      "url": "https://github.com/steipete/camsnap",
+      "stars": 147,
+      "language": "Go",
+      "updated_at": "2026-10-21T04:00:39Z",
+      "description": "CLI to capture snapshots, short clips, and run motion detection against RTSP/ONVIF came ras",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "steipete",
+      "url": "https://github.com/steipete/steipete",
+      "stars": 145,
+      "language": null,
+      "updated_at": "2026-08-28T08:51:31Z",
+      "description": "Public readme",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "gifgrep",
+      "url": "https://github.com/steipete/gifgrep",
+      "stars": 134,
+      "language": "Go",
+      "updated_at": "2026-10-21T04:05:54Z",
+      "description": "Grep the GIF. Stick the landing.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "homebrew-tap",
+      "url": "https://github.com/steipete/homebrew-tap",
+      "stars": 129,
+      "language": "Ruby",
+      "updated_at": "2026-10-21T04:09:48Z",
+      "description": "Homebrew tap for steipete's tools",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ElevenLabsKit",
+      "url": "https://github.com/steipete/ElevenLabsKit",
+      "stars": 114,
+      "language": "Swift",
+      "updated_at": "2026-10-19T12:26:41Z",
+      "description": "Swift SDK to stream ElevenLabs Voices",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "eightctl",
+      "url": "https://github.com/steipete/eightctl",
+      "stars": 101,
+      "language": "Go",
+      "updated_at": "2026-10-21T03:57:48Z",
+      "description": "Eight Sleep cli to fetch data and control your pods.",
+      "fork": false,
+      "layer": "tool",
+      "category": "信息获取"
+    },
+    {
+      "name": "SweetCookieKit",
+      "url": "https://github.com/steipete/SweetCookieKit",
+      "stars": 98,
+      "language": "Swift",
+      "updated_at": "2026-10-20T09:35:32Z",
+      "description": "Extract browser cookies from macOS in Swift",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "vox",
+      "url": "https://github.com/steipete/vox",
+      "stars": 95,
+      "language": "TypeScript",
+      "updated_at": "2026-10-15T16:11:21Z",
+      "description": "Let's your agent run phone calls",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "tokentally",
+      "url": "https://github.com/steipete/tokentally",
+      "stars": 93,
+      "language": "TypeScript",
+      "updated_at": "2026-10-16T22:19:59Z",
+      "description": "One tiny lib for LLM token + cost math",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ReleaseBar",
+      "url": "https://github.com/steipete/ReleaseBar",
+      "stars": 90,
+      "language": "TypeScript",
+      "updated_at": "2026-10-16T06:34:27Z",
+      "description": "Release freshness dashboard for open source maintainers",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ordercli",
+      "url": "https://github.com/steipete/ordercli",
+      "stars": 84,
+      "language": "Go",
+      "updated_at": "2026-10-21T03:55:26Z",
+      "description": "CLI for Foodora and Deliveroo",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "inngest",
+      "url": "https://github.com/steipete/inngest",
+      "stars": 81,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T18:58:19Z",
+      "description": "CLI to query inngest jobs",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "bslog",
+      "url": "https://github.com/steipete/bslog",
+      "stars": 73,
+      "language": "TypeScript",
+      "updated_at": "2026-10-12T04:01:53Z",
+      "description": "cli for Better Stack to fetch logs, ClickHouse SQL style. Made for humans and agents.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "Nameplate",
+      "url": "https://github.com/steipete/Nameplate",
+      "stars": 70,
+      "language": "Swift",
+      "updated_at": "2026-10-20T00:32:27Z",
+      "description": "Brand every Mac in your fleet — colored frame, name tag, watermark, and connect splash as click-through overlays. Never wonder which Mac you remoted into again.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Markdansi",
+      "url": "https://github.com/steipete/Markdansi",
+      "stars": 65,
+      "language": "TypeScript",
+      "updated_at": "2026-10-21T02:55:29Z",
+      "description": "Markdown to ANSII in TypeScript based on Micro-Mark, with support for URLs, tables, lists and more.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "stats-store",
+      "url": "https://github.com/steipete/stats-store",
+      "stars": 63,
+      "language": "TypeScript",
+      "updated_at": "2026-10-19T12:18:19Z",
+      "description": "stats.store - Fast, open, privacy-first analytics for Sparkle.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "SOUL.md",
+      "url": "https://github.com/steipete/SOUL.md",
+      "stars": 54,
+      "language": "HTML",
+      "updated_at": "2026-07-01T09:27:38Z",
+      "description": "Website for SOUL.md",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "xcode-theme-solarized-modded",
+      "url": "https://github.com/steipete/xcode-theme-solarized-modded",
+      "stars": 54,
+      "language": null,
+      "updated_at": "2016-02-17T14:24:45Z",
+      "description": "Heavily modded theme based on the Solarized style: http://ethanschoonover.com/solarized/",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "canvas",
+      "url": "https://github.com/steipete/canvas",
+      "stars": 51,
+      "language": "Go",
+      "updated_at": "2026-10-19T08:43:17Z",
+      "description": "A browser canvas for your agents.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "BlackBar",
+      "url": "https://github.com/steipete/BlackBar",
+      "stars": 51,
+      "language": "Swift",
+      "updated_at": "2026-10-19T08:16:12Z",
+      "description": "Your Blacksmith CI status, in your menu bar.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Commander",
+      "url": "https://github.com/steipete/Commander",
+      "stars": 49,
+      "language": "Swift",
+      "updated_at": "2026-10-19T11:36:16Z",
+      "description": "A Swifty take on Commander.js and alternative to Swift's ArgumentParser.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "fluegel",
+      "url": "https://github.com/steipete/fluegel",
+      "stars": 46,
+      "language": "Swift",
+      "updated_at": "2026-10-19T08:59:58Z",
+      "description": "Mac app to elevate permissions, when your cli needs wings.",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "codex",
+      "url": "https://github.com/steipete/codex",
+      "stars": 46,
+      "language": "Rust",
+      "updated_at": "2026-10-13T17:06:09Z",
+      "description": "Lightweight coding agent that runs in your terminal",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "blucli",
+      "url": "https://github.com/steipete/blucli",
+      "stars": 44,
+      "language": "Go",
+      "updated_at": "2026-10-21T04:08:56Z",
+      "description": "Go-based cli for blueOS",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "SwiftUITouchHandling",
+      "url": "https://github.com/steipete/SwiftUITouchHandling",
+      "stars": 43,
+      "language": "Swift",
+      "updated_at": "2026-10-19T09:17:56Z",
+      "description": "Testing touch handling from embedded SwiftUI views",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "sweetcookie",
+      "url": "https://github.com/steipete/sweetcookie",
+      "stars": 43,
+      "language": "Go",
+      "updated_at": "2026-10-19T13:41:34Z",
+      "description": "Cookies for any browser, any OS, in go",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "metcli",
+      "url": "https://github.com/steipete/metcli",
+      "stars": 38,
+      "language": "Go",
+      "updated_at": "2026-10-19T09:50:35Z",
+      "description": "cli to get your data out of Meta. very WIP",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "cli",
+      "url": "https://github.com/steipete/cli",
+      "stars": 38,
+      "language": "Go",
+      "updated_at": "2026-09-19T01:24:33Z",
+      "description": "Entire is a new developer platform that hooks into your git workflow to capture AI agent sessions on every push, unifying your code with its context and reasoning.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "osc-progress",
+      "url": "https://github.com/steipete/osc-progress",
+      "stars": 35,
+      "language": "TypeScript",
+      "updated_at": "2026-10-16T21:10:26Z",
+      "description": "Tiny lib for OSC 9;4 terminal progress.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "lobsterbot",
+      "url": "https://github.com/steipete/lobsterbot",
+      "stars": 34,
+      "language": "JavaScript",
+      "updated_at": "2026-01-28T17:10:51Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "triage",
+      "url": "https://github.com/steipete/triage",
+      "stars": 30,
+      "language": "Shell",
+      "updated_at": "2026-03-14T01:17:54Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "lore.md",
+      "url": "https://github.com/steipete/lore.md",
+      "stars": 29,
+      "language": "TypeScript",
+      "updated_at": "2026-10-16T07:24:09Z",
+      "description": "Random md website generator",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "Swiftdansi",
+      "url": "https://github.com/steipete/Swiftdansi",
+      "stars": 25,
+      "language": "Swift",
+      "updated_at": "2026-10-19T09:43:36Z",
+      "description": "Markdown to ANSI for Swift. The ltitle sister of Markdansi, powered by swift-markdown",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "clawdbot.com",
+      "url": "https://github.com/steipete/clawdbot.com",
+      "stars": 25,
+      "language": "HTML",
+      "updated_at": "2026-06-30T22:50:51Z",
+      "description": "clawdbot.com website",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "ClawRouter",
+      "url": "https://github.com/steipete/ClawRouter",
+      "stars": 23,
+      "language": "TypeScript",
+      "updated_at": "2026-09-19T01:24:04Z",
+      "description": "The agent-native LLM router for OpenClaw. 41+ models, &lt;1ms routing, USDC payments on Base &amp; Solana via x402.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pi-skills",
+      "url": "https://github.com/steipete/pi-skills",
+      "stars": 23,
+      "language": "JavaScript",
+      "updated_at": "2026-05-04T01:11:18Z",
+      "description": "Skills for pi coding agent (compatible with Claude Code and Codex CLI)",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "research",
+      "url": "https://github.com/steipete/research",
+      "stars": 20,
+      "language": null,
+      "updated_at": "2026-07-13T05:01:45Z",
+      "description": "Inspired by https://simonwillison.net/2025/Nov/6/async-code-research/",
+      "fork": false,
+      "layer": "tool",
+      "category": "信息获取"
+    },
+    {
+      "name": "openclaw",
+      "url": "https://github.com/steipete/openclaw",
+      "stars": 20,
+      "language": "TypeScript",
+      "updated_at": "2026-10-15T08:39:20Z",
+      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "desktop-api-cli",
+      "url": "https://github.com/steipete/desktop-api-cli",
+      "stars": 18,
+      "language": "Go",
+      "updated_at": "2026-03-08T19:07:04Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "deepsec",
+      "url": "https://github.com/steipete/deepsec",
+      "stars": 18,
+      "language": "TypeScript",
+      "updated_at": "2026-09-19T01:24:42Z",
+      "description": "Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "CLIProxyAPI",
+      "url": "https://github.com/steipete/CLIProxyAPI",
+      "stars": 17,
+      "language": "Go",
+      "updated_at": "2026-09-19T01:24:00Z",
+      "description": "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 3.1 Pro, GPT 5.5, Grok 4.3, Claude model thro…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ObservationTrackingExample",
+      "url": "https://github.com/steipete/ObservationTrackingExample",
+      "stars": 14,
+      "language": "Swift",
+      "updated_at": "2026-10-19T08:06:18Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ghx",
+      "url": "https://github.com/steipete/ghx",
+      "stars": 14,
+      "language": "Go",
+      "updated_at": "2026-05-05T00:54:11Z",
+      "description": "GitHub CLI Cache Proxy. Caching daemon for the gh CLI to prevent API rate limiting.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "slacrawl",
+      "url": "https://github.com/steipete/slacrawl",
+      "stars": 14,
+      "language": "Go",
+      "updated_at": "2026-05-22T12:10:10Z",
+      "description": "cli terminal app for slack with sqlite backend",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ds4",
+      "url": "https://github.com/steipete/ds4",
+      "stars": 13,
+      "language": "C",
+      "updated_at": "2026-05-23T13:09:18Z",
+      "description": "DeepSeek 4 Flash local inference engine for Metal and CUDA",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "AFNetworking",
+      "url": "https://github.com/steipete/AFNetworking",
+      "stars": 13,
+      "language": "Objective-C",
+      "updated_at": "2013-03-29T08:55:52Z",
+      "description": "A delightful iOS and OS X networking framework",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pi-mono",
+      "url": "https://github.com/steipete/pi-mono",
+      "stars": 12,
+      "language": "TypeScript",
+      "updated_at": "2026-04-10T22:54:08Z",
+      "description": "Monorepo for pi packages: TUI library, agent framework, and pod management CLI",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "opencode",
+      "url": "https://github.com/steipete/opencode",
+      "stars": 12,
+      "language": "TypeScript",
+      "updated_at": "2025-11-04T19:12:39Z",
+      "description": "The AI coding agent built for the terminal.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "swift-sdk",
+      "url": "https://github.com/steipete/swift-sdk",
+      "stars": 12,
+      "language": "Swift",
+      "updated_at": "2026-08-13T17:30:45Z",
+      "description": "The official Swift SDK for Model Context Protocol servers and clients.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "dupcanon",
+      "url": "https://github.com/steipete/dupcanon",
+      "stars": 12,
+      "language": "Python",
+      "updated_at": "2026-08-03T01:16:47Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "cc-env-setup",
+      "url": "https://github.com/steipete/cc-env-setup",
+      "stars": 12,
+      "language": "Shell",
+      "updated_at": "2026-05-04T01:07:59Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "dotfiles",
+      "url": "https://github.com/steipete/dotfiles",
+      "stars": 12,
+      "language": "Shell",
+      "updated_at": "2009-10-06T15:42:42Z",
+      "description": "my dot files for bash, git, rails and co",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "lossless-claw",
+      "url": "https://github.com/steipete/lossless-claw",
+      "stars": 12,
+      "language": "TypeScript",
+      "updated_at": "2026-09-12T04:31:08Z",
+      "description": "Lossless Claw — LCM (Lossless Context Management) plugin for OpenClaw",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mcp2py",
+      "url": "https://github.com/steipete/mcp2py",
+      "stars": 11,
+      "language": "Python",
+      "updated_at": "2025-11-04T02:15:29Z",
+      "description": "Turn any MCP server into a Python module",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "signalpress",
+      "url": "https://github.com/steipete/signalpress",
+      "stars": 11,
+      "language": null,
+      "updated_at": "2026-06-07T02:15:59Z",
+      "description": "Local-first activity reports from Gitcrawl and Slackx",
+      "fork": false,
+      "layer": "tool",
+      "category": "信息获取"
+    },
+    {
+      "name": "carbon",
+      "url": "https://github.com/steipete/carbon",
+      "stars": 10,
+      "language": "TypeScript",
+      "updated_at": "2026-09-19T01:24:30Z",
+      "description": "A fully-featured HTTP library for Discord bots",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "meowcaller",
+      "url": "https://github.com/steipete/meowcaller",
+      "stars": 9,
+      "language": "Go",
+      "updated_at": "2026-09-19T01:24:49Z",
+      "description": "WhatsApp VoIP Go library for whatsmeow",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "imp_implementationForwardingToSelector",
+      "url": "https://github.com/steipete/imp_implementationForwardingToSelector",
+      "stars": 9,
+      "language": null,
+      "updated_at": "2014-05-18T11:38:22Z",
+      "description": "IMP forwarding to a different selector.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "symphony",
+      "url": "https://github.com/steipete/symphony",
+      "stars": 9,
+      "language": "Elixir",
+      "updated_at": "2026-05-04T01:02:20Z",
+      "description": "Symphony turns project work into isolated, autonomous implementation runs, allowing teams to manage work instead of supervising coding agents.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "openclaw-a2a-gateway",
+      "url": "https://github.com/steipete/openclaw-a2a-gateway",
+      "stars": 8,
+      "language": "TypeScript",
+      "updated_at": "2026-07-06T15:48:56Z",
+      "description": "OpenClaw plugin implementing the A2A (Agent-to-Agent) protocol v0.3.0 — bidirectional agent communication gateway",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Mantle",
+      "url": "https://github.com/steipete/Mantle",
+      "stars": 8,
+      "language": "Objective-C",
+      "updated_at": "2013-07-22T06:49:14Z",
+      "description": "Model framework for Cocoa and Cocoa Touch",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ocm",
+      "url": "https://github.com/steipete/ocm",
+      "stars": 8,
+      "language": "Rust",
+      "updated_at": "2026-08-16T00:58:20Z",
+      "description": "OpenClaw Manager",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "vz",
+      "url": "https://github.com/steipete/vz",
+      "stars": 8,
+      "language": "Go",
+      "updated_at": "2026-07-04T03:19:17Z",
+      "description": "Create virtual machines and run Linux-based operating systems in Go using Apple Virtualization.framework.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "better-auth",
+      "url": "https://github.com/steipete/better-auth",
+      "stars": 8,
+      "language": "TypeScript",
+      "updated_at": "2026-05-04T01:38:25Z",
+      "description": "The most comprehensive authentication framework for TypeScript",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "appledoc",
+      "url": "https://github.com/steipete/appledoc",
+      "stars": 8,
+      "language": "Objective-C",
+      "updated_at": "2014-01-06T11:17:00Z",
+      "description": "Objective-c code Apple style documentation set generator.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Atributika",
+      "url": "https://github.com/steipete/Atributika",
+      "stars": 8,
+      "language": "Swift",
+      "updated_at": "2021-04-18T20:52:54Z",
+      "description": "Convert text with HTML tags, links, hashtags, mentions into NSAttributedString. Make them clickable with UILabel drop-in replacement.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "demark-landing",
+      "url": "https://github.com/steipete/demark-landing",
+      "stars": 8,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T01:29:49Z",
+      "description": "Website for Demark Markdown Parser",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "crush",
+      "url": "https://github.com/steipete/crush",
+      "stars": 7,
+      "language": "Go",
+      "updated_at": "2025-08-02T13:14:54Z",
+      "description": "The glamourous AI coding agent for your favourite terminal 💘",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "node-twitter-api-v2",
+      "url": "https://github.com/steipete/node-twitter-api-v2",
+      "stars": 7,
+      "language": "TypeScript",
+      "updated_at": "2026-07-01T08:51:45Z",
+      "description": "Strongly typed, full-featured, light, versatile yet powerful Twitter API v1.1 and v2 client for Node.js.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "lottie-mac",
+      "url": "https://github.com/steipete/lottie-mac",
+      "stars": 7,
+      "language": "Swift",
+      "updated_at": "2021-04-18T00:12:47Z",
+      "description": "An iOS library to natively render After Effects vector animations",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Baileys",
+      "url": "https://github.com/steipete/Baileys",
+      "stars": 7,
+      "language": "JavaScript",
+      "updated_at": "2026-09-19T01:23:56Z",
+      "description": "Socket-based TS/JavaScript API for WhatsApp Web",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "openclaw-pr-assets",
+      "url": "https://github.com/steipete/openclaw-pr-assets",
+      "stars": 7,
+      "language": null,
+      "updated_at": "2026-08-02T17:55:44Z",
+      "description": "Proof assets (screenshots) for OpenClaw PRs; one release tag per PR",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "kysely",
+      "url": "https://github.com/steipete/kysely",
+      "stars": 6,
+      "language": "TypeScript",
+      "updated_at": "2026-05-04T01:05:27Z",
+      "description": "A type-safe TypeScript SQL query builder",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "MTDActionSheet",
+      "url": "https://github.com/steipete/MTDActionSheet",
+      "stars": 6,
+      "language": "Objective-C",
+      "updated_at": "2014-05-11T16:46:36Z",
+      "description": "A customizable UIActionSheet replacement for the iPad",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ResearchKit",
+      "url": "https://github.com/steipete/ResearchKit",
+      "stars": 6,
+      "language": "Objective-C",
+      "updated_at": "2015-04-16T16:17:16Z",
+      "description": "ResearchKit is an open source software framework that makes it easy to create apps for medical research or for other research projects.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "awesome-wasm",
+      "url": "https://github.com/steipete/awesome-wasm",
+      "stars": 6,
+      "language": null,
+      "updated_at": "2018-02-04T18:33:39Z",
+      "description": "😎 Curated list of awesome things regarding WebAssembly (wasm) ecosystem.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "CatalystPlayground",
+      "url": "https://github.com/steipete/CatalystPlayground",
+      "stars": 6,
+      "language": "Swift",
+      "updated_at": "2019-07-24T17:00:21Z",
+      "description": "An example project demonstrating Mac Catalyst features",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "LayoutKit",
+      "url": "https://github.com/steipete/LayoutKit",
+      "stars": 6,
+      "language": "Swift",
+      "updated_at": "2020-10-16T07:50:01Z",
+      "description": "LayoutKit is a fast view layout library for iOS, macOS, and tvOS.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "SwiftUI-Introspect",
+      "url": "https://github.com/steipete/SwiftUI-Introspect",
+      "stars": 6,
+      "language": "Swift",
+      "updated_at": "2023-02-13T22:52:32Z",
+      "description": "Introspect underlying UIKit components from SwiftUI",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "iOS9-Runtime-Headers",
+      "url": "https://github.com/steipete/iOS9-Runtime-Headers",
+      "stars": 6,
+      "language": "Objective-C",
+      "updated_at": "2015-06-09T06:50:48Z",
+      "description": "iOS 9 Beta 1",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "tauri-plugin-notifications",
+      "url": "https://github.com/steipete/tauri-plugin-notifications",
+      "stars": 6,
+      "language": "Swift",
+      "updated_at": "2026-08-30T05:54:57Z",
+      "description": "A Tauri v2 plugin for sending notifications on desktop and mobile platforms with support for system notifications and push delivery via FCM and APNs.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mintlify-docs",
+      "url": "https://github.com/steipete/mintlify-docs",
+      "stars": 6,
+      "language": "MDX",
+      "updated_at": "2026-06-30T22:50:51Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "docs",
+      "url": "https://github.com/steipete/docs",
+      "stars": 6,
+      "language": "MDX",
+      "updated_at": "2026-06-30T22:50:52Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "claude-code-router",
+      "url": "https://github.com/steipete/claude-code-router",
+      "stars": 6,
+      "language": "TypeScript",
+      "updated_at": "2026-09-11T23:45:24Z",
+      "description": "One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rygel",
+      "url": "https://github.com/steipete/rygel",
+      "stars": 6,
+      "language": "C++",
+      "updated_at": "2026-10-10T01:59:03Z",
+      "description": "Monorepository with most of my projects",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "shellbench",
+      "url": "https://github.com/steipete/shellbench",
+      "stars": 6,
+      "language": "Python",
+      "updated_at": "2026-10-07T01:50:49Z",
+      "description": "The agent benchmark that scores the full stack — harness, config, and model — not just the LLM. Trace-based scoring, reliability metrics, configuration diagnostics.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ghostty",
+      "url": "https://github.com/steipete/ghostty",
+      "stars": 5,
+      "language": "Zig",
+      "updated_at": "2025-06-06T18:12:36Z",
+      "description": "👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "zld",
+      "url": "https://github.com/steipete/zld",
+      "stars": 5,
+      "language": "C++",
+      "updated_at": "2020-06-03T14:15:37Z",
+      "description": "A faster version of Apple's linker",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "kysely-neon",
+      "url": "https://github.com/steipete/kysely-neon",
+      "stars": 5,
+      "language": "TypeScript",
+      "updated_at": "2026-05-04T01:16:29Z",
+      "description": "Kysely Dialect for Neon",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pi",
+      "url": "https://github.com/steipete/pi",
+      "stars": 5,
+      "language": "JavaScript",
+      "updated_at": "2026-05-04T01:13:50Z",
+      "description": "CLI tool for managing vLLM deployments on Prime Intellect GPU pods",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "articles",
+      "url": "https://github.com/steipete/articles",
+      "stars": 5,
+      "language": null,
+      "updated_at": "2015-03-06T08:40:12Z",
+      "description": "All current objc.io articles",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "AttributedStringBuilder",
+      "url": "https://github.com/steipete/AttributedStringBuilder",
+      "stars": 5,
+      "language": "Swift",
+      "updated_at": "2020-10-14T22:45:43Z",
+      "description": "Easily construct attributed strings in swift",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "EarlGrey",
+      "url": "https://github.com/steipete/EarlGrey",
+      "stars": 5,
+      "language": "Objective-C",
+      "updated_at": "2020-12-14T21:47:41Z",
+      "description": "🍵 iOS UI Automation Test Framework",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "swift-log",
+      "url": "https://github.com/steipete/swift-log",
+      "stars": 5,
+      "language": "Swift",
+      "updated_at": "2021-03-04T14:24:43Z",
+      "description": "A Logging API for Swift",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "swift-argument-parser",
+      "url": "https://github.com/steipete/swift-argument-parser",
+      "stars": 5,
+      "language": "Swift",
+      "updated_at": "2025-11-07T14:58:08Z",
+      "description": "Straightforward, type-safe argument parsing for Swift",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "SwiftUIX",
+      "url": "https://github.com/steipete/SwiftUIX",
+      "stars": 5,
+      "language": "Swift",
+      "updated_at": "2021-04-12T10:22:02Z",
+      "description": "An extension to the standard SwiftUI library.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "GRDB.swift",
+      "url": "https://github.com/steipete/GRDB.swift",
+      "stars": 5,
+      "language": "Swift",
+      "updated_at": "2021-05-02T08:07:15Z",
+      "description": "A toolkit for SQLite databases, with a focus on application development",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "reloaderoo",
+      "url": "https://github.com/steipete/reloaderoo",
+      "stars": 5,
+      "language": "TypeScript",
+      "updated_at": "2026-09-19T01:25:12Z",
+      "description": "Powerful MCP debugging proxy and CLI inspection tool.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mlx-audio-swift",
+      "url": "https://github.com/steipete/mlx-audio-swift",
+      "stars": 5,
+      "language": "Swift",
+      "updated_at": "2026-09-19T01:24:53Z",
+      "description": "A modular Swift SDK for audio processing with MLX on Apple Silicon",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "PhoneAgent",
+      "url": "https://github.com/steipete/PhoneAgent",
+      "stars": 5,
+      "language": "Swift",
+      "updated_at": "2025-06-01T19:44:10Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "react-native",
+      "url": "https://github.com/steipete/react-native",
+      "stars": 5,
+      "language": "JavaScript",
+      "updated_at": "2019-08-08T11:42:13Z",
+      "description": "A framework for building native apps with React.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "iso-8601-date-formatter",
+      "url": "https://github.com/steipete/iso-8601-date-formatter",
+      "stars": 5,
+      "language": "Objective-C",
+      "updated_at": "2014-03-26T21:39:40Z",
+      "description": "A Cocoa NSFormatter subclass to convert dates to and from ISO-8601-formatted strings. Supports calendar, week, and ordinal formats.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ACHNBrowserUI",
+      "url": "https://github.com/steipete/ACHNBrowserUI",
+      "stars": 5,
+      "language": "Swift",
+      "updated_at": "2020-05-08T17:43:45Z",
+      "description": "Animal Crossing New Horizon items catalog in SwiftUI",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "sublime-installer",
+      "url": "https://github.com/steipete/sublime-installer",
+      "stars": 5,
+      "language": "Shell",
+      "updated_at": "2016-01-29T17:18:31Z",
+      "description": "A Sublime Text Editor Installer made in shell script for the 2.0.1 version",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "UniquePublished",
+      "url": "https://github.com/steipete/UniquePublished",
+      "stars": 4,
+      "language": "Swift",
+      "updated_at": "2021-04-22T18:43:49Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "danger-js",
+      "url": "https://github.com/steipete/danger-js",
+      "stars": 4,
+      "language": "TypeScript",
+      "updated_at": "2017-03-22T09:45:35Z",
+      "description": "Danger on Node",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "DIS_KVC_KVO",
+      "url": "https://github.com/steipete/DIS_KVC_KVO",
+      "stars": 4,
+      "language": "Objective-C",
+      "updated_at": "2018-02-25T03:48:29Z",
+      "description": "Objective-C KVC, KVO的实现源码，根据 Foundation.framework汇编反写而来,还原iOS对KVO,KVC的真实实现",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "https",
+      "url": "https://github.com/steipete/https",
+      "stars": 4,
+      "language": null,
+      "updated_at": "2018-05-08T07:53:40Z",
+      "description": "A crowd-sourced list of SDKs and how they protect their downloads with HTTPs",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "dukglue",
+      "url": "https://github.com/steipete/dukglue",
+      "stars": 4,
+      "language": "C",
+      "updated_at": "2020-11-28T10:07:06Z",
+      "description": "A C++ binding/wrapper library for the Duktape JavaScript interpreter.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "nv",
+      "url": "https://github.com/steipete/nv",
+      "stars": 4,
+      "language": "C",
+      "updated_at": "2021-07-27T20:46:39Z",
+      "description": "MultiMarkdown version of Notational Velocity with Markdown editing features and preview",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Hippy",
+      "url": "https://github.com/steipete/Hippy",
+      "stars": 4,
+      "language": "C++",
+      "updated_at": "2019-12-25T12:07:45Z",
+      "description": "Hippy is a cross-platform development framework, introduction video - https://v.qq.com/x/page/i3038urj2mt.html",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "swift-log-oslog",
+      "url": "https://github.com/steipete/swift-log-oslog",
+      "stars": 4,
+      "language": "Swift",
+      "updated_at": "2020-07-29T19:50:19Z",
+      "description": "OSLog (aka Unified Logging) backend for Apple’s SwiftLog",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "xcbeautify",
+      "url": "https://github.com/steipete/xcbeautify",
+      "stars": 4,
+      "language": "Swift",
+      "updated_at": "2020-03-09T01:15:09Z",
+      "description": "A little beautifier tool for xcodebuild",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "X-SwiftFormat",
+      "url": "https://github.com/steipete/X-SwiftFormat",
+      "stars": 4,
+      "language": "Swift",
+      "updated_at": "2020-04-19T12:21:48Z",
+      "description": "X-SwiftFormat plugin for Xcode",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "homebrew-zld",
+      "url": "https://github.com/steipete/homebrew-zld",
+      "stars": 4,
+      "language": "Ruby",
+      "updated_at": "2020-07-10T15:40:45Z",
+      "description": "The homebrew tap for zld",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "MasterPackageList",
+      "url": "https://github.com/steipete/MasterPackageList",
+      "stars": 4,
+      "language": "Swift",
+      "updated_at": "2020-06-12T15:14:29Z",
+      "description": "The master list of repositories for the Swift Package Index.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "jekyll-theme-chirpy",
+      "url": "https://github.com/steipete/jekyll-theme-chirpy",
+      "stars": 4,
+      "language": "CSS",
+      "updated_at": "2020-05-14T14:02:26Z",
+      "description": "A minimal, sidebar, responsive web design Jekyll theme, focusing on text presentation.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Yams",
+      "url": "https://github.com/steipete/Yams",
+      "stars": 4,
+      "language": "C",
+      "updated_at": "2020-05-20T06:32:07Z",
+      "description": "A Sweet and Swifty YAML parser.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "CryptoSwift",
+      "url": "https://github.com/steipete/CryptoSwift",
+      "stars": 4,
+      "language": "Swift",
+      "updated_at": "2020-05-30T16:33:48Z",
+      "description": "CryptoSwift is a growing collection of standard and secure cryptographic algorithms implemented in Swift",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Sparkle",
+      "url": "https://github.com/steipete/Sparkle",
+      "stars": 4,
+      "language": "Objective-C",
+      "updated_at": "2021-04-23T10:49:31Z",
+      "description": "A software update framework for macOS",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "WinObjC",
+      "url": "https://github.com/steipete/WinObjC",
+      "stars": 4,
+      "language": "C",
+      "updated_at": "2015-08-06T18:50:13Z",
+      "description": "Objective-C for Windows",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pr-assets",
+      "url": "https://github.com/steipete/pr-assets",
+      "stars": 4,
+      "language": null,
+      "updated_at": "2026-07-06T07:11:33Z",
+      "description": "Screenshots and artifacts referenced from PRs/issues",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "trunk.cocoapods.org",
+      "url": "https://github.com/steipete/trunk.cocoapods.org",
+      "stars": 4,
+      "language": "Ruby",
+      "updated_at": "2015-02-10T17:39:24Z",
+      "description": "The authentication server for CocoaPods push",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Specs",
+      "url": "https://github.com/steipete/Specs",
+      "stars": 4,
+      "language": null,
+      "updated_at": "2015-02-11T09:27:22Z",
+      "description": "The CocoaPods Master Repo",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "jsonschema",
+      "url": "https://github.com/steipete/jsonschema",
+      "stars": 4,
+      "language": "Go",
+      "updated_at": "2026-08-17T15:24:06Z",
+      "description": "JSONSchema (draft 2020-12, draft 2019-09, draft-7, draft-6, draft-4) Validation using Go",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "slack-subagent-card",
+      "url": "https://github.com/steipete/slack-subagent-card",
+      "stars": 4,
+      "language": "JavaScript",
+      "updated_at": "2026-09-21T23:45:06Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "openclaw-zulip",
+      "url": "https://github.com/steipete/openclaw-zulip",
+      "stars": 4,
+      "language": "TypeScript",
+      "updated_at": "2026-08-10T07:22:06Z",
+      "description": "OpenClaw Zulip channel plugin — topic threading, metadata DB, bot commands",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mlx-audio",
+      "url": "https://github.com/steipete/mlx-audio",
+      "stars": 4,
+      "language": "Python",
+      "updated_at": "2026-07-29T05:30:57Z",
+      "description": "A text-to-speech (TTS), speech-to-text (STT) and speech-to-speech (STS) library built on Apple's MLX framework, providing efficient speech analysis on Apple Silicon.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "vclaw",
+      "url": "https://github.com/steipete/vclaw",
+      "stars": 4,
+      "language": "JavaScript",
+      "updated_at": "2026-07-11T16:02:20Z",
+      "description": "CLI to set up and deploy vercel-openclaw with one command",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "homebrew-cask",
+      "url": "https://github.com/steipete/homebrew-cask",
+      "stars": 4,
+      "language": "Ruby",
+      "updated_at": "2026-09-19T01:24:46Z",
+      "description": "🍻 A CLI workflow for the administration of macOS applications distributed as binaries",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "SwiftLint",
+      "url": "https://github.com/steipete/SwiftLint",
+      "stars": 3,
+      "language": "Swift",
+      "updated_at": "2016-06-16T22:15:56Z",
+      "description": "A tool to enforce Swift style and conventions.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "HIP",
+      "url": "https://github.com/steipete/HIP",
+      "stars": 3,
+      "language": "C++",
+      "updated_at": "2016-12-13T22:48:25Z",
+      "description": "HIP : Convert CUDA to Portable C++ Code",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "openclaw-code-agent",
+      "url": "https://github.com/steipete/openclaw-code-agent",
+      "stars": 3,
+      "language": "TypeScript",
+      "updated_at": "2026-09-14T03:40:23Z",
+      "description": "A stateful coding agent plugin for OpenClaw",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "openclaw-weixin",
+      "url": "https://github.com/steipete/openclaw-weixin",
+      "stars": 3,
+      "language": "TypeScript",
+      "updated_at": "2026-10-10T06:53:29Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "webawesome",
+      "url": "https://github.com/steipete/webawesome",
+      "stars": 3,
+      "language": "TypeScript",
+      "updated_at": "2026-09-25T20:13:43Z",
+      "description": "Build better with Web Awesome, the open source library of web components from Font Awesome. Upgrade to Pro and ship websites faster!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "vercel-openclaw",
+      "url": "https://github.com/steipete/vercel-openclaw",
+      "stars": 3,
+      "language": "TypeScript",
+      "updated_at": "2026-09-19T01:25:16Z",
+      "description": "Deploy OpenClaw on Vercel",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "openclaw-eigenflux",
+      "url": "https://github.com/steipete/openclaw-eigenflux",
+      "stars": 3,
+      "language": "TypeScript",
+      "updated_at": "2026-09-21T23:57:28Z",
+      "description": "Client-side integrations for bringing EigenFlux into external host environments.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "llama.cpp",
+      "url": "https://github.com/steipete/llama.cpp",
+      "stars": 2,
+      "language": "C++",
+      "updated_at": "2026-10-17T02:44:48Z",
+      "description": "LLM inference in C/C++",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "chrome-devtools-mcp",
+      "url": "https://github.com/steipete/chrome-devtools-mcp",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2026-09-20T19:55:58Z",
+      "description": "Chrome DevTools for coding agents",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "extensions",
+      "url": "https://github.com/steipete/extensions",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2026-07-28T03:42:31Z",
+      "description": "Extensions for the Zed editor",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "openclaw-dev-artifacts",
+      "url": "https://github.com/steipete/openclaw-dev-artifacts",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2026-08-26T12:00:29Z",
+      "description": "Throwaway dev-build artifacts for OpenClaw live-test rigs",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "unblock-linear-plugin",
+      "url": "https://github.com/steipete/unblock-linear-plugin",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2026-09-21T23:08:36Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pglite",
+      "url": "https://github.com/steipete/pglite",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2026-10-16T04:06:19Z",
+      "description": "Embeddable Postgres with real-time, reactive bindings.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "openclaw-fridaynext-channel",
+      "url": "https://github.com/steipete/openclaw-fridaynext-channel",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2026-09-22T05:10:12Z",
+      "description": "OpenClaw Friday Next Apple channel plugin — one-click install",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "plugins-workspace",
+      "url": "https://github.com/steipete/plugins-workspace",
+      "stars": 2,
+      "language": "Rust",
+      "updated_at": "2026-09-25T17:16:58Z",
+      "description": "All of the official Tauri plugins in one place!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "typescript-sdk",
+      "url": "https://github.com/steipete/typescript-sdk",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T21:48:50Z",
+      "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "libuv",
+      "url": "https://github.com/steipete/libuv",
+      "stars": 1,
+      "language": "C",
+      "updated_at": "2026-10-10T09:51:51Z",
+      "description": "Cross-platform asynchronous I/O",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "WebKit",
+      "url": "https://github.com/steipete/WebKit",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2026-10-12T04:06:08Z",
+      "description": "WebKit with patches",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "bun",
+      "url": "https://github.com/steipete/bun",
+      "stars": 1,
+      "language": "Rust",
+      "updated_at": "2026-10-16T12:14:34Z",
+      "description": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "wry",
+      "url": "https://github.com/steipete/wry",
+      "stars": 1,
+      "language": "Rust",
+      "updated_at": "2026-09-26T16:20:51Z",
+      "description": "Cross-platform WebView library in Rust for Tauri.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "cua",
+      "url": "https://github.com/steipete/cua",
+      "stars": 1,
+      "language": "HTML",
+      "updated_at": "2026-09-28T14:14:29Z",
+      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "gpui-kit",
+      "url": "https://github.com/steipete/gpui-kit",
+      "stars": 1,
+      "language": "Rust",
+      "updated_at": "2026-09-26T16:20:46Z",
+      "description": "Rust GUI components for building fantastic cross-platform desktop application by using GPUI.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "accesskit",
+      "url": "https://github.com/steipete/accesskit",
+      "stars": 1,
+      "language": "Rust",
+      "updated_at": "2026-09-26T16:20:49Z",
+      "description": "Accessibility infrastructure for UI toolkits",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pnpm",
+      "url": "https://github.com/steipete/pnpm",
+      "stars": 1,
+      "language": "Rust",
+      "updated_at": "2026-09-19T01:25:05Z",
+      "description": "Fast, disk space efficient package manager",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "dingtalk-openclaw-connector",
+      "url": "https://github.com/steipete/dingtalk-openclaw-connector",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-09-02T02:16:01Z",
+      "description": "Official OpenClaw DingTalk channel plugin | 钉钉官方 OpenClaw 插件",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "vitest",
+      "url": "https://github.com/steipete/vitest",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-09-19T01:25:20Z",
+      "description": "Next generation testing framework powered by Vite.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "wecom-openclaw-plugin",
+      "url": "https://github.com/steipete/wecom-openclaw-plugin",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-08-28T15:37:37Z",
+      "description": "OpenClaw 的官方企业微信插件，由企业微信团队开发和维护。它将你的 OpenClaw Agent 无缝对接到企业微信工作流，集成文档、智能表格、日历能力。",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "openclaw-vkbots-plugin",
+      "url": "https://github.com/steipete/openclaw-vkbots-plugin",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-08-28T15:55:45Z",
+      "description": "A channel plugin enabling usage of OpenClaw via VK.com bots",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "openclaw-channel-zulip",
+      "url": "https://github.com/steipete/openclaw-channel-zulip",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-08-28T18:21:57Z",
+      "description": "Zulip channel plugin for OpenClaw — concurrent message processing, reaction indicators, file uploads, and full actions API",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "matrix-rust-sdk-crypto-nodejs",
+      "url": "https://github.com/steipete/matrix-rust-sdk-crypto-nodejs",
+      "stars": 0,
+      "language": "Rust",
+      "updated_at": "2026-08-29T02:23:43Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "tsx",
+      "url": "https://github.com/steipete/tsx",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-08-30T00:36:17Z",
+      "description": "⚡️ TypeScript Execute | The easiest way to run TypeScript in Node.js",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "run-testbox",
+      "url": "https://github.com/steipete/run-testbox",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-08-30T18:07:19Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "whizzlelabs-openclaw-zulip",
+      "url": "https://github.com/steipete/whizzlelabs-openclaw-zulip",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-09-07T20:16:07Z",
+      "description": "OpenClaw channel plugin for Zulip — clean-room implementation with ACP topic bindings",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "postgres-pglite",
+      "url": "https://github.com/steipete/postgres-pglite",
+      "stars": 0,
+      "language": "C",
+      "updated_at": "2026-10-16T04:05:42Z",
+      "description": "Postgres fork used for PGlite",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/steipete",
+    "count": 7,
+    "layers": {
+      "skill": 2,
+      "tool": 5
+    },
+    "items": [
+      {
+        "name": "agent-scripts",
+        "layer": "skill",
+        "category": "Skill 工程",
+        "repo": "agent-scripts",
+        "subdir": "",
+        "summary": "跨仓库共享的 agent 规则与 skill 单一真源：AGENTS.MD、skills/、scripts/、hooks/，并用 sync-skills 为 Codex 与 Claude Code 生成各自形态的 skill 镜像",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "agent-skill-links-audit",
+        "layer": "tool",
+        "category": "Skill 工程",
+        "repo": "agent-scripts",
+        "subdir": "",
+        "summary": "只读审计脚本，检出同名嵌套自链接（reason=nested-self-link），修复仍走仓库的 sync-skills",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "validate-skills",
+        "layer": "tool",
+        "category": "Skill 工程",
+        "repo": "agent-scripts",
+        "subdir": "",
+        "summary": "校验每个 skills/*/SKILL.md 的 YAML front matter 与必填 name、description，可用 git hooksPath 挂成提交前钩子",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "sync-skills",
+        "layer": "tool",
+        "category": "Agent 基础设施",
+        "repo": "agent-scripts",
+        "subdir": "",
+        "summary": "幂等的全局发现构建脚本：Codex 建整根链接、Claude Code 建扁平逐 skill 链接镜像、共享 AGENTS.MD 指针；冲突按 agent-scripts > manager > codex-local 解决并清理失效链接",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "browser-tools",
+        "layer": "tool",
+        "category": "Agent 基础设施",
+        "repo": "agent-scripts",
+        "subdir": "",
+        "summary": "独立 Chrome DevTools 辅助脚本，nav/eval/screenshot/console/network/search/content 等命令，导航失败即失败但仅 network idle 超时不影响已加载正文",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "docs-list",
+        "layer": "tool",
+        "category": "写作与分发",
+        "repo": "agent-scripts",
+        "subdir": "",
+        "summary": "遍历 docs/ 并强制 summary 与 read_when front matter，输出上手摘要",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "fleet-maintenance",
+        "layer": "skill",
+        "category": "Agent 基础设施",
+        "repo": "agent-scripts",
+        "subdir": "",
+        "summary": "维护本机 skill 链接拓扑的 skill，含 --repair 走广域 sync 与窄域 nested-self-link 修复两种模式的区分说明",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "name": "Agent Scripts",
+      "repo": "agent-scripts",
+      "stars": 7392,
+      "verdict": "把「agent 该读什么规则、能调哪些 skill」从每个仓库各写一份改成一份真源加按形态生成的链接层",
+      "problem": "同一台机器上同时用 Codex 和 Claude Code 干活的开发者：两个客户端的 skill 发现规则不同（Codex 扫嵌套目录、Claude Code 只扫一层且只认 `<name>/SKILL.md`），加上一堆下游仓库，规则和 skill 会漂移或冲突",
+      "mechanism": [
+        "AGENTS.MD 作为共享硬规则的唯一副本，客户端侧全部是指针（~/.claude/CLAUDE.md 链到同一份 AGENTS.MD）",
+        "下游仓库只放指针式 AGENTS.MD（READ ~/Projects/agent-scripts/AGENTS.MD BEFORE ANYTHING），仓库特有规则写在指针下方，不复制共享块",
+        "skills/ 目录用受版本控制的相对符号链接暴露别处的 repo-owned skill（birdclaw、discrawl、gog、imsg、peekaboo、slacrawl、wacli、wacrawl），真源留在各自仓库",
+        "scripts/sync-skills 幂等地为两种客户端生成不同形态的链接镜像并打印跳过项、清理失效链接；scripts/validate-skills 校验 front matter，可挂 git hooksPath"
+      ],
+      "constraints": [
+        "SKILL.md 的 description 必须是带引号的短句且只服务于路由，不能写成文档",
+        "skill 名称必须以 ASCII 字母或数字开头，只含字母数字 . _ -，重名与未知参数一律拒绝",
+        "同步脚本不许覆盖真实文件目录；遇到真实目标冲突直接报错并让 sync 失败（legacy 嵌套自链接拓扑需显式 allowlist 的专用模式处理）"
+      ],
+      "takeaway": [
+        "把共享 agent 规则抽成一份带指针的 AGENTS.MD，下游仓库只留三行指针加自己的规则",
+        "为每种客户端的发现规则各写一个适配脚本，共享同一份 skill 真源，并做成幂等 + 打印变更 + 清理失效链接",
+        "给 skill 目录配一个提交前 hook 做 front matter 校验，别靠人肉检查"
+      ],
+      "limits": [
+        "嵌套自链接的修复在 unlink 前逐个复查，不构成原子并发保护；中途出错会留下已完成的删除且不回滚",
+        "audit 脚本只识别同名嵌套祖先环，不是完整的链接图校验器",
+        "整个方案假定 POSIX 符号链接与 ~/Projects 布局，README 未见 Windows 原生路径的依据"
+      ]
+    },
+    {
+      "name": "Summarize",
+      "repo": "summarize",
+      "stars": 6730,
+      "verdict": "把「读长内容」压成一个入口，输出摘要而非原文搬运",
+      "problem": "人机共用场景：手上有 URL、YouTube、播客或本地文件，想快速拿到 gist 而不想逐个平台换工具",
+      "mechanism": [
+        "统一入口：任意 URL/视频/播客/文件走同一条命令",
+        "双形态交付：同一能力同时给 CLI 和 Chrome 扩展，降低接入门槛"
+      ],
+      "constraints": [
+        "本地材料未见依据"
+      ],
+      "takeaway": [
+        "多输入源的能力先统一入口，再分形态交付，别为每个平台单开一个工具"
+      ],
+      "limits": [
+        "本地材料只有仓库描述，未见 README，摘要质量控制、缓存、成本策略均未见依据",
+        "依赖外部平台的可访问性，视频/播客转录路径是否稳定未知"
+      ]
+    },
+    {
+      "name": "Oracle",
+      "repo": "oracle",
+      "stars": 4061,
+      "verdict": "把「卡住时的第二意见」做成带自定义上下文和附件的一次调用",
+      "problem": "编码 agent 卡壳时的开发者：想换一个更强模型带着自己的代码与约束重新问一遍，而不是重写一遍 prompt",
+      "mechanism": [
+        "显式触发语义：只在卡住时调用，不做常驻助手",
+        "调用时支持注入自定义上下文与文件，让判断建立在真实材料上"
+      ],
+      "constraints": [
+        "依赖 GPT-5 Pro 可用性与对应凭据"
+      ],
+      "takeaway": [
+        "把「换个模型重问」做成带文件注入的一次性工具，比让 agent 自己换 prompt 更可控"
+      ],
+      "limits": [
+        "本地材料未见 README，成本控制、上下文长度上限、失败重试策略均未见依据",
+        "绑定单一模型供应商，模型不可用即整体不可用"
+      ]
+    },
+    {
+      "name": "Birdclaw",
+      "repo": "birdclaw",
+      "stars": 1668,
+      "verdict": "把自己的推文整理成 agent 可抓取的存储层",
+      "problem": "需要让编码 agent 检索自己历史推文的作者本人：推文散在时间线上，agent 读不到也搜不准",
+      "mechanism": [
+        "把内容落到 agent 可直接检索的存储，而不是靠抓取界面",
+        "定位明确写成 claw-able for agents，接口面按 agent 消费设计"
+      ],
+      "constraints": [
+        "本地材料未见依据"
+      ],
+      "takeaway": [
+        "自己产出的内容单独建一份 agent 可读的存储，比让 agent 去解析平台界面稳定"
+      ],
+      "limits": [
+        "本地材料只有仓库描述，检索接口、更新频率、存储后端均未见依据",
+        "作为数据源，受限于平台侧的可用性与导出方式"
+      ]
+    },
+    {
+      "name": "Brabble",
+      "repo": "brabble",
+      "stars": 172,
+      "verdict": "语音触发本地 agent，并在触发命令后挂 hook，全程本地执行",
+      "problem": "不想一直盯着终端的本地开发者：需要用说的方式唤起 agent，并让触发词能带出后续动作",
+      "mechanism": [
+        "以 Star Trek 式唤名（「Hey, Computer」）作为触发词做语音入口",
+        "触发命令后运行 hooks，把识别结果接到固定动作上",
+        "本地运行，作者在描述里明确写出这样做的理由（隐私）"
+      ],
+      "constraints": [
+        "本地运行换取隐私，能力受本机依赖限制",
+        "需要麦克风输入与语音识别链路"
+      ],
+      "takeaway": [
+        "语音入口 + 触发词 hook 是把 agent 从「等输入」变成「可唤醒」的低成本做法",
+        "在描述里直接写清楚为什么不云端化，这类决策理由比功能列表更能防止被误用"
+      ],
+      "limits": [
+        "本地材料未见 README，识别准确率、唤醒词冲突、后台常驻的开销均未见依据",
+        "隐私由「本地运行」保证，一旦引入远程识别这条前提即失效"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "单一真源 + 指针式引用",
+      "kind": "method",
+      "evidence": [
+        "agent-scripts",
+        "peekaboo（skill 真源留在本仓库，经相对符号链接暴露）",
+        "birdclaw",
+        "discrawl",
+        "slacrawl",
+        "wacli"
+      ],
+      "claim": "共享规则与能力只存一份，其他地方（客户端目录、下游仓库、别的仓库）一律放指针或受版本控制的符号链接，从不复制内容"
+    },
+    {
+      "id": "P2",
+      "name": "为每种消费者的加载规则各写一个适配器",
+      "kind": "method",
+      "evidence": [
+        "agent-scripts",
+        "sweet-cookie",
+        "SweetCookieKit",
+        "sweetcookie"
+      ],
+      "claim": "同一份能力面对不同加载规则的消费者时，为每种规则单独做形态适配而不是改真源；同一能力横跨 Swift/Go/TypeScript 三种语言重复实现（sweet-cookie 系列）"
+    },
+    {
+      "id": "P3",
+      "name": "一句话描述写触发词与适用场景，不写流程",
+      "kind": "technique",
+      "evidence": [
+        "agent-scripts"
+      ],
+      "claim": "description 只保留短触发短语，服务路由匹配；正文写操作细节，避免 agent 照描述跳过正文"
+    },
+    {
+      "id": "P4",
+      "name": "破坏性操作前先只读审计，且修复范围分级",
+      "kind": "method",
+      "evidence": [
+        "agent-scripts（agent-skill-links-audit.sh 与 --repair-nested-self-links 专用模式）",
+        "poltergeist",
+        "Trimmy"
+      ],
+      "claim": "涉及链接/覆盖/剪贴板改写的工具都配一个只读审计模式，并把窄修复与广修复分开命名，避免一次 sync 顺手做掉不该做的事"
+    },
+    {
+      "id": "P5",
+      "name": "脚本零依赖、可移植，不用仓库特定导入",
+      "kind": "technique",
+      "evidence": [
+        "agent-scripts"
+      ],
+      "claim": "共享 helper 保持 dependency-free、不引用仓库特定路径别名，才能被任意下游仓库直接调用"
+    }
+  ],
+  "sources": [
+    "https://github.com/steipete",
+    "https://github.com/steipete?tab=repositories",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}
