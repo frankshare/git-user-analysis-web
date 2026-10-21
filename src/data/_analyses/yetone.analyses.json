@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.1",
+  "user": "yetone",
+  "analyses": [
+    {
+      "constraints": [
+        "依赖菜单栏/系统托盘等原生宿主形态，跨平台实现需分别落地",
+        "强依赖外部模型供应商与各家 CLI 的行为约定，供应商变动即失效"
+      ],
+      "limits": [
+        "可用性完全绑定各家 coding agent CLI 的登录态与额度，账号受限即不可用",
+        "本地材料未见依据：其内部调度、快捷键映射与自更新实现细节"
+      ],
+      "mechanism": [
+        "以菜单栏作为唯一入口，把多个 agent CLI 的调用收敛到一处选择",
+        "按模型/供应商维度提供切换项（Codex、Claude Code、Kimi 等）",
+        "用独立 releases 仓库（magpie-releases，161 星）承载签名构建产物，主仓库只留源码"
+      ],
+      "name": "magpie",
+      "problem": "同时使用多个 coding agent CLI 的开发者，在终端之间反复切换、记忆各家登录与命令，希望在一个入口统一选模型与启动。",
+      "repo": "magpie",
+      "stars": 17913,
+      "takeaway": [
+        "把多 agent 的差异收敛到一个系统级入口（菜单栏/托盘）而不是让用户记命令",
+        "用独立 releases 仓库托管签名产物，源码仓库保持干净、便于阅读"
+      ],
+      "verdict": "把多家 coding agent 的选模型与启动统一进菜单栏，定位是 agent 时代的统一入口层。"
+    },
+    {
+      "constraints": [
+        "每条消息都要经过 agent 大脑（云端或自带 Claude Code/Codex），成本与延迟由 agent 决定",
+        "需要维护自建大脑与 BYO 大脑两条接入路径"
+      ],
+      "limits": [
+        "自建大脑路径依赖供应商服务可用性；BYO 路径要求用户已装并登录对应 CLI",
+        "本地材料未见依据：消息持久化、权限模型与多 agent 冲突消解的具体设计"
+      ],
+      "mechanism": [
+        "把 agent 建模为团队里的正式成员，与人类成员同处一个会话空间",
+        "提供云端大脑与自带大脑（Claude Code / Codex）两种接入方式",
+        "独立 cumora-releases 仓库托管 DMG/ZIP/安装包与自动更新源"
+      ],
+      "name": "cumora",
+      "problem": "需要让多个 AI agent 协作完成一件事的小团队与个人，在通用 IM 里 agent 只是「被 @ 的机器人」，缺上下文与权限。",
+      "repo": "cumora",
+      "stars": 4000,
+      "takeaway": [
+        "让 agent 成为有身份、有上下文槽位的成员，而不是命令行调用",
+        "同时支持云端与 BYO 大脑，把算力归属交给用户决定"
+      ],
+      "verdict": "把 AI agent 放成聊天团队里的一等成员，用「agent 团队协作」替代「人调用 agent」。"
+    },
+    {
+      "constraints": [
+        "结论绑定 Raycast Beta 的实现细节，宿主换代会部分失效",
+        "作为 Agent Skill 使用，需要外部 agent 运行时加载其规则文件"
+      ],
+      "limits": [
+        "面向 macOS 桌面应用设计经验，Windows/Linux 的原生惯例需另行补充",
+        "本地材料未见依据：八条原则与四层结构的具体条目与验证方式"
+      ],
+      "mechanism": [
+        "对 Raycast 2.0 做深拆与对 Beta.app 的逆向，提炼为八条架构原则",
+        "把原则组织成四层结构，供 agent 按层检查自己的设计",
+        "以 SKILL.md 形式分发给 coding agent 使用"
+      ],
+      "name": "native-feel-skill",
+      "problem": "做跨平台桌面应用的开发者与 AI 编码工具，写出来的界面总是「网页套壳」质感，缺原生平台的手感与规范。",
+      "repo": "native-feel-skill",
+      "stars": 1931,
+      "takeaway": [
+        "把「逆向一个标杆产品」的经验蒸馏成可复用的检查清单型 skill",
+        "原则要分层组织，便于 agent 逐层自查而不是一次背诵"
+      ],
+      "verdict": "把「做桌面应用要像原生」这件事写成可被 agent 执行的架构检查 skill，而非泛泛的设计文章。"
+    },
+    {
+      "constraints": [
+        "扫描需读项目源码，规则依赖可静态识别的模式",
+        "改动面广，误伤可能引入新的「不像 AI」观感问题"
+      ],
+      "limits": [
+        "对「刻意做旧」或风格化产品的项目不适用",
+        "本地材料未见依据：其 tics 清单条目、扫描器的判定规则与回滚方式"
+      ],
+      "mechanism": [
+        "先归纳 AI 生成产品在视觉与文案上的通用套路（tics）",
+        "把套路写成可扫描的规则，工具遍历项目并剔除",
+        "配一个独立站点 killaislop.com 承载说明"
+      ],
+      "name": "kill-ai-slop",
+      "problem": "使用 AI 生成前端/文案的产品，界面充满同质化的渐变、圆角、emoji 与空话套话，需要一次性清理。",
+      "repo": "kill-ai-slop",
+      "stars": 1373,
+      "takeaway": [
+        "把审美主张做成「可扫描 + 可自动整改」的工具，而不是纯文档",
+        "用独立官网承载面向人的说明，与仓库里的 agent 规则分工"
+      ],
+      "verdict": "把「AI 味」拆成可枚举的视觉与文案套路，并用 agent skill 直接对项目下刀。"
+    },
+    {
+      "constraints": [
+        "shell 集成强依赖 zsh 生态",
+        "依赖外部模型提供补全"
+      ],
+      "limits": [
+        "仅限 zsh，其他 shell 需自行移植",
+        "本地材料未见依据：提示拼装、延迟控制与失败降级策略"
+      ],
+      "mechanism": [
+        "以 Go 实现，把 AI 补全嵌进 shell 的按键流中",
+        "在 zsh 内直接返回命令建议，而非跳转外部界面"
+      ],
+      "name": "smart-suggestion",
+      "problem": "在终端里记不住长命令的开发者，历史上依赖静态命令历史，跨项目复用差。",
+      "repo": "smart-suggestion",
+      "stars": 223,
+      "takeaway": [
+        "把 AI 能力做进用户本来就在用的入口（编辑器/终端/托盘），而不是新开一个应用"
+      ],
+      "verdict": "把 AI 命令建议塞进 zsh 的输入流，属于「不改用户习惯」的轻量增强。"
+    }
+  ]
+}

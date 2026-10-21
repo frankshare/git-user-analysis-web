@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.1",
+  "user": "cellinlab",
+  "analyses": [
+    {
+      "name": "Pi Agent 原理与实现",
+      "repo": "how-pi-agent-works",
+      "stars": 967,
+      "verdict": "一个只靠「读源码讲原理」的单点爆款，是全部流量与口碑的唯一来源。",
+      "problem": "想搞懂 Pi 这类 coding agent 运行时到底怎么跑起来的开发者；官方文档只给用法不给机制，于是需要一份能对照源码的中文拆解。",
+      "mechanism": [
+        "选题选在「有真实实现但缺中文原理说明」的空白位，而不是再造一个 agent 框架",
+        "内容型仓库（language 字段为空、无代码主语言），成本低、可读性强，天然适合传播",
+        "仓库名直接把「对象 + 动作」写成 how-*-works 句式，SEO 与转发心智成本极低"
+      ],
+      "constraints": [
+        "强绑定 Pi 这一个上游实现，Pi 改版即失效",
+        "全仓库 91.8% 的自有星数来自它，一旦单点下架，账号层面归零"
+      ],
+      "takeaway": [
+        "找「热门实现 + 中文原理缺口」的交集做拆解，比造轮子更容易起量",
+        "内容型仓库用 how-*-works 命名，一次把检索入口占住"
+      ],
+      "limits": [
+        "只讲机制不提供可运行组件，对只想「拿来用」的读者没有留存",
+        "内容型仓库无语言标记，对自动化工具链不可见，传播依赖口碑而非依赖引用",
+        "本地材料未见依据：具体章节结构、是否有可运行 demo、是否持续更新到最新 Pi 版本"
+      ]
+    },
+    {
+      "name": "赛博横店：面向创作者与 Agent 的虚拟制片基础设施",
+      "repo": "cyber-hengdian",
+      "stars": 7,
+      "verdict": "把「虚拟制片」这类重基础设施降维成 Agent 可编排的接口层，是账号里最贴近 skill/agent 主线的一个自有产品化尝试。",
+      "problem": "视频创作者与 coding agent 需要一套可被程序调用的虚拟拍摄/合成环境；传统方案是重工程、难自动化，agent 无法直接驱动。",
+      "mechanism": [
+        "定位明确写成「for video creators and AI agents」，把两类用户同时写进 description 做双向导流",
+        "用 TypeScript 承载，暗示走 Web/实时管线而非离线渲染，便于被 agent 通过工具接口调用",
+        "保留中英双语命名与说明，降低跨平台被检索和被 skill 收录的概率"
+      ],
+      "constraints": [
+        "虚拟制片链路天然依赖真实硬件与实时管线，本地跑通成本高",
+        "项目尚未形成生态或 star 规模，缺少外部贡献者"
+      ],
+      "takeaway": [
+        "description 里同时点名目标人群与 agent，是让 Agent 生态主动收录自己的低成本做法",
+        "基础设施类项目要先把接口做成可被程序调用，再谈界面"
+      ],
+      "limits": [
+        "7 星说明尚未找到稳定使用者，机制描述在本地材料中无法验证",
+        "本地材料未见依据：具体接口形态、是否已有 skill 封装、依赖哪些采集设备"
+      ]
+    },
+    {
+      "name": "cell-skills",
+      "repo": "cell-skills",
+      "stars": 29,
+      "verdict": "账号里唯一的自有 skill 集合仓库，星数不高但承担了「把方法沉淀成可复用件」的职能。",
+      "problem": "开发者反复踩同一类坑时，缺少一份自己维护、可持续更新的 skill 集合来直接复用。",
+      "mechanism": [
+        "以仓库而非单文件承载 skill，便于成批增加与版本化",
+        "选用 Python 作为实现语言，暗示 skill 多数以脚本化工具形式存在而非纯提示词",
+        "与 how-pi-agent-works 形成互补：前者讲原理，此处沉淀可执行件"
+      ],
+      "constraints": [
+        "仓库 description 为空，外部读者无法从列表页判断内容，必须进主页才看得懂",
+        "29 星远低于同账号爆款，缺乏对外传播入口"
+      ],
+      "takeaway": [
+        "任何做内容拆解的账号，都应配一个自建 skill 仓库承接「看完就能用」",
+        "至少给 skill 仓库写一句 description，否则收录与检索都吃亏"
+      ],
+      "limits": [
+        "本地材料未见依据：具体包含哪些 skill、是否有目录/安装协议/版本检查",
+        "无法判断其分层（skill / tool / persona）是否符合体系化要求"
+      ]
+    },
+    {
+      "name": "resona-skill",
+      "repo": "resona-skill",
+      "stars": 0,
+      "verdict": "0 星的单 skill 试验仓库，说明账号在做「一个能力一个仓库」的横向铺量。",
+      "problem": "本地材料未见依据：该仓库面向的具体场景与要解决的问题在 JSON 中没有任何描述。",
+      "mechanism": [
+        "采用「一能力一仓库」的最小可发布单元，配合 Python 实现",
+        "与 cell-skills 并存，说明作者同时在做集中式合集与分散式单点两种沉淀形态"
+      ],
+      "constraints": [
+        "0 星、无 description，几乎不具备可发现性",
+        "同一能力在两个仓库形态中并存，存在维护分叉风险"
+      ],
+      "takeaway": [
+        "单点 skill 仓库适合快速验证，合集仓库适合沉淀——两者要明确分工"
+      ],
+      "limits": [
+        "本地材料未见依据：该 skill 的功能、目标用户与任何内部机制",
+        "0 星状态下无法评估实际使用量，star 本身也不代表使用"
+      ]
+    },
+    {
+      "name": "celf-cli / celf-ui / celf-template-vite-react 系列",
+      "repo": "celf-cli",
+      "stars": 0,
+      "verdict": "一组同名前缀的自建脚手架模板，属基础设施沉淀而非对外产品，定位偏内部复用。",
+      "problem": "账号内大量 React/Vite/Tailwind/Electron 小 demo（react-todo-app、react-calculator、toy-react、daily-demo 等）重复搭建脚手架，需要抽成模板与 CLI。",
+      "mechanism": [
+        "以 celf- 前缀统一命名 CLI、UI 库与两套 Vite 模板，形成可识别的内部工具链",
+        "同一账号下并存 vue-diy、nest-tiny-demo、Saas-Starterkit 等早期同类项目，说明在持续收敛",
+        "模板层与技术栈解耦：同时提供 vite-react 与 vite-react-ts 两个变体"
+      ],
+      "constraints": [
+        "全部 0 星，说明这套工具链没有外部采用，只在内部生效",
+        "与散落的几十个 demo 仓库并置，容易造成「哪套是当前标准」的歧义"
+      ],
+      "takeaway": [
+        "当同类 demo 仓库超过 10 个时，先把脚手架抽成 CLI + 模板，再继续写 demo",
+        "统一前缀命名内部基建，能让「哪个是权威版本」一眼可辨"
+      ],
+      "limits": [
+        "本地材料未见依据：celf-cli 的具体命令、celf-ui 的组件范围、模板的默认配置",
+        "0 星导致外部无法验证其稳定性与维护活跃度"
+      ]
+    }
+  ]
+}

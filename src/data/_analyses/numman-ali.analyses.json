@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.1",
+  "user": "numman-ali",
+  "analyses": [
+    {
+      "name": "openskills",
+      "repo": "openskills",
+      "stars": 10805,
+      "verdict": "用一条安装命令消除了多 agent 之间 skill 不通用的问题，是这个人全部星数的支柱（占自有星 64.1%）。",
+      "problem": "同时使用 Claude Code、Codex 等多个 AI 编码 agent 的开发者，手里的 skill 目录散落在各工具的私有路径里，换工具就要重写一遍。",
+      "mechanism": [
+        "定义一套与宿主 agent 无关的 skill 目录约定，把 skill 做成可被多方读取的统一格式",
+        "以 npm 全局包（npm i -g openskills）分发，把安装动作压缩成一条命令",
+        "同时服务 Claude Code、Codex 等多种宿主，用适配层而不是为每个宿主各做一个包"
+      ],
+      "constraints": [
+        "必须为每种宿主 agent 单独维护适配逻辑，宿主升级即成维护债",
+        "依赖 Node/npm 全局安装环境，无法覆盖非 Node 宿主的 skill 机制"
+      ],
+      "takeaway": [
+        "如果你的工具面向多宿主，先定义中立格式 + 薄适配层，而不是每个宿主一份实现",
+        "把安装收敛到一条可粘贴命令，是这类分发工具获客成本最低的入口"
+      ],
+      "limits": [
+        "只解决 skill 发现与加载，不涉及 skill 质量本身",
+        "宿主 agent 的 skill 规范若变动，兼容窗口取决于对方"
+      ]
+    },
+    {
+      "name": "cc-mirror",
+      "repo": "cc-mirror",
+      "stars": 2262,
+      "verdict": "把「换个模型跑同一个 agent」这件小事做成了隔离实例生成器，卖的是配置自由而非新能力。",
+      "problem": "想用 Z.ai、MiniMax、OpenRouter、LiteLLM 等不同 provider 跑 Claude Code 的开发者，改配置就污染原有环境，切回原模型还得重来一遍。",
+      "mechanism": [
+        "为每个 provider 克隆出一份互相隔离的 Claude Code 变体，各自持有独立配置",
+        "复用 Claude Code 本体而不改动其代码，差异只落在配置层",
+        "把 provider 差异抽象成模板，批量生成而不是手工复制目录"
+      ],
+      "constraints": [
+        "每个变体占用独立磁盘与依赖副本，实例多了成本线性上升",
+        "强绑定 Claude Code 的配置格式与目录约定，上游改结构即失效"
+      ],
+      "takeaway": [
+        "「同一工具多配置并行」的需求，用模板化实例复制解决，比每次手改配置更安全",
+        "把差异收敛在配置层，比 fork 上游代码的维护成本低一个量级"
+      ],
+      "limits": [
+        "只是配置隔离，不改变 agent 行为能力",
+        "provider 侧限流与计费问题不在其解决范围"
+      ]
+    },
+    {
+      "name": "opencode-openai-codex-auth",
+      "repo": "opencode-openai-codex-auth",
+      "stars": 2212,
+      "verdict": "用一个官方 OAuth 插件把已有的 ChatGPT 订阅变成可用的编码额度，属于搭桥而非造新东西。",
+      "problem": "已经付了 ChatGPT Plus/Pro 订阅费的用户，想在 opencode 这类编码助手里用上这份订阅，但缺少合法的认证接入方式。",
+      "mechanism": [
+        "走 OpenAI 官方认证方法（OAuth）而非自建代理或转卖 API key",
+        "以插件形式挂进 opencode，不改宿主主流程",
+        "定位在「个人编码辅助」场景，边界清晰"
+      ],
+      "constraints": [
+        "完全依赖 OpenAI 侧的认证政策与令牌生命周期，官方一改即断",
+        "订阅额度的使用范围受服务条款约束，不是通用 API 通道"
+      ],
+      "takeaway": [
+        "要接第三方订阅，优先找官方认证路径，不要自建中转",
+        "认证类集成做成独立插件而非侵入式改造，宿主升级成本最低"
+      ],
+      "limits": [
+        "仅适用于持有对应订阅的个人用户",
+        "上游政策变化随时可能使其不可用"
+      ]
+    },
+    {
+      "name": "n-skills",
+      "repo": "n-skills",
+      "stars": 1051,
+      "verdict": "把 openskills 的加载能力往策展与分发侧延伸，是生态位补齐而非新机制。",
+      "problem": "写 skill 的人没有稳定渠道，Claude Code、Codex、openskills 三处用户群各自为战，装 skill 要一个个手动找。",
+      "mechanism": [
+        "以市场形式集中收录与分发 skill",
+        "同时声明兼容 Claude Code、Codex 与 openskills 三个宿主",
+        "复用 openskills 已建立的 skill 目录约定作为底层格式"
+      ],
+      "constraints": [
+        "依赖 openskills 生态的持续存在，格式一变就需同步",
+        "市场类项目的价值依赖收录质量与维护持续性"
+      ],
+      "takeaway": [
+        "有了加载器之后再做分发层，是 skill 生态的自然第二阶段",
+        "同一份产物声明多宿主兼容，能把一次维护摊到三个用户群"
+      ],
+      "limits": [
+        "本质是索引与分发，不生产 skill 内容",
+        "本地材料未见依据：其收录标准与审核流程"
+      ]
+    },
+    {
+      "name": "zai-cli",
+      "repo": "zai-cli",
+      "stars": 110,
+      "verdict": "把视觉理解、网页搜索、网页阅读、仓库探查四类能力压进一个 MCP 原生 CLI，作为无头环境的能力补件。",
+      "problem": "在终端或 CI 环境中编码的开发者，没有 GUI 可用，需要以命令行方式调用 Z.AI 的多模态与检索能力。",
+      "mechanism": [
+        "以 CLI 形式暴露能力，可脚本化调用而非绑定 IDE",
+        "采用 MCP 原生协议，便于挂进 agent 工具链",
+        "把四类异构能力（视觉/搜索/阅读/仓库）统一到同一入口"
+      ],
+      "constraints": [
+        "四类能力共用一套 CLI，参数模型不够贴合各能力的最佳用法",
+        "强依赖 Z.AI 的接口配额与接口形态"
+      ],
+      "takeaway": [
+        "把异构能力统一到一个入口，收益大于为每类能力各写一个脚本",
+        "选 MCP 原生协议做 CLI，能直接复用 agent 生态的工具注册"
+      ],
+      "limits": [
+        "仅覆盖 Z.AI 一家的能力，不通用",
+        "本地材料未见依据：各子命令的具体实现差异"
+      ]
+    },
+    {
+      "name": "editorzero",
+      "repo": "editorzero",
+      "stars": 21,
+      "verdict": "自托管的 AI 原生文档平台，核心主张是人与 agent 对等共同编辑，目前仍在架构与 ADR 阶段。",
+      "problem": "文档写作中 agent 只能追加式改写，人与 agent 争夺同一份文档所有权，冲突与覆盖无从追溯。",
+      "mechanism": [
+        "把人与 AI agent 定位为对等的共同编辑者，而非工具与使用者关系",
+        "自托管部署，数据与文档留在自己手里",
+        "以 ADR（架构决策记录）先行，把设计取舍显式化后再写实现"
+      ],
+      "constraints": [
+        "仍处 Phase 1（架构与 ADR），可用功能有限",
+        "「对等共同编辑」需要解决并发冲突与权限归属，工程量未在本地材料中体现"
+      ],
+      "takeaway": [
+        "新平台先写 ADR 再写实现，把不可逆决策提前暴露",
+        "涉及 agent 协作的文档工具，先明确所有权与冲突规则"
+      ],
+      "limits": [
+        "尚未进入功能可用阶段，star 数不反映真实使用量",
+        "本地材料未见依据：架构决策的具体内容与后续里程碑"
+      ]
+    }
+  ]
+}

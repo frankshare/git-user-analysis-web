@@ -1,0 +1,176 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getConvergence } from '../lib/convergence';
+import { getAllUsers } from '../lib/data';
+
+const conv = getConvergence();
+const users = getAllUsers();
+const userName = (login: string) => users.find(u => u.profile.login === login)?.profile.name || login;
+
+// 检查清单：每条来自某个收敛簇，映射到可执行的自查项
+const CHECKLIST = [
+  {
+    cluster: 'C1',
+    title: '给每个环节配一道可检查的门',
+    why: '可靠性不来自更详细的提示词，而来自可被检查的物理证据。11 位作者用 11 种不同手段实现它——关键是「有门」，不是「哪种门」。',
+    items: [
+      { q: '完成判定是「文件存在」而不是「我说了做完了」吗？', e: '花叔的 brand-spec.md / direction-approved.md', alt: '文件 / 脚本 / 测试 / 红灯 / 审批 / 排除项，六选一' },
+      { q: '有可运行的校验命令吗？报错带修正路径而不只是「检查失败」？', e: '归藏 validate-swiss-deck.mjs 的 R1 溢出规则给出像素级修正阶梯', alt: '姚金刚 validate_repository.py' },
+      { q: '写操作和读操作分开了吗？写路径是否强制人工确认？', e: 'sickn33 tidal-mcp 读写分离；coleam00 固定位置插审批门', alt: '逸尘：导出链接不继承下载授权' },
+      { q: 'agent 想绕过这道门时，它的借口被逐条堵死了吗？', e: 'obra 的「借口/现实」表', alt: '或者用姚金刚的 claim guard 扫一遍宣称' },
+    ],
+  },
+  {
+    cluster: 'C2',
+    title: '让手改变成会报错的错误',
+    why: '同一份内容要在多处出现时，手工同步必然漂移。15 位作者的最大共识簇。',
+    items: [
+      { q: '同一内容是否出现在两个以上地方？如果是，它被生成还是被手写？', e: 'obra everyharness.yaml → 11 种 harness 清单', alt: 'yetone 源码仓与 releases 仓物理分离' },
+      { q: '生成物漂移时会报错吗？', e: 'everyharness validate 对漂移失败', alt: 'mvanhorn 生成器仓 / 生成物库仓' },
+      { q: '你的内容有明确的「真源」吗？其余都是可弃可重建的派生物？', e: '逸尘：Markdown 是唯一真相源，索引都可弃', alt: '姚金刚：平台中立 Skill IR → 编译出各端产物' },
+      { q: '安装完有存在性校验吗？', e: '归藏：装完 ls 校验 SKILL.md / assets/ / references/ 三项', alt: 'addyosmani：独立站点 skills.addy.ie 解决发现与安装' },
+    ],
+  },
+  {
+    cluster: 'C3',
+    title: '入口压到最小，细节按需加载',
+    why: '这条直接决定 skill 能不能被弱模型执行——是可用性下限，不是优化项。',
+    items: [
+      { q: 'SKILL.md 里有长表和大段素材吗？挪到 references 了吗？', e: '归藏：SKILL.md 只写工作流与原则，细节按主题分文件', alt: '姚金刚：入口轻量 + 细节外置' },
+      { q: '给 references 标了 token 成本吗？', e: 'obra：常驻 <200 词，重内容标注 token 成本', alt: '或者用 context_sizer.py 之类脚本量化' },
+      { q: '确定性的步骤还留在自然语言里吗？该移进 scripts。', e: 'alirezarezvani：附可定制 references 与 Shell 脚本', alt: '把「怎么算」交给代码，不交给模型' },
+      { q: 'skill 跨框架验证过吗？', e: 'coleam00 把渐进披露抽象到 custom-agent-with-skills 验证可移植性', alt: '不只在一个 harness 里能跑就算数' },
+    ],
+  },
+  {
+    cluster: 'C4',
+    title: '先证明，再宣称',
+    why: '13 位作者在 13 种不同层面要求同一件事。共同点不是「怎么验」，而是「不许没验就说完成」。',
+    items: [
+      { q: '有可自动复算的判据吗？还是靠「读起来专业」？', e: 'addyosmani：判据从 Lighthouse 一路用到 Agent 评测', alt: '归藏：Playwright 实测 overflow / 底部空白 / 标题间距' },
+      { q: 'skill 自己被测过吗？测的是「它管不管用」，不是「它合不合规」。', e: 'obra：NO SKILL WITHOUT A FAILING TEST FIRST', alt: '花叔：三重验证（跨域/生成力/排他性）' },
+      { q: '产物里有一个能说「还没做到」的字段吗？', e: '逸尘：pending_verification 恒为只读并返回 can_authorize_action=false', alt: '姚金刚：evidence ledger + claim guard' },
+      { q: '跨报告的数字一致吗？', e: '姚金刚：evidence_consistency 跨报告比对', alt: '多个产物共用一个派生计数器' },
+    ],
+  },
+  {
+    cluster: 'C5',
+    title: '主动降低对自己的承诺',
+    why: 'star 数是流量，与「真的好用吗」无关。边界声明是唯一能让人判断可用性的信号。10 位作者都在做这件事。',
+    items: [
+      { q: 'README 顶部写明「不适合什么」了吗？', e: '归藏：❌ 大段表格数据 / 培训课件 / 多人协作编辑', alt: '把「不能保证什么」写进正文第二段，不是 FAQ 深处' },
+      { q: '不稳定的地方用阶段声明代替完成度承诺了吗？', e: 'numman-ali：明写「Phase 1」并计划产出 ADR', alt: '用版本号表达完成度' },
+      { q: '描述里能给出可核对的具体数字吗？', e: 'alirezarezvani：380+ skills / 30+ agents / 8+ 编码 agent', alt: '不写「大量」「丰富」这类词' },
+      { q: '每个仓库只做一件事吗？', e: '李继刚：仓库名与描述即其边界声明', alt: '严旭：按领域切 agent，不做全能体' },
+    ],
+  },
+  {
+    cluster: 'C6',
+    title: '把品味封成可枚举、可复用的集合',
+    why: '11 位作者的共同选择：与其写更多形容词，不如把内容固化成具名清单、模板或规则集。这是「58 个 skill」和「1 套方法论」都能成立的原因。',
+    items: [
+      { q: '你在意的东西写成具名清单了吗？还是只有形容词？', e: '归藏：22 个具名版式 S01–S22 + 4 套锚点色', alt: 'obra：31 类失败模式与借口封堵表' },
+      { q: '你禁止了「自定义」吗？不禁止的话，agent 一定会乱来。', e: '归藏：「不允许自定义 hex 值，保护美学比给自由更重要」', alt: '给一个明确的理由，否则规则会被绕' },
+      { q: '内容格式化成机器能检查的格式了吗？', e: 'coleam00：Open Knowledge Format + 引用校验', alt: '李继刚：输出统一为可截图卡片' },
+      { q: '目录/集合有机器可读的索引吗？', e: '花叔 skills.json；addyosmani 目录化 Skill + 独立站点', alt: 'sickn33：清单之外补上选择、校验、规划、CI 四段流程' },
+    ],
+  },
+];
+---
+
+<BaseLayout title="方法检查清单 · Git 用户分析" description="把 23 位创作者独立收敛出的方法，变成你可以逐条自查的行动清单">
+  <section class="py-6 border-b border-slate-800/80 mb-8">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-medium mb-4">
+      <span>可执行版 · {conv?.stats.users_analyzed ?? 0} 位创作者 · {conv?.stats.patterns_total ?? 0} 条 Patterns 的收敛结论</span>
+    </div>
+    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-4">
+      方法检查清单
+    </h1>
+    <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-3xl">
+      这不是我的建议清单，是 <strong class="text-slate-200">{conv?.stats.users_analyzed ?? 0} 位互不相识的创作者独立收敛出来的东西</strong>。
+      每一条下面都标了证据来自谁——你不同意可以驳，但请先看看有多少人用了不同手段得出同一个结论。
+    </p>
+    <div class="mt-5 flex items-center gap-3 flex-wrap text-sm">
+      <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800 text-slate-300">
+        共 <strong class="text-white font-mono">{CHECKLIST.reduce((n, c) => n + c.items.length, 0)}</strong> 条自查项
+      </span>
+      <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800 text-slate-300">
+        覆盖 <strong class="text-white font-mono">{CHECKLIST.length}</strong> 组收敛方法
+      </span>
+      <a href="/convergence" class="text-xs text-emerald-400 hover:text-emerald-300 transition-colors">查看收敛簇证据 →</a>
+    </div>
+  </section>
+
+  <section class="space-y-6">
+    {CHECKLIST.map((c, ci) => {
+      const cluster = conv?.clusters.find(x => x.id === c.cluster);
+      return (
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden">
+          <div class="p-6 border-b border-slate-800/70">
+            <div class="flex items-start gap-3 mb-2">
+              <span class="font-mono text-xs text-sky-500/70 pt-1 shrink-0">{c.cluster}</span>
+              <div class="flex-1 min-w-0">
+                <h2 class="text-lg font-bold text-white">{c.title}</h2>
+                <p class="text-sm text-slate-300 mt-2 leading-relaxed">{c.why}</p>
+              </div>
+              {cluster && (
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-sky-500/10 text-sky-400 border border-sky-500/20 shrink-0">
+                  {cluster.coverage} 位作者
+                </span>
+              )}
+            </div>
+          </div>
+
+          <ul class="divide-y divide-slate-800/60">
+            {c.items.map((it, ii) => (
+              <li class="p-5 flex gap-3 hover:bg-slate-900/40 transition-colors">
+                <span class="font-mono text-xs text-slate-600 pt-1 shrink-0">
+                  {c.cluster}.{ii + 1}
+                </span>
+                <div class="flex-1 min-w-0">
+                  <p class="text-sm text-slate-100 leading-relaxed font-medium">
+                    {it.q}
+                  </p>
+                  <div class="mt-2 flex items-start gap-2 flex-wrap">
+                    <span class="text-[11px] text-slate-600 shrink-0 pt-0.5">证据</span>
+                    <span class="text-[11px] font-mono text-emerald-400/80">{it.e}</span>
+                  </div>
+                  {it.alt && (
+                    <div class="mt-1 flex items-start gap-2 flex-wrap">
+                      <span class="text-[11px] text-slate-600 shrink-0 pt-0.5">同理</span>
+                      <span class="text-[11px] text-slate-500">{it.alt}</span>
+                    </div>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+    })}
+  </section>
+
+  <!-- 使用方式 -->
+  <section class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6">
+      <h2 class="text-base font-bold text-white mb-3">怎么用这份清单</h2>
+      <ol class="space-y-2.5 text-sm text-slate-400 list-decimal list-inside">
+        <li>先只做 <strong class="text-slate-200">C1</strong>——它的一栏是「门」，任何 skill 缺了门，其他五条都撑不住。</li>
+        <li>然后做 <strong class="text-slate-200">C5</strong>——把你的「不适合场景」写出来。这一步最省力，收益最快。</li>
+        <li>C2 / C3 / C4 是工程量较大的三条，按项目阶段排期，不要一次做完。</li>
+        <li>每条都问自己「我现在做得到吗」，答不上来的直接跳过，别硬凑。</li>
+      </ol>
+    </div>
+
+    <div class="bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6">
+      <h2 class="text-base font-bold text-white mb-3">关于本站这份清单的可信度</h2>
+      <ul class="space-y-2 text-sm text-slate-400">
+        <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>收敛不是算法判定，是关键词匹配 + 人工核对。换一个归类者可能有不同结果。</li>
+        <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>样本 23 人中 21 人来自两份策展清单（1 份 X 榜单 + 4 份英文清单），来源仍集中。</li>
+        <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>中文 17 人 vs 英文 6 人，比例失衡。「跨中英文圈」现在有英文样本背书了，但差距仍大。</li>
+        <li class="flex gap-2"><span class="text-amber-500 shrink-0">·</span>这是相关性不是因果：用门文件不证明用了门文件就会成功。</li>
+        <li class="flex gap-2"><span class="text-emerald-500 shrink-0">·</span>但反过来的推论是安全的：<strong class="text-slate-200">23 人里 11 人用门文件，7 人用渐进披露，13 人要求先证明——这些做法本身没有坏处。</strong></li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

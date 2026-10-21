@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source）+ raw README/SKILL.md；来源：司徒K《2026年X上最值得关注的120个中文博主》",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "yaojingang",
+    "name": "姚金刚",
+    "bio": "把「重复工作沉淀为可评估、可治理、可打包的 AI 资产」做成一条方法线（YAO）的独立创作者，同时用自建 GEO 平台承接出海 GEO 落地。",
+    "website": "https://yaojingang.github.io/",
+    "x": "https://x.com/yaojingang",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "hybrid",
+    "public_repos": 17,
+    "source_repos": 17,
+    "fork_repos": 0
+  },
+  "stats": {
+    "total_stars_source": 13619,
+    "total_stars_all": 13619,
+    "median_stars": 164,
+    "ge_1000": 4,
+    "between_100_999": 5,
+    "between_10_99": 5,
+    "lt_10": 3,
+    "no_language": 0,
+    "top4_share": 79.5,
+    "top1_share": 28.3
+  },
+  "repos": [
+    {
+      "name": "GEOFlow",
+      "url": "https://github.com/yaojingang/GEOFlow",
+      "stars": 3860,
+      "language": "PHP",
+      "updated_at": "2026-10-11T05:05:03Z",
+      "description": "Open-source GEO content engineering and multi-site distribution platform with AI quality inspection, illustrated admin help, hosted sites, browser-assisted publishing, and signed updates.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "yao-open-prompts",
+      "url": "https://github.com/yaojingang/yao-open-prompts",
+      "stars": 2942,
+      "language": "Python",
+      "updated_at": "2026-10-08T07:40:15Z",
+      "description": "Practical bilingual AI prompt library for prompt engineering, work, learning, content, marketing, and everyday use.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "yao-meta-skill",
+      "url": "https://github.com/yaojingang/yao-meta-skill",
+      "stars": 2705,
+      "language": "Python",
+      "updated_at": "2026-08-17T09:19:43Z",
+      "description": "YAO = Yielding AI Outcomes. A rigorous engineering, evaluation, governance, and portability system for reusable agent skills.",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "yao-open-skills",
+      "url": "https://github.com/yaojingang/yao-open-skills",
+      "stars": 1322,
+      "language": "HTML",
+      "updated_at": "2026-10-14T10:44:53Z",
+      "description": "OpenYao public skills collection: reusable AI assets for decision-making, business analysis, tutorials, research evidence gathering, and document generation.",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "yao-geo-skills",
+      "url": "https://github.com/yaojingang/yao-geo-skills",
+      "stars": 891,
+      "language": "HTML",
+      "updated_at": "2026-10-01T01:29:22Z",
+      "description": "An open-source Skill collection for GEO content and workflows, continuously updated.",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "geo-citation-lab",
+      "url": "https://github.com/yaojingang/geo-citation-lab",
+      "stars": 696,
+      "language": "HTML",
+      "updated_at": "2026-08-09T13:01:51Z",
+      "description": "GEO experiment data reports and a curated GEO/AEO/AI search paper library.",
+      "fork": false,
+      "layer": "tool",
+      "category": "信息获取"
+    },
+    {
+      "name": "GEORank",
+      "url": "https://github.com/yaojingang/GEORank",
+      "stars": 505,
+      "language": "Python",
+      "updated_at": "2026-10-14T20:16:44Z",
+      "description": "Open-source GEO ranking and generative engine optimization platform.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "TokHub",
+      "url": "https://github.com/yaojingang/TokHub",
+      "stars": 208,
+      "language": "Go",
+      "updated_at": "2026-08-19T07:27:44Z",
+      "description": "AI API 中转站监控、推荐运营与 OpenAI 兼容专属网关系统，支持分层探测、健康评分、用量计量、告警审计和 Docker 自托管。",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "GEOHub",
+      "url": "https://github.com/yaojingang/GEOHub",
+      "stars": 164,
+      "language": "HTML",
+      "updated_at": "2026-08-31T10:33:02Z",
+      "description": "GEOHub: open, evidence-bounded GEO and SEO agent skills for AI Search, with research-grounded discovery, diagnosis, content, measurement, and one-line SEO planning.",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "yao-open-tools",
+      "url": "https://github.com/yaojingang/yao-open-tools",
+      "stars": 90,
+      "language": "PHP",
+      "updated_at": "2026-09-21T02:57:52Z",
+      "description": "Yao 的开源小工具集合：聚焦本地优先的 AI 编码、网页截图、视频转写、终端诊断和磁盘空间分析工作流。",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "profound-clone",
+      "url": "https://github.com/yaojingang/profound-clone",
+      "stars": 79,
+      "language": "TypeScript",
+      "updated_at": "2026-10-14T11:32:47Z",
+      "description": "Profound (tryprofound.com) 前后台 1:1 学习复刻 · Next.js 16 / React 19 / SQLite · Educational replica for learning only, not affiliated with Profound Inc.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "TokEMS",
+      "url": "https://github.com/yaojingang/TokEMS",
+      "stars": 77,
+      "language": "TypeScript",
+      "updated_at": "2026-10-17T13:25:39Z",
+      "description": "开源、自托管的一体化大会运营平台，贯通官网、报名、票务、订单、发票、通知与现场签到 | Open-source, self-hosted conference operations platform",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "yaojingang.github.io",
+      "url": "https://github.com/yaojingang/yaojingang.github.io",
+      "stars": 58,
+      "language": "SCSS",
+      "updated_at": "2026-10-07T12:25:32Z",
+      "description": "Personal blog site",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "yaojingang",
+      "url": "https://github.com/yaojingang/yaojingang",
+      "stars": 12,
+      "language": "HTML",
+      "updated_at": "2026-08-10T03:39:04Z",
+      "description": "GitHub profile README for Yao Jingang",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ai-leadership-toolkit",
+      "url": "https://github.com/yaojingang/ai-leadership-toolkit",
+      "stars": 5,
+      "language": "Python",
+      "updated_at": "2026-09-06T10:21:30Z",
+      "description": "《AI领导力》配套工具箱：3 套 Skill、15 套提示词与完整实践示例",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "geoflow-updater",
+      "url": "https://github.com/yaojingang/geoflow-updater",
+      "stars": 5,
+      "language": "Go",
+      "updated_at": "2026-10-20T07:33:18Z",
+      "description": "Signed host-side updater and recovery control plane for GEOFlow",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "liekan-docs",
+      "url": "https://github.com/yaojingang/liekan-docs",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2026-10-15T00:47:34Z",
+      "description": "猎看文档系统：HTML、PDF、Word 上传、阅读、在线编辑与文档访问控制。",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/yaojingang",
+    "count": 10,
+    "layers": {
+      "skill": 5,
+      "other": 1,
+      "tool": 4
+    },
+    "items": [
+      {
+        "name": "Yao Meta Skill",
+        "layer": "skill",
+        "category": "元方法/技能工厂",
+        "repo": "yao-meta-skill",
+        "subdir": "",
+        "summary": "平台中立 Skill IR + 多目标编译器 + Eval Lab + Review Studio + 发布治理与证据台账的 skill 全生命周期系统",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "Yao Open Skills",
+        "layer": "skill",
+        "category": "公开 skill 合集",
+        "repo": "yao-open-skills",
+        "subdir": "",
+        "summary": "决策、商业分析、教程、研究等 15 个公开 skill 的合集，配发布规则、命名规范与登记表",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "Yao GEO Skills",
+        "layer": "skill",
+        "category": "GEO（生成式引擎优化）",
+        "repo": "yao-geo-skills",
+        "subdir": "",
+        "summary": "24 个 GEO skill，覆盖策略诊断、页面技术、内容生产、知识资产、监测归因与研究拓词",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "GEOHub",
+        "layer": "skill",
+        "category": "GEO 方法与度量",
+        "repo": "GEOHub",
+        "subdir": "",
+        "summary": "以证据为界的 GEO/SEO agent skills，覆盖研究、诊断、内容、测量与一行式 SEO 规划",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "Yao Open Prompts",
+        "layer": "other",
+        "category": "提示词库",
+        "repo": "yao-open-prompts",
+        "subdir": "",
+        "summary": "中英双语实用提示词库，覆盖工作、学习、内容与营销场景",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "AI Leadership Toolkit",
+        "layer": "skill",
+        "category": "团队管理工具箱",
+        "repo": "ai-leadership-toolkit",
+        "subdir": "",
+        "summary": "《AI领导力》配套 3 套 Skill、15 套提示词与完整实践示例",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "TokHub",
+        "layer": "tool",
+        "category": "平台运营工具",
+        "repo": "TokHub",
+        "subdir": "",
+        "summary": "AI API 中转站监控与 OpenAI 兼容网关，含分层探测、健康评分、用量计量与告警审计",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "GEOFlow",
+        "layer": "tool",
+        "category": "自建平台",
+        "repo": "GEOFlow",
+        "subdir": "",
+        "summary": "开源 GEO 内容工程与多站点分发平台，含 AI 质检、托管站点、浏览器辅助发布与签名更新",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "GEORank",
+        "layer": "tool",
+        "category": "GEO 排名工具",
+        "repo": "GEORank",
+        "subdir": "",
+        "summary": "开源 GEO 排名与生成式引擎优化平台",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "Yao Open Tools",
+        "layer": "tool",
+        "category": "本地优先工具集",
+        "repo": "yao-open-tools",
+        "subdir": "",
+        "summary": "本地优先小工具：AI 编码、网页截图、视频转写、终端诊断与磁盘空间分析工作流",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "name": "Yao Meta Skill",
+      "repo": "yao-meta-skill",
+      "stars": 2705,
+      "verdict": "把 skill 制作从提示词写作升级为带中间表示、编译目标、评测证据与发布锁的治理系统，工程量远超同类，但收益也只在需要多人维护 skill 时才显现",
+      "problem": "要把散落在聊天记录、prompt 集、runbook 里的重复工作变成可安装、可评估、可跨平台分发、可长期维护的团队级 skill 包；对手写 SKILL.md 的做法，缺的是契约、评测证据与发布边界",
+      "mechanism": [
+        "先做意图建模把 job/outputs/exclusions/constraints 显式化，再生成文件，意图对话最多两轮并记录结构化假设而不留存完整对话",
+        "用平台中立的 Skill IR 承载 trigger/契约/资源/证据，再由 target compilers 编译出 OpenAI、Claude、generic、VS Code 等目标适配器",
+        "触发质量按 train/dev/holdout 三段跑评测，额外加 blind holdout、adversarial holdout、独立评分 judge 与 route confusion 记分卡",
+        "所有报告产物做跨报告事实一致性比对（evidence_consistency），防止各报告口径漂移",
+        "引入 world-class evidence ledger/intake/claim-guard 三件套，把未获得的外部与人工证据显式挂账，并阻断提前的完成态宣称",
+        "SkillOps 循环只收元数据级采用与漂移信号，任何持久化写入都必须审批通过"
+      ],
+      "constraints": [
+        "以本仓库为唯一事实源，生成的业务 skill 必须放成本地同级目录，私有报告不得入库",
+        "入口文件 SKILL.md 的文件名被保留给根 skill，示例一律命名 SKILL.example.md，防止递归发现误激活",
+        "要求 Python 3.11+，CI 固定 3.11，并有 python_compat_check.py 拦截 f-string 表达式反斜杠等语法隐患",
+        "同步到本地镜像前必须先过打包与安装预检，否则拒绝同步"
+      ],
+      "takeaway": [
+        "把自己的 skill 先抽成平台中立 IR，再编译出各客户端产物，避免每家格式各写一遍",
+        "触发描述用 train/dev/holdout 三段评测验收，并单独跑 blind 与 adversarial holdout",
+        "给未达成的宣称建 ledger + claim guard，让宣传口径自动被证据状态卡住",
+        "元数据级遥测 + 审批门控的提案循环，先出报告不动文件"
+      ],
+      "limits": [
+        "91.5/100 是作者自评加权分，与 Anthropic/OpenAI 的对比也由作者自己打分，缺第三方复核",
+        "human blind A/B 只有 1 名评审、5/5 胜率，per-case rationale 为空，README 自己标注了这条边界",
+        "运行时权限探测结果为 0 个 native-enforcement 适配器、4 个 metadata fallback，权限实际靠提示而非强制",
+        "评测是静态 fixture 与本地 runner 跑出的证据，不等于模型真实执行质量；且加权表里 Onboarding 只有 6.5 分"
+      ]
+    },
+    {
+      "name": "Yao GEO Skills",
+      "repo": "yao-geo-skills",
+      "stars": 891,
+      "verdict": "唯一把 GEO 业务链路按 skill 包规范整建制的仓库，价值在于把监测采样做成了可复跑资产，而不是给一堆提示词",
+      "problem": "做出海/中文站点的 GEO 团队，需要把「诊断—改造—监测—归因」这条重复链路变成可分发的标准作业，而不是每次重写 prompt",
+      "mechanism": [
+        "内容工程流水线：策略/页面技术/内容生产/知识资产/测量归因被拆成独立 Skill 包，每包自带 SKILL.md、manifest.json、输入简报模板与 evals",
+        "用 registry/skills.json 作为仓库内事实源，由 scripts/validate_repository.py 做仓库级结构校验，不合规直接报错",
+        "监测侧做 DeepSeek、豆包、ChatGPT AI Search 的重复采样与采样概率报告，把归因建立在重复观测而非单次截图上",
+        "交付物不止文本，还生成 HTML、DOCX 等可直接交付产物",
+        "公开案例统一去隐私、去内网依赖、去私有系统绑定"
+      ],
+      "constraints": [
+        "PHP/Laravel 技术栈，主题层依赖 Blade 改动",
+        "发布动作走浏览器辅助分发，更新走签名 host-side 通道，脱离官方通道的副本保持只读",
+        "多站点分发意味着每个站点的内容质量要单独过 AI 质检"
+      ],
+      "takeaway": [
+        "给每个 skill 固定最小包结构：SKILL.md + manifest.json + 输入模板 + trigger/产物 evals + 人读说明页",
+        "用 registry 文件加一个校验脚本当 CI 门禁，防止合集退化成散装 prompt",
+        "AI 搜索可见度结论必须基于重复采样并报告采样概率，不能凭单次结果"
+      ],
+      "limits": [
+        "PHP 生态与部署门槛相对高，与他其余 Python/HTML skill 生态不共享运行时",
+        "浏览器辅助发布与托管站点强绑定第三方 AI 搜索与生成接口的行为",
+        "GEO 效果测量本身依赖被测引擎的采样稳定性，重复采样 skill 承认存在采样概率问题"
+      ]
+    },
+    {
+      "name": "Yao Open Skills",
+      "repo": "yao-open-skills",
+      "stars": 1322,
+      "verdict": "公开 skill 合集里少见地把「什么不该公开」写成硬规则，方法论型 skill 的可执行验证明显弱于 yao-meta-skill",
+      "problem": "想找可直接用的决策/商业分析/教程类 Skill 的人，以及想把本地私有 Skill 安全公开的作者，缺一个可信的筛选与治理入口",
+      "mechanism": [
+        "用公开收录标准（主题清晰、可复用、可清理、可维护）做入库闸门，而不是先收再说",
+        "每个 Skill 双语 README 加中文说明页，声明实际调用由客户端加载与选择机制决定，不夸大触发确定性",
+        "诊断类 Skill 先做现状清晰度判断，信息不足时追问而不是硬出结论",
+        "明确区分主要矛盾与次要矛盾，并要求给出改判条件",
+        "大型知识类 skill 自带原创知识卡、场景索引与来源索引作为可离线引用的资产"
+      ],
+      "constraints": [
+        "收录必须去敏感信息、缓存、输出物与账号痕迹",
+        "登记事实源在 registry/，README 与登记表由脚本同步更新",
+        "区分「已发布能力」与「规划中的能力线」，避免把方向当成果"
+      ],
+      "takeaway": [
+        "给 skill 合集写明确的入库四条（清晰/可复用/可清理/可维护），并把它做成文档化的门",
+        "在 README 里把「已发布」和「规划中」分区写，避免路线图被当成现有能力",
+        "在对外说明中写清「实际调用由客户端机制决定」，给能力宣称留出诚实边界"
+      ],
+      "limits": [
+        "多数 skill 是方法论与判断框架，产出质量取决于模型与用户输入事实，缺少像 yao-meta-skill 那样的可执行评测",
+        "依赖个人视角（纳瓦尔、博弈论、贝叶斯）做判断输出，主观性强，不适合要求可复现的合规场景"
+      ]
+    },
+    {
+      "name": "GEOFlow",
+      "repo": "GEOFlow",
+      "stars": 3860,
+      "verdict": "星数最高的自建平台型项目，起量点在于 GEO 多站点分发的完整闭环，而不是某个单点算法",
+      "problem": "需要同时运营多个站点并让内容被生成式引擎收录的运营方，单站手工改写无法规模化",
+      "mechanism": [
+        "以「内容工程 + 多站点分发」为产品主线，覆盖选题、生成、质检、分发全链路",
+        "内建 AI 质量检查，把内容合规/可读性检查做成系统内环节而非人工抽查",
+        "把浏览器辅助发布作为自动化落地的兜底手段，覆盖无 API 的站点",
+        "配套独立签名更新器与托管站点，闭环分发可信度"
+      ],
+      "constraints": [
+        "以 PHP 为主，与他多数 skill 仓库的 Python/HTML 技术栈不同",
+        "配套的 geoflow-updater 是 Go 编写的签名更新器，属于独立组件"
+      ],
+      "takeaway": [
+        "把内容质检内建到发布链路，而不是发布后人工抽查",
+        "分发渠道走浏览器辅助 + 签名更新双轨，覆盖无 API 的目标站点",
+        "多站点分发时把站点差异收到平台层，不让每个 skill 各写一套适配"
+      ],
+      "limits": [
+        "无 README 材料佐证其评测与质量机制细节，机制判断主要来自命名与描述推测",
+        "更新通道依赖自有签名体系，脱离官方控制面时升级路径受限"
+      ]
+    },
+    {
+      "name": "geo-citation-lab",
+      "repo": "geo-citation-lab",
+      "stars": 696,
+      "verdict": "低星但角色清晰——它承担 GEO 板块的证据底座，方法密度高于星数所暗示的量级",
+      "problem": "GEO 领域缺可引用的实验结论，需要一个把自测数据与外部论文分开陈列的证据库，避免把单次实验当结论",
+      "mechanism": [
+        "把实验数据报告与精选论文库分开陈列，区分自测数据与外部证据",
+        "用 curated library 形式为 GEO/AEO/AI search 研究提供可引用来源索引",
+        "报告形态与论文库形态并存，服务不同读者"
+      ],
+      "constraints": [
+        "Python 实现，需与本地解读工具的调用契约对齐",
+        "仓库定位是实验数据与论文库，不是可运行引擎"
+      ],
+      "takeaway": [
+        "把自测实验数据与外部论文分两个栏目，别混在一起当同等级证据",
+        "低星仓库也值得做：它的产出形态（报告 + 精选库）能直接嵌进自己的方法论文档"
+      ],
+      "limits": [
+        "证据来自作者自建的实验口径，缺外部复现",
+        "作为参考库而非工具，无法直接接入自动化流程"
+      ]
+    },
+    {
+      "name": "TokHub",
+      "repo": "TokHub",
+      "stars": 208,
+      "verdict": "典型的运维型自建工具，方法可迁移到任何多上游依赖场景，但与 GEO 主线无直接关系",
+      "problem": "依赖第三方 AI API 中转的团队，需要知道哪个上游真实可用、成本多少、出了问题如何追溯",
+      "mechanism": [
+        "分层探测加健康评分，避免单一探针误判上游可用性",
+        "用量计量与告警审计分离，保证成本可追溯",
+        "Docker 自托管，把部署与数据边界交给使用者",
+        "OpenAI 兼容专属网关降低迁移成本"
+      ],
+      "constraints": [
+        "依赖 API 中转生态，运营方需自备可用上游",
+        "Go 实现，与同项目的 PHP/HTML 技术栈并行"
+      ],
+      "takeaway": [
+        "做上游依赖时用分层探测 + 健康评分，而不是单次 ping",
+        "用量计量与告警审计分开落库，才能事后追责"
+      ],
+      "limits": [
+        "业务价值取决于上游中转渠道的价格与稳定性，自身不可控",
+        "与 GEO 主线主题无关，属独立产品线"
+      ]
+    },
+    {
+      "name": "profound-clone",
+      "repo": "profound-clone",
+      "stars": 79,
+      "verdict": "低星学习型复刻，价值在拆解路径而非代码本身，且合规边界已由作者自行标注",
+      "problem": "想理解一个成熟 SaaS 前台与后台交互结构的学习者，没有可读的参照实现",
+      "mechanism": [
+        "前后台 1:1 复刻，用同一套路由与状态结构对照反推原实现",
+        "本地 SQLite 替代远端服务，降低复现门槛",
+        "README 显式标注教育用途与无关联声明，控制合规风险"
+      ],
+      "constraints": [
+        "Next.js 16 + React 19 + SQLite，技术栈较新",
+        "定位为学习复刻，涉及第三方产品界面与数据结构的近似实现"
+      ],
+      "takeaway": [
+        "用「1:1 复刻 + 自述学习用途」做逆向学习，README 首行写清无关联声明",
+        "替换远端服务为本地 SQLite，让参照实现能跑起来而不只是能读"
+      ],
+      "limits": [
+        "声明仅供学习、非官方关联，不可作为生产依赖",
+        "功能与原产品的差距未在描述中量化"
+      ]
+    },
+    {
+      "name": "GEORank / GEOHub",
+      "repo": "GEOHub",
+      "stars": 164,
+      "verdict": "与自建平台耦合的配套 skill 集合，通用性低但示范了如何把平台能力包装成 agent 可调用的窄边界",
+      "problem": "用 AI 代理操作自家 GEOFlow 站点时，缺少把「运营动作」翻译成可执行命令的确定性入口",
+      "mechanism": [
+        "把平台操作拆成 CLI 操作、模板映射、主题编辑三个窄 Skill，避免一个大 Skill 承载全流程",
+        "模板映射作为独立边界，使主题改动不必重写内容 Skill",
+        "每个 Skill 统一带 manifest.json 与 evals，保持可校验"
+      ],
+      "constraints": [
+        "每个 Skill 需自带 CLI 操作与 Blade 主题编辑能力，绑定 GEOFlow 的具体 CLI 与目录约定",
+        "依赖 GEOFlow 站点可访问才能验证模板映射效果"
+      ],
+      "takeaway": [
+        "平台操作型 Skill 按动作面切窄（CLI / 模板 / 主题），不要合并成全流程 Skill",
+        "平台 Skill 必须与 CLI 契约绑定并配 evals，平台一改就要重跑校验"
+      ],
+      "limits": [
+        "与 GEOFlow 强耦合，GEOFlow 变更即失效",
+        "184 星、164 星量级，属配套件而非独立方法论"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "中立中间表示 + 多目标编译",
+      "kind": "method",
+      "evidence": [
+        "yao-meta-skill",
+        "yao-geo-skills",
+        "GEOHub"
+      ],
+      "claim": "任何要长期维护的 AI 资产都要配一个平台中立的语义契约（IR/manifest/interface.yaml），再编译出各客户端产物，而不是每家格式各维护一份"
+    },
+    {
+      "id": "P2",
+      "name": "触发描述单独评测并按 holdout 分层",
+      "kind": "technique",
+      "evidence": [
+        "yao-meta-skill",
+        "yao-geo-skills"
+      ],
+      "claim": "把「什么时候该触发」当作一等问题单独评测，用 train/dev/holdout 分段并叠加 blind、adversarial holdout 和 route confusion，而不是写完正文再补一句 description"
+    },
+    {
+      "id": "P3",
+      "name": "公开前的准入闸门与去敏规则",
+      "kind": "method",
+      "evidence": [
+        "yao-open-skills",
+        "yao-geo-skills",
+        "yao-meta-skill"
+      ],
+      "claim": "凡是对外公开的仓库/skill，必须先写清不公开的条件并配可运行的校验脚本，把「不该收什么」变成硬门而不是靠自觉"
+    },
+    {
+      "id": "P4",
+      "name": "宣称防过拟合的证据台账与 claim guard",
+      "kind": "technique",
+      "evidence": [
+        "yao-meta-skill"
+      ],
+      "claim": "未取得的证据要显式挂账并阻断提前宣称，用 evidence ledger + claim guard 让宣传口径自动随证据状态收敛"
+    },
+    {
+      "id": "P5",
+      "name": "生成报告之间的一致性门",
+      "kind": "technique",
+      "evidence": [
+        "yao-meta-skill"
+      ],
+      "claim": "多报告并存的产物体系必须有一条跨报告事实一致性检查，否则同一指标会在不同 HTML/JSON 里各自漂移"
+    },
+    {
+      "id": "P6",
+      "name": "遥测与提案的元数据化 + 审批门控",
+      "kind": "technique",
+      "evidence": [
+        "yao-meta-skill",
+        "yao-open-skills"
+      ],
+      "claim": "对外行为测量只收元数据（命令名、结果、时点），不收参数与原文，且所有写入动作都审批门控"
+    },
+    {
+      "id": "P7",
+      "name": "入口轻量 + 细节外置的资源边界检查",
+      "kind": "technique",
+      "evidence": [
+        "yao-meta-skill",
+        "yao-geo-skills"
+      ],
+      "claim": "生成物按「入口轻、细节外置」拆成 SKILL.md + references/ + scripts/ + evals/ + assets/，并用脚本量化上下文预算"
+    },
+    {
+      "id": "P8",
+      "name": "对不稳定外部对象做重复采样与概率报告",
+      "kind": "technique",
+      "evidence": [
+        "yao-geo-skills",
+        "geo-citation-lab"
+      ],
+      "claim": "被测对象不稳定时（AI 搜索结果），结论必须基于重复采样并报告采样概率/置信，而不是单次观测"
+    }
+  ],
+  "sources": [
+    "https://github.com/yaojingang",
+    "https://github.com/yaojingang?tab=repositories",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

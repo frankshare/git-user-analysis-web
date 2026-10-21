@@ -1,0 +1,501 @@
+{
+  "schema_version": "1.2",
+  "note": "跨作者收敛簇：当同一个方法在 3 位以上互不相识的创作者、不同领域里独立出现，说明它是方法而不是偏好。2026-10-21 从 5 人扩到 17 人后复核，C1–C5 全部成立且覆盖数上升，并新浮现 C6。",
+  "snapshot": {
+    "date": "2026-10-21",
+    "users_analyzed": 23,
+    "patterns_total": 127,
+    "analyses_total": 151,
+    "revision": 3
+  },
+  "clusters": [
+    {
+      "id": "C1",
+      "name": "门与闸门：把「做没做」变成机制问题",
+      "coverage": 11,
+      "summary": "十一位作者用完全不同的技术手段，解决同一个问题——如何证明 agent 真的做了某一步，而不是嘴上说做了。",
+      "why_it_matters": "这是跨中英文圈最一致的共识：可靠性不来自更详细的提示词，而来自可被检查的物理证据（文件存在、测试红灯清零、目录未被改动、审批通过）。",
+      "members": [
+        {
+          "user": "alchaincyf",
+          "pattern": "门文件 / 三方向门",
+          "evidence": "品牌/方向/导演稿三个 gate 文件，文件不在 = 环节没做；三方向门要求先出三个真实初稿再执行",
+          "mechanism": "文件系统作为完成度证据"
+        },
+        {
+          "user": "obra",
+          "pattern": "反合理化护栏",
+          "evidence": "先跑基线让 agent 违规，再用「借口/现实」表逐条堵死",
+          "mechanism": "测试夹具 + 借口封堵"
+        },
+        {
+          "user": "op7418",
+          "pattern": "用真实渲染测量做质量门",
+          "evidence": "Playwright 实测 overflow、底部空白、标题间距、行数预算；checklist 分 P0–P3，P0 全过才交付",
+          "mechanism": "可运行校验器 + 分级 checklist"
+        },
+        {
+          "user": "mcncarl",
+          "pattern": "把「不做」写成硬规则",
+          "evidence": "导出链接不继承下载授权，只读路线不继承写权限",
+          "mechanism": "授权范围逐级显式重述"
+        },
+        {
+          "user": "yaojingang",
+          "pattern": "准入闸门 + 审批门控",
+          "evidence": "收录四门槛 + validate_repository.py；遥测只收元数据，所有持久化写入必须审批通过",
+          "mechanism": "可运行脚本当 CI 门禁 + 审批门"
+        },
+        {
+          "user": "yetone",
+          "pattern": "Skill 描述写明触发与排除条件",
+          "evidence": "描述格式固定为「场景 + 触发词 + 明确排除项（SKIP）」",
+          "mechanism": "排除条件写进描述"
+        },
+        {
+          "user": "vikingmute",
+          "pattern": "命名用 gate / forge 动作隐喻",
+          "evidence": "review-forge、content-gate 把「保证质量」表述为流程约束而非工具能力",
+          "mechanism": "语义即边界"
+        },
+        {
+          "user": "realchendahuang",
+          "pattern": "中英双语描述作为统一门面",
+          "evidence": "每条项目描述采用「中文主句 + 英文对句」，双语结构本身就是一种可检约束",
+          "mechanism": "描述格式统一"
+        },
+        {
+          "user": "sickn33",
+          "pattern": "写操作默认审批门控",
+          "evidence": "在 MCP/agent 接口上把读与写分离，写路径强制人工确认",
+          "mechanism": "读写分离 + 写路径确认"
+        },
+        {
+          "user": "coleam00",
+          "pattern": "把人类审批门固化在自动化链条上",
+          "evidence": "无论全自动还是半自动，都在链条固定位置插入显式评审/审批门，而不是让 agent 自由连续执行",
+          "mechanism": "固定位置插审批门"
+        },
+        {
+          "user": "numman-ali",
+          "pattern": "同一套模板复制成多个个性化产物",
+          "evidence": "codex-wrapped（123 星）与 cc-wrapped（87 星）共用同一模板，只换数据源",
+          "mechanism": "模板 + 数据源分离"
+        }
+      ],
+      "verdict": "23 人规模下命中 11 位作者（5→8→11），其中 3 位是英文圈。中文用门文件/测试夹具/脚本门禁，英文用审批门/读写分离/模板复制——手段完全不同，问题相同。",
+      "actionable": "给任何 skill 加一道可检查的门：文件、脚本、测试、红灯、审批、排除项——六选一。"
+    },
+    {
+      "id": "C2",
+      "name": "单一事实源与结构化分发：拒绝手工同步",
+      "coverage": 15,
+      "summary": "十五位作者都遇到了同一个工程问题——同一份内容需要在多处出现，手工同步必然漂移。解法都是「让手改变成会报错的错误」，或把一份真源投影到多处。",
+      "why_it_matters": "这是把 skill 从「文档」升级为「工程资产」的分水岭，也是本站数据管线的直接来源。本站自己就是这条方法的产物。",
+      "members": [
+        {
+          "user": "obra",
+          "pattern": "单一清单生成多端",
+          "evidence": "一个 everyharness.yaml 生成 11 种 harness 的清单与安装文档，validate 对漂移报错",
+          "mechanism": "模板生成 + 漂移校验"
+        },
+        {
+          "user": "mcncarl",
+          "pattern": "真相源与派生物分离",
+          "evidence": "Markdown 是唯一真相源，SQLite/向量索引都可弃可重建；安装迁移一律 plan/apply 两段式",
+          "mechanism": "真源 + 派生物 + 两段式迁移"
+        },
+        {
+          "user": "op7418",
+          "pattern": "三选一安装协议加存在性校验",
+          "evidence": "npx / 自然语言 / 手动 clone，装完校验三个目录存在",
+          "mechanism": "安装即校验"
+        },
+        {
+          "user": "yaojingang",
+          "pattern": "中立中间表示 + 多目标编译",
+          "evidence": "平台中立 Skill IR → 编译出各客户端产物；报告之间还有一致性门",
+          "mechanism": "IR + 编译器 + 跨报告一致性检查"
+        },
+        {
+          "user": "yetone",
+          "pattern": "源码与分发产物分仓",
+          "evidence": "主仓库只放源码，*-releases 仓库放签名构建包与自动更新源",
+          "mechanism": "物理分仓"
+        },
+        {
+          "user": "wong2",
+          "pattern": "同一主题铺「清单 + 工具 + 框架」三层入口",
+          "evidence": "awesome-mcp-servers / mcp-cli / litemcp 分属三层",
+          "mechanism": "多层入口占位"
+        },
+        {
+          "user": "alchaincyf",
+          "pattern": "机器可读目录与安装协议",
+          "evidence": "skills.json 机器可读目录 + 7 步安装协议 + 30 天更新节流",
+          "mechanism": "机器目录 + 安装留痕"
+        },
+        {
+          "user": "lijigang",
+          "pattern": "内容型仓库承载方法",
+          "evidence": "主仓聚合全部提示词/skill，卫星仓做单点灰度",
+          "mechanism": "聚合 + 卫星"
+        },
+        {
+          "user": "cellinlab",
+          "pattern": "小而专的中文工具仓库维持长尾覆盖",
+          "evidence": "celf-* 系列脚手架作为所有自研项目的基础层",
+          "mechanism": "自建基础层复用"
+        },
+        {
+          "user": "liruifengv",
+          "pattern": "围绕中文场景做小修补型工具",
+          "evidence": "astro-middleware-cn、astro-cn.com 等中文语境的适配件单独立项",
+          "mechanism": "场景适配件独立立项"
+        },
+        {
+          "user": "addyosmani",
+          "pattern": "目录化 Skill + 独立站点分发",
+          "evidence": "不写教程文章，把可复用判断固化为可被 Agent 加载的 Skill 文件，用独立站点 skills.addy.ie 解决发现与安装",
+          "mechanism": "目录 + 独立站点"
+        },
+        {
+          "user": "mvanhorn",
+          "pattern": "生成器与生成物分仓",
+          "evidence": "工具生产采用「生成器仓 + 生成物库仓」结构，生成逻辑迭代不牵动已发布产物",
+          "mechanism": "生成器/产物物理分仓"
+        },
+        {
+          "user": "sickn33",
+          "pattern": "能力清单包装成可执行的组合层",
+          "evidence": "不只发布能力目录，补上选择、校验、规划与 CI 卡点四段流程",
+          "mechanism": "清单 + 四段流程 + CI"
+        },
+        {
+          "user": "alirezarezvani",
+          "pattern": "用生成器/维护器管理批量 skill 资产",
+          "evidence": "目录条目过百即改为生成/维护式管理：mega 库用 skill-factory 生成条目",
+          "mechanism": "生成式治理"
+        },
+        {
+          "user": "numman-ali",
+          "pattern": "配置层隔离替代代码层 fork",
+          "evidence": "需求差异全部收敛到配置与注册层，宿主升级只需跟随不需 rebase",
+          "mechanism": "配置层 + 注册层"
+        }
+      ],
+      "verdict": "23 人规模下命中 15 位作者（4→10→15），是覆盖最广的一簇。5 位英文圈作者的解法：独立站点分发、生成器分仓、四段流程、生成式治理、配置层隔离——与中文圈的物理分仓、模板生成、IR 编译是同一逻辑的不同方言。",
+      "actionable": "凡是同一内容要出现两次以上，就生成它，并让生成物漂移时报错。"
+    },
+    {
+      "id": "C3",
+      "name": "渐进披露：入口轻，细节外置",
+      "coverage": 7,
+      "summary": "五位作者独立发现 agent 读不完长文档，必须把入口压到最小、细节按需加载。",
+      "why_it_matters": "这条直接决定 skill 能不能被弱模型执行——是可用性下限，不是优化项。",
+      "members": [
+        {
+          "user": "obra",
+          "pattern": "渐进披露 + token 预算",
+          "evidence": "常驻描述 <200 词，重内容进 references 并标注 token 成本",
+          "mechanism": "token 预算标注 + 按需加载"
+        },
+        {
+          "user": "op7418",
+          "pattern": "SKILL.md 与 references 分层",
+          "evidence": "SKILL.md 只写工作流与原则，细节按主题分文件",
+          "mechanism": "文件分层"
+        },
+        {
+          "user": "mcncarl",
+          "pattern": "公开包只留协议，凭据外置",
+          "evidence": "SKILL.md 协议入库，cookie/密钥/绝对路径一律不进仓库",
+          "mechanism": "协议与实体分离"
+        },
+        {
+          "user": "yaojingang",
+          "pattern": "入口轻量 + 细节外置",
+          "evidence": "context_sizer.py 统计入口体量，root 944/1000 超预算即告警",
+          "mechanism": "脚本量化预算"
+        },
+        {
+          "user": "yan5xu",
+          "pattern": "记忆与上下文外置",
+          "evidence": "结构化上下文管理替代全文塞入 prompt",
+          "mechanism": "结构化外置"
+        },
+        {
+          "user": "alirezarezvani",
+          "pattern": "提示词之外补 scripts 与 references",
+          "evidence": "在 skill 内附可定制 references 与 Shell 脚本，把确定性步骤从自然语言里移出",
+          "mechanism": "脚本替代自然语言"
+        },
+        {
+          "user": "coleam00",
+          "pattern": "一个引擎 + 多个垂直工作流的分层结构",
+          "evidence": "先做通用工作流引擎，再把营销视频、代码合并、需求转工单做成挂载其上的工作流",
+          "mechanism": "引擎 + 挂载工作流"
+        }
+      ],
+      "verdict": "23 人规模下命中 7 位作者（3→5→7），2 位英文圈。coleam00 还把渐进披露抽象到别的框架中验证可移植性——这是少数主动做跨框架移植验证的案例。",
+      "actionable": "给 SKILL.md 标一个 token 预算，超了就拆文件。"
+    },
+    {
+      "id": "C4",
+      "name": "可验证性：先证明，再宣称",
+      "coverage": 13,
+      "summary": "九位作者在不同层面要求「有证据才许说完成」，但验证对象各不相同。",
+      "why_it_matters": "它把 skill 质量从「读起来专业」拉回「跑得通」，也是本站 validator 的思想来源。",
+      "members": [
+        {
+          "user": "alchaincyf",
+          "pattern": "三重验证提炼法",
+          "evidence": "跨域复现 / 生成力 / 排他性，三关全过才算方法",
+          "mechanism": "候选分级"
+        },
+        {
+          "user": "obra",
+          "pattern": "技能 TDD",
+          "evidence": "NO SKILL WITHOUT A FAILING TEST FIRST，基线先失败",
+          "mechanism": "测试先行"
+        },
+        {
+          "user": "op7418",
+          "pattern": "真实渲染测量",
+          "evidence": "Playwright 实测 overflow、底部空白、标题间距",
+          "mechanism": "真实渲染测量"
+        },
+        {
+          "user": "mcncarl",
+          "pattern": "只读检索不是授权来源",
+          "evidence": "pending_verification 恒为只读并返回 can_authorize_action=false",
+          "mechanism": "状态机 + 显式否定"
+        },
+        {
+          "user": "yaojingang",
+          "pattern": "证据台账 + claim guard",
+          "evidence": "未取得的证据显式挂账，阻断提前的完成态宣称",
+          "mechanism": "证据台账 + 宣称扫描"
+        },
+        {
+          "user": "yanhua1010",
+          "pattern": "从零自建 mini 复现 + 双轨交付",
+          "evidence": "每个机制都自己写一个最小实现验证过",
+          "mechanism": "自建复现"
+        },
+        {
+          "user": "kevinzhow",
+          "pattern": "跨语言重写 + 新旧仓库互导流",
+          "evidence": "同一能力多语言实现并让旧仓 description 指向新仓",
+          "mechanism": "重写验证 + 导流"
+        },
+        {
+          "user": "vikingmute",
+          "pattern": "一份核心 + 三端薄适配",
+          "evidence": "同一逻辑三框架实现，核心一份适配三层",
+          "mechanism": "核心复用验证"
+        },
+        {
+          "user": "liruifengv",
+          "pattern": "先写可运行玩具再扩成系统",
+          "evidence": "mini-agents / runjs / mini-lib 各自验证一个机制",
+          "mechanism": "最小复现"
+        },
+        {
+          "user": "addyosmani",
+          "pattern": "先造可自动打分的量化判据",
+          "evidence": "从 Critical CSS / Lighthouse / 图片体积测量，到今天给 Agent 运行本身打分，判据始终是可自动复算的数字",
+          "mechanism": "量化判据先行"
+        },
+        {
+          "user": "sickn33",
+          "pattern": "写操作默认审批门控",
+          "evidence": "在 MCP/agent 接口上把读与写分离，写路径强制人工确认",
+          "mechanism": "读写分离"
+        },
+        {
+          "user": "alirezarezvani",
+          "pattern": "提示词之外补 scripts 与 references",
+          "evidence": "把确定性步骤从自然语言里移出，交给可执行脚本",
+          "mechanism": "确定性外置"
+        },
+        {
+          "user": "coleam00",
+          "pattern": "PIV 循环作为统一的 agent 工作流骨架",
+          "evidence": "把「计划—实现—验证」提炼为跨仓库复用的固定循环，用同一套命名驱动 skill 库、工作坊、命令集",
+          "mechanism": "统一命名 + 固定循环"
+        }
+      ],
+      "verdict": "23 人规模下命中 13 位作者（5→9→13），4 位英文圈。addyosmani 的案例最典型：判据从 Web 性能指标一路用到 Agent 评测，跨了完全不同的两个领域。",
+      "actionable": "在你的产物里加一个能说「还没做到」的字段，让未完成状态可见。"
+    },
+    {
+      "id": "C5",
+      "name": "边界声明：能力宣称要留出余地",
+      "coverage": 10,
+      "summary": "八位作者都在不同层面主动说清「我做不到什么」「这不适用于什么」。",
+      "why_it_matters": "star 数是流量，与「这东西真的好用吗」无关。边界声明是唯一能让人判断可用性的信号。这类内容在 star 排行榜里永远看不到——因为它不涨 star。",
+      "members": [
+        {
+          "user": "alchaincyf",
+          "pattern": "角色操作系统七段式",
+          "evidence": "每个 skill 必须写反模式黑名单与诚实边界章节",
+          "mechanism": "结构化边界"
+        },
+        {
+          "user": "op7418",
+          "pattern": "显式声明不做什么",
+          "evidence": "普通 Chatbot 不适用、不能导出 PPTX、无法判断 HDMI 是否接通",
+          "mechanism": "平台限制清单"
+        },
+        {
+          "user": "obra",
+          "pattern": "SDO：描述只写触发",
+          "evidence": "description 概括流程会导致 agent 跳读正文，触发与流程必须分开",
+          "mechanism": "描述与内容分层"
+        },
+        {
+          "user": "mcncarl",
+          "pattern": "能力边界写成可审的数据流声明",
+          "evidence": "每条对外调用写明发了什么、给了谁、边界在哪",
+          "mechanism": "数据流声明"
+        },
+        {
+          "user": "yaojingang",
+          "pattern": "入口轻量 + 细节外置",
+          "evidence": "实际调用由客户端机制决定，不夸大触发确定性",
+          "mechanism": "宣称校准"
+        },
+        {
+          "user": "yetone",
+          "pattern": "描述写明排除条件",
+          "evidence": "SKIP 条件写进描述本身",
+          "mechanism": "排除项前置"
+        },
+        {
+          "user": "lijigang",
+          "pattern": "单仓库单点职责",
+          "evidence": "仓库名与描述即其边界声明，避免大而全",
+          "mechanism": "职责即边界"
+        },
+        {
+          "user": "yan5xu",
+          "pattern": "Agent 按领域而非按任务切分",
+          "evidence": "以域为组织单位分配常驻 agent，不做全能体",
+          "mechanism": "职责切分即边界"
+        },
+        {
+          "user": "alirezarezvani",
+          "pattern": "以可核对数字作为对外规模声明",
+          "evidence": "描述里直接写条目数量与适配工具清单（380+ skills、30+ agents、8+ 编码 agent），不打开仓库即可判断规模",
+          "mechanism": "可核对数字前置"
+        },
+        {
+          "user": "numman-ali",
+          "pattern": "ADR 先行、项目阶段公开标注",
+          "evidence": "在 README 与描述里明写当前处于 Phase 1 并计划产出 ADR，用阶段声明代替完成度承诺",
+          "mechanism": "阶段标注替代完成度承诺"
+        }
+      ],
+      "verdict": "23 人规模下命中 10 位作者（4→8→10），2 位英文圈。numman-ali 的做法值得注意：用「明写处于 Phase 1」代替「快完成了」——把边界声明写成了版本号。",
+      "actionable": "本站把「局限」列设成硬性字段，空着就判失败。"
+    },
+    {
+      "id": "C6",
+      "name": "内容即资产：把「品味」封成可枚举、可复用的集合",
+      "coverage": 11,
+      "summary": "九位作者的共同选择：与其写更多形容词，不如把内容固化成具名清单、模板、规则集或可复现的实验。",
+      "why_it_matters": "这一簇解释了为什么「58 个 skill」和「1 套方法论」都能成立——因为内容被封成了资产，而不是留在作者的脑子里。",
+      "members": [
+        {
+          "user": "op7418",
+          "pattern": "把品味编译成可枚举集合",
+          "evidence": "22 个具名版式 + 4 套锚点色 + 禁止自定义 hex",
+          "mechanism": "具名集合 + 禁自定义"
+        },
+        {
+          "user": "obra",
+          "pattern": "反合理化护栏",
+          "evidence": "31 类失败模式与借口封堵表",
+          "mechanism": "失败模式枚举"
+        },
+        {
+          "user": "mcncarl",
+          "pattern": "能力边界数据流表",
+          "evidence": "逐路由写明送出去什么、给谁、边界在哪",
+          "mechanism": "逐项声明"
+        },
+        {
+          "user": "lijigang",
+          "pattern": "内容型仓库承载方法",
+          "evidence": "提示词按用途分目录，输出统一为可截图卡片",
+          "mechanism": "分类 + 卡片化输出"
+        },
+        {
+          "user": "liruifengv",
+          "pattern": "围绕中文场景做小修补工具",
+          "evidence": "astro-middleware-cn 解中文乱码等单点适配",
+          "mechanism": "场景封装"
+        },
+        {
+          "user": "antfu",
+          "pattern": "配置即产品",
+          "evidence": "eslint-config、vscode-settings 等预设全部做成可安装可分享的产品",
+          "mechanism": "预设产品化"
+        },
+        {
+          "user": "yanhua1010",
+          "pattern": "模块化流程 + 双轨交付",
+          "evidence": "内容生产拆成职责单一模块，覆盖生产与经营两环节",
+          "mechanism": "环节切分"
+        },
+        {
+          "user": "cellinlab",
+          "pattern": "how-X-works 拆解式命名",
+          "evidence": "原理与实现双轨文档，可系列化",
+          "mechanism": "模板化拆解"
+        },
+        {
+          "user": "vikingmute",
+          "pattern": "极小切口 + 零依赖 + 三框架",
+          "evidence": "scrambl / planet-avatar / neo-disco 共用同一句式描述",
+          "mechanism": "产品线模板"
+        },
+        {
+          "user": "numman-ali",
+          "pattern": "配置层隔离替代代码层 fork",
+          "evidence": "三个仓库分别对应实例隔离、认证接入、格式加载三种形态，共用配置层模式",
+          "mechanism": "配置层 + 三形态"
+        },
+        {
+          "user": "coleam00",
+          "pattern": "内容转成带引用的可检索知识包",
+          "evidence": "把自己的视频内容转成 Open Knowledge Format 格式、带引用校验的知识包",
+          "mechanism": "内容格式化为带引用资产"
+        }
+      ],
+      "verdict": "23 人规模下命中 11 位作者（9→11），2 位英文圈。coleam00 的「带引用校验的知识包」与归藏的「22 个具名版式」是同一逻辑：把内容封成可被程序检查的格式。",
+      "actionable": "把你在意的东西写成具名清单，而不是写形容词。"
+    }
+  ],
+  "stats": {
+    "users_analyzed": 23,
+    "patterns_total": 127,
+    "methods": 68,
+    "techniques": 59,
+    "analyses_total": 151,
+    "skills_total": 213,
+    "clusters": 6,
+    "max_cluster_members": 10,
+    "revision": 3,
+    "coverage_change": "C1 8→11, C2 10→15, C3 5→7, C4 9→13, C5 8→10, C6 9→11；6 位英文圈创作者加入后六簇全部复现"
+  },
+  "methodology": "收敛判定：同一方法在 3 位以上互不相识的创作者、不同领域独立出现，且各自有具体机制而非仅有口号。参与者来源：2 位独立发现对象 + 15 位经由司徒K《2026年X上最值得关注的120个中文博主》核验的中文圈 skill 创作者 + 6 位经由 4 份英文策展清单（vivy-yi/awesome-skills、scienceaix/agentskills、itgoyo/awesome-claude-code-skills、obviousworks/Claude-AI-skills-collection-2026）提取的英文圈创作者。复核方式：按机制关键词对 127 条 patterns 的名称与主张做主题匹配，人工核对命中项。",
+  "caveats": [
+    "样本 23 人中 15 人来自同一份 X 榜单、6 人来自 4 份英文策展清单，来源仍集中——他们本来就是被同一批人关注的一类人。",
+    "中文圈 17 人、英文圈 6 人，比例仍失衡；「跨中英文圈最一致」现在有 6 位英文创作者背书，但样本量差距大，结论应视为强假设而非定论。",
+    "收敛簇由关键词匹配 + 人工核对得出，不是算法判定；换一个归类者可能有不同结果。",
+    "花叔也在原 X 榜单第 45 位，样本并非完全独立采样。",
+    "这些是相关性而非因果：用门文件不证明用了门文件就会成功。"
+  ]
+}

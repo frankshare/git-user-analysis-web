@@ -1,0 +1,1569 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source）+ raw README/SKILL.md；来源：司徒K《2026年X上最值得关注的120个中文博主》",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "kevinzhow",
+    "name": "kevinzhow",
+    "bio": "以 Objective-C / Swift 起家的 iOS 组件作者，靠一个图表库 PNChart 起量，近十年把重心迁到自托管服务与个人 Agent 工具上。",
+    "website": "",
+    "x": "",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "hybrid",
+    "public_repos": 114,
+    "source_repos": 49,
+    "fork_repos": 65
+  },
+  "stats": {
+    "total_stars_source": 13896,
+    "total_stars_all": 13937,
+    "median_stars": 3,
+    "ge_1000": 2,
+    "between_100_999": 6,
+    "between_10_99": 9,
+    "lt_10": 32,
+    "no_language": 2,
+    "top4_share": 89.3,
+    "top1_share": 69.3
+  },
+  "repos": [
+    {
+      "name": "PNChart",
+      "url": "https://github.com/kevinzhow/PNChart",
+      "stars": 9632,
+      "language": "Objective-C",
+      "updated_at": "2018-07-02T12:43:03Z",
+      "description": "A simple and beautiful chart lib used in Piner and CoinsMan for iOS",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "PNChart-Swift",
+      "url": "https://github.com/kevinzhow/PNChart-Swift",
+      "stars": 1366,
+      "language": "Swift",
+      "updated_at": "2024-01-18T16:59:19Z",
+      "description": "A simple and beautiful chart lib used in Piner and CoinsMan for iOS(https://github.com/kevinzhow/PNChart) Swift Implementation",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Waver",
+      "url": "https://github.com/kevinzhow/Waver",
+      "stars": 790,
+      "language": "Objective-C",
+      "updated_at": "2018-01-04T00:32:20Z",
+      "description": "Siri like waver",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "RealtimeGradientText",
+      "url": "https://github.com/kevinzhow/RealtimeGradientText",
+      "stars": 627,
+      "language": "Swift",
+      "updated_at": "2015-07-08T21:18:21Z",
+      "description": "Gradient Text in Real",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Rungic",
+      "url": "https://github.com/kevinzhow/Rungic",
+      "stars": 414,
+      "language": "Python",
+      "updated_at": "2026-10-08T14:50:18Z",
+      "description": "AgentOS in your hand - An Android phone, a full Linux desktop computer, and an assistant that does the work for you.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "pop-handapp",
+      "url": "https://github.com/kevinzhow/pop-handapp",
+      "stars": 308,
+      "language": "Objective-C",
+      "updated_at": "2015-08-31T20:36:03Z",
+      "description": "POP Handapp",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "NaughtyImageView",
+      "url": "https://github.com/kevinzhow/NaughtyImageView",
+      "stars": 254,
+      "language": "Swift",
+      "updated_at": "2019-02-03T15:21:59Z",
+      "description": "UIImageView Can Animate Sprite Image",
+      "fork": false,
+      "layer": "tool",
+      "category": "设计与视觉"
+    },
+    {
+      "name": "ios-with-girlfriend",
+      "url": "https://github.com/kevinzhow/ios-with-girlfriend",
+      "stars": 105,
+      "language": "Swift",
+      "updated_at": "2015-12-16T16:22:32Z",
+      "description": "Demo For iOS With GirlFriend",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "raft-flutter",
+      "url": "https://github.com/kevinzhow/raft-flutter",
+      "stars": 89,
+      "language": "Dart",
+      "updated_at": "2026-10-20T18:11:52Z",
+      "description": "A native Flutter client for Raft",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "RichTextView",
+      "url": "https://github.com/kevinzhow/RichTextView",
+      "stars": 68,
+      "language": "Swift",
+      "updated_at": "2019-02-10T04:54:40Z",
+      "description": "RichTextView based On TextKit",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "producter_fuse",
+      "url": "https://github.com/kevinzhow/producter_fuse",
+      "stars": 46,
+      "language": "JavaScript",
+      "updated_at": "2015-12-27T08:09:17Z",
+      "description": "Producter Markup App Made With Fuse http://producter.io",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "LiveBlend",
+      "url": "https://github.com/kevinzhow/LiveBlend",
+      "stars": 35,
+      "language": "Objective-C",
+      "updated_at": "2014-05-11T08:06:05Z",
+      "description": "Live overlay effect on image",
+      "fork": false,
+      "layer": "tool",
+      "category": "设计与视觉"
+    },
+    {
+      "name": "Lolita",
+      "url": "https://github.com/kevinzhow/Lolita",
+      "stars": 31,
+      "language": "Swift",
+      "updated_at": "2015-11-12T06:53:04Z",
+      "description": "Meet with Lolita",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "albatross",
+      "url": "https://github.com/kevinzhow/albatross",
+      "stars": 27,
+      "language": "Swift",
+      "updated_at": "2024-02-09T00:32:15Z",
+      "description": "A Swift webhook handler",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "iOS-Core-Animation-Advanced-Techniques",
+      "url": "https://github.com/kevinzhow/iOS-Core-Animation-Advanced-Techniques",
+      "stars": 18,
+      "language": null,
+      "updated_at": "2014-05-11T09:15:59Z",
+      "description": "翻译",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "swift-on-server-tour",
+      "url": "https://github.com/kevinzhow/swift-on-server-tour",
+      "stars": 17,
+      "language": "Swift",
+      "updated_at": "2023-10-22T08:03:57Z",
+      "description": "Sample code for Swift on Server Tour",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "iOSBlogCN",
+      "url": "https://github.com/kevinzhow/iOSBlogCN",
+      "stars": 17,
+      "language": "Python",
+      "updated_at": "2015-01-13T04:14:05Z",
+      "description": "中文 iOS/Mac 开发博客列表",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "swiftwasm-host-app-demo",
+      "url": "https://github.com/kevinzhow/swiftwasm-host-app-demo",
+      "stars": 16,
+      "language": "Swift",
+      "updated_at": "2022-06-11T12:28:44Z",
+      "description": "This is a demo project for Write WebAssembly in Swift and use it in Swift App",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "Waver-Android",
+      "url": "https://github.com/kevinzhow/Waver-Android",
+      "stars": 15,
+      "language": "Java",
+      "updated_at": "2014-12-25T03:47:55Z",
+      "description": "Android implementation of Waver",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Producter",
+      "url": "https://github.com/kevinzhow/Producter",
+      "stars": 7,
+      "language": "CSS",
+      "updated_at": "2015-08-04T14:51:42Z",
+      "description": "Landing page for Producter",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "syncthing-lzc",
+      "url": "https://github.com/kevinzhow/syncthing-lzc",
+      "stars": 5,
+      "language": "Shell",
+      "updated_at": "2024-11-21T05:34:48Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "SafariAudioPlayer",
+      "url": "https://github.com/kevinzhow/SafariAudioPlayer",
+      "stars": 4,
+      "language": "JavaScript",
+      "updated_at": "2015-10-31T16:34:27Z",
+      "description": "A JS Audio Player for Safari with webkitAudioContext",
+      "fork": false,
+      "layer": "tool",
+      "category": "音视频处理"
+    },
+    {
+      "name": "baiducloudsigner-swift",
+      "url": "https://github.com/kevinzhow/baiducloudsigner-swift",
+      "stars": 4,
+      "language": "Swift",
+      "updated_at": "2024-10-17T02:41:36Z",
+      "description": "A simple request signer for baidu cloud",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "micro-blog-demo",
+      "url": "https://github.com/kevinzhow/micro-blog-demo",
+      "stars": 4,
+      "language": "Swift",
+      "updated_at": "2023-06-09T08:12:11Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "gomobile-lib-demo",
+      "url": "https://github.com/kevinzhow/gomobile-lib-demo",
+      "stars": 4,
+      "language": "Objective-C",
+      "updated_at": "2021-06-27T03:27:55Z",
+      "description": "gomobile with go mod",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "MyConfigs",
+      "url": "https://github.com/kevinzhow/MyConfigs",
+      "stars": 3,
+      "language": "Vim Script",
+      "updated_at": "2014-05-07T18:43:58Z",
+      "description": "Configs Of My Macbook Pro",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "MPVDemo-macOS",
+      "url": "https://github.com/kevinzhow/MPVDemo-macOS",
+      "stars": 3,
+      "language": "C#",
+      "updated_at": "2018-01-12T04:13:08Z",
+      "description": "Xamarin macOS Project to example how to use MPV to play video.",
+      "fork": false,
+      "layer": "tool",
+      "category": "音视频处理"
+    },
+    {
+      "name": "go_lib_swift_package_demo",
+      "url": "https://github.com/kevinzhow/go_lib_swift_package_demo",
+      "stars": 2,
+      "language": "Objective-C",
+      "updated_at": "2021-06-27T03:28:59Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Leetcode-Swift",
+      "url": "https://github.com/kevinzhow/Leetcode-Swift",
+      "stars": 2,
+      "language": "Swift",
+      "updated_at": "2016-08-13T17:28:47Z",
+      "description": "Leetcode practice in Swift language for fun.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "chainstory",
+      "url": "https://github.com/kevinzhow/chainstory",
+      "stars": 2,
+      "language": "Go",
+      "updated_at": "2016-09-02T18:39:43Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "mattermost-lzc",
+      "url": "https://github.com/kevinzhow/mattermost-lzc",
+      "stars": 2,
+      "language": "Shell",
+      "updated_at": "2024-11-20T13:16:06Z",
+      "description": "lazycat Mattermost",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "kotlin-native-library-demo",
+      "url": "https://github.com/kevinzhow/kotlin-native-library-demo",
+      "stars": 2,
+      "language": "Kotlin",
+      "updated_at": "2021-06-27T03:22:03Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "write-wasm-in-swift-demo",
+      "url": "https://github.com/kevinzhow/write-wasm-in-swift-demo",
+      "stars": 2,
+      "language": "Swift",
+      "updated_at": "2022-06-11T09:24:37Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "kotlin_native_ios_demo",
+      "url": "https://github.com/kevinzhow/kotlin_native_ios_demo",
+      "stars": 2,
+      "language": "Swift",
+      "updated_at": "2021-06-27T03:18:39Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Filmie",
+      "url": "https://github.com/kevinzhow/Filmie",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2015-08-02T11:28:31Z",
+      "description": "Framer.js Prototype",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "awesome-swiftwasm",
+      "url": "https://github.com/kevinzhow/awesome-swiftwasm",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2022-06-11T12:35:51Z",
+      "description": "A community-driven curated list of SwiftWasm projects and content",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Bonsoir",
+      "url": "https://github.com/kevinzhow/Bonsoir",
+      "stars": 1,
+      "language": "Dart",
+      "updated_at": "2024-08-09T18:37:00Z",
+      "description": "A Zeroconf library that allows you to discover network services and to broadcast your own. Based on Apple Bonjour and Android NSD.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "podcast_search",
+      "url": "https://github.com/kevinzhow/podcast_search",
+      "stars": 1,
+      "language": "Dart",
+      "updated_at": "2024-05-16T15:02:59Z",
+      "description": "A simple library providing programmatic access to the iTunes search API for podcasts.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "cwasm3",
+      "url": "https://github.com/kevinzhow/cwasm3",
+      "stars": 1,
+      "language": "C",
+      "updated_at": "2022-06-02T04:39:18Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "r2-streamer-swift",
+      "url": "https://github.com/kevinzhow/r2-streamer-swift",
+      "stars": 1,
+      "language": "Swift",
+      "updated_at": "2022-04-14T04:28:24Z",
+      "description": "Repo for the Streamer implementation in Swift",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "CTRVerticalTextView",
+      "url": "https://github.com/kevinzhow/CTRVerticalTextView",
+      "stars": 1,
+      "language": "Objective-C",
+      "updated_at": "2012-11-15T00:54:57Z",
+      "description": "Using CoreText",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "brief-history-of-frontend",
+      "url": "https://github.com/kevinzhow/brief-history-of-frontend",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2016-10-11T07:16:20Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "CMToolKit",
+      "url": "https://github.com/kevinzhow/CMToolKit",
+      "stars": 1,
+      "language": "C#",
+      "updated_at": "2018-03-21T16:19:41Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "charcoal-flutter",
+      "url": "https://github.com/kevinzhow/charcoal-flutter",
+      "stars": 1,
+      "language": "Dart",
+      "updated_at": "2026-09-18T07:52:46Z",
+      "description": "Charcoal V2 design system for Flutter",
+      "fork": false,
+      "layer": "tool",
+      "category": "设计与视觉"
+    },
+    {
+      "name": "body-collect-leak",
+      "url": "https://github.com/kevinzhow/body-collect-leak",
+      "stars": 1,
+      "language": "Swift",
+      "updated_at": "2024-08-12T15:24:50Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "readerlibdemo",
+      "url": "https://github.com/kevinzhow/readerlibdemo",
+      "stars": 1,
+      "language": "Kotlin",
+      "updated_at": "2021-11-24T13:45:12Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "信息获取"
+    },
+    {
+      "name": "oyomi-popclip",
+      "url": "https://github.com/kevinzhow/oyomi-popclip",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2025-11-20T07:05:05Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "wasm3",
+      "url": "https://github.com/kevinzhow/wasm3",
+      "stars": 0,
+      "language": "C",
+      "updated_at": "2022-06-01T17:22:52Z",
+      "description": "🚀 The fastest WebAssembly interpreter, and the most universal runtime",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "sunshine-virtual-display-qt",
+      "url": "https://github.com/kevinzhow/sunshine-virtual-display-qt",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2026-09-08T01:31:32Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "wasm-interpreter-apple",
+      "url": "https://github.com/kevinzhow/wasm-interpreter-apple",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2022-06-02T04:40:02Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "YTKKeyValueStore",
+      "url": "https://github.com/kevinzhow/YTKKeyValueStore",
+      "stars": 0,
+      "language": "Objective-C",
+      "updated_at": "2022-11-06T09:02:33Z",
+      "description": "A simple Key-Value storage tool, using Sqlite as backend.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "kotlin-toolkit",
+      "url": "https://github.com/kevinzhow/kotlin-toolkit",
+      "stars": 0,
+      "language": "Kotlin",
+      "updated_at": "2023-12-01T03:58:27Z",
+      "description": "A toolkit for ebooks, audiobooks and comics written in Kotlin",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "fluent",
+      "url": "https://github.com/kevinzhow/fluent",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2022-03-10T12:25:23Z",
+      "description": "Vapor ORM (queries, models, and relations) for NoSQL and SQL databases",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "google-auth-library-swift",
+      "url": "https://github.com/kevinzhow/google-auth-library-swift",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2024-01-15T13:18:29Z",
+      "description": "Auth client library for Swift command-line tools and cloud services. Supports OAuth1, OAuth2, and Google Application Default Credentials.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "RSKPlaceholderTextView",
+      "url": "https://github.com/kevinzhow/RSKPlaceholderTextView",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2024-01-20T10:20:53Z",
+      "description": "A light-weight UITextView subclass that adds support for placeholder.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "firebase-custom-token-signer-swift",
+      "url": "https://github.com/kevinzhow/firebase-custom-token-signer-swift",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2024-10-17T02:55:01Z",
+      "description": "Firebase Custom Token Signer for Swift",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "packages",
+      "url": "https://github.com/kevinzhow/packages",
+      "stars": 0,
+      "language": "Dart",
+      "updated_at": "2024-07-20T12:23:06Z",
+      "description": "A collection of useful packages maintained by the Flutter team",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "plus_plugins",
+      "url": "https://github.com/kevinzhow/plus_plugins",
+      "stars": 0,
+      "language": "Dart",
+      "updated_at": "2024-10-21T03:23:47Z",
+      "description": "Flutter Community Plus Plugins",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Remembering-Haoel",
+      "url": "https://github.com/kevinzhow/Remembering-Haoel",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2023-05-22T14:57:09Z",
+      "description": "记录您对左耳朵耗子（陈皓）的点滴回忆",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "fluent-kit",
+      "url": "https://github.com/kevinzhow/fluent-kit",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2022-03-10T12:24:47Z",
+      "description": "Swift ORM (queries, models, and relations) for NoSQL and SQL databases",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "flutter_open_chinese_convert",
+      "url": "https://github.com/kevinzhow/flutter_open_chinese_convert",
+      "stars": 0,
+      "language": "Dart",
+      "updated_at": "2021-11-23T03:09:57Z",
+      "description": "Open Chinese Convert for Flutter",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ReactGD",
+      "url": "https://github.com/kevinzhow/ReactGD",
+      "stars": 0,
+      "language": "GDScript",
+      "updated_at": "2021-11-10T20:24:11Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "SimpleCameraLibrary",
+      "url": "https://github.com/kevinzhow/SimpleCameraLibrary",
+      "stars": 0,
+      "language": "Java",
+      "updated_at": "2014-11-29T10:48:41Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "dify-sf",
+      "url": "https://github.com/kevinzhow/dify-sf",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2026-10-20T02:15:30Z",
+      "description": "A Swift and Flutter reimplementation of Dify.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "MonkeyKing",
+      "url": "https://github.com/kevinzhow/MonkeyKing",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2015-10-13T12:23:12Z",
+      "description": "MonkeyKing helps you post message to Chinese Social Networks.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Navi",
+      "url": "https://github.com/kevinzhow/Navi",
+      "stars": 0,
+      "language": "Objective-C",
+      "updated_at": "2015-10-26T08:07:32Z",
+      "description": "Focus on avatar caching.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Kingfisher",
+      "url": "https://github.com/kevinzhow/Kingfisher",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2015-10-30T10:21:45Z",
+      "description": "A lightweight and pure Swift implemented library for downloading and caching image from the web.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mpv-config",
+      "url": "https://github.com/kevinzhow/mpv-config",
+      "stars": 0,
+      "language": "Lua",
+      "updated_at": "2017-09-20T22:26:16Z",
+      "description": "Personal mpv configuration files and scripts (for syncing my computers). Most likely not useful to others. Maybe as an inspiration. NOTE that you can't just copy certain stuff (i.e. VO config in mp…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Fuzi",
+      "url": "https://github.com/kevinzhow/Fuzi",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2024-11-04T15:18:34Z",
+      "description": "A fast &amp; lightweight XML &amp; HTML parser in Swift with XPath &amp; CSS support",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "iina",
+      "url": "https://github.com/kevinzhow/iina",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2018-01-09T06:26:12Z",
+      "description": "The modern video player for macOS.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "flutter_hud",
+      "url": "https://github.com/kevinzhow/flutter_hud",
+      "stars": 0,
+      "language": "Dart",
+      "updated_at": "2020-02-24T14:36:57Z",
+      "description": "A clean and lightweight progress HUD to show a running asynchronous task for Flutter.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "SwiftySound",
+      "url": "https://github.com/kevinzhow/SwiftySound",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2020-03-02T09:34:12Z",
+      "description": "SwiftySound is a simple library that lets you play sounds with a single line of code.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "GzipSwift",
+      "url": "https://github.com/kevinzhow/GzipSwift",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2020-04-04T10:09:48Z",
+      "description": "Swift framework that enables gzip/gunzip Data using zlib",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Kanna",
+      "url": "https://github.com/kevinzhow/Kanna",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2020-05-07T14:39:36Z",
+      "description": "Kanna(鉋) is an XML/HTML parser for Swift.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Elephant",
+      "url": "https://github.com/kevinzhow/Elephant",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2020-08-08T06:18:00Z",
+      "description": "Elegant SVG animation kit for swift",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "grpc-swift",
+      "url": "https://github.com/kevinzhow/grpc-swift",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2021-07-17T20:00:13Z",
+      "description": "The Swift language implementation of gRPC.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "RoomAsset",
+      "url": "https://github.com/kevinzhow/RoomAsset",
+      "stars": 0,
+      "language": "Kotlin",
+      "updated_at": "2018-12-08T14:21:27Z",
+      "description": "A helper library to help using Room with existing pre-populated database.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "volume_controller",
+      "url": "https://github.com/kevinzhow/volume_controller",
+      "stars": 0,
+      "language": "C++",
+      "updated_at": "2025-04-14T12:06:57Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ph_picker_view_controller",
+      "url": "https://github.com/kevinzhow/ph_picker_view_controller",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2025-04-19T15:21:48Z",
+      "description": "A wrapper around iOS `PHPickerViewController` API.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "flame",
+      "url": "https://github.com/kevinzhow/flame",
+      "stars": 0,
+      "language": "Dart",
+      "updated_at": "2025-05-09T17:00:16Z",
+      "description": "A Flutter based game engine.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "flutter-permission-handler",
+      "url": "https://github.com/kevinzhow/flutter-permission-handler",
+      "stars": 0,
+      "language": "Dart",
+      "updated_at": "2026-03-28T12:59:24Z",
+      "description": "Permission plugin for Flutter. This plugin provides a cross-platform (iOS, Android) API to request and check permissions.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "test-list",
+      "url": "https://github.com/kevinzhow/test-list",
+      "stars": 0,
+      "language": "Dart",
+      "updated_at": "2023-09-01T17:31:40Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "openvino",
+      "url": "https://github.com/kevinzhow/openvino",
+      "stars": 0,
+      "language": "C++",
+      "updated_at": "2026-06-20T10:03:27Z",
+      "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "AivisSpeech",
+      "url": "https://github.com/kevinzhow/AivisSpeech",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-06-28T23:35:57Z",
+      "description": "AivisSpeech: AI Voice Imitation System - Text to Speech Software",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "MarkdownView",
+      "url": "https://github.com/kevinzhow/MarkdownView",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2026-07-08T17:26:45Z",
+      "description": "Display markdown content with SwiftUI.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "file_picker_writable",
+      "url": "https://github.com/kevinzhow/file_picker_writable",
+      "stars": 0,
+      "language": "Dart",
+      "updated_at": "2026-08-10T23:46:30Z",
+      "description": "Flutter plugin to choose files which can be read, referenced and written back at a later time.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "promptfoo",
+      "url": "https://github.com/kevinzhow/promptfoo",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-02-28T02:20:20Z",
+      "description": "Test your prompts, agents, and RAGs. AI Red teaming, pentesting, and vulnerability scanning for LLMs. Compare performance of GPT, Claude, Gemini, Llama, and more. Simple declarative configs with co…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "flutter_scene",
+      "url": "https://github.com/kevinzhow/flutter_scene",
+      "stars": 0,
+      "language": "Dart",
+      "updated_at": "2026-08-19T13:12:52Z",
+      "description": "A realtime 3D engine for Flutter.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "youtube_player_flutter",
+      "url": "https://github.com/kevinzhow/youtube_player_flutter",
+      "stars": 0,
+      "language": "Dart",
+      "updated_at": "2026-08-30T11:01:41Z",
+      "description": "A Flutter plugin for inline playback or streaming of YouTube videos using the official iFrame Player API.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "kevinzhow",
+      "url": "https://github.com/kevinzhow/kevinzhow",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2023-07-24T03:18:12Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "openfaas-templates-kevinzhow",
+      "url": "https://github.com/kevinzhow/openfaas-templates-kevinzhow",
+      "stars": 0,
+      "language": "Dockerfile",
+      "updated_at": "2021-07-19T13:00:19Z",
+      "description": "@openfaas Community Templates",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "go_lib_ios_demo",
+      "url": "https://github.com/kevinzhow/go_lib_ios_demo",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2021-06-27T03:26:17Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "kotlin_native_swift_package_demo_lib",
+      "url": "https://github.com/kevinzhow/kotlin_native_swift_package_demo_lib",
+      "stars": 0,
+      "language": "Objective-C",
+      "updated_at": "2021-06-27T03:20:04Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "jumanpp_v2_knp",
+      "url": "https://github.com/kevinzhow/jumanpp_v2_knp",
+      "stars": 0,
+      "language": "Dockerfile",
+      "updated_at": "2019-07-27T22:32:38Z",
+      "description": "The jumanpp v2 and knp container",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "nosleep",
+      "url": "https://github.com/kevinzhow/nosleep",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2026-08-24T18:11:55Z",
+      "description": "Tell the machine to stay awake — transient systemd unit sleep inhibitor with a GNOME Quick Settings toggle and a CLI",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "luban",
+      "url": "https://github.com/kevinzhow/luban",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2016-09-07T05:28:58Z",
+      "description": "The missing blender scripts",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "xterm.dart",
+      "url": "https://github.com/kevinzhow/xterm.dart",
+      "stars": 0,
+      "language": "Dart",
+      "updated_at": "2026-02-26T13:34:16Z",
+      "description": "💻 xterm.dart is a fast and fully-featured terminal emulator for Flutter, with support for mobile and desktop platforms.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "qwen3-tts.cpp",
+      "url": "https://github.com/kevinzhow/qwen3-tts.cpp",
+      "stars": 0,
+      "language": "C++",
+      "updated_at": "2026-02-22T16:39:15Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "google-api-swift-client",
+      "url": "https://github.com/kevinzhow/google-api-swift-client",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2025-05-25T01:48:16Z",
+      "description": "A client generator for APIs described by Google's API Discovery Format.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "stripe-kit",
+      "url": "https://github.com/kevinzhow/stripe-kit",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2025-07-22T02:32:55Z",
+      "description": "A Swift on Server SDK for the Stripe API",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Jinja",
+      "url": "https://github.com/kevinzhow/Jinja",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2025-08-08T00:57:05Z",
+      "description": "A minimalistic Swift implementation of the Jinja templating engine, specifically designed for parsing and rendering ML chat templates.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mockai",
+      "url": "https://github.com/kevinzhow/mockai",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2025-08-13T06:56:56Z",
+      "description": "MockAI is a mock server for OpenAI's API. It allows you to simulate Chat Completions API responses for development and testing purposes.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "swift-gpt",
+      "url": "https://github.com/kevinzhow/swift-gpt",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2025-08-18T02:42:49Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "flutter_media_projection_creator",
+      "url": "https://github.com/kevinzhow/flutter_media_projection_creator",
+      "stars": 0,
+      "language": "Java",
+      "updated_at": "2025-10-22T11:10:52Z",
+      "description": "A flutter plugin of the creator used to create MediaProjection for Android",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Agmente",
+      "url": "https://github.com/kevinzhow/Agmente",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2026-02-26T06:08:50Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "media_projection_screenshot",
+      "url": "https://github.com/kevinzhow/media_projection_screenshot",
+      "stars": 0,
+      "language": "Kotlin",
+      "updated_at": "2025-10-22T11:20:31Z",
+      "description": "Screenshot plugin for Android using MediaProjection API.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "PopClip-Extensions",
+      "url": "https://github.com/kevinzhow/PopClip-Extensions",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2025-11-20T07:06:45Z",
+      "description": "Source code for extensions in the official PopClip Extensions directory.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "swift-toolkit",
+      "url": "https://github.com/kevinzhow/swift-toolkit",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2026-01-19T20:32:49Z",
+      "description": "A toolkit for ebooks, audiobooks and comics written in Swift",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "moltbot",
+      "url": "https://github.com/kevinzhow/moltbot",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-01-27T13:00:15Z",
+      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "uri_content",
+      "url": "https://github.com/kevinzhow/uri_content",
+      "stars": 0,
+      "language": "Dart",
+      "updated_at": "2026-02-06T17:27:01Z",
+      "description": "Get the Uint8List content of a given Uri.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mlx",
+      "url": "https://github.com/kevinzhow/mlx",
+      "stars": 0,
+      "language": "C++",
+      "updated_at": "2026-02-11T11:51:25Z",
+      "description": "MLX: An array framework for Apple silicon",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "flutter_overlay_window",
+      "url": "https://github.com/kevinzhow/flutter_overlay_window",
+      "stars": 0,
+      "language": "Dart",
+      "updated_at": "2026-02-15T15:04:59Z",
+      "description": "Flutter plugin for displaying flutter app over other apps on the screen",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "flutter_cache_manager",
+      "url": "https://github.com/kevinzhow/flutter_cache_manager",
+      "stars": 0,
+      "language": "Dart",
+      "updated_at": "2025-10-24T05:40:07Z",
+      "description": "Generic cache manager for flutter",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "gallery_saver_plus",
+      "url": "https://github.com/kevinzhow/gallery_saver_plus",
+      "stars": 0,
+      "language": "Kotlin",
+      "updated_at": "2026-03-28T12:59:24Z",
+      "description": "Flutter plugin that saves images and videos to devices gallery",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/kevinzhow",
+    "count": 6,
+    "layers": {
+      "tool": 6
+    },
+    "items": [
+      {
+        "name": "PNChart",
+        "layer": "tool",
+        "category": "图表/数据可视化组件",
+        "repo": "PNChart",
+        "subdir": "",
+        "summary": "Objective-C 写的 iOS 折线/饼图/柱状图库，描述称供自研 App Piner 与 CoinsMan 内部使用。9632 星，占其自有星总数 69.3%。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "PNChart-Swift",
+        "layer": "tool",
+        "category": "图表/数据可视化组件",
+        "repo": "PNChart-Swift",
+        "subdir": "",
+        "summary": "PNChart 的 Swift 移植版，是同一设计在第二种语言下的重写样本，1366 星。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "NaughtyImageView",
+        "layer": "tool",
+        "category": "UI 动效组件",
+        "repo": "NaughtyImageView",
+        "subdir": "",
+        "summary": "让 UIImageView 能播放精灵图（sprite sheet）动画的轻量封装，254 星。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "albatross",
+        "layer": "tool",
+        "category": "后端/网络基础设施",
+        "repo": "albatross",
+        "subdir": "",
+        "summary": "Swift 写的 webhook handler，面向服务端回调类场景，27 星。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "baiducloudsigner-swift",
+        "layer": "tool",
+        "category": "云服务 SDK",
+        "repo": "baiducloudsigner-swift",
+        "subdir": "",
+        "summary": "百度云请求签名器的小型实现，把命令行/服务端场景下的签名逻辑抽成独立仓库。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "firebase-custom-token-signer-swift",
+        "layer": "tool",
+        "category": "云服务 SDK",
+        "repo": "firebase-custom-token-signer-swift",
+        "subdir": "",
+        "summary": "同一位作者的第二个「签名器」型工具，与 baiducloudsigner-swift 属同一类切法，0 星。",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "name": "PNChart",
+      "repo": "PNChart",
+      "stars": 9632,
+      "verdict": "一个先在自己 App 里长出来、后来才对外开源的 iOS 图表组件，是其全部流量的单点来源。",
+      "problem": "iOS 开发者要画折线/饼图/柱状图，Core Graphics 手写成本高、第三方图表库要么太重要么丑；PNChart 的目标用户是「想在自家 App 里快速出一个不难看图表」的个人与小团队开发者。",
+      "mechanism": [
+        "本地材料未见依据：README 未在本次快照内，源码结构、依赖管理方式、动画实现均无法从本地 JSON 判定。",
+        "唯一可确认的机制是「内部先用后开源」：描述明确写明该库用于 Piner 与 CoinsMan 两款自研 App，先解决自家图表需求再放出。",
+        "可确认的产品定位口径是「simple and beautiful」双目标——牺牲高级特性换取接入成本低。"
+      ],
+      "constraints": [
+        "语言锁定 Objective-C，且最近更新时间为 2018-07-02，Swift 生态已由 PNChart-Swift 承接。",
+        "2018 年后无更新意味着 Modern Swift concurrency、SwiftUI 等新特性均未覆盖。"
+      ],
+      "takeaway": [
+        "从自研 App 里抽组件对外开源，是个人开发者获得长尾星标最省力的路径；先有真实使用场景再抽象，比先写通用库成功率高。",
+        "把「小而好看」而非「大而全」作为组件库的对外卖点，降低使用者的决策成本。"
+      ],
+      "limits": [
+        "强绑定 iOS 与 UIKit 时代接口，Objective-C 版本在 Swift 主导的今天基本只作为历史参考。",
+        "star 是累计值且已停更多年，不能据此推断当前的活跃使用量。"
+      ]
+    },
+    {
+      "name": "PNChart-Swift",
+      "repo": "PNChart-Swift",
+      "stars": 1366,
+      "verdict": "把已验证的图表库整体迁到第二种语言，是「同一能力跨语言重写」策略的一次成功复用。",
+      "problem": "Swift 成为 iOS 主流语言后，Objective-C 的 PNChart 无法被 Swift 项目以类型安全的方式直接使用，Swift 侧缺少同等好用的替代品。",
+      "mechanism": [
+        "描述明确将其定位为 PNChart 的 Swift 实现，即功能对标既有仓库而非另起设计。",
+        "复用同一套视觉与交互设定，迁移风险被压到语言层；原库与新库共享同一批潜在用户。",
+        "原仓库描述中主动带上 Swift 版链接，形成互相导流的闭环。"
+      ],
+      "constraints": [
+        "必须跟随原库的功能边界，Swift 版不能独立扩展出新图表类型而不破坏对等预期。",
+        "同样是 UIKit 层实现，未覆盖 SwiftUI。"
+      ],
+      "takeaway": [
+        "同一能力在语言/平台迁移窗口期，用「功能对等重写」而不是「重新设计」能吃到迁移需求的红利。",
+        "把新旧两个仓库互相挂链接，是成本几乎为零的流量再分配。"
+      ],
+      "limits": [
+        "双仓库意味着 bug 修复与特性要维护两遍，作者 2024-01 后也未再更新。",
+        "依赖 UIKit，无法在 SwiftUI 或跨平台工程中直接使用。"
+      ]
+    },
+    {
+      "name": "Rungic",
+      "repo": "Rungic",
+      "stars": 414,
+      "verdict": "近年最贴近「Agent 平台」定位的自有仓库，试图把 Linux 桌面与代办型助理塞进一部 Android 手机。",
+      "problem": "需要在手机上获得一台可远程接入的完整 Linux 环境，并让它按指令执行任务；目标场景是自托管/移动运维型用户，而非普通 App 用户。",
+      "mechanism": [
+        "本地材料未见依据：README 与源码不在本次快照内，具体是容器、远程桌面还是 Agent 运行时编排无法判定。",
+        "从描述可确认的三层结构：Android 手机作为宿主 → 一台完整 Linux 桌面 → 一个负责代办的助理。",
+        "最近更新时间为 2026-10-08，是其当前仍在活跃维护的主线仓库之一。"
+      ],
+      "constraints": [
+        "需要一部 Android 真机并长期保持在线，与普通「装个 App 就行」的使用预期不符。",
+        "同时承担远程桌面与助理编排两套复杂度，耦合面较大（此为推断，非本地材料确认）。"
+      ],
+      "takeaway": [
+        "个人项目的选题不必追求普遍需求，「一个人每天都要用的自托管场景」同样能带来精准关注者。",
+        "先描述能力组合（设备 + 桌面 + 助理）再谈实现，能让项目在被读到前三秒讲清楚。"
+      ],
+      "limits": [
+        "仅 Android 可用（描述明确写了 Android phone）。",
+        "对非技术用户几乎零门槛价值，star 增长天花板受限。"
+      ]
+    },
+    {
+      "name": "raft-flutter",
+      "repo": "raft-flutter",
+      "stars": 89,
+      "verdict": "为一个既有服务（Raft）补上 Flutter 原生客户端，是「补客户端」式维护动作而非独立产品。",
+      "problem": "Raft 服务已有可用接口但缺跨平台客户端，需要在手机上用熟悉的 Flutter 技术栈直接操作。",
+      "mechanism": [
+        "描述将其定位为 Raft 的 native Flutter client，即协议层复用上游、只重写表现层。",
+        "2026-10-20 更新，说明是仍在维护的近期项目，而非历史遗留。",
+        "与 charcoal-flutter、oyomi-popclip 同属 Flutter 侧的小型自有仓库群。"
+      ],
+      "constraints": [
+        "强耦合上游 Raft 的接口与数据模型，上游变更会直接传导。",
+        "「native client」意味着放弃 Flutter Web 目标。"
+      ],
+      "takeaway": [
+        "已有服务 + 新客户端是最省力的项目形态：后端不动，只写表现层。",
+        "同一作者同时维护 Swift、Flutter、Shell 三种客户端形态，验证了「一服务多端」的小型复用思路。"
+      ],
+      "limits": [
+        "星数受限于上游 Raft 本身的关注度，难以独立增长。",
+        "本地材料未见依据：README 与架构说明不在快照内。"
+      ]
+    },
+    {
+      "name": "albatross",
+      "repo": "albatross",
+      "stars": 27,
+      "verdict": "把「Webhook 处理」这一单一服务端能力做成独立 Swift 小库，是典型的按需抽取而非框架化。",
+      "problem": "服务端项目需要接收第三方回调，但没有现成的 Swift 侧 webhook 处理库可用，只能自己写最小实现。",
+      "mechanism": [
+        "描述只有一句「A Swift webhook handler」，说明交付物就是能力本身而非框架。",
+        "2024-02 仍在更新，与其 Swift 服务端方向的尝试（swift-on-server-tour）时间上吻合。",
+        "与之同类的还有 baiducloudsigner-swift、firebase-custom-token-signer-swift，都是「一项外部对接能力一个仓库」的切法。"
+      ],
+      "constraints": [
+        "星数极低（27），维护动机更可能是自用而非社区。",
+        "本地材料未见依据：签名校验、路由、重试等具体行为无法从快照确认。"
+      ],
+      "takeaway": [
+        "「一个外部对接 = 一个独立小仓库」的切法，能让每个仓库的 README 一句话讲完，也便于单独被搜到。",
+        "在 Swift 服务端方向先做几十行的小工具验证，比直接上一个框架成本低得多。"
+      ],
+      "limits": [
+        "无版本、无文档质量的证据（本地材料未包含 README），实际可用性无法判断。",
+        "生态位置已被 Vapor 等成熟框架占据。"
+      ]
+    },
+    {
+      "name": "dify-sf",
+      "repo": "dify-sf",
+      "stars": 0,
+      "verdict": "一个零星的 Dify 重实现尝试，规模与完成度在本地材料里都看不出边界。",
+      "problem": "推测是想用 Swift + Flutter 复刻 Dify 的形态，把 AI 应用编排层放到自选技术栈里；本地材料未给出具体使用场景。",
+      "mechanism": [
+        "描述为「A Swift and Flutter reimplementation of Dify」，说明是双端栈重写而非封装。",
+        "2026-10-20 更新，是最新的自有仓库之一，时间上紧邻 Rungic 与 raft-flutter。",
+        "本地材料未见依据：README、目录结构、进度说明均不在快照内。"
+      ],
+      "constraints": [
+        "0 星且无描述，无法判断是实验、玩具还是可用实现。",
+        "重实现上游项目意味着要跟随其功能演进，成本随上游迭代上升。"
+      ],
+      "takeaway": [
+        "从 fork 列表看，作者把大量上游仓库（promptfoo、moltbot、mlx、Agmente 等 AI 方向项目）收进来做研究，重实现型项目与这些跟踪是同一条线索。",
+        "想验证「换栈重写是否可行」，开一个 0 星的私有实验仓库先跑通是合理的探索姿势。"
+      ],
+      "limits": [
+        "本地材料只能确认仓库存在与最近更新时间，无法评估任何实际能力。",
+        "双语言栈重写若无明确差异点，实际竞争力存疑。"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "同一能力跨语言/跨平台重写，并让新旧仓库互相导流",
+      "kind": "method",
+      "evidence": [
+        "PNChart",
+        "PNChart-Swift",
+        "Waver",
+        "Waver-Android"
+      ],
+      "claim": "当一项能力已被验证有效时，作者的做法不是原地改造，而是开一个新仓库用目标语言/平台做功能对等重写，并在描述里互相链接。至少两组独立样本（图表、语音波形）都出现了这个配对，且新旧仓库都拿到了可观星数。"
+    },
+    {
+      "id": "P2",
+      "name": "跨语言互操作先用最小 demo 仓库探路",
+      "kind": "method",
+      "evidence": [
+        "gomobile-lib-demo",
+        "go_lib_swift_package_demo",
+        "go_lib_ios_demo",
+        "kotlin-native-library-demo",
+        "kotlin_native_ios_demo",
+        "kotlin_native_swift_package_demo_lib",
+        "swiftwasm-host-app-demo",
+        "write-wasm-in-swift-demo"
+      ],
+      "claim": "对 Go→Swift、Kotlin/Native→Swift/iOS、Swift→Wasm 这三类互操作，作者一律先建一串 0–4 星的独立 demo 仓库把链路跑通，再考虑是否做成库。这些 demo 全部集中在同一天（2021-06-27 / 2022-06-11）更新，是一次集中的可行性扫描。"
+    },
+    {
+      "id": "P3",
+      "name": "一项外部对接能力单独开一个仓库",
+      "kind": "technique",
+      "evidence": [
+        "baiducloudsigner-swift",
+        "firebase-custom-token-signer-swift",
+        "albatross"
+      ],
+      "claim": "把「接一个外部服务」切成可独立搜索、独立版本管理的最小仓库，三个仓库形态一致（一个小语库、一句话描述）。样本只有 3 个且都近乎零星标，属于可用的组织技巧，暂不上升为方法。"
+    },
+    {
+      "id": "P4",
+      "name": "用 fork 列表做技术雷达，主线跟着自托管与个人 Agent 转",
+      "kind": "technique",
+      "evidence": [
+        "moltbot",
+        "promptfoo",
+        "Agmente",
+        "swift-gpt",
+        "mockai",
+        "qwen3-tts.cpp",
+        "syncthing-lzc",
+        "mattermost-lzc",
+        "sunshine-virtual-display-qt"
+      ],
+      "claim": "2025–2026 年的 fork 几乎全部指向个人助理、LLM 工具链与自托管服务（moltbot、promptfoo、swift-gpt、mockai、syncthing-lzc、mattermost-lzc），且更新时间连续。同期自有仓库里也长出 Rungic、dify-sf、raft-flutter。这是趋势信号，不构成可复用工程方法。"
+    }
+  ],
+  "sources": [
+    "https://github.com/kevinzhow",
+    "https://github.com/kevinzhow?tab=repositories",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

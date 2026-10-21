@@ -1,0 +1,1818 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source）+ raw README/SKILL.md；来源：司徒K《2026年X上最值得关注的120个中文博主》",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "lencx",
+    "name": "lencx",
+    "bio": "以 Rust + Tauri 做跨平台桌面客户端的独立开发者，早期靠 ChatGPT 桌面壳起量，近年转向 AI agent 的宿主环境与原生工具链。",
+    "website": "",
+    "x": "",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "breadth",
+    "public_repos": 137,
+    "source_repos": 108,
+    "fork_repos": 29
+  },
+  "stats": {
+    "total_stars_source": 71725,
+    "total_stars_all": 71820,
+    "median_stars": 3,
+    "ge_1000": 3,
+    "between_100_999": 8,
+    "between_10_99": 20,
+    "lt_10": 77,
+    "no_language": 17,
+    "top4_share": 95.5,
+    "top1_share": 76.2
+  },
+  "repos": [
+    {
+      "name": "ChatGPT",
+      "url": "https://github.com/lencx/ChatGPT",
+      "stars": 54645,
+      "language": "Rust",
+      "updated_at": "2024-08-29T17:58:11Z",
+      "description": "❄️ ChatGPT Desktop Application (Mac, Windows and Linux)",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "Noi",
+      "url": "https://github.com/lencx/Noi",
+      "stars": 9062,
+      "language": "TypeScript",
+      "updated_at": "2026-08-21T16:42:55Z",
+      "description": "🚀 Less chaos. More flow.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "nofwl",
+      "url": "https://github.com/lencx/nofwl",
+      "stars": 4127,
+      "language": "Rust",
+      "updated_at": "2024-01-23T09:27:13Z",
+      "description": "NoFWL Desktop Application",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "Minke",
+      "url": "https://github.com/lencx/Minke",
+      "stars": 668,
+      "language": "TypeScript",
+      "updated_at": "2026-10-18T13:48:05Z",
+      "description": "🐳 DeepSeek Harness Desktop",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "tauri-tutorial",
+      "url": "https://github.com/lencx/tauri-tutorial",
+      "stars": 639,
+      "language": "TypeScript",
+      "updated_at": "2022-11-18T05:54:04Z",
+      "description": "📚 Tauri Tutorial (系列教程 - 打造属于自己的跨端应用)",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "GPTHub",
+      "url": "https://github.com/lencx/GPTHub",
+      "stars": 561,
+      "language": "TypeScript",
+      "updated_at": "2023-11-13T07:46:06Z",
+      "description": "🔍 Discover the Best in Custom GPT at OpenAI's GPT Store – Your Adventure Begins Here!",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "awesome-ai",
+      "url": "https://github.com/lencx/awesome-ai",
+      "stars": 358,
+      "language": null,
+      "updated_at": "2023-06-02T19:29:08Z",
+      "description": "🤖 Awesome AI",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "chat-todo-plugin",
+      "url": "https://github.com/lencx/chat-todo-plugin",
+      "stars": 253,
+      "language": "Python",
+      "updated_at": "2023-03-24T18:27:57Z",
+      "description": "✅ ChatGPT Plugin for managing a TODO list",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "skills",
+      "url": "https://github.com/lencx/skills",
+      "stars": 196,
+      "language": "Shell",
+      "updated_at": "2026-08-21T16:41:22Z",
+      "description": "💡 Turn experience into repeatable execution.",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "z",
+      "url": "https://github.com/lencx/z",
+      "stars": 156,
+      "language": "TypeScript",
+      "updated_at": "2024-01-21T20:10:44Z",
+      "description": "〽️ 浮之静",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "awesome",
+      "url": "https://github.com/lencx/awesome",
+      "stars": 145,
+      "language": null,
+      "updated_at": "2025-06-12T11:05:38Z",
+      "description": "😎 Awesome lists about all kinds of interesting topics",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "WA",
+      "url": "https://github.com/lencx/WA",
+      "stars": 96,
+      "language": "Rust",
+      "updated_at": "2022-11-29T12:48:08Z",
+      "description": "🤩 WA+ = W(eb) + A(pp) + more...",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "app",
+      "url": "https://github.com/lencx/app",
+      "stars": 88,
+      "language": "JavaScript",
+      "updated_at": "2023-05-25T04:05:06Z",
+      "description": "🏖️ No Free Work Life",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "rust-fe",
+      "url": "https://github.com/lencx/rust-fe",
+      "stars": 74,
+      "language": "Rust",
+      "updated_at": "2022-11-25T10:22:56Z",
+      "description": "🦀 Rust in front-end (系列教程 - 用前端视角学习 Rust)",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "opsail",
+      "url": "https://github.com/lencx/opsail",
+      "stars": 63,
+      "language": "Rust",
+      "updated_at": "2026-08-21T16:43:50Z",
+      "description": "⛵ Native tools that agents can rely on.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "create-mpl",
+      "url": "https://github.com/lencx/create-mpl",
+      "stars": 59,
+      "language": "TypeScript",
+      "updated_at": "2022-11-25T16:51:36Z",
+      "description": "⚡️ Create a project in seconds!",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "gg",
+      "url": "https://github.com/lencx/gg",
+      "stars": 55,
+      "language": "TypeScript",
+      "updated_at": "2025-05-10T20:26:28Z",
+      "description": "🦄 GG (Gatsby + GitHub) - A gatsby website builder based on github discussions",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "code-snippets",
+      "url": "https://github.com/lencx/code-snippets",
+      "stars": 43,
+      "language": "TypeScript",
+      "updated_at": "2021-09-25T04:30:22Z",
+      "description": "✍️ code - 手写系列",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "sd-webui-qrcode",
+      "url": "https://github.com/lencx/sd-webui-qrcode",
+      "stars": 32,
+      "language": "Python",
+      "updated_at": "2026-03-12T12:16:38Z",
+      "description": "🔲 Stable Diffusion WebUI's QR Code Generator",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": ".lencx",
+      "url": "https://github.com/lencx/.lencx",
+      "stars": 31,
+      "language": null,
+      "updated_at": "2026-01-06T02:08:16Z",
+      "description": "about me",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "fe-tips",
+      "url": "https://github.com/lencx/fe-tips",
+      "stars": 23,
+      "language": "JavaScript",
+      "updated_at": "2024-09-06T17:23:36Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "dev",
+      "url": "https://github.com/lencx/dev",
+      "stars": 21,
+      "language": "TypeScript",
+      "updated_at": "2022-09-25T20:08:49Z",
+      "description": "🙈 开发那些事儿",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "tauri-release",
+      "url": "https://github.com/lencx/tauri-release",
+      "stars": 20,
+      "language": "TypeScript",
+      "updated_at": "2024-04-28T03:15:04Z",
+      "description": "🔗 tauri release toolchain",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "create-xc-app",
+      "url": "https://github.com/lencx/create-xc-app",
+      "stars": 19,
+      "language": "TypeScript",
+      "updated_at": "2021-08-22T02:22:49Z",
+      "description": "⚡️ Create a project in seconds!",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "ai-explore",
+      "url": "https://github.com/lencx/ai-explore",
+      "stars": 16,
+      "language": "Python",
+      "updated_at": "2025-03-14T16:27:30Z",
+      "description": "🤯 A code collection for learning and exploration.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "vite-bytecode",
+      "url": "https://github.com/lencx/vite-bytecode",
+      "stars": 15,
+      "language": null,
+      "updated_at": "2023-07-24T10:33:36Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "pet",
+      "url": "https://github.com/lencx/pet",
+      "stars": 14,
+      "language": "TypeScript",
+      "updated_at": "2026-05-03T03:53:01Z",
+      "description": "👾 AI coding companion pet assets.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "wiki",
+      "url": "https://github.com/lencx/wiki",
+      "stars": 14,
+      "language": "TypeScript",
+      "updated_at": "2023-02-23T04:18:51Z",
+      "description": "🗺 lencx 的知识地图",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "chinese-independent-developer",
+      "url": "https://github.com/lencx/chinese-independent-developer",
+      "stars": 14,
+      "language": null,
+      "updated_at": "2023-01-25T08:39:49Z",
+      "description": "👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rsw-node",
+      "url": "https://github.com/lencx/rsw-node",
+      "stars": 14,
+      "language": "Rust",
+      "updated_at": "2022-01-03T01:35:34Z",
+      "description": "⚪️ `wasm-pack build` executed in remote deployment",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "woap",
+      "url": "https://github.com/lencx/woap",
+      "stars": 13,
+      "language": "JavaScript",
+      "updated_at": "2021-09-20T11:01:42Z",
+      "description": "🌀 GitHub Discussions - 生成微信文章 (支持二维码及脚注形式)",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "web",
+      "url": "https://github.com/lencx/web",
+      "stars": 11,
+      "language": "TypeScript",
+      "updated_at": "2021-01-05T05:25:33Z",
+      "description": "〽️ No free working life",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "github-readme-stats",
+      "url": "https://github.com/lencx/github-readme-stats",
+      "stars": 9,
+      "language": "JavaScript",
+      "updated_at": "2024-08-20T18:51:29Z",
+      "description": "Dynamically generated stats for your github readmes",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "download-github",
+      "url": "https://github.com/lencx/download-github",
+      "stars": 9,
+      "language": "TypeScript",
+      "updated_at": "2021-12-12T12:49:37Z",
+      "description": "⬇️ Download directory from a GitHub repo.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "rgd",
+      "url": "https://github.com/lencx/rgd",
+      "stars": 9,
+      "language": "JavaScript",
+      "updated_at": "2022-04-12T14:24:51Z",
+      "description": "🍱 GitHub Discussions API - RSS &amp; JSON",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "cos",
+      "url": "https://github.com/lencx/cos",
+      "stars": 8,
+      "language": "SWIG",
+      "updated_at": "2021-05-22T11:33:15Z",
+      "description": "🖥 操作系统学习",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "xi",
+      "url": "https://github.com/lencx/xi",
+      "stars": 7,
+      "language": "TypeScript",
+      "updated_at": "2021-05-30T13:32:20Z",
+      "description": "X IDE",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "book",
+      "url": "https://github.com/lencx/book",
+      "stars": 7,
+      "language": "Handlebars",
+      "updated_at": "2022-02-25T02:55:52Z",
+      "description": "👨🏻‍💻 学习 + 思考 + 总结",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "learn-rust",
+      "url": "https://github.com/lencx/learn-rust",
+      "stars": 7,
+      "language": "Rust",
+      "updated_at": "2020-10-24T13:48:49Z",
+      "description": "🦀 Learning Rust",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "deno-example",
+      "url": "https://github.com/lencx/deno-example",
+      "stars": 7,
+      "language": "TypeScript",
+      "updated_at": "2020-06-24T13:16:37Z",
+      "description": "🦕 Deno Example",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "winget-pkgs",
+      "url": "https://github.com/lencx/winget-pkgs",
+      "stars": 7,
+      "language": "PowerShell",
+      "updated_at": "2025-01-30T06:32:19Z",
+      "description": "The Microsoft community Windows Package Manager manifest repository",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "resume",
+      "url": "https://github.com/lencx/resume",
+      "stars": 6,
+      "language": "TypeScript",
+      "updated_at": "2021-05-16T14:29:18Z",
+      "description": "📝 简历模板，开发中...",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "gpt4free",
+      "url": "https://github.com/lencx/gpt4free",
+      "stars": 6,
+      "language": "Python",
+      "updated_at": "2023-05-02T08:53:59Z",
+      "description": "decentralising the Ai Industry, just some language model api's...",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "vsg",
+      "url": "https://github.com/lencx/vsg",
+      "stars": 6,
+      "language": "TypeScript",
+      "updated_at": "2020-12-20T18:01:02Z",
+      "description": "<img class=\"emoji\" title=\":octocat:\" alt=\":octocat:\" src=\"https://github.githubassets.com/images/icons/emoji/octocat.png\" height=\"20\" width=\"20\" align=\"absmiddle\"> Explore Github repositories directly from Visual Studio Code.",
+      "fork": false,
+      "layer": "tool",
+      "category": "设计与视觉"
+    },
+    {
+      "name": "tauri-plugins-workspace",
+      "url": "https://github.com/lencx/tauri-plugins-workspace",
+      "stars": 6,
+      "language": "Rust",
+      "updated_at": "2024-01-24T16:55:08Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "awesome-tauri",
+      "url": "https://github.com/lencx/awesome-tauri",
+      "stars": 5,
+      "language": null,
+      "updated_at": "2022-11-01T10:04:05Z",
+      "description": "🚀 Awesome Tauri Apps, Plugins and Resources",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "tauri",
+      "url": "https://github.com/lencx/tauri",
+      "stars": 5,
+      "language": "Rust",
+      "updated_at": "2023-01-09T17:06:47Z",
+      "description": "Build smaller, faster, and more secure desktop applications with a web frontend.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "vue-multi-pages",
+      "url": "https://github.com/lencx/vue-multi-pages",
+      "stars": 5,
+      "language": "JavaScript",
+      "updated_at": "2017-02-12T17:31:45Z",
+      "description": "☘️ Vue Multi Pages(vue@2.x &amp; webpack@2.x &amp; pug)",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "the-algorithm",
+      "url": "https://github.com/lencx/the-algorithm",
+      "stars": 5,
+      "language": "Scala",
+      "updated_at": "2023-04-01T05:28:29Z",
+      "description": "Source code for Twitter's Recommendation Algorithm",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "music",
+      "url": "https://github.com/lencx/music",
+      "stars": 5,
+      "language": "Vue",
+      "updated_at": "2020-07-27T18:06:34Z",
+      "description": "Music Generator",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "utils-rs",
+      "url": "https://github.com/lencx/utils-rs",
+      "stars": 5,
+      "language": "Rust",
+      "updated_at": "2022-03-06T23:49:40Z",
+      "description": "🦑 Rust utility library",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "rspack",
+      "url": "https://github.com/lencx/rspack",
+      "stars": 4,
+      "language": "Rust",
+      "updated_at": "2023-03-10T01:30:53Z",
+      "description": "A fast Rust-based web bundler.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "deno-getfiles",
+      "url": "https://github.com/lencx/deno-getfiles",
+      "stars": 4,
+      "language": "TypeScript",
+      "updated_at": "2020-07-10T14:22:21Z",
+      "description": "📂 Recursively get all files in a directory",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "short-link",
+      "url": "https://github.com/lencx/short-link",
+      "stars": 4,
+      "language": "Nunjucks",
+      "updated_at": "2021-05-06T04:01:09Z",
+      "description": "Link shortener",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "stable-diffusion-webui",
+      "url": "https://github.com/lencx/stable-diffusion-webui",
+      "stars": 4,
+      "language": "Python",
+      "updated_at": "2023-06-17T01:01:43Z",
+      "description": "Stable Diffusion web UI",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "electron-forge-terminal-demo",
+      "url": "https://github.com/lencx/electron-forge-terminal-demo",
+      "stars": 4,
+      "language": "TypeScript",
+      "updated_at": "2024-03-20T13:47:04Z",
+      "description": "Test",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "algorithms",
+      "url": "https://github.com/lencx/algorithms",
+      "stars": 4,
+      "language": "Shell",
+      "updated_at": "2022-06-22T14:18:23Z",
+      "description": "🤖 Data structure and algorithms",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "post",
+      "url": "https://github.com/lencx/post",
+      "stars": 3,
+      "language": "C",
+      "updated_at": "2019-12-31T01:58:48Z",
+      "description": "🔥 Article, Concept, Language, Tools, Tricks",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "compiler",
+      "url": "https://github.com/lencx/compiler",
+      "stars": 3,
+      "language": null,
+      "updated_at": "2020-09-11T13:01:05Z",
+      "description": "🌀 constructing a compiler.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "sponsor",
+      "url": "https://github.com/lencx/sponsor",
+      "stars": 3,
+      "language": null,
+      "updated_at": "2022-11-22T05:47:40Z",
+      "description": "❤️ 开源不易，给点鼓励，感恩！",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "GD",
+      "url": "https://github.com/lencx/GD",
+      "stars": 3,
+      "language": "TypeScript",
+      "updated_at": "2021-08-16T15:07:55Z",
+      "description": "🍭 Blog template based on GitHub Discussions",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "lencx.github.io",
+      "url": "https://github.com/lencx/lencx.github.io",
+      "stars": 3,
+      "language": null,
+      "updated_at": "2026-01-06T02:15:22Z",
+      "description": "👻 Life's attitude to you depends on your attitude to it.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "jaeger-node",
+      "url": "https://github.com/lencx/jaeger-node",
+      "stars": 3,
+      "language": "JavaScript",
+      "updated_at": "2019-08-18T16:58:00Z",
+      "description": "koa + jaeger",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "cloudevents",
+      "url": "https://github.com/lencx/cloudevents",
+      "stars": 3,
+      "language": "JavaScript",
+      "updated_at": "2019-08-18T16:10:03Z",
+      "description": "☁️ koa + cloudevents",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "awesome-vite",
+      "url": "https://github.com/lencx/awesome-vite",
+      "stars": 3,
+      "language": null,
+      "updated_at": "2021-01-21T18:15:05Z",
+      "description": "⚡️ A curated list of awesome things related to Vite.js",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "deno_website2",
+      "url": "https://github.com/lencx/deno_website2",
+      "stars": 3,
+      "language": "TypeScript",
+      "updated_at": "2020-08-01T03:17:34Z",
+      "description": "deno.land website",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "multipage-template",
+      "url": "https://github.com/lencx/multipage-template",
+      "stars": 3,
+      "language": "JavaScript",
+      "updated_at": "2018-09-07T11:09:12Z",
+      "description": "Multi-module(webpack4, vue2, pug, scss, postcss)",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "english",
+      "url": "https://github.com/lencx/english",
+      "stars": 3,
+      "language": "TypeScript",
+      "updated_at": "2022-05-09T16:19:09Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "rust-learn-demo",
+      "url": "https://github.com/lencx/rust-learn-demo",
+      "stars": 2,
+      "language": "Rust",
+      "updated_at": "2018-03-09T15:52:15Z",
+      "description": "📝 Note &amp; Demo",
+      "fork": false,
+      "layer": "tool",
+      "category": "记忆与知识"
+    },
+    {
+      "name": "travel",
+      "url": "https://github.com/lencx/travel",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2021-09-11T12:25:37Z",
+      "description": "🏖 游记",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "library",
+      "url": "https://github.com/lencx/library",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2017-12-17T15:51:01Z",
+      "description": "🦄 JavaScript Libraries",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "hazy-vs-theme",
+      "url": "https://github.com/lencx/hazy-vs-theme",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2017-10-11T05:12:10Z",
+      "description": "Hazy VSCode Theme for Operator Mono",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "demo",
+      "url": "https://github.com/lencx/demo",
+      "stars": 2,
+      "language": "HTML",
+      "updated_at": "2017-09-02T16:00:32Z",
+      "description": "📌 Demo",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "angular-hero-app",
+      "url": "https://github.com/lencx/angular-hero-app",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2017-09-02T15:55:22Z",
+      "description": "hero app (angular4+pug+material+sass+indexedDB)",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "rsw-action",
+      "url": "https://github.com/lencx/rsw-action",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2023-02-28T19:02:59Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "angular2-init",
+      "url": "https://github.com/lencx/angular2-init",
+      "stars": 2,
+      "language": "CSS",
+      "updated_at": "2017-02-17T04:03:31Z",
+      "description": "⚡️ Angular2 Beta Boilerplate",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "electron",
+      "url": "https://github.com/lencx/electron",
+      "stars": 2,
+      "language": "C++",
+      "updated_at": "2026-06-28T19:07:58Z",
+      "description": "<img class=\"emoji\" title=\":electron:\" alt=\":electron:\" src=\"https://github.githubassets.com/images/icons/emoji/electron.png\" height=\"20\" width=\"20\" align=\"absmiddle\"> Build cross-platform desktop apps with JavaScript, HTML, and CSS",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "OpenChat",
+      "url": "https://github.com/lencx/OpenChat",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2025-03-01T01:35:33Z",
+      "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "clang-learn-demo",
+      "url": "https://github.com/lencx/clang-learn-demo",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2018-05-26T15:37:21Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "test-action",
+      "url": "https://github.com/lencx/test-action",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2023-05-22T12:57:44Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Remembering-Haoel",
+      "url": "https://github.com/lencx/Remembering-Haoel",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2023-05-30T14:09:22Z",
+      "description": "记录您对左耳朵耗子（陈皓）的点滴回忆",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "tauri-plugin-autostart",
+      "url": "https://github.com/lencx/tauri-plugin-autostart",
+      "stars": 2,
+      "language": "Rust",
+      "updated_at": "2022-09-05T17:18:28Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "case-police",
+      "url": "https://github.com/lencx/case-police",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2022-03-31T16:34:59Z",
+      "description": "Make the case correct, PLEASE!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "free-programming-books",
+      "url": "https://github.com/lencx/free-programming-books",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2020-08-23T19:12:48Z",
+      "description": "📚 Freely available programming books",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "zarm-web",
+      "url": "https://github.com/lencx/zarm-web",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2020-07-31T14:17:20Z",
+      "description": "基于React的桌面端UI组件库",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "blog",
+      "url": "https://github.com/lencx/blog",
+      "stars": 2,
+      "language": "HTML",
+      "updated_at": "2017-04-11T15:25:33Z",
+      "description": "🌈 Lencx's Blog",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "conf",
+      "url": "https://github.com/lencx/conf",
+      "stars": 2,
+      "language": "Shell",
+      "updated_at": "2018-08-23T05:58:38Z",
+      "description": "⚙️ Config",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "create-vite-app",
+      "url": "https://github.com/lencx/create-vite-app",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2020-07-22T22:10:46Z",
+      "description": "Create a Vite-powered app in seconds!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "explore",
+      "url": "https://github.com/lencx/explore",
+      "stars": 2,
+      "language": "Dart",
+      "updated_at": "2020-07-04T03:41:55Z",
+      "description": "💡 ideas and try",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "lightworld",
+      "url": "https://github.com/lencx/lightworld",
+      "stars": 2,
+      "language": "Rust",
+      "updated_at": "2021-03-13T05:57:25Z",
+      "description": "☀️ 光",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "use-ant",
+      "url": "https://github.com/lencx/use-ant",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2022-11-10T07:20:07Z",
+      "description": "Ant Hooks",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "nx",
+      "url": "https://github.com/lencx/nx",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2020-03-31T16:37:07Z",
+      "description": "🐠 js utils, react hooks, antd hook, etc.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "share",
+      "url": "https://github.com/lencx/share",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2022-04-28T15:58:16Z",
+      "description": "🎦 technology sharing",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "covid19",
+      "url": "https://github.com/lencx/covid19",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2020-03-19T17:30:34Z",
+      "description": "🦠2019 Novel Coronavirus",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "hero-crawler",
+      "url": "https://github.com/lencx/hero-crawler",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2018-07-31T09:05:31Z",
+      "description": "⚔️ Hero Info(King Of Glory)",
+      "fork": false,
+      "layer": "tool",
+      "category": "信息获取"
+    },
+    {
+      "name": "test",
+      "url": "https://github.com/lencx/test",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2024-01-23T12:09:10Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "pure",
+      "url": "https://github.com/lencx/pure",
+      "stars": 1,
+      "language": "Rust",
+      "updated_at": "2020-10-17T16:17:42Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "vue3-examples",
+      "url": "https://github.com/lencx/vue3-examples",
+      "stars": 1,
+      "language": "Vue",
+      "updated_at": "2020-12-03T09:16:49Z",
+      "description": "vue3 examples",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "github-blocked-users",
+      "url": "https://github.com/lencx/github-blocked-users",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2024-11-19T07:59:10Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "tauri-plugin-sql",
+      "url": "https://github.com/lencx/tauri-plugin-sql",
+      "stars": 1,
+      "language": "Rust",
+      "updated_at": "2023-01-11T15:34:29Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ai",
+      "url": "https://github.com/lencx/ai",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2025-12-14T10:30:25Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "tauri-plugin-log",
+      "url": "https://github.com/lencx/tauri-plugin-log",
+      "stars": 1,
+      "language": "Rust",
+      "updated_at": "2022-12-15T12:13:15Z",
+      "description": "Configurable logging for your Tauri app.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "learn-webgl",
+      "url": "https://github.com/lencx/learn-webgl",
+      "stars": 1,
+      "language": "HTML",
+      "updated_at": "2020-12-29T18:25:55Z",
+      "description": "",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "static",
+      "url": "https://github.com/lencx/static",
+      "stars": 1,
+      "language": "HTML",
+      "updated_at": "2021-01-05T09:14:04Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "monthly",
+      "url": "https://github.com/lencx/monthly",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2021-12-13T14:50:26Z",
+      "description": "📰 学习总结，输出打卡",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "zarm",
+      "url": "https://github.com/lencx/zarm",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2021-10-28T11:46:00Z",
+      "description": "基于 React、React-Native 的移动端UI组件库",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mrdulin-blog",
+      "url": "https://github.com/lencx/mrdulin-blog",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2021-06-30T08:53:30Z",
+      "description": "Personal Blog - 博客 | 编程技术，软件，生活",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rust_magazine_2021",
+      "url": "https://github.com/lencx/rust_magazine_2021",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2021-02-27T09:39:01Z",
+      "description": "RustMagazine 2021 期刊",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "vite",
+      "url": "https://github.com/lencx/vite",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2021-02-19T19:10:52Z",
+      "description": "Next generation frontend tooling. It's fast!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "imgmaps",
+      "url": "https://github.com/lencx/imgmaps",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2022-03-06T23:58:16Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "mess",
+      "url": "https://github.com/lencx/mess",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2021-05-28T08:26:42Z",
+      "description": "react components",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "learn-puppeteer",
+      "url": "https://github.com/lencx/learn-puppeteer",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2021-09-21T17:15:50Z",
+      "description": "puppeteer 学习笔记",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "work-doc",
+      "url": "https://github.com/lencx/work-doc",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2020-10-07T10:22:53Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "gt",
+      "url": "https://github.com/lencx/gt",
+      "stars": 1,
+      "language": "Rust",
+      "updated_at": "2020-09-28T00:14:07Z",
+      "description": "<img class=\"emoji\" title=\":octocat:\" alt=\":octocat:\" src=\"https://github.githubassets.com/images/icons/emoji/octocat.png\" height=\"20\" width=\"20\" align=\"absmiddle\"> github trending command line tool",
+      "fork": false,
+      "layer": "tool",
+      "category": "设计与视觉"
+    },
+    {
+      "name": "homebrew-nofwl",
+      "url": "https://github.com/lencx/homebrew-nofwl",
+      "stars": 1,
+      "language": "Ruby",
+      "updated_at": "2023-04-06T18:01:37Z",
+      "description": "NoFWL",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "l3x-ip",
+      "url": "https://github.com/lencx/l3x-ip",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2018-08-30T07:27:43Z",
+      "description": "Get IP address",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "hazy",
+      "url": "https://github.com/lencx/hazy",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2018-07-07T15:48:51Z",
+      "description": "🛠 Tools",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "l3x-devinfo",
+      "url": "https://github.com/lencx/l3x-devinfo",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2018-08-31T05:52:58Z",
+      "description": "Get developer information",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "resource",
+      "url": "https://github.com/lencx/resource",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2018-04-23T14:30:08Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "koa2-ts",
+      "url": "https://github.com/lencx/koa2-ts",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2018-04-15T15:24:11Z",
+      "description": "🐬 koa + typescript + mongoDB",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "l3x-generate-file",
+      "url": "https://github.com/lencx/l3x-generate-file",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2018-09-08T16:54:10Z",
+      "description": "Generate File",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "golang-learn-demo",
+      "url": "https://github.com/lencx/golang-learn-demo",
+      "stars": 1,
+      "language": "Go",
+      "updated_at": "2018-03-29T15:56:16Z",
+      "description": "🐳 demo",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "i18n",
+      "url": "https://github.com/lencx/i18n",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2018-03-25T09:09:15Z",
+      "description": "🌐 i18n",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "rws",
+      "url": "https://github.com/lencx/rws",
+      "stars": 1,
+      "language": "Rust",
+      "updated_at": "2019-11-10T15:51:37Z",
+      "description": "rust-web",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "wx-lite-app",
+      "url": "https://github.com/lencx/wx-lite-app",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2018-01-28T12:58:25Z",
+      "description": "WeChat Lite App Component",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "tx",
+      "url": "https://github.com/lencx/tx",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2019-12-15T03:47:42Z",
+      "description": "tool",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "gitQ",
+      "url": "https://github.com/lencx/gitQ",
+      "stars": 1,
+      "language": "Dart",
+      "updated_at": "2020-01-18T02:34:43Z",
+      "description": "🐙",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "gitbox",
+      "url": "https://github.com/lencx/gitbox",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2020-02-05T17:01:34Z",
+      "description": "GitHub related toolset",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "js-learn-demo",
+      "url": "https://github.com/lencx/js-learn-demo",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2017-07-17T09:09:29Z",
+      "description": "🔥 demo",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ntalk",
+      "url": "https://github.com/lencx/ntalk",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2020-03-29T15:28:37Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "hexo-theme-lencx",
+      "url": "https://github.com/lencx/hexo-theme-lencx",
+      "stars": 1,
+      "language": "CSS",
+      "updated_at": "2017-04-04T14:37:41Z",
+      "description": "🐣 a theme for hexo",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "todo",
+      "url": "https://github.com/lencx/todo",
+      "stars": 1,
+      "language": "CSS",
+      "updated_at": "2017-02-21T17:31:09Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "rsapi",
+      "url": "https://github.com/lencx/rsapi",
+      "stars": 1,
+      "language": "Rust",
+      "updated_at": "2020-05-24T16:36:32Z",
+      "description": "REST API in Rust",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "utterances",
+      "url": "https://github.com/lencx/utterances",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2020-07-26T18:55:04Z",
+      "description": "🔮 A lightweight comments widget built on GitHub issues",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "react-learn",
+      "url": "https://github.com/lencx/react-learn",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2020-08-28T02:50:55Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ui",
+      "url": "https://github.com/lencx/ui",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2018-04-07T04:12:30Z",
+      "description": "🌱 UI",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "better-sqlite3",
+      "url": "https://github.com/lencx/better-sqlite3",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2025-11-15T16:03:13Z",
+      "description": "The fastest and simplest library for SQLite3 in Node.js.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/lencx",
+    "count": 3,
+    "layers": {
+      "skill": 1,
+      "tool": 1,
+      "other": 1
+    },
+    "items": [
+      {
+        "name": "skills",
+        "layer": "skill",
+        "category": "Agent 技能库",
+        "repo": "skills",
+        "subdir": "",
+        "summary": "\"Turn experience into repeatable execution.\"，把个人经验固化成可重复执行的步骤，是其公开的 skill 类仓库。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "opsail",
+        "layer": "tool",
+        "category": "Agent 原生工具",
+        "repo": "opsail",
+        "subdir": "",
+        "summary": "\"Native tools that agents can rely on.\"，Rust 实现的原生 CLI 工具集，供 agent 直接调用。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "Minke",
+        "layer": "other",
+        "category": "Agent 宿主桌面端",
+        "repo": "Minke",
+        "subdir": "",
+        "summary": "\"DeepSeek Harness Desktop\"，把 agent harness 装进 Tauri 桌面壳，本身是 skill 生态的消费端而非 skill。",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "name": "ChatGPT",
+      "repo": "ChatGPT",
+      "stars": 54645,
+      "verdict": "用 Rust + Tauri 重写官方客户端并横跨三平台的第三方桌面壳，是其全部流量的单点来源。",
+      "problem": "在没有官方桌面客户端、网页版被风控/登录态限制的时期，想稳定使用 ChatGPT 的个人开发者与小团队，需要一个可自控账号登录、能装在 Windows/Mac/Linux 上的客户端。",
+      "mechanism": [
+        "以 Tauri 复用 Web 前端渲染，Rust 只承担原生层与系统能力，把安装包体积和内存开销压到 Electron 之下",
+        "自持 WebView 会话与登录态，绕开网页端频繁的风控验证",
+        "同一代码基线打三平台安装包，一次实现覆盖全部桌面用户",
+        "抢在官方客户端发布前上线，占据\"第三方客户端\"这一心智位"
+      ],
+      "constraints": [
+        "强依赖非官方 WebView 接口，上游页面改版即可能失效",
+        "封装第三方服务，合规与封号风险由使用者承担",
+        "多平台签名与证书维护成本高"
+      ],
+      "takeaway": [
+        "在官方能力缺位的窗口期做\"官方客户端的替代品\"，是最短路径的起量方式",
+        "选 Tauri 而非 Electron，可以直接拿体积和内存当卖点",
+        "跨三平台同一基线，一次投入换最大覆盖面"
+      ],
+      "limits": [
+        "生命周期完全受上游 Web 端支配，2024-08 后未再更新",
+        "单点依赖：一旦上游封禁第三方客户端，仓库价值归零",
+        "本地材料未见依据：具体风控绕过实现细节"
+      ]
+    },
+    {
+      "name": "Noi",
+      "repo": "Noi",
+      "stars": 9062,
+      "verdict": "把\"AI 工具太多反而打断心流\"当成真问题，做成统一入口的 AI 工作台。",
+      "problem": "同时订阅多个 AI 服务的个人用户，模型、应用和设置散落各处，每天在工具之间来回切换导致思路中断。",
+      "mechanism": [
+        "以桌面应用为统一外壳，把多种 AI 能力收进同一个界面",
+        "\"Less chaos. More flow.\"作为产品取舍标准，功能以减少切换成本为第一指标",
+        "延续 Tauri + TypeScript 技术栈，与其既有跨端经验复用"
+      ],
+      "constraints": [
+        "各上游 AI 服务接口与政策变动会影响可用功能",
+        "统一入口与各服务官方客户端之间存在功能重叠",
+        "本地材料未见依据：具体的模型路由与会话管理实现"
+      ],
+      "takeaway": [
+        "产品定位先写一句否定句（不要什么），比列功能更容易收敛",
+        "\"减少切换\"是一个可验收的指标，可直接指导功能优先级",
+        "已有技术栈（Rust + Tauri + TS）应当跨项目复用而不是每项目重选"
+      ],
+      "limits": [
+        "价值随上游服务能力差距变化，官方客户端追上即失去优势",
+        "本地材料未见依据：本地材料只有仓库元数据，无 README/架构说明"
+      ]
+    },
+    {
+      "name": "nofwl",
+      "repo": "nofwl",
+      "stars": 4127,
+      "verdict": "用\"No Free Work Life\"口号把时间管理做成桌面工具，是其从开发者工具转向个人生活效率的分界点。",
+      "problem": "自由职业者与远程工作者缺少上下班边界，工作与休息混在一起导致持续过载。",
+      "mechanism": [
+        "Rust + Tauri 复用既有跨端基线，降低新项目的启动成本",
+        "命名 \"NoFWL\" 作为可传播的品牌符号，与同名的 app、web 仓库形成同一套品牌",
+        "搭配 homebrew-nofwl 做安装分发，降低 macOS 用户门槛"
+      ],
+      "constraints": [
+        "个人效率工具同质化严重，用户留存依赖习惯养成",
+        "2024-01 后停更，维护状态不明",
+        "本地材料未见依据：核心功能与数据结构"
+      ],
+      "takeaway": [
+        "同一品牌名可以跨 web / desktop / 分发仓库复用，形成辨识度",
+        "做桌面工具时把 brew 安装脚本一起交付，能实打实降低安装成本",
+        "固定技术栈（Rust + Tauri）让\"新项目\"成本接近复制"
+      ],
+      "limits": [
+        "同名 app / web / homebrew-nofwl 仓库共同分摊了这 4127 星，单体权重被稀释",
+        "已停更两年，仅作为方法样本而非可用方案"
+      ]
+    },
+    {
+      "name": "Minke",
+      "repo": "Minke",
+      "stars": 668,
+      "verdict": "把 agent harness 包进 Tauri 桌面壳，角色是 skill 与工具的运行宿主而非产出者。",
+      "problem": "命令行里的 agent harness 缺少会话可视化、文件浏览与状态反馈，普通用户无法上手，开发者也难排查运行过程。",
+      "mechanism": [
+        "复用 Tauri 跨端能力，把 CLI harness 的能力提升为可点击、可观察的桌面交互",
+        "TypeScript 前端承担 UI 与状态呈现，agent 执行仍由 harness 后端负责",
+        "作为自有 skill（skills）与工具（opsail）的落地消费端，形成内部闭环"
+      ],
+      "constraints": [
+        "受 harness 后端协议约束，后端接口变化会传导到 UI",
+        "桌面壳进程与 agent 子进程之间的生命周期管理是主要复杂度来源",
+        "本地材料未见依据：具体的进程通信与状态同步方案"
+      ],
+      "takeaway": [
+        "先做宿主再做 skill 也有价值：宿主决定 skill 的可用边界",
+        "agent 类产品的 UI 重点应放在状态可观察与失败可读，而不是增加按钮",
+        "个人项目的 skill 与宿主可以自建闭环，不依赖第三方生态"
+      ],
+      "limits": [
+        "星数 668，在其自有仓库中偏低，说明宿主类产品受众小于工具类",
+        "高度绑定自家 harness，通用性弱"
+      ]
+    },
+    {
+      "name": "skills",
+      "repo": "skills",
+      "stars": 196,
+      "verdict": "把自己重复的操作经验写成可执行 skill，是从\"做工具\"转向\"交付方法\"的载体。",
+      "problem": "AI agent 每次执行同类任务时步骤不稳定、结果不可复现，需要把人的经验固化成 agent 可直接读取的指令集。",
+      "mechanism": [
+        "\"Turn experience into repeatable execution.\"直接定义价值：经验→可重复执行",
+        "以独立仓库承载 skill 定义，脱离具体应用便于跨项目复用",
+        "与 opsail（原生工具）、Minke（宿主）构成 skill-工具-宿主三层"
+      ],
+      "constraints": [
+        "skill 质量依赖编写者的领域经验，无法批量生成",
+        "缺少宿主侧的版本与依赖校验时，skill 容易随模型行为漂移",
+        "本地材料未见依据：skill 的目录结构、版本检查与安装协议"
+      ],
+      "takeaway": [
+        "把私货公开成 skill 是低成本高复用的影响力投放方式",
+        "skill 必须与可调用工具配套发布，否则只能给出文字建议",
+        "先用 skill 收敛自己团队的流程，再考虑对外开源"
+      ],
+      "limits": [
+        "196 星说明其影响力主要来自主仓 ChatGPT，skill 本身尚未形成独立需求",
+        "本地材料未见依据：具体 skill 清单与分层方式"
+      ]
+    },
+    {
+      "name": "opsail",
+      "repo": "opsail",
+      "stars": 63,
+      "verdict": "低星但方法密度高：把 agent 需要的动作做成原生 CLI，让模型不再依赖脆弱的脚本拼装。",
+      "problem": "agent 在本地执行操作时，临时拼装的脚本缺少稳定接口、错误处理与跨平台支持，失败原因难以归因。",
+      "mechanism": [
+        "\"Native tools that agents can rely on.\"——工具的验收标准是 agent 可依赖，而非人好用",
+        "以 Rust 实现，保证单文件分发与跨平台一致的退出码与输出",
+        "与 skills 仓库同批更新（2026-08-21），说明工具与指令是成对设计的"
+      ],
+      "constraints": [
+        "需要 agent 侧有稳定的调用协议约定，否则工具接口会被随意调用",
+        "Rust 单文件分发仍要求用户具备运行时或预编译二进制的分发渠道",
+        "本地材料未见依据：工具清单与调用协议细节"
+      ],
+      "takeaway": [
+        "给 agent 造工具时，退出码和 stdout 格式要按机器可读来设计，而非人可读",
+        "skill 与工具同批更新、互相引用，比单独发布任一方更有效",
+        "工具集独立成仓而不是塞进主应用，便于版本化与分发"
+      ],
+      "limits": [
+        "63 星，尚未获得社区验证，接口设计可能随 agent 框架变化而推翻",
+        "面向 agent 的工具生态仍处早期，缺少事实标准"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "Tauri 作为默认跨端基线",
+      "kind": "method",
+      "evidence": [
+        "ChatGPT",
+        "Noi",
+        "nofwl",
+        "Minke",
+        "tauri-tutorial",
+        "tauri-release"
+      ],
+      "claim": "从爆款桌面应用到教程、发布工具链，一律选 Rust + Tauri，技术选型十年未变，新项目成本接近复制。"
+    },
+    {
+      "id": "P2",
+      "name": "一句话口号作为产品定义",
+      "kind": "method",
+      "evidence": [
+        "ChatGPT",
+        "Noi",
+        "nofwl",
+        "skills",
+        "opsail",
+        "app"
+      ],
+      "claim": "每个仓库都有一句可背诵的短句（Less chaos. More flow. / Turn experience into repeatable execution.），先定一句否定或承诺，再展开功能。"
+    },
+    {
+      "id": "P3",
+      "name": "仓库数量摊薄单仓影响力",
+      "kind": "method",
+      "evidence": [
+        "ChatGPT",
+        "Noi",
+        "nofwl",
+        "tauri-tutorial",
+        "rust-fe",
+        "Minke",
+        "skills"
+      ],
+      "claim": "把教程、学习笔记、生活工具、agent 工具都放在同一账号下，靠数量维持曝光入口；但中位数仅 3 星、top4 占 95.5%，说明数量并未转化为分布健康度。"
+    },
+    {
+      "id": "P4",
+      "name": "skill 与原生工具成对发布",
+      "kind": "method",
+      "evidence": [
+        "skills",
+        "opsail",
+        "Minke"
+      ],
+      "claim": "指令层（skills）与执行层（opsail）独立仓库、同批更新，由宿主（Minke）承载运行，构成本地材料中唯一成体系的 agent 三层结构。"
+    },
+    {
+      "id": "P5",
+      "name": "用 emoji + 短标语做仓库首图",
+      "kind": "technique",
+      "evidence": [
+        "Noi",
+        "Minke",
+        "z",
+        "sponsor"
+      ],
+      "claim": "仓库 description 首字符用 emoji 加一句标语，在列表页零成本提升辨识度——低成本技巧，非方法论。"
+    }
+  ],
+  "sources": [
+    "https://github.com/lencx",
+    "https://github.com/lencx?tab=repositories",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

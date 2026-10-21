@@ -1,0 +1,632 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source）+ raw README/SKILL.md；来源：司徒K《2026年X上最值得关注的120个中文博主》",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "sickn33",
+    "name": "sickn33",
+    "bio": "以 agentic-awesome-skills 为唯一支柱的个人开发者，仓库结构呈单极分布：4.8 万星的 skill 目录/控制面 + 二十来个零散小工具。",
+    "website": "",
+    "x": "",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "depth",
+    "public_repos": 35,
+    "source_repos": 22,
+    "fork_repos": 13
+  },
+  "stats": {
+    "total_stars_source": 48158,
+    "total_stars_all": 48202,
+    "median_stars": 2,
+    "ge_1000": 1,
+    "between_100_999": 0,
+    "between_10_99": 3,
+    "lt_10": 18,
+    "no_language": 1,
+    "top4_share": 99.9,
+    "top1_share": 99.8
+  },
+  "repos": [
+    {
+      "name": "agentic-awesome-skills",
+      "url": "https://github.com/sickn33/agentic-awesome-skills",
+      "stars": 48080,
+      "language": "Python",
+      "updated_at": "2026-10-20T19:19:17Z",
+      "description": "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,600+ agentic skills. Includes CLI, local MCP, cat…",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "spendwise",
+      "url": "https://github.com/sickn33/spendwise",
+      "stars": 23,
+      "language": "TypeScript",
+      "updated_at": "2026-09-06T14:11:46Z",
+      "description": "SpendWise - Personal expense tracker with budgets, savings goals, and ML-powered categorization",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "macbook-lid-sleep-fix",
+      "url": "https://github.com/sickn33/macbook-lid-sleep-fix",
+      "stars": 12,
+      "language": "Shell",
+      "updated_at": "2026-01-10T09:42:43Z",
+      "description": "Automatic sleep when closing MacBook lid - workaround for broken Hall sensor",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "VibePalette",
+      "url": "https://github.com/sickn33/VibePalette",
+      "stars": 12,
+      "language": "JavaScript",
+      "updated_at": "2026-07-10T18:18:00Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "chronochat",
+      "url": "https://github.com/sickn33/chronochat",
+      "stars": 9,
+      "language": "JavaScript",
+      "updated_at": "2026-09-18T10:55:07Z",
+      "description": "Navigate long ChatGPT conversations with clarity.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "Netflix-Prime-Auto-Skip",
+      "url": "https://github.com/sickn33/Netflix-Prime-Auto-Skip",
+      "stars": 8,
+      "language": "JavaScript",
+      "updated_at": "2026-09-10T11:04:34Z",
+      "description": "Automatically skip Ads, Intros, Credits, etc. on all major Streaming services",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "awesome-claude-code",
+      "url": "https://github.com/sickn33/awesome-claude-code",
+      "stars": 8,
+      "language": null,
+      "updated_at": "2026-03-14T17:09:44Z",
+      "description": "Awesome Claude Code Resources, Projects、Prompts、Agents、Commands，everything about claude code! Claude Code 精选资源列表 （by 云中江树）",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "notebooklm-mcp-cli",
+      "url": "https://github.com/sickn33/notebooklm-mcp-cli",
+      "stars": 6,
+      "language": "Python",
+      "updated_at": "2026-04-13T07:31:01Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "antigravity-skills-browser",
+      "url": "https://github.com/sickn33/antigravity-skills-browser",
+      "stars": 6,
+      "language": "JavaScript",
+      "updated_at": "2026-07-22T13:01:22Z",
+      "description": "Extensão para o Antigravity (e qualquer fork do VS Code) que lista as 1600+ Antigravity Awesome Skills numa barra lateral, com busca fixa, favoritos, detalhes por skill e interface PT/EN. Ao clicar…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "opendataloader-pdf",
+      "url": "https://github.com/sickn33/opendataloader-pdf",
+      "stars": 5,
+      "language": "Java",
+      "updated_at": "2026-06-01T16:04:07Z",
+      "description": "PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "awesome",
+      "url": "https://github.com/sickn33/awesome",
+      "stars": 5,
+      "language": null,
+      "updated_at": "2026-03-09T07:59:57Z",
+      "description": "😎 Awesome lists about all kinds of interesting topics",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "jarvis",
+      "url": "https://github.com/sickn33/jarvis",
+      "stars": 4,
+      "language": "TypeScript",
+      "updated_at": "2026-05-18T19:39:32Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "sub-tracker",
+      "url": "https://github.com/sickn33/sub-tracker",
+      "stars": 4,
+      "language": "TypeScript",
+      "updated_at": "2026-02-13T16:37:43Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "tidal-mcp",
+      "url": "https://github.com/sickn33/tidal-mcp",
+      "stars": 4,
+      "language": "Python",
+      "updated_at": "2026-10-16T19:46:13Z",
+      "description": "The complete, safety-first MCP server for TIDAL — 112 tools for catalog, lyrics, recommendations, favorites, playlists, folders, discovery, and approval-gated writes.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "chatgpt-warm-theme",
+      "url": "https://github.com/sickn33/chatgpt-warm-theme",
+      "stars": 3,
+      "language": null,
+      "updated_at": "2025-08-24T17:14:57Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "pomodoro-study",
+      "url": "https://github.com/sickn33/pomodoro-study",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2026-01-11T10:49:21Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "sickn33.github.io",
+      "url": "https://github.com/sickn33/sickn33.github.io",
+      "stars": 2,
+      "language": "HTML",
+      "updated_at": "2026-10-20T18:20:58Z",
+      "description": "Legacy Pages redirects for Agentic Awesome Skills",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "cmpgvng",
+      "url": "https://github.com/sickn33/cmpgvng",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2026-02-13T10:02:54Z",
+      "description": "OneDrive Upload Interface",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "themeflick",
+      "url": "https://github.com/sickn33/themeflick",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2026-07-23T08:20:31Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "codex-eu-patcher",
+      "url": "https://github.com/sickn33/codex-eu-patcher",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2026-05-07T20:54:41Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "html2realpdf",
+      "url": "https://github.com/sickn33/html2realpdf",
+      "stars": 1,
+      "language": "Zig",
+      "updated_at": "2026-07-24T08:21:25Z",
+      "description": "Generate a real PDF, not a screenshot.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "aas-action",
+      "url": "https://github.com/sickn33/aas-action",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2026-09-24T06:08:46Z",
+      "description": "Validate and preview Agentic Awesome Skills stacks in GitHub Actions.",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "fondamenti-quiz",
+      "url": "https://github.com/sickn33/fondamenti-quiz",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2026-01-09T19:40:56Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "fotoricordiecho",
+      "url": "https://github.com/sickn33/fotoricordiecho",
+      "stars": 1,
+      "language": "HTML",
+      "updated_at": "2024-10-07T12:19:27Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "web-marketing-quiz",
+      "url": "https://github.com/sickn33/web-marketing-quiz",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2026-06-15T07:24:33Z",
+      "description": "",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "docs",
+      "url": "https://github.com/sickn33/docs",
+      "stars": 0,
+      "language": "MDX",
+      "updated_at": "2026-09-26T16:56:26Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "TRex",
+      "url": "https://github.com/sickn33/TRex",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2026-07-12T19:12:57Z",
+      "description": "Copy any text on your screen, stop retyping.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "DropKit",
+      "url": "https://github.com/sickn33/DropKit",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2026-06-29T15:47:30Z",
+      "description": "Shake-to-summon floating file shelf + searchable clipboard history for macOS, right in your menu bar.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "openfit",
+      "url": "https://github.com/sickn33/openfit",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-06-25T14:05:32Z",
+      "description": "Desktop dashboard and Codex-powered assistant for Fitbit data",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "lockbit-rescue",
+      "url": "https://github.com/sickn33/lockbit-rescue",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2026-06-23T08:55:37Z",
+      "description": "A toolkit for recovering files encrypted by LockBit 3.0 (\"Black\") ransomware without paying the ransom, by exploiting a known keystream-reuse weakness.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pitchflow",
+      "url": "https://github.com/sickn33/pitchflow",
+      "stars": 0,
+      "language": "HTML",
+      "updated_at": "2026-07-16T07:18:37Z",
+      "description": "Evidence-grounded launch campaigns from a GitHub repository, directed by GPT-5.6 Sol through local Codex.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "tumminello-search-demo",
+      "url": "https://github.com/sickn33/tumminello-search-demo",
+      "stars": 0,
+      "language": "CSS",
+      "updated_at": "2026-05-13T05:24:22Z",
+      "description": "Demo interattiva Tumminello per presentazione Web Marketing",
+      "fork": false,
+      "layer": "tool",
+      "category": "信息获取"
+    },
+    {
+      "name": "chatgpt-wide-centered",
+      "url": "https://github.com/sickn33/chatgpt-wide-centered",
+      "stars": 0,
+      "language": "CSS",
+      "updated_at": "2026-05-17T07:41:20Z",
+      "description": "Wider centered ChatGPT layout with tighter line-height and OpenAI Sans",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "alpine-a390-strategy-site",
+      "url": "https://github.com/sickn33/alpine-a390-strategy-site",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2026-05-19T17:21:09Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "metriche-comunicazione-quiz",
+      "url": "https://github.com/sickn33/metriche-comunicazione-quiz",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2026-06-02T11:15:05Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/sickn33",
+    "count": 4,
+    "layers": {
+      "skill": 1,
+      "tool": 2,
+      "other": 1
+    },
+    "items": [
+      {
+        "name": "agentic-awesome-skills",
+        "layer": "skill",
+        "category": "Skill 工程",
+        "repo": "agentic-awesome-skills",
+        "subdir": "",
+        "summary": "以 2,600+ agentic skill 为底座的本地优先控制面，提供 CLI、本地 MCP、目录发现与 stack 校验/规划能力。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "aas-action",
+        "layer": "tool",
+        "category": "Skill 工程",
+        "repo": "aas-action",
+        "subdir": "",
+        "summary": "把 AAS stack 的校验与预览搬进 GitHub Actions 的 action，用于 CI 内做组合合法性检查。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "tidal-mcp",
+        "layer": "tool",
+        "category": "Agent 基础设施",
+        "repo": "tidal-mcp",
+        "subdir": "",
+        "summary": "面向 TIDAL 的 MCP server，暴露 112 个工具并把写操作全部走审批门控。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "sickn33.github.io",
+        "layer": "other",
+        "category": "安装与分发",
+        "repo": "sickn33.github.io",
+        "subdir": "",
+        "summary": "Pages 站点，现定位为 Agentic Awesome Skills 的跳转/遗留入口。",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "name": "agentic-awesome-skills",
+      "repo": "agentic-awesome-skills",
+      "stars": 48080,
+      "verdict": "把「skill 清单」升级为带选择、校验、规划流程的本地控制面，目录本身只是它的一层数据。",
+      "problem": "写 agent 应用的人手上有成百上千个 skill，但不知道该装哪些、装完能不能跑通，缺一个可查询、可校验的入口。",
+      "mechanism": [
+        "以 2,600+ skill 的大型目录作为数据底座，做全量发现而非人工挑选。",
+        "由 agent 自主选择 skill，而不是把选择权固化在人工清单里。",
+        "对选定组合做 stack 校验，先证明可运行再执行。",
+        "同时暴露 CLI 与本地 MCP 两种接入面，人和 agent 共用同一套能力。"
+      ],
+      "constraints": [
+        "本地优先：控制面跑在用户机器上，不依赖远端服务。",
+        "依赖 skill 目录本身的规模与质量，目录腐化会直接传导为选择失败。",
+        "CLI + MCP 双入口意味着同一逻辑要有两套适配面。"
+      ],
+      "takeaway": [
+        "把「选哪些 skill」当成需要工程化的问题：发现 → 选择 → 校验 → 规划四步各自独立。",
+        "给 agent 的能力清单配一个 stack 校验步骤，让失败提前到选择阶段。",
+        "同一个人和 agent 的两种调用方，用 MCP + CLI 双入口而不是只做一个。"
+      ],
+      "limits": [
+        "星数几乎全部来自这个仓库，仓库外的可复用方法没有被证明。",
+        "本地材料未见依据：具体的 skill 目录结构与版本协议。",
+        "本地材料未见依据：校验规则的具体判定逻辑。"
+      ]
+    },
+    {
+      "name": "tidal-mcp",
+      "repo": "tidal-mcp",
+      "stars": 4,
+      "verdict": "以安全优先为卖点的高工具量 MCP server，写操作一律走审批门控。",
+      "problem": "想把音乐流媒体能力接进 agent 的开发者，需要既能读又能改，但不能让 agent 未经确认改收藏或歌单。",
+      "mechanism": [
+        "按领域铺开 112 个工具，覆盖目录、歌词、推荐、收藏、歌单、文件夹、发现。",
+        "读工具与写工具分离，写路径必须经过 approval gate。",
+        "safety-first 写进仓库描述本身，作为对外契约声明。"
+      ],
+      "constraints": [
+        "工具数量大（112），命名与描述必须自洽，否则模型选错工具。",
+        "写操作必须等待人工审批，直接牺牲自动化连续性。",
+        "绑定 TIDAL 单一服务，接口变更即失效。"
+      ],
+      "takeaway": [
+        "MCP server 若含写操作，先设计审批门控再堆工具。",
+        "把「安全优先」写成可被外部检索的描述关键词，降低误用。"
+      ],
+      "limits": [
+        "强绑定单一第三方服务与其鉴权模型。",
+        "低星（4），缺乏外部使用证据。",
+        "本地材料未见依据：审批门控的具体交互形态。"
+      ]
+    },
+    {
+      "name": "aas-action",
+      "repo": "aas-action",
+      "stars": 1,
+      "verdict": "把主项目的 stack 校验能力下沉为 CI action，让校验在提交时而不是运行时发生。",
+      "problem": "维护 AAS skill 组合的人，需要在 PR 阶段就发现 stack 非法，而不是等用户装完才报错。",
+      "mechanism": [
+        "复用主仓库的校验逻辑，包成 GitHub Action。",
+        "校验与预览同时提供，先看结果再决定是否合并。",
+        "挂到 CI 上做卡点，把校验前移到提交期。"
+      ],
+      "constraints": [
+        "必须与主仓库校验器保持版本一致，否则 CI 结果不可信。",
+        "作为 action 使用，受 GitHub Actions 运行时约束。"
+      ],
+      "takeaway": [
+        "校验类能力做成独立 action，比写进文档更容易被执行。",
+        "任何「组合合法性」检查都值得有个 CI 入口。"
+      ],
+      "limits": [
+        "本地材料未见依据：CI 中的阻断强度（仅提示还是强制失败）。",
+        "1 星，无外部采用证据。"
+      ]
+    },
+    {
+      "name": "sickn33.github.io",
+      "repo": "sickn33.github.io",
+      "stars": 2,
+      "verdict": "把主页让位给主项目，只做跳转，典型的单极作者选择。",
+      "problem": "早期个人域名与仓库同名，主项目改名后需要保住旧链接和记忆点。",
+      "mechanism": [
+        "保留原仓库路径，改为 redirect 到 Agentic Awesome Skills。",
+        "描述明确标注 Legacy Pages，把自身定位为过渡入口。"
+      ],
+      "constraints": [
+        "依赖 GitHub Pages 的重定向行为，仓库消失即失效。"
+      ],
+      "takeaway": [
+        "主项目换名时，用一个专门的 redirect 仓库保住旧入口。"
+      ],
+      "limits": [
+        "本地材料未见依据：实际重定向目标与生效方式。",
+        "纯承载型资产，不构成方法论证据。"
+      ]
+    },
+    {
+      "name": "chronochat",
+      "repo": "chronochat",
+      "stars": 9,
+      "verdict": "面向长对话场景的信息导航小工具，与 skill 体系无直接关系。",
+      "problem": "ChatGPT 长对话里来回翻找某条回答浪费时间的人。",
+      "mechanism": [
+        "以单一 /skill 调用读取预定义的对话时间线，模型不必自行遍历会话",
+        "把历史对话组织成可检索的时间线而非原始日志",
+        "以本地数据目录为唯一来源，不依赖外部服务"
+      ],
+      "constraints": [
+        "依赖对话产品的页面结构，界面改版即失效。"
+      ],
+      "takeaway": [
+        "给 agent 看历史时，提供「已切好的时间线」而不是原始记录",
+        "历史读取做成专用工具，不让模型自由拼接查询"
+      ],
+      "limits": [
+        "本地材料未见依据：实现机制与导航模型。",
+        "与主项目方法无复用关系，不构成 pattern 证据。"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "把能力清单包装成可执行的组合层",
+      "kind": "technique",
+      "evidence": [
+        "agentic-awesome-skills",
+        "aas-action"
+      ],
+      "claim": "不只发布能力目录，而是补上选择、校验、规划与 CI 卡点这四段流程；主仓库提供运行时，action 提供提交期，两端复用同一套校验逻辑。"
+    },
+    {
+      "id": "P2",
+      "name": "写操作默认审批门控",
+      "kind": "technique",
+      "evidence": [
+        "tidal-mcp"
+      ],
+      "claim": "在 MCP/agent 接口上把读与写分离，写路径强制人工确认。仅在 tidal-mcp 复现，按标准属局部技巧。"
+    },
+    {
+      "id": "P3",
+      "name": "同一能力提供 CLI 与 MCP 双入口",
+      "kind": "technique",
+      "evidence": [
+        "agentic-awesome-skills"
+      ],
+      "claim": "人为调用与 agent 调用共用一套后端，用双入口换取同一份逻辑的一致性。仅单仓库出现。"
+    }
+  ],
+  "sources": [
+    "https://github.com/sickn33",
+    "https://github.com/sickn33?tab=repositories",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

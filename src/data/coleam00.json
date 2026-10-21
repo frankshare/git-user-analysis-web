@@ -1,0 +1,1168 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source）+ raw README/SKILL.md；来源：司徒K《2026年X上最值得关注的120个中文博主》",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "coleam00",
+    "name": "Cole Amann",
+    "bio": "围绕 Claude Code / AI 编程做「AI Layer」方法论与工作流（harness）实现的创作者，同时做教学型内容与工作坊。",
+    "website": "",
+    "x": "",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "hybrid",
+    "public_repos": 76,
+    "source_repos": 72,
+    "fork_repos": 4
+  },
+  "stats": {
+    "total_stars_source": 67658,
+    "total_stars_all": 67841,
+    "median_stars": 68,
+    "ge_1000": 8,
+    "between_100_999": 24,
+    "between_10_99": 25,
+    "lt_10": 15,
+    "no_language": 9,
+    "top4_share": 71.6,
+    "top1_share": 35.1
+  },
+  "repos": [
+    {
+      "name": "Archon",
+      "url": "https://github.com/coleam00/Archon",
+      "stars": 23733,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T19:24:26Z",
+      "description": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "context-engineering-intro",
+      "url": "https://github.com/coleam00/context-engineering-intro",
+      "stars": 13883,
+      "language": "Python",
+      "updated_at": "2026-03-16T12:13:59Z",
+      "description": "Context engineering is the new vibe coding - it's the way to actually make AI coding assistants work. Claude Code is the best for this so that's what this repo is centered around, but you can apply…",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "ottomator-agents",
+      "url": "https://github.com/coleam00/ottomator-agents",
+      "stars": 5795,
+      "language": "Python",
+      "updated_at": "2025-11-09T21:46:48Z",
+      "description": "All the open source AI Agents hosted on the oTTomator Live Agent Studio platform!",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "excalidraw-diagram-skill",
+      "url": "https://github.com/coleam00/excalidraw-diagram-skill",
+      "stars": 5052,
+      "language": "Python",
+      "updated_at": "2026-03-01T13:36:16Z",
+      "description": "Skill to give Claude Code (and any coding agent) the ability to generate beautiful and practical Excalidraw diagrams.",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "local-ai-packaged",
+      "url": "https://github.com/coleam00/local-ai-packaged",
+      "stars": 3784,
+      "language": "Python",
+      "updated_at": "2026-05-25T16:12:01Z",
+      "description": "Run all your local AI together in one package - Ollama, Supabase, n8n, Open WebUI, and more!",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "ai-agents-masterclass",
+      "url": "https://github.com/coleam00/ai-agents-masterclass",
+      "stars": 3477,
+      "language": "Python",
+      "updated_at": "2025-01-14T16:15:41Z",
+      "description": "Follow along with my AI Agents Masterclass videos! All of the code I create and use in this series on YouTube will be here for you to use and even build on top of!",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "mcp-crawl4ai-rag",
+      "url": "https://github.com/coleam00/mcp-crawl4ai-rag",
+      "stars": 2267,
+      "language": "Python",
+      "updated_at": "2025-07-25T15:17:13Z",
+      "description": "Web Crawling and RAG Capabilities for AI Agents and AI Coding Assistants",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "claude-memory-compiler",
+      "url": "https://github.com/coleam00/claude-memory-compiler",
+      "stars": 1306,
+      "language": "Python",
+      "updated_at": "2026-04-06T19:46:57Z",
+      "description": "Give Claude Code a memory that evolves with your codebase. Hooks automatically capture sessions, the Claude Agent SDK extracts key decisions and lessons, and an LLM compiler organizes everything in…",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "second-brain-skills",
+      "url": "https://github.com/coleam00/second-brain-skills",
+      "stars": 837,
+      "language": "Python",
+      "updated_at": "2026-01-24T15:50:47Z",
+      "description": "A collection of Claude Skills to turn Claude Code into a Second Brain",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "second-brain-starter",
+      "url": "https://github.com/coleam00/second-brain-starter",
+      "stars": 820,
+      "language": null,
+      "updated_at": "2026-06-09T16:16:46Z",
+      "description": "Build your own AI Second Brain with Claude Code - a skill that generates a personalized PRD for a proactive, persistent AI assistant",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "skills",
+      "url": "https://github.com/coleam00/skills",
+      "stars": 711,
+      "language": "Python",
+      "updated_at": "2026-10-07T16:41:20Z",
+      "description": "The agent skills I actually use to build software with coding agents. The PIV loop, planning, worktrees, and the meta-skills for building your own AI Layer.",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "habit-tracker",
+      "url": "https://github.com/coleam00/habit-tracker",
+      "stars": 709,
+      "language": "Python",
+      "updated_at": "2026-01-07T00:18:00Z",
+      "description": "Habit Tracker for the AI Coding Workshop",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "mcp-mem0",
+      "url": "https://github.com/coleam00/mcp-mem0",
+      "stars": 685,
+      "language": "Python",
+      "updated_at": "2025-04-13T01:17:14Z",
+      "description": "MCP server for long term agent memory with Mem0. Also useful as a template to get you started building your own MCP server with Python!",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "ai-software-factory",
+      "url": "https://github.com/coleam00/ai-software-factory",
+      "stars": 402,
+      "language": "Python",
+      "updated_at": "2026-10-20T12:02:54Z",
+      "description": "You plan the release, the factory builds it, you test it in staging. GitHub issues in, independently reviewed and merged pull requests out, all on Archon workflows.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "remote-agentic-coding-system",
+      "url": "https://github.com/coleam00/remote-agentic-coding-system",
+      "stars": 352,
+      "language": "TypeScript",
+      "updated_at": "2025-11-29T16:00:04Z",
+      "description": "Remote Coding Agent for the Dynamous Agentic Coding Course and special Black Friday livestream. Connect Claude Code or Codex to Slack, Telegram, GitHub, etc.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "remote-mcp-server-with-auth",
+      "url": "https://github.com/coleam00/remote-mcp-server-with-auth",
+      "stars": 301,
+      "language": "TypeScript",
+      "updated_at": "2025-07-11T19:07:26Z",
+      "description": "Template for a remote MCP server with GitHub OAuth - following best practices for building MCP servers so you can take this as a starting point for any MCP server you want to build!",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "Linear-Coding-Agent-Harness",
+      "url": "https://github.com/coleam00/Linear-Coding-Agent-Harness",
+      "stars": 233,
+      "language": "Python",
+      "updated_at": "2026-01-28T19:40:43Z",
+      "description": "Linear Autonomous Coding Agent Harness",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "link-in-bio-page-builder",
+      "url": "https://github.com/coleam00/link-in-bio-page-builder",
+      "stars": 229,
+      "language": "TypeScript",
+      "updated_at": "2026-02-25T21:46:10Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "supabase-mcp",
+      "url": "https://github.com/coleam00/supabase-mcp",
+      "stars": 194,
+      "language": "Python",
+      "updated_at": "2025-03-29T23:21:38Z",
+      "description": "Supabase MCP server created in Python.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "dark-factory-experiment",
+      "url": "https://github.com/coleam00/dark-factory-experiment",
+      "stars": 171,
+      "language": "Python",
+      "updated_at": "2026-08-14T23:45:48Z",
+      "description": "A repository that ships its own code. AI workflows triage issues, implement them, review, and auto-merge with no human reading the diff. Runs on Archon. The app it maintains is a cited RAG chat ove…",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "ralph-loop-quickstart",
+      "url": "https://github.com/coleam00/ralph-loop-quickstart",
+      "stars": 160,
+      "language": "Shell",
+      "updated_at": "2026-01-21T15:22:15Z",
+      "description": "A quickstart to using the Ralph Wiggum loop the right way - NOT using the Anthropic plugin.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "hyperframes-ai-video-generation",
+      "url": "https://github.com/coleam00/hyperframes-ai-video-generation",
+      "stars": 155,
+      "language": "HTML",
+      "updated_at": "2026-05-13T17:33:53Z",
+      "description": "Archon workflow that turns any URL into a polished AI-voiced and generated HyperFrames Short.",
+      "fork": false,
+      "layer": "tool",
+      "category": "音视频处理"
+    },
+    {
+      "name": "ai-transformation-workshop",
+      "url": "https://github.com/coleam00/ai-transformation-workshop",
+      "stars": 147,
+      "language": "Python",
+      "updated_at": "2026-09-06T03:03:04Z",
+      "description": "Workshop materials and demo app for 'Principles of Agentic Engineering' by Cole Medin — the AI layer concept, the PIV loop, and 15 reusable Claude Code commands you can drop into any project.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "PydanticAI-Research-Agent",
+      "url": "https://github.com/coleam00/PydanticAI-Research-Agent",
+      "stars": 145,
+      "language": "Python",
+      "updated_at": "2025-11-17T14:10:41Z",
+      "description": "Pydantic AI Research Agent Built with the PRP Framework Template",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "your-claude-engineer",
+      "url": "https://github.com/coleam00/your-claude-engineer",
+      "stars": 141,
+      "language": "Python",
+      "updated_at": "2026-02-01T22:48:34Z",
+      "description": "Demonstration of an agent harness with access to tools like Slack, GitHub, and Linear so it can act as your own complete software engineer.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "cole-medin-knowledge-base",
+      "url": "https://github.com/coleam00/cole-medin-knowledge-base",
+      "stars": 139,
+      "language": "JavaScript",
+      "updated_at": "2026-07-28T11:11:42Z",
+      "description": "An OKF (Open Knowledge Format) knowledge base + Karpathy-style LLM wiki synthesized from Cole Medin's entire long-form YouTube catalog. Drop it next to any project for agent-ready, cited reference.…",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "cole-medin-ai-coding",
+      "url": "https://github.com/coleam00/cole-medin-ai-coding",
+      "stars": 134,
+      "language": "Python",
+      "updated_at": "2026-06-25T22:07:05Z",
+      "description": "An Open Knowledge Format (OKF) bundle of Cole Medin's best AI-coding videos — mount it in any AI second brain and search it deeply. Transcript-verified.",
+      "fork": false,
+      "layer": "tool",
+      "category": "音视频处理"
+    },
+    {
+      "name": "adversarial-dev",
+      "url": "https://github.com/coleam00/adversarial-dev",
+      "stars": 134,
+      "language": "TypeScript",
+      "updated_at": "2026-03-29T13:30:05Z",
+      "description": "GAN-inspired three-agent harness that pits a generator against an adversarial evaluator to build applications with quality gates at every step. Built with Claude Agent SDK and Codex SDK.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "MongoDB-RAG-Agent",
+      "url": "https://github.com/coleam00/MongoDB-RAG-Agent",
+      "stars": 116,
+      "language": "Python",
+      "updated_at": "2025-12-05T20:37:45Z",
+      "description": "Hybrid RAG AI Agent built with MongoDB, Pydantic AI, and Docling - combines semantic and text search with reciprocal rank fusion.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "helpline",
+      "url": "https://github.com/coleam00/helpline",
+      "stars": 114,
+      "language": "Python",
+      "updated_at": "2026-05-20T12:49:18Z",
+      "description": "Demonstration codebase for building the AI Layer (CLAUDE.md hierarchy, hooks, skills, LSP, MCP, plugin) — companion repo for the 'How Claude Code works in large codebases' video.",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "custom-agent-with-skills",
+      "url": "https://github.com/coleam00/custom-agent-with-skills",
+      "stars": 107,
+      "language": "Python",
+      "updated_at": "2026-01-27T18:32:27Z",
+      "description": "Pydantic AI agent that implements the idea of Claude Skills (progressive disclosure) with no reliance on Claude itself.",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "second-brain-research-dashboard",
+      "url": "https://github.com/coleam00/second-brain-research-dashboard",
+      "stars": 104,
+      "language": "Python",
+      "updated_at": "2026-02-04T21:02:28Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "信息获取"
+    },
+    {
+      "name": "harness-engineering-demo",
+      "url": "https://github.com/coleam00/harness-engineering-demo",
+      "stars": 98,
+      "language": "Python",
+      "updated_at": "2026-05-27T12:44:57Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ai-native-starter-pack",
+      "url": "https://github.com/coleam00/ai-native-starter-pack",
+      "stars": 81,
+      "language": "Python",
+      "updated_at": "2026-08-24T12:57:40Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ollama-swarm",
+      "url": "https://github.com/coleam00/ollama-swarm",
+      "stars": 73,
+      "language": "Python",
+      "updated_at": "2024-10-29T17:04:06Z",
+      "description": "Educational framework exploring ergonomic, lightweight multi-agent orchestration. Managed by OpenAI Solution team.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pydantic-ai-github-agent",
+      "url": "https://github.com/coleam00/pydantic-ai-github-agent",
+      "stars": 70,
+      "language": "Python",
+      "updated_at": "2025-01-27T14:07:35Z",
+      "description": "The agent I built for my AI Agents series on YouTube - breaking down my entire process of building AI agents from idea to production!",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "human-in-the-loop-rag-agent",
+      "url": "https://github.com/coleam00/human-in-the-loop-rag-agent",
+      "stars": 68,
+      "language": "Python",
+      "updated_at": "2025-12-21T12:08:39Z",
+      "description": "RAG AI Agent with Realtime Source Validation (Human in the Loop) - Built with CopilotKit + Pydantic AI",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "dynamous-kiro-hackathon",
+      "url": "https://github.com/coleam00/dynamous-kiro-hackathon",
+      "stars": 64,
+      "language": null,
+      "updated_at": "2026-01-03T20:15:38Z",
+      "description": "Quickstart and Project Template for the Dynamous and Kiro Hackathon!",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "codex-telegram-coding-assistant",
+      "url": "https://github.com/coleam00/codex-telegram-coding-assistant",
+      "stars": 61,
+      "language": "TypeScript",
+      "updated_at": "2025-10-21T14:35:45Z",
+      "description": "AI Coding assistant using Codex that integrates directly with Telegram. Send off coding requests from your phone!",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "agentic-chat-application-template",
+      "url": "https://github.com/coleam00/agentic-chat-application-template",
+      "stars": 59,
+      "language": "TypeScript",
+      "updated_at": "2026-03-24T13:45:37Z",
+      "description": "WIP - agentic chat application template built with TypeScript, Next.js, TailwindCSS, and Shadcn.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "arcade-ai-agent",
+      "url": "https://github.com/coleam00/arcade-ai-agent",
+      "stars": 58,
+      "language": "Python",
+      "updated_at": "2025-07-30T20:12:19Z",
+      "description": "AI Agent using Arcade so the agent can perform actions on users' behalf with their Gmail/Asana accounts.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "dynamous-ai-coach",
+      "url": "https://github.com/coleam00/dynamous-ai-coach",
+      "stars": 56,
+      "language": "Python",
+      "updated_at": "2025-10-26T19:15:00Z",
+      "description": "AI Coach Powered by Cole's Content (RAG AI Agent)",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "n8n-nodes-mcp",
+      "url": "https://github.com/coleam00/n8n-nodes-mcp",
+      "stars": 52,
+      "language": "TypeScript",
+      "updated_at": "2025-03-16T00:37:07Z",
+      "description": "n8n custom node for MCP",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ai-coding-summit-workshop-2",
+      "url": "https://github.com/coleam00/ai-coding-summit-workshop-2",
+      "stars": 50,
+      "language": null,
+      "updated_at": "2026-03-02T23:57:11Z",
+      "description": "Exercises and resources for the AI Coding Summit 2026 workshop: Advanced Claude Code Techniques for 2026. A hands-on two-hour workshop on the PIV Loop (Plan, Implement, Validate) for agentic coding.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "chatgpt-chrome-extension",
+      "url": "https://github.com/coleam00/chatgpt-chrome-extension",
+      "stars": 46,
+      "language": "JavaScript",
+      "updated_at": "2024-07-08T20:11:05Z",
+      "description": "A ChatGPT Chrome extension. Integrates ChatGPT into every text box on the internet.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "frontend-mix",
+      "url": "https://github.com/coleam00/frontend-mix",
+      "stars": 40,
+      "language": null,
+      "updated_at": "2026-06-02T11:05:39Z",
+      "description": "Mixed-provider frontend workflow: Opus 4.8 plans, Gemini 3.5 Flash designs, Opus ships. Six skills + an Archon workflow.",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "evolution-of-ai-agents",
+      "url": "https://github.com/coleam00/evolution-of-ai-agents",
+      "stars": 39,
+      "language": "Python",
+      "updated_at": "2026-03-25T12:05:43Z",
+      "description": "Three working examples showing how AI agent development evolved - from traditional RAG to batteries-included SDKs and skill-based frameworks",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "obsidian-voice-agent",
+      "url": "https://github.com/coleam00/obsidian-voice-agent",
+      "stars": 34,
+      "language": "HTML",
+      "updated_at": "2026-01-17T17:50:50Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "agent-control-plane",
+      "url": "https://github.com/coleam00/agent-control-plane",
+      "stars": 34,
+      "language": "TypeScript",
+      "updated_at": "2026-06-16T14:32:36Z",
+      "description": "A control plane for long-running agent loops: agents prompting agents on Pi, run history in Neon, a React dashboard, deployable with Retool.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "GitHubIssueTriager",
+      "url": "https://github.com/coleam00/GitHubIssueTriager",
+      "stars": 32,
+      "language": "TypeScript",
+      "updated_at": "2026-04-22T12:47:19Z",
+      "description": "AI-powered GitHub issue triage dashboard. Next.js 15 + Neon Postgres + pgvector. Classifies, embeds, and plans implementation for every issue in a repo.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ai-content-factory",
+      "url": "https://github.com/coleam00/ai-content-factory",
+      "stars": 32,
+      "language": "Python",
+      "updated_at": "2026-07-12T13:16:16Z",
+      "description": "Point an AI coding harness (Archon) at marketing: an autonomous factory that turns a product catalog into human-approved AI video ads. Media via the Higgsfield CLI (swappable).",
+      "fork": false,
+      "layer": "tool",
+      "category": "音视频处理"
+    },
+    {
+      "name": "second-brain-summit",
+      "url": "https://github.com/coleam00/second-brain-summit",
+      "stars": 30,
+      "language": null,
+      "updated_at": "2026-09-03T15:42:49Z",
+      "description": "Build your AI Second Brain with Claude Code — companion starter kit for the ODSC Personal AI Agents Summit 2026",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "ai-coding-summit-workshop",
+      "url": "https://github.com/coleam00/ai-coding-summit-workshop",
+      "stars": 27,
+      "language": "TypeScript",
+      "updated_at": "2025-10-16T14:33:54Z",
+      "description": "Exercises and resources for the AI Coding Summit Context Engineering remote workshop!",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "redis-iris-agent",
+      "url": "https://github.com/coleam00/redis-iris-agent",
+      "stars": 25,
+      "language": "Python",
+      "updated_at": "2026-07-04T13:17:30Z",
+      "description": "Pydantic AI agent with a Redis Iris context layer: Context Retriever (live data via MCP) + Agent Memory, with a reproducible support-desk demo",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "claude-code-new-features-early-2026",
+      "url": "https://github.com/coleam00/claude-code-new-features-early-2026",
+      "stars": 21,
+      "language": "TypeScript",
+      "updated_at": "2026-03-23T13:55:58Z",
+      "description": "Demo project showcasing new Claude Code features from early 2026 including custom agents, skills, hooks, and sub-agents",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "archon-video-generation-workflow",
+      "url": "https://github.com/coleam00/archon-video-generation-workflow",
+      "stars": 21,
+      "language": "Python",
+      "updated_at": "2026-05-03T16:05:50Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "音视频处理"
+    },
+    {
+      "name": "trainers-ally",
+      "url": "https://github.com/coleam00/trainers-ally",
+      "stars": 20,
+      "language": "TypeScript",
+      "updated_at": "2025-09-05T11:43:00Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "orbit-support-agent",
+      "url": "https://github.com/coleam00/orbit-support-agent",
+      "stars": 18,
+      "language": "Python",
+      "updated_at": "2026-07-19T12:01:01Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "midnight-converse",
+      "url": "https://github.com/coleam00/midnight-converse",
+      "stars": 15,
+      "language": "TypeScript",
+      "updated_at": "2025-01-27T14:06:59Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "eve-analyst",
+      "url": "https://github.com/coleam00/eve-analyst",
+      "stars": 15,
+      "language": "TypeScript",
+      "updated_at": "2026-07-09T13:31:49Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "oracle-ai-developer-hub",
+      "url": "https://github.com/coleam00/oracle-ai-developer-hub",
+      "stars": 12,
+      "language": "Jupyter Notebook",
+      "updated_at": "2026-09-25T19:04:19Z",
+      "description": "Technical resources for AI developers to build applications, agents, and systems using Oracle AI Database and OCI services",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "homebrew-archon",
+      "url": "https://github.com/coleam00/homebrew-archon",
+      "stars": 6,
+      "language": "Ruby",
+      "updated_at": "2026-10-17T15:10:52Z",
+      "description": "Homebrew tap for Archon CLI",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "azure-mind-chatter",
+      "url": "https://github.com/coleam00/azure-mind-chatter",
+      "stars": 6,
+      "language": "TypeScript",
+      "updated_at": "2025-01-16T17:01:38Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "archon-idea-to-wo",
+      "url": "https://github.com/coleam00/archon-idea-to-wo",
+      "stars": 6,
+      "language": null,
+      "updated_at": "2026-05-14T12:07:15Z",
+      "description": "Interactive Archon workflow that turns a raw idea into BKM Work Orders through 4 AI phases with approval gates. Originally by @lamachine (PR coleam00/Archon#1647), packaged for the Archon Workflow …",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "TwoToken-Claim-Contract",
+      "url": "https://github.com/coleam00/TwoToken-Claim-Contract",
+      "stars": 6,
+      "language": "Python",
+      "updated_at": "2023-06-11T19:00:55Z",
+      "description": "OneNFT Claim Contract, deployment scripts, and tests",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "kimi-k3-reliability-benchmark",
+      "url": "https://github.com/coleam00/kimi-k3-reliability-benchmark",
+      "stars": 5,
+      "language": "JavaScript",
+      "updated_at": "2026-07-21T15:00:41Z",
+      "description": "First-party reliability benchmark: Kimi K3 vs Opus 4.8 vs Kimi K2.7 on hard trap tasks. Same harness, graded by reading, scored pass^k.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "coding-challenge-word-cloud",
+      "url": "https://github.com/coleam00/coding-challenge-word-cloud",
+      "stars": 4,
+      "language": "JavaScript",
+      "updated_at": "2026-01-16T13:53:08Z",
+      "description": "Realtime application for an audience to vote on a topic/challenge together.",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "factory-starter",
+      "url": "https://github.com/coleam00/factory-starter",
+      "stars": 4,
+      "language": "Python",
+      "updated_at": "2026-10-15T13:20:11Z",
+      "description": "Tiny stdlib web app for an AI software factory to build on",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "oburns-contracts",
+      "url": "https://github.com/coleam00/oburns-contracts",
+      "stars": 4,
+      "language": "Solidity",
+      "updated_at": "2023-01-23T16:42:49Z",
+      "description": "PreSale and Exchange Contracts for Only Burns",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "PostmanFastAPIDemo",
+      "url": "https://github.com/coleam00/PostmanFastAPIDemo",
+      "stars": 3,
+      "language": "Python",
+      "updated_at": "2026-03-09T21:22:10Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "evolving-snake-game",
+      "url": "https://github.com/coleam00/evolving-snake-game",
+      "stars": 3,
+      "language": null,
+      "updated_at": "2024-04-17T15:11:40Z",
+      "description": "Created with CodeSandbox",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "piv-system-evolution",
+      "url": "https://github.com/coleam00/piv-system-evolution",
+      "stars": 3,
+      "language": null,
+      "updated_at": "2026-05-22T20:13:57Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "NorthStar",
+      "url": "https://github.com/coleam00/NorthStar",
+      "stars": 3,
+      "language": "Java",
+      "updated_at": "2023-12-24T01:02:41Z",
+      "description": "North Star Minecraft Mod - for Minecraft 1.20.1",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "plural-workbench-demo",
+      "url": "https://github.com/coleam00/plural-workbench-demo",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-11T19:55:49Z",
+      "description": "Demo GitOps repo for Plural Workbenches (kind cluster + Claude coding agent)",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "team-knowledge-agent",
+      "url": "https://github.com/coleam00/team-knowledge-agent",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2026-10-20T17:35:21Z",
+      "description": "A knowledge agent for your team's code and docs, built by an AI Software Factory with Port",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "port-factory-smoke",
+      "url": "https://github.com/coleam00/port-factory-smoke",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2026-10-20T15:25:19Z",
+      "description": "Throwaway: AI Software Factory on Codex + Port smoke test",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/coleam00",
+    "count": 6,
+    "layers": {
+      "skill": 5,
+      "other": 1
+    },
+    "items": [
+      {
+        "name": "excalidraw-diagram-skill",
+        "layer": "skill",
+        "category": "设计与视觉",
+        "repo": "excalidraw-diagram-skill",
+        "subdir": "",
+        "summary": "给 Claude Code 及任意编码 agent 加一项生成 Excalidraw 图示的能力（5052 星，Python）。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "second-brain-skills",
+        "layer": "skill",
+        "category": "Skill 工程",
+        "repo": "second-brain-skills",
+        "subdir": "",
+        "summary": "一组 Claude Skills，把 Claude Code 变成 Second Brain（837 星，Python）。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "second-brain-starter",
+        "layer": "skill",
+        "category": "Skill 工程",
+        "repo": "second-brain-starter",
+        "subdir": "",
+        "summary": "用 Claude Code 搭个人 AI Second Brain 的 skill，会生成个性化 PRD（820 星，语言字段为空）。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "skills",
+        "layer": "skill",
+        "category": "Skill 工程",
+        "repo": "skills",
+        "subdir": "",
+        "summary": "作者自述日常构建软件真正用的 agent skills：PIV loop、规划、worktree，以及造自己 AI Layer 的元技能（711 星，Python）。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "frontend-mix",
+        "layer": "skill",
+        "category": "设计与视觉",
+        "repo": "frontend-mix",
+        "subdir": "",
+        "summary": "混合模型前端工作流：Opus 4.8 规划、Gemini 3.5 Flash 设计、Opus 出货，含 6 个 skill + 一个 Archon workflow（40 星，语言字段为空）。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "custom-agent-with-skills",
+        "layer": "other",
+        "category": "Agent 基础设施",
+        "repo": "custom-agent-with-skills",
+        "subdir": "",
+        "summary": "Pydantic AI agent 自行实现 Claude Skills 的渐进披露（progressive disclosure）机制，不依赖 Claude 本身（107 星，Python）。",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "name": "Archon",
+      "repo": "Archon",
+      "stars": 23733,
+      "verdict": "他起量的主仓库是「让 AI 编码可重复」的工作流引擎本体，并成为其下游多个仓库的公共底座。",
+      "problem": "面向使用编码 agent 的开发者：agent 每次运行行为不一致、结果不可复现、无法在无人值守下把 issue 推进到合并。",
+      "mechanism": [
+        "以「harness builder」为定位：把 AI 编码从一次性提示变成可编排的工作流（本地材料中的仓库描述语）。",
+        "对外以 Archon workflow 的形式被大量下游仓库复用：archon-idea-to-wo、ai-content-factory、hyperframes-ai-video-generation、frontend-mix 均自称基于 Archon。",
+        "配套自建 CLI 分发通道：homebrew-archon 提供 Homebrew tap 安装 Archon CLI。"
+      ],
+      "constraints": [
+        "强绑定 Claude Code / Claude Agent SDK 生态，脱离该生态的可用性本地材料未见依据。",
+        "TypeScript 技术栈，示例仓库中大量 Python 项目只能通过调用层间接使用。",
+        "schema 校验、错误分支等具体检查点在本地材料中未见依据。"
+      ],
+      "takeaway": [
+        "先做「工作流引擎 + 一堆垂直工作流」的两层结构，而不是每个场景一个独立工具。",
+        "把 CLI 安装路径（Homebrew tap）作为工程交付的一部分，与代码同批发布。",
+        "对外以 workflow 名称命名下游集成点，让生态仓库自动挂载。"
+      ],
+      "limits": [
+        "23.7k 星占其自有仓库总星 35.1%，项目热度高度集中在单一仓库上。",
+        "依赖外部模型与 CLI 行为，模型/工具版本变更会带来连锁影响。",
+        "本地材料只含仓库描述，未见实际实现细节，无法验证其确定性机制。"
+      ]
+    },
+    {
+      "name": "context-engineering-intro",
+      "repo": "context-engineering-intro",
+      "stars": 13883,
+      "verdict": "他被看见的第二条路径是「教学即产品」：用一套可跟做的上下文工程教程换取最大规模传播。",
+      "problem": "面向想用 Claude Code 做实际开发的普通开发者：不知道怎么组织上下文，导致 agent 效果不稳定、不会用。",
+      "mechanism": [
+        "以「context engineering is the new vibe coding」这类口号式定位降低入门门槛。",
+        "选定 Claude Code 作为主战场，把示例全部锚定在一个具体工具上，减少读者选择成本。",
+        "以可跟做的仓库形式发布教程内容，而不是只发文章。"
+      ],
+      "constraints": [
+        "课程内容与 Claude Code 强绑定，仓库自述也承认以 Claude Code 为中心。",
+        "最后更新时间为 2026-03-16，属于一次性传播型内容，难以持续贡献星数。",
+        "内容型仓库 stars 不等于使用留存。"
+      ],
+      "takeaway": [
+        "教程类内容要绑定单一主工具，不要做多工具平行对比。",
+        "把完整可运行材料放仓库，仓库本身即产品。"
+      ],
+      "limits": [
+        "依赖第三方平台（Claude Code）的能力与可用性。",
+        "本地材料未见依据说明其是否包含可执行练习或评测。"
+      ]
+    },
+    {
+      "name": "ottomator-agents",
+      "repo": "ottomator-agents",
+      "stars": 5795,
+      "verdict": "他用「把所有 agent 聚到一个平台仓库」的方式批量收割早期 agent 圈的注意力。",
+      "problem": "面向想快速找到可复用 agent 实现的开发者：agent 示例分散在各人仓库里，缺少统一入口。",
+      "mechanism": [
+        "以 oTTomator Live Agent Studio 平台为名，把平台托管的所有开源 AI Agent 集中放进一个仓库。",
+        "聚合效应带来单仓库高曝光：5.8k 星。",
+        "每个 agent 独立成目录，读者按需取用。"
+      ],
+      "constraints": [
+        "与自家平台强耦合，脱离平台的使用方式本地材料未见依据。",
+        "最后更新 2025-11-09，聚合型仓库的新鲜度依赖上游贡献。"
+      ],
+      "takeaway": [
+        "早期做 agent 时，「集合仓库 + 单一入口」是低成本高曝光的形态。",
+        "聚合仓库可作为自己其他作品的流量入口。"
+      ],
+      "limits": [
+        "星数来自聚合曝光，不代表单个 agent 的质量。",
+        "受平台运营与上游项目存续影响。"
+      ]
+    },
+    {
+      "name": "excalidraw-diagram-skill",
+      "repo": "excalidraw-diagram-skill",
+      "stars": 5052,
+      "verdict": "这是他第一个真正「skill 化」的单点产品：用窄场景的图示生成能力证明 skill 这种封装形式可用。",
+      "problem": "面向使用 Claude Code 的开发者与产品/架构人员：agent 画不出好看又实用的架构图/流程图。",
+      "mechanism": [
+        "把能力边界收窄到「生成 Excalidraw 图示」这一件事，靠垂直度换取明确价值。",
+        "以 skill 形式打包，明确声明兼容 Claude Code 及任意 coding agent。",
+        "选择 Excalidraw 而非 Mermaid/PlantUML，输出物天然可编辑、可分享。"
+      ],
+      "constraints": [
+        "输出质量上限受 Excalidraw 语法与图元表达能力限制。",
+        "本地材料未给出图示质量评测或失败样例。"
+      ],
+      "takeaway": [
+        "做 skill 时先选一个「输出物可编辑、可分享」的窄任务。",
+        "在 skill 描述里同时点名主流平台与泛化措辞（Claude Code + any coding agent），扩大适用范围。"
+      ],
+      "limits": [
+        "仅解决画图一类任务，脱离该场景不可复用。",
+        "依赖 Excalidraw 生态与 agent 自身对格式的遵循度。"
+      ]
+    },
+    {
+      "name": "claude-memory-compiler",
+      "repo": "claude-memory-compiler",
+      "stars": 1306,
+      "verdict": "他用「hooks 自动采集 + Agent SDK 抽取 + LLM 编译」三段式，把记忆做成随代码库演进而非随对话堆积的资产。",
+      "problem": "面向长期使用 Claude Code 的开发者：记忆只存在于会话里，压缩/新会话后关键决策与教训丢失，也无法沉淀成项目知识。",
+      "mechanism": [
+        "hooks 自动捕获会话，把记忆采集从「靠 agent 自觉记录」变成「运行时强制触发」。",
+        "用 Claude Agent SDK 从会话中抽取关键决策与教训，而不是直接存原始对话。",
+        "再经一个 LLM compiler 负责组织归类，形成可被检索的结构化记忆。",
+        "记忆随代码库演化而更新，绑定到项目而非个人。"
+      ],
+      "constraints": [
+        "依赖 Claude Code hooks 与 Claude Agent SDK，平台绑定强。",
+        "抽取与编译都需额外 LLM 调用，成本与延迟增加。",
+        "本地材料未说明错误处理与记忆冲突消解策略。"
+      ],
+      "takeaway": [
+        "记忆链路分三段：采集（hooks）→ 抽取（结构化决策/教训）→ 组织（compiler），不要直接存原始对话。",
+        "用 hooks 把「该记什么」的决定权从模型手上拿走。"
+      ],
+      "limits": [
+        "抽取质量与 LLM 判断强相关，同一项目不同模型表现可能不一致。",
+        "只覆盖 Claude Code 生态；仓库 custom-agent-with-skills 试图在别家框架复现同类机制，说明该做法可移植但需重写采集层。"
+      ]
+    },
+    {
+      "name": "skills",
+      "repo": "skills",
+      "stars": 711,
+      "verdict": "这是他方法论的元仓库：把日常开发用到的 skills 公开为可复制的工程资产，并保留 PIV、planning、worktree、造 AI Layer 等骨架。",
+      "problem": "面向想系统化用编码 agent 的开发者：不知道该沉淀哪些 skills、怎么组织目录、怎么把散落的用法收敛成体系。",
+      "mechanism": [
+        "仓库自述只放「我真正用来写软件的 skills」，以使用频率而非数量做筛选。",
+        "骨架固定为 PIV loop（Plan-Implement-Validate）、planning、worktrees 三类，配合构建自有 AI Layer 的元技能。",
+        "同一批方法在其他仓库有对应实现：ai-transformation-workshop 的 15 条可复用 Claude Code 命令、ai-coding-summit-workshop-2 的 PIV Loop 两小时工作坊。"
+      ],
+      "constraints": [
+        "本地材料仅有仓库描述，未见目录结构、版本策略与安装协议。",
+        "PIV 的「Validate」如何判定通过，材料中未见依据。"
+      ],
+      "takeaway": [
+        "skill 库先收敛再扩张，只收录自己真用过的。",
+        "把工作流命名成固定循环（PIV）并让多个仓库复用同一命名，便于对外教学与迁移。"
+      ],
+      "limits": [
+        "偏个人工作流，缺省假设其环境（Claude Code、git worktree）。",
+        "星数 711，传播面远小于 Archon 与教程仓库。"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "PIV 循环作为统一的 agent 工作流骨架",
+      "kind": "method",
+      "evidence": [
+        "skills（仓库描述：PIV loop、planning、worktrees）",
+        "ai-transformation-workshop（the AI layer concept, the PIV loop, and 15 reusable Claude Code commands）",
+        "ai-coding-summit-workshop-2（hands-on workshop on the PIV Loop (Plan, Implement, Validate)）",
+        "ai-software-factory（plan the release, the factory builds it, you test it in staging）",
+        "ralph-loop-quickstart（Ralph 循环的用法教学）"
+      ],
+      "claim": "他把「计划—实现—验证」提炼为跨仓库复用的固定循环，用同一套命名同时驱动 skill 库、工作坊、命令集与软件工厂，读者学一次即可在多处迁移。"
+    },
+    {
+      "id": "P2",
+      "name": "把 agent 能力封装成可安装的 skill 包",
+      "kind": "method",
+      "evidence": [
+        "excalidraw-diagram-skill（给 Claude Code 及任意 coding agent 的图示能力）",
+        "second-brain-skills（把 Claude Code 变成 Second Brain 的一组 Skills）",
+        "second-brain-starter（生成个性化 PRD 的 skill）",
+        "skills（自用的 agent skills 集合）",
+        "frontend-mix（六个 skills + 一个 Archon workflow）",
+        "custom-agent-with-skills（不依赖 Claude 复现 skills 的渐进披露机制）"
+      ],
+      "claim": "他持续把能力从「提示词」升级为「带触发条件的技能包」，并进一步把渐进披露这一机制抽象到别的框架（custom-agent-with-skills）中验证可移植性。"
+    },
+    {
+      "id": "P3",
+      "name": "一个引擎 + 多个垂直工作流的分层结构",
+      "kind": "method",
+      "evidence": [
+        "Archon（harness builder 本体）",
+        "ai-software-factory（GitHub issues in, independently reviewed and merged pull requests out, all on Archon workflows）",
+        "dark-factory-experiment（AI workflows triage issues, implement, review, auto-merge, runs on Archon）",
+        "ai-content-factory（Point an AI coding harness (Archon) at marketing）",
+        "hyperframes-ai-video-generation（Archon workflow that turns any URL into a polished AI-voiced Short）",
+        "archon-idea-to-wo（Interactive Archon workflow，4 AI phases with approval gates）"
+      ],
+      "claim": "他不把每个场景做成独立产品，而是先做通用工作流引擎，再把营销视频、代码自动合并、需求转工单等场景做成挂载其上的工作流，形成可组合的复用结构。"
+    },
+    {
+      "id": "P4",
+      "name": "把人类审批门与质量门固化在自动化链条上",
+      "kind": "method",
+      "evidence": [
+        "ai-software-factory（independently reviewed and merged pull requests out）",
+        "dark-factory-experiment（no human reading the diff，即以门替代人读）",
+        "ai-content-factory（turns a product catalog into human-approved AI video ads）",
+        "archon-idea-to-wo（4 AI phases with approval gates）",
+        "adversarial-dev（generator 对抗 evaluator，每步设质量门）",
+        "human-in-the-loop-rag-agent（Realtime Source Validation, Human in the Loop）"
+      ],
+      "claim": "无论全自动还是半自动，他都在链条固定位置插入显式的评审/审批门，而不是让 agent 自由连续执行，这是其多个仓库共有的可靠性策略。"
+    },
+    {
+      "id": "P5",
+      "name": "把长视频/长文内容转成带引用的可检索知识包",
+      "kind": "technique",
+      "evidence": [
+        "cole-medin-knowledge-base（OKF 知识库 + Karpathy 风格 wiki，由完整长视频目录合成，transcript-verified）",
+        "cole-medin-ai-coding（OKF bundle of best AI-coding videos，mount 进任何 AI second brain）",
+        "second-brain-research-dashboard（second brain 研究面板）"
+      ],
+      "claim": "他把自己的视频内容转成 Open Knowledge Format 格式、带引用校验的知识包，作为 second brain 的检索底座——这是内容变现到工具链的具体接法，但当前只在同源内容上验证过。"
+    }
+  ],
+  "sources": [
+    "https://github.com/coleam00",
+    "https://github.com/coleam00?tab=repositories",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

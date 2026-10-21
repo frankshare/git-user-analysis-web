@@ -1,0 +1,558 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source）+ raw README/SKILL.md；来源：司徒K《2026年X上最值得关注的120个中文博主》",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "mcncarl",
+    "name": "逸尘",
+    "bio": "2006 年出生的中文连续创业者与内容创作者，用一仓库 21 个 skill 的方式把微信/公众号/小红书/抖音等中文私域平台的操作边界写成 agent 可执行的协议。",
+    "website": "https://yichen.ai/",
+    "x": "https://x.com/gengdaJ",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "breadth",
+    "public_repos": 7,
+    "source_repos": 7,
+    "fork_repos": 0
+  },
+  "stats": {
+    "total_stars_source": 8127,
+    "total_stars_all": 8127,
+    "median_stars": 116,
+    "ge_1000": 2,
+    "between_100_999": 2,
+    "between_10_99": 2,
+    "lt_10": 1,
+    "no_language": 2,
+    "top4_share": 99.5,
+    "top1_share": 55.3
+  },
+  "repos": [
+    {
+      "name": "yichen-skills",
+      "url": "https://github.com/mcncarl/yichen-skills",
+      "stars": 4495,
+      "language": "Python",
+      "updated_at": "2026-10-04T10:44:55Z",
+      "description": "",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "jianying-headless",
+      "url": "https://github.com/mcncarl/jianying-headless",
+      "stars": 3138,
+      "language": "Python",
+      "updated_at": "2026-10-20T09:02:12Z",
+      "description": "Private source preview: native Jianying drafts, isolated editing/export, and standalone Agent Skill.",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "agent-memory-vault",
+      "url": "https://github.com/mcncarl/agent-memory-vault",
+      "stars": 335,
+      "language": "Python",
+      "updated_at": "2026-10-04T11:03:47Z",
+      "description": "Markdown-first shared memory vault for Claude Code and Codex with SQLite, Zvec, Git, closeout, and audit",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "ailu",
+      "url": "https://github.com/mcncarl/ailu",
+      "stars": 116,
+      "language": "TypeScript",
+      "updated_at": "2026-10-04T10:54:29Z",
+      "description": "Local Agent chat and content publishing studio for Obsidian.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "ai-coding-foundation",
+      "url": "https://github.com/mcncarl/ai-coding-foundation",
+      "stars": 26,
+      "language": null,
+      "updated_at": "2026-02-22T06:47:55Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "wechat-relay",
+      "url": "https://github.com/mcncarl/wechat-relay",
+      "stars": 16,
+      "language": "JavaScript",
+      "updated_at": "2026-10-12T01:06:08Z",
+      "description": "Self-hosted relay for WeChat Official Account draft APIs.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "mcncarl",
+      "url": "https://github.com/mcncarl/mcncarl",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2026-10-11T04:24:58Z",
+      "description": "AI product builder, open-source maintainer, and AI content creator.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/mcncarl",
+    "count": 4,
+    "layers": {
+      "skill": 4
+    },
+    "items": [
+      {
+        "name": "yichen-skills",
+        "layer": "skill",
+        "category": "Skill 工程",
+        "repo": "yichen-skills",
+        "subdir": "",
+        "summary": "21 个中文向 agent skill 的集合，覆盖 X 长文草稿上传、微信双开、微信聊天/朋友圈/收藏导出、公众号批量导出、抖音小红书归档、视频转写、联网调研与记忆库安装；每项都附触发词、依赖与边界声明。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "yichen-agent-memory",
+        "layer": "skill",
+        "category": "记忆与 Agent 运行时",
+        "repo": "agent-memory-vault",
+        "subdir": "",
+        "summary": "agent-memory-vault 的安装与维护 skill，引导 prewrite reconcile、closeout、audit 与隐私安全模板更新；模板本体在 mcncarl/agent-memory-vault。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "yichen-x-slicer",
+        "layer": "skill",
+        "category": "设计与视觉",
+        "repo": "yichen-skills",
+        "subdir": "",
+        "summary": "把一个公开 X 帖/长推 URL 转为已验证的 1080×1440 图序列与 H.264 视频，含 11 套视觉模板；匿名读取、不使用 X 登录态、不生成 TTS 或音乐。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "yichen-x-article-draft-uploader",
+        "layer": "skill",
+        "category": "写作与分发",
+        "repo": "yichen-skills",
+        "subdir": "",
+        "summary": "把 Obsidian/Markdown 长文转为 X Articles 草稿，支持管道表格转原生表格与最多 25 个媒体项；仅存草稿，从不点击发布。",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "constraints": [
+        "目录名不得改，安装时逐个复制到 ~/.claude/skills 或 ~/.agents/skills",
+        "Web research 家族五个目录必须整组安装，装完跑 validate_family.py",
+        "个人学习+非商用许可，二次分发需书面授权",
+        "FAQ 要求 skill 不触发时先查加载路径与 SKILL.md frontmatter 的 name/description"
+      ],
+      "limits": [
+        "21 个 skill 各自绑定特定平台与凭据，多数可选后端需用户自行安装认证",
+        "非商用许可限制企业内部分发，作者同时经营付费社区授权",
+        "路径绑定 macOS/Windows 微信与企业微信，平台升级即失效（如微信更新后需 repair）",
+        "README 体量本身是采用门槛，且作者未披露任何使用量数据"
+      ],
+      "mechanism": [
+        "每个 skill 一个目录，SKILL.md 前置触发词（中文口语化如「帮我微信双开」），配 agents/ scripts/ references/ tests/ 四层",
+        "对外只暴露 SKILL.md，运行时凭据一律走环境变量或私有 config，仓库内无 token/cookie 模板",
+        "skill 之间不互调：yichen-web-research 只做路由，单阶段任务直接下发到具体子 skill",
+        "把「搜索/发现」与「已确认链接归档」拆成两个 skill，避免搜索结果自动触发下载",
+        "README 用表格逐条声明每个路由对外发送什么数据、交给谁"
+      ],
+      "name": "yichen-skills",
+      "problem": "中文创作者同时用 Claude Code 与 Codex，想让 agent 接管跨平台内容生产与本地私域数据处理——上传 X 长文草稿、微信双开、微信聊天/朋友圈/收藏导出、公众号批量导出、抖音小红书归档、视频转写剪辑——但每个平台都有各自的登录态、反爬与合规边界，且必须保证 agent 不误发、不越权。",
+      "repo": "yichen-skills",
+      "stars": 4495,
+      "takeaway": [
+        "SKILL.md 前置中文触发词与安装步骤，正文只写「什么时候不做什么」。",
+        "把凭据、cookie、绝对路径全部排除出仓库，只留环境变量占位。",
+        "把「只做草稿不点发布」「只导出链接不下载」写成硬规则而不是建议。"
+      ],
+      "verdict": "这是一个把「个人私域数据 + 跨平台内容分发」拆成 21 个互相独立、只暴露 SKILL.md、运行时凭据全部外置的单人 skill 集合，工程价值在约束写法而不在能力数量。"
+    },
+    {
+      "constraints": [
+        "要求受支持的 Apple Silicon Mac、独立安装的剪映版本、固定源码与运行时哈希",
+        "默认只交付草稿，原生 MP4 导出是需显式请求的独立步骤",
+        "复合草稿注册仍被封锁；冻结快照导出不算编辑器保存验收",
+        "公开包内不含官方库、特效包、账号数据、用户素材或 ASR 凭据"
+      ],
+      "limits": [
+        "绑定 Apple Silicon + 指定剪映版本，平台不对则无法运行",
+        "依赖需单独 clone 的核心仓库，skill 单独安装不可用",
+        "复合草稿注册与快照导出仍被作者自己标为未验收"
+      ],
+      "mechanism": [
+        "把 skill 入口（yichen-jianying-edit）与生成草稿/导出 MP4 的原生核心（jianying-headless）拆成两个仓库、两种许可证",
+        "skill 目录不含官方库、特效包、账号数据与用户媒体，只做协议与校验",
+        "要求固定源码哈希与运行时哈希作为安装前置条件",
+        "把「导出」显式声明为需要用户单独请求的步骤，默认路径停在草稿"
+      ],
+      "name": "yichen-headless-jianying",
+      "problem": "需要让 agent 生成与修改剪映草稿（而非只导出成品视频）的创作者，被剪映 GUI 与账号数据绑定卡住。",
+      "repo": "jianying-headless",
+      "stars": 3138,
+      "takeaway": [
+        "公开的 skill 层只留协议，核心实现放独立仓库按独立许可证发布。",
+        "把哈希校验写进安装前置条件，版本漂移直接失败而不是静默降级。",
+        "对未验收能力（如复合草稿注册）明写「仍被封锁」，不假装支持。"
+      ],
+      "verdict": "把「GUI 工具的原生草稿操作」拆成协议层与原生核心两层仓库，并用哈希与许可证双重隔离，是可复用的分发解法。"
+    },
+    {
+      "constraints": [
+        "只读检索不是授权来源：应用层必须用 retrieve 重新打开当前 Markdown、校验包含关系与 symlink、强制 UTF-8、重放 scope 与 status 规则",
+        "pending_verification 恒为只读并返回 can_authorize_action=false；outdated/archived 需 --include-inactive",
+        "action_sensitive 写入需一条事实一文件、稳定 fact_key、ISO valid_from、真实 verified_at 与 evidence_ref",
+        "任何阶段失败即 runtime 非 ready，必须跑 migrate verify --publish-ready 才算发布就绪"
+      ],
+      "limits": [
+        "作者自认是防误用的强边界，不是对已掌控本机账号的恶意软件的安全边界",
+        "混合检索排名切换需私有基准数据集 + 三次通过 + canary + 七个完整自然日，普通用户无法复现",
+        "依赖 Python 3.10+、Git，Windows 原生行为仍需本地主机复验"
+      ],
+      "mechanism": [
+        "Markdown 是唯一真相源，SQLite/FTS 与向量索引都是可随时重建的派生物",
+        "写入必须走 read-target → prepare → 精确授权 → apply 四步，apply 携带 proposal 哈希与单调 fencing_token 做条件替换",
+        "一条规范路径最多一个活租约，持旧 fencing token 的会话无法 apply 或 closeout",
+        "检索分「候选生成」与「授权读取」两级：search 只产候选，retrieve 重开当前文件并校验哈希后返回有界摘录",
+        "切换检索排序（hybrid-v2）需通过私有数据集三遍基准 + canary + 七个自然日门槛才能 cutover"
+      ],
+      "name": "agent-memory-vault",
+      "problem": "同时用 Claude Code 与 Codex 的开发团队/个人，需要一个可共享、可回滚、可审计的长期记忆层，防止两个 agent 会话互相覆盖对方的记忆改动。",
+      "repo": "agent-memory-vault",
+      "stars": 335,
+      "takeaway": [
+        "所有派生索引定义为可弃资产，索引损坏时从 Markdown 全量重建。",
+        "多 agent 写同一文件时用租约 + 单调 fencing token，取代「先改后补声明」的乐观锁。",
+        "把检索分成候选与授权两段，检索结果永远不是可信来源。"
+      ],
+      "verdict": "一个把「Agent 记忆」当成多写者分布式资源来管的实现：用租约 + 单调 fencing token + 内容哈希 CAS + Git 收据把并发写入从约定变成机制。"
+    },
+    {
+      "constraints": [
+        "不得自动把搜索结果转成下载动作",
+        "横向+纵向研究模式带证据门：claim-source 台账、矛盾检查、保留缺口披露",
+        "不同后端按路线分工，禁止一个后端静默顶替另一个",
+        "随附只读 backend doctor，只检查可用性，不输出密钥值、不读凭据文件、不发付费探测请求"
+      ],
+      "limits": [
+        "功能边界强依赖用户已装好并认证的第三方后端（AnySearch、Firecrawl、OpenCLI、gh、yt-dlp 等）",
+        "只读范围仅限有文档的公开路线，私有数据与任何写动作都在 skill 之外",
+        "部分平台原生 CLI 步骤产出仍是原始格式，需显式下游 normalizer"
+      ],
+      "mechanism": [
+        "作为顶层路由把单阶段任务直接下发给子 skill，自己只负责跨阶段编排",
+        "按路线分派不同后端（AI HOT 只做时效 AI 发现、AnySearch 做通用搜索、Firecrawl 只做显式站点地图或候选验证）",
+        "强制只读社交平台使用、精确范围授权、不控制微信 UI",
+        "用 validate_family.py 校验家族目录完整性"
+      ],
+      "name": "yichen-web-research-family",
+      "problem": "需要多阶段联网调研的 agent 任务，面临「一个搜索后端悄悄顶替另一个」「搜索到就自动下载」「付费后端被无谓探测」三类失控风险。",
+      "repo": "yichen-skills",
+      "stars": 4495,
+      "takeaway": [
+        "给 agent 的搜索/归档能力做父子分层：父只路由，子只执行。",
+        "把「谁负责、发了什么」写成数据流表，让第三方调用可被审。",
+        "诊断命令只允许判定就绪，禁止读凭据内容或触发付费请求。"
+      ],
+      "verdict": "这是把「多阶段调研」当成一条需要证据门的流水线来做：搜索、候选复核、归档、转写各有 skill，父 skill 只做路由且禁止把搜索结果直接变成下载动作。"
+    },
+    {
+      "constraints": [
+        "默认匿名优先，cookie 值不进入适配器命令、结果或日志",
+        "配额耗尽才允许退回匿名 FxTwitter；OpenCLI/xreach 默认封锁",
+        "YouTube 走 Data API 或公开 yt-dlp 列目录，永不下载媒体",
+        "GitHub 强制 --visibility public，查询作位置参数"
+      ],
+      "limits": [
+        "内置适配器只对部分路线产出规范化候选，其余平台仍返回原始数据",
+        "平台内部 GraphQL 与 DOM 路线属非官方兼容手段，可能被平台改动打断或触发风控",
+        "微博等路线的匿名访问可能被 access gate 拦住，退回路径需要已登录会话"
+      ],
+      "mechanism": [
+        "多路搜索统一产出带 provenance、coverage、limitations 的规范化候选",
+        "X 路线每查询一次 Quick 调用，多查询走分阶段 Research，做确定性去重、保留来源、检查时间窗，最多补一轮缺口",
+        "微博先走匿名临时访客会话，仅在访问门失败时允许一次有界的 OpenCLI 退回",
+        "Firecrawl Scrape 设 storeInCache=false，Map 明确不做缓存控制声明"
+      ],
+      "name": "yichen-unified-search",
+      "problem": "同一个关键词要跨 AI 资讯站、通用搜索、GitHub、公众号、微博、小红书、抖音、B站、X 等十余个来源收集候选，而各源的凭据、限流与匿名可用性完全不同。",
+      "repo": "yichen-skills",
+      "stars": 4495,
+      "takeaway": [
+        "把「搜索路线」做成路由表：每条路线绑定唯一后端，不允许静默替换。",
+        "候选输出强制携带来源、覆盖率与限制三项元数据。",
+        "匿名优先的退回设计只允许一次有界降级。"
+      ],
+      "verdict": "这是本仓库里工程密度最高的一块：把十余个异构搜索源收敛成同一套候选 schema，并用 provenance/coverage/limitations 三字段让「搜到了什么、没搜到什么」可被审。"
+    },
+    {
+      "constraints": [
+        "只产出带证据的研究、架构、PLAN 与 REVIEW，不写本地文件",
+        "Codex 独占本地文件写入与命令/测试执行权",
+        "代码/混合/评审模式需预先配置安全隧道与七工具只读 MCP，纯研究模式不启动隧道",
+        "公开包不含 Runtime Key、Tunnel/App ID、私有运行时、浏览器会话、截图与个人绝对路径"
+      ],
+      "limits": [
+        "代码与评审模式依赖作者私有隧道与七工具只读 MCP，外部用户拿不到完整能力",
+        "依赖用户官方 ChatGPT 网页已登录并可见 Pro 路线",
+        "本质是网页自动化，受 ChatGPT 前端改版影响"
+      ],
+      "mechanism": [
+        "ChatGPT Pro 负责公开网络研究、架构、PLAN 与最终 REVIEW，Codex 是唯一本地写入者与命令执行者",
+        "研究答案需等待唯一 marker 出现才算完整，再抽取",
+        "原始与可读 Markdown 报告分别存到当前工作区 reports/ 目录",
+        "profile 名、本地路径、cookie、token 与浏览器存储一律排除出公开 skill"
+      ],
+      "name": "codex-chatgpt-loop",
+      "problem": "想同时吃满 ChatGPT Pro 的研究能力与 Codex 的本地执行能力，但不希望把本机写权限与登录态暴露给外部模型。",
+      "repo": "yichen-skills",
+      "stars": 4495,
+      "takeaway": [
+        "把「会浏览网页的模型」与「能读写本机的模型」角色彻底分开并写死职责边界。",
+        "判定外部回答完整用唯一 marker，而非等待超时。",
+        "私有运行时（密钥、隧道、只读 MCP）只留协议，实体不入库。"
+      ],
+      "verdict": "这是把「双模型协作」写成权限契约：外部模型只能产出证据与评审，本地写权限单点收在 Codex，且外部连接需独立配置的隧道与只读 MCP。"
+    },
+    {
+      "constraints": [
+        "普通 SKIP 转录默认交给 Step 执行器，带时间戳/SRT 的转交 yichen-volc-asr",
+        "只使用环境提供的 App ID 与 token",
+        "禁止把已提交的任务静默重投给另一家服务商（避免重复计费与隐私外泄）"
+      ],
+      "limits": [
+        "依赖 Step 与火山引擎两套外部服务，Step 侧无官方文档化的兼容说明",
+        "需 ffmpeg/ffprobe 与环境变量凭据，清洁临时文件需显式批准"
+      ],
+      "mechanism": [
+        "按产物形态路由：纯文本给 Step，带时间戳/SRT 给火山 ASR",
+        "凭据只从环境变量读取，不落盘",
+        "已提交任务的转投被显式禁止",
+        "清理临时文件前需显式用户批准"
+      ],
+      "name": "yichen-asr-router",
+      "problem": "同时有多个 ASR 服务商可用时，agent 容易把同一段音频重复提交给不同服务商，既浪费额度又造成隐私二次外泄。",
+      "repo": "yichen-skills",
+      "stars": 4495,
+      "takeaway": [
+        "做服务商路由时，先查历史是否已提交，再决定去向。",
+        "把「不许重复提交」写成硬约束而非优化建议。"
+      ],
+      "verdict": "这是整包里最小但最容易被忽略的一条约束：不把任务在服务商之间静默转投，理由是重复计费与隐私外泄，而不只是效果对比。"
+    },
+    {
+      "constraints": [
+        "个人学习 + 非商用许可，二次分发、客户交付、课程打包、marketplace 打包均需书面授权",
+        "微信双开依赖 macOS 12+ 与 /Applications/WeChat.app，微信更新后需重跑 repair",
+        "剪映编辑依赖 Apple Silicon Mac 与固定版本，复合草稿注册仍被封锁",
+        "zhihu 路由依赖来源未经本仓库核实的外部 CLI，其许可与服务条款需用户自行确认"
+      ],
+      "limits": [
+        "非商用限制与作者付费社区（TradeWinds）绑定，机构与公司内部分发需另行授权",
+        "README 同时是合规文本与安装手册，体量大且随外部平台改版频繁变化",
+        "维护者自述为 2006 年出生的连续创业者、法学生，公开数据无法验证其方案的实际采用率"
+      ],
+      "mechanism": [
+        "每个 skill 在 README 中自带典型触发词与限制段落，skill 目录另配 references/ 存放可靠性与风险说明",
+        "第三方组件全部列在 Acknowledgments 中，含原作者、许可证与被借鉴的具体方法",
+        "商业授权走书面流程，README 明确「发好友请求不等于获得许可」"
+      ],
+      "name": "license-and-handoff-boundary",
+      "problem": "别人 fork 或二次分发这套 skill 时，既能拿到能跑的东西，又不会把私域数据、凭据和原作者的商业授权一起发出去。",
+      "repo": "yichen-skills",
+      "stars": 4495,
+      "takeaway": [
+        "公开仓库只放模板、脚本与虚构示例，真实记忆与路径留在私有 vault。",
+        "为二次分发写清最小保留文件清单，并禁止重新打包成公开 skill bundle。",
+        "在 README 里显式写明「哪些第三方运行时不随本仓库分发」。"
+      ],
+      "verdict": "这一层不属于功能，但它是让整套东西能合法分发的骨架：非商用许可、最小保留清单、第三方来源逐一列出、以及「发消息不等于授权」的明确话术。"
+    },
+    {
+      "constraints": [
+        "与 Obsidian 强耦合（chat 与 content 工作室）",
+        "作为规范的第三个 host 接入 agent-memory-vault，仅允许写 用户记忆/ 与指定项目",
+        "不能做根治理文件写入，也不能做状态迁移",
+        "不自动采纳外部 Obsidian 编辑"
+      ],
+      "limits": [
+        "作为规范核心时权限被显著收窄，写入面小于 Codex/Claude",
+        "不自动采纳用户在 Obsidian 的手工编辑，需显式 adopt_external 且绑定用户确认"
+      ],
+      "mechanism": [
+        "TypeScript 实现本地 Agent 聊天与内容发布工作台",
+        "以 app_id=ailu 接入 Agent Memory Vault 的 write gateway，被列为受支持的自动 writer 之一",
+        "全局写入被限制在 用户记忆/，根治理文件与状态迁移不可用",
+        "不支持自动采纳外部编辑，采纳需显式 adopt_external 加用户确认"
+      ],
+      "name": "ailu-app",
+      "problem": "内容创作者想在 Obsidian 库旁边直接跟 agent 对话并发布内容，但不想让这个 GUI 应用获得与 Codex 同等的记忆写权限。",
+      "repo": "ailu",
+      "stars": 116,
+      "takeaway": [
+        "同一套记忆层接多个 host 时，按 host 分配不同写权限，而不是一律等同。",
+        "GUI 类 host 默认不允许采纳外部手工编辑，必须走显式确认。"
+      ],
+      "verdict": "116 星的应用层项目，其工程价值在「作为 agent-memory-vault 的第三个 host 被显式纳入规范」，说明记忆系统的设计已考虑多写者权限分级。"
+    },
+    {
+      "constraints": [
+        "需自建中继服务并维护公众号凭据",
+        "为已知链接拉取草稿，不做账号历史同步与数据指标"
+      ],
+      "limits": [
+        "自建运维负担全在用户侧",
+        "覆盖面窄于 yichen-wechat-mp-batch-exporter",
+        "无 README 材料佐证其机制细节，判断基于仓库描述"
+      ],
+      "mechanism": [
+        "JavaScript 实现自托管中继服务，代理公众号草稿 API 调用",
+        "定位为已知链接的精确抓取，与账号历史同步、指标抓取分离",
+        "不打包凭据，凭据由部署方自备"
+      ],
+      "name": "wechat-relay",
+      "problem": "需要把内容推到公众号草稿箱、但手上没有官方授权能力或不想走桌面客户端的中文内容团队。",
+      "repo": "wechat-relay",
+      "stars": 16,
+      "takeaway": [
+        "自建小工具与 skill 集合并存时，把凭据边界留在自建服务一侧。",
+        "用「已知链接」这一精确范围限定抓取面，不做全量抓取。"
+      ],
+      "verdict": "16 星的低星仓库，是把公众号草稿能力从桌面客户端剥离成自托管中继的小实现，价值在于补齐了发布链路上唯一缺的那一段。"
+    },
+    {
+      "constraints": [
+        "无内容型仓库（language 为空），无法据此判断技术选型",
+        "最近更新为 2026-02-22，距快照已约八个月，疑似停更",
+        "无 README 材料，五问中的机制判断无法从材料证实"
+      ],
+      "limits": [
+        "更新停滞且无描述，无法确认是否仍在维护",
+        "无语言字段，可能是文档/清单型内容而非可运行代码",
+        "26 星规模说明传播面小，机制无法从材料验证"
+      ],
+      "mechanism": [
+        "language 字段为空，判定为内容型仓库",
+        "2026-02 之后无更新，早于作者 skill 体系成形时间",
+        "仓库名指向 AI 编码学习路径，可能被后续的 skill 体系取代"
+      ],
+      "name": "ai-coding-foundation",
+      "problem": "面向中文 AI 编程初学者的入门材料型仓库，目标是给出方法路径而非可运行工具。",
+      "repo": "ai-coding-foundation",
+      "stars": 26,
+      "takeaway": [
+        "材料型仓库用空 language 标记，与代码型仓库分开计数。",
+        "入选项应覆盖早期低星仓库，才能看出作者的演化路径。"
+      ],
+      "verdict": "26 星、无语言、无描述、2026-02 后停更，是一个早于其 skill 体系的内容型仓库，只能确认其存在与停滞状态，无法验证其方法。"
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "公开包只留协议，凭据与私有运行时全部外置",
+      "kind": "method",
+      "evidence": [
+        "yichen-skills",
+        "agent-memory-vault",
+        "jianying-headless"
+      ],
+      "claim": "任何涉及登录态、私域数据或付费动作的能力，公开包只保留 SKILL.md 协议，凭据、cookie、绝对路径、截图、私有 MCP 一律不入库，改走环境变量或用户自有配置。"
+    },
+    {
+      "id": "P2",
+      "name": "能力边界写成可审的数据流声明，而不是口头承诺",
+      "kind": "technique",
+      "evidence": [
+        "yichen-skills"
+      ],
+      "claim": "每条对外调用都写明「发了什么、给了谁、边界在哪」，并配一个只判定就绪、不读凭据内容、不触发付费请求的 doctor。"
+    },
+    {
+      "id": "P3",
+      "name": "把「不做」写成硬规则，禁止能力自动继承",
+      "kind": "technique",
+      "evidence": [
+        "yichen-skills",
+        "agent-memory-vault"
+      ],
+      "claim": "用户授权窄于技术可行性：导出链接不继承下载授权，只读路线不继承写权限，公开搜索不继承登录态。授权范围在每一步显式重述。"
+    },
+    {
+      "id": "P4",
+      "name": "安装与迁移一律 plan/apply 两段式，备份路径要求新路径",
+      "kind": "technique",
+      "evidence": [
+        "agent-memory-vault"
+      ],
+      "claim": "先只读 --plan 生成并审阅，再显式 --apply 执行；备份路径必须是不存在的新路径，绝不覆盖既有备份。"
+    },
+    {
+      "id": "P5",
+      "name": "真相源与派生物分离，删除与状态迁移走同一网关",
+      "kind": "technique",
+      "evidence": [
+        "agent-memory-vault"
+      ],
+      "claim": "派生数据（SQLite 索引、向量库、cache）可弃可重建，删除需显式授权与可恢复的 Trash 副本；actor 仅限白名单，未知 actor 直接拒绝。"
+    },
+    {
+      "id": "P6",
+      "name": "把易变依赖的核心拆成独立仓库，与稳定的 skill 入口分开发布",
+      "kind": "technique",
+      "evidence": [
+        "jianying-headless",
+        "yichen-skills"
+      ],
+      "claim": "核心实现与公开 skill 入口分仓、分许可证、各自声明不含对方内容，公开包不含官方库、特效包、账号数据或凭据。"
+    },
+    {
+      "id": "P7",
+      "name": "重试与降级也必须换路径，不允许覆盖已有输出",
+      "kind": "technique",
+      "evidence": [
+        "yichen-skills"
+      ],
+      "claim": "已提交任务不静默转投另一服务商；转投需显式新路径且不覆盖既有产物。"
+    },
+    {
+      "id": "P8",
+      "name": "第三方来源逐条具名，含原作者、许可证与被借鉴的具体方法",
+      "kind": "technique",
+      "evidence": [
+        "yichen-skills",
+        "agent-memory-vault"
+      ],
+      "claim": "每个被借鉴的上游都标注原作者、许可证与具体方法（如 frida hook 与 SQLCipher 4 解密逻辑），不 vendor 源码也不声称原创。"
+    }
+  ],
+  "sources": [
+    "https://github.com/mcncarl",
+    "https://github.com/mcncarl?tab=repositories",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.1",
+  "user": "alirezarezvani",
+  "analyses": [
+    {
+      "name": "claude-skills",
+      "repo": "claude-skills",
+      "stars": 28445,
+      "verdict": "以数量换覆盖的 mega-skill 索引库，星数占其自有仓库总量 90.8%，是整个账号唯一的起量引擎。",
+      "problem": "同一批用户在 Claude Code / Codex / Gemini CLI / Cursor 之间反复迁移，每次要重新攒 agent、slash command 与 skill；单个 skill 仓库又缺生态，单体 skill 库又难维护。",
+      "mechanism": [
+        "一个仓库同时承载 skill、agent、custom command 三类资产，按 380+ / 30+ / 70+ 的编号体系对外声明规模。",
+        "描述里直接列出适配的 8+ 编码 agent 名单，把「跨工具兼容」写成一等卖点，覆盖迁移期用户。",
+        "skill 内附 customizable references 与 scripts，把提示词之外的脚本化步骤一并交付，提高可执行度。"
+      ],
+      "constraints": [
+        "380+ 条目意味着目录结构与命名规范必须机械化维护，否则索引与内容漂移。",
+        "一次改动影响面覆盖全部使用者，回滚成本高。",
+        "对提示词质量与上游 agent 版本变化高度敏感。"
+      ],
+      "takeaway": [
+        "在仓库 description 第一行就把「资产数量 + 适配工具清单」写清楚，用可核对的数字做传播点。",
+        "skill 除提示词外再带 references/ 与 scripts/，让读者有可执行的下一步。"
+      ],
+      "limits": [
+        "本地材料未见依据：质量分层、版本策略与去重规则。",
+        "单仓库规模过大时，读者难以定位具体单个 skill 的可信度。"
+      ]
+    },
+    {
+      "name": "claude-code-skill-factory",
+      "repo": "claude-code-skill-factory",
+      "stars": 889,
+      "verdict": "把 skill 生产从手写变成生成式流水线的元工具，是 mega 库可维护性的前提假设。",
+      "problem": "个人/团队要产出成批生产级 skill、code agent、slash command 与 LLM prompt，纯手写成本高且格式不一致。",
+      "mechanism": [
+        "以生成器为中心统一四类资产的骨架，让新建条目复用同一目录与元数据约定。",
+        "部署与生成分离，产物可被多个编码 agent 复用。"
+      ],
+      "constraints": [
+        "生成器自身的模板约定会成为下游所有 skill 的硬约束。",
+        "对上游 skill 规范变化的适配滞后风险。",
+        "本地材料未见依据：模板数量、测试或校验环节。"
+      ],
+      "takeaway": [
+        "做批量 skill 库时先写生成器再写条目，否则第 30 个条目开始目录就会失控。"
+      ],
+      "limits": [
+        "本地材料未见依据：生成器与 claude-skills 的实际耦合方式。"
+      ]
+    },
+    {
+      "name": "claude-code-tresor",
+      "repo": "claude-code-tresor",
+      "stars": 783,
+      "verdict": "以 Shell 为实现语言的自治 skill/agent 工具箱，说明他倾向把提示词资产落到可执行脚本层。",
+      "problem": "开发者希望 Claude Code 工作流里有自治能力与专家 agent，而不是只靠对话提示。",
+      "mechanism": [
+        "用 Shell 脚本承担确定性执行环节，把自然语言留给需要判断的部分。",
+        "以「工具箱」而非「单技能」组织，降低单点失效影响。"
+      ],
+      "constraints": [
+        "Shell 依赖运行环境（POSIX 语义），跨平台需额外处理。",
+        "自治执行意味着出错时定位成本更高。"
+      ],
+      "takeaway": [
+        "把确定性步骤写成脚本、只把判断留给模型，是 skill 稳定性的常规做法。"
+      ],
+      "limits": [
+        "本地材料未见依据：跨平台与权限边界的具体处理。"
+      ]
+    },
+    {
+      "name": "claude-code-aso-skill",
+      "repo": "claude-code-aso-skill",
+      "stars": 455,
+      "verdict": "唯一面向「外部流量/被 AI 引用」目标的 skill，把仓库运营本身当成可自动化对象。",
+      "problem": "仓库作者想让内容出现在 AI 答案引擎里，但 AEO 无标准流程、无可复用检查项。",
+      "mechanism": [
+        "拆出规划/执行/报告/行动项四类 subagent，把流程阶段与角色绑定。",
+        "一键化入口 + 面向 GitHub 的自动化接口，降低非工程背景用户的门槛。",
+        "明确写成 beginner friendly，把使用成本作为设计目标。"
+      ],
+      "constraints": [
+        "AEO 效果依赖外部答案引擎行为，仓库内无法闭环验证。",
+        "自动修改仓库内容有副作用与合规风险。"
+      ],
+      "takeaway": [
+        "按「规划→执行→报告→行动项」拆 subagent，是把一次性脚本变成可重复流程的模板。"
+      ],
+      "limits": [
+        "本地材料未见依据：AEO 指标的定义与成功判定。"
+      ]
+    },
+    {
+      "name": "ClaudeForge",
+      "repo": "ClaudeForge",
+      "stars": 430,
+      "verdict": "针对 Claude Code 记忆文件 CLAUDE.md 的生成与维护工具，切口小而刚需。",
+      "problem": "Claude Code 依赖 CLAUDE.md 承载项目指令，但多数项目缺这层文件或写得散乱，导致每次会话都要重复交代背景。",
+      "mechanism": [
+        "只生成/维护单一约定文件，把范围压到最小可交付物。",
+        "显式对齐 Anthropic 官方最佳实践，用权威来源做正当性背书。"
+      ],
+      "constraints": [
+        "依赖 CLAUDE.md 这一私有约定，上游改名或改语义即失效。",
+        "生成质量取决于项目上下文是否充分。"
+      ],
+      "takeaway": [
+        "找「模型每次都要重新知道的稳定事实」，写成一份约定文件，是最低成本的上下文工程。"
+      ],
+      "limits": [
+        "本地材料未见依据：维护模式（增量更新）如何判定需要改动。"
+      ]
+    },
+    {
+      "name": "gaios",
+      "repo": "gaios",
+      "stars": 49,
+      "verdict": "低星但方向最完整：把 skill 体系包装成「AI 操作系统」蓝图，含自验证工作流与第二大脑 wiki。",
+      "problem": "个人用户想要跨会话、跨工具的长期上下文与助理化行为，而不是单次会话的临时记忆。",
+      "mechanism": [
+        "第二大脑 wiki 承担长期记忆，skill 与 Chief of Staff 承担角色行为。",
+        "自验证工作流把「跑完并验证」内建进流程，减少人工验收。"
+      ],
+      "constraints": [
+        "蓝图式仓库对 Claude Code 与 Codex 双端能力有假设，任一端行为变化即需调整。",
+        "49 星说明该方向的外部验证度低。"
+      ],
+      "takeaway": [
+        "把「验证」写进工作流本身（自验证），比事后检查更省事。"
+      ],
+      "limits": [
+        "本地材料未见依据：具体实现与安装依赖。"
+      ]
+    }
+  ]
+}

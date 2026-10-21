@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.1",
+  "user": "realchendahuang",
+  "analyses": [
+    {
+      "constraints": [
+        "受 Cloudflare Workers 运行时与 D1/R2 配额约束",
+        "本地材料未见依据（依赖 D1 数据库结构与鉴权方案）"
+      ],
+      "limits": [
+        "本地材料未见依据（迁移成本与数据量上限）",
+        "与 Memos 的 API 兼容度边界本地材料未见依据"
+      ],
+      "mechanism": [
+        "以 Cloudflare 原生服务作为运行时，无需传统服务器",
+        "对外暴露 Memos 兼容 API，客户端可平滑替换",
+        "同时提供 MCP 协议，使智能体可把知识库当作工具调用"
+      ],
+      "name": "FlareMo",
+      "problem": "独立开发者/小团队需要自托管知识库，但不想租服务器运维；既有 Memos 客户端又不能直接丢弃",
+      "repo": "FlareMo",
+      "stars": 317,
+      "takeaway": [
+        "做自托管服务时优先选「兼容既有客户端 API + 附带 MCP」双协议路线",
+        "把平台选型（Cloudflare）写进产品定位，可省下运维叙述"
+      ],
+      "verdict": "用兼容层（Memos API + MCP）把「云原生知识库」做成可零成本自托管的即装即用服务"
+    },
+    {
+      "constraints": [
+        "规则模板需人工维护，节点变更要跟随上游"
+      ],
+      "limits": [
+        "本地材料未见依据（具体限流与失效场景）"
+      ],
+      "mechanism": [
+        "订阅聚合与节点处理在 Worker 侧完成",
+        "以「分流规则模板」把配置与运行分离，规则可版本化复用",
+        "整个链路跑在 Workers 上，成本近似为服务器费用为零"
+      ],
+      "name": "sub-store-cloudflare",
+      "problem": "自建代理订阅管理需要服务器与节点运维，规则配置分散难复用",
+      "repo": "sub-store-cloudflare",
+      "stars": 306,
+      "takeaway": [
+        "把「运行时代码」与「规则模板」分成两层，模板即可复用资产"
+      ],
+      "verdict": "把订阅管理这一类常需服务器的自用工具搬到 Workers，靠规则模板承载配置复用"
+    },
+    {
+      "constraints": [
+        "依赖 Pi 智能体的插件与技能加载约定，迁移到别家 harness 需重写",
+        "本地材料未见依据（插件版本兼容范围）"
+      ],
+      "limits": [
+        "强绑定 Pi 生态，脱离该 harness 即失效",
+        "本地材料未见依据（配置迁移与版本回滚方式）"
+      ],
+      "mechanism": [
+        "把个人配置拆成「插件 / 全局技能 / MCP」三段式资产",
+        "配一键安装脚本，把配置分发从手工步骤变成可重复执行的动作",
+        "以 Shell 脚本为主语言，说明核心交付物是命令与配置而非应用代码"
+      ],
+      "name": "pi-config",
+      "problem": "个人智能体配置散落在各处、换机或分享给他人时无法一键复现",
+      "repo": "pi-config",
+      "stars": 189,
+      "takeaway": [
+        "把自己的智能体配置当成可发布产品：分目录 + 一键安装脚本",
+        "技能与 MCP 分开统计，便于替换与裁剪"
+      ],
+      "verdict": "把自己的智能体工作台整体打包成「配置文件仓库」，用一键安装脚本抹平复现成本"
+    },
+    {
+      "constraints": [
+        "依赖 Cloudflare 账户与产品可用性",
+        "本地材料未见依据（内容更新机制与版本管理）"
+      ],
+      "limits": [
+        "绑定 Cloudflare 一家平台，示例可迁移但服务能力不可",
+        "本地材料未见依据（篇幅与案例覆盖度）"
+      ],
+      "mechanism": [
+        "以手册而非代码交付，直接可读可复制",
+        "全书围绕「用 AI 写代码 + 用 Cloudflare 部署全球」这条主线组织章节",
+        "与同系列的 macos-playbook、codex-playbook、postgres-playbook 共享 playbook-theme 主题，形成统一体例"
+      ],
+      "name": "cloudflare-playbook",
+      "problem": "想用 AI 编程但对 Cloudflare 全球部署缺少成体系的手把手路径",
+      "repo": "cloudflare-playbook",
+      "stars": 180,
+      "takeaway": [
+        "把实战经验写成手册是低成本高 star 路径",
+        "系列手册配统一主题站，读者体验与维护成本同时改善"
+      ],
+      "verdict": "用「手册 + 统一主题」把平台知识产品化，靠叙事主线和系列化排版形成家族品牌"
+    },
+    {
+      "constraints": [
+        "依赖 DSH 运行时契约，版本演进会带来兼容压力",
+        "本地材料未见依据（示例与测试矩阵）"
+      ],
+      "limits": [
+        "只对 DSH 生效，其他 harness 需自行适配",
+        "本地材料未见依据（文档完整度与上手时长）"
+      ],
+      "mechanism": [
+        "以「插件 + skill」双件套作为开发单元，而不是单脚本",
+        "声明与 Claude Code、Codex、Antigravity、DSH 的运行时契约对齐，接口以对标而非自造为主",
+        "开发套件与 dsh-guide 手册配套，形成「文档 + 脚手架」组合"
+      ],
+      "name": "dsh-skill",
+      "problem": "智能体运行时普及后，插件与 skill 缺少统一的开发规范，第三方开发者各写各的",
+      "repo": "dsh-skill",
+      "stars": 25,
+      "takeaway": [
+        "做生态时先立契约再写脚手架，并明说对标哪些既有运行时"
+      ],
+      "verdict": "为 DSH 提供以「运行时契约对齐」为核心的官方 skill/插件开发套件"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.astro/
+.pages-deploy/
+*.log
+dev.log
+serve.log
+cf.log
+cf*.err
+ngrok*.log
+ngrok*.err
+serve.err
+PUBLIC_URL.txt
+.DS_Store
+dev.err
+ngrok*.err

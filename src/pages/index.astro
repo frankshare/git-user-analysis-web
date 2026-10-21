@@ -1,0 +1,276 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAllUsers } from '../lib/data';
+
+const users = getAllUsers();
+
+// 基础统计聚合
+const totalStars = users.reduce((acc, u) => acc + u.stats.total_stars_source, 0);
+const totalSourceRepos = users.reduce((acc, u) => acc + u.profile.source_repos, 0);
+const totalSkills = users.reduce((acc, u) => acc + (u.skills?.count || 0), 0);
+const totalPatterns = users.reduce((acc, u) => acc + (u.patterns?.length || 0), 0);
+const totalAnalyses = users.reduce((acc, u) => acc + (u.skill_analyses?.length || 0), 0);
+---
+
+<BaseLayout title="Git 用户分析与高星 Skill 拆解">
+  <!-- 头部 Hero -->
+  <section class="py-6 sm:py-10 border-b border-slate-800/80 mb-8">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-medium mb-4">
+        <span>前置分析验证 · Week 1 MVP</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-4">
+        Git 用户深度画像与高星 Skill 复用库
+      </h1>
+      <p class="text-slate-400 text-base sm:text-lg leading-relaxed">
+        拒绝堆砌仓库名，拒绝表面数据。通过数据集中度拆解、工程纪律复现与三重验证，把开源高手的沉淀转化为可以直接安装、即刻使用的工程级 Skill。
+      </p>
+    </div>
+
+    <!-- 顶层聚合看板 -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
+      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+        <div class="text-xs text-slate-400 font-medium">收录用户总 Star</div>
+        <div class="text-2xl sm:text-3xl font-bold text-white mt-1 font-mono">
+          {totalStars.toLocaleString()}
+        </div>
+        <div class="text-xs text-slate-500 mt-1">源仓库聚合，排除 fork</div>
+      </div>
+
+      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+        <div class="text-xs text-slate-400 font-medium">深度拆解自有仓库</div>
+        <div class="text-2xl sm:text-3xl font-bold text-indigo-400 mt-1 font-mono">
+          {totalSourceRepos}
+        </div>
+        <div class="text-xs text-slate-500 mt-1">中位数与长尾全面归纳</div>
+      </div>
+
+      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+        <div class="text-xs text-slate-400 font-medium">收录高星 Skills</div>
+        <div class="text-2xl sm:text-3xl font-bold text-emerald-400 mt-1 font-mono">
+          {totalSkills}
+        </div>
+        <div class="text-xs text-slate-500 mt-1">覆盖设计/TDD/审查/工作流</div>
+      </div>
+
+      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 sm:p-5">
+        <div class="text-xs text-slate-400 font-medium">提炼工程 Patterns</div>
+        <div class="text-2xl sm:text-3xl font-bold text-purple-400 mt-1 font-mono">
+          {totalPatterns}
+        </div>
+        <div class="text-xs text-slate-500 mt-1">通过三重验证跨域复现</div>
+      </div>
+    </div>
+
+    <!-- 深度拆解指标条 -->
+    <div class="mt-4 flex items-center gap-3 flex-wrap bg-slate-900/40 border border-slate-800/60 rounded-xl px-4 py-3">
+      <span class="text-xs text-slate-400">五问拆解完成</span>
+      <span class="text-lg font-bold text-emerald-400 font-mono">{totalAnalyses}</span>
+      <span class="text-xs text-slate-500">个 skill 通过「解决什么 / 核心机制 / 工程约束 / 能搬走什么 / 局限」全项拆解</span>
+      <a href="/convergence" class="ml-auto text-xs text-emerald-400 hover:text-emerald-300 transition-colors inline-flex items-center gap-1">
+        查看跨作者收敛簇 →
+      </a>
+    </div>
+  </section>
+
+  <!-- 榜单与策略对比核心区 -->
+  <section class="space-y-6">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div>
+        <h2 class="text-xl font-bold text-white flex items-center gap-2">
+          <span>核心收录作者榜</span>
+          <span class="text-xs font-normal text-slate-400">（支持策略与集中度多维分析）</span>
+        </h2>
+        <p class="text-sm text-slate-400 mt-1">
+          注意：<strong>单点爆款（深度）</strong>与<strong>矩阵开花（广度）</strong>是两种完全不同的成功路径，切勿仅凭 Star 粗暴归类。
+        </p>
+      </div>
+
+      <!-- 客户端策略过滤组件触发按钮 -->
+      <div class="inline-flex items-center p-1 bg-slate-900 border border-slate-800 rounded-lg text-xs flex-wrap" id="filter-group">
+        <button data-filter="all" class="filter-btn px-3 py-1.5 rounded-md font-medium bg-indigo-600 text-white transition-all">
+          全部作者
+        </button>
+        <button data-filter="breadth" class="filter-btn px-3 py-1.5 rounded-md font-medium text-slate-400 hover:text-white transition-all">
+          广度矩阵型
+        </button>
+        <button data-filter="depth" class="filter-btn px-3 py-1.5 rounded-md font-medium text-slate-400 hover:text-white transition-all">
+          深度工程型
+        </button>
+        <button data-filter="hybrid" class="filter-btn px-3 py-1.5 rounded-md font-medium text-slate-400 hover:text-white transition-all">
+          混合型
+        </button>
+      </div>
+    </div>
+
+    <!-- 用户卡片列表 -->
+    <div class="grid grid-cols-1 gap-6" id="user-cards">
+      {users.map(u => (
+        <article 
+          class="user-card bg-slate-900/80 border border-slate-800 hover:border-slate-700/80 rounded-2xl p-6 transition-all shadow-sm hover:shadow-md"
+          data-strategy={u.profile.strategy}
+        >
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            <!-- 基本信息 -->
+            <div class="space-y-3 flex-1">
+              <div class="flex items-center gap-3 flex-wrap">
+                <a href={`/u/${u.profile.login}`} class="text-2xl font-bold text-white hover:text-indigo-400 transition-colors">
+                  {u.profile.name}
+                </a>
+                <span class="text-sm font-mono text-slate-400">@{u.profile.login}</span>
+
+                <!-- 策略 Tag -->
+                {u.profile.strategy === 'breadth' ? (
+                  <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                    广度矩阵策略（品类覆盖）
+                  </span>
+                ) : u.profile.strategy === 'depth' ? (
+                  <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                    深度工程策略（方法论做深）
+                  </span>
+                ) : (
+                  <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                    混合策略（体系 + 复制品）
+                  </span>
+                )}
+
+                <span class="text-xs text-slate-500 font-mono">
+                  快照：{u.snapshot.date}
+                </span>
+              </div>
+
+              <p class="text-slate-300 text-sm leading-relaxed max-w-3xl">
+                {u.profile.bio}
+              </p>
+
+              <!-- 核心方法标签 -->
+              <div class="flex items-center gap-2 flex-wrap pt-1">
+                <span class="text-xs text-slate-500">核心提炼 Patterns：</span>
+                {u.patterns.slice(0, 4).map(p => (
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-xs border border-slate-700/60 font-mono">
+                    {p.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <!-- 数据盘与入口 -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-6 lg:border-l lg:border-slate-800 lg:pl-6">
+              <div class="grid grid-cols-3 sm:grid-cols-3 gap-4 text-center">
+                <div class="bg-slate-950/40 p-3 rounded-lg border border-slate-800/60 min-w-[90px]">
+                  <div class="text-xs text-slate-400">总 Star</div>
+                  <div class="text-lg font-bold text-white font-mono mt-0.5">
+                    {u.stats.total_stars_source.toLocaleString()}
+                  </div>
+                </div>
+
+                <div class="bg-slate-950/40 p-3 rounded-lg border border-slate-800/60 min-w-[90px]">
+                  <div class="text-xs text-slate-400">中位数</div>
+                  <div class="text-lg font-bold text-indigo-400 font-mono mt-0.5">
+                    {u.stats.median_stars}
+                  </div>
+                </div>
+
+                <div class="bg-slate-950/40 p-3 rounded-lg border border-slate-800/60 min-w-[90px]">
+                  <div class="text-xs text-slate-400">集中度</div>
+                  <div class="text-lg font-bold text-amber-400 font-mono mt-0.5">
+                    {u.profile.strategy === 'depth' ? `top1: ${u.stats.top1_share}%` : `top4: ${u.stats.top4_share}%`}
+                  </div>
+                </div>
+              </div>
+
+              <a 
+                href={`/u/${u.profile.login}`}
+                class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-all shadow-sm hover:shadow-indigo-500/20"
+              >
+                查看完整拆解 →
+              </a>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <!-- 对照策略说明卡片 -->
+  <section class="mt-12 bg-slate-900/40 border border-slate-800/60 rounded-2xl p-6 sm:p-8">
+    <h3 class="text-lg font-bold text-white mb-3">
+      💡 为什么我们要建立「策略分类（Strategy Dimension）」？
+    </h3>
+    <p class="text-sm text-slate-400 leading-relaxed mb-5">
+      5 位创作者，5 种完全不同的资产结构。只按总 star 排序会把它们混为一谈——
+      但它们的风险、抗压能力与该抄的东西，恰恰是最不一样的地方。
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-sm text-slate-400 leading-relaxed">
+      <div class="space-y-2 bg-slate-950/40 p-4 rounded-xl border border-slate-800/50">
+        <h4 class="text-white font-semibold flex items-center gap-1.5 text-emerald-400">
+          <span>🌿</span> 广度矩阵型（花叔 58 个 skill / 逸尘 21 项协议）
+        </h4>
+        <p>
+          中位数高（177 / 116），多品类铺开。抗单点风险强——一个 skill 凉了还有几十个。
+          质量手段靠约束与门文件。
+        </p>
+      </div>
+
+      <div class="space-y-2 bg-slate-950/40 p-4 rounded-xl border border-slate-800/50">
+        <h4 class="text-white font-semibold flex items-center gap-1.5 text-blue-400">
+          <span>⚡</span> 深度工程型（obra 一套方法论）
+        </h4>
+        <p>
+          97.7% 的星来自一个仓库，中位数仅 8。靠极深的方法论与跨 harness 兼容筑墙。
+          风险是平台一旦内建同类工作流，护城河迅速变浅。
+        </p>
+      </div>
+
+      <div class="space-y-2 bg-slate-950/40 p-4 rounded-xl border border-slate-800/50">
+        <h4 class="text-white font-semibold flex items-center gap-1.5 text-purple-400">
+          <span>🎨</span> 混合型（归藏视觉体系 / 姚金刚治理体系）
+        </h4>
+        <p>
+          一个爆款引流 + 一套可复制的体系横向铺开（归藏 2 套视觉语言；姚金刚 IR + 编译 + 评测）。
+          中位数反而比广度型还高（281 / 164），因为体系本身就在复制。
+        </p>
+      </div>
+
+      <div class="space-y-2 bg-slate-950/40 p-4 rounded-xl border border-slate-800/50">
+        <h4 class="text-white font-semibold flex items-center gap-1.5 text-amber-400">
+          <span>🧱</span> 协议型（逸尘的硬规则）
+        </h4>
+        <p>
+          7 个仓库、8,127 星，但工程密度全在 335 星的记忆库里。星数与约束强度负相关——
+          选样若只看 star，会完全错过这套东西。
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  // 简易前台交互：过滤策略
+  const buttons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.user-card');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.getAttribute('data-filter');
+      
+      // 样式切换
+      buttons.forEach(b => {
+        b.classList.remove('bg-indigo-600', 'text-white');
+        b.classList.add('text-slate-400');
+      });
+      btn.classList.add('bg-indigo-600', 'text-white');
+      btn.classList.remove('text-slate-400');
+
+      // 卡片展示过滤
+      cards.forEach(card => {
+        const strat = card.getAttribute('data-strategy');
+        if (filter === 'all' || strat === filter) {
+          (card as HTMLElement).style.display = 'block';
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

@@ -1,0 +1,81 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = 'Git 用户分析 · 高星 Skill 拆解与复用平台', 
+  description = '剖析顶级开发者作品体系，拆解高质量 Agent Skill，提炼可复用工程方法论' 
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans selection:bg-indigo-500 selection:text-white">
+    <!-- 顶部导航 -->
+    <header class="border-b border-slate-800/80 bg-slate-900/60 backdrop-blur-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2.5 group">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-sm shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+            ⚡
+          </div>
+          <div>
+            <span class="font-bold text-base tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
+              Git 用户分析
+            </span>
+            <span class="hidden sm:inline-block ml-2 text-xs px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-mono">
+              High-Star Skill Hub
+            </span>
+          </div>
+        </a>
+
+        <nav class="flex items-center gap-1 sm:gap-2">
+          <a href="/" class="px-3 py-1.5 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors">
+            榜单大盘
+          </a>
+          <a href="/convergence" class="px-3 py-1.5 rounded-md text-sm font-medium text-emerald-400 hover:text-emerald-300 hover:bg-slate-800/60 transition-colors">
+            方法收敛簇
+          </a>
+          <a href="/checklist" class="px-3 py-1.5 rounded-md text-sm font-medium text-sky-400 hover:text-sky-300 hover:bg-slate-800/60 transition-colors">
+            检查清单
+          </a>
+          <a href="/patterns" class="px-3 py-1.5 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors">
+            方法模式库
+          </a>
+          <a href="/about" class="px-3 py-1.5 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors">
+            关于
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 主体区域 -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <slot />
+    </main>
+
+    <!-- 底部注脚 -->
+    <footer class="border-t border-slate-800/80 bg-slate-900/40 text-slate-500 text-xs py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <span>Git User Analysis Platform</span>
+          <span>·</span>
+          <span>严格遵守单数据源（Single Source of Truth）规范</span>
+        </div>
+        <div class="text-slate-600">
+          基于 Astro + Tailwind CSS 构建 · 避开 C 盘纯绿色落盘
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

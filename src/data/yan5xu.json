@@ -1,0 +1,674 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source）+ raw README/SKILL.md；来源：司徒K《2026年X上最值得关注的120个中文博主》",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "yan5xu",
+    "name": "严旭",
+    "bio": "以 AI Coding Agent 的上下文/记忆/组织化协议为主线的中文开发者，早期做语音与工具类小项目，2024 年后转向 Agent 工程。",
+    "website": "",
+    "x": "",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "hybrid",
+    "public_repos": 33,
+    "source_repos": 21,
+    "fork_repos": 12
+  },
+  "stats": {
+    "total_stars_source": 3227,
+    "total_stars_all": 3275,
+    "median_stars": 0,
+    "ge_1000": 1,
+    "between_100_999": 3,
+    "between_10_99": 3,
+    "lt_10": 14,
+    "no_language": 5,
+    "top4_share": 96.3,
+    "top1_share": 71.2
+  },
+  "repos": [
+    {
+      "name": "ququ",
+      "url": "https://github.com/yan5xu/ququ",
+      "stars": 2297,
+      "language": "JavaScript",
+      "updated_at": "2025-10-08T04:41:18Z",
+      "description": "开源免费的 Wispr Flow 替代方案 | 集成FunASR本地模型和可配置大语言模型的下一代中文桌面语音工作流",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "codexloom",
+      "url": "https://github.com/yan5xu/codexloom",
+      "stars": 389,
+      "language": "Go",
+      "updated_at": "2026-08-20T12:58:58Z",
+      "description": "Turn Codex threads into an organization of long-lived domain agents.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "code-relay",
+      "url": "https://github.com/yan5xu/code-relay",
+      "stars": 301,
+      "language": null,
+      "updated_at": "2026-02-10T08:31:06Z",
+      "description": "AI Coding Agent 工作协议 — 跨会话记忆、多仓库全局视野、结构化上下文管理",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "scout",
+      "url": "https://github.com/yan5xu/scout",
+      "stars": 121,
+      "language": null,
+      "updated_at": "2025-04-11T11:58:11Z",
+      "description": "Scout 是一个基于 Roo Code VS Code 扩展 设计的实验性 Agent 实现。它专注于通过模拟人类行为进行精准的网络信息收集、研究与交互，旨在将 Roo Code 转变为一个强大的 Web 研究助手。",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "oh-my-ai-company",
+      "url": "https://github.com/yan5xu/oh-my-ai-company",
+      "stars": 85,
+      "language": "TypeScript",
+      "updated_at": "2026-08-04T08:23:15Z",
+      "description": "A living atlas of AI companies, products, founders, investors, traffic signals, and research notes.",
+      "fork": false,
+      "layer": "tool",
+      "category": "记忆与知识"
+    },
+    {
+      "name": "deepseek-diagrams-extension",
+      "url": "https://github.com/yan5xu/deepseek-diagrams-extension",
+      "stars": 25,
+      "language": "HTML",
+      "updated_at": "2025-01-31T12:44:47Z",
+      "description": "A Chrome browser extension that renders diagrams in the deepseek website inline.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "memex",
+      "url": "https://github.com/yan5xu/memex",
+      "stars": 21,
+      "language": "TypeScript",
+      "updated_at": "2026-07-19T10:21:41Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "playwright-mcp-bypass",
+      "url": "https://github.com/yan5xu/playwright-mcp-bypass",
+      "stars": 20,
+      "language": "TypeScript",
+      "updated_at": "2025-04-26T10:33:38Z",
+      "description": "Playwright MCP server",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "xian-covid-checkpoint",
+      "url": "https://github.com/yan5xu/xian-covid-checkpoint",
+      "stars": 11,
+      "language": "JavaScript",
+      "updated_at": "2021-12-24T15:51:30Z",
+      "description": "西安核酸检测点地图",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "boxlite",
+      "url": "https://github.com/yan5xu/boxlite",
+      "stars": 2,
+      "language": "Rust",
+      "updated_at": "2026-03-11T15:17:23Z",
+      "description": "Sandboxes for every agent. Embeddable, stateful, snapshots, and hardware isolation.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "xian-covid-data",
+      "url": "https://github.com/yan5xu/xian-covid-data",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2022-01-02T02:59:21Z",
+      "description": "西安新冠感染数据",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "bb-sites",
+      "url": "https://github.com/yan5xu/bb-sites",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2026-03-22T02:34:03Z",
+      "description": "Community fetch recipes for bb-browser — pre-built adapters for Reddit, Twitter, GitHub, and more",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "gemini-cli",
+      "url": "https://github.com/yan5xu/gemini-cli",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-04-11T07:03:29Z",
+      "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ComfyS3Plus",
+      "url": "https://github.com/yan5xu/ComfyS3Plus",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2025-04-01T03:29:11Z",
+      "description": "ComfyS3 seamlessly integrates with Amazon S3 in ComfyUI. This open-source project provides custom nodes for effortless loading and saving of images, videos, and checkpoint models directly from S3 b…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "codex",
+      "url": "https://github.com/yan5xu/codex",
+      "stars": 0,
+      "language": "Rust",
+      "updated_at": "2026-08-12T15:51:15Z",
+      "description": "Lightweight coding agent that runs in your terminal",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "cherry-studio",
+      "url": "https://github.com/yan5xu/cherry-studio",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2025-03-08T08:47:57Z",
+      "description": "🍒 Cherry Studio is a desktop client that supports for multiple LLM providers. Support deepseek-r1",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "android-use",
+      "url": "https://github.com/yan5xu/android-use",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2024-10-24T01:30:30Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "nanobrowser",
+      "url": "https://github.com/yan5xu/nanobrowser",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2025-10-07T04:11:30Z",
+      "description": "Open-Source Chrome extension for AI-powered web automation. Run multi-agent workflows using your own LLM API key. Alternative to OpenAI Operator.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "datastruct",
+      "url": "https://github.com/yan5xu/datastruct",
+      "stars": 0,
+      "language": "Shell",
+      "updated_at": "2014-01-12T09:30:36Z",
+      "description": "home work of date structure",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "fxxkword",
+      "url": "https://github.com/yan5xu/fxxkword",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2016-12-29T14:31:10Z",
+      "description": "how to recite word",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "berryfeion",
+      "url": "https://github.com/yan5xu/berryfeion",
+      "stars": 0,
+      "language": "PHP",
+      "updated_at": "2014-05-01T06:42:04Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "depot",
+      "url": "https://github.com/yan5xu/depot",
+      "stars": 0,
+      "language": "PHP",
+      "updated_at": "2015-01-28T04:54:29Z",
+      "description": "general store",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "one-api",
+      "url": "https://github.com/yan5xu/one-api",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2024-05-06T06:42:43Z",
+      "description": "OpenAI 接口管理 &amp; 分发系统，支持 Azure、Anthropic Claude、Google PaLM 2 &amp; Gemini、智谱 ChatGLM、百度文心一言、讯飞星火认知、阿里通义千问、360 智脑以及腾讯混元，可用于二次分发管理 key，仅单可执行文件，已打包好 Docker 镜像，一键部署，开箱即用. OpenAI key management &amp; redistributi…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mlHomework",
+      "url": "https://github.com/yan5xu/mlHomework",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2017-04-26T01:57:42Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "go-utils",
+      "url": "https://github.com/yan5xu/go-utils",
+      "stars": 0,
+      "language": "Go",
+      "updated_at": "2017-12-22T13:23:06Z",
+      "description": "小型军火库",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "morroblog",
+      "url": "https://github.com/yan5xu/morroblog",
+      "stars": 0,
+      "language": "Ruby",
+      "updated_at": "2018-01-07T15:24:24Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "apollo-server-scf",
+      "url": "https://github.com/yan5xu/apollo-server-scf",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2020-02-15T05:53:12Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "toggl-tapd-integration",
+      "url": "https://github.com/yan5xu/toggl-tapd-integration",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2022-12-06T06:34:09Z",
+      "description": "toggl tapd intergration script",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "plantuml-template",
+      "url": "https://github.com/yan5xu/plantuml-template",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2024-06-17T22:49:53Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "fileHelper",
+      "url": "https://github.com/yan5xu/fileHelper",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2024-07-08T01:22:03Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "codexloom-docs",
+      "url": "https://github.com/yan5xu/codexloom-docs",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2026-08-07T05:01:51Z",
+      "description": "User documentation for CodexLoom",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "CarryDrop",
+      "url": "https://github.com/yan5xu/CarryDrop",
+      "stars": 0,
+      "language": "Java",
+      "updated_at": "2014-04-28T12:43:06Z",
+      "description": "a demo of repast",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "merkle-tree",
+      "url": "https://github.com/yan5xu/merkle-tree",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2016-04-11T02:16:28Z",
+      "description": "A basic implementation of merkle trees",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/yan5xu",
+    "count": 4,
+    "layers": {
+      "skill": 2,
+      "tool": 1,
+      "other": 1
+    },
+    "items": [
+      {
+        "name": "code-relay",
+        "layer": "skill",
+        "category": "Agent 工作协议",
+        "repo": "code-relay",
+        "subdir": "",
+        "summary": "AI Coding Agent 工作协议：跨会话记忆、多仓库全局视野、结构化上下文管理。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "codexloom",
+        "layer": "tool",
+        "category": "Agent 组织编排",
+        "repo": "codexloom",
+        "subdir": "",
+        "summary": "把 Codex 的会话线程组织成长期存在的领域 Agent 集合，Go 实现。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "scout",
+        "layer": "skill",
+        "category": "网页研究 Agent",
+        "repo": "scout",
+        "subdir": "",
+        "summary": "基于 Roo Code VS Code 扩展的实验性 Agent，通过模拟人类行为做网页信息收集与研究。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "memex",
+        "layer": "other",
+        "category": "记忆存储",
+        "repo": "memex",
+        "subdir": "",
+        "summary": "TypeScript 项目，无描述；从命名与 ququ/code-relay 的记忆主题推断与记忆层相关，具体定位本地材料未见依据。",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "name": "ququ",
+      "repo": "ququ",
+      "stars": 2297,
+      "verdict": "唯一破千星的爆款，但属于替代品定位（对标 Wispr Flow 的开源平替），与作者其余 Agent 协议类作品不在同一赛道上。",
+      "problem": "中文用户在没有 Wispr Flow 订阅、或需要离线/内网环境时，需要一个把语音转成结构化文本、并能接大模型改写整句的中文桌面语音工作流。",
+      "mechanism": [
+        "本地 FunASR 模型做语音识别，把音频转成中文文本，规避云端服务的可用性与合规问题",
+        "接入可配置的大语言模型做后处理，把口语稿改写成可发送的书面语",
+        "以 Electron/JavaScript 桌面应用形态交付，目标是「装上就能用」的替代 Wispr Flow 体验",
+        "开源免费作为差异化，配合 README 明确点名的对标产品获取迁移用户"
+      ],
+      "constraints": [
+        "依赖本地 FunASR 模型，模型体积与首次运行下载对磁盘和首启时间构成硬约束",
+        "桌面端交付意味着分发与打包成本高，且受 OS/音频驱动限制",
+        "改写质量取决于用户自备的大语言模型 key，不同模型效果差异明显"
+      ],
+      "takeaway": [
+        "「点名一个付费产品 + 开源免费 + 同等体验」是个人开发者拉星最高效的路径",
+        "把 ASR 放本地、LLM 放云侧的混合分工，能同时拿到隐私和效果",
+        "README 首行直接写「XX 的开源免费替代方案」，让搜索流量直接转化"
+      ],
+      "limits": [
+        "与 Agent 工作流主线弱耦合，star 涨的是语音品类而非作者的方法论",
+        "本地模型质量受硬件与模型版本约束，云端竞品随时可能降价或开源",
+        "作者后续仓库均未沿这条产品线继续投入（本地材料未见后续更新证据）"
+      ]
+    },
+    {
+      "name": "codexloom",
+      "repo": "codexloom",
+      "stars": 389,
+      "verdict": "把 Codex 单次会话线程升格为「长期领域 Agent 组织」的编排层，定位是 Agent 的管理层而非执行层。",
+      "problem": "长时间编码任务中，单个 Codex thread 上下文短、易丢状态、跨仓库看不到全局；用户需要能长期驻留、按领域分工的 Agent 集合。",
+      "mechanism": [
+        "以 thread 为输入单位，把一堆会话线程组织成有结构的长期 Agent 群体",
+        "按领域（domain）划分 Agent 边界，让职责与上下文天然隔离",
+        "用 Go 重写编排层，追求单二进制部署与低资源常驻",
+        "配套独立的 codexloom-docs 仓库，把用户文档与主程序解耦迭代"
+      ],
+      "constraints": [
+        "强绑定 Codex 这一具体客户端，其会话格式变化即导致失效",
+        "长驻进程需处理线程状态持久化，Go 实现下并发与崩溃恢复成本高",
+        "文档仓库拆开写，增加了版本对齐成本"
+      ],
+      "takeaway": [
+        "「把会话线程当资产管理」比「把 prompt 写好」更接近真实痛点",
+        "按领域切分 Agent，而不是按任务切分，边界稳定后记忆才不会互相污染",
+        "文档仓库独立成 repo，能让主程序仓库保持干净、也便于版本对照"
+      ],
+      "limits": [
+        "生态绑定 Codex，Claude Code/Cursor 等同类客户端接入需重写适配",
+        "star 量级（389）说明这是细分需求，尚无广泛采用的证据",
+        "本地材料未见多语言/多平台支持说明"
+      ]
+    },
+    {
+      "name": "code-relay",
+      "repo": "code-relay",
+      "stars": 301,
+      "verdict": "纯文本协议型 skill：不提供代码，提供的是「Agent 该带什么上下文」的约定。",
+      "problem": "AI Coding Agent 每开新会话就失忆、看不见同组织的其他仓库，导致反复解释背景、产出与他人代码不一致。",
+      "mechanism": [
+        "以「工作协议」而非框架的形式落地，靠约定改变 Agent 行为，改造成本近零",
+        "跨会话记忆：把需要跨轮次保留的状态外置到约定好的文件",
+        "多仓库全局视野：约定 Agent 在动手前必须读取组织内其他仓库的相关位置",
+        "结构化上下文管理：用固定结构替代自然语言叙述，降低上下文漂移"
+      ],
+      "constraints": [
+        "无代码实现，靠人工/Agent 自觉遵守，不遵守即失效",
+        "仓库 language 字段为空，说明本体是文档/协议而非可执行程序",
+        "效果取决于使用者与 Agent 是否稳定执行协议"
+      ],
+      "takeaway": [
+        "协议型 skill 是最低成本的 skill 形态：零依赖、可直接抄进任何 Agent 环境",
+        "「跨会话记忆 + 多仓库视野 + 结构化上下文」三件套可以脱离本项目单独落地",
+        "把上下文结构写成协议而非模板，比每次手写 prompt 复现性更好"
+      ],
+      "limits": [
+        "无版本化与安装校验机制，协议漂移无法自动发现",
+        "不绑定任何客户端，跨工具迁移需人工改写配置",
+        "协议有效性无法用 star 证明，本地材料未见使用数据"
+      ]
+    },
+    {
+      "name": "scout",
+      "repo": "scout",
+      "stars": 121,
+      "verdict": "早期探索型尝试：用「模拟人类行为」改造网页交互，而非直接调 API 取数。",
+      "problem": "需要网页信息收集与研究的编码用户手上只有 Roo Code 这类编码扩展，缺少一个够用的研究型 Web Agent。",
+      "mechanism": [
+        "以 Roo Code 扩展为宿主，复用其已有的浏览器控制与上下文管理",
+        "核心思路是模拟人类操作路径（点击、输入、滚动）而非直连结构化接口",
+        "面向信息收集与交互研究两类场景做定向优化"
+      ],
+      "constraints": [
+        "绑定 Roo Code VS Code 扩展，上游变更即失效",
+        "模拟人类行为受页面结构变化影响，稳定性天然低于接口调用",
+        "最后更新时间为 2025-04，已停止迭代"
+      ],
+      "takeaway": [
+        "复用现有编码扩展当壳，是低成本做出垂直 Agent 的路径",
+        "「模拟人类操作」在无 API 的网站上仍是不可替代的手段，但要做降级与重试"
+      ],
+      "limits": [
+        "自述为「实验性」，作者本人已标注不确定性",
+        "2025-04 后无更新，方案已被作者搁置",
+        "本地材料未见与后续 memex / code-relay 的技术延续关系"
+      ]
+    },
+    {
+      "name": "oh-my-ai-company",
+      "repo": "oh-my-ai-company",
+      "stars": 85,
+      "verdict": "内容型知识库（活体图谱），不是代码产品；价值在于把分散的 AI 公司情报结构化成可持续更新的档案。",
+      "problem": "AI 领域公司、产品、投资人、流量信号散落在各处，研究者缺少一份可持续维护、可导航的集中档案。",
+      "mechanism": [
+        "以 TypeScript 承载结构化数据，把情报建模为可查询的图谱而非长文",
+        "把创始人、投资人、流量信号作为一等实体，与公司实体建立关系边",
+        "living atlas 的定位意味着内容随研究持续增量更新，而非一次性发布",
+        "附带 research notes，把事实与研究笔记分离存放"
+      ],
+      "constraints": [
+        "内容维护全靠人力，没有自动抓取与更新流水线",
+        "实体关系随时间变化，存在与现实脱节的维护成本",
+        "作为静态内容，没有运行时价值，star 增长依赖阅读者兴趣"
+      ],
+      "takeaway": [
+        "把研究结论建成结构化数据（实体+关系+笔记），比写长文档更耐更新",
+        "事实层与笔记层分离，能避免主观判断污染事实记录",
+        "这类「活体图谱」适合作为个人知识资产长期经营"
+      ],
+      "limits": [
+        "无代码可复用，技术迁移价值低",
+        "本地材料未见数据规模与更新频率"
+      ]
+    },
+    {
+      "name": "memex",
+      "repo": "memex",
+      "stars": 21,
+      "verdict": "低星但方向关键：作者把记忆从协议层下沉为独立存储层，是 code-relay / codexloom 的配套构件。",
+      "problem": "跨会话记忆若只靠约定文件维护，会被上下文截断或覆盖，需要一个独立的持久化与检索层。",
+      "mechanism": [
+        "以 TypeScript 实现独立记忆仓库，把「存什么」与「怎么用」解耦",
+        "作为协议型仓库（code-relay）与编排层（codexloom）的底层存储",
+        "记忆内容结构化，便于跨仓库、跨会话检索"
+      ],
+      "constraints": [
+        "无 README 描述，安装方式、接口、数据格式本地材料未见依据",
+        "star 21 且无描述，说明尚未对外完成可用性验证",
+        "与作者其他仓库的耦合关系本地材料未见依据"
+      ],
+      "takeaway": [
+        "协议负责约定记忆格式，工具负责可靠存取——这是 Agent 记忆工程的常见分工",
+        "记忆层独立成 repo，便于在不同 Agent 客户端之间复用"
+      ],
+      "limits": [
+        "缺少文档，外部用户几乎无法自行接入",
+        "规模与成熟度均无法从本地材料判断"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "记忆与上下文外置",
+      "kind": "method",
+      "evidence": [
+        "code-relay",
+        "codexloom",
+        "memex"
+      ],
+      "claim": "在 3 个不同仓库中重复出现同一主张：不把状态留在会话内，而是外置为可持久化、可跨仓库访问的记忆/上下文结构。这是作者贯穿的主线方法，可直接迁移到任何长周期 Agent 任务。"
+    },
+    {
+      "id": "P2",
+      "name": "Agent 按领域而非按任务切分",
+      "kind": "technique",
+      "evidence": [
+        "codexloom",
+        "code-relay"
+      ],
+      "claim": "以领域边界定义 Agent 职责与上下文范围，使记忆不互相污染。仅在 2 个自有仓库明确复现（codexloom 的 domain agents、code-relay 的多仓库全局视野），且 codexloom-docs 为纯文档不构成第三处独立证据，故按 method 标注但证据强度低于 P1。"
+    },
+    {
+      "id": "P3",
+      "name": "复用现有宿主扩展而非从零造壳",
+      "kind": "technique",
+      "evidence": [
+        "scout",
+        "codexloom"
+      ],
+      "claim": "scout 复用 Roo Code 扩展、codexloom 复用 Codex 线程格式，快速拿到现成的上下文与执行能力，代价是对上游的强绑定。"
+    },
+    {
+      "id": "P4",
+      "name": "文档仓库与主程序解耦",
+      "kind": "technique",
+      "evidence": [
+        "codexloom-docs"
+      ],
+      "claim": "为 codexloom 单独立文档仓库，使主仓库保持可执行产物、文档可独立迭代并与版本号对照。仅单仓库证据。"
+    },
+    {
+      "id": "P5",
+      "name": "命名先占品类词",
+      "kind": "technique",
+      "evidence": [
+        "ququ",
+        "scout",
+        "codexloom",
+        "code-relay"
+      ],
+      "claim": "仓库名取品类内的短名或强指向名（code-relay、oh-my-ai-company 直接指向细分品类），使 GitHub 站内搜索与他人转述都能命中。这是命名技巧，未验证能否指导新任务。"
+    }
+  ],
+  "sources": [
+    "https://github.com/yan5xu",
+    "https://github.com/yan5xu?tab=repositories",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

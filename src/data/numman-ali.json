@@ -1,0 +1,588 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source）+ raw README/SKILL.md；来源：司徒K《2026年X上最值得关注的120个中文博主》",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "numman-ali",
+    "name": "Numman Ali",
+    "bio": "围绕 AI 编码 agent 生态做分发层工具的 TypeScript 开发者：一个通用 skill 加载器起量，其余多为 agent 环境/认证/可视化周边。",
+    "website": "",
+    "x": "",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "breadth",
+    "public_repos": 25,
+    "source_repos": 17,
+    "fork_repos": 8
+  },
+  "stats": {
+    "total_stars_source": 16845,
+    "total_stars_all": 16880,
+    "median_stars": 38,
+    "ge_1000": 4,
+    "between_100_999": 2,
+    "between_10_99": 8,
+    "lt_10": 3,
+    "no_language": 2,
+    "top4_share": 96.9,
+    "top1_share": 64.1
+  },
+  "repos": [
+    {
+      "name": "openskills",
+      "url": "https://github.com/numman-ali/openskills",
+      "stars": 10805,
+      "language": "TypeScript",
+      "updated_at": "2026-01-18T13:09:50Z",
+      "description": "Universal skills loader for AI coding agents - npm i -g openskills",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "cc-mirror",
+      "url": "https://github.com/numman-ali/cc-mirror",
+      "stars": 2262,
+      "language": "TypeScript",
+      "updated_at": "2026-05-31T20:10:57Z",
+      "description": "Create multiple isolated Claude Code variants with custom providers (Z.ai, MiniMax, OpenRouter, LiteLLM)",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "opencode-openai-codex-auth",
+      "url": "https://github.com/numman-ali/opencode-openai-codex-auth",
+      "stars": 2212,
+      "language": "TypeScript",
+      "updated_at": "2026-01-09T14:00:49Z",
+      "description": "OAuth authentication plugin for personal coding assistance with ChatGPT Plus/Pro subscriptions - uses OpenAI's official authentication method",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "n-skills",
+      "url": "https://github.com/numman-ali/n-skills",
+      "stars": 1051,
+      "language": "TypeScript",
+      "updated_at": "2026-09-12T00:25:34Z",
+      "description": "Curated plugin marketplace for AI agents - works with Claude Code, Codex, and openskills",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "codex-wrapped",
+      "url": "https://github.com/numman-ali/codex-wrapped",
+      "stars": 123,
+      "language": "TypeScript",
+      "updated_at": "2025-12-25T22:46:51Z",
+      "description": "Generate a personalized Spotify Wrapped-style summary of your Codex usage",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "zai-cli",
+      "url": "https://github.com/numman-ali/zai-cli",
+      "stars": 110,
+      "language": "TypeScript",
+      "updated_at": "2026-01-02T12:29:07Z",
+      "description": "MCP-native command line interface for Z.AI capabilities: vision analysis, web search, web reader, and GitHub repo exploration.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "cc-wrapped",
+      "url": "https://github.com/numman-ali/cc-wrapped",
+      "stars": 87,
+      "language": "TypeScript",
+      "updated_at": "2025-12-26T06:16:09Z",
+      "description": "Generate a personalized Spotify Wrapped-style summary of your Claude Code usage",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "rip",
+      "url": "https://github.com/numman-ali/rip",
+      "stars": 51,
+      "language": "Rust",
+      "updated_at": "2026-04-24T20:49:54Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "gastown-remote",
+      "url": "https://github.com/numman-ali/gastown-remote",
+      "stars": 38,
+      "language": "TypeScript",
+      "updated_at": "2026-01-04T00:38:48Z",
+      "description": "Always-on AI agent orchestration in the cloud. Deploy Gas Town to a VPS, access from anywhere via Tailscale.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "openyield",
+      "url": "https://github.com/numman-ali/openyield",
+      "stars": 22,
+      "language": null,
+      "updated_at": "2025-11-09T21:20:51Z",
+      "description": "OpenYield is an autonomous yield optimization system that puts you in complete control. Self-hosted, AI-powered, and built for operators who want institutional-grade returns without intermediaries,…",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "gemini-studio",
+      "url": "https://github.com/numman-ali/gemini-studio",
+      "stars": 21,
+      "language": "TypeScript",
+      "updated_at": "2025-12-22T07:51:59Z",
+      "description": "A showcase of 24 interactive demos and creative experiments built with Google Gemini AI",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "editorzero",
+      "url": "https://github.com/numman-ali/editorzero",
+      "stars": 21,
+      "language": "TypeScript",
+      "updated_at": "2026-07-02T19:24:34Z",
+      "description": "Open-source, self-hostable AI-native docs platform. Humans and AI agents as peer co-editors. Phase 1: architecture and ADRs.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "openfactory",
+      "url": "https://github.com/numman-ali/openfactory",
+      "stars": 19,
+      "language": "TypeScript",
+      "updated_at": "2026-02-02T17:43:34Z",
+      "description": "Open-source AI-native SDLC orchestration platform",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "cognition-dashboard",
+      "url": "https://github.com/numman-ali/cognition-dashboard",
+      "stars": 14,
+      "language": "Svelte",
+      "updated_at": "2026-01-03T01:35:04Z",
+      "description": "Real-time Gas Town visualization engine - monitor workers, pipelines, and tasks",
+      "fork": false,
+      "layer": "tool",
+      "category": "设计与视觉"
+    },
+    {
+      "name": "agentflow",
+      "url": "https://github.com/numman-ali/agentflow",
+      "stars": 7,
+      "language": "Python",
+      "updated_at": "2026-04-03T18:08:22Z",
+      "description": "Orchestrate thousands of agents and harnesses as a graph programatically",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mlxr",
+      "url": "https://github.com/numman-ali/mlxr",
+      "stars": 6,
+      "language": "Python",
+      "updated_at": "2026-03-15T08:32:44Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "claude-code-plugins-plus-skills",
+      "url": "https://github.com/numman-ali/claude-code-plugins-plus-skills",
+      "stars": 6,
+      "language": "Python",
+      "updated_at": "2026-01-03T00:59:02Z",
+      "description": "Hundreds of Claude Code plugins with embedded AI skills. Learn via interactive Jupyter tutorials.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "superdesign",
+      "url": "https://github.com/numman-ali/superdesign",
+      "stars": 6,
+      "language": "TypeScript",
+      "updated_at": "2025-12-15T22:43:04Z",
+      "description": "AI Product Design Agent - Open Source",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "cli",
+      "url": "https://github.com/numman-ali/cli",
+      "stars": 4,
+      "language": "Go",
+      "updated_at": "2026-05-14T09:11:59Z",
+      "description": "📜 Entire CLI hooks into your Git workflow to capture AI agent sessions as you work. Sessions are indexed alongside commits, creating a searchable record of how code was written in your repo.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "hermes-agent",
+      "url": "https://github.com/numman-ali/hermes-agent",
+      "stars": 4,
+      "language": "Python",
+      "updated_at": "2026-02-26T01:25:42Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mlxts",
+      "url": "https://github.com/numman-ali/mlxts",
+      "stars": 3,
+      "language": "TypeScript",
+      "updated_at": "2026-05-02T12:01:57Z",
+      "description": "TypeScript-native MLX ML stack for Apple Silicon",
+      "fork": false,
+      "layer": "tool",
+      "category": "设计与视觉"
+    },
+    {
+      "name": "flue",
+      "url": "https://github.com/numman-ali/flue",
+      "stars": 3,
+      "language": "TypeScript",
+      "updated_at": "2026-05-09T22:21:29Z",
+      "description": "The sandbox agent framework.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "paperclip",
+      "url": "https://github.com/numman-ali/paperclip",
+      "stars": 3,
+      "language": "TypeScript",
+      "updated_at": "2026-03-04T22:46:56Z",
+      "description": "Open-source orchestration for zero-human companies",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "oh-my-pi",
+      "url": "https://github.com/numman-ali/oh-my-pi",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2026-09-11T17:16:45Z",
+      "description": "⌥ Coding agent with the IDE wired in",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pb-api-specs",
+      "url": "https://github.com/numman-ali/pb-api-specs",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-01-12T14:31:11Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/numman-ali",
+    "count": 6,
+    "layers": {
+      "skill": 2,
+      "tool": 3,
+      "other": 1
+    },
+    "items": [
+      {
+        "name": "openskills",
+        "layer": "skill",
+        "category": "Skill 工程",
+        "repo": "openskills",
+        "subdir": "",
+        "summary": "面向 AI 编码 agent 的通用 skill 加载器，一条 npm 全局安装命令让 Claude Code、Codex 等共用同一份 skill。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "n-skills",
+        "layer": "skill",
+        "category": "Skill 工程",
+        "repo": "n-skills",
+        "subdir": "",
+        "summary": "面向 AI agent 的策展式插件市场，同时兼容 Claude Code、Codex 与 openskills。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "cc-mirror",
+        "layer": "tool",
+        "category": "Agent 基础设施",
+        "repo": "cc-mirror",
+        "subdir": "",
+        "summary": "用自定义 provider（Z.ai、MiniMax、OpenRouter、LiteLLM）批量生成互相隔离的 Claude Code 变体。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "opencode-openai-codex-auth",
+        "layer": "tool",
+        "category": "Agent 基础设施",
+        "repo": "opencode-openai-codex-auth",
+        "subdir": "",
+        "summary": "用 OpenAI 官方 OAuth 认证方式，为个人编码助手接入 ChatGPT Plus/Pro 订阅额度。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "zai-cli",
+        "layer": "tool",
+        "category": "设计与视觉",
+        "repo": "zai-cli",
+        "subdir": "",
+        "summary": "MCP 原生的命令行入口，暴露 Z.AI 的视觉分析、网页搜索、网页阅读与 GitHub 仓库探查能力。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "editorzero",
+        "layer": "other",
+        "category": "写作与分发",
+        "repo": "editorzero",
+        "subdir": "",
+        "summary": "自托管的开源 AI 原生文档平台，把人与 AI agent 放在对等共同编辑的位置，当前处于 Phase 1 架构与 ADR 阶段。",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "name": "openskills",
+      "repo": "openskills",
+      "stars": 10805,
+      "verdict": "用一条安装命令消除了多 agent 之间 skill 不通用的问题，是这个人全部星数的支柱（占自有星 64.1%）。",
+      "problem": "同时使用 Claude Code、Codex 等多个 AI 编码 agent 的开发者，手里的 skill 目录散落在各工具的私有路径里，换工具就要重写一遍。",
+      "mechanism": [
+        "定义一套与宿主 agent 无关的 skill 目录约定，把 skill 做成可被多方读取的统一格式",
+        "以 npm 全局包（npm i -g openskills）分发，把安装动作压缩成一条命令",
+        "同时服务 Claude Code、Codex 等多种宿主，用适配层而不是为每个宿主各做一个包"
+      ],
+      "constraints": [
+        "必须为每种宿主 agent 单独维护适配逻辑，宿主升级即成维护债",
+        "依赖 Node/npm 全局安装环境，无法覆盖非 Node 宿主的 skill 机制"
+      ],
+      "takeaway": [
+        "如果你的工具面向多宿主，先定义中立格式 + 薄适配层，而不是每个宿主一份实现",
+        "把安装收敛到一条可粘贴命令，是这类分发工具获客成本最低的入口"
+      ],
+      "limits": [
+        "只解决 skill 发现与加载，不涉及 skill 质量本身",
+        "宿主 agent 的 skill 规范若变动，兼容窗口取决于对方"
+      ]
+    },
+    {
+      "name": "cc-mirror",
+      "repo": "cc-mirror",
+      "stars": 2262,
+      "verdict": "把「换个模型跑同一个 agent」这件小事做成了隔离实例生成器，卖的是配置自由而非新能力。",
+      "problem": "想用 Z.ai、MiniMax、OpenRouter、LiteLLM 等不同 provider 跑 Claude Code 的开发者，改配置就污染原有环境，切回原模型还得重来一遍。",
+      "mechanism": [
+        "为每个 provider 克隆出一份互相隔离的 Claude Code 变体，各自持有独立配置",
+        "复用 Claude Code 本体而不改动其代码，差异只落在配置层",
+        "把 provider 差异抽象成模板，批量生成而不是手工复制目录"
+      ],
+      "constraints": [
+        "每个变体占用独立磁盘与依赖副本，实例多了成本线性上升",
+        "强绑定 Claude Code 的配置格式与目录约定，上游改结构即失效"
+      ],
+      "takeaway": [
+        "「同一工具多配置并行」的需求，用模板化实例复制解决，比每次手改配置更安全",
+        "把差异收敛在配置层，比 fork 上游代码的维护成本低一个量级"
+      ],
+      "limits": [
+        "只是配置隔离，不改变 agent 行为能力",
+        "provider 侧限流与计费问题不在其解决范围"
+      ]
+    },
+    {
+      "name": "opencode-openai-codex-auth",
+      "repo": "opencode-openai-codex-auth",
+      "stars": 2212,
+      "verdict": "用一个官方 OAuth 插件把已有的 ChatGPT 订阅变成可用的编码额度，属于搭桥而非造新东西。",
+      "problem": "已经付了 ChatGPT Plus/Pro 订阅费的用户，想在 opencode 这类编码助手里用上这份订阅，但缺少合法的认证接入方式。",
+      "mechanism": [
+        "走 OpenAI 官方认证方法（OAuth）而非自建代理或转卖 API key",
+        "以插件形式挂进 opencode，不改宿主主流程",
+        "定位在「个人编码辅助」场景，边界清晰"
+      ],
+      "constraints": [
+        "完全依赖 OpenAI 侧的认证政策与令牌生命周期，官方一改即断",
+        "订阅额度的使用范围受服务条款约束，不是通用 API 通道"
+      ],
+      "takeaway": [
+        "要接第三方订阅，优先找官方认证路径，不要自建中转",
+        "认证类集成做成独立插件而非侵入式改造，宿主升级成本最低"
+      ],
+      "limits": [
+        "仅适用于持有对应订阅的个人用户",
+        "上游政策变化随时可能使其不可用"
+      ]
+    },
+    {
+      "name": "n-skills",
+      "repo": "n-skills",
+      "stars": 1051,
+      "verdict": "把 openskills 的加载能力往策展与分发侧延伸，是生态位补齐而非新机制。",
+      "problem": "写 skill 的人没有稳定渠道，Claude Code、Codex、openskills 三处用户群各自为战，装 skill 要一个个手动找。",
+      "mechanism": [
+        "以市场形式集中收录与分发 skill",
+        "同时声明兼容 Claude Code、Codex 与 openskills 三个宿主",
+        "复用 openskills 已建立的 skill 目录约定作为底层格式"
+      ],
+      "constraints": [
+        "依赖 openskills 生态的持续存在，格式一变就需同步",
+        "市场类项目的价值依赖收录质量与维护持续性"
+      ],
+      "takeaway": [
+        "有了加载器之后再做分发层，是 skill 生态的自然第二阶段",
+        "同一份产物声明多宿主兼容，能把一次维护摊到三个用户群"
+      ],
+      "limits": [
+        "本质是索引与分发，不生产 skill 内容",
+        "本地材料未见依据：其收录标准与审核流程"
+      ]
+    },
+    {
+      "name": "zai-cli",
+      "repo": "zai-cli",
+      "stars": 110,
+      "verdict": "把视觉理解、网页搜索、网页阅读、仓库探查四类能力压进一个 MCP 原生 CLI，作为无头环境的能力补件。",
+      "problem": "在终端或 CI 环境中编码的开发者，没有 GUI 可用，需要以命令行方式调用 Z.AI 的多模态与检索能力。",
+      "mechanism": [
+        "以 CLI 形式暴露能力，可脚本化调用而非绑定 IDE",
+        "采用 MCP 原生协议，便于挂进 agent 工具链",
+        "把四类异构能力（视觉/搜索/阅读/仓库）统一到同一入口"
+      ],
+      "constraints": [
+        "四类能力共用一套 CLI，参数模型不够贴合各能力的最佳用法",
+        "强依赖 Z.AI 的接口配额与接口形态"
+      ],
+      "takeaway": [
+        "把异构能力统一到一个入口，收益大于为每类能力各写一个脚本",
+        "选 MCP 原生协议做 CLI，能直接复用 agent 生态的工具注册"
+      ],
+      "limits": [
+        "仅覆盖 Z.AI 一家的能力，不通用",
+        "本地材料未见依据：各子命令的具体实现差异"
+      ]
+    },
+    {
+      "name": "editorzero",
+      "repo": "editorzero",
+      "stars": 21,
+      "verdict": "自托管的 AI 原生文档平台，核心主张是人与 agent 对等共同编辑，目前仍在架构与 ADR 阶段。",
+      "problem": "文档写作中 agent 只能追加式改写，人与 agent 争夺同一份文档所有权，冲突与覆盖无从追溯。",
+      "mechanism": [
+        "把人与 AI agent 定位为对等的共同编辑者，而非工具与使用者关系",
+        "自托管部署，数据与文档留在自己手里",
+        "以 ADR（架构决策记录）先行，把设计取舍显式化后再写实现"
+      ],
+      "constraints": [
+        "仍处 Phase 1（架构与 ADR），可用功能有限",
+        "「对等共同编辑」需要解决并发冲突与权限归属，工程量未在本地材料中体现"
+      ],
+      "takeaway": [
+        "新平台先写 ADR 再写实现，把不可逆决策提前暴露",
+        "涉及 agent 协作的文档工具，先明确所有权与冲突规则"
+      ],
+      "limits": [
+        "尚未进入功能可用阶段，star 数不反映真实使用量",
+        "本地材料未见依据：架构决策的具体内容与后续里程碑"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "中立格式 + 薄适配层，覆盖多个 agent 宿主",
+      "kind": "method",
+      "evidence": [
+        "openskills",
+        "n-skills",
+        "zai-cli"
+      ],
+      "claim": "先定义与宿主无关的产物格式，再为每个宿主写薄适配，而不是每家重做一套。该做法在 openskills 的加载层、n-skills 的分发层、zai-cli 的 MCP 原生接入三处独立出现，且都能直接套到新的 agent 宿主上。"
+    },
+    {
+      "id": "P2",
+      "name": "一条可粘贴命令收敛安装与分发",
+      "kind": "method",
+      "evidence": [
+        "openskills",
+        "cc-mirror",
+        "n-skills"
+      ],
+      "claim": "把安装/生成动作压缩成单条命令（npm i -g openskills、模板化批量生成变体、市场式一条安装），用最低获客成本换取首次使用。三个不同仓库都以此为入口。"
+    },
+    {
+      "id": "P3",
+      "name": "配置层隔离替代代码层 fork",
+      "kind": "method",
+      "evidence": [
+        "cc-mirror",
+        "opencode-openai-codex-auth",
+        "openskills"
+      ],
+      "claim": "需求看似要改上游，实际把差异全部收敛到配置与注册层（模板克隆、插件挂载、适配层），宿主升级时只需跟随而不需 rebase。三个仓库分别对应实例隔离、认证接入、格式加载三种形态。"
+    },
+    {
+      "id": "P4",
+      "name": "同一套模板复制成多个个性化产物",
+      "kind": "technique",
+      "evidence": [
+        "codex-wrapped",
+        "cc-wrapped"
+      ],
+      "claim": "codex-wrapped（123 星）与 cc-wrapped（87 星）共用「Spotify Wrapped 式使用总结」这一模板，只换数据源。属于局部复用技巧，仅两个仓库出现，未达方法门槛。"
+    },
+    {
+      "id": "P5",
+      "name": "ADR 先行、项目阶段公开标注",
+      "kind": "technique",
+      "evidence": [
+        "editorzero"
+      ],
+      "claim": "在 README 与描述里明写当前处于 Phase 1 并计划产出 ADR，用阶段声明代替完成度承诺。单仓库证据，属局部技巧。"
+    }
+  ],
+  "sources": [
+    "https://github.com/numman-ali",
+    "https://github.com/numman-ali?tab=repositories",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

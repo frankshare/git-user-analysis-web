@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.1",
+  "user": "antfu",
+  "analyses": [
+    {
+      "constraints": [
+        "内容质量依赖作者本人筛选与持续维护，无客观验收标准",
+        "受所支持的 agent 平台与运行时约束，不是通用可执行包"
+      ],
+      "limits": [
+        "JSON 材料只有仓库描述，看不到具体 skill 条目数、目录结构与安装方式",
+        "作为策展集合，覆盖广度受作者个人偏好限制，偏 Vite/Vue/TS 生态"
+      ],
+      "mechanism": [
+        "把各类 agent 工作流拆成可分发的 skill 目录，统一放进一个仓库管理",
+        "以集合形式对外呈现，仓库本身成为分发入口",
+        "与 skills-npm / skills-pack 并行，形成内容、打包、安装三层结构"
+      ],
+      "name": "skills",
+      "problem": "使用 AI 编码 agent 的前端/Node 开发者，需要一组能直接装进 agent 的现成工作流，但各自散落在个人仓库或文档里，缺少统一入口与可复用格式。",
+      "repo": "skills",
+      "stars": 5987,
+      "takeaway": [
+        "把知识与流程标准化成带目录结构的 skill 包，纳入版本控制",
+        "用一个策展仓库做总入口，配套独立的打包与安装仓库分担职责",
+        "仓库描述直接说明用途与作者归属，降低试用门槛"
+      ],
+      "verdict": "把个人工作流沉淀成可分发的 agent 技能集合，用策展仓库承担产品入口角色。"
+    },
+    {
+      "constraints": [
+        "仅对 Vite/Nuxt 项目生效，其他框架需自行实现",
+        "需要 agent 具备 MCP 客户端能力，旧环境无法使用"
+      ],
+      "limits": [
+        "JSON 材料仅说明用途，未包含实现方式与传输协议细节",
+        "依赖 Vite/Nuxt 项目结构与 dev server 存活，脱离该环境即失效"
+      ],
+      "mechanism": [
+        "以 MCP server 形式把项目内部信息暴露给模型",
+        "选择 Nuxt/Vite 作为宿主，可直接读取构建配置与源码结构",
+        "把让模型理解项目这件工程活交给标准协议接口，而非各自实现提示词技巧"
+      ],
+      "name": "nuxt-mcp-dev",
+      "problem": "AI 编码 agent 在 Vite/Nuxt 项目中缺少项目上下文，容易凭空猜测配置、依赖和用法，导致改错代码。",
+      "repo": "nuxt-mcp-dev",
+      "stars": 911,
+      "takeaway": [
+        "给 agent 补上下文的标准做法是接一个 MCP server，而不是塞更多提示词",
+        "优先暴露项目配置、依赖、目录结构这类高价值事实"
+      ],
+      "verdict": "用 MCP 协议给 agent 补上项目事实层，解决模型不了解仓库现状的问题。"
+    },
+    {
+      "constraints": [
+        "依赖 npm registry 可用，私有包需另行处理",
+        "skill 需以 npm 包形式发布，门槛高于直接拷贝目录"
+      ],
+      "limits": [
+        "JSON 材料未说明支持的包管理器范围与鉴权方式",
+        "只覆盖走 npm 发布渠道的 skill，纯仓库型 skill 不适用"
+      ],
+      "mechanism": [
+        "把从 npm 安装 skill 封装成一条命令",
+        "复用 npm 自身的版本、发布与依赖解析能力",
+        "与 skills 仓库的策展内容配合，形成内容与分发的分离"
+      ],
+      "name": "skills-npm",
+      "problem": "agent skill 若只以仓库形式存在，安装路径不可控、版本不可管理，团队难以统一分发。",
+      "repo": "skills-npm",
+      "stars": 572,
+      "takeaway": [
+        "想让内容被广泛安装，就把它包装进已有包管理生态",
+        "策展与分发分仓库维护，各自迭代不互相阻塞"
+      ],
+      "verdict": "把 skill 的分发通道接到 npm，用现成包管理解决版本与安装问题。"
+    },
+    {
+      "constraints": [
+        "仅覆盖 GitHub 托管的仓库",
+        "评审是本地化流程，不替代服务端 CI 校验"
+      ],
+      "limits": [
+        "JSON 材料未说明其与 GitHub 原生评审 UI 的差异细节",
+        "面向个人与小团队的评审流，缺少权限与审计类企业特性"
+      ],
+      "mechanism": [
+        "把 PR 拉取与评审动作搬到本地终端或编辑器侧",
+        "以 PR 为最小工作单元组织操作，减少网页跳转",
+        "与 ghfs 的文件系统式抽象思路一致：让远端对象本地可操作"
+      ],
+      "name": "pulls.review",
+      "problem": "代码评审者在网页端逐个打开 PR、翻 diff、留下评论，流程割裂且重复操作多。",
+      "repo": "pulls.review",
+      "stars": 551,
+      "takeaway": [
+        "把远端对象映射成本地可批量操作的数据，是提升效率的通用招法",
+        "工具类项目应选一个具体高频动作做深，而不是做全套平台"
+      ],
+      "verdict": "把 GitHub PR 评审搬到本地，让评审过程脱离网页逐页操作。"
+    },
+    {
+      "constraints": [
+        "需要 GitHub 凭据与网络，离线部分仍依赖本地缓存",
+        "文件系统视图与真实 GitHub 对象存在同步延迟"
+      ],
+      "limits": [
+        "JSON 材料未说明鉴权、速率限制与大规模仓库的表现",
+        "依赖 GitHub API 形态，上游接口变更会直接波及"
+      ],
+      "mechanism": [
+        "将 issue 与 PR 映射为本地文件与目录",
+        "统一为目录结构加文本这一 agent 易操作的表达形式",
+        "同时服务人与 agent：人可浏览与搜索，agent 可批量读写"
+      ],
+      "name": "ghfs",
+      "problem": "需要离线或批量处理 GitHub issue/PR 的人与 agent，在网页和 API 之间来回切换效率低。",
+      "repo": "ghfs",
+      "stars": 276,
+      "takeaway": [
+        "面向 agent 的接口优先选择文件与目录语义，而不是再包一层 API",
+        "同一抽象同时服务人类与 agent，可用性设计一次到位"
+      ],
+      "verdict": "用文件系统语义包装 GitHub issue/PR，让人和 agent 都能批量离线操作。"
+    },
+    {
+      "constraints": [
+        "需要跨会话持续记录，成本高于一次性提示词",
+        "意图跟踪质量取决于项目约定的记录方式"
+      ],
+      "limits": [
+        "JSON 材料未说明其具体实现与是否已稳定可用",
+        "star 数低说明仍属早期探索，方法可参考但成熟度需自行验证"
+      ],
+      "mechanism": [
+        "把项目意图当作可持久化的一等数据",
+        "跨 agent 会话保留，减少重复解释背景的成本",
+        "与 ghfs、pulls.review 共同构成 agent 侧的上下文与协作工具面"
+      ],
+      "name": "intentracker",
+      "problem": "AI agent 每次新会话都会丢失上一轮的项目背景，导致重复探索、决策前后不一致。",
+      "repo": "intentracker",
+      "stars": 26,
+      "takeaway": [
+        "给 agent 补跨会话记忆时，优先记录意图与决策而非完整对话",
+        "这类基础设施应可被多个工具共用，形成事实源"
+      ],
+      "verdict": "针对 agent 跨会话失忆，做项目意图的持久化跟踪。"
+    }
+  ]
+}

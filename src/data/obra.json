@@ -1,0 +1,3022 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-20",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source / type=fork）+ raw README/SKILL.md + blog.fsck.com/about",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "obra",
+    "name": "Jesse Vincent",
+    "bio": "Prime Radiant 创始人/CEO；Superpowers 作者；30 年工具匠（Request Tracker、K-9 Mail、Keyboardio、Perl 5.12/5.14）",
+    "website": "https://blog.fsck.com",
+    "x": "https://x.com/obra",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "public_repos": 226,
+    "source_repos": 93,
+    "fork_repos": 133,
+    "strategy": "depth"
+  },
+  "stats": {
+    "total_stars_source": 309084,
+    "total_stars_all": 309477,
+    "median_stars": 8,
+    "ge_1000": 3,
+    "between_100_999": 14,
+    "between_10_99": 27,
+    "lt_10": 49,
+    "no_language": 13,
+    "top4_share": 98.8,
+    "top1_share": 97.7,
+    "superpowers_installs_claimed": 500000
+  },
+  "repos": [
+    {
+      "name": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "stars": 301998,
+      "language": "Shell",
+      "updated_at": "2026-10-10T03:03:30Z",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "fork": false,
+      "layer": "framework",
+      "category": "方法论框架"
+    },
+    {
+      "name": "Youtube2Webpage",
+      "url": "https://github.com/obra/Youtube2Webpage",
+      "stars": 1444,
+      "language": "JavaScript",
+      "updated_at": "2023-12-01T17:46:50Z",
+      "description": "I learn much better from text than from videos",
+      "fork": false,
+      "layer": "writing",
+      "category": "写作与表达"
+    },
+    {
+      "name": "superpowers-marketplace",
+      "url": "https://github.com/obra/superpowers-marketplace",
+      "stars": 1302,
+      "language": "",
+      "updated_at": "2026-10-10T01:42:39Z",
+      "description": "Curated Claude Code plugin marketplace",
+      "fork": false,
+      "layer": "ecosystem",
+      "category": "生态与市场"
+    },
+    {
+      "name": "the-elements-of-style",
+      "url": "https://github.com/obra/the-elements-of-style",
+      "stars": 602,
+      "language": "HTML",
+      "updated_at": "2026-08-12T21:49:28Z",
+      "description": "William Strunk Jr.'s Elements of Style (1918) in markdown format for AI agents",
+      "fork": false,
+      "layer": "writing",
+      "category": "写作与表达"
+    },
+    {
+      "name": "episodic-memory",
+      "url": "https://github.com/obra/episodic-memory",
+      "stars": 492,
+      "language": "TypeScript",
+      "updated_at": "2026-09-10T16:59:03Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "记忆与上下文"
+    },
+    {
+      "name": "private-journal-mcp",
+      "url": "https://github.com/obra/private-journal-mcp",
+      "stars": 457,
+      "language": "TypeScript",
+      "updated_at": "2026-08-11T18:24:13Z",
+      "description": "A lightweight MCP server that provides Claude with a private journaling capability to process feelings and thoughts",
+      "fork": false,
+      "layer": "tool",
+      "category": "记忆与上下文"
+    },
+    {
+      "name": "superpowers-lab",
+      "url": "https://github.com/obra/superpowers-lab",
+      "stars": 433,
+      "language": "Shell",
+      "updated_at": "2026-06-01T21:42:58Z",
+      "description": "Experimental skills for Claude Code Superpowers - new techniques and tools",
+      "fork": false,
+      "layer": "ecosystem",
+      "category": "生态与市场"
+    },
+    {
+      "name": "superpowers-chrome",
+      "url": "https://github.com/obra/superpowers-chrome",
+      "stars": 362,
+      "language": "HTML",
+      "updated_at": "2026-10-10T16:56:07Z",
+      "description": "Claude Code plugin for direct Chrome browser control via DevTools Protocol - zero dependencies",
+      "fork": false,
+      "layer": "ecosystem",
+      "category": "生态与市场"
+    },
+    {
+      "name": "packnplay",
+      "url": "https://github.com/obra/packnplay",
+      "stars": 174,
+      "language": "Go",
+      "updated_at": "2026-03-21T00:40:50Z",
+      "description": "Sandboxed execution of commands in Docker containers with automated worktree and dev container management",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "superpowers-developing-for-claude-code",
+      "url": "https://github.com/obra/superpowers-developing-for-claude-code",
+      "stars": 145,
+      "language": "JavaScript",
+      "updated_at": "2025-12-03T19:12:19Z",
+      "description": "",
+      "fork": false,
+      "layer": "ecosystem",
+      "category": "生态与市场"
+    },
+    {
+      "name": "kicad-tools",
+      "url": "https://github.com/obra/kicad-tools",
+      "stars": 135,
+      "language": "Shell",
+      "updated_at": "2021-12-30T23:22:29Z",
+      "description": "Various bits of automation for using KiCAD and Git together",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "smallest-agent",
+      "url": "https://github.com/obra/smallest-agent",
+      "stars": 131,
+      "language": "Shell",
+      "updated_at": "2026-03-02T21:11:23Z",
+      "description": "A tiny agent.",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "claude-memory-extractor",
+      "url": "https://github.com/obra/claude-memory-extractor",
+      "stars": 120,
+      "language": "TypeScript",
+      "updated_at": "2025-09-30T00:08:16Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "记忆与上下文"
+    },
+    {
+      "name": "dotfiles",
+      "url": "https://github.com/obra/dotfiles",
+      "stars": 116,
+      "language": "Shell",
+      "updated_at": "2026-10-12T18:30:53Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "double-shot-latte",
+      "url": "https://github.com/obra/double-shot-latte",
+      "stars": 116,
+      "language": "Shell",
+      "updated_at": "2026-02-25T23:28:02Z",
+      "description": "Claude Code plugin that automatically evaluates whether Claude should continue working instead of stopping prematurely",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "claude-session-driver",
+      "url": "https://github.com/obra/claude-session-driver",
+      "stars": 113,
+      "language": "TypeScript",
+      "updated_at": "2026-10-10T01:42:28Z",
+      "description": "Launch, control, and monitor other Claude Code sessions as workers via tmux",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "knowledge-graph",
+      "url": "https://github.com/obra/knowledge-graph",
+      "stars": 113,
+      "language": "TypeScript",
+      "updated_at": "2026-03-22T18:27:33Z",
+      "description": "Query and traverse an Obsidian vault as a knowledge graph. Semantic search, path finding, community detection — all local. Claude Code plugin included.",
+      "fork": false,
+      "layer": "tool",
+      "category": "记忆与上下文"
+    },
+    {
+      "name": "amplifier-bundle-superpowers",
+      "url": "https://github.com/obra/amplifier-bundle-superpowers",
+      "stars": 76,
+      "language": "",
+      "updated_at": "2026-01-12T20:25:07Z",
+      "description": "Superpowers workflow system for Amplifier - disciplined software development with TDD, systematic debugging, and structured planning. Ported from obra/superpowers.",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "lace",
+      "url": "https://github.com/obra/lace",
+      "stars": 55,
+      "language": "TypeScript",
+      "updated_at": "2026-10-15T22:54:44Z",
+      "description": "Lightweight agentic coding environment",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "coderabbit-review-helper",
+      "url": "https://github.com/obra/coderabbit-review-helper",
+      "stars": 54,
+      "language": "Python",
+      "updated_at": "2025-09-11T17:46:34Z",
+      "description": "Extract CodeRabbit GitHub PR reviews for AI coding agent consumption",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "ghost-pepper",
+      "url": "https://github.com/obra/ghost-pepper",
+      "stars": 54,
+      "language": "Swift",
+      "updated_at": "2026-07-27T02:42:50Z",
+      "description": "Hold-to-talk speech-to-text for macOS. 100% local, powered by WhisperKit and local LLM cleanup. Hold Control to record, release to transcribe and paste.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "clank",
+      "url": "https://github.com/obra/clank",
+      "stars": 42,
+      "language": "TypeScript",
+      "updated_at": "2025-10-09T17:53:44Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "autoresearch-claude-code",
+      "url": "https://github.com/obra/autoresearch-claude-code",
+      "stars": 38,
+      "language": "Shell",
+      "updated_at": "2026-03-18T04:34:49Z",
+      "description": "Autonomous experiment loop skill for Claude Code — port of pi-autoresearch",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "moltipass",
+      "url": "https://github.com/obra/moltipass",
+      "stars": 34,
+      "language": "Swift",
+      "updated_at": "2026-02-03T22:54:18Z",
+      "description": "An iOS client for human users of Moltbook, a social network for Agents",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "iMessagePrinter",
+      "url": "https://github.com/obra/iMessagePrinter",
+      "stars": 33,
+      "language": "Swift",
+      "updated_at": "2026-02-20T05:45:26Z",
+      "description": "macOS app to browse iMessage conversations and export them as formatted PDFs",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "macMCP",
+      "url": "https://github.com/obra/macMCP",
+      "stars": 30,
+      "language": "Swift",
+      "updated_at": "2025-05-31T18:12:56Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "pepper-x",
+      "url": "https://github.com/obra/pepper-x",
+      "stars": 30,
+      "language": "Rust",
+      "updated_at": "2026-04-07T15:24:34Z",
+      "description": "GNOME-first local Linux dictation utility inspired by Ghost Pepper",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "cc-plugin-decision-log",
+      "url": "https://github.com/obra/cc-plugin-decision-log",
+      "stars": 25,
+      "language": "TypeScript",
+      "updated_at": "2026-02-17T21:52:22Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "external-subagents",
+      "url": "https://github.com/obra/external-subagents",
+      "stars": 24,
+      "language": "JavaScript",
+      "updated_at": "2025-12-24T23:07:15Z",
+      "description": "Codex subagent CLI and tooling",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "winby",
+      "url": "https://github.com/obra/winby",
+      "stars": 23,
+      "language": "Swift",
+      "updated_at": "2026-01-02T23:57:39Z",
+      "description": "A fast window manager for macOS with fuzzy search",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ScreenshotForChat",
+      "url": "https://github.com/obra/ScreenshotForChat",
+      "stars": 22,
+      "language": "Swift",
+      "updated_at": "2025-07-24T14:57:03Z",
+      "description": "A quick macOS screenshot tool designed for AI chat interactions",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "muse-skills",
+      "url": "https://github.com/obra/muse-skills",
+      "stars": 20,
+      "language": "TypeScript",
+      "updated_at": "2026-10-18T11:15:33Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "node-traffic-logger",
+      "url": "https://github.com/obra/node-traffic-logger",
+      "stars": 19,
+      "language": "JavaScript",
+      "updated_at": "2025-05-08T17:17:06Z",
+      "description": "HTTP traffic logger and analyzer for Node.js applications",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "winpepper",
+      "url": "https://github.com/obra/winpepper",
+      "stars": 18,
+      "language": "C#",
+      "updated_at": "2026-08-25T06:17:58Z",
+      "description": "Windows-native local dictation. Hold a hotkey, speak, release — cleaned-up words appear in the focused app. Parakeet TDT v3 ASR + LlamaSharp cleanup, all local.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "StageWhisper",
+      "url": "https://github.com/obra/StageWhisper",
+      "stars": 17,
+      "language": "Swift",
+      "updated_at": "2025-04-10T06:29:20Z",
+      "description": "A macOS menu bar app for transcribing speech to text using WhisperKit and inserting at the cursor position",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "twittermail",
+      "url": "https://github.com/obra/twittermail",
+      "stars": 17,
+      "language": "Perl",
+      "updated_at": "2011-01-26T17:06:36Z",
+      "description": "Twitter in mutt! Oh boy.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "wayback-restorer",
+      "url": "https://github.com/obra/wayback-restorer",
+      "stars": 15,
+      "language": "Python",
+      "updated_at": "2026-02-13T00:41:36Z",
+      "description": "Wayback Machine mirror recovery toolkit (archive-friendly, provenance-first).",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "mira-OSS",
+      "url": "https://github.com/obra/mira-OSS",
+      "stars": 14,
+      "language": "Python",
+      "updated_at": "2026-04-03T20:34:36Z",
+      "description": "This is the public release of MIRA OS. Discrete memories decay through momentum loss, tools auto-configure when dropped into tools/ folder, and the system prompt composes from modular trinkets. I w…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "agentsview",
+      "url": "https://github.com/obra/agentsview",
+      "stars": 14,
+      "language": "Go",
+      "updated_at": "2026-09-08T16:39:52Z",
+      "description": "Local-first session search, analytics, insights, and token use statistics for coding agents, supporting Claude Code, Codex, and more than 20 other agents.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "narcolepsyd",
+      "url": "https://github.com/obra/narcolepsyd",
+      "stars": 14,
+      "language": "Rust",
+      "updated_at": "2026-06-28T23:53:42Z",
+      "description": "Idle power optimizer for Linux laptops with Intel hybrid CPUs",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "slappyhour",
+      "url": "https://github.com/obra/slappyhour",
+      "stars": 13,
+      "language": "Perl",
+      "updated_at": "2015-10-09T23:44:27Z",
+      "description": "A very simple CGI script to bridge a channel between multiple Slack instances. Yes. A CGI script. Why? because it's trivially simple.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "jmap-mcp",
+      "url": "https://github.com/obra/jmap-mcp",
+      "stars": 12,
+      "language": "TypeScript",
+      "updated_at": "2025-12-22T19:17:05Z",
+      "description": "A Model Context Protocol (MCP) server that provides tools for interacting with JMAP (JSON Meta Application Protocol) email servers. Built with Deno and using the jmap-jam client library.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "dayflow-export",
+      "url": "https://github.com/obra/dayflow-export",
+      "stars": 12,
+      "language": "Python",
+      "updated_at": "2025-12-18T06:15:57Z",
+      "description": "Export Dayflow activity data to markdown transcripts for LLM consumption",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "debloat-windows-vm",
+      "url": "https://github.com/obra/debloat-windows-vm",
+      "stars": 12,
+      "language": "PowerShell",
+      "updated_at": "2025-12-01T21:58:10Z",
+      "description": "Windows VM debloating scripts - removes bloatware, disables telemetry, optimizes for development",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "issue-cards",
+      "url": "https://github.com/obra/issue-cards",
+      "stars": 12,
+      "language": "JavaScript",
+      "updated_at": "2025-05-10T00:30:47Z",
+      "description": "AI-optimized command line issue tracking tool",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "claude-docs-setup",
+      "url": "https://github.com/obra/claude-docs-setup",
+      "stars": 11,
+      "language": "TypeScript",
+      "updated_at": "2025-03-24T04:00:05Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "kicad-automation-scripts",
+      "url": "https://github.com/obra/kicad-automation-scripts",
+      "stars": 11,
+      "language": "Python",
+      "updated_at": "2021-10-27T19:00:44Z",
+      "description": "A bunch of scripts to automate KiCad processes",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "perl-5.12.0-errata",
+      "url": "https://github.com/obra/perl-5.12.0-errata",
+      "stars": 11,
+      "language": "",
+      "updated_at": "2010-04-05T13:04:43Z",
+      "description": "A \"live\" errata list for Perl 5.12.0",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "lwp--useragent--determined",
+      "url": "https://github.com/obra/lwp--useragent--determined",
+      "stars": 11,
+      "language": "Perl",
+      "updated_at": "2012-05-21T00:43:32Z",
+      "description": "LWP::UserAgent::Determined for cpan",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "triggered-whisper",
+      "url": "https://github.com/obra/triggered-whisper",
+      "stars": 10,
+      "language": "Kotlin",
+      "updated_at": "2026-02-08T01:03:37Z",
+      "description": "Controller-optimized fork of Whisper To Input for hands-free AR terminal workflows",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "unsavory-epub-hacks",
+      "url": "https://github.com/obra/unsavory-epub-hacks",
+      "stars": 10,
+      "language": "Perl",
+      "updated_at": "2009-09-24T15:47:56Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "agent-building-playbook",
+      "url": "https://github.com/obra/agent-building-playbook",
+      "stars": 10,
+      "language": "Shell",
+      "updated_at": "2026-07-05T18:17:15Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "blogosphere",
+      "url": "https://github.com/obra/blogosphere",
+      "stars": 9,
+      "language": "TypeScript",
+      "updated_at": "2026-09-24T17:40:42Z",
+      "description": "Local-first, multi-platform blogging client for an 11ty blog that lives in a GitHub repo — the repo is the database",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "syncml",
+      "url": "https://github.com/obra/syncml",
+      "stars": 9,
+      "language": "",
+      "updated_at": "2009-01-25T22:09:27Z",
+      "description": "A pure-perl implementation of a SyncML server",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "wordiest",
+      "url": "https://github.com/obra/wordiest",
+      "stars": 8,
+      "language": "Swift",
+      "updated_at": "2025-12-28T17:21:57Z",
+      "description": "Wordiest iOS port",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "amplifier-module-hooks-concise-display",
+      "url": "https://github.com/obra/amplifier-module-hooks-concise-display",
+      "stars": 8,
+      "language": "Python",
+      "updated_at": "2026-02-01T06:22:30Z",
+      "description": "Cleaner, more condensed terminal output for Amplifier sessions",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "tools",
+      "url": "https://github.com/obra/tools",
+      "stars": 7,
+      "language": "HTML",
+      "updated_at": "2026-06-06T02:54:56Z",
+      "description": "Assorted useful tools, almost entirely generated using LLMs",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "kata",
+      "url": "https://github.com/obra/kata",
+      "stars": 7,
+      "language": "Go",
+      "updated_at": "2026-05-12T01:05:35Z",
+      "description": "Local-first issue tracking for AI-assisted software work, with an agent-friendly CLI and human-facing TUI",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "scan-to-model",
+      "url": "https://github.com/obra/scan-to-model",
+      "stars": 7,
+      "language": "Python",
+      "updated_at": "2026-09-27T03:21:11Z",
+      "description": "Evidence-driven scan reconstruction skills and local tools for Codex and Blender",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "macos-ui-cli",
+      "url": "https://github.com/obra/macos-ui-cli",
+      "stars": 7,
+      "language": "Swift",
+      "updated_at": "2025-03-31T19:01:51Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "comic-ocr",
+      "url": "https://github.com/obra/comic-ocr",
+      "stars": 7,
+      "language": "Python",
+      "updated_at": "2026-02-13T01:22:50Z",
+      "description": "OCR comic strips on macOS using Apple Vision, then clean up transcripts with Claude",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "bin",
+      "url": "https://github.com/obra/bin",
+      "stars": 7,
+      "language": "C",
+      "updated_at": "2025-01-28T22:44:39Z",
+      "description": "Random scripts in my ~/bin",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "LLM.swift",
+      "url": "https://github.com/obra/LLM.swift",
+      "stars": 6,
+      "language": "C++",
+      "updated_at": "2026-04-17T19:13:39Z",
+      "description": "Fork of eastriverlee/LLM.swift with Qwen support fixes",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "amplifier",
+      "url": "https://github.com/obra/amplifier",
+      "stars": 6,
+      "language": "",
+      "updated_at": "2026-02-01T06:26:50Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "swift-macos-tap-detection",
+      "url": "https://github.com/obra/swift-macos-tap-detection",
+      "stars": 6,
+      "language": "Swift",
+      "updated_at": "2025-04-11T23:01:52Z",
+      "description": "A Swift package for detecting key taps and holds on macOS, with support for special keys like Globe/Fn and both shift keys",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "git-rebase-extract-file",
+      "url": "https://github.com/obra/git-rebase-extract-file",
+      "stars": 6,
+      "language": "Go",
+      "updated_at": "2025-09-03T01:05:10Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "crosspoint-reader",
+      "url": "https://github.com/obra/crosspoint-reader",
+      "stars": 5,
+      "language": "C",
+      "updated_at": "2026-08-01T21:20:17Z",
+      "description": "Firmware for the Xteink X4 e-paper display reader",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "electron-builder",
+      "url": "https://github.com/obra/electron-builder",
+      "stars": 5,
+      "language": "TypeScript",
+      "updated_at": "2022-06-03T02:56:06Z",
+      "description": "A complete solution to package and build a ready for distribution Electron app with “auto update” support out of the box",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "homedir-manager",
+      "url": "https://github.com/obra/homedir-manager",
+      "stars": 5,
+      "language": "Swift",
+      "updated_at": "2026-06-07T20:12:52Z",
+      "description": "Symlink-deploy and audit your dotfiles content repos, plus a macOS defaults helper. POSIX sh + Swift. (AI-written, unreviewed.)",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "llm-prices",
+      "url": "https://github.com/obra/llm-prices",
+      "stars": 5,
+      "language": "HTML",
+      "updated_at": "2025-06-12T21:12:47Z",
+      "description": "Prices of various LLMs",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "msgvault",
+      "url": "https://github.com/obra/msgvault",
+      "stars": 5,
+      "language": "Go",
+      "updated_at": "2026-07-14T17:12:57Z",
+      "description": "Archive a lifetime of email and chat. Offline search, analytics, and AI query over your full message history. Powered by SQLite and DuckDB",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "freshell",
+      "url": "https://github.com/obra/freshell",
+      "stars": 4,
+      "language": "TypeScript",
+      "updated_at": "2026-07-18T05:16:19Z",
+      "description": "The Agentic IDE (or, the loving child of tmux and claude code)",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ink",
+      "url": "https://github.com/obra/ink",
+      "stars": 4,
+      "language": "TypeScript",
+      "updated_at": "2025-07-27T10:11:04Z",
+      "description": "🌈 React for interactive command-line apps",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "apple-on-device-openai",
+      "url": "https://github.com/obra/apple-on-device-openai",
+      "stars": 4,
+      "language": "Swift",
+      "updated_at": "2025-10-02T23:24:18Z",
+      "description": "OpenAI-compatible API server for Apple on-device models",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "kindling",
+      "url": "https://github.com/obra/kindling",
+      "stars": 4,
+      "language": "",
+      "updated_at": "2009-03-29T17:41:47Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "amplifier-app-cli",
+      "url": "https://github.com/obra/amplifier-app-cli",
+      "stars": 4,
+      "language": "Python",
+      "updated_at": "2026-01-31T21:25:21Z",
+      "description": "Reference implementation of CLI interface for Amplifier project",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "remux",
+      "url": "https://github.com/obra/remux",
+      "stars": 4,
+      "language": "Swift",
+      "updated_at": "2026-08-20T06:19:02Z",
+      "description": "Native iOS tmux client with a mobile-first UI for persistent terminal sessions.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "amplifier-module-hooks-streaming-ui",
+      "url": "https://github.com/obra/amplifier-module-hooks-streaming-ui",
+      "stars": 4,
+      "language": "Python",
+      "updated_at": "2026-02-01T01:21:01Z",
+      "description": "Reference implementation of a streaming UI hook module for the Amplifier project",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "amplifier-frontend-ent",
+      "url": "https://github.com/obra/amplifier-frontend-ent",
+      "stars": 4,
+      "language": "Python",
+      "updated_at": "2026-01-13T07:00:24Z",
+      "description": "Minimal scaffold for an Ent JSON-RPC agent server backed by Amplifier",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "keyboardio-tariff-blog-post",
+      "url": "https://github.com/obra/keyboardio-tariff-blog-post",
+      "stars": 4,
+      "language": "HTML",
+      "updated_at": "2025-04-10T17:19:03Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "sigma-fp-automation",
+      "url": "https://github.com/obra/sigma-fp-automation",
+      "stars": 4,
+      "language": "Python",
+      "updated_at": "2024-04-11T20:38:23Z",
+      "description": "Tools for automating my sigma fp. Very unpolished",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Imperfect-Board",
+      "url": "https://github.com/obra/Imperfect-Board",
+      "stars": 4,
+      "language": "",
+      "updated_at": "2024-01-07T20:24:07Z",
+      "description": "A quick reimplementation of the Perf+ perfboard design",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "insanitty",
+      "url": "https://github.com/obra/insanitty",
+      "stars": 4,
+      "language": "Swift",
+      "updated_at": "2026-06-30T22:27:16Z",
+      "description": "Native Linux (GTK4/libadwaita) terminal workspace manager — a port of Fantastty, built on embedded Ghostty with tmux-backed workspaces and a QUIC remote engine.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "DialApp",
+      "url": "https://github.com/obra/DialApp",
+      "stars": 4,
+      "language": "Swift",
+      "updated_at": "2021-12-27T18:53:06Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "homebrew-tap",
+      "url": "https://github.com/obra/homebrew-tap",
+      "stars": 3,
+      "language": "Ruby",
+      "updated_at": "2025-11-30T01:19:48Z",
+      "description": "Homebrew tap for packnplay",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "attractor",
+      "url": "https://github.com/obra/attractor",
+      "stars": 3,
+      "language": "",
+      "updated_at": "2026-03-17T21:33:21Z",
+      "description": "nlspec of StrongDM's Attractor, a non-interactive Coding Agent sufficient for use in a Software Factory",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "picksandshovels",
+      "url": "https://github.com/obra/picksandshovels",
+      "stars": 3,
+      "language": "JavaScript",
+      "updated_at": "2026-10-12T04:11:24Z",
+      "description": "PICKS & SHOVELS: a pixel-art game about the AI gold rush. Sell the GPUs, keep p(doom) under 100%.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "acp-relay",
+      "url": "https://github.com/obra/acp-relay",
+      "stars": 3,
+      "language": "Go",
+      "updated_at": "2025-10-27T06:03:45Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "electron-test-app",
+      "url": "https://github.com/obra/electron-test-app",
+      "stars": 3,
+      "language": "JavaScript",
+      "updated_at": "2023-03-12T06:32:13Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "erb-test",
+      "url": "https://github.com/obra/erb-test",
+      "stars": 3,
+      "language": "",
+      "updated_at": "2022-06-04T00:42:05Z",
+      "description": "not the droids you're looking for",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "big-macro-pad",
+      "url": "https://github.com/obra/big-macro-pad",
+      "stars": 3,
+      "language": "",
+      "updated_at": "2021-12-10T07:38:18Z",
+      "description": "A quick and dirty 8x9 macro pad using a GD32F303 MCU",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Adafruit_nRF52_Arduino",
+      "url": "https://github.com/obra/Adafruit_nRF52_Arduino",
+      "stars": 3,
+      "language": "C",
+      "updated_at": "2025-04-29T16:27:35Z",
+      "description": "Adafruit code for the Nordic nRF52 BLE SoC on Arduino",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Adafruit_nRF52_Bootloader",
+      "url": "https://github.com/obra/Adafruit_nRF52_Bootloader",
+      "stars": 3,
+      "language": "C",
+      "updated_at": "2025-03-02T21:37:24Z",
+      "description": "USB-enabled bootloaders for the nRF52 BLE SoC chips",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mutter-butter",
+      "url": "https://github.com/obra/mutter-butter",
+      "stars": 3,
+      "language": "JavaScript",
+      "updated_at": "2026-04-11T00:38:59Z",
+      "description": "GNOME Shell extension for grid-based window management with live-scaling stamps",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "whisper-asr-webservice",
+      "url": "https://github.com/obra/whisper-asr-webservice",
+      "stars": 3,
+      "language": "Python",
+      "updated_at": "2023-10-03T21:20:33Z",
+      "description": "OpenAI Whisper ASR Webservice API",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Chrysalis-test",
+      "url": "https://github.com/obra/Chrysalis-test",
+      "stars": 3,
+      "language": "JavaScript",
+      "updated_at": "2023-03-15T22:13:12Z",
+      "description": "Graphical configurator for Kaleidoscope-powered keyboards",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "keyswitch-kicad-library",
+      "url": "https://github.com/obra/keyswitch-kicad-library",
+      "stars": 3,
+      "language": "Python",
+      "updated_at": "2021-12-10T18:30:45Z",
+      "description": "KiCad keyboard switch footprints library",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "keyboard-hardware",
+      "url": "https://github.com/obra/keyboard-hardware",
+      "stars": 3,
+      "language": "",
+      "updated_at": "2013-04-14T17:28:14Z",
+      "description": "Hardware designs for the open keyboards I'm making",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "arduino-cli",
+      "url": "https://github.com/obra/arduino-cli",
+      "stars": 3,
+      "language": "Go",
+      "updated_at": "2022-03-04T05:39:10Z",
+      "description": "Arduino command line tool",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Playtris",
+      "url": "https://github.com/obra/Playtris",
+      "stars": 3,
+      "language": "Lua",
+      "updated_at": "2022-05-08T18:49:58Z",
+      "description": "A random tetrimino game made for the Playdate console.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Hashem",
+      "url": "https://github.com/obra/Hashem",
+      "stars": 3,
+      "language": "C++",
+      "updated_at": "2015-09-01T10:18:51Z",
+      "description": "A minimalist Chinese steno machine",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "electron-universal",
+      "url": "https://github.com/obra/electron-universal",
+      "stars": 3,
+      "language": "TypeScript",
+      "updated_at": "2022-06-01T19:39:09Z",
+      "description": "Create Universal macOS applications from two x64 and arm64 Electron applications",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pi-gen-fabmo",
+      "url": "https://github.com/obra/pi-gen-fabmo",
+      "stars": 3,
+      "language": "Shell",
+      "updated_at": "2022-06-16T21:23:11Z",
+      "description": "Tool used to create an unofficial Raspberry Pi OS fabmo image",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "syncwith.us",
+      "url": "https://github.com/obra/syncwith.us",
+      "stars": 3,
+      "language": "Perl",
+      "updated_at": "2009-02-18T04:55:45Z",
+      "description": "The code that builds syncwith.us",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "FabMo-Engine",
+      "url": "https://github.com/obra/FabMo-Engine",
+      "stars": 3,
+      "language": "JavaScript",
+      "updated_at": "2022-06-17T21:48:25Z",
+      "description": "The FabMo Engine - A software and apps ecosystem for digital fabrication.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ievms",
+      "url": "https://github.com/obra/ievms",
+      "stars": 3,
+      "language": "Shell",
+      "updated_at": "2011-12-24T09:00:28Z",
+      "description": "Automated installation of the Microsoft IE App Compat virtual machines",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "config-ini",
+      "url": "https://github.com/obra/config-ini",
+      "stars": 3,
+      "language": "Perl",
+      "updated_at": "2009-01-16T15:11:58Z",
+      "description": "Config::INI perl module",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "FlashStorage",
+      "url": "https://github.com/obra/FlashStorage",
+      "stars": 2,
+      "language": "C++",
+      "updated_at": "2021-01-02T05:59:07Z",
+      "description": "A convenient way to store data into Flash memory on the ATSAMD21 and ATSAMD51 processor family",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "GD32F303",
+      "url": "https://github.com/obra/GD32F303",
+      "stars": 2,
+      "language": "C",
+      "updated_at": "2021-05-25T08:35:08Z",
+      "description": "L4 R4：GigaDevice Cortex-M4 120MHz MCU (GD32F303)",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "libopencm3-gd32f3",
+      "url": "https://github.com/obra/libopencm3-gd32f3",
+      "stars": 2,
+      "language": "C",
+      "updated_at": "2021-03-29T12:03:56Z",
+      "description": "Open source ARM Cortex-M microcontroller library",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "temp_kbio_aruduino_gd32",
+      "url": "https://github.com/obra/temp_kbio_aruduino_gd32",
+      "stars": 2,
+      "language": "C",
+      "updated_at": "2021-05-30T18:03:53Z",
+      "description": "Arduino STM32. Hardware files to support STM32 boards, on Arduino IDE 1.8.x including LeafLabs Maple and other generic STM32F103 boards",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rms-open-letter.github.io",
+      "url": "https://github.com/obra/rms-open-letter.github.io",
+      "stars": 2,
+      "language": "HTML",
+      "updated_at": "2021-03-26T01:56:11Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ArduinoCore-mbed",
+      "url": "https://github.com/obra/ArduinoCore-mbed",
+      "stars": 2,
+      "language": "C",
+      "updated_at": "2021-06-10T16:35:10Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "arduino-pico",
+      "url": "https://github.com/obra/arduino-pico",
+      "stars": 2,
+      "language": "C++",
+      "updated_at": "2021-07-22T02:03:29Z",
+      "description": "Raspberry Pi Pico Arduino core, for all RP2040 boards",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rtx-theme-rudder",
+      "url": "https://github.com/obra/rtx-theme-rudder",
+      "stars": 2,
+      "language": "CSS",
+      "updated_at": "2013-07-30T17:30:20Z",
+      "description": "temporary prototype",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "kicad-footprint-kailh-pg1425-x-switch",
+      "url": "https://github.com/obra/kicad-footprint-kailh-pg1425-x-switch",
+      "stars": 2,
+      "language": "",
+      "updated_at": "2019-06-24T06:05:56Z",
+      "description": "KiCad footprint for Kailh PG1425 X Switch",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "locale-maketext-lexicon",
+      "url": "https://github.com/obra/locale-maketext-lexicon",
+      "stars": 2,
+      "language": "Perl",
+      "updated_at": "2010-03-02T15:47:49Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Shipwrong",
+      "url": "https://github.com/obra/Shipwrong",
+      "stars": 2,
+      "language": "Perl",
+      "updated_at": "2010-03-02T22:10:06Z",
+      "description": "Perl build and deployment system that uses Shipwright incorrectly.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "cherrymaint",
+      "url": "https://github.com/obra/cherrymaint",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2010-05-03T12:43:55Z",
+      "description": "Webapp to track cherry-pick status of patches in a git trunk",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "cpanpm",
+      "url": "https://github.com/obra/cpanpm",
+      "stars": 2,
+      "language": "Perl",
+      "updated_at": "2011-04-21T04:48:26Z",
+      "description": "CPAN.pm",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "cwac-parcel",
+      "url": "https://github.com/obra/cwac-parcel",
+      "stars": 2,
+      "language": "Java",
+      "updated_at": "2011-12-09T19:41:26Z",
+      "description": "CommonsWare Android Components: ParcelHelper",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "cwac-viewswiper",
+      "url": "https://github.com/obra/cwac-viewswiper",
+      "stars": 2,
+      "language": "Java",
+      "updated_at": "2011-12-09T19:41:44Z",
+      "description": "CWAC ViewSwiper: Gesture-Driven ViewFlipper Replacement",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "heroku-buildpack-perl",
+      "url": "https://github.com/obra/heroku-buildpack-perl",
+      "stars": 2,
+      "language": "Shell",
+      "updated_at": "2011-12-16T23:04:10Z",
+      "description": "Buildpack for mod_perl",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "sshuttle",
+      "url": "https://github.com/obra/sshuttle",
+      "stars": 2,
+      "language": "Python",
+      "updated_at": "2012-01-09T00:16:52Z",
+      "description": "Transparent proxy server that works as a poor man's VPN. Forwards over ssh. Doesn't require admin. Works with Linux and MacOS. Supports DNS tunneling.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "KeyV2",
+      "url": "https://github.com/obra/KeyV2",
+      "stars": 2,
+      "language": "OpenSCAD",
+      "updated_at": "2019-12-16T22:20:20Z",
+      "description": "KeyV2: A Parametric Mechanical Keycap Library",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "KeyRemap4MacBook",
+      "url": "https://github.com/obra/KeyRemap4MacBook",
+      "stars": 2,
+      "language": "C++",
+      "updated_at": "2012-02-13T05:44:35Z",
+      "description": "KeyRemap4MacBook is a powerful utility for keyboard customization.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pt",
+      "url": "https://github.com/obra/pt",
+      "stars": 2,
+      "language": "Ruby",
+      "updated_at": "2012-03-27T14:44:45Z",
+      "description": "Minimal client to use Pivotal Tracker from the console.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "z",
+      "url": "https://github.com/obra/z",
+      "stars": 2,
+      "language": "Shell",
+      "updated_at": "2012-07-04T23:06:17Z",
+      "description": "z is the new j, yo",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ShareJS",
+      "url": "https://github.com/obra/ShareJS",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2012-11-01T17:14:38Z",
+      "description": "Collaborative editing in any app",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "firmware",
+      "url": "https://github.com/obra/firmware",
+      "stars": 2,
+      "language": "C",
+      "updated_at": "2013-02-06T22:01:58Z",
+      "description": "humble hacker firmware",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "subvim",
+      "url": "https://github.com/obra/subvim",
+      "stars": 2,
+      "language": "C++",
+      "updated_at": "2013-04-11T00:43:05Z",
+      "description": "Vim customized to be like SublimeText",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "sovereign",
+      "url": "https://github.com/obra/sovereign",
+      "stars": 2,
+      "language": "",
+      "updated_at": "2013-08-19T22:39:44Z",
+      "description": "A set of Ansible playbooks to build and maintain your own private cloud: email, calendar, contacts, file sync, IRC bouncer, VPN, and more.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Arduino",
+      "url": "https://github.com/obra/Arduino",
+      "stars": 2,
+      "language": "HTML",
+      "updated_at": "2015-10-22T22:27:12Z",
+      "description": "open-source electronics prototyping platform",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Kaleidoscope-Hardware-Shortcut",
+      "url": "https://github.com/obra/Kaleidoscope-Hardware-Shortcut",
+      "stars": 2,
+      "language": "C++",
+      "updated_at": "2017-08-22T19:10:37Z",
+      "description": "Shortcut hardware support for Kaleidoscope",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "cwac-touchlist",
+      "url": "https://github.com/obra/cwac-touchlist",
+      "stars": 2,
+      "language": "Java",
+      "updated_at": "2012-02-15T13:07:40Z",
+      "description": "CWAC TouchListView: A Drag-and-Drop Capable ListView",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pidcodes.github.com",
+      "url": "https://github.com/obra/pidcodes.github.com",
+      "stars": 2,
+      "language": "CSS",
+      "updated_at": "2021-09-02T03:20:47Z",
+      "description": "Website for pid.codes",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "fsck.com",
+      "url": "https://github.com/obra/fsck.com",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2013-07-18T14:20:01Z",
+      "description": "Personal Website",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "kicad-jlcpcb-tools",
+      "url": "https://github.com/obra/kicad-jlcpcb-tools",
+      "stars": 2,
+      "language": "Python",
+      "updated_at": "2022-01-09T01:14:11Z",
+      "description": "Plugin to generate BOM + CPL files for JLCPCB, assigning LCSC part numbers directly from the plugin, query the JLCPCB parts database, lookup datasheets and much more.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "space-banana",
+      "url": "https://github.com/obra/space-banana",
+      "stars": 2,
+      "language": "Makefile",
+      "updated_at": "2022-03-14T18:27:48Z",
+      "description": "https://twitter.com/erinbeess/status/1503424797224677376?s=20&t=_vethJano1TXJZ3IsSkWwQ",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "arq_restore",
+      "url": "https://github.com/obra/arq_restore",
+      "stars": 2,
+      "language": "C",
+      "updated_at": "2026-06-12T01:28:56Z",
+      "description": "Fork of arqbackup/arq_restore with fixes for modern macOS (namespace-aware XPath, NSCalendarDate removal, UTC SigV4 dates) plus bulk-restore hooks for Arq 7 + S3 + Glacier",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ArduinoCore-API",
+      "url": "https://github.com/obra/ArduinoCore-API",
+      "stars": 2,
+      "language": "C++",
+      "updated_at": "2021-09-30T17:32:04Z",
+      "description": "Hardware independent layer of the Arduino cores",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "remux-ghostty",
+      "url": "https://github.com/obra/remux-ghostty",
+      "stars": 2,
+      "language": "Zig",
+      "updated_at": "2026-07-28T06:05:43Z",
+      "description": "Upstream-based Ghostty repository for embeddable tmux control mode and Remux integration",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "tweet-filter.js",
+      "url": "https://github.com/obra/tweet-filter.js",
+      "stars": 2,
+      "language": "",
+      "updated_at": "2009-06-14T20:14:56Z",
+      "description": "A greasekit plugin for filtering twitter",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "libfprint-egismoc-sdcp",
+      "url": "https://github.com/obra/libfprint-egismoc-sdcp",
+      "stars": 2,
+      "language": "C",
+      "updated_at": "2026-04-27T23:47:26Z",
+      "description": "SDCP-compliant fork of libfprint for EgisTec fingerprint sensors. Forked from Joshua Grisham's work while it's not yet merged upstream.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "uuid-tiny",
+      "url": "https://github.com/obra/uuid-tiny",
+      "stars": 2,
+      "language": "Perl",
+      "updated_at": "2009-08-21T17:50:56Z",
+      "description": "My branch of UUID::Tiny, which itself isn't yet in version control",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "tkmx-client",
+      "url": "https://github.com/obra/tkmx-client",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2026-04-10T23:47:02Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Kaleidoscope-LangPack-Hungarian",
+      "url": "https://github.com/obra/Kaleidoscope-LangPack-Hungarian",
+      "stars": 2,
+      "language": "C++",
+      "updated_at": "2017-06-04T07:36:11Z",
+      "description": "Hungarian language pack for Akela",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "data-uuid",
+      "url": "https://github.com/obra/data-uuid",
+      "stars": 2,
+      "language": "Perl",
+      "updated_at": "2009-06-11T00:13:07Z",
+      "description": "perl library for generating universally unique identifiers",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "known_client",
+      "url": "https://github.com/obra/known_client",
+      "stars": 2,
+      "language": "Java",
+      "updated_at": "2014-10-12T23:24:43Z",
+      "description": "A trivial Cordova client app for withknown.com",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "talks",
+      "url": "https://github.com/obra/talks",
+      "stars": 2,
+      "language": "",
+      "updated_at": "2011-10-12T00:46:44Z",
+      "description": "Non-work-sponsored talks I've given",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "keyboard-layouts",
+      "url": "https://github.com/obra/keyboard-layouts",
+      "stars": 2,
+      "language": "",
+      "updated_at": "2013-02-06T22:13:23Z",
+      "description": "Logical keyboard layouts. Possibly without accompanying hardware",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "beepy-hardware",
+      "url": "https://github.com/obra/beepy-hardware",
+      "stars": 2,
+      "language": "",
+      "updated_at": "2023-07-30T01:28:06Z",
+      "description": "Beepberry Hardware",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "GlassAirplane",
+      "url": "https://github.com/obra/GlassAirplane",
+      "stars": 2,
+      "language": "Shell",
+      "updated_at": "2013-06-21T01:38:33Z",
+      "description": "An airplane mode toggle for Google Glass",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "multiarch-crossbuild",
+      "url": "https://github.com/obra/multiarch-crossbuild",
+      "stars": 2,
+      "language": "Dockerfile",
+      "updated_at": "2022-03-21T07:38:14Z",
+      "description": "🌍 multiarch cross compiling environments",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "avrdude",
+      "url": "https://github.com/obra/avrdude",
+      "stars": 2,
+      "language": "HTML",
+      "updated_at": "2022-02-20T17:17:56Z",
+      "description": "AVRDUDE for Windows",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "force-curve-tester",
+      "url": "https://github.com/obra/force-curve-tester",
+      "stars": 1,
+      "language": "Perl",
+      "updated_at": "2019-10-23T19:54:19Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "pump.io",
+      "url": "https://github.com/obra/pump.io",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2013-06-10T02:35:29Z",
+      "description": "Social server with an ActivityStreams API",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "glass_share",
+      "url": "https://github.com/obra/glass_share",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2013-06-26T04:45:59Z",
+      "description": "Share Google Glass media to an email address",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Slic3r",
+      "url": "https://github.com/obra/Slic3r",
+      "stars": 1,
+      "language": "Perl",
+      "updated_at": "2013-04-08T00:00:27Z",
+      "description": "G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "authenticator",
+      "url": "https://github.com/obra/authenticator",
+      "stars": 1,
+      "language": "C",
+      "updated_at": "2013-07-15T14:15:54Z",
+      "description": "Google Two-Step Authenticator for Pebble",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "SX1509_IO-Expander",
+      "url": "https://github.com/obra/SX1509_IO-Expander",
+      "stars": 1,
+      "language": "Arduino",
+      "updated_at": "2013-03-14T15:40:16Z",
+      "description": "Arduino library and hardware files for the SX1509 IO Expander Breakout board.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "stately",
+      "url": "https://github.com/obra/stately",
+      "stars": 1,
+      "language": "",
+      "updated_at": "2013-02-06T19:55:21Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "AVR-Keyboard",
+      "url": "https://github.com/obra/AVR-Keyboard",
+      "stars": 1,
+      "language": "C",
+      "updated_at": "2012-12-26T08:20:22Z",
+      "description": "USB Keyboard firmware for Atmel AVR microcontrollers.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "hackfoldr",
+      "url": "https://github.com/obra/hackfoldr",
+      "stars": 1,
+      "language": "LiveScript",
+      "updated_at": "2013-04-10T18:01:11Z",
+      "description": "organize gdoc and hackpad for hackathons",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "nanotweeter",
+      "url": "https://github.com/obra/nanotweeter",
+      "stars": 1,
+      "language": "Java",
+      "updated_at": "2012-09-05T08:10:58Z",
+      "description": "clone of http://code.google.com/p/nanotweeter",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "cwac-richedit",
+      "url": "https://github.com/obra/cwac-richedit",
+      "stars": 1,
+      "language": "Java",
+      "updated_at": "2012-03-15T17:41:21Z",
+      "description": "CWAC RichEditText component",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "clippy-jquery",
+      "url": "https://github.com/obra/clippy-jquery",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2012-06-15T21:42:41Z",
+      "description": "A jQuery plugin to make clippy easy and quick to use",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "irssiconnectbot",
+      "url": "https://github.com/obra/irssiconnectbot",
+      "stars": 1,
+      "language": "Java",
+      "updated_at": "2012-04-01T13:01:00Z",
+      "description": "Irssi ConnectBot is a modified version of the popular ConnectBot SSH client for Android.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Algernon-Model01-sketch",
+      "url": "https://github.com/obra/Algernon-Model01-sketch",
+      "stars": 1,
+      "language": "C++",
+      "updated_at": "2017-05-22T06:26:41Z",
+      "description": "algernon's firmware Sketch for the Model 01",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "HoloEverywhere",
+      "url": "https://github.com/obra/HoloEverywhere",
+      "stars": 1,
+      "language": "Java",
+      "updated_at": "2012-03-18T17:34:00Z",
+      "description": "Android: trying to port Holo Theme to Android 1.6+",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Akela",
+      "url": "https://github.com/obra/Akela",
+      "stars": 1,
+      "language": "C++",
+      "updated_at": "2016-11-02T21:11:13Z",
+      "description": "Animated Keyboard Extension Library for Arduino",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Chorder",
+      "url": "https://github.com/obra/Chorder",
+      "stars": 1,
+      "language": "",
+      "updated_at": "2016-01-24T08:02:18Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "tmk_keyboard",
+      "url": "https://github.com/obra/tmk_keyboard",
+      "stars": 1,
+      "language": "C",
+      "updated_at": "2012-01-05T16:39:37Z",
+      "description": "keyboard controller firmware for Atmel AVR USB family",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "colemak",
+      "url": "https://github.com/obra/colemak",
+      "stars": 1,
+      "language": "Vim Script",
+      "updated_at": "2011-12-12T21:43:28Z",
+      "description": "Rebindings to vim like applications for colemak",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "post",
+      "url": "https://github.com/obra/post",
+      "stars": 1,
+      "language": "Shell",
+      "updated_at": "2014-10-08T07:00:26Z",
+      "description": "A minimalist blogging tool, inspired by @ftrain",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "KindleTool",
+      "url": "https://github.com/obra/KindleTool",
+      "stars": 1,
+      "language": "C",
+      "updated_at": "2011-10-29T03:19:22Z",
+      "description": "Tool for creating/extracting Kindle updates and more",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "bumpywatch",
+      "url": "https://github.com/obra/bumpywatch",
+      "stars": 1,
+      "language": "C",
+      "updated_at": "2014-03-11T18:18:46Z",
+      "description": "A hack of the Pebble 2.0 SDK's rumbletime",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "temp-jifty-angular-demo",
+      "url": "https://github.com/obra/temp-jifty-angular-demo",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2012-11-28T03:10:16Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "temp-lufa-hacking",
+      "url": "https://github.com/obra/temp-lufa-hacking",
+      "stars": 1,
+      "language": "C",
+      "updated_at": "2017-05-25T07:23:54Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "powertop",
+      "url": "https://github.com/obra/powertop",
+      "stars": 1,
+      "language": "C++",
+      "updated_at": "2013-08-12T18:53:10Z",
+      "description": "The Linux PowerTOP tool -- please post patches to the mailing list instead of using github pull requests",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "yrmcds",
+      "url": "https://github.com/obra/yrmcds",
+      "stars": 1,
+      "language": "C++",
+      "updated_at": "2013-08-02T04:25:12Z",
+      "description": "memcached compatible KVS with master/slave replication.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "digitalIOPerformance",
+      "url": "https://github.com/obra/digitalIOPerformance",
+      "stars": 1,
+      "language": "C++",
+      "updated_at": "2013-09-01T22:40:35Z",
+      "description": "An Arduino library for high performance digital I/O with no code changes necessary. Inspired by digitalWriteFast.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "github-todotxt",
+      "url": "https://github.com/obra/github-todotxt",
+      "stars": 1,
+      "language": "CoffeeScript",
+      "updated_at": "2016-06-28T18:53:39Z",
+      "description": "Sync Github issues with todo.txt",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mighty-1284p",
+      "url": "https://github.com/obra/mighty-1284p",
+      "stars": 1,
+      "language": "C++",
+      "updated_at": "2016-09-14T01:17:57Z",
+      "description": "Mighty 1284P Platform for Arduino",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "plotkicadsch",
+      "url": "https://github.com/obra/plotkicadsch",
+      "stars": 1,
+      "language": "OCaml",
+      "updated_at": "2016-12-21T23:15:47Z",
+      "description": "This project aims at being able to export Kicad Sch files to structured picture files",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "twitterpub",
+      "url": "https://github.com/obra/twitterpub",
+      "stars": 1,
+      "language": "Go",
+      "updated_at": "2017-09-22T22:56:27Z",
+      "description": "a Twitter ActivityPub gateway",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "keyboardio-xkb",
+      "url": "https://github.com/obra/keyboardio-xkb",
+      "stars": 1,
+      "language": "Shell",
+      "updated_at": "2017-11-03T14:40:27Z",
+      "description": "Some XKB files for use with the Keyboardio Model 01",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "cherry-mx-keycaps",
+      "url": "https://github.com/obra/cherry-mx-keycaps",
+      "stars": 1,
+      "language": "",
+      "updated_at": "2018-02-12T16:05:38Z",
+      "description": "3D models of Chery MX keycaps",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "tweet-faves-py",
+      "url": "https://github.com/obra/tweet-faves-py",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2018-10-29T16:58:21Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "keyboard-layouter",
+      "url": "https://github.com/obra/keyboard-layouter",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2019-04-02T14:42:36Z",
+      "description": "Footprint auto placement plugin for keyboard layout",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "usb2-power-hub",
+      "url": "https://github.com/obra/usb2-power-hub",
+      "stars": 1,
+      "language": "Makefile",
+      "updated_at": "2019-11-04T02:25:08Z",
+      "description": "4-Port High Power USB 2.0 Hub",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "SOICbite",
+      "url": "https://github.com/obra/SOICbite",
+      "stars": 1,
+      "language": "",
+      "updated_at": "2019-11-11T13:08:16Z",
+      "description": "A compact PCB footprint which allows SOIC test clips to be used as a space-efficient programming and debugging connector",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "MX_Alps_Hybrid",
+      "url": "https://github.com/obra/MX_Alps_Hybrid",
+      "stars": 1,
+      "language": "",
+      "updated_at": "2019-11-24T18:13:11Z",
+      "description": "KiCad Library of custom MX-Alps footprints",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "GD32F103",
+      "url": "https://github.com/obra/GD32F103",
+      "stars": 1,
+      "language": "C",
+      "updated_at": "2020-04-27T09:43:00Z",
+      "description": "L2：cortex M3 108MHz MCU (GD32F10x)",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ArduinoTrace",
+      "url": "https://github.com/obra/ArduinoTrace",
+      "stars": 1,
+      "language": "C++",
+      "updated_at": "2020-05-18T07:26:42Z",
+      "description": "📓 A dead-simple tracing library to debug your Arduino programs",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "martian-clock",
+      "url": "https://github.com/obra/martian-clock",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2020-07-28T19:09:25Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "aqi-wtf",
+      "url": "https://github.com/obra/aqi-wtf",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2020-10-09T03:55:39Z",
+      "description": "What is the AQI near me right now?!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "DebugEdge",
+      "url": "https://github.com/obra/DebugEdge",
+      "stars": 1,
+      "language": "",
+      "updated_at": "2020-12-03T00:03:51Z",
+      "description": "A small bridge to link a SWD programmer to an AVX Open Ended Card Edge connector.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "temp-sp-codex",
+      "url": "https://github.com/obra/temp-sp-codex",
+      "stars": 1,
+      "language": "Shell",
+      "updated_at": "2026-06-22T18:14:49Z",
+      "description": "Temporary Superpowers Codex marketplace test repo",
+      "fork": false,
+      "layer": "tool",
+      "category": "开发基础设施"
+    },
+    {
+      "name": "toy-c-compiler",
+      "url": "https://github.com/obra/toy-c-compiler",
+      "stars": 1,
+      "language": "Swift",
+      "updated_at": "2026-08-26T04:11:18Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "morning-routine-board",
+      "url": "https://github.com/obra/morning-routine-board",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2026-10-09T20:07:40Z",
+      "description": "Morning routine checklist for two kids on a wall-mounted iPad",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Manual",
+      "url": "https://github.com/obra/Manual",
+      "stars": 1,
+      "language": "",
+      "updated_at": "2016-03-02T07:32:08Z",
+      "description": "You were probably looking for our website... this is it. We moved our website here, so you can see the insides of how we work.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mlx-audio-swift",
+      "url": "https://github.com/obra/mlx-audio-swift",
+      "stars": 1,
+      "language": "Swift",
+      "updated_at": "2026-07-27T00:50:16Z",
+      "description": "A modular Swift SDK for audio processing with MLX on Apple Silicon",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "betrusted-wiki",
+      "url": "https://github.com/obra/betrusted-wiki",
+      "stars": 1,
+      "language": "",
+      "updated_at": "2019-11-16T18:21:02Z",
+      "description": "Wiki for the betrusted project",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "twbudget",
+      "url": "https://github.com/obra/twbudget",
+      "stars": 1,
+      "language": "LiveScript",
+      "updated_at": "2014-09-28T23:11:47Z",
+      "description": "twbudget hacks for yahoo hackday tw 2012",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "simavr",
+      "url": "https://github.com/obra/simavr",
+      "stars": 1,
+      "language": "C",
+      "updated_at": "2016-02-25T01:13:55Z",
+      "description": "simavr is a lean, mean and hackable AVR simulator for linux & OSX",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "is31io7326_clone",
+      "url": "https://github.com/obra/is31io7326_clone",
+      "stars": 1,
+      "language": "C",
+      "updated_at": "2015-10-19T20:32:29Z",
+      "description": "Functional clone of the IS31IO7326 using an ATtiny48",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "utron",
+      "url": "https://github.com/obra/utron",
+      "stars": 1,
+      "language": "Go",
+      "updated_at": "2015-09-27T05:32:11Z",
+      "description": "A lightweight MVC framework for Go(Golang)",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "autohotkey-windows-mac-keyboard",
+      "url": "https://github.com/obra/autohotkey-windows-mac-keyboard",
+      "stars": 1,
+      "language": "AutoHotkey",
+      "updated_at": "2013-09-26T17:02:24Z",
+      "description": "AutoHotkey Mappings to emulate OSX behaviour with a Mac keyboard on Windows",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "WiFiDiary",
+      "url": "https://github.com/obra/WiFiDiary",
+      "stars": 1,
+      "language": "Shell",
+      "updated_at": "2015-06-07T21:28:25Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "magma.classic",
+      "url": "https://github.com/obra/magma.classic",
+      "stars": 1,
+      "language": "",
+      "updated_at": "2015-01-01T10:50:43Z",
+      "description": "The magma server daemon, classic edition, which supports server side encryption, SMTP, POP, IMAP and HTTP (with a JSON-RPC interface for the included webmail client).",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "homebrew-avr",
+      "url": "https://github.com/obra/homebrew-avr",
+      "stars": 1,
+      "language": "Ruby",
+      "updated_at": "2016-02-25T01:43:23Z",
+      "description": "AVR toolchain for homebrew",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Fastboot-Kindle",
+      "url": "https://github.com/obra/Fastboot-Kindle",
+      "stars": 1,
+      "language": "C",
+      "updated_at": "2014-08-27T15:05:24Z",
+      "description": "Fastboot tool for the Kindle",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "phonegap-topcoat-angular-template",
+      "url": "https://github.com/obra/phonegap-topcoat-angular-template",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2013-10-23T19:02:34Z",
+      "description": "A simple template for starting an Angular JS / PhoneGap / Topcoat based app.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "PS2-Mouse-Arduino",
+      "url": "https://github.com/obra/PS2-Mouse-Arduino",
+      "stars": 0,
+      "language": "C++",
+      "updated_at": "2013-09-15T20:51:42Z",
+      "description": "Arduino/Wiring Library for interfacing with a PS2 mouse.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "homebrew",
+      "url": "https://github.com/obra/homebrew",
+      "stars": 0,
+      "language": "Ruby",
+      "updated_at": "2013-07-06T03:24:06Z",
+      "description": "The missing package manager for OS X.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "goread",
+      "url": "https://github.com/obra/goread",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2013-06-27T07:52:37Z",
+      "description": "google reader clone in go on app engine",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "openfarmgame",
+      "url": "https://github.com/obra/openfarmgame",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2013-06-10T02:27:21Z",
+      "description": "All the fun of subsistence farming brought to life on the federated social web",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Miracle-Grue",
+      "url": "https://github.com/obra/Miracle-Grue",
+      "stars": 0,
+      "language": "C++",
+      "updated_at": "2012-09-22T01:54:55Z",
+      "description": "Workspace for new Toolpathing software.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mousetest",
+      "url": "https://github.com/obra/mousetest",
+      "stars": 0,
+      "language": "C",
+      "updated_at": "2013-05-06T03:06:11Z",
+      "description": "code for driving N35P112 hall-effect linear encoder joystick module on a Teensy 2.0",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "adnw",
+      "url": "https://github.com/obra/adnw",
+      "stars": 0,
+      "language": "C",
+      "updated_at": "2013-02-23T10:43:44Z",
+      "description": "AVR keyboard firmware with PS/2 trackpoint support & macro mode.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ergodox-firmware",
+      "url": "https://github.com/obra/ergodox-firmware",
+      "stars": 0,
+      "language": "C",
+      "updated_at": "2013-02-02T07:47:01Z",
+      "description": "firmware for the ergoDOX keyboard",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "idno",
+      "url": "https://github.com/obra/idno",
+      "stars": 0,
+      "language": "PHP",
+      "updated_at": "2015-12-04T01:12:29Z",
+      "description": "A modern social engine",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "fastclick",
+      "url": "https://github.com/obra/fastclick",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2012-11-22T14:23:57Z",
+      "description": "Polyfill to remove click delays on browsers with touch UIs",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mirror-quickstart-go",
+      "url": "https://github.com/obra/mirror-quickstart-go",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2013-06-05T21:13:41Z",
+      "description": "Google Mirror API's Quickstart for Go",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "heroku-buildpack-perl-1",
+      "url": "https://github.com/obra/heroku-buildpack-perl-1",
+      "stars": 0,
+      "language": "Shell",
+      "updated_at": "2012-08-22T21:50:18Z",
+      "description": "Heroku buildpack to run Perl/PSGI apps using Starman HTTP server",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/obra/superpowers/tree/main/skills",
+    "count": 15,
+    "layers": {
+      "testing": 1,
+      "debugging": 3,
+      "collaboration": 9,
+      "meta": 2
+    },
+    "items": [
+      {
+        "name": "test-driven-development",
+        "layer": "testing",
+        "category": "测试",
+        "repo": "superpowers",
+        "subdir": "skills/test-driven-development",
+        "summary": "RED-GREEN-REFACTOR：先写失败测试，再写最小实现，删掉测试前写的代码",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "systematic-debugging",
+        "layer": "debugging",
+        "category": "调试",
+        "repo": "superpowers",
+        "subdir": "skills/systematic-debugging",
+        "summary": "四阶段根因流程：复现、定位、修复、验证；含根因追踪与纵深防御",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "verification-before-completion",
+        "layer": "debugging",
+        "category": "调试",
+        "repo": "superpowers",
+        "subdir": "skills/verification-before-completion",
+        "summary": "宣布完成前先证明真的修好了，不接受「应该可以」",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "diagnosing-superpowers",
+        "layer": "debugging",
+        "category": "调试",
+        "repo": "superpowers",
+        "subdir": "skills/diagnosing-superpowers",
+        "summary": "会话行为异常时读 transcript，给逐行证据并打包脱敏报告",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "brainstorming",
+        "layer": "collaboration",
+        "category": "协作",
+        "repo": "superpowers",
+        "subdir": "skills/brainstorming",
+        "summary": "动手前先问清意图：一次一个问题，200-300 字复述确认，再定工作量级",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "writing-plans",
+        "layer": "collaboration",
+        "category": "协作",
+        "repo": "superpowers",
+        "subdir": "skills/writing-plans",
+        "summary": "把设计拆成 2-5 分钟的小任务，每个任务带确切路径、完整代码、验证步骤",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "executing-plans",
+        "layer": "collaboration",
+        "category": "协作",
+        "repo": "superpowers",
+        "subdir": "skills/executing-plans",
+        "summary": "在当前会话内顺序执行计划，最后统一审查一次",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "dispatching-parallel-agents",
+        "layer": "collaboration",
+        "category": "协作",
+        "repo": "superpowers",
+        "subdir": "skills/dispatching-parallel-agents",
+        "summary": "并行子 agent 工作流的分发与汇合",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "requesting-code-review",
+        "layer": "collaboration",
+        "category": "协作",
+        "repo": "superpowers",
+        "subdir": "skills/requesting-code-review",
+        "summary": "按计划审查，按严重度报问题；致命问题阻塞进度",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "receiving-code-review",
+        "layer": "collaboration",
+        "category": "协作",
+        "repo": "superpowers",
+        "subdir": "skills/receiving-code-review",
+        "summary": "收到审查意见后的响应与修复纪律",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "using-git-worktrees",
+        "layer": "collaboration",
+        "category": "协作",
+        "repo": "superpowers",
+        "subdir": "skills/using-git-worktrees",
+        "summary": "设计通过后建隔离工作区，跑项目初始化，确认测试基线干净",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "finishing-a-development-branch",
+        "layer": "collaboration",
+        "category": "协作",
+        "repo": "superpowers",
+        "subdir": "skills/finishing-a-development-branch",
+        "summary": "任务完成后验证测试，给出 merge/PR/保留/丢弃选项并清理 worktree",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "subagent-driven-development",
+        "layer": "collaboration",
+        "category": "协作",
+        "repo": "superpowers",
+        "subdir": "skills/subagent-driven-development",
+        "summary": "每个任务派一个新子 agent，两段审查：先规格合规，再代码质量",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "writing-skills",
+        "layer": "meta",
+        "category": "元技能",
+        "repo": "superpowers",
+        "subdir": "skills/writing-skills",
+        "summary": "用 TDD 造 skill：基线失败→最小技能→补漏；含 SDO、反合理化、测试方法",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "using-superpowers",
+        "layer": "meta",
+        "category": "元技能",
+        "repo": "superpowers",
+        "subdir": "skills/using-superpowers",
+        "summary": "技能系统入门：何时读、怎么串",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "技能 TDD（RED-GREEN-REFACTOR）",
+      "kind": "method",
+      "evidence": [
+        "superpowers/writing-skills",
+        "superpowers/test-driven-development",
+        "superpowers-evals"
+      ],
+      "claim": "先跑基线让 agent 违规（RED），再写最小 SKILL.md 让它合规（GREEN），最后针对新借口补漏（REFACTOR）；无失败测试不许写 skill"
+    },
+    {
+      "id": "P2",
+      "name": "SDO：描述只写触发、不写流程",
+      "kind": "method",
+      "evidence": [
+        "superpowers/writing-skills",
+        "the-elements-of-style",
+        "superpowers 全部 skill"
+      ],
+      "claim": "description 一旦概括工作流，agent 会照着描述走而跳过正文；实测把两段审查写成一句话后，agent 只审一次"
+    },
+    {
+      "id": "P3",
+      "name": "反合理化护栏",
+      "kind": "method",
+      "evidence": [
+        "superpowers/writing-skills",
+        "superpowers/test-driven-development",
+        "superpowers/systematic-debugging"
+      ],
+      "claim": "把 agent 在压力下的借口逐条写成「借口/现实」表，再配红旗清单与「违反字面即违反精神」"
+    },
+    {
+      "id": "P4",
+      "name": "单一清单生成多端",
+      "kind": "method",
+      "evidence": [
+        "the-elements-of-style/everyharness",
+        "superpowers",
+        "superpowers-lab"
+      ],
+      "claim": "一个 everyharness.yaml 生成 11 种 harness 的清单与安装文档；validate 对漂移报错，禁止手改生成物"
+    },
+    {
+      "id": "P5",
+      "name": "渐进披露 + token 预算",
+      "kind": "method",
+      "evidence": [
+        "the-elements-of-style",
+        "superpowers/writing-skills",
+        "superpowers"
+      ],
+      "claim": "常驻描述压到 <200 词，重内容进 references 并标注 token 成本（如 12k），上下文紧张时交给子 agent"
+    },
+    {
+      "id": "P6",
+      "name": "稳定核 + 实验田分离",
+      "kind": "method",
+      "evidence": [
+        "superpowers",
+        "superpowers-lab",
+        "superpowers-marketplace"
+      ],
+      "claim": "稳定方法论在核心仓，未验证技巧进 lab，分发走 marketplace；新 skill 默认不收"
+    },
+    {
+      "id": "P7",
+      "name": "会话自诊断",
+      "kind": "technique",
+      "evidence": [
+        "superpowers/diagnosing-superpowers"
+      ],
+      "claim": "skill 误触发/不触发时，让 agent 读会话记录给出逐行证据，并打包脱敏报告"
+    },
+    {
+      "id": "P8",
+      "name": "可选遥测",
+      "kind": "technique",
+      "evidence": [
+        "superpowers"
+      ],
+      "claim": "skill 本身没有反馈回路，用一个可关闭的 logo 信标估算安装量与版本分布"
+    }
+  ],
+  "sources": [
+    "https://github.com/obra",
+    "https://github.com/obra?tab=repositories",
+    "https://github.com/obra/superpowers",
+    "https://raw.githubusercontent.com/obra/superpowers/main/skills/writing-skills/SKILL.md",
+    "https://blog.fsck.com/about/",
+    "https://github.com/obra/the-elements-of-style"
+  ],
+  "skill_analyses": [
+    {
+      "name": "superpowers",
+      "repo": "superpowers",
+      "stars": 301998,
+      "verdict": "把开发纪律装进 agent",
+      "problem": "coding agent 一上来就写代码、跳过设计、不做测试、跑着跑着偏离计划。",
+      "mechanism": [
+        "7 步强制工作流：brainstorming → using-git-worktrees → writing-plans → subagent-driven-development / executing-plans → test-driven-development → requesting-code-review → finishing-a-development-branch",
+        "触发即强制：The agent checks for relevant skills before any task. Mandatory workflows, not suggestions.",
+        "每个任务派一个子 agent，两段审查：先规格合规，再代码质量，顺序不能反",
+        "16 种 harness 各自安装，技能本体共用一套",
+        "自诊断：会话行为异常时调用 diagnosing-superpowers，读 transcript 给逐行证据"
+      ],
+      "constraints": [
+        "任务颗粒度 2–5 分钟",
+        "测试前写的代码必须删掉",
+        "致命问题阻塞进度",
+        "收尾必须清理 worktree 并给出 merge/PR/保留/丢弃选项"
+      ],
+      "takeaway": [
+        "「强制」与「建议」的区别：写「建议使用 TDD」基本无效，写成「任务前必查相关 skill」才会被执行",
+        "任务颗粒度 2–5 分钟是让子 agent 能独立完成又能被审查的甜点区",
+        "两段审查的顺序不能反"
+      ],
+      "limits": [
+        "只覆盖编码；设计、写作、数据一概不管",
+        "对「改个 typo」这类轻任务，7 步流程是负担",
+        "97.7% 的星集中在这一个仓库：平台一旦内建类似工作流，护城河会迅速变浅"
+      ]
+    },
+    {
+      "name": "writing-skills",
+      "repo": "superpowers",
+      "stars": 301998,
+      "verdict": "用 TDD 造 skill",
+      "problem": "怎么写出一个 agent 真的会遵守的 skill。",
+      "mechanism": [
+        "技能 TDD 映射：测试用例=压力场景，生产代码=SKILL.md，RED=无 skill 时 agent 违规，GREEN=有 skill 时合规，REFACTOR=堵住新借口",
+        "Iron Law：NO SKILL WITHOUT A FAILING TEST FIRST——没跑过基线就写的 skill 删掉重来，包括「只是加一节」的修改",
+        "SDO：description 只写触发条件绝不概括流程；关键词覆盖；描述性命名；token 预算（getting-started <150 词，其他常驻 <200 词）",
+        "反合理化工具箱：堵死具体 workaround、写「违反字面即违反精神」、把 agent 借口做成「借口/现实」表、给红旗清单",
+        "技能分四类：纪律型 / 技术型 / 模式型 / 参考型，测试方法各不同"
+      ],
+      "constraints": [
+        "先跑基线，记录 agent 原话里的借口，再写 skill",
+        "description 不得概括工作流——实测概括后 agent 会照描述走、跳过正文",
+        "纪律型 skill 才用禁止式护栏；输出形态不对时禁止会适得其反",
+        "不得保留未测试的改动当参考"
+      ],
+      "takeaway": [
+        "先跑基线：不知道 agent 会怎么犯错，就不知道该写什么，能省掉 80% 无效 skill 写作",
+        "description 只写触发条件——这条直接修正了我自己写的 skill（已升 v1.1.0）",
+        "借口表：把「太简单不用测」这类话逐条反驳，比讲道理有效"
+      ],
+      "limits": [
+        "造压力场景本身要成本（要设计诱导违规的 prompt）",
+        "682 行 + 多个 reference，个人开发者读完就累",
+        "只对纪律型 skill 最有效；纯参考型用不上"
+      ]
+    },
+    {
+      "name": "brainstorming",
+      "repo": "superpowers",
+      "stars": 301998,
+      "verdict": "先问，再动手",
+      "problem": "用户说「做个 X」，agent 立刻开写，做完发现不是想要的。",
+      "mechanism": [
+        "先判断「你到底知道多少」：关键信息都在请求里就直接做并说明，否则开始对话",
+        "第一封信只有两件事：一句「不想回答可直接说」+ 一个开放问题（问具体场景，不问偏好）",
+        "每次只问一个问题，不给示例清单，不用流程术语",
+        "Play it back：理解一块就复述 200–300 字，猜测部分标注为猜测，结尾问哪里不对或漏了",
+        "Size the work：快速任务 / 小改动 / 需要设计文档的项目；中途变大就停下来升级"
+      ],
+      "constraints": [
+        "每条消息只能有一个问题，不能挂示例清单",
+        "必须标注哪些是猜测、哪些是用户原话",
+        "视觉伴侣：产物是用户会看的东西时，先给视觉选项"
+      ],
+      "takeaway": [
+        "「一次一个问题 + 复述标注猜测」是所有需求澄清任务的通用解",
+        "分级工作量：明确任务直接做，别为了流程而流程"
+      ],
+      "limits": [
+        "慢；急性子用户会烦（所以它第一条就是「可以跳过」）",
+        "对话质量强依赖模型；弱模型会把开放问题问成问卷"
+      ]
+    },
+    {
+      "name": "the-elements-of-style",
+      "repo": "the-elements-of-style",
+      "stars": 602,
+      "verdict": "把经典文本装成 skill",
+      "problem": "agent 写文档、commit message、错误提示时文风松散。",
+      "mechanism": [
+        "一个 skill（writing-clearly-and-concisely）+ 一份 12,000 token 的 1918 年原文参考",
+        "明确告知 token 成本；上下文紧张时把草稿交给子 agent 处理",
+        "用 everyharness 从一个 everyharness.yaml 生成 11 种 harness 的安装文档与清单",
+        "everyharness validate 对漂移报错，生成文件带 GENERATED 头，禁止手改"
+      ],
+      "constraints": [
+        "常驻描述压到极短，重内容进 references 并标注 token 成本",
+        "不得手改生成物，validate 失败即阻塞"
+      ],
+      "takeaway": [
+        "给参考材料标 token 成本，让 agent 自己决定要不要加载",
+        "经典文本（公版）是低成本高质量的知识源",
+        "「一个 yaml 生成多端、validate 对漂移报错」是单一事实源的工程答案"
+      ],
+      "limits": [
+        "1918 年的英文文体规则，迁移到中文写作有限",
+        "12k token 的参考很重，实际使用率可能很低"
+      ]
+    },
+    {
+      "name": "superpowers-marketplace",
+      "repo": "superpowers-marketplace",
+      "stars": 1302,
+      "verdict": "分发独立成层",
+      "problem": "技能多了之后，怎么让用户找到、装上、更新。",
+      "mechanism": [
+        "独立的插件市场仓库，作为 Claude Code 插件的分发入口",
+        "与核心仓解耦：核心仓只管质量，市场仓只管上架",
+        "每个插件在市场里有独立条目与安装说明，用户按需安装"
+      ],
+      "constraints": [
+        "市场仓不得夹带技能内容修改，避免与核心仓分叉"
+      ],
+      "takeaway": [
+        "分发层单独成仓"
+      ],
+      "limits": [
+        "绑定平台的插件机制；平台改规则就得跟着改"
+      ]
+    },
+    {
+      "name": "superpowers-lab",
+      "repo": "superpowers-lab",
+      "stars": 433,
+      "verdict": "实验田",
+      "problem": "新技巧没验证，不敢放进核心仓。",
+      "mechanism": [
+        "明确标为实验性的 skill 集合（找重复函数、mcp-cli、用 tmux 跑交互命令、Windows VM）",
+        "单独安装，与核心包分离"
+      ],
+      "constraints": [
+        "实验性 skill 必须显式标注，不得与稳定 skill 混装"
+      ],
+      "takeaway": [
+        "稳定核 / 实验田 / 市场三层，避免实验品污染主线"
+      ],
+      "limits": [
+        "实验品质量参差，用户要自己判断"
+      ]
+    },
+    {
+      "name": "superpowers-chrome",
+      "repo": "superpowers-chrome",
+      "stars": 362,
+      "verdict": "零依赖浏览器控制",
+      "problem": "agent 要操作浏览器，但不想装一堆依赖。",
+      "mechanism": [
+        "直接用 Chrome DevTools Protocol，零依赖",
+        "作为 Claude Code 插件提供"
+      ],
+      "constraints": [
+        "零依赖：不引入额外运行时"
+      ],
+      "takeaway": [
+        "能零依赖就零依赖——降低安装摩擦等于提高采用率"
+      ],
+      "limits": [
+        "浏览器权限与安全边界要用户自己把关"
+      ]
+    },
+    {
+      "name": "episodic-memory",
+      "repo": "episodic-memory",
+      "stars": 492,
+      "verdict": "给 agent 装记忆",
+      "problem": "跨会话、跨 agent 的对话历史无法检索，每次都从零开始。",
+      "mechanism": [
+        "同步并索引 Claude Code / Codex / Cursor / opencode 等会话，支持搜索与回放",
+        "摘要用便宜模型（默认 haiku），可换端点、可关摘要",
+        "明确的成本与丢弃策略：超大消息（>256KB）直接丢弃不截断，避免污染索引",
+        "摘要调用有超时，可整体关闭后台同步"
+      ],
+      "constraints": [
+        "超大消息直接丢弃，不截断",
+        "可关闭后台同步与摘要，端点可替换"
+      ],
+      "takeaway": [
+        "把「记忆」做成可检索资产，而不是塞进 context",
+        "任何索引型工具都要有丢弃策略和成本开关"
+      ],
+      "limits": [
+        "隐私敏感（会话全量入库）",
+        "索引质量依赖摘要模型"
+      ]
+    },
+    {
+      "name": "private-journal-mcp",
+      "repo": "private-journal-mcp",
+      "stars": 457,
+      "verdict": "情绪也需要缓冲",
+      "problem": "模型需要一处「不进入正式输出」的地方整理思路与情绪。",
+      "mechanism": [
+        "一个轻量 MCP server，提供私有日记能力",
+        "内容不进入对外输出"
+      ],
+      "constraints": [
+        "私有边界必须说清：什么进档案、什么不外泄"
+      ],
+      "takeaway": [
+        "给 agent 设计「私有草稿区」，比让它在正式回复里边想边写更稳"
+      ],
+      "limits": [
+        "价值高度主观",
+        "隐私边界要说清"
+      ]
+    },
+    {
+      "name": "packnplay",
+      "repo": "packnplay",
+      "stars": 174,
+      "verdict": "执行隔离",
+      "problem": "让 agent 在隔离环境里跑命令，不污染本机。",
+      "mechanism": [
+        "Docker 容器执行 + 自动 worktree + dev container 管理",
+        "每次执行落在独立容器与独立工作区，命令失败不污染宿主"
+      ],
+      "constraints": [
+        "命令在容器内执行，不落到宿主"
+      ],
+      "takeaway": [
+        "执行隔离 + 可回滚是让 agent 自主跑几小时的前提"
+      ],
+      "limits": [
+        "环境重；Windows 上体验打折"
+      ]
+    }
+  ]
+}

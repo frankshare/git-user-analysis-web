@@ -1,0 +1,125 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAllUsers } from '../lib/data';
+
+const users = getAllUsers();
+const totalStars = users.reduce((a, u) => a + u.stats.total_stars_source, 0);
+const totalRepos = users.reduce((a, u) => a + u.profile.source_repos, 0);
+const totalSkills = users.reduce((a, u) => a + (u.skills?.count || 0), 0);
+const totalPatterns = users.reduce((a, u) => a + (u.patterns?.length || 0), 0);
+---
+
+<BaseLayout title="关于本站 · Git 用户分析" description="方法论、口径与数据来源说明">
+  <section class="py-6 border-b border-slate-800/80 mb-8">
+    <h1 class="text-3xl font-extrabold text-white mb-4">关于这个站点</h1>
+    <p class="text-slate-400 text-lg max-w-3xl leading-relaxed">
+      把顶级开源创作者的作品体系，拆成<strong class="text-slate-200">可复用的方法</strong>与<strong class="text-slate-200">可上线的数据</strong>。
+      每个数字带日期和口径，每个判断带证据。
+    </p>
+  </section>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div class="space-y-6">
+      <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6">
+        <h2 class="text-base font-bold text-white mb-3">核心原则</h2>
+        <ul class="space-y-2.5 text-sm text-slate-400">
+          <li class="flex gap-2"><span class="text-indigo-400">·</span><span><strong class="text-slate-200">总数会骗人，分布不会。</strong>先算中位数与 top4 占比，再看总数。</span></li>
+          <li class="flex gap-2"><span class="text-indigo-400">·</span><span><strong class="text-slate-200">fork 不是作品。</strong>只统计 <code class="font-mono text-xs bg-slate-950/60 px-1.5 py-0.5 rounded">type=source</code>。</span></li>
+          <li class="flex gap-2"><span class="text-indigo-400">·</span><span><strong class="text-slate-200">一篇文章里的 skill ≠ 一个 skill 体系。</strong>要看有没有目录、安装协议、版本检查、分层。</span></li>
+          <li class="flex gap-2"><span class="text-indigo-400">·</span><span><strong class="text-slate-200">方法只在重复中出现。</strong>≥3 个仓库重复出现且能指导新任务的，才是方法。</span></li>
+          <li class="flex gap-2"><span class="text-indigo-400">·</span><span><strong class="text-slate-200">星数不等于方法价值。</strong>低星高密度的仓库往往更值得学。</span></li>
+          <li class="flex gap-2"><span class="text-indigo-400">·</span><span><strong class="text-slate-200">口径要写进产物。</strong>每个 star 旁写快照日期，每个结论标注来源级别。</span></li>
+        </ul>
+      </div>
+
+      <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6">
+        <h2 class="text-base font-bold text-white mb-3">策略维度（Strategy Dimension）</h2>
+        <p class="text-sm text-slate-400 leading-relaxed mb-3">
+          收录作者按策略分两类，不按总 star 混排：
+        </p>
+        <div class="space-y-2.5 text-sm">
+          <div class="p-3 rounded-lg bg-emerald-500/5 border border-emerald-500/20">
+            <div class="font-semibold text-emerald-400 mb-1">广度矩阵型（breadth）</div>
+            <p class="text-slate-400 text-xs leading-relaxed">多品类 skill 组合铺开，抗单点风险，靠数量与内容驱动。</p>
+          </div>
+          <div class="p-3 rounded-lg bg-blue-500/5 border border-blue-500/20">
+            <div class="font-semibold text-blue-400 mb-1">深度工程型（depth）</div>
+            <p class="text-slate-400 text-xs leading-relaxed">单点方法论做深 + 长尾仓库供血，靠深度与兼容性筑墙。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="space-y-6">
+      <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6">
+        <h2 class="text-base font-bold text-white mb-4">当前收录</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-slate-950/40 rounded-xl p-3 border border-slate-800/50">
+            <div class="text-xs text-slate-500">作者</div>
+            <div class="text-xl font-bold text-white font-mono mt-1">{users.length}</div>
+          </div>
+          <div class="bg-slate-950/40 rounded-xl p-3 border border-slate-800/50">
+            <div class="text-xs text-slate-500">总 Star</div>
+            <div class="text-xl font-bold text-white font-mono mt-1">{totalStars.toLocaleString()}</div>
+          </div>
+          <div class="bg-slate-950/40 rounded-xl p-3 border border-slate-800/50">
+            <div class="text-xs text-slate-500">自有仓库</div>
+            <div class="text-xl font-bold text-white font-mono mt-1">{totalRepos}</div>
+          </div>
+          <div class="bg-slate-950/40 rounded-xl p-3 border border-slate-800/50">
+            <div class="text-xs text-slate-500">Skills / Patterns</div>
+            <div class="text-xl font-bold text-white font-mono mt-1">{totalSkills} / {totalPatterns}</div>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-4 border-t border-slate-800 space-y-2">
+          {users.map(u => (
+            <a href={`/u/${u.profile.login}`} class="flex items-center justify-between p-2.5 rounded-lg bg-slate-950/30 border border-slate-800/50 hover:border-slate-700 transition-colors group">
+              <div>
+                <div class="text-sm text-slate-200 group-hover:text-indigo-400 transition-colors font-medium">{u.profile.name}</div>
+                <div class="text-[10px] font-mono text-slate-500">@{u.profile.login}</div>
+              </div>
+              <div class="text-right">
+                <div class="text-sm font-mono text-slate-300">{u.stats.total_stars_source.toLocaleString()}</div>
+                <div class="text-[10px] text-slate-600">中位 {u.stats.median_stars}</div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6">
+        <h2 class="text-base font-bold text-white mb-3">诚实边界</h2>
+        <ul class="space-y-2 text-sm text-slate-400">
+          <li class="flex gap-2"><span class="text-amber-500">·</span>只能看到<strong class="text-slate-300">公开</strong>仓库；私有项目、已删除仓库、真实用户量看不到。</li>
+          <li class="flex gap-2"><span class="text-amber-500">·</span>Star 是<strong class="text-slate-300">流量指标</strong>，不代表使用量、留存或收入。</li>
+          <li class="flex gap-2"><span class="text-amber-500">·</span>HTML 抓取的数值有分钟级误差；跨快照只比趋势。</li>
+          <li class="flex gap-2"><span class="text-amber-500">·</span>「他为什么成功」只能给相关性解释，<strong class="text-slate-300">不能给因果证明</strong>。</li>
+          <li class="flex gap-2"><span class="text-amber-500">·</span>技能行为描述来自仓库文档与作者自述，<strong class="text-slate-300">未独立复现</strong>。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="mt-10 pt-8 border-t border-slate-800/80">
+    <h2 class="text-sm font-bold text-slate-300 mb-3">数据流水线</h2>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm">
+      <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-4">
+        <div class="text-xs font-mono text-indigo-400 mb-1">1 · 采集</div>
+        <p class="text-slate-400 text-xs leading-relaxed">GitHub 用户页 HTML 分页 + raw README / SKILL.md</p>
+      </div>
+      <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-4">
+        <div class="text-xs font-mono text-indigo-400 mb-1">2 · 校验</div>
+        <p class="text-slate-400 text-xs leading-relaxed">schema 正则 + 统计量重算 + ISO 时间校验</p>
+      </div>
+      <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-4">
+        <div class="text-xs font-mono text-indigo-400 mb-1">3 · 单一事实源</div>
+        <p class="text-slate-400 text-xs leading-relaxed">Obsidian `_data/*.json` → 构建时同步到 <code class="font-mono">src/data</code></p>
+      </div>
+      <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-4">
+        <div class="text-xs font-mono text-indigo-400 mb-1">4 · 渲染</div>
+        <p class="text-slate-400 text-xs leading-relaxed">Astro 静态生成，计数全部由 JSON 派生</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

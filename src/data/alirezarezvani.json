@@ -1,0 +1,676 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source）+ raw README/SKILL.md；来源：司徒K《2026年X上最值得关注的120个中文博主》",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "alirezarezvani",
+    "name": "Alireza Rezaei",
+    "bio": "以 Claude Code / Codex 为中心批量生产 skill、agent 与插件仓库的作者，靠单个 mega-skill 库（claude-skills，28445 星）建立心智地位，其余仓库星数极低。",
+    "website": "",
+    "x": "",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "breadth",
+    "public_repos": 32,
+    "source_repos": 18,
+    "fork_repos": 14
+  },
+  "stats": {
+    "total_stars_source": 31337,
+    "total_stars_all": 31453,
+    "median_stars": 27,
+    "ge_1000": 1,
+    "between_100_999": 5,
+    "between_10_99": 7,
+    "lt_10": 5,
+    "no_language": 2,
+    "top4_share": 97.6,
+    "top1_share": 90.8
+  },
+  "repos": [
+    {
+      "name": "claude-skills",
+      "url": "https://github.com/alirezarezvani/claude-skills",
+      "stars": 28445,
+      "language": "Python",
+      "updated_at": "2026-08-30T09:46:16Z",
+      "description": "380 Claude Code skills &amp; agent skills &amp; plugins (30+ Agents, 70+ custom commands, 380+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents …",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "claude-code-skill-factory",
+      "url": "https://github.com/alirezarezvani/claude-code-skill-factory",
+      "stars": 889,
+      "language": "Python",
+      "updated_at": "2025-11-12T15:30:27Z",
+      "description": "Claude Code Skill Factory — A powerful open-source toolkit for building and deploying production-ready Claude Skills, Code Agents, custom Slash Commands, and LLM Prompts at scale. Easily generate s…",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "claude-code-tresor",
+      "url": "https://github.com/alirezarezvani/claude-code-tresor",
+      "stars": 783,
+      "language": "Shell",
+      "updated_at": "2026-07-03T13:43:32Z",
+      "description": "A world-class collection of Claude Code utilities: autonomous skills, expert agents, slash commands, and prompts that supercharge your development workflow",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "claude-code-aso-skill",
+      "url": "https://github.com/alirezarezvani/claude-code-aso-skill",
+      "stars": 455,
+      "language": "Python",
+      "updated_at": "2026-05-25T00:18:10Z",
+      "description": "AEO Automation Framework for Claude Code One-click, beginner friendly automation for GitHub. Includes a dedicated fleet of AEO sub-agents handling planning, execution, reports, actionable items, an…",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "ClaudeForge",
+      "url": "https://github.com/alirezarezvani/ClaudeForge",
+      "stars": 430,
+      "language": "Python",
+      "updated_at": "2026-05-19T02:07:06Z",
+      "description": "A CLAUDE.md Generator and Maintenance tool for for Claude Code to create high-quality CLAUDE.md instruction files — aligned with Anthropic’s best practices for Claude Code.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "claude-cto-team",
+      "url": "https://github.com/alirezarezvani/claude-cto-team",
+      "stars": 118,
+      "language": "Python",
+      "updated_at": "2025-12-18T12:21:28Z",
+      "description": "Your personal CTO Team for Claude Code . These Subagents will help you challenging yourself while you plan and execute.",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "claude-code-github-workflow",
+      "url": "https://github.com/alirezarezvani/claude-code-github-workflow",
+      "stars": 67,
+      "language": "Shell",
+      "updated_at": "2026-03-02T11:02:25Z",
+      "description": "World-Class GitHub Workflow for Claude Code. This Blueprint for Using Claude Code and Github as your Workflow automation suite and Project Management. Including Fully automated Task Management and …",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "gaios",
+      "url": "https://github.com/alirezarezvani/gaios",
+      "stars": 49,
+      "language": "Python",
+      "updated_at": "2026-06-06T21:44:05Z",
+      "description": "Open-source AI Operating System (AIOS) blueprint for Claude Code &amp; Codex — turn any agent into your personal second brain + Chief of Staff: skills, self-verifying workflows, a second-brain wiki, an…",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "agenthub",
+      "url": "https://github.com/alirezarezvani/agenthub",
+      "stars": 31,
+      "language": "Go",
+      "updated_at": "2026-03-11T17:25:11Z",
+      "description": "Fork of Karpathy's agenthub",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "alirezarezvani",
+      "url": "https://github.com/alirezarezvani/alirezarezvani",
+      "stars": 27,
+      "language": null,
+      "updated_at": "2026-10-20T16:31:42Z",
+      "description": "Alireza Rezvani CTO and AI enthusiast - Addicted to Claude Code and Openclaw",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "claude-prompts-collection",
+      "url": "https://github.com/alirezarezvani/claude-prompts-collection",
+      "stars": 25,
+      "language": null,
+      "updated_at": "2025-08-19T15:19:56Z",
+      "description": "This repo includes Claude prompt curation to use Claude better.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "claude-code-mastery",
+      "url": "https://github.com/alirezarezvani/claude-code-mastery",
+      "stars": 24,
+      "language": null,
+      "updated_at": "2026-02-26T13:08:32Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "context-engineering-intro",
+      "url": "https://github.com/alirezarezvani/context-engineering-intro",
+      "stars": 13,
+      "language": "Python",
+      "updated_at": "2025-10-20T21:17:02Z",
+      "description": "Context engineering is the new vibe coding - it's the way to actually make AI coding assistants work. Claude Code is the best for this so that's what this repo is centered around, but you can apply…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "awesome-codex-plugins",
+      "url": "https://github.com/alirezarezvani/awesome-codex-plugins",
+      "stars": 13,
+      "language": "JavaScript",
+      "updated_at": "2026-03-31T09:32:58Z",
+      "description": "A curated list of awesome OpenAI Codex plugins, skills, and resources. See live plugins at: https://hol.org/registry/plugins",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "agentx",
+      "url": "https://github.com/alirezarezvani/agentx",
+      "stars": 12,
+      "language": "TypeScript",
+      "updated_at": "2025-10-20T14:19:25Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "promptor",
+      "url": "https://github.com/alirezarezvani/promptor",
+      "stars": 11,
+      "language": "Python",
+      "updated_at": "2025-09-14T08:57:31Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "sora-studio",
+      "url": "https://github.com/alirezarezvani/sora-studio",
+      "stars": 10,
+      "language": "TypeScript",
+      "updated_at": "2025-10-28T20:09:06Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "cc-system-prompts",
+      "url": "https://github.com/alirezarezvani/cc-system-prompts",
+      "stars": 10,
+      "language": "JavaScript",
+      "updated_at": "2025-12-23T00:57:27Z",
+      "description": "All parts of Claude Code's system prompt, 20 builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact, statusline, magic docs, WebFetch, Bash cmd, secur…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "gstack",
+      "url": "https://github.com/alirezarezvani/gstack",
+      "stars": 9,
+      "language": "TypeScript",
+      "updated_at": "2026-04-13T17:49:38Z",
+      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "icd-11-nextjs-nestjs-boilerplate",
+      "url": "https://github.com/alirezarezvani/icd-11-nextjs-nestjs-boilerplate",
+      "stars": 8,
+      "language": "TypeScript",
+      "updated_at": "2025-11-06T17:36:09Z",
+      "description": "ICD-11 NextJS NestJS Boilerplate project",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "confluence-mcp-server",
+      "url": "https://github.com/alirezarezvani/confluence-mcp-server",
+      "stars": 4,
+      "language": "TypeScript",
+      "updated_at": "2025-06-03T07:34:13Z",
+      "description": "Confluence MCP Server",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "brain",
+      "url": "https://github.com/alirezarezvani/brain",
+      "stars": 4,
+      "language": "TypeScript",
+      "updated_at": "2026-08-03T11:55:04Z",
+      "description": "My version of Gary Tan's Opinionated OpenClaw/Hermes Agent Brain",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "medium-content",
+      "url": "https://github.com/alirezarezvani/medium-content",
+      "stars": 4,
+      "language": "Python",
+      "updated_at": "2026-04-11T05:56:41Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "context-engineering",
+      "url": "https://github.com/alirezarezvani/context-engineering",
+      "stars": 3,
+      "language": "Python",
+      "updated_at": "2025-07-06T21:06:19Z",
+      "description": "context engineering, Prompts, workflows for agentic engineering",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "nemo-claw",
+      "url": "https://github.com/alirezarezvani/nemo-claw",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2026-03-17T12:50:35Z",
+      "description": "NVIDIA plugin for secure installation of OpenClaw",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ipyparallel",
+      "url": "https://github.com/alirezarezvani/ipyparallel",
+      "stars": 2,
+      "language": "Jupyter Notebook",
+      "updated_at": "2026-03-12T16:28:13Z",
+      "description": "Interactive Parallel Computing in Python",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "yc-qm",
+      "url": "https://github.com/alirezarezvani/yc-qm",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2026-08-03T21:02:20Z",
+      "description": "Multiplayer agent harness for work",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "agent-registery",
+      "url": "https://github.com/alirezarezvani/agent-registery",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2026-04-05T18:35:29Z",
+      "description": "The public agent registry for gitagent — registry.gitagent.sh",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ds-data-regs",
+      "url": "https://github.com/alirezarezvani/ds-data-regs",
+      "stars": 1,
+      "language": "Shell",
+      "updated_at": "2026-03-12T16:32:02Z",
+      "description": "A registry of data sources, categories, and organizations to use with Data Studio Community Connectors.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "avinci-system",
+      "url": "https://github.com/alirezarezvani/avinci-system",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2026-06-12T08:33:30Z",
+      "description": "avinci platform",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "cursor-memory-bank",
+      "url": "https://github.com/alirezarezvani/cursor-memory-bank",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2025-04-01T12:28:33Z",
+      "description": "A modular, documentation-driven framework using Cursor custom modes (VAN, PLAN, CREATIVE, IMPLEMENT) to provide persistent memory and guide AI through a structured development workflow with visual …",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "sunrise.php",
+      "url": "https://github.com/alirezarezvani/sunrise.php",
+      "stars": 0,
+      "language": "PHP",
+      "updated_at": "2018-03-28T14:04:34Z",
+      "description": "Edited sunrise.php for WPML / WP Multisite",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/alirezarezvani",
+    "count": 8,
+    "layers": {
+      "skill": 6,
+      "tool": 2
+    },
+    "items": [
+      {
+        "name": "claude-skills",
+        "layer": "skill",
+        "category": "Skill 工程",
+        "repo": "claude-skills",
+        "subdir": "",
+        "summary": "380 个 Claude Code / Codex / Gemini CLI / Cursor skill 与 30+ agent、70+ 命令的集合库，附可定制 references 与 scripts。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "claude-code-skill-factory",
+        "layer": "tool",
+        "category": "Skill 工程",
+        "repo": "claude-code-skill-factory",
+        "subdir": "",
+        "summary": "批量生成与部署生产级 skill、code agent、slash command、LLM prompt 的工具包。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "claude-code-tresor",
+        "layer": "skill",
+        "category": "Agent 基础设施",
+        "repo": "claude-code-tresor",
+        "subdir": "",
+        "summary": "Shell 实现的 Claude Code 工具箱：自治 skill、专家 agent、slash command 与 prompt。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "claude-code-aso-skill",
+        "layer": "skill",
+        "category": "写作与分发",
+        "repo": "claude-code-aso-skill",
+        "subdir": "",
+        "summary": "面向 GitHub 的 AEO（Answer Engine Optimization）自动化框架，含规划/执行/报告子 agent 舰队与一键跑批。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "ClaudeForge",
+        "layer": "tool",
+        "category": "Agent 基础设施",
+        "repo": "ClaudeForge",
+        "subdir": "",
+        "summary": "生成并持续维护 CLAUDE.md 指令文件的工具，对齐 Claude Code 官方最佳实践。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "claude-cto-team",
+        "layer": "skill",
+        "category": "Agent 基础设施",
+        "repo": "claude-cto-team",
+        "subdir": "",
+        "summary": "以 CTO 角色 subagent 组在计划与执行阶段对方案施压评审。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "claude-code-github-workflow",
+        "layer": "skill",
+        "category": "Agent 基础设施",
+        "repo": "claude-code-github-workflow",
+        "subdir": "",
+        "summary": "把 GitHub 变成本地 Claude Code 工作流与项目管理层，含自动任务管理的 blueprint。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "gaios",
+        "layer": "skill",
+        "category": "Agent 基础设施",
+        "repo": "gaios",
+        "subdir": "",
+        "summary": "面向 Claude Code 与 Codex 的 AIOS 蓝图：第二大脑 wiki、自验证工作流、skill 与 Chief of Staff。",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "name": "claude-skills",
+      "repo": "claude-skills",
+      "stars": 28445,
+      "verdict": "以数量换覆盖的 mega-skill 索引库，星数占其自有仓库总量 90.8%，是整个账号唯一的起量引擎。",
+      "problem": "同一批用户在 Claude Code / Codex / Gemini CLI / Cursor 之间反复迁移，每次要重新攒 agent、slash command 与 skill；单个 skill 仓库又缺生态，单体 skill 库又难维护。",
+      "mechanism": [
+        "一个仓库同时承载 skill、agent、custom command 三类资产，按 380+ / 30+ / 70+ 的编号体系对外声明规模。",
+        "描述里直接列出适配的 8+ 编码 agent 名单，把「跨工具兼容」写成一等卖点，覆盖迁移期用户。",
+        "skill 内附 customizable references 与 scripts，把提示词之外的脚本化步骤一并交付，提高可执行度。"
+      ],
+      "constraints": [
+        "380+ 条目意味着目录结构与命名规范必须机械化维护，否则索引与内容漂移。",
+        "一次改动影响面覆盖全部使用者，回滚成本高。",
+        "对提示词质量与上游 agent 版本变化高度敏感。"
+      ],
+      "takeaway": [
+        "在仓库 description 第一行就把「资产数量 + 适配工具清单」写清楚，用可核对的数字做传播点。",
+        "skill 除提示词外再带 references/ 与 scripts/，让读者有可执行的下一步。"
+      ],
+      "limits": [
+        "本地材料未见依据：质量分层、版本策略与去重规则。",
+        "单仓库规模过大时，读者难以定位具体单个 skill 的可信度。"
+      ]
+    },
+    {
+      "name": "claude-code-skill-factory",
+      "repo": "claude-code-skill-factory",
+      "stars": 889,
+      "verdict": "把 skill 生产从手写变成生成式流水线的元工具，是 mega 库可维护性的前提假设。",
+      "problem": "个人/团队要产出成批生产级 skill、code agent、slash command 与 LLM prompt，纯手写成本高且格式不一致。",
+      "mechanism": [
+        "以生成器为中心统一四类资产的骨架，让新建条目复用同一目录与元数据约定。",
+        "部署与生成分离，产物可被多个编码 agent 复用。"
+      ],
+      "constraints": [
+        "生成器自身的模板约定会成为下游所有 skill 的硬约束。",
+        "对上游 skill 规范变化的适配滞后风险。",
+        "本地材料未见依据：模板数量、测试或校验环节。"
+      ],
+      "takeaway": [
+        "做批量 skill 库时先写生成器再写条目，否则第 30 个条目开始目录就会失控。"
+      ],
+      "limits": [
+        "本地材料未见依据：生成器与 claude-skills 的实际耦合方式。"
+      ]
+    },
+    {
+      "name": "claude-code-tresor",
+      "repo": "claude-code-tresor",
+      "stars": 783,
+      "verdict": "以 Shell 为实现语言的自治 skill/agent 工具箱，说明他倾向把提示词资产落到可执行脚本层。",
+      "problem": "开发者希望 Claude Code 工作流里有自治能力与专家 agent，而不是只靠对话提示。",
+      "mechanism": [
+        "用 Shell 脚本承担确定性执行环节，把自然语言留给需要判断的部分。",
+        "以「工具箱」而非「单技能」组织，降低单点失效影响。"
+      ],
+      "constraints": [
+        "Shell 依赖运行环境（POSIX 语义），跨平台需额外处理。",
+        "自治执行意味着出错时定位成本更高。"
+      ],
+      "takeaway": [
+        "把确定性步骤写成脚本、只把判断留给模型，是 skill 稳定性的常规做法。"
+      ],
+      "limits": [
+        "本地材料未见依据：跨平台与权限边界的具体处理。"
+      ]
+    },
+    {
+      "name": "claude-code-aso-skill",
+      "repo": "claude-code-aso-skill",
+      "stars": 455,
+      "verdict": "唯一面向「外部流量/被 AI 引用」目标的 skill，把仓库运营本身当成可自动化对象。",
+      "problem": "仓库作者想让内容出现在 AI 答案引擎里，但 AEO 无标准流程、无可复用检查项。",
+      "mechanism": [
+        "拆出规划/执行/报告/行动项四类 subagent，把流程阶段与角色绑定。",
+        "一键化入口 + 面向 GitHub 的自动化接口，降低非工程背景用户的门槛。",
+        "明确写成 beginner friendly，把使用成本作为设计目标。"
+      ],
+      "constraints": [
+        "AEO 效果依赖外部答案引擎行为，仓库内无法闭环验证。",
+        "自动修改仓库内容有副作用与合规风险。"
+      ],
+      "takeaway": [
+        "按「规划→执行→报告→行动项」拆 subagent，是把一次性脚本变成可重复流程的模板。"
+      ],
+      "limits": [
+        "本地材料未见依据：AEO 指标的定义与成功判定。"
+      ]
+    },
+    {
+      "name": "ClaudeForge",
+      "repo": "ClaudeForge",
+      "stars": 430,
+      "verdict": "针对 Claude Code 记忆文件 CLAUDE.md 的生成与维护工具，切口小而刚需。",
+      "problem": "Claude Code 依赖 CLAUDE.md 承载项目指令，但多数项目缺这层文件或写得散乱，导致每次会话都要重复交代背景。",
+      "mechanism": [
+        "只生成/维护单一约定文件，把范围压到最小可交付物。",
+        "显式对齐 Anthropic 官方最佳实践，用权威来源做正当性背书。"
+      ],
+      "constraints": [
+        "依赖 CLAUDE.md 这一私有约定，上游改名或改语义即失效。",
+        "生成质量取决于项目上下文是否充分。"
+      ],
+      "takeaway": [
+        "找「模型每次都要重新知道的稳定事实」，写成一份约定文件，是最低成本的上下文工程。"
+      ],
+      "limits": [
+        "本地材料未见依据：维护模式（增量更新）如何判定需要改动。"
+      ]
+    },
+    {
+      "name": "gaios",
+      "repo": "gaios",
+      "stars": 49,
+      "verdict": "低星但方向最完整：把 skill 体系包装成「AI 操作系统」蓝图，含自验证工作流与第二大脑 wiki。",
+      "problem": "个人用户想要跨会话、跨工具的长期上下文与助理化行为，而不是单次会话的临时记忆。",
+      "mechanism": [
+        "第二大脑 wiki 承担长期记忆，skill 与 Chief of Staff 承担角色行为。",
+        "自验证工作流把「跑完并验证」内建进流程，减少人工验收。"
+      ],
+      "constraints": [
+        "蓝图式仓库对 Claude Code 与 Codex 双端能力有假设，任一端行为变化即需调整。",
+        "49 星说明该方向的外部验证度低。"
+      ],
+      "takeaway": [
+        "把「验证」写进工作流本身（自验证），比事后检查更省事。"
+      ],
+      "limits": [
+        "本地材料未见依据：具体实现与安装依赖。"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "以可核对数字作为对外规模声明",
+      "kind": "method",
+      "evidence": [
+        "claude-skills",
+        "claude-code-skill-factory",
+        "claude-code-github-workflow"
+      ],
+      "claim": "描述里直接写条目数量与适配工具清单（380+ skills、30+ agents、70+ commands、8+ 编码 agent），让读者在不打开仓库的情况下判断规模与适配性。"
+    },
+    {
+      "id": "P2",
+      "name": "把流程阶段拆成具名 subagent 角色",
+      "kind": "method",
+      "evidence": [
+        "claude-code-aso-skill",
+        "claude-cto-team",
+        "gaios",
+        "claude-code-tresor"
+      ],
+      "claim": "规划、执行、评审、汇报分别对应一个 agent 角色，而不是让单个 agent 全程自由发挥；多个仓库都沿用这种阶段—角色映射。"
+    },
+    {
+      "id": "P3",
+      "name": "用生成器/维护器管理批量 skill 资产",
+      "kind": "method",
+      "evidence": [
+        "claude-code-skill-factory",
+        "claude-skills",
+        "ClaudeForge"
+      ],
+      "claim": "目录条目数量一旦过百就改为生成/维护式管理：mega 库用 skill-factory 生成条目，单个记忆文件用 ClaudeForge 生成维护，仓库规模与治理方式同步升级。"
+    },
+    {
+      "id": "P4",
+      "name": "提示词之外补 scripts 与 references",
+      "kind": "technique",
+      "evidence": [
+        "claude-skills",
+        "claude-code-tresor"
+      ],
+      "claim": "在 skill 内附可定制 references 与 Shell 脚本，把确定性步骤从自然语言里移出——局部技巧，未在全部仓库复现。"
+    },
+    {
+      "id": "P5",
+      "name": "fork 仅作为学习与选型输入",
+      "kind": "technique",
+      "evidence": [
+        "agenthub",
+        "gstack",
+        "brain",
+        "cc-system-prompts"
+      ],
+      "claim": "账号保留 14 个 fork（全部合计 116 星，占总量 0.4%），多为他人 agent 配置与提示词资产的镜像，明显用于对照选型而非作品输出。"
+    }
+  ],
+  "sources": [
+    "https://github.com/alirezarezvani",
+    "https://github.com/alirezarezvani?tab=repositories",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

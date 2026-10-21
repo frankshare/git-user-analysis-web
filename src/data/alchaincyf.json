@@ -1,0 +1,2265 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-19",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（repos 列表 + type=fork/source 过滤）；skills 目录取自 huashu-skills/skills.json",
+    "caveat": "Star 数为 HTML 快照，非 GitHub API 实时值；fork 判定用 type=fork 列表；语言字段为空表示仓库主语言为 Markdown/无代码"
+  },
+  "profile": {
+    "login": "alchaincyf",
+    "name": "花叔 / Alchain",
+    "bio": "不会写代码的创造者 · AI Native Coder · 独立开发者",
+    "website": "https://www.huasheng.ai/",
+    "x": "https://x.com/AlchainHust",
+    "bilibili": "https://space.bilibili.com/14097567",
+    "location": "Shanghai, China",
+    "joined": "2023-03-13",
+    "followers_approx": 11200,
+    "public_repos": 91,
+    "source_repos": 66,
+    "fork_repos": 25,
+    "strategy": "breadth"
+  },
+  "stats": {
+    "total_stars_source": 106077,
+    "total_stars_all": 106110,
+    "median_stars": 177,
+    "ge_1000": 12,
+    "between_100_999": 30,
+    "between_10_99": 23,
+    "lt_10": 1,
+    "no_language": 30,
+    "top4_share": 72.9,
+    "site_snapshot_2026_09_26": 96746,
+    "growth_since_site_snapshot": 9331
+  },
+  "repos": [
+    {
+      "name": "nuwa-skill",
+      "url": "https://github.com/alchaincyf/nuwa-skill",
+      "stars": 35015,
+      "language": "Python",
+      "updated_at": "2026-10-17T09:04:27Z",
+      "description": "你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks.",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "huashu-design",
+      "url": "https://github.com/alchaincyf/huashu-design",
+      "stars": 25383,
+      "language": "HTML",
+      "updated_at": "2026-10-17T11:40:40Z",
+      "description": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "zhangxuefeng-skill",
+      "url": "https://github.com/alchaincyf/zhangxuefeng-skill",
+      "stars": 10531,
+      "language": "",
+      "updated_at": "2026-10-13T06:56:37Z",
+      "description": "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。",
+      "fork": false,
+      "layer": "persona",
+      "category": "人物视角"
+    },
+    {
+      "name": "darwin-skill",
+      "url": "https://github.com/alchaincyf/darwin-skill",
+      "stars": 6421,
+      "language": "HTML",
+      "updated_at": "2026-09-18T13:16:41Z",
+      "description": "达尔文.skill —— 一个让你的Skill无限进化的系统：评估→改进→测试→保留或回滚 | Autoresearch-inspired autonomous skill optimization for Claude Code. Evaluate, improve, test, keep or revert.",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "hermes-agent-orange-book",
+      "url": "https://github.com/alchaincyf/hermes-agent-orange-book",
+      "stars": 4989,
+      "language": "Python",
+      "updated_at": "2026-08-23T14:21:45Z",
+      "description": "Hermes Agent 从入门到精通 · 橙皮书系列 · Nous Research 开源 AI Agent 框架实战指南",
+      "fork": false,
+      "layer": "book",
+      "category": "橙皮书/书"
+    },
+    {
+      "name": "huashu-art-motion",
+      "url": "https://github.com/alchaincyf/huashu-art-motion",
+      "stars": 4444,
+      "language": "JavaScript",
+      "updated_at": "2026-10-16T17:03:31Z",
+      "description": "艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "huashu-skills",
+      "url": "https://github.com/alchaincyf/huashu-skills",
+      "stars": 1842,
+      "language": "Python",
+      "updated_at": "2026-10-19T05:43:05Z",
+      "description": "花叔全部开源 Agent Skills 总目录：16 旗舰 + 14 人物视角 + 22 内置共 52 个 skill，分层分类 + AI Agent 安装协议 + 机器可读 skills.json + 更新检查机制",
+      "fork": false,
+      "layer": "catalog",
+      "category": "Skill 总目录"
+    },
+    {
+      "name": "obsidian-ai-orange-book",
+      "url": "https://github.com/alchaincyf/obsidian-ai-orange-book",
+      "stars": 1469,
+      "language": "",
+      "updated_at": "2026-08-23T14:18:47Z",
+      "description": "Obsidian + Claude Code: Rebuild Your Second Brain with AI · 橙皮书系列 · 用AI重建你的第二大脑",
+      "fork": false,
+      "layer": "book",
+      "category": "橙皮书/书"
+    },
+    {
+      "name": "deepseek-harness-orange-book",
+      "url": "https://github.com/alchaincyf/deepseek-harness-orange-book",
+      "stars": 1347,
+      "language": "HTML",
+      "updated_at": "2026-08-23T14:18:16Z",
+      "description": "DeepSeek Harness橙皮书《从开机到拆开》：完整系统提示词、129行启动清单、三份原始会话日志——官方文档没有的一手实测。PDF/EPUB/HTML免费下载",
+      "fork": false,
+      "layer": "book",
+      "category": "橙皮书/书"
+    },
+    {
+      "name": "x-mentor-skill",
+      "url": "https://github.com/alchaincyf/x-mentor-skill",
+      "stars": 1292,
+      "language": "",
+      "updated_at": "2026-10-13T06:56:15Z",
+      "description": "X导师.skill — 女娲的第一个「非人类」作品。蒸馏6位顶级X创作者方法论 + 开源算法数据，提炼完整的选题-写作-增长操作手册。Made with 女娲.skill",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "loop-engineering-orange-book",
+      "url": "https://github.com/alchaincyf/loop-engineering-orange-book",
+      "stars": 1125,
+      "language": "",
+      "updated_at": "2026-08-23T14:18:43Z",
+      "description": "别再问我什么是 Loop Engineering — 橙皮书系列。A plain-language guide to loop engineering (中文 + English PDF). Free.",
+      "fork": false,
+      "layer": "book",
+      "category": "橙皮书/书"
+    },
+    {
+      "name": "fanbox",
+      "url": "https://github.com/alchaincyf/fanbox",
+      "stars": 1036,
+      "language": "JavaScript",
+      "updated_at": "2026-10-12T05:02:05Z",
+      "description": "vibe coding 的驾驶舱：左边文件，右边/下边终端，中间看清每一次改动。 / The cockpit for vibe coding: browse files on the left, command agents on the right, watch every change in between.",
+      "fork": false,
+      "layer": "app",
+      "category": "工具/App"
+    },
+    {
+      "name": "steve-jobs-skill",
+      "url": "https://github.com/alchaincyf/steve-jobs-skill",
+      "stars": 963,
+      "language": "",
+      "updated_at": "2026-10-13T06:55:17Z",
+      "description": "乔布斯.skill — Steve Jobs的认知操作系统。6个心智模型 + 8条决策启发式 + 完整表达DNA。由女娲.skill生成。",
+      "fork": false,
+      "layer": "persona",
+      "category": "人物视角"
+    },
+    {
+      "name": "huashu-md-html",
+      "url": "https://github.com/alchaincyf/huashu-md-html",
+      "stars": 918,
+      "language": "CSS",
+      "updated_at": "2026-10-13T06:52:29Z",
+      "description": "md/html 双向流水线 · 三个能力一站式：万物→md / md→精美html / html→md。封装 markitdown + Pandoc + html-to-markdown + trafilatura。4 套反 AI slop 主题。Claude Code skill.",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "huasheng_editor",
+      "url": "https://github.com/alchaincyf/huasheng_editor",
+      "stars": 770,
+      "language": "JavaScript",
+      "updated_at": "2026-10-03T03:57:16Z",
+      "description": "花生公众号排版器",
+      "fork": false,
+      "layer": "app",
+      "category": "工具/App"
+    },
+    {
+      "name": "huashu-motion",
+      "url": "https://github.com/alchaincyf/huashu-motion",
+      "stars": 680,
+      "language": "JavaScript",
+      "updated_at": "2026-10-18T12:59:04Z",
+      "description": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "codex-orange-book",
+      "url": "https://github.com/alchaincyf/codex-orange-book",
+      "stars": 664,
+      "language": "HTML",
+      "updated_at": "2026-08-23T14:18:20Z",
+      "description": "OpenAI Codex: The Complete Guide · 橙皮书系列 · GPT-5.5 时代的 AI 编程实战手册",
+      "fork": false,
+      "layer": "book",
+      "category": "橙皮书/书"
+    },
+    {
+      "name": "elon-musk-skill",
+      "url": "https://github.com/alchaincyf/elon-musk-skill",
+      "stars": 545,
+      "language": "",
+      "updated_at": "2026-10-13T06:50:51Z",
+      "description": "马斯克.skill — Elon Musk的认知操作系统。由女娲.skill生成。",
+      "fork": false,
+      "layer": "persona",
+      "category": "人物视角"
+    },
+    {
+      "name": "huashu-report",
+      "url": "https://github.com/alchaincyf/huashu-report",
+      "stars": 461,
+      "language": "Python",
+      "updated_at": "2026-10-13T06:27:39Z",
+      "description": "机构级研究报告 Agent Skill · 规范从 2026 年顶级机构报告实物反向提炼，42 份采集／41 份进量化基线（Stanford/McKinsey/BCG/OpenAI/PwC/World Bank 等）· 六种报告原型 + 8 种图表模式 + 可复用生产流水线 · 跨 agent 通用",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "huashu-excel",
+      "url": "https://github.com/alchaincyf/huashu-excel",
+      "stars": 441,
+      "language": "Python",
+      "updated_at": "2026-10-13T06:51:37Z",
+      "description": "数据分析与 Excel 全流程 skill：体检脏表、清洗、对齐需求、分析、对账、交付。让 AI 算出来的数字经得起追问。跨 agent 通用，依赖仅 openpyxl。",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "munger-skill",
+      "url": "https://github.com/alchaincyf/munger-skill",
+      "stars": 384,
+      "language": "",
+      "updated_at": "2026-10-13T06:54:05Z",
+      "description": "芒格.skill — 查理·芒格的认知操作系统。由女娲.skill生成。",
+      "fork": false,
+      "layer": "persona",
+      "category": "人物视角"
+    },
+    {
+      "name": "huashu-chrome",
+      "url": "https://github.com/alchaincyf/huashu-chrome",
+      "stars": 356,
+      "language": "JavaScript",
+      "updated_at": "2026-10-13T04:22:01Z",
+      "description": "让任何 AI agent 操控你自己的 Chrome——带着全部登录态。MCP + Chrome 扩展，Claude Code / Codex / Cursor / Gemini CLI 通用。",
+      "fork": false,
+      "layer": "tool",
+      "category": "MCP/扩展"
+    },
+    {
+      "name": "claude-code-orange-book",
+      "url": "https://github.com/alchaincyf/claude-code-orange-book",
+      "stars": 322,
+      "language": "",
+      "updated_at": "2026-08-23T14:18:25Z",
+      "description": "Claude Code: The Complete Guide · 橙皮书系列 · AI编程实战指南",
+      "fork": false,
+      "layer": "book",
+      "category": "橙皮书/书"
+    },
+    {
+      "name": "karpathy-skill",
+      "url": "https://github.com/alchaincyf/karpathy-skill",
+      "stars": 315,
+      "language": "",
+      "updated_at": "2026-10-13T06:53:25Z",
+      "description": "Andrej Karpathy的认知操作系统。不是语录合集，是可运行的思维框架。Made with 女娲.skill",
+      "fork": false,
+      "layer": "persona",
+      "category": "人物视角"
+    },
+    {
+      "name": "huashu-mac-use",
+      "url": "https://github.com/alchaincyf/huashu-mac-use",
+      "stars": 313,
+      "language": "Swift",
+      "updated_at": "2026-10-13T06:52:14Z",
+      "description": "让任何 agent 操控 Mac 上没有 API 的原生 app，读后台、写不打扰、每步留取证 · Agent Skill for macOS computer use",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "feynman-skill",
+      "url": "https://github.com/alchaincyf/feynman-skill",
+      "stars": 300,
+      "language": "",
+      "updated_at": "2026-10-13T06:51:02Z",
+      "description": "费曼.skill — 理查德·费曼的认知操作系统。由女娲.skill生成。",
+      "fork": false,
+      "layer": "persona",
+      "category": "人物视角"
+    },
+    {
+      "name": "3d-vibe-coding-handbook",
+      "url": "https://github.com/alchaincyf/3d-vibe-coding-handbook",
+      "stars": 295,
+      "language": "HTML",
+      "updated_at": "2026-09-15T06:52:48Z",
+      "description": "《3D Vibe Coding 手册》配套仓库：书的 HTML 版、demo 源码、工具脚本与资源包索引",
+      "fork": false,
+      "layer": "book",
+      "category": "橙皮书/书"
+    },
+    {
+      "name": "deepseek-v4-deep-dive",
+      "url": "https://github.com/alchaincyf/deepseek-v4-deep-dive",
+      "stars": 280,
+      "language": "HTML",
+      "updated_at": "2026-04-24T10:17:48Z",
+      "description": "DeepSeek V4 深度解读 · 73 页 PPT + 20 分钟讲稿 + 发布动画 · Designed with huashu-design",
+      "fork": false,
+      "layer": "research",
+      "category": "研究报告/解读"
+    },
+    {
+      "name": "trump-skill",
+      "url": "https://github.com/alchaincyf/trump-skill",
+      "stars": 269,
+      "language": "",
+      "updated_at": "2026-10-13T06:56:05Z",
+      "description": "特朗普的思维操作系统。不是模仿秀，是可运行的谈判与权力分析框架。Made with 女娲.skill",
+      "fork": false,
+      "layer": "persona",
+      "category": "人物视角"
+    },
+    {
+      "name": "naval-skill",
+      "url": "https://github.com/alchaincyf/naval-skill",
+      "stars": 262,
+      "language": "",
+      "updated_at": "2026-10-13T06:54:17Z",
+      "description": "纳瓦尔.skill — Naval Ravikant的认知操作系统。由女娲.skill生成。",
+      "fork": false,
+      "layer": "persona",
+      "category": "人物视角"
+    },
+    {
+      "name": "sun-yuchen-perspective",
+      "url": "https://github.com/alchaincyf/sun-yuchen-perspective",
+      "stars": 250,
+      "language": "",
+      "updated_at": "2026-10-13T06:55:29Z",
+      "description": "孙宇晨.skill — 注意力收割操作系统 | Justin Sun Perspective Skill for Claude Code | 由女娲.skill蒸馏",
+      "fork": false,
+      "layer": "persona",
+      "category": "人物视角"
+    },
+    {
+      "name": "img2046",
+      "url": "https://github.com/alchaincyf/img2046",
+      "stars": 221,
+      "language": "TypeScript",
+      "updated_at": "2026-10-03T03:56:04Z",
+      "description": "图像魔方 - 一个强大的图像编辑和AI图片生成工具",
+      "fork": false,
+      "layer": "app",
+      "category": "工具/App"
+    },
+    {
+      "name": "zhang-yiming-skill",
+      "url": "https://github.com/alchaincyf/zhang-yiming-skill",
+      "stars": 177,
+      "language": "",
+      "updated_at": "2026-10-13T06:56:26Z",
+      "description": "张一鸣的认知操作系统。不是语录合集，是可运行的思维框架。Made with 女娲.skill",
+      "fork": false,
+      "layer": "persona",
+      "category": "人物视角"
+    },
+    {
+      "name": "huashu-weread",
+      "url": "https://github.com/alchaincyf/huashu-weread",
+      "stars": 157,
+      "language": "",
+      "updated_at": "2026-08-25T03:03:05Z",
+      "description": "微信读书高阶顾问 · 在官方 weread skill 之上加一层「读书顾问的工作流」· 书架+笔记交叉分析 · 4 个 workflow (advisor/path/alchemy/review) · Made by 花叔",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "cursor-rules-huasheng",
+      "url": "https://github.com/alchaincyf/cursor-rules-huasheng",
+      "stars": 139,
+      "language": "TypeScript",
+      "updated_at": "2025-01-05T08:04:06Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "taleb-skill",
+      "url": "https://github.com/alchaincyf/taleb-skill",
+      "stars": 129,
+      "language": "",
+      "updated_at": "2026-10-13T06:55:41Z",
+      "description": "塔勒布.skill — Nassim Taleb的认知操作系统。由女娲.skill生成。",
+      "fork": false,
+      "layer": "persona",
+      "category": "人物视角"
+    },
+    {
+      "name": "mrbeast-skill",
+      "url": "https://github.com/alchaincyf/mrbeast-skill",
+      "stars": 120,
+      "language": "Python",
+      "updated_at": "2026-10-13T06:53:51Z",
+      "description": "MrBeast的内容创造操作系统。不是语录合集，是可运行的内容方法论。Made with 女娲.skill",
+      "fork": false,
+      "layer": "persona",
+      "category": "人物视角"
+    },
+    {
+      "name": "claude-code-source-analysis-orange-book",
+      "url": "https://github.com/alchaincyf/claude-code-source-analysis-orange-book",
+      "stars": 112,
+      "language": "",
+      "updated_at": "2026-08-23T14:18:29Z",
+      "description": "Claude Code: Source Code Analysis · Orange Book Series · Deep dive into Claude Code architecture and implementation | 橙皮书系列 · 深入解析Claude Code架构与实现",
+      "fork": false,
+      "layer": "book",
+      "category": "橙皮书/书"
+    },
+    {
+      "name": "huashu-doubao-search",
+      "url": "https://github.com/alchaincyf/huashu-doubao-search",
+      "stars": 109,
+      "language": "JavaScript",
+      "updated_at": "2026-07-25T19:01:01Z",
+      "description": "豆包搜索 MCP server — 给换了国产模型的 Claude Code 补上联网能力。字节系信源、千字正文、每月500次免费 | Agent-first web search MCP",
+      "fork": false,
+      "layer": "tool",
+      "category": "MCP/扩展"
+    },
+    {
+      "name": "harness-engineering-orange-book",
+      "url": "https://github.com/alchaincyf/harness-engineering-orange-book",
+      "stars": 108,
+      "language": "",
+      "updated_at": "2026-08-23T14:18:32Z",
+      "description": "Harness Engineering · 橙皮书系列 · AI Agent 缰绳工程学实战指南",
+      "fork": false,
+      "layer": "book",
+      "category": "橙皮书/书"
+    },
+    {
+      "name": "paul-graham-skill",
+      "url": "https://github.com/alchaincyf/paul-graham-skill",
+      "stars": 103,
+      "language": "",
+      "updated_at": "2026-10-13T06:54:41Z",
+      "description": "Paul Graham的认知操作系统。不是语录合集，是可运行的思维框架。Made with 女娲.skill",
+      "fork": false,
+      "layer": "persona",
+      "category": "人物视角"
+    },
+    {
+      "name": "huashu-flash",
+      "url": "https://github.com/alchaincyf/huashu-flash",
+      "stars": 102,
+      "language": "Python",
+      "updated_at": "2026-10-13T06:51:49Z",
+      "description": "闪电.skill：照 Anthropic 两周把 claude.ai 提速 3 倍的方法，给你的网站提速。先量、再证、后爬，用棘轮锁住只许变好。",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "alchaincyf",
+      "url": "https://github.com/alchaincyf/alchaincyf",
+      "stars": 98,
+      "language": "",
+      "updated_at": "2026-10-19T06:10:47Z",
+      "description": "GitHub Profile README",
+      "fork": false,
+      "layer": "profile",
+      "category": "个人主页"
+    },
+    {
+      "name": "openclaw-orange-book",
+      "url": "https://github.com/alchaincyf/openclaw-orange-book",
+      "stars": 83,
+      "language": "",
+      "updated_at": "2026-08-23T14:18:52Z",
+      "description": "OpenClaw: The Complete Guide · 橙皮书系列 · 开源AI Agent框架实战指南",
+      "fork": false,
+      "layer": "book",
+      "category": "橙皮书/书"
+    },
+    {
+      "name": "polymarket-orange-book",
+      "url": "https://github.com/alchaincyf/polymarket-orange-book",
+      "stars": 69,
+      "language": "",
+      "updated_at": "2026-04-11T14:34:38Z",
+      "description": "Polymarket: The Complete Guide · 橙皮书系列 · 预测市场完全指南",
+      "fork": false,
+      "layer": "book",
+      "category": "橙皮书/书"
+    },
+    {
+      "name": "CoderWithAI",
+      "url": "https://github.com/alchaincyf/CoderWithAI",
+      "stars": 68,
+      "language": "TypeScript",
+      "updated_at": "2026-10-02T16:01:42Z",
+      "description": "codeWithAI",
+      "fork": false,
+      "layer": "app",
+      "category": "工具/App"
+    },
+    {
+      "name": "agent-skills-orange-book",
+      "url": "https://github.com/alchaincyf/agent-skills-orange-book",
+      "stars": 56,
+      "language": "",
+      "updated_at": "2026-08-23T14:18:36Z",
+      "description": "Agent Skills · 橙皮书系列 · Claude Code Skills 系统完全指南",
+      "fork": false,
+      "layer": "book",
+      "category": "橙皮书/书"
+    },
+    {
+      "name": "freud-skill",
+      "url": "https://github.com/alchaincyf/freud-skill",
+      "stars": 56,
+      "language": "",
+      "updated_at": "2026-10-13T06:51:12Z",
+      "description": "弗洛伊德.skill — 给 AI 做心理分析的认知调优系统。基于 Anthropic 可解释性研究，把人格空间/情绪向量/内省能力转成可操作的 prompt 工程方法。Give your AI a psychotherapist. Made with 女娲.skill",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "tramstop-skill",
+      "url": "https://github.com/alchaincyf/tramstop-skill",
+      "stars": 54,
+      "language": "",
+      "updated_at": "2026-10-13T06:55:51Z",
+      "description": "电车站.skill — 人味不是删出来的。Evidence-based de-slop skill: 四层AI味模型+真实素材注入，来自四版本盲测实验",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "ilya-sutskever-skill",
+      "url": "https://github.com/alchaincyf/ilya-sutskever-skill",
+      "stars": 52,
+      "language": "",
+      "updated_at": "2026-10-13T06:53:13Z",
+      "description": "Ilya Sutskever的认知操作系统。不是语录合集，是可运行的思维框架。Made with 女娲.skill",
+      "fork": false,
+      "layer": "persona",
+      "category": "人物视角"
+    },
+    {
+      "name": "douban-movie-assistant",
+      "url": "https://github.com/alchaincyf/douban-movie-assistant",
+      "stars": 47,
+      "language": "JavaScript",
+      "updated_at": "2026-08-25T02:59:29Z",
+      "description": "在豆瓣电影/剧集页侧栏里直接看片：四渠道探测可播放片源、卡片内嵌静音预播、剧集选集、追剧更新提醒",
+      "fork": false,
+      "layer": "app",
+      "category": "工具/App"
+    },
+    {
+      "name": "seedance-skill",
+      "url": "https://github.com/alchaincyf/seedance-skill",
+      "stars": 41,
+      "language": "JavaScript",
+      "updated_at": "2026-10-13T06:54:51Z",
+      "description": "Seedance.skill — 白模驱动的 AI 视频工作台。白模参考视频与提示词出自同一份 scene.json，渲染前做几何体检，还能从一张照片反解出白模。Control AI video with clay renders — and a prompt that can't drift from them.",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "dukou",
+      "url": "https://github.com/alchaincyf/dukou",
+      "stars": 38,
+      "language": "JavaScript",
+      "updated_at": "2026-10-13T06:50:39Z",
+      "description": "渡口 · 稿件分发：Chrome插件 + 本地桥 + Claude Code skill——微信公众号文章一键渡到 X Articles / B站专栏，AI终端可直接投稿取稿",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "deepseek-influence-report",
+      "url": "https://github.com/alchaincyf/deepseek-influence-report",
+      "stars": 35,
+      "language": "HTML",
+      "updated_at": "2026-08-27T15:02:22Z",
+      "description": "发布节奏就是护城河：DeepSeek开源影响力投研(V3→V4)。22页机构级报告+34个带口径数据点+OpenRouter 85周份额复算+可复跑采集脚本，全部开源 | Institutional-grade research on DeepSeek's open-source influence, with full data & scripts",
+      "fork": false,
+      "layer": "research",
+      "category": "研究报告/解读"
+    },
+    {
+      "name": "ChatGPT_Plus_membership",
+      "url": "https://github.com/alchaincyf/ChatGPT_Plus_membership",
+      "stars": 26,
+      "language": "",
+      "updated_at": "2024-06-06T07:58:52Z",
+      "description": "ChatGPT Plus会员合租拼车购买渠道推荐",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "nes-arcade",
+      "url": "https://github.com/alchaincyf/nes-arcade",
+      "stars": 24,
+      "language": "TypeScript",
+      "updated_at": "2026-02-07T04:24:23Z",
+      "description": "FC游戏厅 - 121款红白机经典游戏在线模拟器",
+      "fork": false,
+      "layer": "app",
+      "category": "工具/App"
+    },
+    {
+      "name": "huashu-slide-codex",
+      "url": "https://github.com/alchaincyf/huashu-slide-codex",
+      "stars": 24,
+      "language": "JavaScript",
+      "updated_at": "2026-10-13T06:52:41Z",
+      "description": "Codex-only AI visual material production skill — slides + WeChat covers + Bilibili/YouTube thumbnails, powered by built-in image_gen (no API fees)",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "huashu-gpt-image",
+      "url": "https://github.com/alchaincyf/huashu-gpt-image",
+      "stars": 23,
+      "language": "Python",
+      "updated_at": "2026-10-13T06:52:02Z",
+      "description": "GPT-image-2 的 prompt 工程方法论。核心：用真实参考名替代形容词，prompt 默认中文短句。含单图 playbook、批量网格生成、失败模式树。跨 agent 通用。",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "global-workspace-paper-zh",
+      "url": "https://github.com/alchaincyf/global-workspace-paper-zh",
+      "stars": 23,
+      "language": "",
+      "updated_at": "2026-07-07T02:47:40Z",
+      "description": "Anthropic「语言模型中的全局工作空间」论文中文全译 | Chinese translation of Anthropic's Global Workspace paper (2026)",
+      "fork": false,
+      "layer": "research",
+      "category": "研究报告/解读"
+    },
+    {
+      "name": "skills-guide",
+      "url": "https://github.com/alchaincyf/skills-guide",
+      "stars": 20,
+      "language": "",
+      "updated_at": "2026-10-13T06:55:05Z",
+      "description": "Claude Code Skills 完整指南 - 理解、查找和创建 Skills",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "Smarter--ChatGPT",
+      "url": "https://github.com/alchaincyf/Smarter--ChatGPT",
+      "stars": 19,
+      "language": "",
+      "updated_at": "2024-06-06T07:47:42Z",
+      "description": "28个ChatGPT使用技巧，完整中文教程带你从入门到精通",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "HuaRec",
+      "url": "https://github.com/alchaincyf/HuaRec",
+      "stars": 16,
+      "language": "JavaScript",
+      "updated_at": "2026-08-28T16:03:48Z",
+      "description": "HuaRec 花录 · 电影感网页录屏 — Chrome MV3 网页录屏插件",
+      "fork": false,
+      "layer": "app",
+      "category": "工具/App"
+    },
+    {
+      "name": "huashu-slide-doubao",
+      "url": "https://github.com/alchaincyf/huashu-slide-doubao",
+      "stars": 16,
+      "language": "JavaScript",
+      "updated_at": "2026-10-13T06:52:53Z",
+      "description": "Doubao-only AI visual material production skill — slides + WeChat covers + Bilibili/YouTube thumbnails, powered by built-in image_gen seedream 5.0 (no API fees)",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "mcstomach",
+      "url": "https://github.com/alchaincyf/mcstomach",
+      "stars": 15,
+      "language": "Python",
+      "updated_at": "2026-10-17T07:54:53Z",
+      "description": "麦门胃：把你的麦当劳订单蒸馏成一个能带走的胃",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "huashu-icon-set",
+      "url": "https://github.com/alchaincyf/huashu-icon-set",
+      "stars": 13,
+      "language": "Python",
+      "updated_at": "2026-10-13T06:50:25Z",
+      "description": "端到端为项目生成风格统一图标集 · 默认4×4网格批量生成+逐个精度兜底+智能抠图，Doubao image_gen 驱动 no API fees",
+      "fork": false,
+      "layer": "skill",
+      "category": "技能"
+    },
+    {
+      "name": "wechatDownload",
+      "url": "https://github.com/alchaincyf/wechatDownload",
+      "stars": 7,
+      "language": "HTML",
+      "updated_at": "2024-04-30T09:57:54Z",
+      "description": "微信公众号文章批量下载工具，支持图片、评论下载，支持保存html/md/pdf/docx文件",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "producthunt-daily-hot",
+      "url": "https://github.com/alchaincyf/producthunt-daily-hot",
+      "stars": 6,
+      "language": "Python",
+      "updated_at": "2024-09-12T11:00:15Z",
+      "description": "自动生成每日Product Hunt热门产品中文榜单，基于GitHub Actions自动提交Markdown文件",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "NotionNext",
+      "url": "https://github.com/alchaincyf/NotionNext",
+      "stars": 4,
+      "language": "JavaScript",
+      "updated_at": "2023-07-08T14:38:27Z",
+      "description": "使用 NextJS + Notion API 实现的，支持多种部署方案的静态博客，无需服务器、零门槛搭建网站，为Notion和所有创作者设计。 (A static blog built with NextJS and Notion API, supporting multiple deployment options. No server required, zero threshold t…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ChatGPT-Shortcut-",
+      "url": "https://github.com/alchaincyf/ChatGPT-Shortcut-",
+      "stars": 3,
+      "language": "TypeScript",
+      "updated_at": "2024-08-31T23:45:32Z",
+      "description": "🚀💪Maximize your efficiency and productivity, support for English,中文,Español,العربية. 让生产力加倍的AI快捷指令。更有效地定制、保存和分享自己的提示词。在提示词分享社区中，轻松找到适用于不同场景的指令。",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ChatTTS",
+      "url": "https://github.com/alchaincyf/ChatTTS",
+      "stars": 2,
+      "language": "Jupyter Notebook",
+      "updated_at": "2024-05-31T18:30:47Z",
+      "description": "ChatTTS is a generative speech model for daily dialogue.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mistgarden-support",
+      "url": "https://github.com/alchaincyf/mistgarden-support",
+      "stars": 2,
+      "language": "HTML",
+      "updated_at": "2026-09-08T05:39:09Z",
+      "description": "雾庭飞行Mac游戏：官方支持与隐私说明",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "AI-",
+      "url": "https://github.com/alchaincyf/AI-",
+      "stars": 2,
+      "language": "HTML",
+      "updated_at": "2024-09-17T14:18:56Z",
+      "description": "AI工具导航，免费chatgpt，chatgpt4，midjourney，notion ai，tome.app",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "crawl4ai",
+      "url": "https://github.com/alchaincyf/crawl4ai",
+      "stars": 2,
+      "language": "Python",
+      "updated_at": "2024-10-14T15:30:08Z",
+      "description": "🔥🕷️ Crawl4AI: Open-source LLM Friendly Web Crawler & Scrapper",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "popular-fonts",
+      "url": "https://github.com/alchaincyf/popular-fonts",
+      "stars": 1,
+      "language": "",
+      "updated_at": "2022-08-24T09:04:09Z",
+      "description": "常用中文字体，可在Linux环境自用。",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "so-vits-svc-",
+      "url": "https://github.com/alchaincyf/so-vits-svc-",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2023-05-09T16:58:38Z",
+      "description": "SoftVC VITS Singing Voice Conversion",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Stirling-PDF",
+      "url": "https://github.com/alchaincyf/Stirling-PDF",
+      "stars": 1,
+      "language": "Java",
+      "updated_at": "2024-09-04T19:21:35Z",
+      "description": "#1 Locally hosted web application that allows you to perform various operations on PDF files",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "automatic_prompt_engineer",
+      "url": "https://github.com/alchaincyf/automatic_prompt_engineer",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2023-05-25T17:06:29Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "deeperseeker-app",
+      "url": "https://github.com/alchaincyf/deeperseeker-app",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2025-01-28T22:22:07Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rea",
+      "url": "https://github.com/alchaincyf/rea",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2026-10-11T15:38:34Z",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "openai-fm",
+      "url": "https://github.com/alchaincyf/openai-fm",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2025-04-15T22:37:48Z",
+      "description": "Code for openai.fm, a demo for the OpenAI Speech API",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ChatGPT-Alchain",
+      "url": "https://github.com/alchaincyf/ChatGPT-Alchain",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2023-07-12T02:21:26Z",
+      "description": "One-Click to deploy well-designed ChatGPT web UI on Vercel. 一键拥有你自己的 ChatGPT 网页服务。",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "tiktokenizer",
+      "url": "https://github.com/alchaincyf/tiktokenizer",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2023-11-15T23:10:24Z",
+      "description": "Online playground for OpenAPI tokenizers",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "GeminiProChat",
+      "url": "https://github.com/alchaincyf/GeminiProChat",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2023-12-20T12:35:16Z",
+      "description": "Minimal web UI for GeminiPro.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "morphic",
+      "url": "https://github.com/alchaincyf/morphic",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2024-04-09T15:21:25Z",
+      "description": "An AI-powered answer engine with a generative UI",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "FreeGPT35",
+      "url": "https://github.com/alchaincyf/FreeGPT35",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2024-04-04T19:00:20Z",
+      "description": "Utilize the unlimited free GPT-3.5-Turbo API service provided by the login-free ChatGPT Web.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "TextWordExplain",
+      "url": "https://github.com/alchaincyf/TextWordExplain",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2024-09-12T11:10:37Z",
+      "description": "汉语新解",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "WebStackPage.github.io",
+      "url": "https://github.com/alchaincyf/WebStackPage.github.io",
+      "stars": 0,
+      "language": "CSS",
+      "updated_at": "2024-05-04T07:39:42Z",
+      "description": "❤️静态响应式网址导航网站 - webstack.cc",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "gpt4free",
+      "url": "https://github.com/alchaincyf/gpt4free",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2023-05-07T22:50:35Z",
+      "description": "decentralising the Ai Industry, just some language model api's...",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "anything-llm",
+      "url": "https://github.com/alchaincyf/anything-llm",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2024-09-07T01:02:18Z",
+      "description": "The all-in-one Desktop & Docker AI application with full RAG and AI Agent capabilities.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ai-notes",
+      "url": "https://github.com/alchaincyf/ai-notes",
+      "stars": 0,
+      "language": "",
+      "updated_at": "2024-01-02T02:17:18Z",
+      "description": "notes for software engineers getting up to speed on new AI developments. Serves as datastore for https://latent.space writing, and product brainstorming, but has cleaned up canonical references und…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "lobe-chat",
+      "url": "https://github.com/alchaincyf/lobe-chat",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2024-09-13T14:03:36Z",
+      "description": "🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / Azure / DeepSeek), Knowledge Base (file upload / knowledge manageme…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/alchaincyf/huashu-skills/blob/master/skills.json",
+    "catalog_updated": "2026-10-19",
+    "count": 58,
+    "layers": {
+      "flagship": 22,
+      "persona": 14,
+      "bundled": 22
+    },
+    "items": [
+      {
+        "name": "huashu-design",
+        "layer": "flagship",
+        "category": "设计与视觉",
+        "repo": "huashu-design",
+        "subdir": null,
+        "summary": "HTML 原生设计系统：高保真原型/幻灯片/动画/可视化，20 种设计哲学 + 5 维专家评审 + MP4 导出",
+        "keywords": [
+          "设计",
+          "原型",
+          "PPT",
+          "幻灯片",
+          "动画",
+          "可视化",
+          "HTML",
+          "design"
+        ],
+        "version": "3.0.0"
+      },
+      {
+        "name": "huashu-mac-use",
+        "layer": "flagship",
+        "category": "电脑操控",
+        "repo": "huashu-mac-use",
+        "subdir": null,
+        "summary": "让 agent 操控 Mac 上没有 API 的原生 app：探测选层（CDP / AX / 坐标 / 像素）、读后台写过闸不打扰用户、每步回读与取证、收工回流进档案；含 Swift 内核与 CDP 工具",
+        "keywords": [
+          "computer use",
+          "操控电脑",
+          "macOS",
+          "原生app",
+          "截图取证",
+          "CDP",
+          "Electron",
+          "自动化",
+          "mac"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "huashu-gpt-image",
+        "layer": "flagship",
+        "category": "设计与视觉",
+        "repo": "huashu-gpt-image",
+        "subdir": null,
+        "summary": "GPT-image 的 prompt 工程方法论：真实参考名替代形容词，含单图 playbook、批量网格生成、失败模式树",
+        "keywords": [
+          "生图",
+          "配图",
+          "封面",
+          "海报",
+          "prompt",
+          "image"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "huashu-icon-set",
+        "layer": "flagship",
+        "category": "设计与视觉",
+        "repo": "huashu-icon-set",
+        "subdir": null,
+        "summary": "端到端为项目生成风格统一的图标集：4×4 网格批量生成 + 逐个精度兜底 + 智能抠图（豆包环境专用，依赖内置 image_gen）",
+        "keywords": [
+          "图标",
+          "icon",
+          "图标集",
+          "豆包"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "huashu-slide-doubao",
+        "layer": "flagship",
+        "category": "设计与视觉",
+        "repo": "huashu-slide-doubao",
+        "subdir": null,
+        "summary": "豆包环境专用视觉物料生产：slides + 公众号封面 + 视频封面，走内置 image_gen 零 API 费用",
+        "keywords": [
+          "豆包",
+          "doubao",
+          "PPT",
+          "封面",
+          "slides"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "huashu-slide-codex",
+        "layer": "flagship",
+        "category": "设计与视觉",
+        "repo": "huashu-slide-codex",
+        "subdir": null,
+        "summary": "Codex 环境专用视觉物料生产：slides + 公众号封面 + 视频封面，走 Codex 内置 image_gen",
+        "keywords": [
+          "codex",
+          "PPT",
+          "封面",
+          "slides"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "huashu-excel",
+        "layer": "flagship",
+        "category": "数据与文档",
+        "repo": "huashu-excel",
+        "subdir": null,
+        "summary": "数据分析全流程：体检脏表→清洗→定口径→算指标→对账→报告，依赖仅 openpyxl",
+        "keywords": [
+          "Excel",
+          "数据分析",
+          "清洗",
+          "对账",
+          "报表",
+          "CSV"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "huashu-md-html",
+        "layer": "flagship",
+        "category": "数据与文档",
+        "repo": "huashu-md-html",
+        "subdir": null,
+        "summary": "md 流水线：万物（PDF/DOCX/EPUB/网页/音频）转干净 md，md 加工成出版级 HTML/DOCX，四套反 AI slop 主题",
+        "keywords": [
+          "markdown",
+          "HTML",
+          "DOCX",
+          "转换",
+          "排版"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "seedance-skill",
+        "layer": "flagship",
+        "category": "视频",
+        "repo": "seedance-skill",
+        "subdir": null,
+        "summary": "白模驱动的 AI 视频工作台：白模参考视频与提示词出自同一份 scene.json，渲染前做几何体检",
+        "keywords": [
+          "视频生成",
+          "Seedance",
+          "AI视频",
+          "白模",
+          "分镜"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "tramstop-skill",
+        "layer": "flagship",
+        "category": "写作与分发",
+        "repo": "tramstop-skill",
+        "subdir": null,
+        "summary": "电车站.skill：证据驱动的去 AI 味，四层 AI 味模型 + 真实素材注入，来自四版本盲测实验",
+        "keywords": [
+          "去AI味",
+          "审校",
+          "人味",
+          "de-slop",
+          "润色"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "dukou",
+        "layer": "flagship",
+        "category": "写作与分发",
+        "repo": "dukou",
+        "subdir": "skill/dukou",
+        "summary": "渡口：公众号文章一键渡到 X Articles / B站专栏，Chrome 插件 + 本地桥 + skill",
+        "keywords": [
+          "分发",
+          "公众号",
+          "X Articles",
+          "B站专栏",
+          "投稿"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "x-mentor-skill",
+        "layer": "flagship",
+        "category": "写作与分发",
+        "repo": "x-mentor-skill",
+        "subdir": null,
+        "summary": "X 导师：蒸馏 6 位顶级 X 创作者方法论 + 开源算法数据，完整的选题-写作-增长手册",
+        "keywords": [
+          "X",
+          "Twitter",
+          "推特",
+          "涨粉",
+          "增长",
+          "运营"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "huashu-weread",
+        "layer": "flagship",
+        "category": "阅读",
+        "repo": "huashu-weread",
+        "subdir": null,
+        "summary": "微信读书高阶顾问：书架+笔记交叉分析，个性化荐书/阶梯书单/笔记提炼/年度阅读复盘",
+        "keywords": [
+          "微信读书",
+          "读书",
+          "荐书",
+          "书单",
+          "笔记"
+        ]
+      },
+      {
+        "name": "nuwa-skill",
+        "layer": "flagship",
+        "category": "Skill 工程",
+        "repo": "nuwa-skill",
+        "subdir": null,
+        "summary": "女娲：蒸馏任何人的思维方式——心智模型、决策启发式、表达 DNA，产出可运行的人物 skill",
+        "keywords": [
+          "女娲",
+          "蒸馏",
+          "人物skill",
+          "思维方式",
+          "造人"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "darwin-skill",
+        "layer": "flagship",
+        "category": "Skill 工程",
+        "repo": "darwin-skill",
+        "subdir": null,
+        "summary": "达尔文：让 skill 无限进化——评估→改进→测试→保留或回滚，全程 git 留痕",
+        "keywords": [
+          "skill优化",
+          "进化",
+          "评分",
+          "darwin"
+        ]
+      },
+      {
+        "name": "freud-skill",
+        "layer": "flagship",
+        "category": "Skill 工程",
+        "repo": "freud-skill",
+        "subdir": null,
+        "summary": "弗洛伊德：给 AI 做心理分析，基于 Anthropic 可解释性研究，诊断 prompt/skill 的身份冲突并重写",
+        "keywords": [
+          "prompt诊断",
+          "心理分析",
+          "可解释性",
+          "调优"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "skills-guide",
+        "layer": "flagship",
+        "category": "Skill 工程",
+        "repo": "skills-guide",
+        "subdir": null,
+        "summary": "Claude Code Skills 完整指南：理解、查找和创建 skills",
+        "keywords": [
+          "skill教程",
+          "写skill",
+          "指南"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "huashu-report",
+        "layer": "flagship",
+        "category": "研究与写作",
+        "repo": "huashu-report",
+        "subdir": null,
+        "summary": "机构级研究报告与学术论文：六种报告原型 + 结构骨架 + 图表模式库 + 可复用生产流水线，规范提炼自 2026 年 42 份顶级机构报告实测",
+        "keywords": [
+          "报告",
+          "研究报告",
+          "白皮书",
+          "调研",
+          "数据洞察",
+          "论文",
+          "arXiv",
+          "report"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "zhangxuefeng-skill",
+        "layer": "persona",
+        "category": "人物视角",
+        "repo": "zhangxuefeng-skill",
+        "subdir": null,
+        "summary": "张雪峰的认知操作系统：高考志愿/考研/职业规划",
+        "keywords": [
+          "张雪峰",
+          "志愿",
+          "考研",
+          "职业规划"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "steve-jobs-skill",
+        "layer": "persona",
+        "category": "人物视角",
+        "repo": "steve-jobs-skill",
+        "subdir": null,
+        "summary": "乔布斯的认知操作系统：产品判断、砍需求、品味",
+        "keywords": [
+          "乔布斯",
+          "Jobs",
+          "产品",
+          "品味"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "elon-musk-skill",
+        "layer": "persona",
+        "category": "人物视角",
+        "repo": "elon-musk-skill",
+        "subdir": null,
+        "summary": "马斯克的认知操作系统：第一性原理、成本结构、激进迭代",
+        "keywords": [
+          "马斯克",
+          "Musk",
+          "第一性原理"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "munger-skill",
+        "layer": "persona",
+        "category": "人物视角",
+        "repo": "munger-skill",
+        "subdir": null,
+        "summary": "查理·芒格的认知操作系统：逆向思考、认知偏误、投资决策",
+        "keywords": [
+          "芒格",
+          "Munger",
+          "逆向思考",
+          "投资"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "karpathy-skill",
+        "layer": "persona",
+        "category": "人物视角",
+        "repo": "karpathy-skill",
+        "subdir": null,
+        "summary": "Andrej Karpathy 的认知操作系统：AI 技术可靠性、学习方法、行业判断",
+        "keywords": [
+          "Karpathy",
+          "卡帕西",
+          "AI"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "trump-skill",
+        "layer": "persona",
+        "category": "人物视角",
+        "repo": "trump-skill",
+        "subdir": null,
+        "summary": "特朗普的思维操作系统：谈判、权力、传播",
+        "keywords": [
+          "特朗普",
+          "Trump",
+          "谈判"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "feynman-skill",
+        "layer": "persona",
+        "category": "人物视角",
+        "repo": "feynman-skill",
+        "subdir": null,
+        "summary": "费曼的认知操作系统：真懂 vs 记住名词、货物崇拜检测",
+        "keywords": [
+          "费曼",
+          "Feynman",
+          "学习法"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "naval-skill",
+        "layer": "persona",
+        "category": "人物视角",
+        "repo": "naval-skill",
+        "subdir": null,
+        "summary": "Naval Ravikant 的认知操作系统：杠杆、特定知识、财富路径",
+        "keywords": [
+          "纳瓦尔",
+          "Naval",
+          "杠杆",
+          "财富"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "sun-yuchen-perspective",
+        "layer": "persona",
+        "category": "人物视角",
+        "repo": "sun-yuchen-perspective",
+        "subdir": null,
+        "summary": "孙宇晨的注意力收割操作系统：注意力经济、营销、危机公关",
+        "keywords": [
+          "孙宇晨",
+          "营销",
+          "注意力"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "zhang-yiming-skill",
+        "layer": "persona",
+        "category": "人物视角",
+        "repo": "zhang-yiming-skill",
+        "subdir": null,
+        "summary": "张一鸣的认知操作系统：产品、组织、全球化、延迟满足",
+        "keywords": [
+          "张一鸣",
+          "字节",
+          "产品",
+          "组织"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "taleb-skill",
+        "layer": "persona",
+        "category": "人物视角",
+        "repo": "taleb-skill",
+        "subdir": null,
+        "summary": "塔勒布的认知操作系统：尾部风险、反脆弱、质疑主流叙事",
+        "keywords": [
+          "塔勒布",
+          "Taleb",
+          "黑天鹅",
+          "反脆弱"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "mrbeast-skill",
+        "layer": "persona",
+        "category": "人物视角",
+        "repo": "mrbeast-skill",
+        "subdir": null,
+        "summary": "MrBeast 的内容创造操作系统：视频标题/封面/钩子/留存",
+        "keywords": [
+          "MrBeast",
+          "视频",
+          "标题",
+          "封面",
+          "留存"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "paul-graham-skill",
+        "layer": "persona",
+        "category": "人物视角",
+        "repo": "paul-graham-skill",
+        "subdir": null,
+        "summary": "Paul Graham 的认知操作系统：创业、写作、做用户真正要的东西",
+        "keywords": [
+          "Paul Graham",
+          "PG",
+          "创业",
+          "写作"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "ilya-sutskever-skill",
+        "layer": "persona",
+        "category": "人物视角",
+        "repo": "ilya-sutskever-skill",
+        "subdir": null,
+        "summary": "Ilya Sutskever 的认知操作系统：深度学习直觉、Scaling、AI 本质",
+        "keywords": [
+          "Ilya",
+          "Sutskever",
+          "深度学习"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "huashu-slides",
+        "layer": "bundled",
+        "category": "端到端工作流",
+        "repo": "huashu-skills",
+        "subdir": "huashu-slides",
+        "summary": "从一句话到成品 PPTX：内容结构化→设计选型→AI 插画→组装，18 种设计风格",
+        "keywords": [
+          "PPT",
+          "PPTX",
+          "幻灯片",
+          "演示文稿"
+        ]
+      },
+      {
+        "name": "huashu-data-pro",
+        "layer": "bundled",
+        "category": "端到端工作流",
+        "repo": "huashu-skills",
+        "subdir": "huashu-data-pro",
+        "summary": "Excel 原始数据到专业分析报告：5 种报告风格库，交互式 HTML + PDF",
+        "keywords": [
+          "数据分析",
+          "报告",
+          "ROI",
+          "复盘"
+        ]
+      },
+      {
+        "name": "huashu-douyin-script",
+        "layer": "bundled",
+        "category": "端到端工作流",
+        "repo": "huashu-skills",
+        "subdir": "huashu-douyin-script",
+        "summary": "抖音爆款脚本：竞品视频下载→AI 7 维分析→公式提炼→脚本+分镜",
+        "keywords": [
+          "抖音",
+          "脚本",
+          "爆款",
+          "种草"
+        ]
+      },
+      {
+        "name": "huashu-design-philosophy",
+        "layer": "bundled",
+        "category": "端到端工作流",
+        "repo": "huashu-skills",
+        "subdir": "huashu-design",
+        "summary": "设计哲学顾问（轻量版）：20 种设计哲学推荐 3 个方向 + AI 提示词。⚠️ 与独立仓库 huashu-design 同名不同物，同时安装时本目录需重命名",
+        "keywords": [
+          "设计哲学",
+          "设计方向",
+          "配色"
+        ]
+      },
+      {
+        "name": "huashu-proofreading",
+        "layer": "bundled",
+        "category": "写作与审校",
+        "repo": "huashu-skills",
+        "subdir": "huashu-proofreading",
+        "summary": "三遍审校降 AI 味：内容→6 大类 AI 腔改写→节奏打磨",
+        "keywords": [
+          "审校",
+          "AI味",
+          "润色"
+        ]
+      },
+      {
+        "name": "huashu-material-search",
+        "layer": "bundled",
+        "category": "写作与审校",
+        "repo": "huashu-skills",
+        "subdir": "huashu-material-search",
+        "summary": "个人素材库搜索：从真实记录中检索经历和案例，给内容加人味",
+        "keywords": [
+          "素材",
+          "人味",
+          "案例"
+        ]
+      },
+      {
+        "name": "huashu-article-edit",
+        "layer": "bundled",
+        "category": "写作与审校",
+        "repo": "huashu-skills",
+        "subdir": "huashu-article-edit",
+        "summary": "标准化文章编辑：先列修改项确认范围，增量保存，变更有记录",
+        "keywords": [
+          "编辑",
+          "修改文章"
+        ]
+      },
+      {
+        "name": "huashu-article-to-x",
+        "layer": "bundled",
+        "category": "写作与审校",
+        "repo": "huashu-skills",
+        "subdir": "huashu-article-to-x",
+        "summary": "长文转社交媒体：3000-5000 字浓缩成 200-500 字，3 种开头风格",
+        "keywords": [
+          "转发",
+          "微博",
+          "小红书",
+          "缩写"
+        ]
+      },
+      {
+        "name": "huashu-topic-gen",
+        "layer": "bundled",
+        "category": "选题与调研",
+        "repo": "huashu-skills",
+        "subdir": "huashu-topic-gen",
+        "summary": "选题生成：3-4 个方案，含标题、大纲、优劣分析和工作量评估",
+        "keywords": [
+          "选题",
+          "标题",
+          "大纲"
+        ]
+      },
+      {
+        "name": "huashu-research",
+        "layer": "bundled",
+        "category": "选题与调研",
+        "repo": "huashu-skills",
+        "subdir": "huashu-research",
+        "summary": "结构化调研：每搜一轮存一轮，不怕会话截断丢成果",
+        "keywords": [
+          "调研",
+          "搜索",
+          "简报"
+        ]
+      },
+      {
+        "name": "huashu-info-search",
+        "layer": "bundled",
+        "category": "选题与调研",
+        "repo": "huashu-skills",
+        "subdir": "huashu-info-search",
+        "summary": "信息搜索与知识管理：多渠道交叉验证，自动存知识库",
+        "keywords": [
+          "搜索",
+          "知识库",
+          "新产品"
+        ]
+      },
+      {
+        "name": "huashu-video-check",
+        "layer": "bundled",
+        "category": "视频创作",
+        "repo": "huashu-skills",
+        "subdir": "huashu-video-check",
+        "summary": "视频封标检查：MrBeast 策略，5 种强对比标题公式 + 封面与承接检查",
+        "keywords": [
+          "视频标题",
+          "封面",
+          "CTR"
+        ]
+      },
+      {
+        "name": "huashu-video-outline",
+        "layer": "bundled",
+        "category": "视频创作",
+        "repo": "huashu-skills",
+        "subdir": "huashu-video-outline",
+        "summary": "视频大纲：2-3 个方案对比，含标题、封面建议、时长预估",
+        "keywords": [
+          "视频大纲",
+          "脚本结构"
+        ]
+      },
+      {
+        "name": "huashu-script-polish",
+        "layer": "bundled",
+        "category": "视频创作",
+        "repo": "huashu-skills",
+        "subdir": "huashu-script-polish",
+        "summary": "脚本口语化：去书面腔，短句化，标注停顿重音",
+        "keywords": [
+          "口语化",
+          "脚本审校"
+        ]
+      },
+      {
+        "name": "huashu-wechat-image",
+        "layer": "bundled",
+        "category": "配图",
+        "repo": "huashu-skills",
+        "subdir": "huashu-wechat-image",
+        "summary": "公众号配图：封面（2.35:1）/插图/信息图，AI 生成与 HTML 渲染双路径",
+        "keywords": [
+          "公众号",
+          "配图",
+          "封面"
+        ]
+      },
+      {
+        "name": "huashu-xhs-image",
+        "layer": "bundled",
+        "category": "配图",
+        "repo": "huashu-skills",
+        "subdir": "huashu-xhs-image",
+        "summary": "小红书配图：先出设计提案再生成，中文渲染验证 + 设计评分",
+        "keywords": [
+          "小红书",
+          "配图",
+          "笔记"
+        ]
+      },
+      {
+        "name": "huashu-image-upload",
+        "layer": "bundled",
+        "category": "配图",
+        "repo": "huashu-skills",
+        "subdir": "huashu-image-upload",
+        "summary": "通用配图上传：生成→图床→Markdown 链接一条龙",
+        "keywords": [
+          "图床",
+          "上传",
+          "配图"
+        ]
+      },
+      {
+        "name": "huashu-md-to-pdf",
+        "layer": "bundled",
+        "category": "文档与效率",
+        "repo": "huashu-skills",
+        "subdir": "huashu-md-to-pdf",
+        "summary": "Markdown 转苹果风专业 PDF：书籍级排版、自动封面目录",
+        "keywords": [
+          "PDF",
+          "白皮书",
+          "排版"
+        ]
+      },
+      {
+        "name": "huashu-speech-coach",
+        "layer": "bundled",
+        "category": "文档与效率",
+        "repo": "huashu-skills",
+        "subdir": "huashu-speech-coach",
+        "summary": "演讲教练：Patrick Winston「How to Speak」方法论",
+        "keywords": [
+          "演讲",
+          "培训",
+          "分享"
+        ]
+      },
+      {
+        "name": "huashu-agent-swarm",
+        "layer": "bundled",
+        "category": "文档与效率",
+        "repo": "huashu-skills",
+        "subdir": "huashu-agent-swarm",
+        "summary": "蜂群模式：多 Agent 并行协作，无 master，纯 git 自组织",
+        "keywords": [
+          "多agent",
+          "并行",
+          "蜂群",
+          "swarm"
+        ]
+      },
+      {
+        "name": "huashu-prompt-save",
+        "layer": "bundled",
+        "category": "文档与效率",
+        "repo": "huashu-skills",
+        "subdir": "huashu-prompt-save",
+        "summary": "Prompt 分类保存：5 大分类自动归档 + 索引",
+        "keywords": [
+          "prompt",
+          "保存",
+          "整理"
+        ]
+      },
+      {
+        "name": "huashu-skill-updater",
+        "layer": "bundled",
+        "category": "文档与效率",
+        "repo": "huashu-skills",
+        "subdir": "huashu-skill-updater",
+        "summary": "花叔系 skill 更新检查：扫描已装 skill 对比远程仓库最新 commit，报告落后项；含 .huashu-skill-meta.json 元数据约定与每月 cron 方案",
+        "keywords": [
+          "更新",
+          "升级",
+          "版本检查",
+          "update"
+        ]
+      },
+      {
+        "name": "huashu-art-motion",
+        "layer": "flagship",
+        "category": "视频",
+        "repo": "huashu-art-motion",
+        "subdir": null,
+        "summary": "艺术与解说动画：35种艺术风格、9种解说动画语法，拆解复刻、口播驱动整片，用代码让画动起来",
+        "keywords": [
+          "动画",
+          "艺术风格",
+          "解说动画",
+          "3b1b",
+          "Vox",
+          "白板",
+          "口播",
+          "视频"
+        ],
+        "version": "1.2.0"
+      },
+      {
+        "name": "huashu-flash",
+        "layer": "flagship",
+        "category": "开发提速",
+        "repo": "huashu-flash",
+        "subdir": null,
+        "summary": "闪电.skill：照Anthropic两周把claude.ai提速3倍的方法给网站或App提速，先量基线、再证指标、逐步优化，用棘轮锁住只许变好",
+        "keywords": [
+          "网站提速",
+          "性能优化",
+          "首屏",
+          "秒开",
+          "performance"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "mcstomach",
+        "layer": "flagship",
+        "category": "生活与趣味",
+        "repo": "mcstomach",
+        "subdir": "mcstomach",
+        "summary": "麦门胃：读麦当劳历史订单，带证据提炼口味规则，确认后生成可携带的个人「胃」",
+        "keywords": [
+          "麦当劳",
+          "口味",
+          "订单",
+          "美食",
+          "趣味"
+        ],
+        "version": "1.0.0"
+      },
+      {
+        "name": "huashu-motion",
+        "layer": "flagship",
+        "category": "未分类",
+        "repo": "huashu-motion",
+        "subdir": "skills/huashu-motion",
+        "summary": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
+        "keywords": [],
+        "curated": false,
+        "version": "0.1.0"
+      }
+    ]
+  },
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "角色操作系统七段式",
+      "kind": "method",
+      "evidence": [
+        "nuwa-skill",
+        "huashu-design",
+        "huashu-report",
+        "tramstop-skill"
+      ],
+      "claim": "每个 skill 先定义你是谁/你信什么/交付标准，再写流程；流程之外必须有反模式与诚实边界"
+    },
+    {
+      "id": "P2",
+      "name": "三重验证提炼法",
+      "kind": "method",
+      "evidence": [
+        "nuwa-skill",
+        "darwin-skill",
+        "huashu-report"
+      ],
+      "claim": "候选结论要过多源验证才升级：女娲用跨域/生成力/排他性，达尔文用测试集，报告用 41 份量化基线"
+    },
+    {
+      "id": "P3",
+      "name": "门文件",
+      "kind": "method",
+      "evidence": [
+        "huashu-design",
+        "darwin-skill",
+        "nuwa-skill"
+      ],
+      "claim": "检查点物化成文件，文件不在就等于环节没做"
+    },
+    {
+      "id": "P4",
+      "name": "三方向门",
+      "kind": "technique",
+      "evidence": [
+        "huashu-design",
+        "huashu-md-html"
+      ],
+      "claim": "任何新视觉产出先给三个真实方向初稿，用户选定后才执行"
+    },
+    {
+      "id": "P5",
+      "name": "反模式黑名单",
+      "kind": "method",
+      "evidence": [
+        "darwin-skill",
+        "nuwa-skill",
+        "huashu-design",
+        "tramstop-skill"
+      ],
+      "claim": "显式写绝不做的事与禁词表，比只写正向要求更能稳住质量"
+    },
+    {
+      "id": "P6",
+      "name": "棘轮进化",
+      "kind": "technique",
+      "evidence": [
+        "darwin-skill"
+      ],
+      "claim": "paired 同评委比较 + 奇数多数决，只保留改进、自动回滚退步，全程 git 留痕"
+    },
+    {
+      "id": "P7",
+      "name": "机器可读目录与安装协议",
+      "kind": "technique",
+      "evidence": [
+        "huashu-skills",
+        "huashu-skills/huashu-skill-updater"
+      ],
+      "claim": "skills.json 单一事实源 + 安装留痕 + 30 天节流更新检查"
+    },
+    {
+      "id": "P8",
+      "name": "舰队式运营",
+      "kind": "method",
+      "evidence": [
+        "2026-08-23 十本橙皮书同日发布",
+        "2026-10-13 29 个仓库同小时批量更新",
+        "about-author.md 每周由 GitHub 主页自动生成"
+      ],
+      "claim": "把 60+ 仓库当一支舰队：批量发版、统一作者页、统一版本检查段"
+    }
+  ],
+  "sources": [
+    "https://github.com/alchaincyf",
+    "https://github.com/alchaincyf?tab=repositories",
+    "https://github.com/alchaincyf/huashu-skills",
+    "https://raw.githubusercontent.com/alchaincyf/huashu-skills/master/skills.json",
+    "https://www.huasheng.ai/",
+    "https://www.huasheng.ai/github/",
+    "https://www.huasheng.ai/skills/huashu-design/"
+  ],
+  "skill_analyses": [
+    {
+      "name": "nuwa-skill",
+      "repo": "nuwa-skill",
+      "stars": 35015,
+      "verdict": "把「一个人怎么想」变成可运行代码",
+      "problem": "输入一个人名（或一个模糊需求），产出一个能对新问题给出该人物式判断的 skill。",
+      "mechanism": [
+        "Phase 0 入口分流：明确人名直接蒸馏；模糊需求先诊断推荐 1–3 个候选，避免用户不知道要谁时硬造",
+        "Phase 1 六路并行采集：著作 / 对话 / 表达 / 他者评价 / 关键决策 / 时间线，各由一个子 agent 负责",
+        "Phase 1.5 调研 Review 检查点：汇报每个 agent 的来源数、关键发现、矛盾点、信息缺口，用户确认后才继续",
+        "Phase 2 三重验证提炼：跨域复现 / 生成力 / 排他性，三关全过→心智模型（3–7 个），过 1–2 关→决策启发式，0 关丢弃",
+        "Phase 3–5 按模板填 10 个 section，质量验证后双 agent 精炼"
+      ],
+      "constraints": [
+        "两个强制检查点：调研后、提炼后——把主观判断最重的两步交给用户确认",
+        "必须写「诚实边界」：不能预测全新问题、公开表达≠真实想法、信息有截止日期",
+        "三关未全过的候选一律降级或丢弃，不允许直接写进 skill"
+      ],
+      "takeaway": [
+        "「三重验证」不只用于人物，任何方法论提炼都能用",
+        "把最主观的两步设成强制检查点，比事后返工便宜"
+      ],
+      "limits": [
+        "质量上限由公开信息量决定，冷门人物会退化成通用鸡汤 + 语气模仿",
+        "表达 DNA 写过头会变成油腻模仿秀（作者后来在「品味守则」里专门列了反模式）",
+        "695 行的 SKILL.md，弱模型读不完也执行不了"
+      ]
+    },
+    {
+      "name": "huashu-design",
+      "repo": "huashu-design",
+      "stars": 25383,
+      "verdict": "把「设计品味」写成可执行约束",
+      "problem": "让 agent 用 HTML 做高保真原型 / 幻灯片 / 动画 / 信息图，产出「不像 AI 做的」。",
+      "mechanism": [
+        "角色先行：「你是设计师，不是写 HTML 的程序员」，交付标准是「别人会问这是哪个工作室做的」",
+        "承认默认审美：先自曝「不加约束你会滑向暖奶油底 + 高对比衬线 + 陶土色 + 01/02/03 编号」，再要求偏离",
+        "六条窄桥照字面做：事实验证先于假设 / 从已有资产出发 / 品牌资产协议 / 三方向门 / 素材先行 / Gate 文件",
+        "收工三件事 + 弱 runtime 分档"
+      ],
+      "constraints": [
+        "三方向门：先出三个方向的真实初稿，用户选定才执行",
+        "Gate 文件 brand-spec.md / direction-approved.md / 导演稿.md——文件不在 = 环节没做",
+        "素材先行：三个方向不能都是纯排版"
+      ],
+      "takeaway": [
+        "三方向门是所有「主观质量」任务的通用解：不给用户选项，给三个真实成品让他选",
+        "Gate 文件把「有没有做过」从记忆问题变成文件系统问题"
+      ],
+      "limits": [
+        "25k 星很大程度来自「做个好看的页面」这个高频刚需 + 分发，不等于设计能力碾压",
+        "三方向门成本高（一次任务先做 3–6 个初稿），赶时间时会被绕过",
+        "216 行只是主文件，真正执行要读多个 references，弱模型走不完"
+      ]
+    },
+    {
+      "name": "zhangxuefeng-skill",
+      "repo": "zhangxuefeng-skill",
+      "stars": 10531,
+      "verdict": "人物 skill 的标准件",
+      "problem": "用张雪峰的视角回答高考志愿 / 考研 / 职业规划问题。",
+      "mechanism": [
+        "6 个心智模型 + 8 条决策启发式 + 表达 DNA + 反模式 + 诚实边界的字段集",
+        "Agentic Protocol：先判断问题类型 → 按类型做研究（最新分数线、政策、院校数据）→ 再用人物框架回答",
+        "「不凭感觉说话，遇到需要事实的问题先做功课」是它区别于鹦鹉学舌的关键"
+      ],
+      "constraints": [
+        "人物 skill 最小字段集：身份卡 / 心智模型 / 决策启发式 / 表达 DNA / 时间线 / 价值观与反模式 / 智识谱系 / 诚实边界 / 调研来源",
+        "需要事实的问题必须先研究，禁止凭感觉作答"
+      ],
+      "takeaway": [
+        "这套最小字段集可以直接当成人物类 skill 的写作模板",
+        "「先研究再回答」应该写进所有垂直领域 skill，不只人物"
+      ],
+      "limits": [
+        "领域时效性极强（分数线、政策每年变），只能靠 Agentic Protocol 补，不能靠记忆",
+        "争议人物的观点会被当成平台立场，需要显式免责",
+        "10.5k 星有相当部分来自人物本人的流量，不是 skill 质量"
+      ]
+    },
+    {
+      "name": "darwin-skill",
+      "repo": "darwin-skill",
+      "stars": 6421,
+      "verdict": "让 skill 自己进化",
+      "problem": "给已有 skill 打分、改进、验证、保留或回滚。",
+      "mechanism": [
+        "9 维评分 100 分：结构 59（frontmatter 7 / 工作流 12 / 失败模式 12 / 检查点 6 / 具体性 18 / 资源 4）+ 效果 35（架构 12 / 实测 23）+ meta 6（反例黑名单）",
+        "paired 比较：keep/revert 不看绝对分，改用同一评委对改前/改后的配对比较，奇数 N 多数决",
+        "git 棘轮：每次只改一个 SKILL.md，改进才提交，退步自动回滚",
+        "人在回路：每个 skill 优化完暂停，用户确认再继续"
+      ],
+      "constraints": [
+        "失败模式必须显式编码成「如果 X 失败 → Y」，只写正向流程扣 ≥3 分",
+        "一次只改一个变量，且可回滚",
+        "绝对评分只用于粗排，决策依据是配对比较"
+      ],
+      "takeaway": [
+        "评分卡可以直接拿来审我自己的 skill，尤其是「失败模式」和「反例」两项",
+        "paired 评测思路适用于任何「让 AI 评 AI」的场景"
+      ],
+      "limits": [
+        "作者自己承认：LLM judge 的绝对分不可信，只能做粗排",
+        "需要准备测试 prompt 集，冷启动成本高",
+        "520 行且依赖子 agent，个人小项目用起来偏重"
+      ]
+    },
+    {
+      "name": "huashu-art-motion",
+      "repo": "huashu-art-motion",
+      "stars": 4444,
+      "verdict": "用代码让画动起来",
+      "problem": "把艺术风格画面 + 解说文案，做成 30 秒–数分钟的动画短片。",
+      "mechanism": [
+        "先分档：开阔档（强模型自由组合）vs 轨道档（弱模型只走一条固定路径），同一 skill 两种读法",
+        "镜头表先行：每行一镜（时间段｜画面里的物｜动作｜镜头运动｜屏上字｜做法），开头 3 秒必须是具体场景",
+        "lint 当门：storyboard_lint.py 红灯没清不许写代码",
+        "同一份 scene.json 同时驱动白模参考视频与提示词，保证提示词不偏离画面",
+        "36 种风格 + 16 种可迁移配方 + 9 种解说语法，逐镜渲染后硬切拼接"
+      ],
+      "constraints": [
+        "相邻两镜换构图不换画风",
+        "lint 红灯未清禁止写代码，还能查屏上数字与口播是否一致",
+        "强弱模型分档：弱模型只给固定路径，不给自由组合"
+      ],
+      "takeaway": [
+        "「先写结构化中间产物（镜头表），再写代码」适用于任何生成类任务",
+        "lint 作为硬门：机器能查的错，不要靠人眼"
+      ],
+      "limits": [
+        "依赖 ffmpeg / playwright / uv，环境重",
+        "长片渲染成本高，30 秒以上就要分镜管理",
+        "风格库再全，审美判断仍在模型和用户身上"
+      ]
+    },
+    {
+      "name": "huashu-skills",
+      "repo": "huashu-skills",
+      "stars": 1842,
+      "verdict": "一个小型包管理器",
+      "problem": "把 58 个散落各仓库的 skill 组织成可检索、可安装、可更新的目录。",
+      "mechanism": [
+        "三层分类：旗舰（独立仓库）/ 人物（独立仓库）/ 内置（本仓库子目录）",
+        "skills.json 机器可读目录：name / layer / category / repo / subdir / summary / keywords / version",
+        "安装协议 7 步：定位 → 按 subdir 决定 clone 还是复制 → 写 .huashu-skill-meta.json 留痕 → 验证 SKILL.md 存在 → 模糊需求先给 1–3 个候选 → 更新检查 → 两个已知坑",
+        "每个 SKILL.md 末尾有版本检查段，读 .last-update-check，30 天内不打扰"
+      ],
+      "constraints": [
+        "MCP server、Chrome 扩展、桌面 App、电子书明确排除——「这四个不是 skill」",
+        "只有打了版本标签的实质更新才提醒",
+        "安装必须写留痕文件"
+      ],
+      "takeaway": [
+        "目录即产品：没有目录，58 个 skill 就是 58 个孤岛",
+        "安装留痕 + 30 天节流，是「不打扰用户」的更新设计",
+        "「什么不是 skill」比「什么是 skill」更能减少误用"
+      ],
+      "limits": [
+        "手工维护的 README 与 JSON 已经漂移（52/57/58、21/22）",
+        "依赖作者持续投入；一旦停更，版本检查段会变成噪音"
+      ]
+    },
+    {
+      "name": "x-mentor-skill",
+      "repo": "x-mentor-skill",
+      "stars": 1292,
+      "verdict": "用数据压住「爆款玄学」",
+      "problem": "X/Twitter 的选题、写作、诊断、增长。",
+      "mechanism": [
+        "数据优先原则：先看自己账号的中位数、样本数、成熟时间、转化，再决定写法；不用别人的爆款替代自己的证据",
+        "证据分级：官方可核事实 / 作者自述 / 本账号观察 / 待验证实验，四级分开标注",
+        "反模板：改一个变量、记录 24/72 小时结果、保留版本",
+        "场景 A–E：写推文 / 选题 / 审阅 / 增长 / 采集报告 + 回流纠错"
+      ],
+      "constraints": [
+        "不把「30 分钟」当平台死线，不强压字数，不全禁问号",
+        "每个结论必须标注证据等级",
+        "改一个变量、留版本、可回看"
+      ],
+      "takeaway": [
+        "证据分级可直接搬到分析笔记：官方数据 / 作者自述 / 我的推断",
+        "「先看自己的数据」是对抗方法论迷信的最好办法"
+      ],
+      "limits": [
+        "平台算法与生态变化快，经验半衰期短",
+        "需要用户授权账号数据，冷启动难",
+        "不保证增长（作者自己写了），商业承诺要谨慎"
+      ]
+    },
+    {
+      "name": "huashu-md-html",
+      "repo": "huashu-md-html",
+      "stars": 918,
+      "verdict": "把 md 做成出版物",
+      "problem": "任意文件（PDF/DOCX/PPTX/图片/音频/URL）→ 干净 md；md → 出版级 HTML / DOCX / PDF / EPUB。",
+      "mechanism": [
+        "角色是出版社不是转换器：产出拿在手里不像导出来的，像做出来的",
+        "多向流水线：入（万物→md）、出（md→HTML/DOCX/PDF/EPUB3）、模板（四套）、设计师模式（推荐三个差异化视觉方向）",
+        "SKIP 字段排除「需要新生成图片、或只做压缩截图」的任务"
+      ],
+      "constraints": [
+        "SKIP 字段：明确不做什么",
+        "模板与内容分离：模板负责一致性，内容负责差异"
+      ],
+      "takeaway": [
+        "description 里写 SKIP 条件，能显著降低误触发",
+        "「明确不做什么」比多写十个能力更有用"
+      ],
+      "limits": [
+        "依赖 pandoc / markitdown / trafilatura，环境问题多",
+        "复杂排版（表格跨页、公式）仍需人工收尾"
+      ]
+    },
+    {
+      "name": "huashu-report",
+      "repo": "huashu-report",
+      "stars": 461,
+      "verdict": "机构级报告的四个人格",
+      "problem": "行业报告、白皮书、年度调研、数据洞察、arXiv 论文。",
+      "mechanism": [
+        "四个角色依次成为：研究员（定口径 / 给机制 / 定位文献）→ 编辑（读者第 3 页该知道什么）→ 信息设计师（60 页一致的标题与图表格式）→ 数据可视化师（这个数字该是柱、点还是一句话）",
+        "五条硬规矩 + 工作顺序不能颠倒",
+        "交付前双层自检：内容层（口径、机制、文献、结论强度）+ 排版层（编号、来源行、图表标题）",
+        "规范从 2026 年 42 份顶级机构报告反向提炼，41 份进量化基线"
+      ],
+      "constraints": [
+        "工作顺序不能颠倒：口径必须最先定",
+        "交付前 checklist 分内容层与排版层"
+      ],
+      "takeaway": [
+        "「研究员的后两件事最常被跳过」——定口径容易，给机制和定位文献难，这句话本身就是质量门",
+        "checklist 按「内容/排版」分层，比一张大清单可执行"
+      ],
+      "limits": [
+        "需要真实数据与文献，空手用会变成格式很专业的空话",
+        "基线以英文机构报告为主，中文语境要重新校准"
+      ]
+    },
+    {
+      "name": "tramstop-skill",
+      "repo": "tramstop-skill",
+      "stars": 54,
+      "verdict": "低星，但方法密度最高",
+      "problem": "给文稿去 AI 味，诊断或改写。",
+      "mechanism": [
+        "AI 味四层模型：词汇层（套话）< 句式层（排比、匀速句长）< 结构层（每节落金句、导游式路标、结尾升华闭环）< 经验层（细节可替换、判断两头堵、作者不在场）",
+        "减法有天花板：对照实验里只做结构手术的版本只高 0.4 分，评委原话「干净得像消过毒的」",
+        "经验层只能靠真实素材换：注入真实素材的版本盲测 8.6 分（原稿 5.5），四位评委全票",
+        "三条铁律：绝不编造作者经历 / 挖不到就放占位符 / 宁可留十个待补"
+      ],
+      "constraints": [
+        "绝不编造作者经历，挖不到就放占位符",
+        "宁留待补，不编细节"
+      ],
+      "takeaway": [
+        "分层诊断：先定位病灶在哪一层，再决定手术，而不是无脑删词",
+        "用可复现实验说话：四版本盲测的设计，比「我觉得这样更好」有说服力",
+        "占位符而非编造：这个约束适用于所有写作类 skill"
+      ],
+      "limits": [
+        "依赖作者本人素材库，换个人用效果打折",
+        "「人味」无法量化，8.6 分只是一次小样本盲测",
+        "54 星说明方法价值与传播量完全不成正比——做站点不能只按 star 排序"
+      ]
+    }
+  ]
+}

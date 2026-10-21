@@ -1,0 +1,1884 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source）+ raw README/SKILL.md；来源：司徒K《2026年X上最值得关注的120个中文博主》",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "liruifengv",
+    "name": "瑞丰",
+    "bio": "以 Astro/TypeScript 为底盘的独立开发者，同时在做 AI 桌面 Agent 与 AI 应用内容型产品（AI 画图、AI Chatbot 教程）。",
+    "website": "https://liruifengv.com",
+    "x": "",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "hybrid",
+    "public_repos": 141,
+    "source_repos": 79,
+    "fork_repos": 62
+  },
+  "stats": {
+    "total_stars_source": 1360,
+    "total_stars_all": 1364,
+    "median_stars": 0,
+    "ge_1000": 0,
+    "between_100_999": 2,
+    "between_10_99": 13,
+    "lt_10": 64,
+    "no_language": 8,
+    "top4_share": 71.3,
+    "top1_share": 46.5
+  },
+  "repos": [
+    {
+      "name": "we-drawing",
+      "url": "https://github.com/liruifengv/we-drawing",
+      "stars": 633,
+      "language": "TypeScript",
+      "updated_at": "2025-12-31T06:54:15Z",
+      "description": "AI画图。每天一句中国古诗词，生成 AI 图片。",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "amon-agent",
+      "url": "https://github.com/liruifengv/amon-agent",
+      "stars": 181,
+      "language": "TypeScript",
+      "updated_at": "2026-04-25T11:26:57Z",
+      "description": "Amon - Your AI coworker running on your desktop",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "claude-agent-demo",
+      "url": "https://github.com/liruifengv/claude-agent-demo",
+      "stars": 84,
+      "language": "TypeScript",
+      "updated_at": "2026-01-06T13:54:52Z",
+      "description": "基于 Claude Agent SDK 开发 Agent",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "vue-token-login",
+      "url": "https://github.com/liruifengv/vue-token-login",
+      "stars": 72,
+      "language": "JavaScript",
+      "updated_at": "2018-08-24T05:56:50Z",
+      "description": "a login demo usedof vue &amp;&amp; jwt token",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "astro-cn.com",
+      "url": "https://github.com/liruifengv/astro-cn.com",
+      "stars": 69,
+      "language": "TypeScript",
+      "updated_at": "2026-01-20T01:43:06Z",
+      "description": "Astro 中文网站 Showcase。展示一些使用 Astro 构建的中文网站！",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Readhub-vue",
+      "url": "https://github.com/liruifengv/Readhub-vue",
+      "stars": 53,
+      "language": "JavaScript",
+      "updated_at": "2018-08-29T11:18:39Z",
+      "description": "使用 vue 模仿 Readhub",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "alibaba-puhuiti",
+      "url": "https://github.com/liruifengv/alibaba-puhuiti",
+      "stars": 34,
+      "language": "HTML",
+      "updated_at": "2019-04-29T07:30:56Z",
+      "description": "阿里巴巴普惠体前端应用",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "liruifengv.com",
+      "url": "https://github.com/liruifengv/liruifengv.com",
+      "stars": 28,
+      "language": "Astro",
+      "updated_at": "2026-03-09T14:03:18Z",
+      "description": "My personal site https://liruifengv.com",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "health-app-logo",
+      "url": "https://github.com/liruifengv/health-app-logo",
+      "stars": 26,
+      "language": null,
+      "updated_at": "2022-10-13T09:18:03Z",
+      "description": "此仓库收集全国各地健康类 app 的图标 logo",
+      "fork": false,
+      "layer": "tool",
+      "category": "设计与视觉"
+    },
+    {
+      "name": "egg-token-login",
+      "url": "https://github.com/liruifengv/egg-token-login",
+      "stars": 26,
+      "language": "JavaScript",
+      "updated_at": "2018-08-22T07:40:54Z",
+      "description": "a login demo usedof egg &amp;&amp; token",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "create-lint-config",
+      "url": "https://github.com/liruifengv/create-lint-config",
+      "stars": 25,
+      "language": "TypeScript",
+      "updated_at": "2023-03-09T09:53:13Z",
+      "description": "An easy way to create all lint configuration such as ESLint、Prettier.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "todo-rs",
+      "url": "https://github.com/liruifengv/todo-rs",
+      "stars": 25,
+      "language": "Rust",
+      "updated_at": "2023-10-19T09:27:07Z",
+      "description": "Rust 开发的命令行 TODO LIST",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "mini-agents",
+      "url": "https://github.com/liruifengv/mini-agents",
+      "stars": 17,
+      "language": "TypeScript",
+      "updated_at": "2026-02-26T11:03:51Z",
+      "description": "A minimal AI Agents implementation",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "ai-chatbot-tutorial",
+      "url": "https://github.com/liruifengv/ai-chatbot-tutorial",
+      "stars": 13,
+      "language": "TypeScript",
+      "updated_at": "2025-11-05T13:05:10Z",
+      "description": "AI 开发实战教程，从零带你开发一个 AI Chatbot",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "promise-modal",
+      "url": "https://github.com/liruifengv/promise-modal",
+      "stars": 13,
+      "language": "JavaScript",
+      "updated_at": "2023-02-20T04:18:49Z",
+      "description": "promise-modal 是一个把 React Modal 组件创建到 body 根目录并且 Promise 函数式调用的库",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "bootstrap-study",
+      "url": "https://github.com/liruifengv/bootstrap-study",
+      "stars": 7,
+      "language": "HTML",
+      "updated_at": "2019-04-26T06:42:30Z",
+      "description": "bootstrap学习",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "sayhub",
+      "url": "https://github.com/liruifengv/sayhub",
+      "stars": 7,
+      "language": "Astro",
+      "updated_at": "2023-10-19T09:20:58Z",
+      "description": "我的博客：https://liruifengv.com",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "astro-first-pr",
+      "url": "https://github.com/liruifengv/astro-first-pr",
+      "stars": 4,
+      "language": "Astro",
+      "updated_at": "2024-03-20T03:08:40Z",
+      "description": "Find your first PR in Astro 🚀",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "IFE",
+      "url": "https://github.com/liruifengv/IFE",
+      "stars": 4,
+      "language": "HTML",
+      "updated_at": "2017-04-12T06:04:25Z",
+      "description": "IFE-studyTask",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "github-pr-preview",
+      "url": "https://github.com/liruifengv/github-pr-preview",
+      "stars": 4,
+      "language": "TypeScript",
+      "updated_at": "2025-06-30T13:56:50Z",
+      "description": "A browser extension that adds a quick preview button to GitHub Pull Request pages, making it easier to access deployment previews from various platforms.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "astro-actions-test",
+      "url": "https://github.com/liruifengv/astro-actions-test",
+      "stars": 3,
+      "language": "Astro",
+      "updated_at": "2024-05-15T09:22:03Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "sayhub-server",
+      "url": "https://github.com/liruifengv/sayhub-server",
+      "stars": 3,
+      "language": "Rust",
+      "updated_at": "2023-04-07T07:45:57Z",
+      "description": "Developing back-end services with Rust (actix-web). 使用 Rust (actix-web) 开发服务端",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "Deno-study",
+      "url": "https://github.com/liruifengv/Deno-study",
+      "stars": 3,
+      "language": null,
+      "updated_at": "2023-05-11T10:00:35Z",
+      "description": "Deno 系列文章",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "astro-middleware-cn",
+      "url": "https://github.com/liruifengv/astro-middleware-cn",
+      "stars": 3,
+      "language": "TypeScript",
+      "updated_at": "2023-10-09T07:41:44Z",
+      "description": "Astro 中间件，解决中文 md 乱码问题 / Astro middleware used for Chinese md page.",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "rspack-vue",
+      "url": "https://github.com/liruifengv/rspack-vue",
+      "stars": 3,
+      "language": "JavaScript",
+      "updated_at": "2023-10-19T07:15:35Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "docs",
+      "url": "https://github.com/liruifengv/docs",
+      "stars": 3,
+      "language": "MDX",
+      "updated_at": "2026-04-15T17:24:13Z",
+      "description": "Astro documentation",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "0js-view-transtion-demo",
+      "url": "https://github.com/liruifengv/0js-view-transtion-demo",
+      "stars": 3,
+      "language": "Astro",
+      "updated_at": "2024-06-12T01:45:40Z",
+      "description": "Chrome 126 support cross-document view transitions! 🚀",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "country-select",
+      "url": "https://github.com/liruifengv/country-select",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2022-09-18T10:36:14Z",
+      "description": "a country select component",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "JavaScript-study",
+      "url": "https://github.com/liruifengv/JavaScript-study",
+      "stars": 2,
+      "language": "HTML",
+      "updated_at": "2017-11-20T12:13:40Z",
+      "description": "学习JavaScript",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "rui",
+      "url": "https://github.com/liruifengv/rui",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2019-05-06T06:49:21Z",
+      "description": "a vue component library",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "sayhub-blog-template",
+      "url": "https://github.com/liruifengv/sayhub-blog-template",
+      "stars": 2,
+      "language": "Astro",
+      "updated_at": "2023-08-08T05:49:19Z",
+      "description": "使用 Astro 构建的博客模板，快速搭建高性能的个人博客",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "starlight-head",
+      "url": "https://github.com/liruifengv/starlight-head",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2024-04-09T02:47:24Z",
+      "description": "A Starlight plugin for easy to add &lt;head&gt; for your Starlight site",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "vine-demo",
+      "url": "https://github.com/liruifengv/vine-demo",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2024-07-12T08:29:02Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Sayhub-express",
+      "url": "https://github.com/liruifengv/Sayhub-express",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2018-06-13T13:55:44Z",
+      "description": "my blog back-end of express",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "md-parser",
+      "url": "https://github.com/liruifengv/md-parser",
+      "stars": 1,
+      "language": "Rust",
+      "updated_at": "2022-10-14T10:01:53Z",
+      "description": "使用 Rust 开发的 Markdown 解析器。",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "create-rust",
+      "url": "https://github.com/liruifengv/create-rust",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2022-10-18T03:47:40Z",
+      "description": "An easy way to create a Rust project.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "mini-lib",
+      "url": "https://github.com/liruifengv/mini-lib",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2023-02-14T02:37:32Z",
+      "description": "mini-version implementations of various frameworks、libraries and other things.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "utilz.js",
+      "url": "https://github.com/liruifengv/utilz.js",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2023-10-07T07:59:18Z",
+      "description": "Some utilities for JavaScript.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "2048",
+      "url": "https://github.com/liruifengv/2048",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2017-05-06T09:16:27Z",
+      "description": "模仿2048游戏",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "homebrew-core",
+      "url": "https://github.com/liruifengv/homebrew-core",
+      "stars": 1,
+      "language": "Ruby",
+      "updated_at": "2026-07-17T13:17:38Z",
+      "description": "🍻 Default formulae for the missing package manager for macOS (or Linux)",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "CSPostgraduate-408",
+      "url": "https://github.com/liruifengv/CSPostgraduate-408",
+      "stars": 0,
+      "language": "C++",
+      "updated_at": "2022-02-17T08:08:50Z",
+      "description": "💯 CSPostgraduate 计算机考研 408 专业课资料及真题资源",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "core",
+      "url": "https://github.com/liruifengv/core",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2023-02-21T04:23:52Z",
+      "description": "🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "contribute.docs.astro.build",
+      "url": "https://github.com/liruifengv/contribute.docs.astro.build",
+      "stars": 0,
+      "language": "MDX",
+      "updated_at": "2024-02-25T16:21:02Z",
+      "description": "An entire Starlight site for the Astro Docs contributor guides.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "create-vue",
+      "url": "https://github.com/liruifengv/create-vue",
+      "stars": 0,
+      "language": "Vue",
+      "updated_at": "2024-02-04T06:31:36Z",
+      "description": "🛠️ The recommended way to start a Vite-powered Vue project",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "zed",
+      "url": "https://github.com/liruifengv/zed",
+      "stars": 0,
+      "language": "Rust",
+      "updated_at": "2024-02-02T01:11:45Z",
+      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "zbpack",
+      "url": "https://github.com/liruifengv/zbpack",
+      "stars": 0,
+      "language": "Go",
+      "updated_at": "2024-01-25T02:34:34Z",
+      "description": "Build your project into static assets, serverless function or container image with magic, no Dockerfile needed!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "fix-webm-duration",
+      "url": "https://github.com/liruifengv/fix-webm-duration",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2022-03-23T12:21:56Z",
+      "description": "navigator.mediaDevices.getUserMedia + MediaRecorder create WEBM files without duration metadata. This library appends missing metadata section right to the file blob.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "denoffi",
+      "url": "https://github.com/liruifengv/denoffi",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2021-12-20T09:06:30Z",
+      "description": "Deno Foreign Function Interface.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "hooks",
+      "url": "https://github.com/liruifengv/hooks",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2021-08-08T05:28:37Z",
+      "description": "React Hooks Library",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "service-icons",
+      "url": "https://github.com/liruifengv/service-icons",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2024-01-24T11:28:18Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "minecat",
+      "url": "https://github.com/liruifengv/minecat",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2024-02-29T08:33:18Z",
+      "description": "minecat is a monorepo cli tool for Node.js、React",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ant-design",
+      "url": "https://github.com/liruifengv/ant-design",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2021-06-07T09:17:50Z",
+      "description": "🌈 A UI Design Language and React UI library",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "node2deno",
+      "url": "https://github.com/liruifengv/node2deno",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2021-05-24T03:28:32Z",
+      "description": "Deno for Node.js developers",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "hello-algo",
+      "url": "https://github.com/liruifengv/hello-algo",
+      "stars": 0,
+      "language": "Java",
+      "updated_at": "2024-03-26T12:38:03Z",
+      "description": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程，支持 Python, C++, Java, C#, Go, Swift, JS, TS, Dart, Rust, C, Zig 等语言。English edition ongoing",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "awesome-nodejs",
+      "url": "https://github.com/liruifengv/awesome-nodejs",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2021-05-21T12:03:05Z",
+      "description": "⚡ Delightful Node.js packages and resources",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "blog-cn",
+      "url": "https://github.com/liruifengv/blog-cn",
+      "stars": 0,
+      "language": "Astro",
+      "updated_at": "2024-05-15T06:27:07Z",
+      "description": "NocoBase 团队博客",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Yi",
+      "url": "https://github.com/liruifengv/Yi",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2024-06-27T08:57:11Z",
+      "description": "A series of large language models trained from scratch by developers @01-ai",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "astro.build",
+      "url": "https://github.com/liruifengv/astro.build",
+      "stars": 0,
+      "language": "MDX",
+      "updated_at": "2024-06-30T15:31:14Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ui",
+      "url": "https://github.com/liruifengv/ui",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2024-07-10T14:28:50Z",
+      "description": "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "x-satori",
+      "url": "https://github.com/liruifengv/x-satori",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2024-07-12T00:36:13Z",
+      "description": "🌠 use Vue file to generate Open Graph SVG or PNG by satori",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "vite",
+      "url": "https://github.com/liruifengv/vite",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2021-08-25T09:41:18Z",
+      "description": "Next generation frontend tooling. It's fast!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "zeabur",
+      "url": "https://github.com/liruifengv/zeabur",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2024-01-08T09:07:48Z",
+      "description": "A platform that helps you deploy services with one click.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "devtools-next",
+      "url": "https://github.com/liruifengv/devtools-next",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2024-01-05T09:12:45Z",
+      "description": "The next iteration of Vue DevTools",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "postcss-at-rule-parser",
+      "url": "https://github.com/liruifengv/postcss-at-rule-parser",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2022-07-27T13:44:22Z",
+      "description": "A modern CSS at rule parser in PostCSS.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "bulletproof-react",
+      "url": "https://github.com/liruifengv/bulletproof-react",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2023-03-11T11:54:37Z",
+      "description": "🛡️ ⚛️ A simple, scalable, and powerful architecture for building production ready React applications.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "esomap",
+      "url": "https://github.com/liruifengv/esomap",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2022-12-28T05:10:53Z",
+      "description": "上古卷轴OL在线地图 Elder Scrolls Online Map",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "dotland",
+      "url": "https://github.com/liruifengv/dotland",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2022-12-06T02:05:58Z",
+      "description": "deno.land website",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rust-fe",
+      "url": "https://github.com/liruifengv/rust-fe",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2022-11-07T13:10:59Z",
+      "description": "Rust是未来前端基础设施",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rustlings-liruifengv-answer",
+      "url": "https://github.com/liruifengv/rustlings-liruifengv-answer",
+      "stars": 0,
+      "language": "Rust",
+      "updated_at": "2023-07-25T03:48:08Z",
+      "description": "🦀 我的 Rustings 答案",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ts-junit",
+      "url": "https://github.com/liruifengv/ts-junit",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2022-10-18T07:04:49Z",
+      "description": "use JUnit 5 Decorator in TypeScript",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rspack",
+      "url": "https://github.com/liruifengv/rspack",
+      "stars": 0,
+      "language": "Rust",
+      "updated_at": "2023-07-25T04:35:10Z",
+      "description": "A fast Rust-based web bundler 🦀️",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "dvm",
+      "url": "https://github.com/liruifengv/dvm",
+      "stars": 0,
+      "language": "Rust",
+      "updated_at": "2023-08-01T07:36:38Z",
+      "description": "Deno Version Manager - Easy way to manage multiple active deno versions.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "skia-skia",
+      "url": "https://github.com/liruifengv/skia-skia",
+      "stars": 0,
+      "language": "CMake",
+      "updated_at": "2023-08-11T03:19:22Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "youre-the-os",
+      "url": "https://github.com/liruifengv/youre-the-os",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2023-08-14T08:33:24Z",
+      "description": "🎮 在游戏里，你将扮演一台计算机的操作系统，你必须管理进程、内存和 I/O 事件，合理分配资源，一旦进程死亡太多，你就重启了，游戏失败",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "tauri-docs",
+      "url": "https://github.com/liruifengv/tauri-docs",
+      "stars": 0,
+      "language": "MDX",
+      "updated_at": "2023-09-01T09:53:10Z",
+      "description": "The source for all Tauri project documentation.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "language-tools",
+      "url": "https://github.com/liruifengv/language-tools",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2024-09-06T09:20:48Z",
+      "description": "Language tools for Astro",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "astro-icon",
+      "url": "https://github.com/liruifengv/astro-icon",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2023-10-04T09:42:50Z",
+      "description": "Inline and sprite-based SVGs in Astro made easy!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "deno_junit",
+      "url": "https://github.com/liruifengv/deno_junit",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2022-10-13T13:28:58Z",
+      "description": "Use JUnit Decorator in Deno.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "docs-1",
+      "url": "https://github.com/liruifengv/docs-1",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2023-10-07T02:23:06Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "astro-og-canvas",
+      "url": "https://github.com/liruifengv/astro-og-canvas",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2023-10-16T03:34:58Z",
+      "description": "Generate OpenGraph images for your Astro site",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "comprehensive-rust",
+      "url": "https://github.com/liruifengv/comprehensive-rust",
+      "stars": 0,
+      "language": "Rust",
+      "updated_at": "2023-10-19T12:24:57Z",
+      "description": "This is the Rust course used by the Android team at Google. It provides you the material to quickly teach Rust.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "wechaty-plugin-assistant",
+      "url": "https://github.com/liruifengv/wechaty-plugin-assistant",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2023-11-24T03:35:04Z",
+      "description": "基于 wechaty 的聊天助手插件，帮助开发者快速实现一个智能助手机器人。",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "core-to-core-latency",
+      "url": "https://github.com/liruifengv/core-to-core-latency",
+      "stars": 0,
+      "language": "Rust",
+      "updated_at": "2022-10-10T03:36:39Z",
+      "description": "Measures the latency between CPU cores",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "deno-gfm",
+      "url": "https://github.com/liruifengv/deno-gfm",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2022-09-22T00:56:32Z",
+      "description": "Server-side GitHub Flavored Markdown rendering for Deno",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "deno",
+      "url": "https://github.com/liruifengv/deno",
+      "stars": 0,
+      "language": "Rust",
+      "updated_at": "2023-12-01T01:38:50Z",
+      "description": "A modern runtime for JavaScript and TypeScript.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "swc",
+      "url": "https://github.com/liruifengv/swc",
+      "stars": 0,
+      "language": "Rust",
+      "updated_at": "2022-09-18T13:09:40Z",
+      "description": "Rust-based platform for the Web",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "houston.astro.build",
+      "url": "https://github.com/liruifengv/houston.astro.build",
+      "stars": 0,
+      "language": "Astro",
+      "updated_at": "2023-02-06T14:43:24Z",
+      "description": "Experimental AI assistant trained on the Astro docs",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "cli-kit",
+      "url": "https://github.com/liruifengv/cli-kit",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2024-01-05T19:13:02Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rsbuild",
+      "url": "https://github.com/liruifengv/rsbuild",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2024-09-10T06:05:00Z",
+      "description": "The Rspack-based build tool. It's fast, out-of-the-box and extensible.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "vscode-tangwei",
+      "url": "https://github.com/liruifengv/vscode-tangwei",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2019-04-18T09:08:05Z",
+      "description": "一个 VS Code 扩展",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "astro",
+      "url": "https://github.com/liruifengv/astro",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2025-01-10T09:26:01Z",
+      "description": "Build faster websites with Astro's next-gen island architecture 🏝✨",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "test-md-chinese",
+      "url": "https://github.com/liruifengv/test-md-chinese",
+      "stars": 0,
+      "language": "Astro",
+      "updated_at": "2023-09-27T06:00:18Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "leaflet",
+      "url": "https://github.com/liruifengv/leaflet",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2023-10-19T07:00:09Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "hello-golang",
+      "url": "https://github.com/liruifengv/hello-golang",
+      "stars": 0,
+      "language": "Go",
+      "updated_at": "2023-10-23T02:59:26Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "dao-1",
+      "url": "https://github.com/liruifengv/dao-1",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2023-12-01T01:56:00Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "hello-moonbit",
+      "url": "https://github.com/liruifengv/hello-moonbit",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2023-12-29T07:41:14Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "i18n-helper",
+      "url": "https://github.com/liruifengv/i18n-helper",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2024-01-09T08:34:25Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "my-birthday",
+      "url": "https://github.com/liruifengv/my-birthday",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2024-01-23T09:29:01Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "astro-transition-name",
+      "url": "https://github.com/liruifengv/astro-transition-name",
+      "stars": 0,
+      "language": "Astro",
+      "updated_at": "2024-01-25T14:08:45Z",
+      "description": "test for https://github.com/withastro/astro/pull/9822",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "startq",
+      "url": "https://github.com/liruifengv/startq",
+      "stars": 0,
+      "language": "Astro",
+      "updated_at": "2024-02-27T02:32:02Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "webworker-meetup",
+      "url": "https://github.com/liruifengv/webworker-meetup",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2024-03-30T10:31:25Z",
+      "description": "",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "test-assets",
+      "url": "https://github.com/liruifengv/test-assets",
+      "stars": 0,
+      "language": "Astro",
+      "updated_at": "2023-09-07T08:49:55Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "blog-comment",
+      "url": "https://github.com/liruifengv/blog-comment",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2024-04-17T02:14:22Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "react-19-in-astro",
+      "url": "https://github.com/liruifengv/react-19-in-astro",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2024-06-20T09:59:29Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "astro-template",
+      "url": "https://github.com/liruifengv/astro-template",
+      "stars": 0,
+      "language": "Astro",
+      "updated_at": "2024-06-28T06:05:53Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "react-components-template",
+      "url": "https://github.com/liruifengv/react-components-template",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2024-10-09T13:57:13Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "astro-bento-portfolio-liruifengv",
+      "url": "https://github.com/liruifengv/astro-bento-portfolio-liruifengv",
+      "stars": 0,
+      "language": "Astro",
+      "updated_at": "2024-10-18T03:37:38Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "project-template",
+      "url": "https://github.com/liruifengv/project-template",
+      "stars": 0,
+      "language": "Astro",
+      "updated_at": "2025-01-13T05:54:06Z",
+      "description": "Astro 项目初始化模板",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "test-translate",
+      "url": "https://github.com/liruifengv/test-translate",
+      "stars": 0,
+      "language": "Astro",
+      "updated_at": "2025-03-19T07:16:23Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "github-readme-stats",
+      "url": "https://github.com/liruifengv/github-readme-stats",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2025-04-14T14:27:54Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "HelloWPS-vue",
+      "url": "https://github.com/liruifengv/HelloWPS-vue",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2025-05-22T07:00:46Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "test-captcha",
+      "url": "https://github.com/liruifengv/test-captcha",
+      "stars": 0,
+      "language": "Astro",
+      "updated_at": "2025-05-30T06:36:44Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "liruifengv",
+      "url": "https://github.com/liruifengv/liruifengv",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-01-21T03:15:08Z",
+      "description": "liruifengv's profile.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "badge-test",
+      "url": "https://github.com/liruifengv/badge-test",
+      "stars": 0,
+      "language": "MDX",
+      "updated_at": "2024-06-12T08:52:28Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "rolldown",
+      "url": "https://github.com/liruifengv/rolldown",
+      "stars": 0,
+      "language": "Rust",
+      "updated_at": "2024-10-30T07:49:41Z",
+      "description": "Fast Rust bundler for JavaScript/TypeScript with Rollup-compatible API.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "inkwell",
+      "url": "https://github.com/liruifengv/inkwell",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2023-08-30T06:36:20Z",
+      "description": "Inkwell 墨水瓶",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "c-demo",
+      "url": "https://github.com/liruifengv/c-demo",
+      "stars": 0,
+      "language": "C",
+      "updated_at": "2023-08-18T09:01:56Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ai",
+      "url": "https://github.com/liruifengv/ai",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2025-02-10T12:34:50Z",
+      "description": "Build AI-powered applications with React, Svelte, Vue, and Solid",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "starlight",
+      "url": "https://github.com/liruifengv/starlight",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2025-06-08T15:22:26Z",
+      "description": "🌟 Build beautiful, high-performance documentation websites with Astro",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "eventsource-parser",
+      "url": "https://github.com/liruifengv/eventsource-parser",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2025-08-02T07:58:00Z",
+      "description": "Streaming, source-agnostic EventSource/Server-Sent Events parser",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "skills",
+      "url": "https://github.com/liruifengv/skills",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2026-01-11T09:08:32Z",
+      "description": "Public repository for Agent Skills",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "context7",
+      "url": "https://github.com/liruifengv/context7",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-01-23T02:21:48Z",
+      "description": "Context7 MCP Server -- Up-to-date code documentation for LLMs and AI code editors",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "emdash",
+      "url": "https://github.com/liruifengv/emdash",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-04-04T01:36:35Z",
+      "description": "EmDash is a full-stack TypeScript CMS based on Astro; the spiritual successor to WordPress",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "cmux",
+      "url": "https://github.com/liruifengv/cmux",
+      "stars": 0,
+      "language": "Swift",
+      "updated_at": "2026-07-06T05:25:21Z",
+      "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "node.js-study",
+      "url": "https://github.com/liruifengv/node.js-study",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2018-07-13T05:49:35Z",
+      "description": "study node.js",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "node-fluent-ffmpeg",
+      "url": "https://github.com/liruifengv/node-fluent-ffmpeg",
+      "stars": 0,
+      "language": "HTML",
+      "updated_at": "2020-06-01T10:37:57Z",
+      "description": "A fluent API to FFMPEG (http://www.ffmpeg.org)",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "compareFile",
+      "url": "https://github.com/liruifengv/compareFile",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2019-10-12T16:32:53Z",
+      "description": "a repository for compare changed file",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "calculator-for-windows",
+      "url": "https://github.com/liruifengv/calculator-for-windows",
+      "stars": 0,
+      "language": "C",
+      "updated_at": "2023-08-29T09:34:23Z",
+      "description": "A calculator client for windows.",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "computer-topic",
+      "url": "https://github.com/liruifengv/computer-topic",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2020-12-11T07:10:48Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "liruifeng.dev",
+      "url": "https://github.com/liruifengv/liruifeng.dev",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2022-07-12T09:55:44Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "big-file-upload",
+      "url": "https://github.com/liruifengv/big-file-upload",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2022-07-15T05:54:44Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "verify-code-box",
+      "url": "https://github.com/liruifengv/verify-code-box",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2022-08-03T08:38:35Z",
+      "description": "一个 React 验证码输入组件",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "rust-template",
+      "url": "https://github.com/liruifengv/rust-template",
+      "stars": 0,
+      "language": "Rust",
+      "updated_at": "2022-09-28T14:27:00Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "runjs",
+      "url": "https://github.com/liruifengv/runjs",
+      "stars": 0,
+      "language": "Rust",
+      "updated_at": "2023-02-16T12:36:18Z",
+      "description": "a mini js runtime.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "tauri-astro-template",
+      "url": "https://github.com/liruifengv/tauri-astro-template",
+      "stars": 0,
+      "language": "Astro",
+      "updated_at": "2023-05-04T04:23:44Z",
+      "description": "A cross-platform app template use Tauri &amp; Astro",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "tauri-next-example",
+      "url": "https://github.com/liruifengv/tauri-next-example",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2023-05-05T10:04:52Z",
+      "description": "An app example with tauri &amp; nextjs",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "convert-sfc-string-2-component",
+      "url": "https://github.com/liruifengv/convert-sfc-string-2-component",
+      "stars": 0,
+      "language": "Vue",
+      "updated_at": "2023-05-06T04:11:14Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "webrtc1",
+      "url": "https://github.com/liruifengv/webrtc1",
+      "stars": 0,
+      "language": "Vue",
+      "updated_at": "2023-05-07T02:30:18Z",
+      "description": "",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "hello-rust",
+      "url": "https://github.com/liruifengv/hello-rust",
+      "stars": 0,
+      "language": "Rust",
+      "updated_at": "2023-07-21T05:59:51Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "viteblog",
+      "url": "https://github.com/liruifengv/viteblog",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2021-08-17T09:41:34Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "leaflet.pm",
+      "url": "https://github.com/liruifengv/leaflet.pm",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2019-08-30T09:34:18Z",
+      "description": "🍂🗺️ A Leaflet Plugin For Drawing and Editing Geometry Layers",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/liruifengv",
+    "count": 3,
+    "layers": {
+      "skill": 2,
+      "tool": 1
+    },
+    "items": [
+      {
+        "name": "mini-agents",
+        "layer": "skill",
+        "category": "AI Agent 框架/教学实现",
+        "repo": "mini-agents",
+        "subdir": "",
+        "summary": "A minimal AI Agents implementation，自研的最小化 Agent 实现，用于理解 Agent 骨架。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "claude-agent-demo",
+        "layer": "skill",
+        "category": "Agent 应用示例（Claude Agent SDK）",
+        "repo": "claude-agent-demo",
+        "subdir": "",
+        "summary": "基于 Claude Agent SDK 开发 Agent 的示例工程，把 SDK 能力包装成可运行示例。",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "amon-agent",
+        "layer": "tool",
+        "category": "桌面端 AI 助手产品",
+        "repo": "amon-agent",
+        "subdir": "",
+        "summary": "Amon - Your AI coworker running on your desktop，跑在用户桌面上的 AI 同事型产品。",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "name": "we-drawing",
+      "repo": "we-drawing",
+      "stars": 633,
+      "verdict": "用一个极窄的内容钩子（每日古诗词 + AI 出图）拿到了该账号近半星标，是典型的低技术门槛、高传播性的内容型产品。",
+      "problem": "普通用户/中文社交场景下，想要「每天发一张有文化感的 AI 图片」但没有生图提示词能力、也不想自己选图排版，缺一个零门槛的每日成图入口。",
+      "mechanism": [
+        "把输入固定为「每天一句中国古诗词」，用户无需提示词工程，只需接受系统给定的文本主题。",
+        "以 TypeScript 实现主题选取 + 图像生成 + 排版输出的自动化流水线，产出可直接分享的图片。",
+        "用每日更新的节奏制造订阅式复访，把功能做成有内容日历的产品而非一次性工具。"
+      ],
+      "constraints": [
+        "强依赖外部 AI 图像生成服务的可用性、额度与出图延迟，接口变更或限流会直接中断。",
+        "中文诗词版权与出图合规（风格模仿、人物肖像）需额外审核。",
+        "本地材料未见依据：具体使用哪家模型、后端部署方式与成本结构。"
+      ],
+      "takeaway": [
+        "选「用户已有素材 + 缺工程能力」的窄场景，用固定输入消灭提示词门槛。",
+        "把输出做成可一键分享的成品图，而不是暴露一个生图 API。",
+        "内容日历本身就是产品节奏，能持续带来搜索与回流。"
+      ],
+      "limits": [
+        "价值高度绑定外部模型能力与额度，无法离线复现。",
+        "题材单一，长期留存依赖诗词之外的扩展，本地材料未见依据。",
+        "本地材料未见依据：部署形态、鉴权与用户量级。"
+      ]
+    },
+    {
+      "name": "amon-agent",
+      "repo": "amon-agent",
+      "stars": 181,
+      "verdict": "把「桌面上的 AI 同事」做成可运行的桌面端 Agent 宿主，是该账号从内容型项目向可交互产品转型的代表作。",
+      "problem": "开发者/知识工作者希望有一个常驻本机、能观察并操作桌面文件与工具的 AI 协作者，而不是只能在终端里手动敲命令的一次性 CLI。",
+      "mechanism": [
+        "以桌面应用形态承载 Agent，让其拥有持续的上下文与本机执行环境（TypeScript 实现）。",
+        "面向「同事」而非「助手」的产品定位，把多步任务编排包装成可交托的工作单元。",
+        "开源形态承接关注度，同时作为产品能力的可验证样本。"
+      ],
+      "constraints": [
+        "桌面宿主依赖系统权限（文件系统、进程、通知）与跨平台差异，实现与维护成本高。",
+        "本地执行任意操作带来安全与隐私风险，需要沙箱/授权边界。",
+        "本地材料未见依据：模型接入方式、任务编排框架与本地数据存储策略。"
+      ],
+      "takeaway": [
+        "Agent 产品的护城河在宿主权限与上下文管理，不在提示词。",
+        "用「交托一件事」的最小闭环定义产品边界。",
+        "开源仓库应能独立跑通，作为产品的可信度凭证。"
+      ],
+      "limits": [
+        "对桌面环境有强平台绑定，迁移到移动/Web 场景不成立。",
+        "本地材料未见依据：多 Agent 协作、记忆持久化与成本控制的具体做法。"
+      ]
+    },
+    {
+      "name": "claude-agent-demo",
+      "repo": "claude-agent-demo",
+      "stars": 84,
+      "verdict": "以最小可运行示例暴露 Claude Agent SDK 的接入方式，是典型的「框架落地参考实现」型仓库。",
+      "problem": "想用 Claude Agent SDK 做 Agent 的中文开发者，缺少一个能看懂、能跑通、能看到工具调用过程的起步工程。",
+      "mechanism": [
+        "直接以官方 Agent SDK 为核心搭建工程，把抽象概念落到具体调用顺序上。",
+        "示例体量小、依赖少，降低读者的第一轮阅读与运行成本。",
+        "中文语境下的说明降低了英文文档的理解门槛。"
+      ],
+      "constraints": [
+        "强绑定 Claude/Anthropic 模型与账号，模型或 SDK 版本更新需跟进而非自持。",
+        "需要 API Key 与网络，属于云端依赖型示例。",
+        "本地材料未见依据：示例中包含的工具清单、错误处理与状态管理设计。"
+      ],
+      "takeaway": [
+        "做 SDK 类项目时，先给「最小可跑通 + 关键调用点注释」的骨架。",
+        "示例仓库的读者是中文开发者，说明与注释即产品的一部分。",
+        "把可运行的 demo 与可读的教学叙事合到一处。"
+      ],
+      "limits": [
+        "示例性质，不含生产级错误处理、鉴权与成本控制。",
+        "本地材料未见依据：是否提供多轮/多 Agent 的进阶示例。"
+      ]
+    },
+    {
+      "name": "mini-agents",
+      "repo": "mini-agents",
+      "stars": 17,
+      "verdict": "以最小实现重写 Agent 核心循环，目标是让人看清机制而非提供现成能力。",
+      "problem": "Agent 框架抽象层多、变化快，开发者想弄清「一次 Agent 循环到底做了什么」却没有可逐行阅读的参考实现。",
+      "mechanism": [
+        "手写最小 Agent 实现，去掉框架封装，直接暴露模型调用、工具循环与终止条件。",
+        "TypeScript 单一语言实现，降低阅读面。",
+        "作为学习与二次实现的起点，而非完整生产方案。"
+      ],
+      "constraints": [
+        "最小实现意味着不处理生产所需的并发、重试、权限、观测与成本。",
+        "实现思路易随主流 Agent API 变化而过时。",
+        "本地材料未见依据：支持的工具协议、上下文压缩与错误恢复策略。"
+      ],
+      "takeaway": [
+        "写「最小可读实现」是学习类仓库的高效形态：小于 200 行也可有教学价值。",
+        "先固化核心循环，再逐步加工具与容错。",
+        "自研实现可用于验证对框架的抽象理解是否到位。"
+      ],
+      "limits": [
+        "不可直接用于生产，仅适合作为教学与理解材料。",
+        "本地材料未见依据：测试覆盖与示例任务集。"
+      ]
+    },
+    {
+      "name": "ai-chatbot-tutorial",
+      "repo": "ai-chatbot-tutorial",
+      "stars": 13,
+      "verdict": "以中文实战教程形式带人从零实现 AI Chatbot，把知识产品化而非只留代码。",
+      "problem": "想入门 AI 应用开发的中文开发者，缺一条从零到可运行 Chatbot 的连续路径，零散文档容易在中途卡住。",
+      "mechanism": [
+        "按章节递进组织，从概念到代码再到部署，读者可顺序跟做。",
+        "用 Chatbot 这一大众熟悉的产品形态承载 AI 工程概念，降低认知负担。",
+        "教程与示例代码同仓，读者可对照运行。"
+      ],
+      "constraints": [
+        "教程时效性强，依赖的模型接口与前端栈变化后需持续修订。",
+        "内容型项目维护成本高，需要作者持续投入。",
+        "本地材料未见依据：章节结构、示例使用的模型与流式实现细节。"
+      ],
+      "takeaway": [
+        "中文教程的可复制路径是「单章一个可运行产物 + 明确的前置条件」。",
+        "选题用大众产品形态（Chatbot）而不是抽象框架名。",
+        "教程代码与文章同仓更新，避免版本漂移。"
+      ],
+      "limits": [
+        "只覆盖入门区间，深度与工程化内容有限。",
+        "本地材料未见依据：是否含 RAG、工具调用等进阶主题。"
+      ]
+    },
+    {
+      "name": "github-pr-preview",
+      "repo": "github-pr-preview",
+      "stars": 4,
+      "verdict": "解决 PR 页缺少部署预览入口这一具体摩擦的浏览器扩展，属于窄场景工具型作品。",
+      "problem": "开源项目 PR 审查者需要在多个部署平台（Vercel/Netlify 等）之间跳转找预览链接，GitHub PR 页面不直接暴露这些入口。",
+      "mechanism": [
+        "以浏览器扩展在 PR 页注入预览按钮，把分散的部署平台入口收敛到一处。",
+        "从各平台部署服务获取预览 URL，与 PR 关联。",
+        "TypeScript 实现，扩展形态免去部署成本。"
+      ],
+      "constraints": [
+        "依赖 GitHub 页面 DOM 结构，平台改版即可能失效。",
+        "需要用户在各部署平台完成授权，跨域与鉴权处理复杂。",
+        "本地材料未见依据：支持的平台清单与授权方式。"
+      ],
+      "takeaway": [
+        "找「同一信息散落在 N 个平台」的摩擦点，做聚合入口。",
+        "浏览器扩展是零部署成本验证小需求的合适形态。",
+        "这类工具的关键是 README 给出与各平台配对的具体步骤。"
+      ],
+      "limits": [
+        "受 GitHub 与各部署平台 API/页面变更影响，维护负担持续。",
+        "用户需自行配置多平台账号，转化门槛天然存在。",
+        "本地材料未见依据：活跃用户规模与平台覆盖。"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "以 Astro/TypeScript 为主语言的技术底座",
+      "kind": "method",
+      "evidence": [
+        "we-drawing",
+        "amon-agent",
+        "claude-agent-demo",
+        "mini-agents",
+        "astro-cn.com",
+        "liruifengv.com",
+        "astro-middleware-cn",
+        "starlight-head",
+        "github-pr-preview",
+        "sayhub-blog-template",
+        "project-template"
+      ],
+      "claim": "账号下几乎所有近两年项目都以 TypeScript/Astro 为主语言，个人站、博客、扩展、Agent 示例无一例外，说明技术选型是稳定偏好而非临时选择。"
+    },
+    {
+      "id": "P2",
+      "name": "以「个人博客/站点 + 配套模板」的方式沉淀内容",
+      "kind": "method",
+      "evidence": [
+        "sayhub",
+        "liruifengv.com",
+        "sayhub-blog-template",
+        "liruifengv.dev",
+        "sayhub-server",
+        "project-template",
+        "astro-template"
+      ],
+      "claim": "博客站、博客模板、博客后端、个人域名站成组出现，是把日常写作沉淀为可复用脚手架的固定做法。"
+    },
+    {
+      "id": "P3",
+      "name": "小体量、可读性优先的示例型仓库",
+      "kind": "method",
+      "evidence": [
+        "mini-agents",
+        "ai-chatbot-tutorial",
+        "claude-agent-demo",
+        "promise-modal",
+        "mini-lib",
+        "utilz.js"
+      ],
+      "claim": "多个仓库以「最小实现/极简 API」为核心卖点（minimal implementation、mini-version implementations、fluent API），体量小但可读性是卖点本身。"
+    },
+    {
+      "id": "P4",
+      "name": "先写一个可运行的玩具验证，再扩成系统",
+      "kind": "method",
+      "evidence": [
+        "2048",
+        "IFE",
+        "JavaScript-study",
+        "hello-golang",
+        "hello-moonbit",
+        "hello-rust",
+        "node.js-study",
+        "bootstrap-study"
+      ],
+      "claim": "大量以 hello-/study-/demo- 命名的学习与试验仓库横跨 2017–2023 多种语言，是长期用小项目攒手感再迁到大项目（Rust、Astro）的路径证据。"
+    },
+    {
+      "id": "P5",
+      "name": "用模板化仓库承接反复出现的需求",
+      "kind": "technique",
+      "evidence": [
+        "create-lint-config",
+        "create-rust",
+        "project-template",
+        "astro-template",
+        "tauri-astro-template"
+      ],
+      "claim": "把「新建项目」这类重复动作各自做成独立模板仓库，是其压缩样板代码的局部技巧，未见跨仓库统一的设计体系。"
+    },
+    {
+      "id": "P6",
+      "name": "围绕中文场景做小修补型工具",
+      "kind": "technique",
+      "evidence": [
+        "astro-middleware-cn",
+        "test-md-chinese",
+        "we-drawing",
+        "astro-cn.com"
+      ],
+      "claim": "中文 md 乱码、中文网站索引、古诗词配图等属于中文用户特有的细粒度需求，做单个仓库解决，是单点技巧而非可复制方法。"
+    }
+  ],
+  "sources": [
+    "https://github.com/liruifengv",
+    "https://github.com/liruifengv?tab=repositories",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

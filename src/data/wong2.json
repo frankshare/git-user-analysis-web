@@ -1,0 +1,2935 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source）+ raw README/SKILL.md；来源：司徒K《2026年X上最值得关注的120个中文博主》",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "wong2",
+    "name": "wong2",
+    "bio": "十年以上的开源作者，早期以浏览器扩展与校园向小工具起量（chatgpt-google-extension 13028 星仍是个人最高），2024 年起集中转向 MCP 与 agent 生态：自建 MCP 服务与工具链、做生态清单、为 agent 补基础设施（邮箱、微信通道、skill 与 Claude 插件）。仓库总数近 200、自有 95，但星数分布极长尾，中位数仅 4，靠一个爆款撑起门面。",
+    "website": "https://wong2.me",
+    "x": "",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "breadth",
+    "public_repos": 236,
+    "source_repos": 95,
+    "fork_repos": 141
+  },
+  "stats": {
+    "total_stars_source": 22030,
+    "total_stars_all": 22104,
+    "median_stars": 4,
+    "ge_1000": 3,
+    "between_100_999": 9,
+    "between_10_99": 18,
+    "lt_10": 65,
+    "no_language": 15,
+    "top4_share": 87.3,
+    "top1_share": 59.1
+  },
+  "repos": [
+    {
+      "name": "chatgpt-google-extension",
+      "url": "https://github.com/wong2/chatgpt-google-extension",
+      "stars": 13028,
+      "language": "TypeScript",
+      "updated_at": "2024-08-14T17:49:27Z",
+      "description": "This project is deprecated. Check my new project ChatHub:",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "awesome-mcp-servers",
+      "url": "https://github.com/wong2/awesome-mcp-servers",
+      "stars": 4373,
+      "language": null,
+      "updated_at": "2026-07-13T12:44:30Z",
+      "description": "A curated list of Model Context Protocol (MCP) servers",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "weixin-agent-sdk",
+      "url": "https://github.com/wong2/weixin-agent-sdk",
+      "stars": 1306,
+      "language": "TypeScript",
+      "updated_at": "2026-05-03T09:21:57Z",
+      "description": "微信Clawbot接入任意Agent",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "xiaohuangji",
+      "url": "https://github.com/wong2/xiaohuangji",
+      "stars": 534,
+      "language": "Python",
+      "updated_at": "2016-07-07T06:02:19Z",
+      "description": "人人网小黄鸡 (deprecated)",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "mcp-cli",
+      "url": "https://github.com/wong2/mcp-cli",
+      "stars": 446,
+      "language": "JavaScript",
+      "updated_at": "2026-06-08T07:07:02Z",
+      "description": "A CLI inspector for the Model Context Protocol",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "beijing_bus",
+      "url": "https://github.com/wong2/beijing_bus",
+      "stars": 380,
+      "language": "Python",
+      "updated_at": "2018-01-30T04:08:22Z",
+      "description": "北京实时公交 for Python",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "cf-mailroom",
+      "url": "https://github.com/wong2/cf-mailroom",
+      "stars": 340,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T08:44:25Z",
+      "description": "Self-hosted email for humans and AI agents, entirely on Cloudflare",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "diffx",
+      "url": "https://github.com/wong2/diffx",
+      "stars": 216,
+      "language": "TypeScript",
+      "updated_at": "2026-06-23T08:41:02Z",
+      "description": "A local code review tool designed for the coding agent workflow",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "bing-chat-sidebar-for-chrome",
+      "url": "https://github.com/wong2/bing-chat-sidebar-for-chrome",
+      "stars": 213,
+      "language": "JavaScript",
+      "updated_at": "2025-11-26T03:17:34Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "litemcp",
+      "url": "https://github.com/wong2/litemcp",
+      "stars": 185,
+      "language": "TypeScript",
+      "updated_at": "2025-04-27T03:30:13Z",
+      "description": "A TypeScript framework for building MCP servers elegantly",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "lovegift",
+      "url": "https://github.com/wong2/lovegift",
+      "stars": 165,
+      "language": "JavaScript",
+      "updated_at": "2012-11-07T06:56:34Z",
+      "description": "Love Gift",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "chatgpt-plugins",
+      "url": "https://github.com/wong2/chatgpt-plugins",
+      "stars": 106,
+      "language": null,
+      "updated_at": "2023-03-29T03:31:22Z",
+      "description": "Collection of ChatGPT plugins",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "first-commit",
+      "url": "https://github.com/wong2/first-commit",
+      "stars": 68,
+      "language": "HTML",
+      "updated_at": "2016-11-21T06:27:57Z",
+      "description": "(deprecated) a service to find the first commit of a repo, built with koa.js",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "vibe-ring",
+      "url": "https://github.com/wong2/vibe-ring",
+      "stars": 67,
+      "language": "TypeScript",
+      "updated_at": "2026-04-13T12:19:02Z",
+      "description": "Map Nintendo Ring-Con squeeze/pull to macOS keyboard input (Fn/Enter)",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "awesome-artifacts",
+      "url": "https://github.com/wong2/awesome-artifacts",
+      "stars": 49,
+      "language": null,
+      "updated_at": "2024-07-13T06:39:07Z",
+      "description": "Collection of public Claude Artifacts",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "mcp-jina-reader",
+      "url": "https://github.com/wong2/mcp-jina-reader",
+      "stars": 47,
+      "language": "TypeScript",
+      "updated_at": "2024-12-11T08:10:52Z",
+      "description": "Jina Reader MCP Server",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "doora",
+      "url": "https://github.com/wong2/doora",
+      "stars": 45,
+      "language": "HTML",
+      "updated_at": "2016-11-11T08:39:32Z",
+      "description": "Just another file sharing service",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "browser-firewall",
+      "url": "https://github.com/wong2/browser-firewall",
+      "stars": 43,
+      "language": "TypeScript",
+      "updated_at": "2023-09-25T11:32:15Z",
+      "description": "Block any extension or website from accessing network",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "ifttj",
+      "url": "https://github.com/wong2/ifttj",
+      "stars": 41,
+      "language": "HTML",
+      "updated_at": "2017-09-11T14:30:46Z",
+      "description": "(deprecated) IFTTJ = IFTTT + 即刻",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "yan.js",
+      "url": "https://github.com/wong2/yan.js",
+      "stars": 31,
+      "language": "JavaScript",
+      "updated_at": "2015-07-06T04:12:48Z",
+      "description": "颜.js",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "pmm",
+      "url": "https://github.com/wong2/pmm",
+      "stars": 30,
+      "language": "Python",
+      "updated_at": "2019-10-02T03:31:36Z",
+      "description": "PyPi Mirror Manager",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "pyrenren",
+      "url": "https://github.com/wong2/pyrenren",
+      "stars": 28,
+      "language": "Python",
+      "updated_at": "2015-08-30T04:33:15Z",
+      "description": "RenRen Python Library",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "GrassMudTrojan",
+      "url": "https://github.com/wong2/GrassMudTrojan",
+      "stars": 25,
+      "language": "Python",
+      "updated_at": "2012-03-04T08:21:38Z",
+      "description": "病毒课作业，一个简单的木马程序：草泥木马。",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "muse-client",
+      "url": "https://github.com/wong2/muse-client",
+      "stars": 20,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T07:40:02Z",
+      "description": "Unofficial TypeScript SDK for Muse",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "memobird.py",
+      "url": "https://github.com/wong2/memobird.py",
+      "stars": 18,
+      "language": "Python",
+      "updated_at": "2023-05-23T07:18:54Z",
+      "description": "unofficial Python SDK for memobird 咕咕机",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "kflow",
+      "url": "https://github.com/wong2/kflow",
+      "stars": 16,
+      "language": "JavaScript",
+      "updated_at": "2017-04-03T09:52:41Z",
+      "description": "cross platform GUI for k2pdfopt, built with electron",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "batchexecute",
+      "url": "https://github.com/wong2/batchexecute",
+      "stars": 15,
+      "language": "TypeScript",
+      "updated_at": "2023-09-12T08:15:52Z",
+      "description": "TypeScript package to ease interactions with Google's batchexecute batch RPC system",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "chat-adapter-weixin",
+      "url": "https://github.com/wong2/chat-adapter-weixin",
+      "stars": 14,
+      "language": "TypeScript",
+      "updated_at": "2026-07-20T07:00:26Z",
+      "description": "Weixin iLink bot adapter for Chat SDK.",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "chatgpt-google-summary-extension",
+      "url": "https://github.com/wong2/chatgpt-google-summary-extension",
+      "stars": 13,
+      "language": "TypeScript",
+      "updated_at": "2023-02-27T00:49:05Z",
+      "description": "Chrome extension to display ChatGPT summaries alongside Google search results and YouTube videos.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "browser-extensions",
+      "url": "https://github.com/wong2/browser-extensions",
+      "stars": 10,
+      "language": "TypeScript",
+      "updated_at": "2026-10-09T11:47:54Z",
+      "description": "A monorepo for my browser extensions",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "SnowClone",
+      "url": "https://github.com/wong2/SnowClone",
+      "stars": 10,
+      "language": "JavaScript",
+      "updated_at": "2012-04-18T10:01:16Z",
+      "description": "clone of google's \"let it snow",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "PyOthello",
+      "url": "https://github.com/wong2/PyOthello",
+      "stars": 9,
+      "language": "Python",
+      "updated_at": "2012-01-26T03:07:29Z",
+      "description": "An othello game with AI",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "chatgpt-api",
+      "url": "https://github.com/wong2/chatgpt-api",
+      "stars": 9,
+      "language": "TypeScript",
+      "updated_at": "2022-12-06T04:19:56Z",
+      "description": "Node.js client for the unofficial ChatGPT API.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "open163-feed",
+      "url": "https://github.com/wong2/open163-feed",
+      "stars": 7,
+      "language": "TypeScript",
+      "updated_at": "2023-07-22T10:47:42Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "userscripts",
+      "url": "https://github.com/wong2/userscripts",
+      "stars": 7,
+      "language": "JavaScript",
+      "updated_at": "2018-08-26T15:14:01Z",
+      "description": "some of my userscripts",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "douban2xiami-chrome",
+      "url": "https://github.com/wong2/douban2xiami-chrome",
+      "stars": 7,
+      "language": "JavaScript",
+      "updated_at": "2014-02-04T05:33:22Z",
+      "description": "同步豆瓣红心到虾米的Chrome扩展 - 糙！快！猛！",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "sse-inspector",
+      "url": "https://github.com/wong2/sse-inspector",
+      "stars": 6,
+      "language": "JavaScript",
+      "updated_at": "2023-07-12T11:10:35Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "zhan2weibo",
+      "url": "https://github.com/wong2/zhan2weibo",
+      "stars": 6,
+      "language": "Python",
+      "updated_at": "2012-01-06T08:01:01Z",
+      "description": "人人小站到新浪微博同步程序",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "FTP4Chrome",
+      "url": "https://github.com/wong2/FTP4Chrome",
+      "stars": 6,
+      "language": "JavaScript",
+      "updated_at": "2012-05-24T13:55:51Z",
+      "description": "FTP Client in Chrome",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "HUST-Cryptography-Project",
+      "url": "https://github.com/wong2/HUST-Cryptography-Project",
+      "stars": 6,
+      "language": "C",
+      "updated_at": "2012-03-04T07:56:13Z",
+      "description": "密码学课设",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "serve-scripts",
+      "url": "https://github.com/wong2/serve-scripts",
+      "stars": 6,
+      "language": "JavaScript",
+      "updated_at": "2016-08-21T14:34:12Z",
+      "description": "serve server scripts in browser",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "UmamiBar",
+      "url": "https://github.com/wong2/UmamiBar",
+      "stars": 5,
+      "language": "Swift",
+      "updated_at": "2026-09-17T04:12:12Z",
+      "description": "Umami analytics in your macOS menu bar",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "HUST-Access-Control-Project",
+      "url": "https://github.com/wong2/HUST-Access-Control-Project",
+      "stars": 5,
+      "language": "Python",
+      "updated_at": "2012-03-04T07:49:45Z",
+      "description": "访问控制作业",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "alipay-qr.com",
+      "url": "https://github.com/wong2/alipay-qr.com",
+      "stars": 5,
+      "language": "JavaScript",
+      "updated_at": "2014-05-17T14:29:10Z",
+      "description": "#WIP",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "doubanfm.me",
+      "url": "https://github.com/wong2/doubanfm.me",
+      "stars": 4,
+      "language": "JavaScript",
+      "updated_at": "2013-08-27T02:39:56Z",
+      "description": "未完成",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "larus",
+      "url": "https://github.com/wong2/larus",
+      "stars": 4,
+      "language": "Python",
+      "updated_at": "2014-08-14T00:59:13Z",
+      "description": "Larus is a simplified Gunicorn clone",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "renren-auto-group",
+      "url": "https://github.com/wong2/renren-auto-group",
+      "stars": 4,
+      "language": "CoffeeScript",
+      "updated_at": "2012-11-08T07:41:02Z",
+      "description": "人人好友自动分组（k means 聚类）",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "atom-flake8",
+      "url": "https://github.com/wong2/atom-flake8",
+      "stars": 4,
+      "language": "CoffeeScript",
+      "updated_at": "2014-04-25T09:50:00Z",
+      "description": "Atom package for flake8",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Awesome-Black-Friday-Cyber-Monday",
+      "url": "https://github.com/wong2/Awesome-Black-Friday-Cyber-Monday",
+      "stars": 4,
+      "language": null,
+      "updated_at": "2024-11-14T06:36:48Z",
+      "description": "Awesome deals on Black Friday: Apps, SaaS, Books, Courses, etc.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "better-extension-manager",
+      "url": "https://github.com/wong2/better-extension-manager",
+      "stars": 4,
+      "language": "JavaScript",
+      "updated_at": "2012-01-25T02:47:07Z",
+      "description": "管理Chrome扩展的扩展",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "moltbook-ts",
+      "url": "https://github.com/wong2/moltbook-ts",
+      "stars": 4,
+      "language": "TypeScript",
+      "updated_at": "2026-01-31T07:28:36Z",
+      "description": "Moltbook TypeScript SDK",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "rrtm",
+      "url": "https://github.com/wong2/rrtm",
+      "stars": 3,
+      "language": "JavaScript",
+      "updated_at": "2012-02-26T08:45:46Z",
+      "description": "人人弹幕",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "checkcheck",
+      "url": "https://github.com/wong2/checkcheck",
+      "stars": 3,
+      "language": "Swift",
+      "updated_at": "2026-09-13T04:12:54Z",
+      "description": "A macOS menu bar app for monitoring GitHub checks and getting status notifications.",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "weixin-jssdk-flask",
+      "url": "https://github.com/wong2/weixin-jssdk-flask",
+      "stars": 3,
+      "language": "Python",
+      "updated_at": "2015-09-06T15:13:01Z",
+      "description": "简单的微信 jssdk 服务器端实现 with Flask",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "use-wallet",
+      "url": "https://github.com/wong2/use-wallet",
+      "stars": 3,
+      "language": "TypeScript",
+      "updated_at": "2021-11-24T07:51:28Z",
+      "description": "👛 useWallet() · All-in-one solution to connect a dapp to an Ethereum provider.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "wong2",
+      "url": "https://github.com/wong2/wong2",
+      "stars": 3,
+      "language": null,
+      "updated_at": "2026-10-03T15:07:23Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "loudness.info",
+      "url": "https://github.com/wong2/loudness.info",
+      "stars": 3,
+      "language": "JavaScript",
+      "updated_at": "2024-07-31T15:04:41Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "approved.gg",
+      "url": "https://github.com/wong2/approved.gg",
+      "stars": 3,
+      "language": "TypeScript",
+      "updated_at": "2022-06-16T11:17:43Z",
+      "description": "",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "satori",
+      "url": "https://github.com/wong2/satori",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2022-10-18T09:48:30Z",
+      "description": "Enlightened library to convert HTML and CSS to SVG",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "you-are-deleted",
+      "url": "https://github.com/wong2/you-are-deleted",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2012-04-03T07:24:15Z",
+      "description": "Chrome扩展你被删了",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "is0801",
+      "url": "https://github.com/wong2/is0801",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2012-08-11T17:08:54Z",
+      "description": "班级通讯录",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Save2Weibo",
+      "url": "https://github.com/wong2/Save2Weibo",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2012-03-04T08:32:13Z",
+      "description": "收藏到微博服务",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "leptonai",
+      "url": "https://github.com/wong2/leptonai",
+      "stars": 2,
+      "language": "Python",
+      "updated_at": "2023-11-28T02:50:43Z",
+      "description": "A Pythonic framework to simplify AI service building",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "awesome-deepseek-integration",
+      "url": "https://github.com/wong2/awesome-deepseek-integration",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2025-02-06T09:45:36Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "asciinema2gif",
+      "url": "https://github.com/wong2/asciinema2gif",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2016-10-09T03:18:18Z",
+      "description": "Generate animated GIFs from asciinema terminal recordings",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "Have-A-Code-ONS",
+      "url": "https://github.com/wong2/Have-A-Code-ONS",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2012-09-25T10:24:56Z",
+      "description": "约个程序炮",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "HUST-Undergraduate-Thesis",
+      "url": "https://github.com/wong2/HUST-Undergraduate-Thesis",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2012-05-26T13:32:51Z",
+      "description": "An unofficial LaTeX HUST undergraduate thesis template maintained by Song Xie&lt;mail@xiesong.me&gt;",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "getUserMedia.js",
+      "url": "https://github.com/wong2/getUserMedia.js",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2012-04-21T10:32:50Z",
+      "description": "Shim for getUserMedia - WebRTC for Chrome Canary/Opera.next.camera, Flash fallback for everyone else.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "request-panel",
+      "url": "https://github.com/wong2/request-panel",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2012-04-23T13:48:05Z",
+      "description": "Chrome extension to add a request panel for Chrome Developer Tools",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "pokemon-ens-ids",
+      "url": "https://github.com/wong2/pokemon-ens-ids",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2022-05-07T08:53:46Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "excalidraw",
+      "url": "https://github.com/wong2/excalidraw",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2021-01-06T07:19:02Z",
+      "description": "Virtual whiteboard for sketching hand-drawn like diagrams",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mfers-wallpaper",
+      "url": "https://github.com/wong2/mfers-wallpaper",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2022-03-05T12:08:14Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "next-live",
+      "url": "https://github.com/wong2/next-live",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2021-06-16T03:05:32Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "rerss",
+      "url": "https://github.com/wong2/rerss",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2022-01-05T07:12:13Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "dev-in-china",
+      "url": "https://github.com/wong2/dev-in-china",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2017-05-04T07:17:31Z",
+      "description": "一些开发工具的配置方法，以便在国内愉悦的使用",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "mcp-server-detector",
+      "url": "https://github.com/wong2/mcp-server-detector",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2026-05-07T11:44:59Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "codex-skills",
+      "url": "https://github.com/wong2/codex-skills",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2026-05-13T14:08:32Z",
+      "description": "",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "nft-api",
+      "url": "https://github.com/wong2/nft-api",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2022-06-27T10:51:51Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "mcp-servers",
+      "url": "https://github.com/wong2/mcp-servers",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2026-08-25T12:02:12Z",
+      "description": "Remote MCP servers",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "world-cup-2014-open-data",
+      "url": "https://github.com/wong2/world-cup-2014-open-data",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2014-05-21T08:56:53Z",
+      "description": "open data for world cup 2014",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "hardhat-fork-contract",
+      "url": "https://github.com/wong2/hardhat-fork-contract",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2022-06-23T07:18:49Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "meowatch",
+      "url": "https://github.com/wong2/meowatch",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2023-10-07T11:09:13Z",
+      "description": "watch fs changes and meow",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "gen-art-scripts",
+      "url": "https://github.com/wong2/gen-art-scripts",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2021-12-29T06:29:31Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "peewee",
+      "url": "https://github.com/wong2/peewee",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2012-03-30T06:19:45Z",
+      "description": "a small orm, with support for postgresql, mysql and sqlite",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "undici",
+      "url": "https://github.com/wong2/undici",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2021-08-17T11:26:05Z",
+      "description": "An HTTP/1.1 client, written from scratch for Node.js",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "claude-to-chatgpt",
+      "url": "https://github.com/wong2/claude-to-chatgpt",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2023-05-14T14:19:25Z",
+      "description": "This project converts the API of Anthropic's Claude model to the OpenAI Chat API format.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "axios-retry",
+      "url": "https://github.com/wong2/axios-retry",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2022-06-10T10:51:01Z",
+      "description": "Axios plugin that intercepts failed requests and retries them whenever possible",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "hardhat-ui",
+      "url": "https://github.com/wong2/hardhat-ui",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2022-03-07T08:43:00Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "pipedream",
+      "url": "https://github.com/wong2/pipedream",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2022-03-26T03:24:13Z",
+      "description": "Connect APIs, remarkably fast. Free for developers.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "wong2.github.io",
+      "url": "https://github.com/wong2/wong2.github.io",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2025-11-11T11:09:24Z",
+      "description": "https://wong2.me",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "nodejs.org",
+      "url": "https://github.com/wong2/nodejs.org",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2021-10-26T00:38:26Z",
+      "description": "The Node.js website.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "emscripten",
+      "url": "https://github.com/wong2/emscripten",
+      "stars": 1,
+      "language": "C",
+      "updated_at": "2021-08-25T22:52:35Z",
+      "description": "Emscripten: An LLVM-to-WebAssembly Compiler",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "generative-ai-js",
+      "url": "https://github.com/wong2/generative-ai-js",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2024-08-22T07:29:44Z",
+      "description": "The official Node.js / Typescript library for the Google Gemini API",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "react-firebase-hooks",
+      "url": "https://github.com/wong2/react-firebase-hooks",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2022-11-06T06:10:54Z",
+      "description": "React Hooks for Firebase.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "waveform-data.js",
+      "url": "https://github.com/wong2/waveform-data.js",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2021-04-28T08:45:51Z",
+      "description": "Audio Waveform Data Manipulation API – resample, offset and segment waveform data in JavaScript.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ffmpeg.wasm",
+      "url": "https://github.com/wong2/ffmpeg.wasm",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2021-05-25T18:34:15Z",
+      "description": "FFmpeg for browser and node, powered by WebAssembly",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "t-shape",
+      "url": "https://github.com/wong2/t-shape",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2021-01-25T06:47:19Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "avatar",
+      "url": "https://github.com/wong2/avatar",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2017-10-19T20:38:59Z",
+      "description": "💎 Beautiful avatars as a microservice",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "node-apn",
+      "url": "https://github.com/wong2/node-apn",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2017-10-12T10:59:15Z",
+      "description": "📲 Apple Push Notification module for Node.js",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "node-html-to-text",
+      "url": "https://github.com/wong2/node-html-to-text",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2017-09-20T10:45:54Z",
+      "description": "Advanced html to text converter",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "delegator.py",
+      "url": "https://github.com/wong2/delegator.py",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2017-01-29T19:50:26Z",
+      "description": "Subprocesses for Humans 2.0.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "werkzeug",
+      "url": "https://github.com/wong2/werkzeug",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2016-12-31T16:13:46Z",
+      "description": "A flexible WSGI implementation and toolkit",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "bower-installer",
+      "url": "https://github.com/wong2/bower-installer",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2016-12-13T10:47:42Z",
+      "description": "Tool for installing bower dependencies that won't include entire repos",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "saythanks.io",
+      "url": "https://github.com/wong2/saythanks.io",
+      "stars": 1,
+      "language": "CSS",
+      "updated_at": "2016-11-21T16:12:08Z",
+      "description": "Spreading Thankfulness in Open Source.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "imgareaselect",
+      "url": "https://github.com/wong2/imgareaselect",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2016-01-05T03:31:40Z",
+      "description": "ImgAreaSelect is a jQuery plugin for selecting a rectangular area of an image. It allows web developers to easily implement image cropping functionality, as well as other user interface features, s…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "requests",
+      "url": "https://github.com/wong2/requests",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2012-12-31T07:49:45Z",
+      "description": "Python HTTP Requests for Humans™.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "electron-fetch-via-main",
+      "url": "https://github.com/wong2/electron-fetch-via-main",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2023-10-25T06:46:25Z",
+      "description": "Simple cross origin requests in Electron",
+      "fork": false,
+      "layer": "tool",
+      "category": "信息获取"
+    },
+    {
+      "name": "modern.js",
+      "url": "https://github.com/wong2/modern.js",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2021-07-04T05:54:25Z",
+      "description": "modern.js",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "renren-visit-shot",
+      "url": "https://github.com/wong2/renren-visit-shot",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2013-12-10T12:01:18Z",
+      "description": "人人网来访截图",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Nettuts-Fetch",
+      "url": "https://github.com/wong2/Nettuts-Fetch",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2012-01-09T07:37:23Z",
+      "description": "Fetch the latest version of remote files and zip packages",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "doc-editor",
+      "url": "https://github.com/wong2/doc-editor",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2012-01-15T08:00:31Z",
+      "description": "学习backbone.js",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "standby",
+      "url": "https://github.com/wong2/standby",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2017-08-18T11:47:08Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ipache",
+      "url": "https://github.com/wong2/ipache",
+      "stars": 1,
+      "language": "C",
+      "updated_at": "2012-03-04T08:49:31Z",
+      "description": "计算机网络作业，简单的Web服务器",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "vimrc",
+      "url": "https://github.com/wong2/vimrc",
+      "stars": 1,
+      "language": "Vim Script",
+      "updated_at": "2020-12-15T08:22:09Z",
+      "description": "new vimrc file with vundle",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "placeholder_fixer",
+      "url": "https://github.com/wong2/placeholder_fixer",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2011-12-14T17:04:30Z",
+      "description": "Placeholder fallback for browsers don't support it",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ai",
+      "url": "https://github.com/wong2/ai",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2026-07-01T13:04:09Z",
+      "description": "The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "extensions",
+      "url": "https://github.com/wong2/extensions",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2026-02-13T12:38:19Z",
+      "description": "Everything you need to extend Raycast.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "banzheng-guide",
+      "url": "https://github.com/wong2/banzheng-guide",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2016-05-29T13:26:09Z",
+      "description": "办证指南",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "kimi-tools",
+      "url": "https://github.com/wong2/kimi-tools",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2026-04-21T07:58:00Z",
+      "description": "Kimi Copilot 浏览器扩展",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "mastra",
+      "url": "https://github.com/wong2/mastra",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2025-06-17T10:06:51Z",
+      "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "learngit",
+      "url": "https://github.com/wong2/learngit",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2013-01-31T06:25:04Z",
+      "description": "test to learn git",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "awesome-llm-web-ui",
+      "url": "https://github.com/wong2/awesome-llm-web-ui",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2025-02-26T07:38:27Z",
+      "description": "A curated list of awesome Large Language Model (LLM) Web User Interfaces.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "elvish",
+      "url": "https://github.com/wong2/elvish",
+      "stars": 0,
+      "language": "Go",
+      "updated_at": "2016-03-03T20:19:13Z",
+      "description": "A novel Unix shell.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "jsbin",
+      "url": "https://github.com/wong2/jsbin",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2016-06-24T10:38:17Z",
+      "description": "Collaborative JavaScript Debugging App",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "sentry-docs",
+      "url": "https://github.com/wong2/sentry-docs",
+      "stars": 0,
+      "language": "CSS",
+      "updated_at": "2016-06-24T04:28:34Z",
+      "description": "The new place for the sentry documentation (and tools to build it)",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "hyper",
+      "url": "https://github.com/wong2/hyper",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2015-05-16T21:06:53Z",
+      "description": "HTTP/2 for Python.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "layzr.js",
+      "url": "https://github.com/wong2/layzr.js",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2015-05-28T03:07:27Z",
+      "description": "A small, fast, modern, and dependency-free library for lazy loading.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "gunicorn",
+      "url": "https://github.com/wong2/gunicorn",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2015-07-01T09:55:41Z",
+      "description": "gunicorn 'Green Unicorn' is a WSGI HTTP Server for UNIX, fast clients and sleepy applications.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "flask-babel",
+      "url": "https://github.com/wong2/flask-babel",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2015-08-14T07:21:10Z",
+      "description": "i18n and l10n support for Flask based on Babel and pytz",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "sentry",
+      "url": "https://github.com/wong2/sentry",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2015-09-05T16:43:44Z",
+      "description": "Sentry is a realtime, platform-agnostic error logging and aggregation platform",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "redux",
+      "url": "https://github.com/wong2/redux",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2015-09-25T06:16:39Z",
+      "description": "Predictable state container for JavaScript apps",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "proxychains-ng",
+      "url": "https://github.com/wong2/proxychains-ng",
+      "stars": 0,
+      "language": "C",
+      "updated_at": "2015-10-01T13:23:17Z",
+      "description": "proxychains ng (new generation) - a preloader which hooks calls to sockets in dynamically linked programs and redirects it through one or more socks/http proxies. continuation of the unmaintained p…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "nightmare",
+      "url": "https://github.com/wong2/nightmare",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2015-10-21T02:31:48Z",
+      "description": "A high-level browser automation library.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "SublimeWebInspector",
+      "url": "https://github.com/wong2/SublimeWebInspector",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2015-11-06T23:45:06Z",
+      "description": "Web Inspector allow you debug Javascript right in the editor",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "easyforth",
+      "url": "https://github.com/wong2/easyforth",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2015-11-27T06:39:04Z",
+      "description": "Learn Forth!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "homebrew",
+      "url": "https://github.com/wong2/homebrew",
+      "stars": 0,
+      "language": "Ruby",
+      "updated_at": "2016-03-04T04:20:07Z",
+      "description": "🍺 The missing package manager for OS X.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "flask-paginate",
+      "url": "https://github.com/wong2/flask-paginate",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2015-12-09T08:08:27Z",
+      "description": "Pagination support for flask",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "flask-dance",
+      "url": "https://github.com/wong2/flask-dance",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2015-12-30T19:26:19Z",
+      "description": "Doing the OAuth dance with style using Flask, requests, and oauthlib.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "wdb",
+      "url": "https://github.com/wong2/wdb",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2016-06-20T10:02:04Z",
+      "description": "An improbable web debugger through WebSockets",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "flask-oauthlib",
+      "url": "https://github.com/wong2/flask-oauthlib",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2015-04-13T06:02:14Z",
+      "description": "OAuthlib implementation for Flask.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "lofter",
+      "url": "https://github.com/wong2/lofter",
+      "stars": 0,
+      "language": "Elixir",
+      "updated_at": "2016-04-08T09:27:25Z",
+      "description": "lofter posts scraper in Elixir",
+      "fork": false,
+      "layer": "tool",
+      "category": "信息获取"
+    },
+    {
+      "name": "flask-weixin",
+      "url": "https://github.com/wong2/flask-weixin",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2016-01-08T13:49:04Z",
+      "description": "Weixin implementation in Flask.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "warehouse",
+      "url": "https://github.com/wong2/warehouse",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2016-01-19T04:15:06Z",
+      "description": "Next Generation Python Package Repository",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "hyper-h2",
+      "url": "https://github.com/wong2/hyper-h2",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2016-02-01T16:11:52Z",
+      "description": "HTTP/2 State-Machine based protocol implementation",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mitmproxy",
+      "url": "https://github.com/wong2/mitmproxy",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2016-02-18T14:43:45Z",
+      "description": "An interactive SSL-capable intercepting HTTP proxy for penetration testers and software developers",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "logbook",
+      "url": "https://github.com/wong2/logbook",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2015-11-07T14:33:33Z",
+      "description": "A cool logging replacement for Python. Under construction",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "awesome-mcp-servers-1",
+      "url": "https://github.com/wong2/awesome-mcp-servers-1",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2024-12-10T03:33:52Z",
+      "description": "A collection of MCP servers.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "flask",
+      "url": "https://github.com/wong2/flask",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2014-09-10T05:37:25Z",
+      "description": "A microframework based on Werkzeug, Jinja2 and good intentions",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "supervisor",
+      "url": "https://github.com/wong2/supervisor",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2014-12-08T16:09:57Z",
+      "description": "Supervisor process control system for UNIX",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mintlify-docs",
+      "url": "https://github.com/wong2/mintlify-docs",
+      "stars": 0,
+      "language": "MDX",
+      "updated_at": "2024-10-10T09:56:10Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "namefighting",
+      "url": "https://github.com/wong2/namefighting",
+      "stars": 0,
+      "language": "Java",
+      "updated_at": "2015-03-13T05:54:44Z",
+      "description": "Automatically exported from code.google.com/p/namefighting",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "simplejson.go",
+      "url": "https://github.com/wong2/simplejson.go",
+      "stars": 0,
+      "language": "Go",
+      "updated_at": "2012-08-28T13:35:28Z",
+      "description": "a Go package to interact with arbitrary JSON",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "MaDe",
+      "url": "https://github.com/wong2/MaDe",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2012-10-22T07:29:33Z",
+      "description": "Ma De Editor",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "game-off-2012",
+      "url": "https://github.com/wong2/game-off-2012",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2012-10-25T17:42:39Z",
+      "description": "The GitHub Game Off 2012 is game jam / hackathon / coding challenge to create and open source a web-based game",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "CSSCheckStyle",
+      "url": "https://github.com/wong2/CSSCheckStyle",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2012-11-28T08:24:23Z",
+      "description": "Check Code Style and more, for CSS",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "DropShell",
+      "url": "https://github.com/wong2/DropShell",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2012-11-30T03:12:50Z",
+      "description": "Where there is a dropbox, there is a way",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "node-spdyproxy",
+      "url": "https://github.com/wong2/node-spdyproxy",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2013-02-17T19:04:42Z",
+      "description": "SPDY forwarding proxy - fast and secure",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rq-dashboard",
+      "url": "https://github.com/wong2/rq-dashboard",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2013-09-15T19:19:13Z",
+      "description": "Flask-based web front-end for monitoring RQ queues.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "POSTMan-Chrome-Extension",
+      "url": "https://github.com/wong2/POSTMan-Chrome-Extension",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2013-12-29T19:29:03Z",
+      "description": "Postman helps you be more efficient while working with APIs. Using Postman, you can construct complex HTTP requests quickly, organize them in collections and share them with your co-workers.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "mustache.js",
+      "url": "https://github.com/wong2/mustache.js",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2014-01-08T06:15:16Z",
+      "description": "Minimal templating with {{mustaches}} in JavaScript",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "flask-mustachejs",
+      "url": "https://github.com/wong2/flask-mustachejs",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2014-01-12T09:37:27Z",
+      "description": "Mustache template integration with Flask",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "bootstrap-application-wizard",
+      "url": "https://github.com/wong2/bootstrap-application-wizard",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2014-01-18T10:50:16Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "FlipClock",
+      "url": "https://github.com/wong2/FlipClock",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2014-02-04T13:36:27Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "code",
+      "url": "https://github.com/wong2/code",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2014-02-13T18:32:37Z",
+      "description": "Douban Code",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "douban-code.github.io",
+      "url": "https://github.com/wong2/douban-code.github.io",
+      "stars": 0,
+      "language": "CSS",
+      "updated_at": "2014-02-14T02:53:14Z",
+      "description": "Douban Code's Introduction.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rq",
+      "url": "https://github.com/wong2/rq",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2014-02-28T09:24:23Z",
+      "description": "Simple job queues for Python",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pyjade",
+      "url": "https://github.com/wong2/pyjade",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2014-03-02T09:53:52Z",
+      "description": "Jade syntax adapter for Django, Jinja2 and Mako templates",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "markdown-preview",
+      "url": "https://github.com/wong2/markdown-preview",
+      "stars": 0,
+      "language": "CoffeeScript",
+      "updated_at": "2014-03-08T02:42:17Z",
+      "description": "Markdown preview in Atom",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "shadowsocks-gui",
+      "url": "https://github.com/wong2/shadowsocks-gui",
+      "stars": 0,
+      "language": "CoffeeScript",
+      "updated_at": "2014-03-27T14:29:30Z",
+      "description": "Shadowsocks GUI client",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pulsar",
+      "url": "https://github.com/wong2/pulsar",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2014-03-31T15:48:59Z",
+      "description": "Concurrent python",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rq-scheduler",
+      "url": "https://github.com/wong2/rq-scheduler",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2014-04-04T09:44:40Z",
+      "description": "A light library that adds job scheduling capabilities to RQ (Redis Queue)",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "git-guide",
+      "url": "https://github.com/wong2/git-guide",
+      "stars": 0,
+      "language": "CSS",
+      "updated_at": "2014-04-24T06:27:59Z",
+      "description": "git - the simple guide",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "sqlalchemy",
+      "url": "https://github.com/wong2/sqlalchemy",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2014-04-28T16:17:30Z",
+      "description": "Mirror of SQLAlchemy",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "terse-webpack",
+      "url": "https://github.com/wong2/terse-webpack",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2016-07-24T18:44:29Z",
+      "description": "Webpack simplified in a fluent API with presets &amp; an escape hatch so you're not locked in.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "webkit2png",
+      "url": "https://github.com/wong2/webkit2png",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2014-11-01T15:54:20Z",
+      "description": "png screenshots of webpages",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "shadowsocks",
+      "url": "https://github.com/wong2/shadowsocks",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2014-11-10T07:56:51Z",
+      "description": "A fast tunnel proxy that helps you bypass firewalls",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "schedule",
+      "url": "https://github.com/wong2/schedule",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2015-02-12T20:38:18Z",
+      "description": "Python job scheduling for humans.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "python-sdk",
+      "url": "https://github.com/wong2/python-sdk",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2016-08-15T08:37:50Z",
+      "description": "Qiniu Resource (Cloud) Storage SDK for Python",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "node-horseman",
+      "url": "https://github.com/wong2/node-horseman",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2016-10-27T09:00:39Z",
+      "description": "Run PhantomJS from Node",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ReplaceCloudflareCDN",
+      "url": "https://github.com/wong2/ReplaceCloudflareCDN",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2016-10-03T05:47:30Z",
+      "description": "一个 Chrome 插件：将 Google CDN 替换为国内的。",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "awesome-memobird",
+      "url": "https://github.com/wong2/awesome-memobird",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2017-12-21T02:46:28Z",
+      "description": "咕咕机资源汇总",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pipenv",
+      "url": "https://github.com/wong2/pipenv",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2018-01-25T03:40:54Z",
+      "description": "Sacred Marriage of Pipfile, Pip, &amp; Virtualenv.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "nodejs-sdk",
+      "url": "https://github.com/wong2/nodejs-sdk",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2018-06-11T05:30:17Z",
+      "description": "Qiniu Resource (Cloud) Storage SDK for Node.js",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "sa-sdk-node",
+      "url": "https://github.com/wong2/sa-sdk-node",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2018-06-19T11:26:54Z",
+      "description": "This is the home-brewed version of Node SDK for Sensors Data",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "node-optimage",
+      "url": "https://github.com/wong2/node-optimage",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2018-07-19T14:28:09Z",
+      "description": "Image optimizer, PNG, JPEG and GIFimage compress on OS X, Linux, FreeBSD and Windows",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "sentry-javascript",
+      "url": "https://github.com/wong2/sentry-javascript",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2019-03-26T09:47:28Z",
+      "description": "Official Sentry SDKs for Javascript",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "elasticsearch-js",
+      "url": "https://github.com/wong2/elasticsearch-js",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2019-04-24T08:55:21Z",
+      "description": "Official Elasticsearch client library for Node.js",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "iter-tools",
+      "url": "https://github.com/wong2/iter-tools",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2019-04-30T06:23:47Z",
+      "description": "The iterable toolbox",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "DefinitelyTyped",
+      "url": "https://github.com/wong2/DefinitelyTyped",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2020-01-03T09:38:26Z",
+      "description": "The repository for high quality TypeScript type definitions.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "router",
+      "url": "https://github.com/wong2/router",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2020-02-07T23:23:11Z",
+      "description": "",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "tinymind-blog",
+      "url": "https://github.com/wong2/tinymind-blog",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2024-09-22T11:09:58Z",
+      "description": "https://tinymind.me/wong2",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "claude-plugins",
+      "url": "https://github.com/wong2/claude-plugins",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2026-03-20T14:43:58Z",
+      "description": "",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "cc-random-show-hn",
+      "url": "https://github.com/wong2/cc-random-show-hn",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-03-05T09:14:19Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "Lody",
+      "url": "https://github.com/wong2/Lody",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-08-31T13:48:53Z",
+      "description": "Share coding agents with your team on phone and desktop",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "chat",
+      "url": "https://github.com/wong2/chat",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-06-24T06:13:31Z",
+      "description": "A unified TypeScript SDK for building chat bots across Slack, Microsoft Teams, Google Chat, Discord, and more.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "nanoclaw",
+      "url": "https://github.com/wong2/nanoclaw",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-03-13T11:59:59Z",
+      "description": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs dir…",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ccshare",
+      "url": "https://github.com/wong2/ccshare",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-01-29T09:09:04Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "modelcontextprotocol",
+      "url": "https://github.com/wong2/modelcontextprotocol",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-03-13T02:24:45Z",
+      "description": "Specification and documentation for the Model Context Protocol",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "supabase",
+      "url": "https://github.com/wong2/supabase",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2025-10-21T15:04:00Z",
+      "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "E2B",
+      "url": "https://github.com/wong2/E2B",
+      "stars": 0,
+      "language": "MDX",
+      "updated_at": "2025-09-22T10:03:21Z",
+      "description": "Open-source, secure environment with real-world tools for enterprise-grade agents.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "homebrew-cask",
+      "url": "https://github.com/wong2/homebrew-cask",
+      "stars": 0,
+      "language": "Ruby",
+      "updated_at": "2025-06-20T07:59:04Z",
+      "description": "🍻 A CLI workflow for the administration of macOS applications distributed as binaries",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "imgpilot",
+      "url": "https://github.com/wong2/imgpilot",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2023-11-21T10:03:15Z",
+      "description": "Image pilot with the power of Real-Time Latent Consistency Model",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "clerk-docs",
+      "url": "https://github.com/wong2/clerk-docs",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2024-01-29T09:31:35Z",
+      "description": "The documentation content for Clerk, an authentication and user management platform.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "remix-fastify",
+      "url": "https://github.com/wong2/remix-fastify",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2025-02-12T14:37:29Z",
+      "description": "Fastify server request handler for Remix &amp; React Router",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "vaul",
+      "url": "https://github.com/wong2/vaul",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2024-09-26T16:26:17Z",
+      "description": "An unstyled drawer component for React.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "xiaomi-push",
+      "url": "https://github.com/wong2/xiaomi-push",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2017-11-03T03:47:36Z",
+      "description": "小米推送服务Node SDK",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "json-editor",
+      "url": "https://github.com/wong2/json-editor",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2016-08-15T10:34:31Z",
+      "description": "JSON Schema Based Editor",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "fastify-url-data",
+      "url": "https://github.com/wong2/fastify-url-data",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2017-11-01T02:56:41Z",
+      "description": "A plugin to provide access to the raw URL components",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "fastify",
+      "url": "https://github.com/wong2/fastify",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2017-10-25T05:43:55Z",
+      "description": "Fast and low overhead web framework, for Node.js",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "vercel-domains-mcp",
+      "url": "https://github.com/wong2/vercel-domains-mcp",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2025-10-09T12:09:37Z",
+      "description": "Vercel Domains MCP",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "leetcode-cli",
+      "url": "https://github.com/wong2/leetcode-cli",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2016-10-11T08:58:57Z",
+      "description": "A cli tool to enjoy leetcode!",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "next.js",
+      "url": "https://github.com/wong2/next.js",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2016-10-26T07:23:24Z",
+      "description": "A minimalistic framework for server-rendered React applications",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "servers",
+      "url": "https://github.com/wong2/servers",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2024-12-09T13:34:41Z",
+      "description": "Model Context Protocol Servers",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "babel-preset-env",
+      "url": "https://github.com/wong2/babel-preset-env",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2016-12-02T23:12:40Z",
+      "description": "🌎 Autoprefixer for Babel: compile less",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "babel",
+      "url": "https://github.com/wong2/babel",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2016-12-04T04:31:02Z",
+      "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "rrkc",
+      "url": "https://github.com/wong2/rrkc",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2012-09-28T15:33:51Z",
+      "description": "人人快传：快速把网络服务（如Instagram、Dropbox）中的照片传到人人相册",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "wtforms",
+      "url": "https://github.com/wong2/wtforms",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2016-12-15T14:51:12Z",
+      "description": "A flexible forms validation and rendering library for Python.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "kue",
+      "url": "https://github.com/wong2/kue",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2016-12-27T12:10:27Z",
+      "description": "Kue is a priority job queue backed by redis, built for node.js.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "soundhax",
+      "url": "https://github.com/wong2/soundhax",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2016-12-30T03:49:44Z",
+      "description": "Free 3DS Primary Entrypoint &lt;=11.2",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "renren-notify",
+      "url": "https://github.com/wong2/renren-notify",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2012-08-18T06:30:14Z",
+      "description": "Chrome扩展：人人消息",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "openapi-specs",
+      "url": "https://github.com/wong2/openapi-specs",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-05-20T10:48:49Z",
+      "description": "",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "docs",
+      "url": "https://github.com/wong2/docs",
+      "stars": 0,
+      "language": "HTML",
+      "updated_at": "2017-02-03T08:15:57Z",
+      "description": "Auth0 documentation",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "vue",
+      "url": "https://github.com/wong2/vue",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2017-02-07T12:30:34Z",
+      "description": "A progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "koa",
+      "url": "https://github.com/wong2/koa",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2017-02-13T10:00:49Z",
+      "description": "Expressive middleware for node.js using generators",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "pypi-mirrors",
+      "url": "https://github.com/wong2/pypi-mirrors",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2017-02-25T08:09:27Z",
+      "description": "pypi mirror status",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "sequelize-redis-cache",
+      "url": "https://github.com/wong2/sequelize-redis-cache",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2017-03-25T08:20:46Z",
+      "description": "Small fluent interface for caching sequelize database query results in redis more easily",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "vue-chat-scroll",
+      "url": "https://github.com/wong2/vue-chat-scroll",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2017-03-28T11:10:18Z",
+      "description": "Automatic scroll-to-bottom directive for Vue.js 2.0",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "electron-dl",
+      "url": "https://github.com/wong2/electron-dl",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2017-04-01T04:37:31Z",
+      "description": "Simplified file downloads for your Electron app",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "module-linker",
+      "url": "https://github.com/wong2/module-linker",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2017-04-16T16:38:07Z",
+      "description": "browse modules by clicking directly on \"import\" statements on GitHub",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "node-cache-manager",
+      "url": "https://github.com/wong2/node-cache-manager",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2017-08-07T09:08:12Z",
+      "description": "Cache module for Node.JS",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "kuee",
+      "url": "https://github.com/wong2/kuee",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2016-12-27T12:06:32Z",
+      "description": "check kue stats in command line",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "node-sdk",
+      "url": "https://github.com/wong2/node-sdk",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2017-09-05T03:29:53Z",
+      "description": "Meizu push service Node.js SDK",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "fastify-redis",
+      "url": "https://github.com/wong2/fastify-redis",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2017-10-19T14:15:35Z",
+      "description": "Plugin to share a common Redis connection across Fastify.",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "puppeteer",
+      "url": "https://github.com/wong2/puppeteer",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2017-10-22T07:33:57Z",
+      "description": "Headless Chrome Node API",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "flask-security",
+      "url": "https://github.com/wong2/flask-security",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2017-10-31T03:33:12Z",
+      "description": "Quick and simple security for Flask applications",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "jpush-api-nodejs-client",
+      "url": "https://github.com/wong2/jpush-api-nodejs-client",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2017-08-25T11:17:03Z",
+      "description": "JPush's officially supported Node.js client library for accessing JPush APIs. 极光推送官方支持的 Node.js 版本服务器端 SDK。",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/wong2",
+    "count": 8,
+    "layers": {
+      "tool": 4,
+      "skill": 4
+    },
+    "items": [
+      {
+        "name": "awesome-mcp-servers",
+        "layer": "tool",
+        "category": "MCP 服务与索引",
+        "repo": "awesome-mcp-servers",
+        "subdir": "",
+        "summary": "MCP server 的策展清单，是他在 MCP 生态里最靠前的入口型资产",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "mcp-cli",
+        "layer": "tool",
+        "category": "MCP 调试工具",
+        "repo": "mcp-cli",
+        "subdir": "",
+        "summary": "MCP 协议的命令行检查器，用于连接与排查 server",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "litemcp",
+        "layer": "tool",
+        "category": "MCP 开发框架",
+        "repo": "litemcp",
+        "subdir": "",
+        "summary": "用 TypeScript 优雅构建 MCP server 的框架",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "mcp-jina-reader",
+        "layer": "skill",
+        "category": "MCP 服务实现",
+        "repo": "mcp-jina-reader",
+        "subdir": "",
+        "summary": "基于 Jina Reader 的 MCP server，把网页正文读取暴露给模型",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "mcp-servers",
+        "layer": "skill",
+        "category": "MCP 工具",
+        "repo": "mcp-servers",
+        "subdir": "",
+        "summary": "远程 MCP server 集合",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "vercel-domains-mcp",
+        "layer": "skill",
+        "category": "MCP 工具",
+        "repo": "vercel-domains-mcp",
+        "subdir": "",
+        "summary": "Vercel Domains 的 MCP 封装",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "weixin-agent-sdk",
+        "layer": "tool",
+        "category": "Agent 通道 SDK",
+        "repo": "weixin-agent-sdk",
+        "subdir": "",
+        "summary": "把微信 Clawbot 接入任意 Agent 的 TypeScript SDK",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "chat-adapter-weixin",
+        "layer": "skill",
+        "category": "Agent 通道适配器",
+        "repo": "chat-adapter-weixin",
+        "subdir": "",
+        "summary": "为 Chat SDK 提供的微信 iLink bot 适配器",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "constraints": [
+        "星数集中在一个历史项目上，该仓已标注 deprecated 且最后更新停在 2024-08",
+        "JSON 材料未显示其维护频率与替代项目 ChatHub 的当前状态"
+      ],
+      "limits": [
+        "本地材料未见依据：安装方式、权限模型、是否支持 Chrome 之外的浏览器"
+      ],
+      "mechanism": [
+        "把宿主页面已有的搜索结果/会话上下文作为注入点，无需用户切换到新界面",
+        "扩展形式承载：逻辑跑在浏览器侧，模型推理走远端 API",
+        "以单文件仓库交付，说明是可自查可分发的独立小产品"
+      ],
+      "name": "chatgpt-google-extension",
+      "problem": "想在 Google 搜索/YouTube 页内直接读到模型结果的重度 AI 用户，避免为了用 AI 在页面间反复跳转",
+      "repo": "chatgpt-google-extension",
+      "stars": 13028,
+      "takeaway": [
+        "选宿主页面里摩擦最高的那一步做嵌入，而不是另开一个产品",
+        "同一个想法先做单仓库跑通，被验证后再横向扩到其他页面"
+      ],
+      "verdict": "把对话入口嵌进用户已有的高频页面，靠分发渠道而不是功能取胜，但项目已停止维护"
+    },
+    {
+      "constraints": [
+        "内容型仓库，无语言字段，贡献门槛低但也缺乏代码级约束",
+        "依赖上游 MCP 社区产出的持续供给"
+      ],
+      "limits": [
+        "收录标准、条目字段与去重规则在 JSON 材料里无依据",
+        "目录型项目无法保证各条目质量，存在时效失效风险"
+      ],
+      "mechanism": [
+        "人工筛选 + 分类目录，产出可被检索的长名单",
+        "以 star 数作为天然排序信号，省去自建榜单体系",
+        "仓库可 fork 复用（本地材料可见他本人也 fork 过同主题仓库）"
+      ],
+      "name": "awesome-mcp-servers",
+      "problem": "刚接触 MCP 的开发者面对分散在社区各处的 server 实现，需要一个可信的入口清单",
+      "repo": "awesome-mcp-servers",
+      "stars": 4373,
+      "takeaway": [
+        "新技术标准出现时，先抢「清单」这一层的定义权，成本最低、复利最长",
+        "清单类项目要持续维护才能保住排名，一次性整理会迅速过期"
+      ],
+      "verdict": "抢在生态扩散期做入口占位，用收录权换取后续 MCP 相关项目的高曝光"
+    },
+    {
+      "constraints": [
+        "强绑定单一 IM 平台的接入协议与鉴权方式",
+        "需要对方服务开放通道，能力上限受平台限制"
+      ],
+      "limits": [
+        "本地材料未见依据：具体协议实现、鉴权、消息语义映射",
+        "第三方平台接口变更即失效"
+      ],
+      "mechanism": [
+        "以 SDK 形态暴露适配层，Agent 侧调用现成 API 而非自建通道",
+        "平台侧只做薄接入，通用能力留给 Agent",
+        "TypeScript 选型与其主力 MCP 仓库技术栈一致"
+      ],
+      "name": "weixin-agent-sdk",
+      "problem": "中文用户想让已有的 Agent 直接跑在微信通道上，而不是再为每个 IM 各写一套对接",
+      "repo": "weixin-agent-sdk",
+      "stars": 1306,
+      "takeaway": [
+        "给「通道」做薄 SDK，Agent 能力留在别处，便于同一 Agent 复用到多通道",
+        "新平台出现时先做接入层，是低成本高感知的工作量"
+      ],
+      "verdict": "他不造 Agent，只解决「让任意 Agent 接入微信」这一层管道问题"
+    },
+    {
+      "constraints": [
+        "本地材料只有名称、语言、star 与更新时间，无功能描述",
+        "2025-04 更新，处于维护低频区间"
+      ],
+      "limits": [
+        "本地材料未见依据：API 设计、代码规模、用户数、维护承诺"
+      ],
+      "mechanism": [
+        "TypeScript 生态内提供声明式 server 构建路径，降低 MCP 协议样板成本",
+        "以框架而非单个 server 定位，抬高复用面"
+      ],
+      "name": "litemcp",
+      "problem": "MCP server 开发需要重复写协议样板，开发者需要一个更省代码的构建方式",
+      "repo": "litemcp",
+      "stars": 185,
+      "takeaway": [
+        "同一主题下把工具库（mcp-cli）与构建框架（litemcp）分开做，是覆盖生态两层入口的方式",
+        "框架类项目星数天然低，评估要看是否被自己后续项目复用"
+      ],
+      "verdict": "在 MCP 生态里押注开发体验的一环：让写 server 从样板代码变成声明式"
+    },
+    {
+      "constraints": [
+        "为与人协作的编码 agent 工作流设计，脱离该流程价值下降",
+        "2026-06 更新，仍在活跃窗口内"
+      ],
+      "limits": [
+        "本地材料未见依据：diff 判定逻辑、支持的评审维度、是否支持多 agent 并发"
+      ],
+      "mechanism": [
+        "以 diff 为最小工作单元，适配 agent 的小步提交节奏",
+        "本地运行，避免把代码推到第三方服务",
+        "工具形态对齐 agent 已有循环，不新增平台依赖"
+      ],
+      "name": "diffx",
+      "problem": "编码 agent 每轮改动小、速度快，人工 review 或传统评审工具跟不上节奏",
+      "repo": "diffx",
+      "stars": 216,
+      "takeaway": [
+        "面向 agent 的工具要以「单次小步改动」为输入单位设计，而不是按完整 PR",
+        "本地执行为默认，可避开数据外传这一采购障碍"
+      ],
+      "verdict": "按 agent 的工作节奏重造 review 单元，做的是「一次改动」的检查而非整仓评审"
+    },
+    {
+      "constraints": [
+        "2026-10-20 更新，是清单里活跃度最高的仓库之一",
+        "面向 Cloudflare 单一平台"
+      ],
+      "limits": [
+        "本地材料未见依据：邮件投递链路、账户模型、长期可运维成本",
+        "Cloudflare 定价与产品线变化会直接传导为失效条件"
+      ],
+      "mechanism": [
+        "自托管即拥有账户与数据，agent 行为可被审计",
+        "同时服务人与 agent，共用同一套邮箱原语",
+        "平台侧邮箱无需改业务代码即可接入"
+      ],
+      "name": "cf-mailroom",
+      "problem": "agent 需要一个可程序化收发、可自持的邮箱，但主流邮箱 API 权限与合规门槛都高",
+      "repo": "cf-mailroom",
+      "stars": 340,
+      "takeaway": [
+        "给 agent 补「身份与通道」这类看似平庸的基础设施，往往比再做一个 agent 更有复用价值",
+        "选托管成本接近零的平台能让自托管方案真正跑得起来"
+      ],
+      "verdict": "把「给 agent 一封信箱」做成自托管基建，目标是让 agent 拥有可审计的对外身份"
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "做生态侧与协议侧，不与模型或 agent 框架正面竞争",
+      "kind": "method",
+      "evidence": [
+        "fork: chat（Slack/Teams/Discord 统一聊天 SDK）",
+        "fork: nanoclaw（容器化 agent 运行时）",
+        "fork: Lody（团队共享编码 agent）",
+        "fork: mastra（TypeScript agent 框架）",
+        "fork: ai（Vercel AI SDK）"
+      ],
+      "claim": "他不对齐某一个 agent 产品，而是写接入层与检查层，让自有能力被生态复用。"
+    },
+    {
+      "id": "P2",
+      "name": "同一主题铺「清单 + 工具 + 框架」三层入口",
+      "kind": "method",
+      "evidence": [
+        "awesome-mcp-servers（目录层）",
+        "mcp-cli（调试工具层）",
+        "litemcp（框架层）",
+        "mcp-jina-reader（服务实现层）",
+        "mcp-server-detector（检测层）"
+      ],
+      "claim": "在抢手方向上同时押「清单」「工具」「框架」三层入口，用一个主题摊薄被单个项目淘汰的风险。"
+    },
+    {
+      "id": "P3",
+      "name": "选既有平台当宿主，不自建重平台",
+      "kind": "method",
+      "evidence": [
+        "chatgpt-google-extension（扩展侧注入）",
+        "batchexecute（封装 Google RPC）",
+        "kimi-tools（浏览器扩展）",
+        "browser-extensions（扩展 monorepo）",
+        "UmamiBar / checkcheck（自建 macOS 菜单栏应用）"
+      ],
+      "claim": "优先写代码只依赖第三方平台的薄工具，绕开大厂产品的权限与审核流程。"
+    },
+    {
+      "id": "P4",
+      "name": "弃用旧仓时把导流写进 description",
+      "kind": "technique",
+      "evidence": [
+        "chatgpt-google-extension: \"This project is deprecated. Check my new project ChatHub\"",
+        "xiaohuangji: \"(deprecated)\"",
+        "first-commit: \"(deprecated)\"",
+        "ifttj: \"(deprecated)\""
+      ],
+      "claim": "早期爆款后续用 description 直接导流到新项目，并用 deprecated 标记保留历史 star 与 SEO。"
+    },
+    {
+      "id": "P5",
+      "name": "用大规模 fork 做源码级技术选型",
+      "kind": "technique",
+      "evidence": [
+        "fork: flask, werkzeug, wtforms, rq, kue, supervisor, gunicorn",
+        "fork: fastify, koa, undici, axios-retry, ffmpeg.wasm",
+        "fork: mitmproxy, shadowsocks, proxychains-ng",
+        "fork: peewee, sqlalchemy, hyper"
+      ],
+      "claim": "fork 名下的选型跨度覆盖 Web 框架、任务队列、代理抓包、ORM 等，明显是在读源码而非读文档。"
+    }
+  ],
+  "sources": [
+    "https://github.com/wong2",
+    "https://github.com/wong2?tab=repositories",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}

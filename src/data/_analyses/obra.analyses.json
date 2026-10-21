@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.1",
+  "user": "obra",
+  "note": "拆解卡原始素材，合并进 obra.json 的 skill_analyses 字段",
+  "analyses": [
+    {
+      "name": "superpowers",
+      "repo": "superpowers",
+      "stars": 301998,
+      "verdict": "把开发纪律装进 agent",
+      "problem": "coding agent 一上来就写代码、跳过设计、不做测试、跑着跑着偏离计划。",
+      "mechanism": [
+        "7 步强制工作流：brainstorming → using-git-worktrees → writing-plans → subagent-driven-development / executing-plans → test-driven-development → requesting-code-review → finishing-a-development-branch",
+        "触发即强制：The agent checks for relevant skills before any task. Mandatory workflows, not suggestions.",
+        "每个任务派一个子 agent，两段审查：先规格合规，再代码质量，顺序不能反",
+        "16 种 harness 各自安装，技能本体共用一套",
+        "自诊断：会话行为异常时调用 diagnosing-superpowers，读 transcript 给逐行证据"
+      ],
+      "constraints": [
+        "任务颗粒度 2–5 分钟",
+        "测试前写的代码必须删掉",
+        "致命问题阻塞进度",
+        "收尾必须清理 worktree 并给出 merge/PR/保留/丢弃选项"
+      ],
+      "takeaway": [
+        "「强制」与「建议」的区别：写「建议使用 TDD」基本无效，写成「任务前必查相关 skill」才会被执行",
+        "任务颗粒度 2–5 分钟是让子 agent 能独立完成又能被审查的甜点区",
+        "两段审查的顺序不能反"
+      ],
+      "limits": [
+        "只覆盖编码；设计、写作、数据一概不管",
+        "对「改个 typo」这类轻任务，7 步流程是负担",
+        "97.7% 的星集中在这一个仓库：平台一旦内建类似工作流，护城河会迅速变浅"
+      ]
+    },
+    {
+      "name": "writing-skills",
+      "repo": "superpowers",
+      "stars": 301998,
+      "verdict": "用 TDD 造 skill",
+      "problem": "怎么写出一个 agent 真的会遵守的 skill。",
+      "mechanism": [
+        "技能 TDD 映射：测试用例=压力场景，生产代码=SKILL.md，RED=无 skill 时 agent 违规，GREEN=有 skill 时合规，REFACTOR=堵住新借口",
+        "Iron Law：NO SKILL WITHOUT A FAILING TEST FIRST——没跑过基线就写的 skill 删掉重来，包括「只是加一节」的修改",
+        "SDO：description 只写触发条件绝不概括流程；关键词覆盖；描述性命名；token 预算（getting-started <150 词，其他常驻 <200 词）",
+        "反合理化工具箱：堵死具体 workaround、写「违反字面即违反精神」、把 agent 借口做成「借口/现实」表、给红旗清单",
+        "技能分四类：纪律型 / 技术型 / 模式型 / 参考型，测试方法各不同"
+      ],
+      "constraints": [
+        "先跑基线，记录 agent 原话里的借口，再写 skill",
+        "description 不得概括工作流——实测概括后 agent 会照描述走、跳过正文",
+        "纪律型 skill 才用禁止式护栏；输出形态不对时禁止会适得其反",
+        "不得保留未测试的改动当参考"
+      ],
+      "takeaway": [
+        "先跑基线：不知道 agent 会怎么犯错，就不知道该写什么，能省掉 80% 无效 skill 写作",
+        "description 只写触发条件——这条直接修正了我自己写的 skill（已升 v1.1.0）",
+        "借口表：把「太简单不用测」这类话逐条反驳，比讲道理有效"
+      ],
+      "limits": [
+        "造压力场景本身要成本（要设计诱导违规的 prompt）",
+        "682 行 + 多个 reference，个人开发者读完就累",
+        "只对纪律型 skill 最有效；纯参考型用不上"
+      ]
+    },
+    {
+      "name": "brainstorming",
+      "repo": "superpowers",
+      "stars": 301998,
+      "verdict": "先问，再动手",
+      "problem": "用户说「做个 X」，agent 立刻开写，做完发现不是想要的。",
+      "mechanism": [
+        "先判断「你到底知道多少」：关键信息都在请求里就直接做并说明，否则开始对话",
+        "第一封信只有两件事：一句「不想回答可直接说」+ 一个开放问题（问具体场景，不问偏好）",
+        "每次只问一个问题，不给示例清单，不用流程术语",
+        "Play it back：理解一块就复述 200–300 字，猜测部分标注为猜测，结尾问哪里不对或漏了",
+        "Size the work：快速任务 / 小改动 / 需要设计文档的项目；中途变大就停下来升级"
+      ],
+      "constraints": [
+        "每条消息只能有一个问题，不能挂示例清单",
+        "必须标注哪些是猜测、哪些是用户原话",
+        "视觉伴侣：产物是用户会看的东西时，先给视觉选项"
+      ],
+      "takeaway": [
+        "「一次一个问题 + 复述标注猜测」是所有需求澄清任务的通用解",
+        "分级工作量：明确任务直接做，别为了流程而流程"
+      ],
+      "limits": [
+        "慢；急性子用户会烦（所以它第一条就是「可以跳过」）",
+        "对话质量强依赖模型；弱模型会把开放问题问成问卷"
+      ]
+    },
+    {
+      "name": "the-elements-of-style",
+      "repo": "the-elements-of-style",
+      "stars": 602,
+      "verdict": "把经典文本装成 skill",
+      "problem": "agent 写文档、commit message、错误提示时文风松散。",
+      "mechanism": [
+        "一个 skill（writing-clearly-and-concisely）+ 一份 12,000 token 的 1918 年原文参考",
+        "明确告知 token 成本；上下文紧张时把草稿交给子 agent 处理",
+        "用 everyharness 从一个 everyharness.yaml 生成 11 种 harness 的安装文档与清单",
+        "everyharness validate 对漂移报错，生成文件带 GENERATED 头，禁止手改"
+      ],
+      "constraints": [
+        "常驻描述压到极短，重内容进 references 并标注 token 成本",
+        "不得手改生成物，validate 失败即阻塞"
+      ],
+      "takeaway": [
+        "给参考材料标 token 成本，让 agent 自己决定要不要加载",
+        "经典文本（公版）是低成本高质量的知识源",
+        "「一个 yaml 生成多端、validate 对漂移报错」是单一事实源的工程答案"
+      ],
+      "limits": [
+        "1918 年的英文文体规则，迁移到中文写作有限",
+        "12k token 的参考很重，实际使用率可能很低"
+      ]
+    },
+    {
+      "name": "superpowers-marketplace",
+      "repo": "superpowers-marketplace",
+      "stars": 1302,
+      "verdict": "分发独立成层",
+      "problem": "技能多了之后，怎么让用户找到、装上、更新。",
+      "mechanism": [
+        "独立的插件市场仓库，作为 Claude Code 插件的分发入口",
+        "与核心仓解耦：核心仓只管质量，市场仓只管上架",
+        "每个插件在市场里有独立条目与安装说明，用户按需安装"
+      ],
+      "constraints": [
+        "市场仓不得夹带技能内容修改，避免与核心仓分叉"
+      ],
+      "takeaway": [
+        "分发层单独成仓"
+      ],
+      "limits": [
+        "绑定平台的插件机制；平台改规则就得跟着改"
+      ]
+    },
+    {
+      "name": "superpowers-lab",
+      "repo": "superpowers-lab",
+      "stars": 433,
+      "verdict": "实验田",
+      "problem": "新技巧没验证，不敢放进核心仓。",
+      "mechanism": [
+        "明确标为实验性的 skill 集合（找重复函数、mcp-cli、用 tmux 跑交互命令、Windows VM）",
+        "单独安装，与核心包分离"
+      ],
+      "constraints": [
+        "实验性 skill 必须显式标注，不得与稳定 skill 混装"
+      ],
+      "takeaway": [
+        "稳定核 / 实验田 / 市场三层，避免实验品污染主线"
+      ],
+      "limits": [
+        "实验品质量参差，用户要自己判断"
+      ]
+    },
+    {
+      "name": "superpowers-chrome",
+      "repo": "superpowers-chrome",
+      "stars": 362,
+      "verdict": "零依赖浏览器控制",
+      "problem": "agent 要操作浏览器，但不想装一堆依赖。",
+      "mechanism": [
+        "直接用 Chrome DevTools Protocol，零依赖",
+        "作为 Claude Code 插件提供"
+      ],
+      "constraints": [
+        "零依赖：不引入额外运行时"
+      ],
+      "takeaway": [
+        "能零依赖就零依赖——降低安装摩擦等于提高采用率"
+      ],
+      "limits": [
+        "浏览器权限与安全边界要用户自己把关"
+      ]
+    },
+    {
+      "name": "episodic-memory",
+      "repo": "episodic-memory",
+      "stars": 492,
+      "verdict": "给 agent 装记忆",
+      "problem": "跨会话、跨 agent 的对话历史无法检索，每次都从零开始。",
+      "mechanism": [
+        "同步并索引 Claude Code / Codex / Cursor / opencode 等会话，支持搜索与回放",
+        "摘要用便宜模型（默认 haiku），可换端点、可关摘要",
+        "明确的成本与丢弃策略：超大消息（>256KB）直接丢弃不截断，避免污染索引",
+        "摘要调用有超时，可整体关闭后台同步"
+      ],
+      "constraints": [
+        "超大消息直接丢弃，不截断",
+        "可关闭后台同步与摘要，端点可替换"
+      ],
+      "takeaway": [
+        "把「记忆」做成可检索资产，而不是塞进 context",
+        "任何索引型工具都要有丢弃策略和成本开关"
+      ],
+      "limits": [
+        "隐私敏感（会话全量入库）",
+        "索引质量依赖摘要模型"
+      ]
+    },
+    {
+      "name": "private-journal-mcp",
+      "repo": "private-journal-mcp",
+      "stars": 457,
+      "verdict": "情绪也需要缓冲",
+      "problem": "模型需要一处「不进入正式输出」的地方整理思路与情绪。",
+      "mechanism": [
+        "一个轻量 MCP server，提供私有日记能力",
+        "内容不进入对外输出"
+      ],
+      "constraints": [
+        "私有边界必须说清：什么进档案、什么不外泄"
+      ],
+      "takeaway": [
+        "给 agent 设计「私有草稿区」，比让它在正式回复里边想边写更稳"
+      ],
+      "limits": [
+        "价值高度主观",
+        "隐私边界要说清"
+      ]
+    },
+    {
+      "name": "packnplay",
+      "repo": "packnplay",
+      "stars": 174,
+      "verdict": "执行隔离",
+      "problem": "让 agent 在隔离环境里跑命令，不污染本机。",
+      "mechanism": [
+        "Docker 容器执行 + 自动 worktree + dev container 管理",
+        "每次执行落在独立容器与独立工作区，命令失败不污染宿主"
+      ],
+      "constraints": [
+        "命令在容器内执行，不落到宿主"
+      ],
+      "takeaway": [
+        "执行隔离 + 可回滚是让 agent 自主跑几小时的前提"
+      ],
+      "limits": [
+        "环境重；Windows 上体验打折"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.1",
+  "user": "coleam00",
+  "analyses": [
+    {
+      "name": "Archon",
+      "repo": "Archon",
+      "stars": 23733,
+      "verdict": "他起量的主仓库是「让 AI 编码可重复」的工作流引擎本体，并成为其下游多个仓库的公共底座。",
+      "problem": "面向使用编码 agent 的开发者：agent 每次运行行为不一致、结果不可复现、无法在无人值守下把 issue 推进到合并。",
+      "mechanism": [
+        "以「harness builder」为定位：把 AI 编码从一次性提示变成可编排的工作流（本地材料中的仓库描述语）。",
+        "对外以 Archon workflow 的形式被大量下游仓库复用：archon-idea-to-wo、ai-content-factory、hyperframes-ai-video-generation、frontend-mix 均自称基于 Archon。",
+        "配套自建 CLI 分发通道：homebrew-archon 提供 Homebrew tap 安装 Archon CLI。"
+      ],
+      "constraints": [
+        "强绑定 Claude Code / Claude Agent SDK 生态，脱离该生态的可用性本地材料未见依据。",
+        "TypeScript 技术栈，示例仓库中大量 Python 项目只能通过调用层间接使用。",
+        "schema 校验、错误分支等具体检查点在本地材料中未见依据。"
+      ],
+      "takeaway": [
+        "先做「工作流引擎 + 一堆垂直工作流」的两层结构，而不是每个场景一个独立工具。",
+        "把 CLI 安装路径（Homebrew tap）作为工程交付的一部分，与代码同批发布。",
+        "对外以 workflow 名称命名下游集成点，让生态仓库自动挂载。"
+      ],
+      "limits": [
+        "23.7k 星占其自有仓库总星 35.1%，项目热度高度集中在单一仓库上。",
+        "依赖外部模型与 CLI 行为，模型/工具版本变更会带来连锁影响。",
+        "本地材料只含仓库描述，未见实际实现细节，无法验证其确定性机制。"
+      ]
+    },
+    {
+      "name": "context-engineering-intro",
+      "repo": "context-engineering-intro",
+      "stars": 13883,
+      "verdict": "他被看见的第二条路径是「教学即产品」：用一套可跟做的上下文工程教程换取最大规模传播。",
+      "problem": "面向想用 Claude Code 做实际开发的普通开发者：不知道怎么组织上下文，导致 agent 效果不稳定、不会用。",
+      "mechanism": [
+        "以「context engineering is the new vibe coding」这类口号式定位降低入门门槛。",
+        "选定 Claude Code 作为主战场，把示例全部锚定在一个具体工具上，减少读者选择成本。",
+        "以可跟做的仓库形式发布教程内容，而不是只发文章。"
+      ],
+      "constraints": [
+        "课程内容与 Claude Code 强绑定，仓库自述也承认以 Claude Code 为中心。",
+        "最后更新时间为 2026-03-16，属于一次性传播型内容，难以持续贡献星数。",
+        "内容型仓库 stars 不等于使用留存。"
+      ],
+      "takeaway": [
+        "教程类内容要绑定单一主工具，不要做多工具平行对比。",
+        "把完整可运行材料放仓库，仓库本身即产品。"
+      ],
+      "limits": [
+        "依赖第三方平台（Claude Code）的能力与可用性。",
+        "本地材料未见依据说明其是否包含可执行练习或评测。"
+      ]
+    },
+    {
+      "name": "ottomator-agents",
+      "repo": "ottomator-agents",
+      "stars": 5795,
+      "verdict": "他用「把所有 agent 聚到一个平台仓库」的方式批量收割早期 agent 圈的注意力。",
+      "problem": "面向想快速找到可复用 agent 实现的开发者：agent 示例分散在各人仓库里，缺少统一入口。",
+      "mechanism": [
+        "以 oTTomator Live Agent Studio 平台为名，把平台托管的所有开源 AI Agent 集中放进一个仓库。",
+        "聚合效应带来单仓库高曝光：5.8k 星。",
+        "每个 agent 独立成目录，读者按需取用。"
+      ],
+      "constraints": [
+        "与自家平台强耦合，脱离平台的使用方式本地材料未见依据。",
+        "最后更新 2025-11-09，聚合型仓库的新鲜度依赖上游贡献。"
+      ],
+      "takeaway": [
+        "早期做 agent 时，「集合仓库 + 单一入口」是低成本高曝光的形态。",
+        "聚合仓库可作为自己其他作品的流量入口。"
+      ],
+      "limits": [
+        "星数来自聚合曝光，不代表单个 agent 的质量。",
+        "受平台运营与上游项目存续影响。"
+      ]
+    },
+    {
+      "name": "excalidraw-diagram-skill",
+      "repo": "excalidraw-diagram-skill",
+      "stars": 5052,
+      "verdict": "这是他第一个真正「skill 化」的单点产品：用窄场景的图示生成能力证明 skill 这种封装形式可用。",
+      "problem": "面向使用 Claude Code 的开发者与产品/架构人员：agent 画不出好看又实用的架构图/流程图。",
+      "mechanism": [
+        "把能力边界收窄到「生成 Excalidraw 图示」这一件事，靠垂直度换取明确价值。",
+        "以 skill 形式打包，明确声明兼容 Claude Code 及任意 coding agent。",
+        "选择 Excalidraw 而非 Mermaid/PlantUML，输出物天然可编辑、可分享。"
+      ],
+      "constraints": [
+        "输出质量上限受 Excalidraw 语法与图元表达能力限制。",
+        "本地材料未给出图示质量评测或失败样例。"
+      ],
+      "takeaway": [
+        "做 skill 时先选一个「输出物可编辑、可分享」的窄任务。",
+        "在 skill 描述里同时点名主流平台与泛化措辞（Claude Code + any coding agent），扩大适用范围。"
+      ],
+      "limits": [
+        "仅解决画图一类任务，脱离该场景不可复用。",
+        "依赖 Excalidraw 生态与 agent 自身对格式的遵循度。"
+      ]
+    },
+    {
+      "name": "claude-memory-compiler",
+      "repo": "claude-memory-compiler",
+      "stars": 1306,
+      "verdict": "他用「hooks 自动采集 + Agent SDK 抽取 + LLM 编译」三段式，把记忆做成随代码库演进而非随对话堆积的资产。",
+      "problem": "面向长期使用 Claude Code 的开发者：记忆只存在于会话里，压缩/新会话后关键决策与教训丢失，也无法沉淀成项目知识。",
+      "mechanism": [
+        "hooks 自动捕获会话，把记忆采集从「靠 agent 自觉记录」变成「运行时强制触发」。",
+        "用 Claude Agent SDK 从会话中抽取关键决策与教训，而不是直接存原始对话。",
+        "再经一个 LLM compiler 负责组织归类，形成可被检索的结构化记忆。",
+        "记忆随代码库演化而更新，绑定到项目而非个人。"
+      ],
+      "constraints": [
+        "依赖 Claude Code hooks 与 Claude Agent SDK，平台绑定强。",
+        "抽取与编译都需额外 LLM 调用，成本与延迟增加。",
+        "本地材料未说明错误处理与记忆冲突消解策略。"
+      ],
+      "takeaway": [
+        "记忆链路分三段：采集（hooks）→ 抽取（结构化决策/教训）→ 组织（compiler），不要直接存原始对话。",
+        "用 hooks 把「该记什么」的决定权从模型手上拿走。"
+      ],
+      "limits": [
+        "抽取质量与 LLM 判断强相关，同一项目不同模型表现可能不一致。",
+        "只覆盖 Claude Code 生态；仓库 custom-agent-with-skills 试图在别家框架复现同类机制，说明该做法可移植但需重写采集层。"
+      ]
+    },
+    {
+      "name": "skills",
+      "repo": "skills",
+      "stars": 711,
+      "verdict": "这是他方法论的元仓库：把日常开发用到的 skills 公开为可复制的工程资产，并保留 PIV、planning、worktree、造 AI Layer 等骨架。",
+      "problem": "面向想系统化用编码 agent 的开发者：不知道该沉淀哪些 skills、怎么组织目录、怎么把散落的用法收敛成体系。",
+      "mechanism": [
+        "仓库自述只放「我真正用来写软件的 skills」，以使用频率而非数量做筛选。",
+        "骨架固定为 PIV loop（Plan-Implement-Validate）、planning、worktrees 三类，配合构建自有 AI Layer 的元技能。",
+        "同一批方法在其他仓库有对应实现：ai-transformation-workshop 的 15 条可复用 Claude Code 命令、ai-coding-summit-workshop-2 的 PIV Loop 两小时工作坊。"
+      ],
+      "constraints": [
+        "本地材料仅有仓库描述，未见目录结构、版本策略与安装协议。",
+        "PIV 的「Validate」如何判定通过，材料中未见依据。"
+      ],
+      "takeaway": [
+        "skill 库先收敛再扩张，只收录自己真用过的。",
+        "把工作流命名成固定循环（PIV）并让多个仓库复用同一命名，便于对外教学与迁移。"
+      ],
+      "limits": [
+        "偏个人工作流，缺省假设其环境（Claude Code、git worktree）。",
+        "星数 711，传播面远小于 Archon 与教程仓库。"
+      ]
+    }
+  ]
+}

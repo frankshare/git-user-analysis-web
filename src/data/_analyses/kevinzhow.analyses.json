@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.1",
+  "user": "kevinzhow",
+  "analyses": [
+    {
+      "name": "PNChart",
+      "repo": "PNChart",
+      "stars": 9632,
+      "verdict": "一个先在自己 App 里长出来、后来才对外开源的 iOS 图表组件，是其全部流量的单点来源。",
+      "problem": "iOS 开发者要画折线/饼图/柱状图，Core Graphics 手写成本高、第三方图表库要么太重要么丑；PNChart 的目标用户是「想在自家 App 里快速出一个不难看图表」的个人与小团队开发者。",
+      "mechanism": [
+        "本地材料未见依据：README 未在本次快照内，源码结构、依赖管理方式、动画实现均无法从本地 JSON 判定。",
+        "唯一可确认的机制是「内部先用后开源」：描述明确写明该库用于 Piner 与 CoinsMan 两款自研 App，先解决自家图表需求再放出。",
+        "可确认的产品定位口径是「simple and beautiful」双目标——牺牲高级特性换取接入成本低。"
+      ],
+      "constraints": [
+        "语言锁定 Objective-C，且最近更新时间为 2018-07-02，Swift 生态已由 PNChart-Swift 承接。",
+        "2018 年后无更新意味着 Modern Swift concurrency、SwiftUI 等新特性均未覆盖。"
+      ],
+      "takeaway": [
+        "从自研 App 里抽组件对外开源，是个人开发者获得长尾星标最省力的路径；先有真实使用场景再抽象，比先写通用库成功率高。",
+        "把「小而好看」而非「大而全」作为组件库的对外卖点，降低使用者的决策成本。"
+      ],
+      "limits": [
+        "强绑定 iOS 与 UIKit 时代接口，Objective-C 版本在 Swift 主导的今天基本只作为历史参考。",
+        "star 是累计值且已停更多年，不能据此推断当前的活跃使用量。"
+      ]
+    },
+    {
+      "name": "PNChart-Swift",
+      "repo": "PNChart-Swift",
+      "stars": 1366,
+      "verdict": "把已验证的图表库整体迁到第二种语言，是「同一能力跨语言重写」策略的一次成功复用。",
+      "problem": "Swift 成为 iOS 主流语言后，Objective-C 的 PNChart 无法被 Swift 项目以类型安全的方式直接使用，Swift 侧缺少同等好用的替代品。",
+      "mechanism": [
+        "描述明确将其定位为 PNChart 的 Swift 实现，即功能对标既有仓库而非另起设计。",
+        "复用同一套视觉与交互设定，迁移风险被压到语言层；原库与新库共享同一批潜在用户。",
+        "原仓库描述中主动带上 Swift 版链接，形成互相导流的闭环。"
+      ],
+      "constraints": [
+        "必须跟随原库的功能边界，Swift 版不能独立扩展出新图表类型而不破坏对等预期。",
+        "同样是 UIKit 层实现，未覆盖 SwiftUI。"
+      ],
+      "takeaway": [
+        "同一能力在语言/平台迁移窗口期，用「功能对等重写」而不是「重新设计」能吃到迁移需求的红利。",
+        "把新旧两个仓库互相挂链接，是成本几乎为零的流量再分配。"
+      ],
+      "limits": [
+        "双仓库意味着 bug 修复与特性要维护两遍，作者 2024-01 后也未再更新。",
+        "依赖 UIKit，无法在 SwiftUI 或跨平台工程中直接使用。"
+      ]
+    },
+    {
+      "name": "Rungic",
+      "repo": "Rungic",
+      "stars": 414,
+      "verdict": "近年最贴近「Agent 平台」定位的自有仓库，试图把 Linux 桌面与代办型助理塞进一部 Android 手机。",
+      "problem": "需要在手机上获得一台可远程接入的完整 Linux 环境，并让它按指令执行任务；目标场景是自托管/移动运维型用户，而非普通 App 用户。",
+      "mechanism": [
+        "本地材料未见依据：README 与源码不在本次快照内，具体是容器、远程桌面还是 Agent 运行时编排无法判定。",
+        "从描述可确认的三层结构：Android 手机作为宿主 → 一台完整 Linux 桌面 → 一个负责代办的助理。",
+        "最近更新时间为 2026-10-08，是其当前仍在活跃维护的主线仓库之一。"
+      ],
+      "constraints": [
+        "需要一部 Android 真机并长期保持在线，与普通「装个 App 就行」的使用预期不符。",
+        "同时承担远程桌面与助理编排两套复杂度，耦合面较大（此为推断，非本地材料确认）。"
+      ],
+      "takeaway": [
+        "个人项目的选题不必追求普遍需求，「一个人每天都要用的自托管场景」同样能带来精准关注者。",
+        "先描述能力组合（设备 + 桌面 + 助理）再谈实现，能让项目在被读到前三秒讲清楚。"
+      ],
+      "limits": [
+        "仅 Android 可用（描述明确写了 Android phone）。",
+        "对非技术用户几乎零门槛价值，star 增长天花板受限。"
+      ]
+    },
+    {
+      "name": "raft-flutter",
+      "repo": "raft-flutter",
+      "stars": 89,
+      "verdict": "为一个既有服务（Raft）补上 Flutter 原生客户端，是「补客户端」式维护动作而非独立产品。",
+      "problem": "Raft 服务已有可用接口但缺跨平台客户端，需要在手机上用熟悉的 Flutter 技术栈直接操作。",
+      "mechanism": [
+        "描述将其定位为 Raft 的 native Flutter client，即协议层复用上游、只重写表现层。",
+        "2026-10-20 更新，说明是仍在维护的近期项目，而非历史遗留。",
+        "与 charcoal-flutter、oyomi-popclip 同属 Flutter 侧的小型自有仓库群。"
+      ],
+      "constraints": [
+        "强耦合上游 Raft 的接口与数据模型，上游变更会直接传导。",
+        "「native client」意味着放弃 Flutter Web 目标。"
+      ],
+      "takeaway": [
+        "已有服务 + 新客户端是最省力的项目形态：后端不动，只写表现层。",
+        "同一作者同时维护 Swift、Flutter、Shell 三种客户端形态，验证了「一服务多端」的小型复用思路。"
+      ],
+      "limits": [
+        "星数受限于上游 Raft 本身的关注度，难以独立增长。",
+        "本地材料未见依据：README 与架构说明不在快照内。"
+      ]
+    },
+    {
+      "name": "albatross",
+      "repo": "albatross",
+      "stars": 27,
+      "verdict": "把「Webhook 处理」这一单一服务端能力做成独立 Swift 小库，是典型的按需抽取而非框架化。",
+      "problem": "服务端项目需要接收第三方回调，但没有现成的 Swift 侧 webhook 处理库可用，只能自己写最小实现。",
+      "mechanism": [
+        "描述只有一句「A Swift webhook handler」，说明交付物就是能力本身而非框架。",
+        "2024-02 仍在更新，与其 Swift 服务端方向的尝试（swift-on-server-tour）时间上吻合。",
+        "与之同类的还有 baiducloudsigner-swift、firebase-custom-token-signer-swift，都是「一项外部对接能力一个仓库」的切法。"
+      ],
+      "constraints": [
+        "星数极低（27），维护动机更可能是自用而非社区。",
+        "本地材料未见依据：签名校验、路由、重试等具体行为无法从快照确认。"
+      ],
+      "takeaway": [
+        "「一个外部对接 = 一个独立小仓库」的切法，能让每个仓库的 README 一句话讲完，也便于单独被搜到。",
+        "在 Swift 服务端方向先做几十行的小工具验证，比直接上一个框架成本低得多。"
+      ],
+      "limits": [
+        "无版本、无文档质量的证据（本地材料未包含 README），实际可用性无法判断。",
+        "生态位置已被 Vapor 等成熟框架占据。"
+      ]
+    },
+    {
+      "name": "dify-sf",
+      "repo": "dify-sf",
+      "stars": 0,
+      "verdict": "一个零星的 Dify 重实现尝试，规模与完成度在本地材料里都看不出边界。",
+      "problem": "推测是想用 Swift + Flutter 复刻 Dify 的形态，把 AI 应用编排层放到自选技术栈里；本地材料未给出具体使用场景。",
+      "mechanism": [
+        "描述为「A Swift and Flutter reimplementation of Dify」，说明是双端栈重写而非封装。",
+        "2026-10-20 更新，是最新的自有仓库之一，时间上紧邻 Rungic 与 raft-flutter。",
+        "本地材料未见依据：README、目录结构、进度说明均不在快照内。"
+      ],
+      "constraints": [
+        "0 星且无描述，无法判断是实验、玩具还是可用实现。",
+        "重实现上游项目意味着要跟随其功能演进，成本随上游迭代上升。"
+      ],
+      "takeaway": [
+        "从 fork 列表看，作者把大量上游仓库（promptfoo、moltbot、mlx、Agmente 等 AI 方向项目）收进来做研究，重实现型项目与这些跟踪是同一条线索。",
+        "想验证「换栈重写是否可行」，开一个 0 星的私有实验仓库先跑通是合理的探索姿势。"
+      ],
+      "limits": [
+        "本地材料只能确认仓库存在与最近更新时间，无法评估任何实际能力。",
+        "双语言栈重写若无明确差异点，实际竞争力存疑。"
+      ]
+    }
+  ]
+}

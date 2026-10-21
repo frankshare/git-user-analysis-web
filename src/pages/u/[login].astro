@@ -1,0 +1,408 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getAllUsers, getUserByLogin, type UserSnapshot } from '../../lib/data';
+
+export function getStaticPaths() {
+  return getAllUsers().map(u => ({ params: { login: u.profile.login }, props: { user: u } }));
+}
+
+interface Props { user: UserSnapshot }
+const { user } = Astro.props;
+
+const p = user.profile;
+const s = user.stats;
+const isDepth = p.strategy === 'depth';
+
+const sourceRepos = user.repos.filter(r => !r.fork);
+const topRepos = [...sourceRepos].sort((a, b) => b.stars - a.stars).slice(0, 12);
+const byCategory = new Map<string, number>();
+for (const r of sourceRepos) {
+  const c = r.category || '其他';
+  byCategory.set(c, (byCategory.get(c) || 0) + 1);
+}
+const cats = [...byCategory.entries()].sort((a, b) => b[1] - a[1]);
+
+// 分发柱状图（按 star 区间）
+const buckets = [
+  { label: '≥1000', n: s.ge_1000, cls: 'bg-amber-400' },
+  { label: '100-999', n: s.between_100_999, cls: 'bg-indigo-400' },
+  { label: '10-99', n: s.between_10_99, cls: 'bg-emerald-400' },
+  { label: '<10', n: s.lt_10, cls: 'bg-slate-600' },
+];
+const maxBucket = Math.max(...buckets.map(b => b.n));
+
+const skills = user.skills?.items || [];
+const skillLayers = user.skills?.layers || {};
+const analyses = user.skill_analyses || [];
+---
+
+<BaseLayout title={`${p.name}（@${p.login}）· Git 用户分析`} description={p.bio}>
+  <!-- 头部：身份 -->
+  <section class="py-6 border-b border-slate-800/80 mb-8">
+    <a href="/" class="text-sm text-slate-400 hover:text-indigo-400 transition-colors inline-flex items-center gap-1 mb-5">
+      ← 返回榜单大盘
+    </a>
+
+    <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
+      <div class="flex-1">
+        <div class="flex items-center gap-3 flex-wrap mb-3">
+          <h1 class="text-3xl font-extrabold text-white tracking-tight">{p.name}</h1>
+          <span class="font-mono text-slate-400 text-lg">@{p.login}</span>
+          {isDepth ? (
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20">
+              深度工程型 · 策略
+            </span>
+          ) : (
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+              广度矩阵型 · 策略
+            </span>
+          )}
+        </div>
+
+        <p class="text-slate-300 leading-relaxed max-w-3xl mb-4">{p.bio}</p>
+
+        <div class="flex items-center gap-3 flex-wrap text-xs text-slate-500">
+          {p.website && (
+            <a href={p.website} target="_blank" rel="noreferrer" class="px-2.5 py-1 rounded-md bg-slate-800/60 border border-slate-700/50 hover:border-slate-600 hover:text-slate-300 transition-colors font-mono">
+              🌐 {p.website.replace(/^https?:\/\//, '')}
+            </a>
+          )}
+          {p.x && (
+            <a href={p.x} target="_blank" rel="noreferrer" class="px-2.5 py-1 rounded-md bg-slate-800/60 border border-slate-700/50 hover:border-slate-600 hover:text-slate-300 transition-colors font-mono">
+              𝕏 @{p.login}
+            </a>
+          )}
+          <span class="px-2.5 py-1 rounded-md bg-slate-800/40 border border-slate-800 font-mono">
+            快照 {user.snapshot.date}
+          </span>
+          <span class="px-2.5 py-1 rounded-md bg-slate-800/40 border border-slate-800 font-mono">
+            {user.snapshot.timezone}
+          </span>
+        </div>
+      </div>
+
+      <!-- 关键指标四宫格 -->
+      <div class="grid grid-cols-2 gap-3 lg:w-[320px] shrink-0">
+        <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
+          <div class="text-xs text-slate-400">总 Star（自有）</div>
+          <div class="text-2xl font-bold text-white font-mono mt-1">{s.total_stars_source.toLocaleString()}</div>
+        </div>
+        <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
+          <div class="text-xs text-slate-400">中位数</div>
+          <div class="text-2xl font-bold text-indigo-400 font-mono mt-1">{s.median_stars}</div>
+        </div>
+        <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
+          <div class="text-xs text-slate-400">集中度</div>
+          <div class="text-2xl font-bold text-amber-400 font-mono mt-1">
+            {isDepth ? `${s.top1_share}%` : `${s.top4_share}%`}
+          </div>
+          <div class="text-[10px] text-slate-500 mt-0.5">{isDepth ? 'top1 占比' : 'top4 占比'}</div>
+        </div>
+        <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
+          <div class="text-xs text-slate-400">自有 / 全部仓库</div>
+          <div class="text-2xl font-bold text-emerald-400 font-mono mt-1">{p.source_repos}</div>
+          <div class="text-[10px] text-slate-500 mt-0.5">fork {p.fork_repos} 个</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分布与结构 -->
+  <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
+    <div class="lg:col-span-2 bg-slate-900/50 border border-slate-800 rounded-2xl p-6">
+      <h2 class="text-base font-bold text-white mb-1">星数分布</h2>
+      <p class="text-xs text-slate-500 mb-5">
+        {isDepth
+          ? '超过一半的仓库不足 10 星 —— 长尾是给核心方法论供血的实验田，不是失败。'
+          : '中位数远高于头部占比 —— 大量中等热度的实用小工具构成了资产底盘。'}
+      </p>
+
+      <div class="space-y-3">
+        {buckets.map(b => (
+          <div class="flex items-center gap-3">
+            <div class="w-20 text-xs text-slate-400 font-mono shrink-0">{b.label}</div>
+            <div class="flex-1 h-7 bg-slate-950/60 rounded-md overflow-hidden border border-slate-800/50">
+              <div
+                class={`h-full ${b.cls} opacity-80 flex items-center justify-end pr-2 text-[11px] font-mono font-bold text-slate-950`}
+                style={`width: ${Math.max((b.n / maxBucket) * 100, 4)}%`}
+              >
+                {b.n}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- 品类分布 -->
+      <h3 class="text-base font-bold text-white mt-8 mb-3">仓库品类结构</h3>
+      <div class="flex flex-wrap gap-2">
+        {cats.map(([c, n]) => (
+          <span class="px-2.5 py-1 rounded-lg bg-slate-800/60 border border-slate-700/50 text-xs text-slate-300">
+            {c} <span class="font-mono text-slate-500">{n}</span>
+          </span>
+        ))}
+      </div>
+    </div>
+
+    <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6">
+      <h2 class="text-base font-bold text-white mb-4">数据口径</h2>
+      <dl class="space-y-3 text-sm">
+        <div class="flex justify-between gap-3">
+          <dt class="text-slate-400">总 Star</dt>
+          <dd class="text-slate-200 font-mono">{s.total_stars_source.toLocaleString()}</dd>
+        </div>
+        <div class="flex justify-between gap-3">
+          <dt class="text-slate-400">含 fork 合计</dt>
+          <dd class="text-slate-200 font-mono">{s.total_stars_all.toLocaleString()}</dd>
+        </div>
+        <div class="flex justify-between gap-3">
+          <dt class="text-slate-400">无主语言</dt>
+          <dd class="text-slate-200 font-mono">{s.no_language} / {p.source_repos}</dd>
+        </div>
+        <div class="flex justify-between gap-3">
+          <dt class="text-slate-400">收录 Skills</dt>
+          <dd class="text-slate-200 font-mono">{user.skills?.count || 0}</dd>
+        </div>
+        <div class="flex justify-between gap-3">
+          <dt class="text-slate-400">Patterns</dt>
+          <dd class="text-slate-200 font-mono">{user.patterns.length}</dd>
+        </div>
+      </dl>
+
+      <div class="mt-5 pt-5 border-t border-slate-800">
+        <h3 class="text-sm font-bold text-white mb-2">采集方式</h3>
+        <p class="text-xs text-slate-500 leading-relaxed">{user.snapshot.method}</p>
+        <p class="text-xs text-amber-500/80 leading-relaxed mt-3">⚠️ {user.snapshot.caveat}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 高星仓库 -->
+  <section class="mb-10">
+    <h2 class="text-lg font-bold text-white mb-4">Top 12 自有仓库</h2>
+    <div class="overflow-x-auto rounded-2xl border border-slate-800">
+      <table class="w-full text-sm">
+        <thead class="bg-slate-900/80 text-slate-400 text-xs uppercase tracking-wider">
+          <tr>
+            <th class="text-left font-medium px-4 py-3 w-10">#</th>
+            <th class="text-left font-medium px-4 py-3">仓库</th>
+            <th class="text-left font-medium px-4 py-3 w-24">语言</th>
+            <th class="text-right font-medium px-4 py-3 w-28">Star</th>
+            <th class="text-left font-medium px-4 py-3 w-36">品类</th>
+            <th class="text-left font-medium px-4 py-3">简介</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-800/70">
+          {topRepos.map((r, i) => (
+            <tr class="hover:bg-slate-900/40 transition-colors">
+              <td class="px-4 py-3 text-slate-600 font-mono text-xs">{i + 1}</td>
+              <td class="px-4 py-3">
+                <a href={r.url} target="_blank" rel="noreferrer" class="text-indigo-400 hover:text-indigo-300 font-medium transition-colors">
+                  {r.name}
+                </a>
+              </td>
+              <td class="px-4 py-3 text-slate-400 text-xs font-mono">{r.language || '—'}</td>
+              <td class="px-4 py-3 text-right font-mono text-slate-200">{r.stars.toLocaleString()}</td>
+              <td class="px-4 py-3 text-xs text-slate-400">{r.category || '—'}</td>
+              <td class="px-4 py-3 text-slate-500 text-xs truncate max-w-md">{r.description}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  {skills.length > 0 && (
+    <section class="mb-10">
+      <div class="flex items-center justify-between mb-4 flex-wrap gap-3">
+        <h2 class="text-lg font-bold text-white">收录 Skills（{skills.length}）</h2>
+        <div class="flex gap-2 flex-wrap">
+          {Object.entries(skillLayers).map(([k, v]) => (
+            <span class="px-2.5 py-1 rounded-lg bg-slate-800/60 border border-slate-700/50 text-xs text-slate-300">
+              {k} <span class="font-mono text-slate-500">{v}</span>
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+        {skills.map(sk => (
+          <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 hover:border-slate-700 transition-colors flex flex-col">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="font-mono text-sm font-bold text-white break-all">{sk.name}</h3>
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-[10px] text-slate-400 shrink-0">{sk.layer}</span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed flex-1">{sk.summary}</p>
+            <div class="flex items-center justify-between mt-3 pt-3 border-t border-slate-800/60">
+              <span class="text-[10px] text-slate-500">{sk.category}</span>
+              {sk.version && <span class="text-[10px] font-mono text-slate-600">v{sk.version}</span>}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- 五问拆解 -->
+  {analyses.length > 0 && (
+    <section class="mb-10">
+      <div class="flex items-end justify-between mb-1 flex-wrap gap-2">
+        <h2 class="text-lg font-bold text-white">五问拆解（{analyses.length}）</h2>
+        <p class="text-xs text-slate-500">
+          解决什么 / 核心机制 / 工程约束 / 能搬走什么 / 局限 —— <strong class="text-slate-400">没有「局限」一栏的拆解不算完成</strong>
+        </p>
+      </div>
+      <p class="text-xs text-slate-500 mb-4">
+        点击卡片展开。这里是本站与普通 star 排行榜的区别：数字告诉你多红，拆解告诉你值不值得学。
+      </p>
+
+      <div class="space-y-3">
+        {analyses.map((a, i) => (
+          <details class="group bg-slate-900/60 border border-slate-800 hover:border-slate-700 rounded-xl transition-colors" open={i === 0}>
+            <summary class="cursor-pointer list-none p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div class="flex items-start gap-3 min-w-0">
+                <span class="font-mono text-xs text-slate-600 pt-1 shrink-0">{String(i + 1).padStart(2, '0')}</span>
+                <div class="min-w-0">
+                  <div class="flex items-center gap-2 flex-wrap">
+                    <h3 class="font-bold text-white text-sm font-mono break-all">{a.name}</h3>
+                    <span class="px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-[10px]">
+                      {a.verdict}
+                    </span>
+                  </div>
+                  <p class="text-xs text-slate-400 mt-1.5 leading-relaxed line-clamp-2 group-open:line-clamp-none">
+                    {a.problem}
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 shrink-0">
+                <span class="text-xs font-mono text-amber-400">{a.stars.toLocaleString()} ★</span>
+                <span class="text-slate-600 group-open:rotate-90 transition-transform text-xs">›</span>
+              </div>
+            </summary>
+
+            <div class="px-5 pb-5 pt-1 border-t border-slate-800/70">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-5 mt-4">
+                <!-- 解决什么 -->
+                <div>
+                  <h4 class="text-[11px] font-bold text-indigo-400 mb-2 tracking-wide">① 解决什么</h4>
+                  <p class="text-sm text-slate-300 leading-relaxed">{a.problem}</p>
+                </div>
+
+                <!-- 核心机制 -->
+                <div>
+                  <h4 class="text-[11px] font-bold text-emerald-400 mb-2 tracking-wide">② 核心机制（怎么做到）</h4>
+                  <ul class="space-y-1.5">
+                    {a.mechanism.map(m => (
+                      <li class="text-sm text-slate-300 leading-relaxed flex gap-2">
+                        <span class="text-emerald-500/60 shrink-0">▸</span><span>{m}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <!-- 工程约束 -->
+                <div>
+                  <h4 class="text-[11px] font-bold text-amber-400 mb-2 tracking-wide">③ 工程约束（检查点 / 门 / 反模式）</h4>
+                  <ul class="space-y-1.5">
+                    {a.constraints.map(c => (
+                      <li class="text-sm text-slate-300 leading-relaxed flex gap-2">
+                        <span class="text-amber-500/60 shrink-0">▸</span><span>{c}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <!-- 能搬走什么 -->
+                <div>
+                  <h4 class="text-[11px] font-bold text-sky-400 mb-2 tracking-wide">④ 我能搬走什么</h4>
+                  <ul class="space-y-1.5">
+                    {a.takeaway.map(t => (
+                      <li class="text-sm text-slate-300 leading-relaxed flex gap-2">
+                        <span class="text-sky-500/60 shrink-0">▸</span><span>{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <!-- 局限 -->
+                <div class="lg:col-span-2">
+                  <h4 class="text-[11px] font-bold text-rose-400 mb-2 tracking-wide">⑤ 局限（依赖 / 平台 / 边界 / 失效条件）</h4>
+                  <ul class="space-y-1.5">
+                    {a.limits.map(l => (
+                      <li class="text-sm text-slate-400 leading-relaxed flex gap-2">
+                        <span class="text-rose-500/60 shrink-0">▸</span><span>{l}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mt-5 pt-3 border-t border-slate-800/60 flex items-center gap-2 flex-wrap">
+                <span class="text-[10px] text-slate-600">源码</span>
+                <a
+                  href={`https://github.com/${user.profile.login}/${a.repo}`}
+                  target="_blank" rel="noreferrer"
+                  class="text-[11px] font-mono text-indigo-400 hover:text-indigo-300 transition-colors"
+                >
+                  {user.profile.login}/{a.repo}
+                </a>
+              </div>
+            </div>
+          </details>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- Patterns -->
+  <section>
+    <h2 class="text-lg font-bold text-white mb-1">提炼的工程 Patterns（{user.patterns.length}）</h2>
+    <p class="text-xs text-slate-500 mb-4">
+      method = 跨域复现 ≥3 且可生成新任务；technique = 局部有效技巧。
+    </p>
+
+    <div class="space-y-3">
+      {user.patterns.map(pt => (
+        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-5">
+          <div class="flex items-start gap-3 mb-2">
+            <span class="font-mono text-xs text-slate-600 pt-1">{pt.id}</span>
+            <div class="flex-1">
+              <h3 class="font-bold text-white text-sm">{pt.name}</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed">{pt.claim}</p>
+            </div>
+            <span class={`px-2 py-0.5 rounded text-[10px] font-medium shrink-0 ${
+              pt.kind === 'method'
+                ? 'bg-indigo-500/10 text-indigo-400 border border-indigo-500/20'
+                : 'bg-slate-700/40 text-slate-400 border border-slate-600/40'
+            }`}>
+              {pt.kind}
+            </span>
+          </div>
+          <div class="flex items-center gap-2 flex-wrap pl-8 mt-3">
+            <span class="text-[10px] text-slate-600">证据：</span>
+            {pt.evidence.map(ev => (
+              <span class="px-2 py-0.5 rounded bg-slate-950/60 border border-slate-800 text-[10px] font-mono text-slate-400">
+                {ev}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 数据来源 -->
+  <section class="mt-10 pt-8 border-t border-slate-800/80">
+    <h2 class="text-sm font-bold text-slate-300 mb-3">数据来源</h2>
+    <ul class="space-y-1.5">
+      {user.sources.map(src => (
+        <li>
+          <a href={src} target="_blank" rel="noreferrer" class="text-xs font-mono text-slate-500 hover:text-indigo-400 transition-colors break-all">
+            {src}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>

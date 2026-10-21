@@ -1,0 +1,980 @@
+{
+  "schema_version": "1.1",
+  "snapshot": {
+    "date": "2026-10-21",
+    "timezone": "Asia/Shanghai",
+    "method": "GitHub 用户页 HTML 抓取（type=source）+ raw README/SKILL.md；来源：司徒K《2026年X上最值得关注的120个中文博主》",
+    "caveat": "Star 为 HTML 快照；followers 与 joined 未取到，留空；skill 行为描述来自仓库文档与作者自述，未独立复现"
+  },
+  "profile": {
+    "login": "realchendahuang",
+    "name": "陈大黄",
+    "bio": "独立开发者，围绕 Cloudflare 无服务器栈、AI 编程智能体与个人知识库持续产出；仓库多为 TypeScript/JavaScript 工具、Agent Skill 与中文实战手册三类，且大量为个人配置与运营方法沉淀。",
+    "website": "",
+    "x": "",
+    "location": "",
+    "joined": "",
+    "followers_approx": null,
+    "strategy": "breadth",
+    "public_repos": 59,
+    "source_repos": 53,
+    "fork_repos": 6
+  },
+  "stats": {
+    "total_stars_source": 1195,
+    "total_stars_all": 1195,
+    "median_stars": 0,
+    "ge_1000": 0,
+    "between_100_999": 4,
+    "between_10_99": 6,
+    "lt_10": 43,
+    "no_language": 32,
+    "top4_share": 83,
+    "top1_share": 26.5
+  },
+  "repos": [
+    {
+      "name": "FlareMo",
+      "url": "https://github.com/realchendahuang/FlareMo",
+      "stars": 317,
+      "language": "TypeScript",
+      "updated_at": "2026-10-13T07:14:07Z",
+      "description": "Cloudflare 原生团队知识库，提供 Memos 兼容 API 与 MCP 协议 / Cloudflare-native team knowledge base",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "sub-store-cloudflare",
+      "url": "https://github.com/realchendahuang/sub-store-cloudflare",
+      "stars": 306,
+      "language": "TypeScript",
+      "updated_at": "2026-10-13T07:14:04Z",
+      "description": "部署在 Cloudflare Workers 上的节点处理、订阅聚合与分流规则模板 / Subscription manager on Cloudflare Workers",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "pi-config",
+      "url": "https://github.com/realchendahuang/pi-config",
+      "stars": 189,
+      "language": "Shell",
+      "updated_at": "2026-09-25T12:17:20Z",
+      "description": "个人 Pi 编程智能体配置：17 插件 + 18 全局技能 + 2 MCP 与一键安装脚本 / Pi coding agent full configuration",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "cloudflare-playbook",
+      "url": "https://github.com/realchendahuang/cloudflare-playbook",
+      "stars": 180,
+      "language": "JavaScript",
+      "updated_at": "2026-10-13T07:13:20Z",
+      "description": "AI 编程时代的 Cloudflare 全球实战手册 · 用 AI 写代码，用 Cloudflare 部署全球 / Cloudflare Playbook",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "OMPChamber",
+      "url": "https://github.com/realchendahuang/OMPChamber",
+      "stars": 58,
+      "language": "TypeScript",
+      "updated_at": "2026-09-25T12:15:54Z",
+      "description": "多智能体协同、自动化管线沙盒与商业验证试验仓 / Multi-agent sandbox and execution validation chamber",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "open-x-analytics",
+      "url": "https://github.com/realchendahuang/open-x-analytics",
+      "stars": 34,
+      "language": "TypeScript",
+      "updated_at": "2026-10-20T18:20:53Z",
+      "description": "一个独立开发者4个月从0到1万粉的完整真实案例：全量推文与后台运营数据无偿开源，供大家分析与蒸馏，持续更新。",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "one-person-one-site",
+      "url": "https://github.com/realchendahuang/one-person-one-site",
+      "stars": 32,
+      "language": "Python",
+      "updated_at": "2026-09-27T12:36:25Z",
+      "description": "一人一站 · 收集值得关注的个人网站、独立博客与数字花园 / A curated directory of personal websites, blogs &amp; digital gardens",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "dsh-skill",
+      "url": "https://github.com/realchendahuang/dsh-skill",
+      "stars": 25,
+      "language": "JavaScript",
+      "updated_at": "2026-10-13T16:54:48Z",
+      "description": "Official plugin &amp; skill development kit for DeepSeek Harness (DSH). Grounded in core runtime contracts for Claude Code, Codex, Antigravity, and DSH.",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "dahuang-human-tone",
+      "url": "https://github.com/realchendahuang/dahuang-human-tone",
+      "stars": 11,
+      "language": null,
+      "updated_at": "2026-09-25T12:16:24Z",
+      "description": "Agent Skill: 面向智能体的真人语感约束技能，严禁辩论腔与营销号八股 / Human Tone Skill",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "opencode-hermes-memory",
+      "url": "https://github.com/realchendahuang/opencode-hermes-memory",
+      "stars": 11,
+      "language": "TypeScript",
+      "updated_at": "2026-09-25T12:17:17Z",
+      "description": "OpenCode 分层持久记忆插件（从 Hermes 移植，纯 Markdown 零向量库） / Layered persistent memory plugin for OpenCode",
+      "fork": false,
+      "layer": "tool",
+      "category": "记忆与知识"
+    },
+    {
+      "name": "podcast-vault",
+      "url": "https://github.com/realchendahuang/podcast-vault",
+      "stars": 8,
+      "language": null,
+      "updated_at": "2026-10-11T08:59:12Z",
+      "description": "播客金库 · 全球精选硬核播客与深度长谈的开源知识库：高精度逐字稿、核心认知速读、底层心智模型与高光金句索引 / Open-source curated podcast transcripts, mental models &amp; key insights",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "macos-playbook",
+      "url": "https://github.com/realchendahuang/macos-playbook",
+      "stars": 6,
+      "language": "JavaScript",
+      "updated_at": "2026-10-13T07:13:18Z",
+      "description": "从零上手到用顺手——写给普通人与生产力极客的 macOS 实战指南 / Practical macOS Guide for Power Users",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "DeepMate",
+      "url": "https://github.com/realchendahuang/DeepMate",
+      "stars": 4,
+      "language": "Rust",
+      "updated_at": "2026-09-18T11:42:11Z",
+      "description": "跨平台 AI Harness 轻量伴侣与桌面控制面板（管理运行时、模型、插件与配置） / Companion and control plane for DeepSeek Harness",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "god-museum",
+      "url": "https://github.com/realchendahuang/god-museum",
+      "stars": 3,
+      "language": "Astro",
+      "updated_at": "2026-10-13T07:14:00Z",
+      "description": "跨文明神话原型、文化符号与数字叙事知识图谱 / Digital Museum of Mythological Archetypes and Symbols",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "free-assets",
+      "url": "https://github.com/realchendahuang/free-assets",
+      "stars": 2,
+      "language": null,
+      "updated_at": "2026-09-25T12:01:50Z",
+      "description": "真免素材 · 157 个逐条核验商用许可的字体、音效、无版权视频与 3D 资产库 / Verified free-for-commercial-use design and media assets",
+      "fork": false,
+      "layer": "tool",
+      "category": "设计与视觉"
+    },
+    {
+      "name": "xuanji",
+      "url": "https://github.com/realchendahuang/xuanji",
+      "stars": 2,
+      "language": "TypeScript",
+      "updated_at": "2026-09-25T12:17:52Z",
+      "description": "构建于 Cloudflare 上的专业 AI 多门类传统数术与心理洞察平台（八字/紫微/易经/星盘/塔罗） / XuanJi AI platform on Cloudflare",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ai-chronicle",
+      "url": "https://github.com/realchendahuang/ai-chronicle",
+      "stars": 2,
+      "language": "JavaScript",
+      "updated_at": "2026-10-13T07:14:02Z",
+      "description": "人工智能开放编年史（1950-2026）· 记录从图灵测试到 Agentic AI 时代的里程碑与模型谱系 / Open AI Chronicle (1950-2026)",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "dahuang-x-post",
+      "url": "https://github.com/realchendahuang/dahuang-x-post",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2026-09-25T12:16:40Z",
+      "description": "中文 X 运营打磨 Agent Skill · 观点锐化、开头抓人、结构去八股化 / Chinese X Post Polish Skill",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "fanbing-research",
+      "url": "https://github.com/realchendahuang/fanbing-research",
+      "stars": 1,
+      "language": "Python",
+      "updated_at": "2026-09-25T12:02:51Z",
+      "description": "范冰研究 · 研究公开作品，理解长期变化，验证可借鉴的经验 / Independent research on Fan Bing (XDash), his works, trajectory, and methodologies",
+      "fork": false,
+      "layer": "tool",
+      "category": "信息获取"
+    },
+    {
+      "name": "dahuang-ai-tone",
+      "url": "https://github.com/realchendahuang/dahuang-ai-tone",
+      "stars": 1,
+      "language": null,
+      "updated_at": "2026-09-25T12:16:21Z",
+      "description": "Agent Skill: 文本 AI 风格重写（GPT/Claude/Gemini/豆包）与模型指纹检测 / AI Tone Detection and Rewrite Skill",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "codex-playbook",
+      "url": "https://github.com/realchendahuang/codex-playbook",
+      "stars": 1,
+      "language": "JavaScript",
+      "updated_at": "2026-10-13T07:13:15Z",
+      "description": "OpenAI Codex 与智能体代码生成的提示词编排与交付手记 / OpenAI Codex Playbook",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "dsh-guide",
+      "url": "https://github.com/realchendahuang/dsh-guide",
+      "stars": 1,
+      "language": "TypeScript",
+      "updated_at": "2026-10-13T07:13:40Z",
+      "description": "DeepSeek Harness 生产级调优、插件编写与部署踩坑实战手册 / Production guide and tutorials for DeepSeek Harness",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "dev-english",
+      "url": "https://github.com/realchendahuang/dev-english",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:02:12Z",
+      "description": "极客英语 · 专注出海技术场景的高频词近义辨析、GitHub PR/Issue 模版与海外沟通范式 / Developer English handbook for global indie hackers and GitHub docs",
+      "fork": false,
+      "layer": "tool",
+      "category": "文档处理"
+    },
+    {
+      "name": "global-sim",
+      "url": "https://github.com/realchendahuang/global-sim",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:02:08Z",
+      "description": "境外卡指南 · 国内低成本持有海外实体电话卡、极低成本保号与防封号实测手册 / Hands-on guide to owning, maintaining, and using overseas SIM cards in China",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "cold-launch",
+      "url": "https://github.com/realchendahuang/cold-launch",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:02:04Z",
+      "description": "冷启动地图 · 100+ 全球免费自荐渠道分级、Show HN 与社区发帖公式与避坑清单 / 100+ free launch channels, directories, and community promotion formulas",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "zero-noise",
+      "url": "https://github.com/realchendahuang/zero-noise",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:02:15Z",
+      "description": "零噪音 · 拒绝营销号。精心维护的高信噪比一手技术信源清单与开箱即用的 feeds.opml 订阅包 / High-signal, zero-noise engineering RSS feeds and OPML package",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "deep-pod",
+      "url": "https://github.com/realchendahuang/deep-pod",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:02:19Z",
+      "description": "深播客 · 剥离寒暄，直击干货。Latent Space、Dwarkesh 等顶级硬核播客论点逐集精读笔记 / Concise engineering notes from top-tier tech podcasts",
+      "fork": false,
+      "layer": "tool",
+      "category": "记忆与知识"
+    },
+    {
+      "name": "open-alt",
+      "url": "https://github.com/realchendahuang/open-alt",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:01:13Z",
+      "description": "开源平替 · 大厂商业 SaaS 的极简轻量开源替代品大全 / High-signal lightweight open-source alternatives to commercial SaaS",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "jev-playbook",
+      "url": "https://github.com/realchendahuang/jev-playbook",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:01:53Z",
+      "description": "JEV 极速决策实战手册 · 毫秒级快思考决策模型 Jev 的实战手册与生产级代码配方 / Practical playbook and production recipes for Jev fast inference",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "save-time",
+      "url": "https://github.com/realchendahuang/save-time",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:01:46Z",
+      "description": "偷懒配方 · 100 个拯救时间的 Mac 快捷指令、终端单行脚本与日常自动化方案 / 100+ time-saving Mac shortcuts, CLI one-liners, and automations",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "flare-box",
+      "url": "https://github.com/realchendahuang/flare-box",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:01:43Z",
+      "description": "火花魔盒 · 基于 Cloudflare Workers + D1 + R2 的轻量级微服务开箱即用模板库 / Lightweight serverless microservices on Cloudflare",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "read-deep",
+      "url": "https://github.com/realchendahuang/read-deep",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:02:22Z",
+      "description": "深读 · 经受时间检验的硬核经典技术书单与 AI 逆向拆书提示词模版 / Timeless engineering books and interactive AI reading prompts",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "paragravity",
+      "url": "https://github.com/realchendahuang/paragravity",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2026-10-08T09:44:49Z",
+      "description": "针对 Google Antigravity 的非侵入式多账号并行与原生沙盒管理器 / Native sandbox and multi-account manager for Google Antigravity",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "wx-cli-again",
+      "url": "https://github.com/realchendahuang/wx-cli-again",
+      "stars": 0,
+      "language": "Rust",
+      "updated_at": "2026-09-25T12:17:44Z",
+      "description": "微信本地数据库查询、解密与跨平台结构化导出命令行工具 / WeChat local data CLI query and exporter",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "qiaomu-meta-skill",
+      "url": "https://github.com/realchendahuang/qiaomu-meta-skill",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2026-09-25T12:17:31Z",
+      "description": "把工作流变成可研究、可评测、可发布的标准 Agent Skill 框架 / Turn workflows into release-ready agent skills",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "nodewordfreq",
+      "url": "https://github.com/realchendahuang/nodewordfreq",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2026-09-25T12:17:10Z",
+      "description": "多种自然语言的离线词频数据库与 Node.js 查询封装 / Multi-language natural word frequencies database",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "zero-stack",
+      "url": "https://github.com/realchendahuang/zero-stack",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:02:01Z",
+      "description": "零元工具栈 · 0 元启动全球高可用在线产品的免费云服务额度组合表与避障指南 / Curated free-tier cloud stacks to launch production apps with zero cost",
+      "fork": false,
+      "layer": "app",
+      "category": "应用与客户端"
+    },
+    {
+      "name": "hidden-gems",
+      "url": "https://github.com/realchendahuang/hidden-gems",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:02:26Z",
+      "description": "宝藏极客 · 挖掘全球粉丝量小但技术信噪比极高的一线开发者、手艺人与冷门开源项目 / Discovering low-follower, high-craft developers and underrated open-source projects",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ai-workflow-playbook",
+      "url": "https://github.com/realchendahuang/ai-workflow-playbook",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:16:09Z",
+      "description": "团队与个人 AI 工作流自动化实操手册 · 提示词管线与自动化任务编排 / AI Workflow Playbook",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "deep-ask",
+      "url": "https://github.com/realchendahuang/deep-ask",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:02:33Z",
+      "description": "深问 · 苏格拉底追问、费曼挑战、反事实推演等 4 套将大模型压榨到极致的高阶学习提示词 / Advanced prompt frameworks: Socratic questioning and Feynman challenge",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "cherina-pod",
+      "url": "https://github.com/realchendahuang/cherina-pod",
+      "stars": 0,
+      "language": "Python",
+      "updated_at": "2026-10-13T07:13:34Z",
+      "description": "Self-hosted base for multilingual podcast listening practice: word-level timestamps, sentence-aligned translation, plain JSON out. 自部署的多语播客精听底座。",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "feishu-playbook",
+      "url": "https://github.com/realchendahuang/feishu-playbook",
+      "stars": 0,
+      "language": "JavaScript",
+      "updated_at": "2026-10-13T07:13:13Z",
+      "description": "飞书多维表格、自动化与开放平台集成实战手册 / Feishu Automation &amp; Multidimensional Table Playbook",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "x-playbook",
+      "url": "https://github.com/realchendahuang/x-playbook",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:17:48Z",
+      "description": "X（Twitter）算法逻辑、爆款音色心智、长效粉丝回流运营手册 / Practical X (Twitter) Growth &amp; Content Playbook",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "red-magic-book",
+      "url": "https://github.com/realchendahuang/red-magic-book",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:17:35Z",
+      "description": "小红书平台算法逻辑、流量漏斗与内容工业化生产沉淀 / Xiaohongshu (RED) content reverse engineering and playbooks",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "postgres-playbook",
+      "url": "https://github.com/realchendahuang/postgres-playbook",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:17:28Z",
+      "description": "PostgreSQL 生产级架构、索引优化、RLS 与 JSONB 实战手册 / Production PostgreSQL Playbook",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "playbook-theme",
+      "url": "https://github.com/realchendahuang/playbook-theme",
+      "stars": 0,
+      "language": "CSS",
+      "updated_at": "2026-09-25T12:17:24Z",
+      "description": "为 Playbook 系列实战手册打造的统一极简高信噪比 VitePress 主题 / Shared VitePress theme for Playbook family",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "indie-product-playbook",
+      "url": "https://github.com/realchendahuang/indie-product-playbook",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:17:02Z",
+      "description": "独立产品从 0 到 1 的需求证伪、原型冲刺与最小交付实操手册 / Indie Product Playbook from 0 to 1",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "github-playbook",
+      "url": "https://github.com/realchendahuang/github-playbook",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:16:55Z",
+      "description": "GitHub Actions 自动化、开源社区治理与项目发布运营范式 / GitHub Workflow and Open Source Playbook",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "dahuang-skills",
+      "url": "https://github.com/realchendahuang/dahuang-skills",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:16:36Z",
+      "description": "个人高频 Agent Skills 资产底座 · 覆盖研判、写作、格式校验与社交运营 / Collection of production-ready Agent Skills",
+      "fork": false,
+      "layer": "skill",
+      "category": "Skill"
+    },
+    {
+      "name": "dahuang-playbooks",
+      "url": "https://github.com/realchendahuang/dahuang-playbooks",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:16:32Z",
+      "description": "全套 Playbook 实战手册家族索引、更新状态与快速阅读导航 / Index and hub for Dahuang Playbook family",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "dahuang-pi-web-ui",
+      "url": "https://github.com/realchendahuang/dahuang-pi-web-ui",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-09-25T12:16:28Z",
+      "description": "针对 Pi Agent 的轻量级 Web 控制面板与会话状态可视化 / Lightweight Web UI for Pi Coding Agent",
+      "fork": false,
+      "layer": "tool",
+      "category": "Agent 与工具"
+    },
+    {
+      "name": "deepseek-harness",
+      "url": "https://github.com/realchendahuang/deepseek-harness",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-09-25T12:16:44Z",
+      "description": "DeepSeek 原生插件化执行框架 · Everything is a Plugin / DeepSeek Harness plugin runtime",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    },
+    {
+      "name": "ai-coding-playbook",
+      "url": "https://github.com/realchendahuang/ai-coding-playbook",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:16:01Z",
+      "description": "全流程 AI 辅助编程实战手记 · 上下文工程、智能体编排与生产级代码交付 / AI Coding Playbook",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "learn-ai-english",
+      "url": "https://github.com/realchendahuang/learn-ai-english",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:02:48Z",
+      "description": "AI 练英语 · 用大模型当 1 对 1 私教的极简高效英语学习流与场景提示词 / Turn LLMs into your personal, infinite-patience English tutor",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "dont-burnout",
+      "url": "https://github.com/realchendahuang/dont-burnout",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:02:44Z",
+      "description": "别累垮协议 · 脑力工作者神经恢复、2 小时深度工作阻断与关机仪式 / Evidence-based protocols for mental recovery and preventing burnout in engineering",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "clean-ui",
+      "url": "https://github.com/realchendahuang/clean-ui",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:02:40Z",
+      "description": "克制设计 · 独立产品克制美学、排版层级、Tailwind 调色板与极简微动效实战指南 / Restrained design principles, typography hierarchies, and Tailwind palettes",
+      "fork": false,
+      "layer": "tool",
+      "category": "设计与视觉"
+    },
+    {
+      "name": "human-tone",
+      "url": "https://github.com/realchendahuang/human-tone",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:02:36Z",
+      "description": "真人口吻协议 · 去除 AI 营销号味。十三条绝对禁令红线与野生黑客、架构师克制三大音色预设 / Human Tone Protocol: 13 anti-slop rules and 3 proven voice templates",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "zero2dev",
+      "url": "https://github.com/realchendahuang/zero2dev",
+      "stars": 0,
+      "language": null,
+      "updated_at": "2026-09-25T12:02:29Z",
+      "description": "零基础开工 · 文科生与非科班的 AI 时代转码与独立开发实战路径 / AI-assisted practical path to indie development for non-CS beginners",
+      "fork": false,
+      "layer": "other",
+      "category": "其他"
+    },
+    {
+      "name": "ai-developer-dashboard",
+      "url": "https://github.com/realchendahuang/ai-developer-dashboard",
+      "stars": 0,
+      "language": "TypeScript",
+      "updated_at": "2026-09-25T12:16:05Z",
+      "description": "面向 Claude Code、Codex 与 Git 的本地优先 AI 开发者状态看板 / Local-first AI developer dashboard for Claude Code and Codex",
+      "fork": true,
+      "layer": "fork",
+      "category": "外部 Fork"
+    }
+  ],
+  "skills": {
+    "catalog": "https://github.com/realchendahuang",
+    "count": 9,
+    "layers": {
+      "tool": 2,
+      "skill": 7
+    },
+    "items": [
+      {
+        "name": "dsh-skill",
+        "layer": "tool",
+        "category": "智能体开发套件",
+        "repo": "dsh-skill",
+        "subdir": "",
+        "summary": "DSH 官方插件与 skill 开发套件，对齐 Claude Code、Codex、Antigravity 的运行时契约",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "dahuang-human-tone",
+        "layer": "skill",
+        "category": "写作风格技能",
+        "repo": "dahuang-human-tone",
+        "subdir": "",
+        "summary": "面向智能体的真人语感约束技能，禁止辩论腔与营销号八股",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "dahuang-ai-tone",
+        "layer": "skill",
+        "category": "写作风格技能",
+        "repo": "dahuang-ai-tone",
+        "subdir": "",
+        "summary": "文本 AI 风格重写与 GPT/Claude/Gemini/豆包模型指纹检测技能",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "dahuang-x-post",
+        "layer": "skill",
+        "category": "社交运营技能",
+        "repo": "dahuang-x-post",
+        "subdir": "",
+        "summary": "中文 X 运营打磨技能，负责观点锐化、开头抓人、结构去八股化",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "human-tone",
+        "layer": "skill",
+        "category": "写作风格技能",
+        "repo": "human-tone",
+        "subdir": "",
+        "summary": "真人口吻协议：13 条反 AI 味禁令红线与三套音色预设",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "dahuang-skills",
+        "layer": "skill",
+        "category": "技能资产合集",
+        "repo": "dahuang-skills",
+        "subdir": "",
+        "summary": "个人高频 Agent Skills 资产底座，覆盖研判、写作、格式校验与社交运营",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "dsh-guide",
+        "layer": "skill",
+        "category": "运行时手册",
+        "repo": "dsh-guide",
+        "subdir": "",
+        "summary": "DeepSeek Harness 生产级调优、插件编写与部署踩坑实战手册",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "deep-ask",
+        "layer": "skill",
+        "category": "学习与提示词",
+        "repo": "deep-ask",
+        "subdir": "",
+        "summary": "苏格拉底追问、费曼挑战、反事实推演等 4 套高阶学习提示词框架",
+        "keywords": [],
+        "version": ""
+      },
+      {
+        "name": "pi-config",
+        "layer": "tool",
+        "category": "智能体配置包",
+        "repo": "pi-config",
+        "subdir": "",
+        "summary": "Pi 编程智能体完整配置：17 插件、18 全局技能、2 MCP 与一键安装脚本",
+        "keywords": [],
+        "version": ""
+      }
+    ]
+  },
+  "skill_analyses": [
+    {
+      "constraints": [
+        "受 Cloudflare Workers 运行时与 D1/R2 配额约束",
+        "本地材料未见依据（依赖 D1 数据库结构与鉴权方案）"
+      ],
+      "limits": [
+        "本地材料未见依据（迁移成本与数据量上限）",
+        "与 Memos 的 API 兼容度边界本地材料未见依据"
+      ],
+      "mechanism": [
+        "以 Cloudflare 原生服务作为运行时，无需传统服务器",
+        "对外暴露 Memos 兼容 API，客户端可平滑替换",
+        "同时提供 MCP 协议，使智能体可把知识库当作工具调用"
+      ],
+      "name": "FlareMo",
+      "problem": "独立开发者/小团队需要自托管知识库，但不想租服务器运维；既有 Memos 客户端又不能直接丢弃",
+      "repo": "FlareMo",
+      "stars": 317,
+      "takeaway": [
+        "做自托管服务时优先选「兼容既有客户端 API + 附带 MCP」双协议路线",
+        "把平台选型（Cloudflare）写进产品定位，可省下运维叙述"
+      ],
+      "verdict": "用兼容层（Memos API + MCP）把「云原生知识库」做成可零成本自托管的即装即用服务"
+    },
+    {
+      "constraints": [
+        "规则模板需人工维护，节点变更要跟随上游"
+      ],
+      "limits": [
+        "本地材料未见依据（具体限流与失效场景）"
+      ],
+      "mechanism": [
+        "订阅聚合与节点处理在 Worker 侧完成",
+        "以「分流规则模板」把配置与运行分离，规则可版本化复用",
+        "整个链路跑在 Workers 上，成本近似为服务器费用为零"
+      ],
+      "name": "sub-store-cloudflare",
+      "problem": "自建代理订阅管理需要服务器与节点运维，规则配置分散难复用",
+      "repo": "sub-store-cloudflare",
+      "stars": 306,
+      "takeaway": [
+        "把「运行时代码」与「规则模板」分成两层，模板即可复用资产"
+      ],
+      "verdict": "把订阅管理这一类常需服务器的自用工具搬到 Workers，靠规则模板承载配置复用"
+    },
+    {
+      "constraints": [
+        "依赖 Pi 智能体的插件与技能加载约定，迁移到别家 harness 需重写",
+        "本地材料未见依据（插件版本兼容范围）"
+      ],
+      "limits": [
+        "强绑定 Pi 生态，脱离该 harness 即失效",
+        "本地材料未见依据（配置迁移与版本回滚方式）"
+      ],
+      "mechanism": [
+        "把个人配置拆成「插件 / 全局技能 / MCP」三段式资产",
+        "配一键安装脚本，把配置分发从手工步骤变成可重复执行的动作",
+        "以 Shell 脚本为主语言，说明核心交付物是命令与配置而非应用代码"
+      ],
+      "name": "pi-config",
+      "problem": "个人智能体配置散落在各处、换机或分享给他人时无法一键复现",
+      "repo": "pi-config",
+      "stars": 189,
+      "takeaway": [
+        "把自己的智能体配置当成可发布产品：分目录 + 一键安装脚本",
+        "技能与 MCP 分开统计，便于替换与裁剪"
+      ],
+      "verdict": "把自己的智能体工作台整体打包成「配置文件仓库」，用一键安装脚本抹平复现成本"
+    },
+    {
+      "constraints": [
+        "依赖 Cloudflare 账户与产品可用性",
+        "本地材料未见依据（内容更新机制与版本管理）"
+      ],
+      "limits": [
+        "绑定 Cloudflare 一家平台，示例可迁移但服务能力不可",
+        "本地材料未见依据（篇幅与案例覆盖度）"
+      ],
+      "mechanism": [
+        "以手册而非代码交付，直接可读可复制",
+        "全书围绕「用 AI 写代码 + 用 Cloudflare 部署全球」这条主线组织章节",
+        "与同系列的 macos-playbook、codex-playbook、postgres-playbook 共享 playbook-theme 主题，形成统一体例"
+      ],
+      "name": "cloudflare-playbook",
+      "problem": "想用 AI 编程但对 Cloudflare 全球部署缺少成体系的手把手路径",
+      "repo": "cloudflare-playbook",
+      "stars": 180,
+      "takeaway": [
+        "把实战经验写成手册是低成本高 star 路径",
+        "系列手册配统一主题站，读者体验与维护成本同时改善"
+      ],
+      "verdict": "用「手册 + 统一主题」把平台知识产品化，靠叙事主线和系列化排版形成家族品牌"
+    },
+    {
+      "constraints": [
+        "依赖 DSH 运行时契约，版本演进会带来兼容压力",
+        "本地材料未见依据（示例与测试矩阵）"
+      ],
+      "limits": [
+        "只对 DSH 生效，其他 harness 需自行适配",
+        "本地材料未见依据（文档完整度与上手时长）"
+      ],
+      "mechanism": [
+        "以「插件 + skill」双件套作为开发单元，而不是单脚本",
+        "声明与 Claude Code、Codex、Antigravity、DSH 的运行时契约对齐，接口以对标而非自造为主",
+        "开发套件与 dsh-guide 手册配套，形成「文档 + 脚手架」组合"
+      ],
+      "name": "dsh-skill",
+      "problem": "智能体运行时普及后，插件与 skill 缺少统一的开发规范，第三方开发者各写各的",
+      "repo": "dsh-skill",
+      "stars": 25,
+      "takeaway": [
+        "做生态时先立契约再写脚手架，并明说对标哪些既有运行时"
+      ],
+      "verdict": "为 DSH 提供以「运行时契约对齐」为核心的官方 skill/插件开发套件"
+    }
+  ],
+  "patterns": [
+    {
+      "id": "P1",
+      "name": "Cloudflare 原生作为默认交付形态",
+      "kind": "method",
+      "evidence": [
+        "FlareMo",
+        "sub-store-cloudflare",
+        "cloudflare-playbook",
+        "xuanji",
+        "flare-box",
+        "zero-stack"
+      ],
+      "claim": "几乎所有产品都以 Cloudflare Workers 作为默认运行时，用「零成本全球部署」作为统一叙事"
+    },
+    {
+      "id": "P2",
+      "name": "Playbook 家族化命名与主题统一",
+      "kind": "method",
+      "evidence": [
+        "cloudflare-playbook",
+        "macos-playbook",
+        "codex-playbook",
+        "postgres-playbook",
+        "feishu-playbook",
+        "playbook-theme",
+        "dahuang-playbooks"
+      ],
+      "claim": "以 xxx-playbook 形式把手册产品化，同一主题反复复制成系列，并用统一 VitePress 主题维护"
+    },
+    {
+      "id": "P3",
+      "name": "零依赖纯文本技能交付",
+      "kind": "method",
+      "evidence": [
+        "dahuang-human-tone",
+        "dahuang-ai-tone",
+        "dahuang-x-post",
+        "human-tone",
+        "opencode-hermes-memory",
+        "dev-english",
+        "deep-ask"
+      ],
+      "claim": "技能与手册类仓库一律以纯 Markdown/零依赖形式交付，不引入构建链与运行时依赖"
+    },
+    {
+      "id": "P4",
+      "name": "中英双语描述作为统一门面",
+      "kind": "method",
+      "evidence": [
+        "FlareMo",
+        "sub-store-cloudflare",
+        "pi-config",
+        "dsh-skill",
+        "opencode-hermes-memory",
+        "one-person-one-site"
+      ],
+      "claim": "每条项目描述都采用「中文主句 + 英文对句」的双语结构，降低跨平台传播门槛"
+    },
+    {
+      "id": "P5",
+      "name": "个人智能体配置产品化",
+      "kind": "technique",
+      "evidence": [
+        "pi-config",
+        "dahuang-skills",
+        "dsh-skill"
+      ],
+      "claim": "把个人智能体配置拆成插件、全局技能、MCP 三层并配一键安装脚本，作为可发布的分享单元"
+    }
+  ],
+  "sources": [
+    "https://github.com/realchendahuang",
+    "https://github.com/realchendahuang?tab=repositories",
+    "https://x.com/i/article/2112025642464399360"
+  ]
+}
