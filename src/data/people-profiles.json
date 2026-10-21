@@ -1,0 +1,147 @@
+{
+  "addyosmani": {
+    "tagline": "把隐性工程经验写成可被 Agent 加载的技能",
+    "highlight": "不写教程文章，把资深工程师的判断固化成带触发词的 Skill 目录，再用独立站点分发；skill 描述固定「何时使用 + 触发词 + 何时跳过」三段式，流程全部下沉到正文。",
+    "evidence": "agent-skills 10.8w 星；7 个仓库走本地推理（Transformers.js / FFMPEG.wasm）"
+  },
+  "affaan-m": {
+    "tagline": "用一套资产目录喂饱所有编码 Agent",
+    "highlight": "把多 harness 的重复配置收敛成 skills / instincts / memory 三个目录，每个下游工具只做「插件式」接入；再配声明式 YAML 与 JSON schema 当对外契约。",
+    "evidence": "ECC 28.5w 星，占其自有星数 99.0%"
+  },
+  "alchaincyf": {
+    "tagline": "给每个 Skill 装一套操作系统",
+    "highlight": "skill 先定义「你是谁 / 你信什么 / 交付标准」，再写流程，流程之外必须写反模式与诚实边界；配套门文件把检查点物化成文件，文件不在就等于没做。",
+    "evidence": "58 个 skill（全场最多）；nuwa-skill 3.5w 星"
+  },
+  "alirezarezvani": {
+    "tagline": "用数量换覆盖的批量 Skill 工厂",
+    "highlight": "目录条目过百就改生成器维护；description 第一行直接写「380+ skills、30+ agents」这类可核对数字当传播点；流程阶段拆成具名 subagent 角色。",
+    "evidence": "claude-skills 2.8w 星，占其自有星数 90.8%"
+  },
+  "antfu": {
+    "tagline": "把配置本身做成可分享的产品",
+    "highlight": "默认配置做成可安装的预设产品，用 starter 矩阵把最佳实践预置进脚手架；痛点收成极小 CLI——包名短、描述一句话说清用途。",
+    "evidence": "eslint-config 6,275 星；Vite / Vue / Nuxt 生态作者"
+  },
+  "cellinlab": {
+    "tagline": "靠讲原理爆火的单点作者",
+    "highlight": "不造轮子，专做「热门实现 + 中文原理缺口」的交集——用 how-*-works 句式把仓库名直接当检索词；先收敛基建（统一 celf- 前缀）再写 demo。",
+    "evidence": "79 个自有仓，how-pi-agent-works 独占 91.8% 星数"
+  },
+  "coleam00": {
+    "tagline": "一个引擎 + 一堆垂直工作流",
+    "highlight": "不把每个场景做成独立产品，先做通用工作流引擎，再把营销视频、代码合并、需求转工单做成挂载其上的工作流；能力持续从「提示词」升级为带触发条件的可安装包。",
+    "evidence": "Archon 2.4w 星，是下游多个仓库的公共底座"
+  },
+  "hesreallyhim": {
+    "tagline": "把生态清单做成策展产品",
+    "highlight": "一个主目录承担发现，再按 Sub-Agent、Output Styles 等单一扩展点拆出窄目录承担深度；条目旁固定挂 created-at / last-commit / license / stars 四枚徽章，用元数据代替长介绍做初筛。",
+    "evidence": "awesome-claude-code 5.6w 星，占其自有星数 99.7%"
+  },
+  "kentcdodds": {
+    "tagline": "把教学经验做成可安装的技能包",
+    "highlight": "每个技术疑点配一个只含该问题的最小可复现仓库，既是提问材料也是回归样例；agent 指令打包成零依赖 npm 包分发，比散落在仓库里更好装更好版本化。",
+    "evidence": "300 个自有仓（全场并列第一）"
+  },
+  "kevinzhow": {
+    "tagline": "从自研 App 里抽出组件开源",
+    "highlight": "组件先在自己 App 里长出来、后来才对外开源，是他拿到长尾星标最省力的路径；一项能力验证有效后不原地改造，而是开新仓库做跨语言功能对等重写并互相导流。",
+    "evidence": "PNChart 9,632 星，其全部流量的单点来源"
+  },
+  "lencx": {
+    "tagline": "在官方空窗期做替代品",
+    "highlight": "用 Rust + Tauri 重写官方客户端并横跨三平台的第三方桌面壳，是全部流量的单点来源；技术选型十年未变，新项目成本接近复制；每个仓库配一句可背诵的短句。",
+    "evidence": "ChatGPT 5.5w 星，占其自有星数 95.5%"
+  },
+  "lijigang": {
+    "tagline": "提示词编译成可调用的技能",
+    "highlight": "每件作品只做一件事，仓库名与描述即边界声明；方法以非代码资产承载（语言字段留空以免被误判为代码库）；散落的 skill 收敛到单一聚合仓，用 TypeScript 做可校验载体。",
+    "evidence": "ljg-skills 7,532 星，为其方法对外的主入口"
+  },
+  "liruifengv": {
+    "tagline": "用极窄钩子撬动传播",
+    "highlight": "选「用户已有素材 + 缺工程能力」的窄场景（如每日古诗词 + AI 出图），用固定输入消灭提示词门槛；同时把日常写作沉淀为可复用脚手架（博客站 + 模板成组出现）。",
+    "evidence": "we-drawing 拿到该账号近半星标"
+  },
+  "mcncarl": {
+    "tagline": "公开包只留协议，私域全外置",
+    "highlight": "涉及登录态、私域数据、付费动作的能力，公开包只保留 SKILL.md 协议，凭据与私有运行时一律外置；每条对外调用都写明「发了什么、给了谁、边界在哪」，并配 doctor 只判定就绪不读凭据。",
+    "evidence": "一仓库 21 个 skill，每个互相独立；mcncarl 8,127 星"
+  },
+  "mvanhorn": {
+    "tagline": "把多源检索做成 Skill 而非服务",
+    "highlight": "对外暴露统一走 agent skill 形态（一仓一能力 + 说明性 description），用最低集成成本换调用面；跨设备连接用 Tailscale 替代自建中心服务；同一插件契约下按渠道平铺薄仓库。",
+    "evidence": "last30days-skill 6.5w 星，其唯一形成规模的产品"
+  },
+  "numman-ali": {
+    "tagline": "中立格式 + 薄适配层",
+    "highlight": "先定义与宿主无关的产物格式，再为每个 agent 宿主写薄适配，而不是每家重做一套；需求看似要改上游时，把差异全部收敛到配置与注册层，宿主升级只需跟随不需 rebase。",
+    "evidence": "openskills 1.1w 星，占其自有星数 64.1%"
+  },
+  "obra": {
+    "tagline": "把开发纪律装进 Agent",
+    "highlight": "技能 TDD：先跑基线让 agent 违规（RED），再写最小 SKILL.md 让它合规（GREEN），最后针对新借口补漏；并把 agent 的压力借口写成「借口/现实」表逐条堵死。",
+    "evidence": "superpowers 30.2w 星，占其自有星数 98.8%"
+  },
+  "op7418": {
+    "tagline": "把审美编译成可执行约束",
+    "highlight": "主题色只能从预设里选、页面只能从 22 个具名版式里选，正文字号按语言自动降档——自由参数全部写死，杜绝 Agent 临时发明结构；统一以单文件 HTML 作为交付格式。",
+    "evidence": "guizang-ppt-skill 2.8w 星，含 9 套主题 + 22 个版式"
+  },
+  "realchendahuang": {
+    "tagline": "零成本云原生 + 家族化手册",
+    "highlight": "几乎所有产品都以 Cloudflare Workers 为默认运行时，用「零成本全球部署」统一叙事；手册做成 xxx-playbook 系列并共用 VitePress 主题；自托管服务走「兼容既有客户端 API + 附带 MCP」双协议。",
+    "evidence": "FlareMo 用 Memos API + MCP 兼容层做知识库"
+  },
+  "sickn33": {
+    "tagline": "把「选哪些 skill」工程化",
+    "highlight": "不只发布能力目录，还补上选择、校验、规划、CI 卡点四段流程，主仓库提供运行时、action 提供提交期，两端复用同一套校验逻辑；写操作默认走人工审批门控。",
+    "evidence": "agentic-awesome-skills 4.8w 星，占其自有星数 99.9%"
+  },
+  "simonw": {
+    "tagline": "核心做调度，能力全插件化",
+    "highlight": "核心仓库只承担统一抽象与调度，每种具体能力（模型供应商、工具、数据源、输出格式）都做成独立插件仓库；无论抓取还是 LLM 调用，最终都落到 SQLite 表里。",
+    "evidence": "300 个自有仓；llm 1.3w 星是整个体系的地基"
+  },
+  "steipete": {
+    "tagline": "共享规则只留一份真源",
+    "highlight": "共享规则与能力只存一份，其他地方一律放指针或受版本控制的符号链接，从不复制内容；同一份能力面对不同加载规则时，为每种规则单独做形态适配而不改真源。",
+    "evidence": "agent-scripts 7,392 星；CodexBar 2.3w 星"
+  },
+  "vikingmute": {
+    "tagline": "零依赖小库转向 Agent Skill",
+    "highlight": "一份核心逻辑 + Vanilla / React / Vue 三套薄接入壳，「确定性 / 零依赖」直接写进卖点；近一年产出切到 language 为空的文本型 Agent Skill 资产。",
+    "evidence": "review-forge 223 星（空 language）；webpack-for-fools 687 星"
+  },
+  "wong2": {
+    "tagline": "做生态侧与协议侧",
+    "highlight": "不对齐某一个 agent 产品，而是写接入层与检查层让自有能力被生态复用；在抢手方向同时押「清单 / 工具 / 框架」三层入口，用一个主题摊薄被单项目淘汰的风险。",
+    "evidence": "自有 95 仓，chatgpt-google-extension 1.3w 星（已停止维护）"
+  },
+  "wshobson": {
+    "tagline": "一套 Markdown 喂七个 harness",
+    "highlight": "内容只写一份，格式与协议差异全压进适配层（OpenBB / MCP）；派生内容用 make generate-all / validate / garden 一次重跑并检查；量化金融是长期主线，工具形态一路演进。",
+    "evidence": "agents 4.1w 星，覆盖 Claude Code、Codex、Cursor、OpenCode、Copilot 等七种工具"
+  },
+  "yan5xu": {
+    "tagline": "记忆与上下文全部外置",
+    "highlight": "不把状态留在会话内，而是外置为可持久化、跨仓库访问的记忆结构；按领域而非按任务切分 agent 职责，避免记忆互相污染；复用现有宿主扩展而不是从零造壳。",
+    "evidence": "ququ 2,297 星（唯二破千星的爆款）"
+  },
+  "yanhua1010": {
+    "tagline": "中文讲透真实工业实现",
+    "highlight": "不自造概念模型，选定真实工业实现作参照系再用中文讲透，同一「原理—实现」框架在不同框架上复用；教程站与 mini- 最小实现项目双轨交付，让读者有代码终点。",
+    "evidence": "self-media-content-workflow 613 星（空 language 内容型资产）"
+  },
+  "yaojingang": {
+    "tagline": "把 Skill 制作变成治理系统",
+    "highlight": "任何长期维护的 AI 资产都配一个平台中立的语义契约（IR / manifest / interface.yaml），再编译出各客户端产物；「什么时候该触发」当一等问题单独评测，公开前有准入闸门与去敏规则。",
+    "evidence": "8 条 patterns、8 个五问拆解卡（方法论密度全场最高）"
+  },
+  "yetone": {
+    "tagline": "源码与分发产物分仓",
+    "highlight": "主仓库只放源码，*-releases / *-dist 放签名构建包、安装器与自动更新源；跨平台能力用「一个核心 + 各平台绑定」实现；把多 agent 的差异收敛到系统级入口（菜单栏/托盘）。",
+    "evidence": "magpie 1.8w 星，定位 agent 时代的统一入口层"
+  }
+}

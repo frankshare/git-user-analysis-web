@@ -3,11 +3,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Avatar from '../components/Avatar.astro';
 import Portrait from '../components/Portrait.astro';
 import NoBadge from '../components/NoBadge.astro';
-import { getAllEntries } from '../lib/data';
+import { getAllEntries, getPeopleProfiles } from '../lib/data';
 import { ROLE_LABELS } from '../lib/orgs';
 const BASE = import.meta.env.BASE_URL;
 
 const users = getAllEntries();
+const profiles = getPeopleProfiles();
 
 const num = (v: unknown) => (typeof v === 'number' ? v : parseInt(String(v ?? 0), 10) || 0);
 const CJK = '一-龥';
@@ -20,6 +21,7 @@ type Row = {
   kind: 'creator' | 'platform';
   platformRole: string;
   standardsCount: number;
+  tagline: string;
   login: string;
   name: string;
   bio: string;
@@ -61,6 +63,7 @@ const rows: Row[] = users
       kind: u.kind,
       platformRole: (u.profile as any).platform_role || '',
       standardsCount: (u as any).standards?.length || 0,
+      tagline: profiles[u.profile.login]?.tagline || '',
       login: u.profile.login,
       name: u.profile.name || u.profile.login,
       bio: u.profile.bio || '',
@@ -273,7 +276,12 @@ const kfmt = (n: number) =>
               </span>
             )}
           </div>
-          <p class="mt-2 line-clamp-2 text-[13.5px] leading-[1.75] text-slate-400">{top.bio}</p>
+          {top.tagline && (
+            <p class="mt-2 font-display text-[16px] font-medium leading-snug text-slate-100">
+              {top.tagline}
+            </p>
+          )}
+          <p class="mt-1.5 line-clamp-2 text-[12.5px] leading-[1.7] text-slate-500">{top.bio}</p>
         </div>
         <div class="shrink-0 text-right">
           <div class="font-mono text-[30px] font-medium leading-none tracking-tight">
@@ -358,7 +366,12 @@ const kfmt = (n: number) =>
                       {strategyLabel[r.strategy] ?? r.strategy}
                     </span>
                   </div>
-                  <p class="mt-1.5 line-clamp-2 max-w-lg text-[12.5px] leading-[1.7] text-slate-400">
+                  {r.tagline && (
+                    <p class="mt-1.5 max-w-lg font-display text-[14px] font-medium leading-snug text-slate-200">
+                      {r.tagline}
+                    </p>
+                  )}
+                  <p class="mt-1 line-clamp-2 max-w-lg text-[12px] leading-[1.65] text-slate-500">
                     {r.bio}
                   </p>
                 </div>
@@ -385,7 +398,12 @@ const kfmt = (n: number) =>
                       <span class="labelmono">{no}</span>
                       <span class="font-mono text-[11px] text-slate-400">★{kfmt(r.stars)}</span>
                     </div>
-                    <p class="mt-1.5 line-clamp-3 text-[12px] leading-[1.65] text-slate-400">{r.bio}</p>
+                    {r.tagline && (
+                      <p class="mt-1 font-display text-[13px] font-medium leading-snug text-slate-200">
+                        {r.tagline}
+                      </p>
+                    )}
+                    <p class="mt-1 line-clamp-2 text-[11.5px] leading-[1.6] text-slate-500">{r.bio}</p>
                   </div>
                 </div>
               </div>
@@ -449,9 +467,12 @@ const kfmt = (n: number) =>
                   </div>
                 )}
 
-                {layout !== 'portrait' && (
-                  <p class="mt-1.5 line-clamp-2 text-[12.5px] leading-[1.7] text-slate-400">{r.bio}</p>
+                {layout !== 'seal' && layout !== 'banner' && r.tagline && (
+                  <p class="mt-2 font-display text-[13.5px] font-medium leading-snug text-slate-200">
+                    {r.tagline}
+                  </p>
                 )}
+                <p class="mt-1 line-clamp-2 text-[11.5px] leading-[1.6] text-slate-500">{r.bio}</p>
 
                 <div class="mt-2.5 space-y-1 border-t border-slate-800 pt-2.5">
                   {works.map((w) => (

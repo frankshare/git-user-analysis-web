@@ -106,6 +106,23 @@ export function getAllUsers(): UserSnapshot[] {
     .filter((x): x is UserSnapshot => !!x && !!(x as any).profile && !!(x as any).stats);
 }
 
+/** 人工提炼的人物简介（tagline / highlight / evidence） */
+export interface PeopleProfile {
+  tagline: string;
+  highlight: string;
+  evidence: string;
+}
+
+export function getPeopleProfiles(): Record<string, PeopleProfile> {
+  const file = path.resolve('src/data/people-profiles.json');
+  if (!fs.existsSync(file)) return {};
+  try {
+    return JSON.parse(fs.readFileSync(file, 'utf-8')) as Record<string, PeopleProfile>;
+  } catch {
+    return {};
+  }
+}
+
 export function getUserByLogin(login: string): UserSnapshot | undefined {
   const users = getAllUsers();
   return users.find(u => u.profile.login.toLowerCase() === login.toLowerCase());
