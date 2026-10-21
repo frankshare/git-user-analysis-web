@@ -12,6 +12,9 @@ const num = (v: unknown) => (typeof v === 'number' ? v : parseInt(String(v ?? 0)
 const CJK = '一-龥';
 const hasCjk = (s: string) => new RegExp('[' + CJK + ']').test(s || '');
 
+// 卡片版式：按内容自动选，不按索引轮转
+type Layout = 'banner' | 'portrait' | 'seal' | 'plain';
+
 type Row = {
   login: string;
   name: string;
@@ -27,6 +30,10 @@ type Row = {
   skillCount: number;
   /** 星数占最高值的比例，用于弧环 */
   progress: number;
+  /** 自有仓库数（作品体量） */
+  repoCount: number;
+  /** 自动选出的版式 */
+  layout: 'banner' | 'portrait' | 'seal' | 'plain';
 };
 
 const maxStars = Math.max(...users.map((u) => num(u.stats.total_stars_source)), 1);
@@ -60,9 +67,55 @@ const rows: Row[] = users
       works,
       skillCount: u.skills?.count || 0,
       progress: num(u.stats.total_stars_source) / maxStars,
+      repoCount: (u.repos || []).filter((r) => !r.fork).length,
+      layout: 'plain' as const,
     };
   })
   .sort((a, b) => b.stars - a.stars);
+
+// 版式配额：避免某一种版式扎堆，也避免整页太花
+const layoutQuota: Record<Layout, number> = {
+  banner: 6,
+  seal: 7,
+  portrait: 9,
+  plain: 30,
+};
+
+// 逐张定版式：先按内容选「自然版式」，若与前两张重复，则从配额里挑一个还够用且不重复的。
+// 单遍贪心，不用交换——交换会互相破坏。
+const used: Record<string, number> = { banner: 0, seal: 0, portrait: 0, plain: 0 };
+rows.forEach((r, i) => {
+  const natural: Layout =
+    r.repoCount >= 100
+      ? 'banner'
+      : r.skillCount >= 12
+        ? 'seal'
+        : r.repoCount <= 25
+          ? 'portrait'
+          : 'plain';
+
+  const lastTwo = [rows[i - 1]?.layout, rows[i - 2]?.layout];
+  const order: Layout[] = [natural, 'plain', 'portrait', 'seal', 'banner'];
+
+  let pick = natural;
+  if (lastTwo[0] === natural && lastTwo[1] === natural) {
+    const alt = order.find(
+      (l) =>
+        l !== natural &&
+        lastTwo[0] !== l &&
+        lastTwo[1] !== l &&
+        used[l] < layoutQuota[l]
+    );
+    if (alt) pick = alt;
+  }
+  r.layout = pick;
+  used[pick] += 1;
+});
+
+const layoutStats = rows.reduce((acc, r) => {
+  acc[r.layout] = (acc[r.layout] || 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
 
 const totalStars = rows.reduce((a, r) => a + r.stars, 0);
 const totalWorks = rows.reduce((a, r) => a + r.works.length, 0);
@@ -75,10 +128,6 @@ const strategyAccent: Record<string, string> = {
   breadth: '#3f5a72', // 靛青：矩阵铺开
   hybrid: '#4a6b4e', // 松绿：两者兼有
 };
-
-// 卡片版式：4 种循环，避免整页一个模子
-const LAYOUTS = ['portrait', 'banner', 'seal', 'plain'] as const;
-type Layout = (typeof LAYOUTS)[number];
 
 const strategyLabel: Record<string, string> = {
   depth: '单点深挖',
@@ -169,11 +218,14 @@ const kfmt = (n: number) =>
         ))
       }
       <span class="ml-auto hidden shrink-0 font-mono text-[11px] text-slate-500 sm:block" id="count"></span>
+      <span class="labelmono hidden w-full text-[10px] sm:ml-4 sm:w-auto sm:shrink-0">
+        版式随体量自动 · 横幅 {layoutStats.banner || 0} · 印章像 {layoutStats.seal || 0} · 竖像 {layoutStats.portrait || 0} · 素面 {layoutStats.plain || 0}
+      </span>
     </div>
   </section>
 
   <!-- ============ 画廊 ============ -->
-  <section class="wrap mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+  <section class="grid-dense wrap mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
     <!-- 首位：加大卡 -->
     <a
       href={`${BASE}u/${top.login}/`}
@@ -239,7 +291,7 @@ const kfmt = (n: number) =>
     <!-- 其余：四种版式轮转 -->
     {
       rest.map((r, i) => {
-        const layout: Layout = LAYOUTS[i % LAYOUTS.length];
+        const layout: Layout = r.layout;
         const accent = strategyAccent[r.strategy] ?? '#b23a2b';
         const no = String(i + 2).padStart(3, '0');
         const works = r.works.slice(0, layout === 'banner' ? 1 : 2);
