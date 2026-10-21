@@ -1,47 +1,195 @@
 {
   "schema_version": "1.1",
   "note": "严格验证：直接抓取各 skill 仓的真实 SKILL.md，解析 frontmatter 字段。不是从摘要文本反推的弱信号。",
-  "snapshot": { "date": "2026-10-21", "method": "GitHub REST API 读 contents/SKILL.md（根目录 → skills/ → 含 skill 的子目录 → 再进一层）" },
+  "snapshot": {
+    "date": "2026-10-21",
+    "method": "GitHub REST API 读 contents/SKILL.md（根目录 → skills/ → 含 skill 的子目录 → 再进一层）"
+  },
   "canonical_format": {
     "source": "anthropics/skills（Agent Skills 规范）",
-    "required_fields": ["name", "description"],
-    "optional_fields": ["license", "allowed-tools", "metadata", "compatibility", "version"],
+    "required_fields": [
+      "name",
+      "description"
+    ],
+    "optional_fields": [
+      "license",
+      "allowed-tools",
+      "metadata",
+      "compatibility",
+      "version"
+    ],
     "note": "anthropics 官方 skills 仓自身使用 name/description/license"
   },
   "verified": [
-    { "user": "anthropics", "repo": "skills", "path": "academy-guide/SKILL.md", "fields": ["name", "description", "license"], "canonical": true },
-    { "user": "alchaincyf", "repo": "huashu-design", "path": "SKILL.md", "fields": ["name", "description", "metadata"], "canonical": true },
-    { "user": "alchaincyf", "repo": "huashu-skills", "path": "huashu-skill-updater/SKILL.md", "fields": ["name", "description"], "canonical": true },
-    { "user": "alchaincyf", "repo": "nuwa-skill", "path": "SKILL.md", "fields": ["name", "description", "metadata"], "canonical": true },
-    { "user": "obra", "repo": "superpowers", "path": "brainstorming/SKILL.md", "fields": ["name", "description"], "canonical": true },
-    { "user": "op7418", "repo": "guizang-ppt-skill", "path": "SKILL.md", "fields": ["name", "description"], "canonical": true },
-    { "user": "op7418", "repo": "Humanizer-zh", "path": "SKILL.md", "fields": ["name", "description", "allowed-tools", "metadata"], "canonical": true },
-    { "user": "lijigang", "repo": "ljg-skills", "path": "ljg-analogy/SKILL.md", "fields": ["name", "description", "metadata"], "canonical": true },
-    { "user": "yaojingang", "repo": "yao-meta-skill", "path": "SKILL.md", "fields": ["name", "description", "metadata"], "canonical": true },
-    { "user": "addyosmani", "repo": "agent-skills", "path": "api-and-interface-design/SKILL.md", "fields": ["name", "description"], "canonical": true },
-    { "user": "sickn33", "repo": "agentic-awesome-skills", "path": "00-andruia-consultant/SKILL.md", "fields": ["id", "name", "description", "category", "risk", "source", "date_added"], "canonical": true, "extended": true }
+    {
+      "user": "anthropics",
+      "repo": "skills",
+      "path": "academy-guide/SKILL.md",
+      "fields": [
+        "name",
+        "description",
+        "license"
+      ],
+      "canonical": true
+    },
+    {
+      "user": "alchaincyf",
+      "repo": "huashu-design",
+      "path": "SKILL.md",
+      "fields": [
+        "name",
+        "description",
+        "metadata"
+      ],
+      "canonical": true
+    },
+    {
+      "user": "alchaincyf",
+      "repo": "huashu-skills",
+      "path": "huashu-skill-updater/SKILL.md",
+      "fields": [
+        "name",
+        "description"
+      ],
+      "canonical": true
+    },
+    {
+      "user": "alchaincyf",
+      "repo": "nuwa-skill",
+      "path": "SKILL.md",
+      "fields": [
+        "name",
+        "description",
+        "metadata"
+      ],
+      "canonical": true
+    },
+    {
+      "user": "obra",
+      "repo": "superpowers",
+      "path": "brainstorming/SKILL.md",
+      "fields": [
+        "name",
+        "description"
+      ],
+      "canonical": true
+    },
+    {
+      "user": "op7418",
+      "repo": "guizang-ppt-skill",
+      "path": "SKILL.md",
+      "fields": [
+        "name",
+        "description"
+      ],
+      "canonical": true
+    },
+    {
+      "user": "op7418",
+      "repo": "Humanizer-zh",
+      "path": "SKILL.md",
+      "fields": [
+        "name",
+        "description",
+        "allowed-tools",
+        "metadata"
+      ],
+      "canonical": true
+    },
+    {
+      "user": "lijigang",
+      "repo": "ljg-skills",
+      "path": "ljg-analogy/SKILL.md",
+      "fields": [
+        "name",
+        "description",
+        "metadata"
+      ],
+      "canonical": true
+    },
+    {
+      "user": "yaojingang",
+      "repo": "yao-meta-skill",
+      "path": "SKILL.md",
+      "fields": [
+        "name",
+        "description",
+        "metadata"
+      ],
+      "canonical": true
+    },
+    {
+      "user": "addyosmani",
+      "repo": "agent-skills",
+      "path": "api-and-interface-design/SKILL.md",
+      "fields": [
+        "name",
+        "description"
+      ],
+      "canonical": true
+    },
+    {
+      "user": "sickn33",
+      "repo": "agentic-awesome-skills",
+      "path": "00-andruia-consultant/SKILL.md",
+      "fields": [
+        "id",
+        "name",
+        "description",
+        "category",
+        "risk",
+        "source",
+        "date_added"
+      ],
+      "canonical": true,
+      "extended": true
+    }
   ],
   "not_found": [
-    { "user": "anthropics", "repo": "claude-plugins-official", "reason": "插件市场，条目不是 SKILL.md 格式" },
-    { "user": "anthropics", "repo": "knowledge-work-plugins", "reason": "插件市场，条目不是 SKILL.md 格式" },
-    { "user": "mcncarl", "repo": "yichen-skills", "reason": "仓库内无 SKILL.md，skill 以其他形式承载" },
-    { "user": "modelcontextprotocol", "repo": "ext-skills", "reason": "MCP 扩展，非 SKILL.md 格式" },
-    { "user": "shareAI-lab", "repo": "lab-skills", "reason": "仓库内无 SKILL.md" },
-    { "user": "numman-ali", "repo": "openskills", "reason": "工具/加载器，非 skill 集合" }
+    {
+      "user": "anthropics",
+      "repo": "claude-plugins-official",
+      "reason": "插件市场，条目不是 SKILL.md 格式"
+    },
+    {
+      "user": "anthropics",
+      "repo": "knowledge-work-plugins",
+      "reason": "插件市场，条目不是 SKILL.md 格式"
+    },
+    {
+      "user": "mcncarl",
+      "repo": "yichen-skills",
+      "reason": "仓库内无 SKILL.md，skill 以其他形式承载"
+    },
+    {
+      "user": "modelcontextprotocol",
+      "repo": "ext-skills",
+      "reason": "MCP 扩展，非 SKILL.md 格式"
+    },
+    {
+      "user": "shareAI-lab",
+      "repo": "lab-skills",
+      "reason": "仓库内无 SKILL.md"
+    },
+    {
+      "user": "numman-ali",
+      "repo": "openskills",
+      "reason": "工具/加载器，非 skill 集合"
+    }
   ],
   "findings": {
-    "canonical_adoption": "11 个已验证 skill 仓中 8 个使用 name+description 两字段的 canonical 格式；另 3 个未使用 SKILL.md 格式",
+    "canonical_adoption": "11 个已验证 skill 仓全部使用 name+description 双字段的 canonical 格式（100%）；未使用该格式的是走插件/扩展点路线的组织资产",
     "cross_language": "中文圈（花叔、归藏、obra、李继刚、姚金刚）与英文圈（addyosmani、sickn33）使用完全相同的字段名",
     "extension_pattern": "sickn33 在 canonical 之上扩展了 id/category/risk/source/date_added —— 平台格式 + 个人元数据的叠加",
-    "metadata_common": "metadata 是最常见的第三字段（6/11），用于放版本/作者/许可等非触发信息",
+    "metadata_common": "metadata 是最常见的第三字段（5/11），用于放版本/作者/许可等非触发信息",
     "allowed_tools_rare": "allowed-tools 只有 1 例（op7418 的 Humanizer-zh）—— 工具限制并非事实标准",
     "license_rare": "license 只有 1 例（anthropics 官方 skills 仓）"
   },
   "interpretation": {
     "claim": "SKILL.md 的 name+description 双字段已成为跨语言、跨平台的实际事实标准",
     "caveats": [
-      "样本 11 个已验证仓（其中 8 个使用 canonical），来自 29 位创作者中的 8 位 —— 覆盖约 28%",
-      "「未找到 SKILL.md」不等于「不使用该格式」，可能只是存放路径不同（如嵌在单文件仓或子目录更深）",
+      "样本 11 个已验证仓（全部 canonical），来自 29 位创作者中的 8 位 —— 覆盖约 28%",
+      "「未找到 SKILL.md」不等于「不使用该格式」：mcncarl/yichen-skills、shareAI-lab/lab-skills 仓库内确实没有 SKILL.md，可能以其他形式承载",
       "格式趋同是平台推动的结果，与「独立发现收敛」性质不同，必须分开标注",
       "3 家组织（anthropics 插件市场、MCP ext-skills、shareAI-lab）走的是插件/扩展点路线，不是 SKILL.md 路线"
     ],
