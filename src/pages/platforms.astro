@@ -61,7 +61,7 @@ const shared = orgs
   .filter((x) => x.names.length > 0);
 ---
 
-<BaseLayout title="标准由谁定 · 星册" description="组织型（平台方）skill 资产：它们定义标准，而不是表达个人" active="research">
+<BaseLayout title="标准由谁定 · 星册" description="组织型（平台方）skill 资产：它们定义标准，而不是表达个人" active="research" theme="research">
   <section class="wrap pt-10 sm:pt-14">
     <div class="border-b border-slate-800 pb-8">
       <div class="mb-4 flex flex-wrap items-center gap-3">
@@ -98,7 +98,7 @@ const shared = orgs
 
     <div class="mt-4 space-y-2">
       {matrix.map((th, ti) => (
-        <div class="overflow-hidden rounded-[2px] border border-slate-800 bg-[#fbf5e7]/50">
+        <div class="overflow-hidden rounded-[2px] border border-slate-800 bg-[var(--color-slate-900)]/50">
           <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-slate-800 px-4 py-2.5">
             <span class="font-mono text-[14px] text-slate-600">{String(ti + 1).padStart(2, '0')}</span>
             <h3 class="font-display text-[15.5px] font-semibold">{th.name}</h3>
@@ -112,7 +112,7 @@ const shared = orgs
                   <div class="flex flex-wrap items-center gap-2">
                     <a
                       href={`${BASE}u/${org.profile.login}/`}
-                      class="font-mono text-[14.5px] text-slate-200 hover:text-[#b23a2b]"
+                      class="font-mono text-[14.5px] text-slate-200 hover:text-[var(--color-seal)]"
                     >
                       {org.profile.name}
                     </a>
@@ -127,7 +127,7 @@ const shared = orgs
                     <ul class="mt-1.5 space-y-0.5">
                       {items.map((s) => (
                         <li class="flex gap-2 text-[14.5px] leading-relaxed text-slate-400">
-                          <span class="shrink-0 text-[#b23a2b]">·</span>
+                          <span class="shrink-0 text-[var(--color-seal)]">·</span>
                           <span>{s.name}</span>
                         </li>
                       ))}

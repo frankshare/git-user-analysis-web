@@ -45,7 +45,7 @@ const orphan = C.groups.filter((g) => !ZONES.some((z) => z.ids.includes(g.id)));
 const totalItems = C.groups.reduce((a, g) => a + g.items.length, 0);
 ---
 
-<BaseLayout title="横向对比 · 星册" active="research"
+<BaseLayout title="横向对比 · 星册" active="works" theme="works"
   note="对比只在同一任务、真正能互相替代的作品之间做；上下游关系与同源系列单独标注，不混为一谈。">
   <section class="wrap pt-10 sm:pt-14">
     <div class="border-b border-slate-800 pb-8">
@@ -83,7 +83,7 @@ const totalItems = C.groups.reduce((a, g) => a + g.items.length, 0);
         <div class="space-y-4">
     {
       z.groups.map((g, gi) => (
-        <article class="overflow-hidden rounded-[2px] border border-slate-800 bg-[#fbf5e7]/55">
+        <article class="overflow-hidden rounded-[2px] border border-slate-800 bg-[var(--color-slate-900)]/55">
           <header class="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-slate-800 px-6 py-4.5">
             <span class="font-mono text-[14px] text-slate-600">{String(gi + 1).padStart(2, '0')}</span>
             <h2 class="font-display text-[19px] font-semibold">{g.title}</h2>
@@ -97,7 +97,7 @@ const totalItems = C.groups.reduce((a, g) => a + g.items.length, 0);
                 <div class="min-w-0">
                   <a
                     href={`${BASE}u/${it.key.split('/')[0]}/`}
-                    class="font-mono text-[14px] text-slate-100 hover:text-[#b23a2b]"
+                    class="font-mono text-[14px] text-slate-100 hover:text-[var(--color-seal)]"
                   >
                     {it.key.split('/')[1]}
                   </a>
@@ -112,7 +112,7 @@ const totalItems = C.groups.reduce((a, g) => a + g.items.length, 0);
                   {noteOf(it.key) && (
                     <p class="text-[14px] leading-relaxed text-slate-400">{noteOf(it.key)}</p>
                   )}
-                  <p class="mt-1 border-l-2 border-[#b23a2b]/40 pl-2.5 text-[14px] leading-[1.8] text-slate-500">
+                  <p class="mt-1 border-l-2 border-[var(--color-seal)]/40 pl-2.5 text-[14px] leading-[1.8] text-slate-500">
                     {it.diff}
                   </p>
                 </div>
@@ -120,9 +120,9 @@ const totalItems = C.groups.reduce((a, g) => a + g.items.length, 0);
             ))}
           </div>
 
-          <footer class="border-t border-slate-800 bg-[#f6efdf]/70 px-5 py-3">
+          <footer class="border-t border-slate-800 bg-[var(--color-slate-950)]/70 px-5 py-3">
             <div class="flex items-start gap-2.5">
-              <span class="mt-[3px] shrink-0 font-mono text-[14.5px] text-[#b23a2b]">结论</span>
+              <span class="mt-[3px] shrink-0 font-mono text-[14.5px] text-[var(--color-seal)]">结论</span>
               <p class="text-[14px] leading-[1.9] text-slate-200">{g.verdict}</p>
             </div>
           </footer>
@@ -139,7 +139,7 @@ const totalItems = C.groups.reduce((a, g) => a + g.items.length, 0);
         </div>
         <div class="space-y-4">
           {orphan.map((g) => (
-            <article class="overflow-hidden rounded-[2px] border border-slate-800 bg-[#fbf5e7]/55">
+            <article class="overflow-hidden rounded-[2px] border border-slate-800 bg-[var(--color-slate-900)]/55">
               <header class="border-b border-slate-800 px-6 py-4">
                 <h2 class="font-display text-[19px] font-semibold">{g.title}</h2>
               </header>

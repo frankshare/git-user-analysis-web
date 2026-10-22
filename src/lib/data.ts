@@ -123,11 +123,6 @@ export function getPeopleProfiles(): Record<string, PeopleProfile> {
   }
 }
 
-export function getUserByLogin(login: string): UserSnapshot | undefined {
-  const users = getAllUsers();
-  return users.find(u => u.profile.login.toLowerCase() === login.toLowerCase());
-}
-
 /** 统一条目：个人创作者 + 平台方 */
 export type Entry = {
   kind: 'creator' | 'platform';
@@ -174,10 +169,6 @@ export function getAllEntries(): Entry[] {
   return [...creators, ...platforms].sort(
     (a, b) => b.stats.total_stars_source - a.stats.total_stars_source
   );
-}
-
-export function getEntryByLogin(login: string): Entry | undefined {
-  return getAllEntries().find((e) => e.profile.login.toLowerCase() === login.toLowerCase());
 }
 
 export function getAllPatterns(): Array<{

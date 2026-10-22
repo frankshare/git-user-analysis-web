@@ -45,10 +45,6 @@
   --color-rose-500: #a33325;
 
   /* —— 语义色 —— */
-  --color-paper: #f2e9d6;
-  --color-paper-2: #fbf5e7;
-  --color-ink: #17140f;
-  --color-ink-soft: #4d463a;
   --color-seal: #b23a2b;
   --color-rule: #e2d5b8;
 
@@ -64,8 +60,8 @@
   }
 
   body {
-    background-color: var(--color-paper);
-    color: var(--color-ink);
+    background-color: var(--color-slate-950);
+    color: var(--color-slate-200);
     font-family: var(--font-body);
     font-size: 16px;
     line-height: 1.75;
@@ -117,11 +113,94 @@
   ::-webkit-scrollbar-thumb {
     background: #d8c9a9;
     border-radius: 99px;
-    border: 3px solid var(--color-paper);
+    border: 3px solid var(--color-slate-950);
   }
 }
 
 @layer components {
+  /* =========================================================
+     分栏配色：同一套纸墨结构，每个栏目换色相
+     （取自成熟配色的低饱和版本，保持品牌统一）
+     ========================================================= */
+  body[data-theme='people'] {
+    --color-slate-950: #f2e9d6;
+    --color-slate-900: #fbf5e7;
+    --color-white: #17140f;
+    --color-slate-800: #e2d5b8;
+    --color-slate-700: #cdbe9d;
+    --color-slate-600: #ab9d81;
+    --color-slate-500: #8b7e66;
+    --color-slate-400: #6f6453;
+    --color-slate-300: #4d463a;
+    --color-slate-200: #322d25;
+    --color-slate-100: #221f19;
+    --color-rule: #e2d5b8;
+    --color-seal: #b23a2b;
+  }
+
+  body[data-theme='works'] {
+    --color-slate-950: #e9eef0;
+    --color-slate-900: #f6f9fa;
+    --color-white: #12181c;
+    --color-slate-800: #cfdbe0;
+    --color-slate-700: #b4c4cb;
+    --color-slate-600: #8fa1a9;
+    --color-slate-500: #6d7f88;
+    --color-slate-400: #566670;
+    --color-slate-300: #3a474e;
+    --color-slate-200: #263036;
+    --color-slate-100: #171e22;
+    --color-rule: #cfdbe0;
+    --color-seal: #2f5d78;
+  }
+
+  body[data-theme='research'] {
+    --color-slate-950: #ebece2;
+    --color-slate-900: #f6f7f0;
+    --color-white: #181a12;
+    --color-slate-800: #d8dac6;
+    --color-slate-700: #c0c3aa;
+    --color-slate-600: #9ba087;
+    --color-slate-500: #7c8269;
+    --color-slate-400: #616752;
+    --color-slate-300: #434a37;
+    --color-slate-200: #2d3226;
+    --color-slate-100: #1d211a;
+    --color-rule: #d8dac6;
+    --color-seal: #4a6b4e;
+  }
+
+  body[data-theme='about'] {
+    --color-slate-950: #f0e4d6;
+    --color-slate-900: #fbf3e9;
+    --color-white: #1a140e;
+    --color-slate-800: #ddc9b0;
+    --color-slate-700: #c7b096;
+    --color-slate-600: #a89076;
+    --color-slate-500: #8b7460;
+    --color-slate-400: #6e5a49;
+    --color-slate-300: #4d3f33;
+    --color-slate-200: #322822;
+    --color-slate-100: #1f1913;
+    --color-rule: #ddc9b0;
+    --color-seal: #8a4b2a;
+  }
+
+  /* 主题切换时的过渡：让变色是渐变而不是硬切 */
+  body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  .card,
+  header,
+  footer {
+    transition:
+      background-color 0.5s ease,
+      border-color 0.5s ease,
+      color 0.5s ease,
+      transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
   /* 版心 */
   .wrap {
     width: 100%;
@@ -210,7 +289,7 @@
   .card {
     position: relative;
     display: block;
-    background: var(--color-paper-2);
+    background: var(--color-slate-900);
     border: 1px solid var(--color-rule);
     border-radius: 4px;
     padding: 1.35rem 1.35rem 1.15rem 1.7rem;
@@ -231,7 +310,7 @@
     height: 7px;
     border-radius: 50%;
     border: 1px solid #d5c6a6;
-    background: var(--color-paper);
+    background: var(--color-slate-950);
     box-shadow: inset 0 1px 1px rgba(23, 20, 15, 0.14);
   }
   .card:hover {

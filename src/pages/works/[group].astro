@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { loadWorks, groupStats, SLUG_GROUP, kfmt } from '../../lib/works';
+import { loadWorks, groupStats, kfmt } from '../../lib/works';
 const BASE = import.meta.env.BASE_URL;
 
 export function getStaticPaths() {
@@ -21,7 +21,7 @@ const prev = groups[idx - 1];
 const next = groups[idx + 1];
 ---
 
-<BaseLayout title={`${g.name} · 作品 · 星册`} active="works">
+<BaseLayout title={`${g.name} · 作品 · 星册`} active="works" theme="works">
   <section class="wrap pt-8 sm:pt-12">
     <a href={`${BASE}works/`} class="labelmono ulink">← 回作品总览</a>
 
@@ -55,20 +55,20 @@ const next = groups[idx + 1];
         </div>
         <div>
           <dt class="labelmono">有说明</dt>
-          <dd class="font-mono text-[22px] leading-tight text-[#b23a2b]">{g.noted}</dd>
+          <dd class="font-mono text-[22px] leading-tight text-[var(--color-seal)]">{g.noted}</dd>
         </div>
       </dl>
     </div>
   </section>
 
   <!-- 筛选 -->
-  <section class="wrap sticky top-14 z-10 bg-[#f2e9d6]/92 py-3 backdrop-blur-sm">
+  <section class="wrap sticky top-14 z-10 bg-[var(--color-slate-950)]/92 py-3 backdrop-blur-sm">
     <div class="flex flex-wrap items-center gap-2">
       <span class="labelmono mr-1">筛选</span>
       <button
         type="button"
         data-f="all"
-        class="rounded-[2px] border border-[#b23a2b] bg-[#b23a2b] px-2.5 py-1 text-[13px] text-[#fbf5e7] transition-colors"
+        class="rounded-[2px] border border-[var(--color-seal)] bg-[var(--color-seal)] px-2.5 py-1 text-[13px] text-[var(--color-slate-900)] transition-colors"
         >全部</button
       >
       <button
@@ -104,7 +104,7 @@ const next = groups[idx + 1];
         id="q"
         type="search"
         placeholder="搜作品名 / 描述 / 作者…"
-        class="ml-auto w-full max-w-[240px] rounded-[2px] border border-slate-800 bg-[#fbf5e7] px-3 py-1.5 text-[13px] text-slate-200 placeholder:text-slate-500 focus:border-[#b23a2b] focus:outline-none"
+        class="ml-auto w-full max-w-[240px] rounded-[2px] border border-slate-800 bg-[var(--color-slate-900)] px-3 py-1.5 text-[13px] text-slate-200 placeholder:text-slate-500 focus:border-[var(--color-seal)] focus:outline-none"
       />
       <span class="font-mono text-[12px] text-slate-500" id="cnt"></span>
     </div>
@@ -116,7 +116,7 @@ const next = groups[idx + 1];
       {
         g.items.map((w, i) => (
           <li
-            class="row group flex items-start gap-4 py-3.5 transition-colors hover:bg-[#f6efdf]/70"
+            class="row group flex items-start gap-4 py-3.5 transition-colors hover:bg-[var(--color-slate-950)]/70"
             data-k={`${w.note ? 'noted ' : ''}${w.stars >= 1000 ? 'big ' : ''}${w.zh ? 'zh' : ''}`}
             data-s={`${w.name} ${w.desc} ${w.author} ${w.authorName} ${w.note}`.toLowerCase()}
           >
@@ -151,7 +151,7 @@ const next = groups[idx + 1];
               )}
 
               {w.audience && (
-                <p class="mt-1.5 border-l-2 border-[#b23a2b]/40 pl-2.5 text-[13px] leading-[1.75] text-slate-500">
+                <p class="mt-1.5 border-l-2 border-[var(--color-seal)]/40 pl-2.5 text-[13px] leading-[1.75] text-slate-500">
                   {w.audience}
                 </p>
               )}
@@ -160,7 +160,7 @@ const next = groups[idx + 1];
             <div class="hidden shrink-0 text-right sm:block">
               <a
                 href={`${BASE}u/${w.author}/`}
-                class="block w-[130px] truncate font-mono text-[12.5px] text-slate-400 transition-colors hover:text-[#b23a2b]"
+                class="block w-[130px] truncate font-mono text-[12.5px] text-slate-400 transition-colors hover:text-[var(--color-seal)]"
               >
                 @{w.author}
               </a>
@@ -184,7 +184,7 @@ const next = groups[idx + 1];
       prev ? (
         <a
           href={`${BASE}works/${prev.slug}/`}
-          class="group flex items-center justify-between gap-3 rounded-[2px] p-3 transition-colors hover:bg-[#fbf5e7]/70"
+          class="group flex items-center justify-between gap-3 rounded-[2px] p-3 transition-colors hover:bg-[var(--color-slate-900)]/70"
         >
           <span class="font-mono text-sm text-slate-500 transition-transform duration-300 group-hover:-translate-x-1">←</span>
           <span class="text-right">
@@ -200,7 +200,7 @@ const next = groups[idx + 1];
       next ? (
         <a
           href={`${BASE}works/${next.slug}/`}
-          class="group flex items-center justify-between gap-3 rounded-[2px] p-3 transition-colors hover:bg-[#fbf5e7]/70"
+          class="group flex items-center justify-between gap-3 rounded-[2px] p-3 transition-colors hover:bg-[var(--color-slate-900)]/70"
         >
           <span>
             <span class="labelmono block">下一类</span>
@@ -215,6 +215,8 @@ const next = groups[idx + 1];
   </section>
 
   <script>
+    // View Transitions 下脚本只执行一次，必须挂到 astro:page-load 上重新绑定
+    function initList() {
     const btns = document.querySelectorAll<HTMLButtonElement>('[data-f]');
     const rows = Array.from(document.querySelectorAll<HTMLLIElement>('.row'));
     const q = document.getElementById('q') as HTMLInputElement | null;
@@ -240,16 +242,21 @@ const next = groups[idx + 1];
     btns.forEach((b) =>
       b.addEventListener('click', () => {
         btns.forEach((x) => {
-          x.classList.remove('border-[#b23a2b]', 'bg-[#b23a2b]', 'text-[#fbf5e7]');
+          x.classList.remove('border-[var(--color-seal)]', 'bg-[var(--color-seal)]', 'text-[var(--color-slate-900)]');
           x.classList.add('border-slate-800', 'text-slate-400');
         });
         b.classList.remove('border-slate-800', 'text-slate-400');
-        b.classList.add('border-[#b23a2b]', 'bg-[#b23a2b]', 'text-[#fbf5e7]');
+        b.classList.add('border-[var(--color-seal)]', 'bg-[var(--color-seal)]', 'text-[var(--color-slate-900)]');
         cur = b.dataset.f || 'all';
         run();
       })
     );
     q?.addEventListener('input', run);
     run();
+    }
+    // 立即执行一次（astro:page-load 可能在监听器注册前就已派发），
+    // 换页回来时再执行一次。DOM 每次都是新的，所以不会重复绑定。
+    initList();
+    document.addEventListener('astro:page-load', initList);
   </script>
 </BaseLayout>

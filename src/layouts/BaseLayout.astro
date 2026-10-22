@@ -7,6 +7,8 @@ interface Props {
   title?: string;
   description?: string;
   active?: 'people' | 'works' | 'research' | 'about';
+  /** 栏目配色主题 */
+  theme?: 'people' | 'works' | 'research' | 'about';
   /** 页脚用小字说明 */
   note?: string;
 }
@@ -15,6 +17,7 @@ const {
   title = '星册 · 高星创作者档案馆',
   description = '收录高星 GitHub 创作者与他们的作品：谁在做什么、代表作是哪个、往哪看。',
   active = 'people',
+  theme = active,
   note,
 } = Astro.props;
 
@@ -42,13 +45,13 @@ const nav = [
       rel="stylesheet"
     />
   </head>
-  <body class="min-h-screen flex flex-col">
+  <body class="min-h-screen flex flex-col" data-theme={theme}>
     <!-- 顶部书脊 -->
-    <header class="relative z-20 sticky top-0 border-b border-slate-800 bg-[#f6efdf]/88 backdrop-blur-md">
+    <header class="relative z-20 sticky top-0 border-b border-slate-800 bg-[var(--color-slate-950)]/88 backdrop-blur-md">
       <div class="wrap flex h-14 items-center justify-between gap-4">
         <a href={`${BASE}`} class="group flex items-center gap-2.5">
           <span
-            class="grid h-7 w-7 place-items-center rounded-[2px] bg-[#b23a2b] font-display text-[14px] font-semibold leading-none text-[#fbf5e7] transition-transform duration-500 group-hover:-rotate-6"
+            class="grid h-7 w-7 place-items-center rounded-[2px] bg-[var(--color-seal)] font-display text-[14px] font-semibold leading-none text-[var(--color-slate-900)] transition-transform duration-500 group-hover:-rotate-6"
             >星</span
           >
           <span class="flex items-baseline gap-2">
@@ -72,7 +75,7 @@ const nav = [
               >
                 {n.label}
                 {active === n.key && (
-                  <span class="absolute inset-x-2.5 -bottom-[13px] h-[2px] bg-[#b23a2b] sm:inset-x-3" />
+                  <span class="absolute inset-x-2.5 -bottom-[13px] h-[2px] bg-[var(--color-seal)] sm:inset-x-3" />
                 )}
               </a>
             ))
@@ -105,22 +108,29 @@ const nav = [
     </footer>
 
     <script>
-      // 滚动入场
-      const io = new IntersectionObserver(
-        (entries) => {
-          for (const e of entries) {
-            if (e.isIntersecting) {
-              e.target.classList.add('in');
-              io.unobserve(e.target);
+      // 滚动入场。用 astro:page-load 而非直接执行——
+      // 开启 View Transitions 后，脚本只在首次加载跑一次，
+      // 换页回来的新 DOM 不会被观察，导致 .reveal 永远停在 opacity:0（卡片消失）。
+      function initReveal() {
+        const io = new IntersectionObserver(
+          (entries) => {
+            for (const e of entries) {
+              if (e.isIntersecting) {
+                e.target.classList.add('in');
+                io.unobserve(e.target);
+              }
             }
-          }
-        },
-        { rootMargin: '0px 0px -8% 0px', threshold: 0.06 }
-      );
-      document.querySelectorAll('.reveal').forEach((el, i) => {
-        (el as HTMLElement).style.animationDelay = `${Math.min(i * 45, 420)}ms`;
-        io.observe(el);
-      });
+          },
+          { rootMargin: '0px 0px -8% 0px', threshold: 0.06 }
+        );
+        document.querySelectorAll('.reveal:not(.in)').forEach((el, i) => {
+          (el as HTMLElement).style.animationDelay = `${Math.min(i * 45, 420)}ms`;
+          io.observe(el);
+        });
+      }
+      // 立即执行一次（astro:page-load 可能在监听器注册前就已派发）
+      initReveal();
+      document.addEventListener('astro:page-load', initReveal);
     </script>
   </body>
 </html>

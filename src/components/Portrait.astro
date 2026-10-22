@@ -21,7 +21,7 @@ const {
   size = 104,
   progress = 0,
   ring = 'solid',
-  accent = '#b23a2b',
+  accent = 'var(--color-seal)',
   class: cls = '',
   eager = false,
 } = Astro.props;
@@ -96,6 +96,7 @@ const pad = (view - size) / 2;
       size={size}
       round
       eager={eager}
+      plain
       class="h-full w-full shadow-[0_6px_18px_-8px_rgba(23,20,15,0.45)] transition-transform duration-[600ms] ease-out group-hover:scale-[1.05]"
     />
   </span>

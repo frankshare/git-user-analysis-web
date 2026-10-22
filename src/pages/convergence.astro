@@ -9,7 +9,7 @@ const users = getAllUsers();
 const userName = (login: string) => users.find(u => u.profile.login === login)?.profile.name || login;
 ---
 
-<BaseLayout title="方法收敛簇 · 星册" description="互不相识的创作者，在不同领域独立收敛出的同一套方法" active="research">
+<BaseLayout title="方法收敛簇 · 星册" description="互不相识的创作者，在不同领域独立收敛出的同一套方法" active="research" theme="research">
   <section class="wrap pt-10 sm:pt-14">
     <div class="border-b border-slate-800 pb-8">
       <div class="mb-4 flex flex-wrap items-center gap-3">

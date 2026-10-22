@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { getAllUsers } from './data';
+import { hasCjk, toNum } from './people';
 
 export interface Work {
   name: string;
@@ -55,10 +56,6 @@ export const GROUP_SLUG: Record<string, string> = {
   '其他': 'others',
 };
 
-export const SLUG_GROUP: Record<string, string> = Object.fromEntries(
-  Object.entries(GROUP_SLUG).map(([k, v]) => [v, k])
-);
-
 /** 每类的视觉标识（图标字 + 强调色） */
 export const GROUP_META: Record<string, { mark: string; accent: string; blurb: string }> = {
   'Skill 与知识库': {
@@ -92,9 +89,6 @@ export const GROUP_META: Record<string, { mark: string; accent: string; blurb: s
     blurb: '难以归类的小仓库长尾：站点、配置、各类小工具',
   },
 };
-
-const CJK = '\u4e00-\u9fa5';
-const hasCjk = (s: string) => new RegExp('[' + CJK + ']').test(s || '');
 
 const CONTENT_HINT = [
   'blog', 'site', 'docs', 'doc', 'note', 'talk', 'wiki', 'book', 'readme', 'resume', 'cv',
@@ -147,7 +141,7 @@ export function loadWorks(): Work[] {
           return {
             name,
             url: r.url,
-            stars: typeof r.stars === 'number' ? r.stars : parseInt(String(r.stars ?? 0), 10) || 0,
+            stars: toNum(r.stars),
             lang: r.language || '—',
             layer: (r as any).layer || 'other',
             cat: (r as any).category || '',

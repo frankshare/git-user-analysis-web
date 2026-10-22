@@ -10,7 +10,7 @@ const totalNoted = works.filter((w) => w.note).length;
 const authorCount = new Set(works.map((w) => w.author)).size;
 ---
 
-<BaseLayout title="卷二 · 作品 · 星册" active="works">
+<BaseLayout title="卷二 · 作品 · 星册" active="works" theme="works">
   <section class="wrap pt-10 sm:pt-14">
     <div class="flex flex-wrap items-end justify-between gap-6 border-b border-slate-800 pb-8">
       <div class="max-w-2xl">
@@ -41,7 +41,7 @@ const authorCount = new Set(works.map((w) => w.author)).size;
         </div>
         <div>
           <dt class="labelmono">有说明</dt>
-          <dd class="font-mono text-[22px] leading-tight text-[#b23a2b]">{totalNoted}</dd>
+          <dd class="font-mono text-[22px] leading-tight text-[var(--color-seal)]">{totalNoted}</dd>
         </div>
       </dl>
     </div>
@@ -116,7 +116,7 @@ const authorCount = new Set(works.map((w) => w.author)).size;
   <section class="wrap mt-10 grid gap-3 border-t border-slate-800 pt-6 sm:grid-cols-2">
     <a
       href={`${BASE}compare/`}
-      class="group flex items-start justify-between gap-4 rounded-[2px] p-3 transition-colors hover:bg-[#fbf5e7]/70"
+      class="group flex items-start justify-between gap-4 rounded-[2px] p-3 transition-colors hover:bg-[var(--color-slate-900)]/70"
     >
       <div>
         <div class="labelmono">相关专题</div>
@@ -131,7 +131,7 @@ const authorCount = new Set(works.map((w) => w.author)).size;
     </a>
     <a
       href={`${BASE}platforms/`}
-      class="group flex items-start justify-between gap-4 rounded-[2px] p-3 transition-colors hover:bg-[#fbf5e7]/70"
+      class="group flex items-start justify-between gap-4 rounded-[2px] p-3 transition-colors hover:bg-[var(--color-slate-900)]/70"
     >
       <div>
         <div class="labelmono">相关专题</div>

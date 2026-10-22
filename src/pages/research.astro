@@ -56,7 +56,7 @@ const items = [
 
 <BaseLayout
   title="附录 · 研究 · 星册"
-  active="research"
+  active="research" theme="research"
   note="这一栏是拆解过程中的副产品，不是收录本身。想看人和作品，回「人物」或「作品」。"
 >
   <section class="wrap pt-10 sm:pt-14">
@@ -83,7 +83,7 @@ const items = [
             <div class="flex items-baseline gap-2.5">
               <span class="font-mono text-[14px] text-slate-600">{it.no}</span>
               <h2 class="font-display text-[20px] font-semibold leading-tight">{it.title}</h2>
-              <span class="font-mono text-[14px] text-[#b23a2b]">{it.sub}</span>
+              <span class="font-mono text-[14px] text-[var(--color-seal)]">{it.sub}</span>
             </div>
             <span class="shrink-0 font-mono text-xs text-slate-600 transition-transform duration-300 group-hover:translate-x-1">
               →
