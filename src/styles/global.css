@@ -67,6 +67,8 @@
     background-color: var(--color-paper);
     color: var(--color-ink);
     font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.75;
     /* 纸：顶部受光 + 极淡横线（账本纸） */
     background-image:
       radial-gradient(1100px 520px at 50% -8%, #fffaef 0%, rgba(255, 250, 239, 0) 62%),
@@ -144,8 +146,8 @@
   /* 等宽小标签：档案编号感 */
   .labelmono {
     font-family: var(--font-mono);
-    font-size: 0.68rem;
-    letter-spacing: 0.18em;
+    font-size: 0.84rem;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--color-slate-500);
   }
@@ -156,8 +158,8 @@
     align-items: center;
     justify-content: center;
     font-family: var(--font-mono);
-    font-size: 0.62rem;
-    letter-spacing: 0.14em;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
     color: var(--color-seal);
     border: 1.5px solid var(--color-seal);
     border-radius: 3px;
@@ -167,6 +169,43 @@
     background: rgba(178, 58, 43, 0.04);
   }
 
+  /* 抽卡堆叠：多张任务卡像牌一样叠放 */
+  .stack-card {
+    --stack-i: 0;
+    /* 每张卡按序号做微偏移，形成牌堆 */
+    --tilt: calc(var(--stack-i) * 0.55deg - 1.6deg);
+    --shift: calc(var(--stack-i) * 3px);
+    --lift: calc(var(--stack-i) * -1.5px);
+    transform: rotate(var(--tilt)) translateX(var(--shift))
+      translateY(calc(var(--lift) + var(--rise, 0px)));
+    /* 多层阴影：模拟牌堆里下面压着的几张 */
+    box-shadow:
+      0 1px 0 rgba(23, 20, 15, 0.05),
+      0 3px 0 -1px #efe6d2,
+      0 5px 0 -2px #e9dfc9,
+      0 8px 14px -8px rgba(23, 20, 15, 0.28);
+    transition:
+      transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+      border-color 0.3s ease;
+  }
+  /* hover：把这一张抽出来 —— 抬起、归正、放大 */
+  .stack-card:hover,
+  .stack-card:focus-within {
+    transform: rotate(0deg) translateX(0) translateY(-16px) scale(1.04);
+    z-index: 30;
+    border-color: #c9b28a;
+    /* 抽出后：牌堆的厚度消失，只剩浮起的阴影 */
+    box-shadow:
+      0 34px 60px -24px rgba(23, 20, 15, 0.45),
+      0 6px 18px -10px rgba(23, 20, 15, 0.3);
+  }
+  /* 焦点可见性 */
+  .stack-card:focus-visible {
+    outline: 2px solid var(--color-seal);
+    outline-offset: 3px;
+  }
+
   /* 档案卡 */
   .card {
     position: relative;
@@ -174,7 +213,7 @@
     background: var(--color-paper-2);
     border: 1px solid var(--color-rule);
     border-radius: 4px;
-    padding: 1.15rem 1.15rem 1rem 1.45rem;
+    padding: 1.35rem 1.35rem 1.15rem 1.7rem;
     transition:
       transform 0.42s cubic-bezier(0.16, 1, 0.3, 1),
       box-shadow 0.42s cubic-bezier(0.16, 1, 0.3, 1),
@@ -196,7 +235,6 @@
     box-shadow: inset 0 1px 1px rgba(23, 20, 15, 0.14);
   }
   .card:hover {
-    transform: translateY(-5px);
     border-color: #cfbd97;
     box-shadow:
       0 18px 34px -18px rgba(23, 20, 15, 0.3),
@@ -209,8 +247,8 @@
     right: 0.95rem;
     bottom: 0.9rem;
     font-family: var(--font-mono);
-    font-size: 0.58rem;
-    letter-spacing: 0.16em;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
     color: var(--color-seal);
     border: 1.5px solid var(--color-seal);
     border-radius: 3px;
@@ -272,17 +310,17 @@
   }
   .ledger th {
     font-family: var(--font-mono);
-    font-size: 0.66rem;
-    letter-spacing: 0.12em;
+    font-size: 0.84rem;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--color-slate-500);
     text-align: left;
-    padding: 0.5rem 0.6rem;
+    padding: 0.7rem 0.7rem;
     border-bottom: 1px solid var(--color-rule);
     font-weight: 400;
   }
   .ledger td {
-    padding: 0.6rem;
+    padding: 0.8rem 0.7rem;
     border-bottom: 1px solid rgba(226, 213, 184, 0.6);
     vertical-align: top;
   }
@@ -290,19 +328,30 @@
     background: rgba(255, 250, 239, 0.75);
   }
 
-  /* 入场动画 */
+  /* 入场动画：用 opacity + 自定义属性，不占用 transform，
+     否则会盖掉 .stack-card 的抽卡旋转 */
   .reveal {
     opacity: 0;
-    transform: translateY(14px);
+    --rise: 14px;
+    /* translate 属性独立于 transform，不与抽卡旋转冲突 */
+    translate: 0 var(--rise);
   }
   .reveal.in {
     animation: rise 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
   @keyframes rise {
+    from {
+      opacity: 0;
+      --rise: 14px;
+    }
     to {
       opacity: 1;
-      transform: none;
+      --rise: 0px;
     }
+  }
+  /* 抽卡卡片的位移走 transform，translate 需归零 */
+  .stack-card.reveal {
+    translate: 0 0;
   }
 
   /* 首屏：印章落下 */
@@ -338,6 +387,36 @@
     }
     to {
       transform: none;
+    }
+  }
+
+  /* 视图过渡：旧页下沉淡出，新页上浮淡入 */
+  @keyframes vt-out {
+    to {
+      opacity: 0;
+      transform: translateY(14px) scale(0.985);
+    }
+  }
+  @keyframes vt-in {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+  ::view-transition-old(root) {
+    animation: vt-out 0.32s cubic-bezier(0.4, 0, 1, 1) both;
+  }
+  ::view-transition-new(root) {
+    animation: vt-in 0.42s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  /* 头像等具名元素：放大飞入，时长略长以看清 */
+  ::view-transition-group(portrait-placeholder) {
+    animation-duration: 0.5s;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    ::view-transition-old(root),
+    ::view-transition-new(root) {
+      animation: none !important;
     }
   }
 

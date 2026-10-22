@@ -99,26 +99,26 @@ const links = [
     !isPlatform && (
       <nav class="wrap mt-5 flex flex-wrap items-center gap-1.5 border-b border-slate-800 pb-3">
         <span class="labelmono mr-1">本档案</span>
-        <a href="#works" class="rounded-[2px] border border-slate-800 px-2.5 py-1 text-[12px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]">
+        <a href="#works" class="rounded-[2px] border border-slate-800 px-2.5 py-1 text-[14.5px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]">
           作品 {sourceRepos.length}
         </a>
         {skills.length > 0 && (
-          <a href="#skills" class="rounded-[2px] border border-slate-800 px-2.5 py-1 text-[12px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]">
+          <a href="#skills" class="rounded-[2px] border border-slate-800 px-2.5 py-1 text-[14.5px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]">
             Skills {skills.length}
           </a>
         )}
         {patterns.length > 0 && (
-          <a href="#methods" class="rounded-[2px] border border-slate-800 px-2.5 py-1 text-[12px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]">
+          <a href="#methods" class="rounded-[2px] border border-slate-800 px-2.5 py-1 text-[14.5px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]">
             方法 {patterns.length}
           </a>
         )}
         {analyses.length > 0 && (
-          <a href="#dive" class="rounded-[2px] border border-slate-800 px-2.5 py-1 text-[12px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]">
+          <a href="#dive" class="rounded-[2px] border border-slate-800 px-2.5 py-1 text-[14.5px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]">
             深度拆解 {analyses.length}
           </a>
         )}
         {isPlatform && (
-          <a href="#standards" class="rounded-[2px] border border-slate-800 px-2.5 py-1 text-[12px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]">
+          <a href="#standards" class="rounded-[2px] border border-slate-800 px-2.5 py-1 text-[14.5px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]">
             标准 {standards.length}
           </a>
         )}
@@ -154,12 +154,12 @@ const links = [
             <span class="seal">{strategyLabel}</span>
           )}
           {!isPlatform && skills.length >= 12 && (
-            <span class="rounded-[2px] border border-[#b23a2b] px-1.5 py-0.5 font-mono text-[10px] text-[#b23a2b]">
+            <span class="rounded-[2px] border border-[#b23a2b] px-1.5 py-0.5 font-mono text-[14.5px] text-[#b23a2b]">
               体系型 · {skills.length} skills
             </span>
           )}
           {!isPlatform && skills.length > 0 && skills.length < 12 && (
-            <span class="rounded-[2px] border border-slate-800 px-1.5 py-0.5 font-mono text-[10px] text-slate-500">
+            <span class="rounded-[2px] border border-slate-800 px-1.5 py-0.5 font-mono text-[13px] text-slate-500">
               {skills.length} skills
             </span>
           )}
@@ -168,19 +168,19 @@ const links = [
 
         <h1 class="mt-2 display text-[2.2rem] leading-none sm:text-[2.9rem]">{p.name}</h1>
 
-        <div class="mt-1.5 flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[12px] text-slate-500">
+        <div class="mt-1.5 flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[13px] text-slate-500">
           <span>@{p.login}</span>
           {p.location && <span>{p.location}</span>}
           {p.joined && <span>{String(p.joined).slice(0, 7)} 加入</span>}
         </div>
 
         {profile?.tagline && (
-          <p class="mt-2.5 max-w-2xl font-display text-[21px] font-medium leading-snug text-slate-100">
+          <p class="mt-2.5 max-w-2xl font-display text-[21px] font-medium leading-[1.5] text-slate-100">
             {profile.tagline}
           </p>
         )}
 
-        <p class="mt-2 max-w-2xl text-[14px] leading-[1.85] text-slate-400">{p.bio}</p>
+        <p class="mt-2 max-w-2xl text-[14px] leading-[1.9] text-slate-400">{p.bio}</p>
 
         <div class="mt-4 flex flex-wrap items-center gap-2">
           {
@@ -189,7 +189,7 @@ const links = [
                 href={l.href}
                 target="_blank"
                 rel="noreferrer"
-                class="rounded-[2px] border border-slate-800 px-2.5 py-1 font-mono text-[11.5px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]"
+                class="rounded-[2px] border border-slate-800 px-2.5 py-1 font-mono text-[14px] text-slate-400 transition-colors hover:border-[#b23a2b] hover:text-[#b23a2b]"
               >
                 {l.label} ↗
               </a>
@@ -237,8 +237,8 @@ const links = [
           </blockquote>
           <div class="rounded-[2px] border border-slate-800 bg-[#f6efdf]/60 p-5">
             <div class="labelmono mb-2">凭什么这么说</div>
-            <p class="text-[13px] leading-[1.85] text-slate-500">{profile.evidence}</p>
-            <p class="mt-3 text-[11.5px] leading-[1.8] text-slate-600">
+            <p class="text-[14px] leading-[1.9] text-slate-500">{profile.evidence}</p>
+            <p class="mt-3 text-[14px] leading-[1.8] text-slate-600">
               证据来自本站对该作者 {user.skill_analyses?.length || 0} 个 skill 的五问拆解与
               {user.patterns?.length || 0} 条跨仓方法归纳，数字为快照值。
             </p>
@@ -256,7 +256,7 @@ const links = [
           <h2 class="tick font-display text-[19px] font-semibold">他们定的标准</h2>
           <span class="labelmono">{standards.length} 条</span>
         </div>
-        <p class="mt-2 max-w-2xl text-[12.5px] leading-relaxed text-slate-500">
+        <p class="mt-2 max-w-2xl text-[14px] leading-relaxed text-slate-500">
           {role?.desc}。下面每条都是被广泛采用、且能从公开文档里核对的规范——
           它们和个人的方法不同：个人方法是被<strong class="text-slate-300">发现</strong>的，标准是被<strong class="text-slate-300">制定</strong>的。
         </p>
@@ -265,17 +265,17 @@ const links = [
           {standards.map((sd, i) => (
             <details class="group/std rounded-[2px] border border-slate-800 bg-[#fbf5e7]/50">
               <summary class="flex cursor-pointer list-none items-start gap-3 px-3.5 py-2.5">
-                <span class="mt-0.5 font-mono text-[11px] text-slate-600">
+                <span class="mt-0.5 font-mono text-[14px] text-slate-600">
                   {String(i + 1).padStart(2, '0')}
                 </span>
-                <span class="flex-1 font-display text-[14.5px] font-semibold leading-snug text-slate-100">
+                <span class="flex-1 font-display text-[14.5px] font-semibold leading-[1.5] text-slate-100">
                   {sd.name}
                 </span>
-                <span class="mt-0.5 shrink-0 font-mono text-[10.5px] text-slate-600 transition-transform duration-300 group-open/std:rotate-90">
+                <span class="mt-0.5 shrink-0 font-mono text-[14.5px] text-slate-600 transition-transform duration-300 group-open/std:rotate-90">
                   →
                 </span>
               </summary>
-              <div class="space-y-2.5 border-t border-slate-800 px-3.5 py-3 text-[12.5px] leading-[1.8]">
+              <div class="space-y-2.5 border-t border-slate-800 px-3.5 py-3 text-[14px] leading-[1.8]">
                 <div>
                   <span class="labelmono mr-2">是什么</span>
                   <span class="text-slate-400">{sd.what}</span>
@@ -300,7 +300,7 @@ const links = [
   <section class="wrap mt-8 grid gap-8 lg:grid-cols-[1.6fr_1fr]">
     <div>
       <h2 class="tick font-display text-[19px] font-semibold">星数分布</h2>
-      <p class="mt-1.5 text-[12.5px] leading-relaxed text-slate-500">
+      <p class="mt-1.5 text-[14px] leading-relaxed text-slate-500">
         {
           isDepth
             ? '超过一半的仓库不足 10 星——长尾是给核心方法论供血的实验田，不是失败。'
@@ -312,14 +312,14 @@ const links = [
         {
           buckets.map((b) => (
             <div class="flex items-center gap-3">
-              <span class="w-16 shrink-0 text-right font-mono text-[11px] text-slate-500">{b.label}</span>
+              <span class="w-16 shrink-0 text-right font-mono text-[14px] text-slate-500">{b.label}</span>
               <div class="h-5 flex-1 overflow-hidden rounded-[1px] border border-slate-800 bg-[#f6efdf]">
                 <div
                   class:list={['h-full', b.hot ? 'bg-[#b23a2b]' : 'bg-slate-600']}
                   style={`width:${Math.max((b.n / maxBucket) * 100, 3)}%`}
                 />
               </div>
-              <span class="w-8 shrink-0 font-mono text-[11px] text-slate-400">{b.n}</span>
+              <span class="w-8 shrink-0 font-mono text-[14px] text-slate-400">{b.n}</span>
             </div>
           ))
         }
@@ -331,7 +331,7 @@ const links = [
             <h3 class="tick mt-6 font-display text-[16px] font-semibold">仓库品类</h3>
             <div class="mt-3 flex flex-wrap gap-1.5">
               {cats.map(([c, n]) => (
-                <span class="rounded-[2px] border border-slate-800 px-2 py-0.5 text-[11.5px] text-slate-400">
+                <span class="rounded-[2px] border border-slate-800 px-2 py-0.5 text-[14px] text-slate-400">
                   {c} <span class="font-mono text-slate-600">{n}</span>
                 </span>
               ))}
@@ -343,7 +343,7 @@ const links = [
 
     <aside class="border-t border-slate-800 pt-4 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
       <h2 class="labelmono">数据口径</h2>
-      <dl class="mt-3 space-y-2 text-[12.5px]">
+      <dl class="mt-3 space-y-2 text-[14px]">
         <div class="flex justify-between gap-3">
           <dt class="text-slate-500">总星（自有）</dt>
           <dd class="font-mono text-slate-200">{num(s.total_stars_source).toLocaleString()}</dd>
@@ -366,10 +366,10 @@ const links = [
         </div>
       </dl>
 
-      <p class="mt-4 border-t border-slate-800 pt-3 text-[11.5px] leading-[1.8] text-slate-500">
+      <p class="mt-4 border-t border-slate-800 pt-3 text-[14px] leading-[1.8] text-slate-500">
         {user.snapshot.method}
       </p>
-      <p class="mt-2 text-[11.5px] leading-[1.8] text-[#a9722a]">⚠️ {user.snapshot.caveat}</p>
+      <p class="mt-2 text-[14px] leading-[1.8] text-[#a9722a]">⚠️ {user.snapshot.caveat}</p>
     </aside>
   </section>
 
@@ -384,7 +384,7 @@ const links = [
       {
         topRepos.map((r, i) => (
           <li class="group flex items-start gap-3 py-2.5 transition-colors hover:bg-[#fbf5e7]/70">
-            <span class="mt-1 w-7 shrink-0 font-mono text-[11px] text-slate-600">
+            <span class="mt-1 w-7 shrink-0 font-mono text-[14px] text-slate-600">
               {String(i + 1).padStart(2, '0')}
             </span>
             <div class="min-w-0 flex-1">
@@ -393,29 +393,29 @@ const links = [
                   href={r.url}
                   target="_blank"
                   rel="noreferrer"
-                  class="ulink font-mono text-[13px] font-medium text-slate-100"
+                  class="ulink font-mono text-[14px] font-medium text-slate-100"
                 >
                   {r.name}
                 </a>
                 {(r as any).layer && (
-                  <span class="rounded-[2px] border border-slate-800 px-1 font-mono text-[10px] text-slate-500">
+                  <span class="rounded-[2px] border border-slate-800 px-1 font-mono text-[13px] text-slate-500">
                     {(r as any).layer}
                   </span>
                 )}
-                {r.language && <span class="font-mono text-[10.5px] text-slate-600">{r.language}</span>}
+                {r.language && <span class="font-mono text-[14.5px] text-slate-600">{r.language}</span>}
               </div>
-              <p class="mt-0.5 line-clamp-1 text-[12px] leading-relaxed text-slate-500">
+              <p class="mt-0.5 line-clamp-1 text-[14.5px] leading-relaxed text-slate-500">
                 {noteOf(p.login, r.name) || r.description || '—'}
                 {audOf(p.login, r.name) && (
-                  <p class="mt-0.5 border-l-2 border-[#b23a2b]/35 pl-2 text-[11.5px] leading-relaxed text-slate-500">
+                  <p class="mt-0.5 border-l-2 border-[#b23a2b]/35 pl-2 text-[14px] leading-relaxed text-slate-500">
                     {audOf(p.login, r.name)}
                   </p>
                 )}
               </p>
             </div>
             <div class="shrink-0 text-right">
-              <div class="font-mono text-[12.5px] text-slate-300">★{kfmt(r.stars)}</div>
-              <div class="font-mono text-[10px] text-slate-600">
+              <div class="font-mono text-[14px] text-slate-300">★{kfmt(r.stars)}</div>
+              <div class="font-mono text-[14.5px] text-slate-600">
                 {(r.updated_at || '').slice(2, 10)}
               </div>
             </div>
@@ -437,17 +437,17 @@ const links = [
           {skills.slice(0, 24).map((sk) => (
             <div class="rounded-[2px] border border-slate-800 bg-[#fbf5e7]/50 px-3 py-2">
               <div class="flex items-baseline justify-between gap-2">
-                <span class="truncate font-mono text-[12px] text-slate-200">{sk.name}</span>
-                <span class="shrink-0 font-mono text-[10px] text-slate-600">{sk.layer || sk.category}</span>
+                <span class="truncate font-mono text-[14.5px] text-slate-200">{sk.name}</span>
+                <span class="shrink-0 font-mono text-[14.5px] text-slate-600">{sk.layer || sk.category}</span>
               </div>
               {sk.summary && (
-                <p class="mt-1 line-clamp-2 text-[11.5px] leading-snug text-slate-500">{sk.summary}</p>
+                <p class="mt-1 line-clamp-2 text-[14px] leading-[1.5] text-slate-500">{sk.summary}</p>
               )}
             </div>
           ))}
         </div>
         {skills.length > 24 && (
-          <p class="mt-2 font-mono text-[11px] text-slate-600">另有 {skills.length - 24} 条未展开</p>
+          <p class="mt-2 font-mono text-[14px] text-slate-600">另有 {skills.length - 24} 条未展开</p>
         )}
       </section>
     )
@@ -463,8 +463,8 @@ const links = [
         </div>
         <ul class="mt-3 space-y-2">
           {patterns.slice(0, 12).map((pt) => (
-            <li class="text-[13px] leading-relaxed">
-              <span class="mr-2 font-mono text-[10.5px] text-slate-600">{pt.id}</span>
+            <li class="text-[14px] leading-relaxed">
+              <span class="mr-2 font-mono text-[14.5px] text-slate-600">{pt.id}</span>
               <span class="text-slate-200">{pt.name}</span>
               {pt.claim && <span class="text-slate-500"> — {pt.claim}</span>}
             </li>
@@ -486,15 +486,15 @@ const links = [
           {analyses.map((a) => (
             <details class="group rounded-[2px] border border-slate-800 bg-[#fbf5e7]/50 px-3 py-2">
               <summary class="flex cursor-pointer list-none items-baseline justify-between gap-3">
-                <span class="font-mono text-[12.5px] text-slate-200">
+                <span class="font-mono text-[14px] text-slate-200">
                   {a.name}
-                  <span class="ml-2 text-[10.5px] text-slate-600">{a.repo}</span>
+                  <span class="ml-2 text-[14.5px] text-slate-600">{a.repo}</span>
                 </span>
-                <span class="shrink-0 font-mono text-[10.5px] text-slate-600">
+                <span class="shrink-0 font-mono text-[14.5px] text-slate-600">
                   ★{kfmt(num(a.stars))} · 展开
                 </span>
               </summary>
-              <div class="mt-2.5 space-y-2.5 border-t border-slate-800 pt-2.5 text-[12.5px] leading-[1.8]">
+              <div class="mt-2.5 space-y-2.5 border-t border-slate-800 pt-2.5 text-[14px] leading-[1.8]">
                 <p><span class="labelmono mr-2">结论</span>{a.verdict}</p>
                 <p><span class="labelmono mr-2">解决</span>{a.problem}</p>
                 {a.mechanism?.length > 0 && (

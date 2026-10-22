@@ -167,7 +167,7 @@ const LIMIT = 40;
         <h1 class="display text-[2.4rem] sm:text-[3.4rem]">
           <span class="line-up"><span>他们造出来的东西</span></span>
         </h1>
-        <p class="mt-4 max-w-xl text-[14.5px] leading-[1.85] text-slate-400">
+        <p class="mt-4 max-w-xl text-[14.5px] leading-[1.9] text-slate-400">
           同一批创作者的作品，按类别折叠。每类先看星数最高的几件，其余收在「更多」里。
         </p>
       </div>
@@ -194,13 +194,13 @@ const LIMIT = 40;
       groups.map((g, gi) => (
         <details class="group/rv overflow-hidden rounded-[2px] border border-slate-800 bg-[#fbf5e7]/60" open={gi === 0}>
           <summary class="flex cursor-pointer list-none items-center gap-3 px-4 py-3 transition-colors hover:bg-[#f6efdf]">
-            <span class="font-mono text-[11px] text-slate-600">{String(gi + 1).padStart(2, '0')}</span>
+            <span class="font-mono text-[14px] text-slate-600">{String(gi + 1).padStart(2, '0')}</span>
             <h2 class="font-display text-[17px] font-semibold">{g.name}</h2>
-            <span class="font-mono text-[11px] text-slate-500">{g.items.length} 件</span>
-            <span class="font-mono text-[11px] text-slate-500">★{kfmt(g.stars)}</span>
+            <span class="font-mono text-[14px] text-slate-500">{g.items.length} 件</span>
+            <span class="font-mono text-[14px] text-slate-500">★{kfmt(g.stars)}</span>
             <span class="ml-auto hidden flex-wrap items-center gap-1.5 sm:flex">
               {g.top.map(([c, n]) => (
-                <span class="rounded-[2px] border border-slate-800 px-1.5 py-px text-[10.5px] text-slate-500">
+                <span class="rounded-[2px] border border-slate-800 px-1.5 py-px text-[14.5px] text-slate-500">
                   {c} <span class="font-mono text-slate-600">{n}</span>
                 </span>
               ))}
@@ -213,10 +213,10 @@ const LIMIT = 40;
           <div class="border-t border-slate-800">
             {/* 二级细分标签 */}
             {g.subs.length > 0 && (
-              <div class="flex flex-wrap items-center gap-1.5 border-b border-slate-800 px-4 py-2.5">
+              <div class="flex flex-wrap items-center gap-1.5 border-b border-slate-800 px-5 py-3">
                 <span class="labelmono mr-1">细分</span>
                 {g.subs.map((s) => (
-                  <span class="rounded-[2px] border border-slate-800 px-2 py-0.5 font-mono text-[10.5px] text-slate-500">
+                  <span class="rounded-[2px] border border-slate-800 px-2 py-0.5 font-mono text-[13px] text-slate-500">
                     {s.name} <span class="text-slate-600">{s.items.length}</span>
                   </span>
                 ))}
@@ -226,7 +226,7 @@ const LIMIT = 40;
             <ol class="divide-y divide-slate-800/60">
               {g.items.slice(0, LIMIT).map((w, i) => (
                 <li class="flex items-start gap-3 px-4 py-2.5 transition-colors hover:bg-[#f6efdf]">
-                  <span class="mt-0.5 w-7 shrink-0 font-mono text-[11px] text-slate-600">
+                  <span class="mt-0.5 w-7 shrink-0 font-mono text-[14px] text-slate-600">
                     {String(i + 1).padStart(2, '0')}
                   </span>
                   <div class="min-w-0 flex-1">
@@ -235,50 +235,50 @@ const LIMIT = 40;
                         href={w.url}
                         target="_blank"
                         rel="noopener"
-                        class="ulink font-mono text-[13px] font-medium text-slate-100"
+                        class="ulink font-mono text-[14px] font-medium text-slate-100"
                       >
                         {w.name}
                       </a>
                       {w.cat && (
-                        <span class="rounded-[2px] border border-slate-800 px-1 font-mono text-[10px] text-slate-500">
+                        <span class="rounded-[2px] border border-slate-800 px-1 font-mono text-[13px] text-slate-500">
                           {w.cat}
                         </span>
                       )}
                       {w.lang !== '—' && (
-                        <span class="font-mono text-[10.5px] text-slate-600">{w.lang}</span>
+                        <span class="font-mono text-[14.5px] text-slate-600">{w.lang}</span>
                       )}
                     </div>
                     {noteOf(w.author, w.name) ? (
-                      <p class="mt-0.5 line-clamp-1 text-[12.5px] leading-relaxed text-slate-400">
+                      <p class="mt-0.5 line-clamp-1 text-[14px] leading-relaxed text-slate-400">
                         {noteOf(w.author, w.name)}
                       </p>
                     ) : (
                       w.desc && (
-                        <p class="mt-0.5 line-clamp-1 text-[12px] leading-relaxed text-slate-500">
+                        <p class="mt-0.5 line-clamp-1 text-[14.5px] leading-relaxed text-slate-500">
                           {w.desc}
                         </p>
                       )
                     )}
                     {audOf(w.author, w.name) && (
-                      <p class="mt-1 line-clamp-1 border-l-2 border-[#b23a2b]/35 pl-2 text-[11.5px] leading-relaxed text-slate-500">
+                      <p class="mt-1 line-clamp-1 border-l-2 border-[#b23a2b]/35 pl-2 text-[14px] leading-relaxed text-slate-500">
                         {audOf(w.author, w.name)}
                       </p>
                     )}
-                    <div class="mt-1 flex items-center gap-2 font-mono text-[10.5px] text-slate-600 sm:hidden">
+                    <div class="mt-1 flex items-center gap-2 font-mono text-[14.5px] text-slate-600 sm:hidden">
                       <a href={`${BASE}u/${w.author}/`} class="text-slate-400">@{w.author}</a>
                       <span>★{kfmt(w.stars)}</span>
                     </div>
                   </div>
                   <a
                     href={`${BASE}u/${w.author}/`}
-                    class="hidden w-[120px] shrink-0 truncate font-mono text-[11.5px] text-slate-400 transition-colors hover:text-[#b23a2b] sm:block"
+                    class="hidden w-[120px] shrink-0 truncate font-mono text-[14px] text-slate-400 transition-colors hover:text-[#b23a2b] sm:block"
                   >
                     @{w.author}
                   </a>
-                  <span class="hidden w-[70px] shrink-0 text-right font-mono text-[12px] text-slate-300 sm:block">
+                  <span class="hidden w-[70px] shrink-0 text-right font-mono text-[14.5px] text-slate-300 sm:block">
                     {kfmt(w.stars)}
                   </span>
-                  <span class="hidden w-[60px] shrink-0 text-right font-mono text-[10.5px] text-slate-600 sm:block">
+                  <span class="hidden w-[60px] shrink-0 text-right font-mono text-[14.5px] text-slate-600 sm:block">
                     {w.updated.slice(2)}
                   </span>
                 </li>
@@ -287,13 +287,13 @@ const LIMIT = 40;
 
             {g.items.length > LIMIT && (
               <details class="group/more border-t border-slate-800">
-                <summary class="cursor-pointer list-none px-4 py-2.5 text-center font-mono text-[11.5px] text-slate-500 transition-colors hover:bg-[#f6efdf] hover:text-[#b23a2b]">
+                <summary class="cursor-pointer list-none px-4 py-2.5 text-center font-mono text-[14px] text-slate-500 transition-colors hover:bg-[#f6efdf] hover:text-[#b23a2b]">
                   更多 {g.items.length - LIMIT} 件 ▾
                 </summary>
                 <ol class="divide-y divide-slate-800/60 border-t border-slate-800">
                   {g.items.slice(LIMIT).map((w, i) => (
                     <li class="flex items-start gap-3 px-4 py-2.5 transition-colors hover:bg-[#f6efdf]">
-                      <span class="mt-0.5 w-7 shrink-0 font-mono text-[11px] text-slate-600">
+                      <span class="mt-0.5 w-7 shrink-0 font-mono text-[14px] text-slate-600">
                         {String(LIMIT + i + 1).padStart(2, '0')}
                       </span>
                       <div class="min-w-0 flex-1">
@@ -301,17 +301,17 @@ const LIMIT = 40;
                           href={w.url}
                           target="_blank"
                           rel="noopener"
-                          class="ulink font-mono text-[13px] font-medium text-slate-100"
+                          class="ulink font-mono text-[14px] font-medium text-slate-100"
                         >
                           {w.name}
                         </a>
                         {noteOf(w.author, w.name) ? (
-                          <p class="mt-0.5 line-clamp-1 text-[12.5px] leading-relaxed text-slate-400">
+                          <p class="mt-0.5 line-clamp-1 text-[14px] leading-relaxed text-slate-400">
                             {noteOf(w.author, w.name)}
                           </p>
                         ) : (
                           w.desc && (
-                            <p class="mt-0.5 line-clamp-1 text-[12px] leading-relaxed text-slate-500">
+                            <p class="mt-0.5 line-clamp-1 text-[14.5px] leading-relaxed text-slate-500">
                               {w.desc}
                             </p>
                           )
@@ -319,11 +319,11 @@ const LIMIT = 40;
                       </div>
                       <a
                         href={`${BASE}u/${w.author}/`}
-                        class="hidden w-[120px] shrink-0 truncate font-mono text-[11.5px] text-slate-400 transition-colors hover:text-[#b23a2b] sm:block"
+                        class="hidden w-[120px] shrink-0 truncate font-mono text-[14px] text-slate-400 transition-colors hover:text-[#b23a2b] sm:block"
                       >
                         @{w.author}
                       </a>
-                      <span class="hidden w-[70px] shrink-0 text-right font-mono text-[12px] text-slate-300 sm:block">
+                      <span class="hidden w-[70px] shrink-0 text-right font-mono text-[14.5px] text-slate-300 sm:block">
                         {kfmt(w.stars)}
                       </span>
                     </li>
@@ -339,31 +339,31 @@ const LIMIT = 40;
                 <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
                   {g.subs.map((s) => (
                     <details class="rounded-[2px] border border-slate-800/80 bg-[#f6efdf]/50">
-                      <summary class="flex cursor-pointer list-none items-baseline justify-between gap-2 px-2.5 py-1.5">
-                        <span class="truncate text-[12px] text-slate-300">{s.name}</span>
-                        <span class="shrink-0 font-mono text-[10.5px] text-slate-500">
+                      <summary class="flex cursor-pointer list-none items-baseline justify-between gap-2 px-3 py-2">
+                        <span class="truncate text-[14.5px] text-slate-300">{s.name}</span>
+                        <span class="shrink-0 font-mono text-[13px] text-slate-500">
                           {s.items.length} · ★{kfmt(s.stars)}
                         </span>
                       </summary>
                       <ol class="border-t border-slate-800/80">
                         {s.items.slice(0, 30).map((w) => (
-                          <li class="flex items-baseline justify-between gap-2 px-2.5 py-1">
+                          <li class="flex items-baseline justify-between gap-2 px-3 py-1.5">
                             <a
                               href={w.url}
                               target="_blank"
                               rel="noopener"
-                              class="truncate font-mono text-[11.5px] text-slate-400 hover:text-[#b23a2b]"
+                              class="truncate font-mono text-[14px] text-slate-400 hover:text-[#b23a2b]"
                               title={noteOf(w.author, w.name) || w.desc}
                             >
                               {w.name}
                             </a>
-                            <span class="shrink-0 font-mono text-[10px] text-slate-600">
+                            <span class="shrink-0 font-mono text-[14.5px] text-slate-600">
                               {kfmt(w.stars)}
                             </span>
                           </li>
                         ))}
                         {s.items.length > 30 && (
-                          <li class="px-2.5 py-1 font-mono text-[10px] text-slate-600">
+                          <li class="px-2.5 py-1 font-mono text-[14.5px] text-slate-600">
                             另有 {s.items.length - 30} 件
                           </li>
                         )}
@@ -387,7 +387,7 @@ const LIMIT = 40;
       <div>
         <div class="labelmono">相关专题</div>
         <h3 class="mt-1 font-display text-[19px] font-semibold">同赛道怎么选</h3>
-        <p class="mt-1 max-w-sm text-[12.5px] leading-relaxed text-slate-400">
+        <p class="mt-1 max-w-sm text-[14px] leading-relaxed text-slate-400">
           都能干同一件事的几个作品，差在哪、该选哪个——8 组真实替代关系。
         </p>
       </div>
@@ -402,7 +402,7 @@ const LIMIT = 40;
       <div>
         <div class="labelmono">相关专题</div>
         <h3 class="mt-1 font-display text-[19px] font-semibold">标准由谁定</h3>
-        <p class="mt-1 max-w-sm text-[12.5px] leading-relaxed text-slate-400">
+        <p class="mt-1 max-w-sm text-[14px] leading-relaxed text-slate-400">
           上面「Skill 与知识库」那一类的格式，不是谁发明的——是三家标准制定者定的。
           去看看这 18 条标准分别管什么。
         </p>
@@ -411,7 +411,7 @@ const LIMIT = 40;
         >→</span
       >
     </a>
-    <p class="self-center text-[12.5px] leading-[1.9] text-slate-500">
+    <p class="self-center text-[14px] leading-[1.9] text-slate-500">
       一级分类依据仓库的 <code class="font-mono text-slate-400">layer</code> 字段（工具 / 应用 / Skill / 人格 / 生态…）。
       二级细分：对有语义标签的组用中文类（<span class="text-slate-400">category</span>）；
       「其他」组有 1,349 个不同仓库、没有统一标签，改按用途（站点与内容 / 配置与环境）与语言细分。

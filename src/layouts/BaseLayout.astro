@@ -1,4 +1,5 @@
 ---
+import { ClientRouter } from 'astro:transitions';
 import '../styles/global.css';
 const BASE = import.meta.env.BASE_URL;
 
@@ -33,6 +34,7 @@ const nav = [
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href={`${BASE}favicon.svg`} />
+    <ClientRouter />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,7 +48,7 @@ const nav = [
       <div class="wrap flex h-14 items-center justify-between gap-4">
         <a href={`${BASE}`} class="group flex items-center gap-2.5">
           <span
-            class="grid h-7 w-7 place-items-center rounded-[2px] bg-[#b23a2b] font-display text-[13px] font-semibold leading-none text-[#fbf5e7] transition-transform duration-500 group-hover:-rotate-6"
+            class="grid h-7 w-7 place-items-center rounded-[2px] bg-[#b23a2b] font-display text-[14px] font-semibold leading-none text-[#fbf5e7] transition-transform duration-500 group-hover:-rotate-6"
             >星</span
           >
           <span class="flex items-baseline gap-2">
@@ -94,7 +96,7 @@ const nav = [
             {note ?? '数据来自 GitHub 公开 API 快照；星数为 type=source 仓库合计，排除 fork。每个数字都带日期，口径写在「关于」里。'}
           </p>
         </div>
-        <div class="flex items-center gap-4 font-mono text-[11px]">
+        <div class="flex items-center gap-4 font-mono text-[14px]">
           <a href="https://github.com/frankshare/git-user-analysis-web" class="ulink" target="_blank" rel="noopener">source</a>
           <a href={`${BASE}about/`} class="ulink">口径</a>
           <a href={`${BASE}research/`} class="ulink">研究</a>

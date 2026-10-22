@@ -176,7 +176,7 @@ const kfmt = (n: number) =>
           >
         </h1>
 
-        <p class="mt-5 max-w-xl text-[15px] leading-[1.85] text-slate-400">
+        <p class="mt-5 max-w-xl text-[15px] leading-[1.9] text-slate-400">
           收录 <strong class="font-medium text-slate-200">{creatorRows.length} 位</strong>创作者与他们的作品，
             另加 <strong class="font-medium text-slate-200">{platformRows.length} 家</strong>制定标准的平台方。
           不看排行榜名次，看三件事：<span class="text-slate-200">他是谁</span>、<span class="text-slate-200"
@@ -197,7 +197,7 @@ const kfmt = (n: number) =>
             <div>
               <dt class="labelmono">{k}</dt>
               <dd class="font-mono text-[26px] font-medium leading-tight tracking-tight">{v}</dd>
-              <dd class="mt-0.5 text-[11px] text-slate-500">{s}</dd>
+              <dd class="mt-0.5 text-[14px] text-slate-500">{s}</dd>
             </div>
           ))
         }
@@ -223,7 +223,7 @@ const kfmt = (n: number) =>
             type="button"
             data-filter={key}
             class:list={[
-              'shrink-0 rounded-[2px] border px-3 py-1 text-[13px] transition-colors',
+              'shrink-0 rounded-[2px] border px-3 py-1 text-[14px] transition-colors',
               i === 0
                 ? 'border-[#b23a2b] bg-[#b23a2b] text-[#fbf5e7]'
                 : 'border-slate-800 text-slate-400 hover:border-slate-600 hover:text-slate-200',
@@ -233,19 +233,19 @@ const kfmt = (n: number) =>
           </button>
         ))
       }
-      <span class="ml-auto hidden shrink-0 font-mono text-[11px] text-slate-500 sm:block" id="count"></span>
-      <span class="labelmono hidden w-full text-[10px] sm:ml-4 sm:w-auto sm:shrink-0">
+      <span class="ml-auto hidden shrink-0 font-mono text-[14px] text-slate-500 sm:block" id="count"></span>
+      <span class="labelmono hidden w-full text-[14.5px] sm:ml-4 sm:w-auto sm:shrink-0">
         版式随体量自动 · 横幅 {layoutStats.banner || 0} · 印章像 {layoutStats.seal || 0} · 竖像 {layoutStats.portrait || 0} · 素面 {layoutStats.plain || 0}
       </span>
     </div>
   </section>
 
   <!-- ============ 画廊 ============ -->
-  <section class="grid-dense wrap mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+  <section class="grid-dense wrap mt-8 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
     <!-- 首位：加大卡 -->
     <a
       href={`${BASE}u/${top.login}/`}
-      class="card reveal group sm:col-span-2"
+      class="card stack-card reveal group sm:col-span-2"
       data-key={`${top.zh ? 'zh' : 'en'} ${top.strategy}`}
       style="padding:1.5rem 1.5rem 1.3rem 1.8rem"
     >
@@ -267,7 +267,7 @@ const kfmt = (n: number) =>
           <h2 class="mt-1 truncate font-display text-[26px] font-semibold leading-tight">
             {top.name}
           </h2>
-          <div class="mt-0.5 flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-[11px] text-slate-500">
+          <div class="mt-0.5 flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-[14px] text-slate-500">
             <span>@{top.login}</span>
             <span class="text-[#b23a2b]">{strategyLabel[top.strategy] ?? top.strategy}</span>
             {top.x && (
@@ -277,11 +277,11 @@ const kfmt = (n: number) =>
             )}
           </div>
           {top.tagline && (
-            <p class="mt-2 font-display text-[16px] font-medium leading-snug text-slate-100">
+            <p class="mt-2 font-display text-[16px] font-medium leading-[1.5] text-slate-100">
               {top.tagline}
             </p>
           )}
-          <p class="mt-1.5 line-clamp-2 text-[12.5px] leading-[1.7] text-slate-500">{top.bio}</p>
+          <p class="mt-1.5 line-clamp-2 text-[14px] leading-[1.8] text-slate-500">{top.bio}</p>
         </div>
         <div class="shrink-0 text-right">
           <div class="font-mono text-[30px] font-medium leading-none tracking-tight">
@@ -296,12 +296,12 @@ const kfmt = (n: number) =>
           top.works.slice(0, 3).map((w, i) => (
             <div class="rounded-[2px] border border-slate-800 bg-[#f6efdf]/60 px-3 py-2">
               <div class="flex items-baseline justify-between gap-2">
-                <span class="truncate font-mono text-[12px] text-slate-200">
+                <span class="truncate font-mono text-[14.5px] text-slate-200">
                   {String(i + 1).padStart(2, '0')} {w.name}
                 </span>
-                <span class="shrink-0 font-mono text-[11px] text-[#b23a2b]">★{kfmt(w.stars)}</span>
+                <span class="shrink-0 font-mono text-[14px] text-[#b23a2b]">★{kfmt(w.stars)}</span>
               </div>
-              <p class="mt-1 line-clamp-2 text-[11.5px] leading-snug text-slate-500">{w.desc}</p>
+              <p class="mt-1 line-clamp-2 text-[14px] leading-[1.5] text-slate-500">{w.desc}</p>
             </div>
           ))
         }
@@ -315,19 +315,19 @@ const kfmt = (n: number) =>
         const layout: Layout = r.layout;
         const accent = strategyAccent[r.strategy] ?? '#b23a2b';
         const no = String(i + 2).padStart(3, '0');
-        const works = r.works.slice(0, layout === 'banner' ? 1 : 2);
 
         return (
           <div
             class:list={[
-              'card reveal group relative flex flex-col p-0',
+              'card stack-card reveal group relative flex flex-col p-0',
               layout === 'banner' && 'sm:col-span-2',
             ]}
+            style={`--stack-i:${i % 7}`}
             data-key={`${r.zh ? 'zh' : 'en'} ${r.strategy}`}
           >
             {layout === 'portrait' && (
               /* 版式 A：竖像 —— 圆章照居中 */
-              <div class="relative overflow-hidden border-b border-slate-800 bg-[#efe6d2] px-4 pb-4 pt-6">
+              <div class="relative overflow-hidden border-b border-slate-800 bg-[#efe6d2] px-5 pb-5 pt-7">
                 <div class="flex justify-center">
                   <Portrait
                     login={r.login}
@@ -344,7 +344,7 @@ const kfmt = (n: number) =>
 
             {layout === 'banner' && (
               /* 版式 B：横幅 —— 头像靠左，横向排布 */
-              <div class="relative flex items-center gap-5 overflow-hidden border-b border-slate-800 bg-[#efe6d2] px-5 py-5">
+              <div class="relative flex items-center gap-5 overflow-hidden border-b border-slate-800 bg-[#efe6d2] px-6 py-6">
                 <Portrait
                   login={r.login}
                   name={r.name}
@@ -359,7 +359,7 @@ const kfmt = (n: number) =>
                       {r.name}
                     </a>
                   </h3>
-                  <div class="mt-1 flex flex-wrap items-center gap-2 font-mono text-[10.5px] text-slate-500">
+                  <div class="mt-1 flex flex-wrap items-center gap-2 font-mono text-[13px] text-slate-500">
                     <span class="truncate">@{r.login}</span>
                     <span style={{ color: accent }}>·</span>
                     <span class="shrink-0" style={{ color: accent }}>
@@ -367,13 +367,10 @@ const kfmt = (n: number) =>
                     </span>
                   </div>
                   {r.tagline && (
-                    <p class="mt-1.5 max-w-lg font-display text-[14px] font-medium leading-snug text-slate-200">
+                    <p class="mt-1.5 max-w-lg font-display text-[14px] font-medium leading-[1.5] text-slate-200">
                       {r.tagline}
                     </p>
                   )}
-                  <p class="mt-1 line-clamp-2 max-w-lg text-[12px] leading-[1.65] text-slate-500">
-                    {r.bio}
-                  </p>
                 </div>
                 <NoBadge no={no} stars={kfmt(r.stars)} />
               </div>
@@ -381,7 +378,7 @@ const kfmt = (n: number) =>
 
             {layout === 'seal' && (
               /* 版式 C：印章像 —— 小头像压角，标题偏下 */
-              <div class="relative border-b border-slate-800 bg-[#f6efdf] px-4 pb-3 pt-4">
+              <div class="relative border-b border-slate-800 bg-[#f6efdf] px-5 pb-4 pt-5">
                 <div class="flex items-start gap-3.5">
                   <div class="relative -mt-1 shrink-0">
                     <Portrait
@@ -396,14 +393,13 @@ const kfmt = (n: number) =>
                   <div class="min-w-0 flex-1">
                     <div class="flex items-baseline justify-between gap-2">
                       <span class="labelmono">{no}</span>
-                      <span class="font-mono text-[11px] text-slate-400">★{kfmt(r.stars)}</span>
+                      <span class="font-mono text-[14px] text-slate-400">★{kfmt(r.stars)}</span>
                     </div>
                     {r.tagline && (
-                      <p class="mt-1 font-display text-[13px] font-medium leading-snug text-slate-200">
+                      <p class="mt-1 font-display text-[14px] font-medium leading-[1.5] text-slate-200">
                         {r.tagline}
                       </p>
                     )}
-                    <p class="mt-1 line-clamp-2 text-[11.5px] leading-[1.6] text-slate-500">{r.bio}</p>
                   </div>
                 </div>
               </div>
@@ -411,17 +407,17 @@ const kfmt = (n: number) =>
 
             {layout === 'plain' && (
               /* 版式 D：素面 —— 无图区，纯文字，像索引卡 */
-              <div class="relative border-b border-slate-800 bg-[#f6efdf] px-4 pb-3 pt-3.5">
+              <div class="relative border-b border-slate-800 bg-[#f6efdf] px-5 pb-4 pt-4">
                 <div class="flex items-baseline justify-between gap-2">
                   <span class="labelmono">{no}</span>
-                  <span class="font-mono text-[11px] text-slate-400">★{kfmt(r.stars)}</span>
+                  <span class="font-mono text-[14px] text-slate-400">★{kfmt(r.stars)}</span>
                 </div>
                 <h3 class="mt-1.5 font-display text-[18px] font-semibold leading-tight">
                   <a href={`${BASE}u/${r.login}/`} class="ulink">
                     {r.name}
                   </a>
                 </h3>
-                <div class="mt-0.5 flex items-center gap-2 font-mono text-[10.5px] text-slate-500">
+                <div class="mt-0.5 flex items-center gap-2 font-mono text-[13px] text-slate-500">
                   <span class="truncate">@{r.login}</span>
                   <span style={{ color: accent }}>·</span>
                   <span class="shrink-0" style={{ color: accent }}>
@@ -433,7 +429,7 @@ const kfmt = (n: number) =>
 
             {/* 名牌区（竖像/印章像/素面像共用） */}
             {layout !== 'banner' && (
-              <div class="flex flex-1 flex-col px-4 pb-3.5 pt-3">
+              <div class="flex flex-1 flex-col px-5 pb-4 pt-3.5">
                 {layout === 'portrait' && (
                   <h3 class="truncate font-display text-[17px] font-semibold leading-tight">
                     <a href={`${BASE}u/${r.login}/`} class="ulink">
@@ -442,7 +438,7 @@ const kfmt = (n: number) =>
                   </h3>
                 )}
                 {layout === 'portrait' && (
-                  <div class="mt-0.5 flex items-center gap-2 font-mono text-[10.5px] text-slate-500">
+                  <div class="mt-0.5 flex items-center gap-2 font-mono text-[13px] text-slate-500">
                     <span class="truncate">@{r.login}</span>
                     <span style={{ color: accent }}>·</span>
                     <span class="shrink-0" style={{ color: accent }}>
@@ -458,7 +454,7 @@ const kfmt = (n: number) =>
                   </h3>
                 )}
                 {layout === 'seal' && (
-                  <div class="mt-0.5 flex items-center gap-2 font-mono text-[10.5px] text-slate-500">
+                  <div class="mt-0.5 flex items-center gap-2 font-mono text-[13px] text-slate-500">
                     <span class="truncate">@{r.login}</span>
                     <span style={{ color: accent }}>·</span>
                     <span class="shrink-0" style={{ color: accent }}>
@@ -468,25 +464,12 @@ const kfmt = (n: number) =>
                 )}
 
                 {layout !== 'seal' && layout !== 'banner' && r.tagline && (
-                  <p class="mt-2 font-display text-[13.5px] font-medium leading-snug text-slate-200">
+                  <p class="mt-2 font-display text-[14.5px] font-medium leading-[1.5] text-slate-200">
                     {r.tagline}
                   </p>
                 )}
-                <p class="mt-1 line-clamp-2 text-[11.5px] leading-[1.6] text-slate-500">{r.bio}</p>
 
-                <div class="mt-2.5 space-y-1 border-t border-slate-800 pt-2.5">
-                  {works.map((w) => (
-                    <div class="flex items-baseline justify-between gap-2">
-                      <span class="truncate font-mono text-[11.5px] text-slate-300">{w.name}</span>
-                      <span class="shrink-0 font-mono text-[10.5px] text-slate-500">★{kfmt(w.stars)}</span>
-                    </div>
-                  ))}
-                  {works.length === 0 && (
-                    <div class="font-mono text-[11px] text-slate-600">— 无 source 仓库 —</div>
-                  )}
-                </div>
-
-                <div class="mt-auto flex items-center justify-between pt-2.5 font-mono text-[10px] text-slate-500">
+                <div class="mt-auto flex items-center justify-between pt-2.5 font-mono text-[13px] text-slate-500">
                   <span>{r.skillCount > 0 ? `${r.skillCount} skills` : `${r.works.length} repos`}</span>
                   {r.x ? (
                     <a
@@ -508,15 +491,7 @@ const kfmt = (n: number) =>
 
             {layout === 'banner' && (
               <div class="flex flex-1 flex-col px-5 pb-3.5 pt-3">
-                <div class="mt-auto space-y-1 border-t border-slate-800 pt-2.5">
-                  {works.map((w) => (
-                    <div class="flex items-baseline justify-between gap-2">
-                      <span class="truncate font-mono text-[11.5px] text-slate-300">{w.name}</span>
-                      <span class="shrink-0 font-mono text-[10.5px] text-slate-500">★{kfmt(w.stars)}</span>
-                    </div>
-                  ))}
-                </div>
-                <div class="flex items-center justify-between pt-2.5 font-mono text-[10px] text-slate-500">
+                <div class="flex items-center justify-between pt-2.5 font-mono text-[13px] text-slate-500">
                   <span>{r.skillCount > 0 ? `${r.skillCount} skills` : `${r.works.length} repos`}</span>
                   {r.x ? (
                     <a
@@ -554,7 +529,7 @@ const kfmt = (n: number) =>
               <span class="labelmono">{platformRows.length} 家</span>
             </div>
             <h2 class="font-display text-[24px] font-semibold">制定标准的平台方</h2>
-            <p class="mt-1.5 max-w-xl text-[13px] leading-relaxed text-slate-500">
+            <p class="mt-1.5 max-w-xl text-[14px] leading-relaxed text-slate-500">
               上面 29 位是在<strong class="text-slate-300">表达自己的方法</strong>；这 3 家在
               <strong class="text-slate-300">定义标准</strong>——它们决定 skill 长什么样、装在哪、怎么被调用。
             </p>
@@ -577,12 +552,12 @@ const kfmt = (n: number) =>
                       {pl.name}
                     </h3>
                   </div>
-                  <span class="shrink-0 font-mono text-[13px] text-slate-400">★{kfmt(pl.stars)}</span>
+                  <span class="shrink-0 font-mono text-[14px] text-slate-400">★{kfmt(pl.stars)}</span>
                 </div>
 
-                <p class="mt-2 line-clamp-3 text-[12.5px] leading-[1.7] text-slate-400">{pl.bio}</p>
+                <p class="mt-2 line-clamp-3 text-[14px] leading-[1.8] text-slate-400">{pl.bio}</p>
 
-                <div class="mt-3 flex flex-wrap items-center gap-1.5 border-t border-slate-800 pt-2.5 font-mono text-[10.5px] text-slate-500">
+                <div class="mt-3 flex flex-wrap items-center gap-1.5 border-t border-slate-800 pt-2.5 font-mono text-[13px] text-slate-500">
                   <span>{pl.repoCount} 仓</span>
                   <span>·</span>
                   <span>{pl.skillCount} skills</span>
@@ -594,7 +569,7 @@ const kfmt = (n: number) =>
                   )}
                 </div>
 
-                <div class="mt-auto pt-2.5 font-mono text-[10px] text-slate-500">
+                <div class="mt-auto pt-2.5 font-mono text-[13px] text-slate-500">
                   <span class="opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     打开档案 →
                   </span>
@@ -617,7 +592,7 @@ const kfmt = (n: number) =>
       <div>
         <div class="labelmono">卷二</div>
         <h3 class="mt-1 font-display text-[22px] font-semibold">作品</h3>
-        <p class="mt-1 max-w-sm text-[13px] leading-relaxed text-slate-400">
+        <p class="mt-1 max-w-sm text-[14px] leading-relaxed text-slate-400">
           不按人看，按作品看：{fmt(totalWorks)} 个 source 仓库，按星数排，标着作者与语言。
         </p>
       </div>
@@ -632,7 +607,7 @@ const kfmt = (n: number) =>
       <div>
         <div class="labelmono">附录</div>
         <h3 class="mt-1 font-display text-[22px] font-semibold">研究</h3>
-        <p class="mt-1 max-w-sm text-[13px] leading-relaxed text-slate-400">
+        <p class="mt-1 max-w-sm text-[14px] leading-relaxed text-slate-400">
           拆解过程中的副产品：方法收敛、自查清单、SKILL.md 格式实测。想看方法论的进这里。
         </p>
       </div>

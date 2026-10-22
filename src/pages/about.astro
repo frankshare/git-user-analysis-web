@@ -20,7 +20,7 @@ const totalPatterns = users.reduce((a, u) => a + (u.patterns?.length || 0), 0);
       <h1 class="display text-[2.2rem] sm:text-[3.1rem]">
         <span class="line-up"><span>关于这个站点</span></span>
       </h1>
-      <p class="mt-4 max-w-2xl text-[14.5px] leading-[1.85] text-slate-400">
+      <p class="mt-4 max-w-2xl text-[14.5px] leading-[1.9] text-slate-400">
         把顶级开源创作者的作品体系，拆成<strong class="text-slate-200">可复用的方法</strong>与<strong class="text-slate-200">可上线的数据</strong>。每个数字带日期和口径，每个判断带证据。
       </p>
     </div>
@@ -86,11 +86,11 @@ const totalPatterns = users.reduce((a, u) => a + (u.patterns?.length || 0), 0);
             <a href={`${BASE}u/${u.profile.login}/`} class="flex items-center justify-between p-2.5 rounded-[2px] bg-slate-950/30 border border-slate-800/50 hover:border-slate-700 transition-colors group">
               <div>
                 <div class="text-sm text-slate-200 group-hover:text-indigo-400 transition-colors font-medium">{u.profile.name}</div>
-                <div class="text-[10px] font-mono text-slate-500">@{u.profile.login}</div>
+                <div class="text-[14.5px] font-mono text-slate-500">@{u.profile.login}</div>
               </div>
               <div class="text-right">
                 <div class="text-sm font-mono text-slate-300">{u.stats.total_stars_source.toLocaleString()}</div>
-                <div class="text-[10px] text-slate-600">中位 {u.stats.median_stars}</div>
+                <div class="text-[14.5px] text-slate-600">中位 {u.stats.median_stars}</div>
               </div>
             </a>
           ))}

@@ -102,7 +102,7 @@ const CHECKLIST = [
       <h1 class="display text-[2.2rem] sm:text-[3.1rem]">
         <span class="line-up"><span>方法检查清单</span></span>
       </h1>
-      <p class="mt-4 max-w-2xl text-[14.5px] leading-[1.85] text-slate-400">
+      <p class="mt-4 max-w-2xl text-[14.5px] leading-[1.9] text-slate-400">
         这不是我的建议清单，是 <strong class="text-slate-200">{conv?.stats.users_analyzed ?? 0} 位互不相识的创作者独立收敛出来的东西</strong>。每一条下面都标了证据来自谁——你不同意可以驳，但请先看看有多少人用了不同手段得出同一个结论。
       </p>
       <div class="mt-5 flex flex-wrap items-center gap-3 text-sm">
@@ -149,13 +149,13 @@ const CHECKLIST = [
                     {it.q}
                   </p>
                   <div class="mt-2 flex items-start gap-2 flex-wrap">
-                    <span class="text-[11px] text-slate-600 shrink-0 pt-0.5">证据</span>
-                    <span class="text-[11px] font-mono text-emerald-400/80">{it.e}</span>
+                    <span class="text-[14px] text-slate-600 shrink-0 pt-0.5">证据</span>
+                    <span class="text-[14px] font-mono text-emerald-400/80">{it.e}</span>
                   </div>
                   {it.alt && (
                     <div class="mt-1 flex items-start gap-2 flex-wrap">
-                      <span class="text-[11px] text-slate-600 shrink-0 pt-0.5">同理</span>
-                      <span class="text-[11px] text-slate-500">{it.alt}</span>
+                      <span class="text-[14px] text-slate-600 shrink-0 pt-0.5">同理</span>
+                      <span class="text-[14px] text-slate-500">{it.alt}</span>
                     </div>
                   )}
                 </div>

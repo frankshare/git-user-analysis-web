@@ -31,7 +31,7 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
       <h1 class="display text-[2.2rem] sm:text-[3.1rem]">
         <span class="line-up"><span>格式趋同：平台推动的收敛</span></span>
       </h1>
-      <p class="mt-4 max-w-2xl text-[14.5px] leading-[1.85] text-slate-400">
+      <p class="mt-4 max-w-2xl text-[14.5px] leading-[1.9] text-slate-400">
         这是本站发现的<strong class="text-slate-200">第一类由平台推动的收敛</strong>。C1–C7 是创作者<strong>独立发现</strong>的共同方法；这一类不同——它是被标准制定者<strong>设计出来</strong>，然后被采用。
       </p>
     </div>
@@ -92,7 +92,7 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
               <div class="w-36 text-xs font-mono text-slate-300 shrink-0">{f}</div>
               <div class="flex-1 h-6 bg-slate-950/60 rounded-md overflow-hidden border border-slate-800/50">
                 <div
-                  class="h-full bg-gradient-to-r from-sky-500 to-indigo-500 flex items-center justify-end pr-2 text-[11px] font-mono font-bold text-white"
+                  class="h-full bg-gradient-to-r from-sky-500 to-indigo-500 flex items-center justify-end pr-2 text-[14px] font-mono font-bold text-white"
                   style={`width: ${Math.max((c / verified.length) * 100, 6)}%`}
                 >
                   {c}
@@ -125,10 +125,10 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
                   <td class="px-4 py-3">
                     <span class="text-slate-200">{v.user}</span>
                     {v.canonical && (
-                      <span class="ml-1.5 px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-400 text-[10px]">canonical</span>
+                      <span class="ml-1.5 px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-400 text-[14.5px]">canonical</span>
                     )}
                     {v.extended && (
-                      <span class="ml-1.5 px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-400 text-[10px]">扩展</span>
+                      <span class="ml-1.5 px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-400 text-[14.5px]">扩展</span>
                     )}
                   </td>
                   <td class="px-4 py-3">
@@ -140,7 +140,7 @@ const fieldRank = Object.entries(fieldCount).sort((a, b) => b[1] - a[1]);
                   <td class="px-4 py-3">
                     <div class="flex flex-wrap gap-1.5">
                       {v.fields.map((f: string) => (
-                        <span class={`px-1.5 py-0.5 rounded font-mono text-[10px] ${
+                        <span class={`px-1.5 py-0.5 rounded font-mono text-[14.5px] ${
                           f === 'name' || f === 'description'
                             ? 'bg-sky-500/15 text-sky-300 border border-sky-500/25'
                             : 'bg-slate-800 text-slate-400 border border-slate-700/50'

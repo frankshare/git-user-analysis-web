@@ -37,6 +37,7 @@ const shape = round ? 'rounded-full' : 'rounded-[2px]';
     aria-hidden="true">{initial}</span
   >
   <img
+    transition:name={`portrait-${login}`}
     src={`${import.meta.env.BASE_URL}avatars/${login}.jpg`}
     alt={name}
     width={size}

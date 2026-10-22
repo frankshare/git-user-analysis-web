@@ -68,7 +68,7 @@ const items = [
       <h1 class="display text-[2.4rem] sm:text-[3.4rem]">
         <span class="line-up"><span>拆解时的草稿</span></span>
       </h1>
-      <p class="mt-4 text-[14.5px] leading-[1.85] text-slate-400">
+      <p class="mt-4 text-[14.5px] leading-[1.9] text-slate-400">
         这些页不是给访客看门面的，是我在做收录时攒下来的工作稿：为什么判断某个方法是「方法」，
         凭什么说 SKILL.md 已经格式趋同。想核对数字或质疑结论，都从这里进。
       </p>
@@ -81,16 +81,16 @@ const items = [
         <a href={it.href} class="card reveal group">
           <div class="flex items-start justify-between gap-3">
             <div class="flex items-baseline gap-2.5">
-              <span class="font-mono text-[11px] text-slate-600">{it.no}</span>
+              <span class="font-mono text-[14px] text-slate-600">{it.no}</span>
               <h2 class="font-display text-[20px] font-semibold leading-tight">{it.title}</h2>
-              <span class="font-mono text-[11px] text-[#b23a2b]">{it.sub}</span>
+              <span class="font-mono text-[14px] text-[#b23a2b]">{it.sub}</span>
             </div>
             <span class="shrink-0 font-mono text-xs text-slate-600 transition-transform duration-300 group-hover:translate-x-1">
               →
             </span>
           </div>
-          <p class="mt-2 text-[13px] leading-[1.75] text-slate-400">{it.desc}</p>
-          <div class="mt-3 font-mono text-[10.5px] text-slate-600">{it.tag}</div>
+          <p class="mt-2 text-[14px] leading-[1.9] text-slate-400">{it.desc}</p>
+          <div class="mt-3 font-mono text-[14.5px] text-slate-600">{it.tag}</div>
           <span class="stamp">待阅</span>
         </a>
       ))
@@ -98,7 +98,7 @@ const items = [
   </section>
 
   <section class="wrap mt-10 border-t border-slate-800 pt-6">
-    <p class="max-w-2xl text-[12.5px] leading-[1.9] text-slate-500">
+    <p class="max-w-2xl text-[14px] leading-[1.9] text-slate-500">
       提醒：这一栏里的比例都是<strong class="text-slate-300">抽样</strong>结果（格式研究 85/219 仓、187 个 SKILL.md，
       单仓上限 6 个），句式统计用正则匹配，属于<strong class="text-slate-300">下界</strong>。
       当成方向看可以，当成精确统计不行。

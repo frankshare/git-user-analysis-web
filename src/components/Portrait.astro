@@ -89,7 +89,7 @@ const pad = (view - size) / 2;
   }
 
   <!-- 头像本体 -->
-  <span class="absolute" style={`inset:${pad}px`}>
+  <span class="absolute" style={`inset:${pad}px`} transition:name={`portrait-${login}`}>
     <Avatar
       login={login}
       name={name}
