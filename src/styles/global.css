@@ -344,15 +344,20 @@
     transform: rotate(-9deg) scale(1);
   }
 
-  /* 黑白头像 -> hover 复原 */
+  /* 头像：始终彩色。灰度只作为「未聚焦」的弱化效果，
+     且绝不能用在档案页——那里没有 hover，卡片会一直灰着像坏图。 */
   .portrait {
-    filter: grayscale(1) contrast(1.06);
+    filter: none;
     transition:
       filter 0.5s ease,
       transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .card:hover .portrait {
-    filter: grayscale(0) contrast(1);
+  /* 画廊里：默认轻微去饱和（保持牌堆的整体感），hover 恢复 */
+  .stack-card .portrait {
+    filter: saturate(0.82) contrast(1.02);
+  }
+  .stack-card:hover .portrait {
+    filter: saturate(1) contrast(1);
     transform: scale(1.04);
   }
 
