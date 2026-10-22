@@ -13,6 +13,13 @@ const notes: Record<string, Record<string, string>> = fs.existsSync(notesFile)
   ? JSON.parse(fs.readFileSync(notesFile, 'utf-8'))
   : {};
 const noteOf = (author: string, repo: string) => notes[author]?.[repo] || '';
+
+// 「适合谁用 / 什么场景」：人工写的选型提示
+const audFile = path.resolve('src/data/work-audience.json');
+const audience: Record<string, Record<string, string>> = fs.existsSync(audFile)
+  ? JSON.parse(fs.readFileSync(audFile, 'utf-8'))
+  : {};
+const audOf = (author: string, repo: string) => audience[author]?.[repo] || '';
 const num = (v: unknown) => (typeof v === 'number' ? v : parseInt(String(v ?? 0), 10) || 0);
 const CJK = '\u4e00-\u9fa5';
 const hasCjk = (s: string) => new RegExp('[' + CJK + ']').test(s || '');
@@ -251,6 +258,11 @@ const LIMIT = 40;
                           {w.desc}
                         </p>
                       )
+                    )}
+                    {audOf(w.author, w.name) && (
+                      <p class="mt-1 line-clamp-1 border-l-2 border-[#b23a2b]/35 pl-2 text-[11.5px] leading-relaxed text-slate-500">
+                        {audOf(w.author, w.name)}
+                      </p>
                     )}
                     <div class="mt-1 flex items-center gap-2 font-mono text-[10.5px] text-slate-600 sm:hidden">
                       <a href={`${BASE}u/${w.author}/`} class="text-slate-400">@{w.author}</a>

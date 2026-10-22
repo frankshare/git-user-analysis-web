@@ -13,6 +13,13 @@ const workNotes: Record<string, Record<string, string>> = fs.existsSync(notesFil
   : {};
 const noteOf = (author: string, repo: string) => workNotes[author]?.[repo] || '';
 
+// 「适合谁用 / 什么场景」
+const audFile = path.resolve('src/data/work-audience.json');
+const workAudience: Record<string, Record<string, string>> = fs.existsSync(audFile)
+  ? JSON.parse(fs.readFileSync(audFile, 'utf-8'))
+  : {};
+const audOf = (author: string, repo: string) => workAudience[author]?.[repo] || '';
+
 export function getStaticPaths() {
   return getAllEntries().map((u) => ({ params: { login: u.profile.login }, props: { user: u } }));
 }
@@ -399,6 +406,11 @@ const links = [
               </div>
               <p class="mt-0.5 line-clamp-1 text-[12px] leading-relaxed text-slate-500">
                 {noteOf(p.login, r.name) || r.description || '—'}
+                {audOf(p.login, r.name) && (
+                  <p class="mt-0.5 border-l-2 border-[#b23a2b]/35 pl-2 text-[11.5px] leading-relaxed text-slate-500">
+                    {audOf(p.login, r.name)}
+                  </p>
+                )}
               </p>
             </div>
             <div class="shrink-0 text-right">

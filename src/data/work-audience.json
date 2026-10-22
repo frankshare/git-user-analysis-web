@@ -1,0 +1,150 @@
+{
+ "obra": {
+  "superpowers": "适合：想让 AI 真的守纪律、而不是嘴上说守的团队。场景：写代码前先查 skill，代码写完过一遍审查。",
+  "Youtube2Webpage": "适合：看视频比读字快不了的人。场景：把教程转成文字快速扫读。"
+ },
+ "affaan-m": {
+  "ECC": "适合：同时用 Claude Code、Codex、Cursor 好几个工具的人。场景：换工具时不想重配一遍。"
+ },
+ "addyosmani": {
+  "agent-skills": "适合：做前端 / Web 性能、想让 Agent 按资深标准干活的团队。场景：交给 AI 做性能优化。",
+  "critical": "适合：做前端、要优化首屏的人。场景：构建时自动内联关键 CSS。",
+  "backbone-fundamentals": "适合：维护老项目、要快速补 Backbone 基础的人。场景：接手陌生代码库。",
+  "essential-js-design-patterns": "适合：JS 基础不稳、想补设计模式的人。场景：面试前或重构前复习。",
+  "es6-tools": "适合：需要一批 ES6 轮子的人。场景：找当年那些经典库。",
+  "basket.js": "适合：做离线优先、想减少请求的老项目。场景：静态资源缓存。",
+  "web-quality-skills": "适合：想让 AI 按 Core Web Vitals 标准审网站的人。场景：上线前质量把关。",
+  "es6-equivalents-in-es5": "适合：要给老浏览器做兼容的人。场景：查某个新语法怎么用老写法实现。",
+  "gemini-cli-tips": "适合：已经在用 Gemini CLI、想少踩坑的人。场景：遇到奇怪行为时排查。",
+  "puppeteer-webperf": "适合：想把性能测试接进 CI 的人。场景：每次构建自动跑一轮。",
+  "tmi": "适合：想快速判断网页图片该压哪张的人。场景：优化加载速度的第一步。",
+  "timing.js": "适合：要量页面加载各阶段耗时的人。场景：性能分析起步。"
+ },
+ "mvanhorn": {
+  "last30days-skill": "适合：做内容、调研、竞品分析的。场景：需要「最近 30 天大家怎么说」的带出处综述。",
+  "cli-printing-press": "适合：想给已有 API 套一层更好用的命令行外壳的人。场景：接一个没 CLI 的服务。",
+  "printing-press-library": "适合：想直接用现成 CLI、不自己造的人。场景：找现成命令。"
+ },
+ "hesreallyhim": {
+  "awesome-claude-code": "适合：刚上手 Claude Code、不想一个个翻仓库的人。场景：找现成轮子、找教程。"
+ },
+ "lencx": {
+  "ChatGPT": "适合：嫌官方客户端功能少、要跨平台的人。场景：想在 Linux 上用 ChatGPT。",
+  "Noi": "适合：喜欢极简、想减少工具噪音的人。场景：整理手头工具、砍掉冗余。",
+  "nofwl": "适合：想要一个干净的桌面环境、少干扰的人。场景：替代臃肿的官方应用。"
+ },
+ "sickn33": {
+  "agentic-awesome-skills": "适合：技能装了一堆却不知道该用哪个的人。场景：项目开始时先规划该调哪些技能。"
+ },
+ "wshobson": {
+  "agents": "适合：想在多种编码工具间共享同一套配置的团队。场景：多工具并行开发。"
+ },
+ "alchaincyf": {
+  "nuwa-skill": "适合：想把某个牛人的思维方式搬进自己工作流的人。场景：需要一套完整的决策框架而非零散技巧。",
+  "huashu-design": "适合：做产品原型、官网、需要高保真视觉效果的人。场景：把想法变成能点能看的页面。",
+  "zhangxuefeng-skill": "适合：考研、选专业、规划职业路径的人。场景：需要一套实战判断框架。",
+  "darwin-skill": "适合：自己写了 skill、想让它越用越好的���。场景：给 skill 建评测与回滚机制。",
+  "hermes-agent-orange-book": "适合：想上手 Hermes Agent 又缺中文资料的人。场景：跟着系统学一遍。",
+  "huashu-art-motion": "适合：要给静态图加动效、做解说视频的人。场景：作品集、宣传片。",
+  "huashu-skills": "适合：想一次看全他所有 skill、并按分类挑的人。场景：不知道从哪个开始。",
+  "obsidian-ai-orange-book": "适合：Obsidian 用户、想用 AI 整理知识库的人。场景：把笔记变成可问的资料库。"
+ },
+ "alirezarezvani": {
+  "claude-skills": "适合：想一次拿到大批量现成 skill 的人。场景：先广撒网，挑出要深改的。"
+ },
+ "op7418": {
+  "guizang-ppt-skill": "适合：要出汇报 PPT、幻灯片的人。场景：内容定了，需要一份体面的 HTML 演示。",
+  "Humanizer-zh": "适合：写中文内容、被 AI 味困扰的人。场景：文章要发出去前过一遍。",
+  "guizang-social-card-skill": "适合：做小红书、公众号图的人。场景：一篇文章要配轮播图与封面。",
+  "CodePilot": "适合：想在一个桌面客户端里接多家模型的人。场景：日常聊天 + 挂 MCP 扩展。",
+  "NanoBanana-PPT-Skills": "适合：要 AI 直接出带转场的 PPT 素材的人。场景：不想手动做动画。",
+  "Claude-to-IM-skill": "适合：习惯在 IM 里工作、想把 Agent 接进聊天工具的人。场景：Telegram / Discord 里指挥 Agent。",
+  "logo-generator-skill": "适合：起项目名要配图的人。场景：先出几个方向再定。",
+  "Youtube-clipper-skill": "适合：做内容二次创作、要剪视频的人。场景：从素材里抽片段。",
+  "guizang-s-prompt": "适合：想研究他怎么写提示词的人。场景：抄思路不抄工具。"
+ },
+ "coleam00": {
+  "Archon": "适合：想让 AI 编码结果稳定可复现的团队。场景：多人协作、怕每次生成结果不一样。",
+  "context-engineering-intro": "适合：知道要用 AI 编码但方法没对的人。场景：想搞清楚到底该给模型看什么。",
+  "ottomator-agents": "适合：想在平台上找现成 Agent 用、不想自己搭的人。场景：挑一个装上就跑。",
+  "excalidraw-diagram-skill": "适合：需要让 Agent 画架构图、流程图的人。场景：写方案文档配图。",
+  "local-ai-packaged": "适合：想在自己机器上跑全套本地 AI 的人。场景：不想给云端 API 花钱。",
+  "ai-agents-masterclass": "适合：跟着视频学 AI Agent 编程的人。场景：想要一条完整的教学路径。",
+  "mcp-crawl4ai-rag": "适合：要给 Agent 加联网检索能力的人。场景：让 Agent 能查实时网页。"
+ },
+ "steipete": {
+  "CodexBar": "适合：同时用 Codex 和 Claude Code、想管用量的人。场景：菜单栏看一眼消耗。",
+  "agent-scripts": "适合：自己维护多个仓库的开发者。场景：想让 Agent 在各仓库行为一致。",
+  "summarize": "适合：信息太多读不完的人。场景：丢一个 URL / 视频 / 文件进来拿摘要。",
+  "oracle": "适合：卡住了、想换个强模型带着上下文问一次的人。场景：自己查不出、换个脑子。",
+  "RepoBar": "适合：同时管多个仓库、想一眼看 CI 和 PR 状态的人。场景：常驻菜单栏盯着。",
+  "birdclaw": "适合：想让 Agent 能读自己推文的人。场景：把自己的想法喂给模型。"
+ },
+ "yetone": {
+  "magpie": "适合：想在 Mac 上统管多个 Agent 的人。场景：不想记各家命令、想随手切模型。",
+  "cumora": "适合：想让多个 Agent 协同干活、需要它们互相沟通的人。场景：多 Agent 分工。",
+  "voice-input-src": "适合：想自己搭语音输入的人。场景：改造或学习这套实现。",
+  "native-feel-skill": "适合：做跨平台桌面应用、想让 App 像原生的人。场景：设计交互与转场。",
+  "kill-ai-slop": "适合：做 AI 产品、想避开那套「AI 味」视觉与文案的人。场景：设计评审前自查。"
+ },
+ "wong2": {
+  "chatgpt-google-extension": "适合：还在用旧版的人（注意：项目已废弃，请找他的新项目）。场景：历史参考。",
+  "awesome-mcp-servers": "适合：刚接触 MCP、不知道有哪些 server 的人。场景：找现成的工具接入。"
+ },
+ "simonw": {
+  "llm": "适合：习惯终端工作流的人。场景：在脚本里调用模型、批量跑 prompt。",
+  "datasette": "适合：拿到一份数据想先看看的人。场景：把 CSV 变成可点开、可分享的网页。",
+  "files-to-prompt": "适合：想让 LLM 读整个代码库的人。场景：把一个目录喂给模型分析。",
+  "shot-scraper": "适合：做自动化测试、批量截图、要录演示的人。场景：给文档配图、抓网页存档。",
+  "sqlite-utils": "适合：习惯用命令行处理数据的人。场景：清洗、导出、批量改表。",
+  "tools": "适合：想找一批小工具立刻用的人。场景：翻一翻有什么现成的。",
+  "claude-code-transcripts": "适合：想把自己或团队的 Agent 会话整理成文章的人。场景：分享工作过程。",
+  "til": "适合：想养成每天记一条学习笔记习惯的人。场景：低摩擦记录。"
+ },
+ "numman-ali": {
+  "openskills": "适合：换过好几个 Agent、每次都要重装 skill 的人。场景：一条命令装给任意工具。",
+  "cc-mirror": "适合：想同时开好几个隔离的 Claude Code 实例、比价不同供应商的人。场景：多账号多模型并行。",
+  "opencode-openai-codex-auth": "适合：买了 ChatGPT Plus/Pro 又想在 OpenCode 里用的人。场景：复用订阅额度。"
+ },
+ "kevinzhow": {
+  "PNChart": "适合：做 iOS 应用需要图表的人。场景：想在自家 App 里画图。",
+  "PNChart-Swift": "适合：Swift 项目要用图表的人。场景：迁移老项目到 Swift。"
+ },
+ "lijigang": {
+  "ljg-skills": "适合：想学李继刚那套提示词方法的人。场景：找现成的高质量 prompt 范本。"
+ },
+ "antfu": {
+  "eslint-config": "适合：Vue / Vite / Nuxt 项目要统一代码风格的人。场景：新项目初始化配置。",
+  "skills": "适合：想直接抄一份策展过的 Agent 技能组合的人。场景：先看看别人都在装什么。",
+  "vscode-file-nesting-config": "适合：VS Code 用户、想要文件树清爽的人。场景：装上即生效。",
+  "node-modules-inspector": "适合：怀疑本地 node_modules 有问题的人。场景：装不上去、依赖打架。",
+  "vscode-settings": "适合：想抄一份资深开发者的 VS Code 配置的人。场景：配置自己的编辑器。",
+  "vue-starport": "适合：Vue 项目、想在路由间共享状态的人。场景：跨页面保持组件状态。",
+  "vitesse-nuxt": "适合：Nuxt 4 项目要一套现成脚手架的人。场景：新项目起步。",
+  "esno": "适合：天天跑 TS 脚本、想少打几个字的人。场景：临时脚本、跑测试。",
+  "drauu": "适合：想在网页里加个轻量画板的人。场景：白板、涂鸦、标注。",
+  "reactivue": "适合：React 项目里想复用 Vue 那套组合式写法的人。场景：迁移或混合开发。",
+  "handle": "适合：想玩中文梗的人。场景：摸鱼一分钟。",
+  "case-police": "适合：写英文文档、想统一大小写规范的人。场景：提交前检查。"
+ },
+ "mcncarl": {
+  "yichen-skills": "适合：做私域运营、要把平台操作变成自动化的人。场景：微信/小红书/抖音流程跑通。",
+  "jianying-headless": "适合：做短视频、要批量用剪映的人。场景：草稿生成与自动导出。"
+ },
+ "kentcdodds": {
+  "match-sorter": "适合：前端项目要做搜索/筛选排序的人。场景：加一个可预期的模糊匹配。",
+  "bookshelf": "适合：想系统学 React 应用搭建的人。场景：工作坊式学习。",
+  "babel-plugin-macros": "适合：想写编译期代码生成、降低运行时体积的人。场景：做自己的构建工具。",
+  "kentcdodds.com": "适合：想学他怎么组织教学与内容的人。场景：参考个人站结构。",
+  "use-deep-compare-effect": "适合：React 项目被 useEffect 重复触发搞烦的人。场景：依赖是对象或数组时。",
+  "mdx-bundler": "适合：要在运行时编译 MDX 的场景。场景：CMS 里存 MDX 内容。"
+ },
+ "yaojingang": {
+  "GEOFlow": "适合：做 GEO / AI 搜索优化、要批量铺内容的人。场景：多站点分发与质检。",
+  "yao-open-prompts": "适合：想要一份能直接抄的中英提示词库的人。场景：写作、学习、做内容。",
+  "yao-meta-skill": "适合：要认真做 Skill 工程化、想建评测与治理体系的人。场景：不止是写提示词，而是管资产。"
+ },
+ "yan5xu": {
+  "ququ": "适合：需要中文语音输入、又不想订阅付费服务的人。场景：会议记录、语音转文字。"
+ }
+}
