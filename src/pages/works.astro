@@ -104,7 +104,14 @@ function subGroup(w: Work): string {
 }
 
 const groups = GROUP_ORDER.map((g) => {
-  const items = works.filter((w) => (LAYER_GROUP[w.layer] ?? '其他') === g);
+  const items = works
+    .filter((w) => (LAYER_GROUP[w.layer] ?? '其他') === g)
+    // 有人工说明的排前面（组内仍按星数），这样展开就能直接看到「解决什么」
+    .sort((a, b) => {
+      const na = noteOf(a.author, a.name) ? 1 : 0;
+      const nb = noteOf(b.author, b.name) ? 1 : 0;
+      return nb - na || b.stars - a.stars;
+    });
   const cats = new Map<string, number>();
   for (const w of items) {
     const c = w.cat || '未分类';
