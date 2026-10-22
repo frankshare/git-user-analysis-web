@@ -123,7 +123,9 @@ const nav = [
           },
           { rootMargin: '0px 0px -8% 0px', threshold: 0.06 }
         );
-        document.querySelectorAll('.reveal:not(.in)').forEach((el, i) => {
+        // 可见性由 CSS 动画负责（见 global.css 的 .reveal）。
+        // 这里只做两件事：错开动画时机、给进入视口的元素加 .in 标记。
+        document.querySelectorAll('.reveal').forEach((el, i) => {
           (el as HTMLElement).style.animationDelay = `${Math.min(i * 45, 420)}ms`;
           io.observe(el);
         });

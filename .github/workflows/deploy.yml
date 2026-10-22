@@ -49,6 +49,11 @@ jobs:
           SITE_BASE: ${{ vars.SITE_BASE || format('/{0}/', github.event.repository.name) }}
         run: pnpm run build
 
+      - name: Static check
+        # 部署前的硬门：字号下限、死链、重复 view-transition-name、嵌套 <a>、
+        # 硬编码旧色值——都是肉眼容易漏、结构上一抓一个准的问题。
+        run: node scripts/static-check.mjs
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -16,3 +16,5 @@ dev.err
 ngrok*.err
 devicetest*.log
 devicetest*.err
+# 视觉巡检的 Chrome 临时用户目录（绝不能提交）
+.chrome-probe-*/

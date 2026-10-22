@@ -14,7 +14,11 @@
     "merge-analyses": "node scripts/merge-analyses.mjs",
     "serve": "node scripts/serve.mjs 4322 dist",
     "validate": "pwsh -NoProfile -File scripts/validate_schema.ps1 -Path src/data/alchaincyf.json",
-    "deploy": "node scripts/deploy.mjs"
+    "deploy": "node scripts/deploy.mjs",
+    "check:static": "node scripts/static-check.mjs",
+    "check:visual": "node scripts/visual-check.mjs",
+    "check": "node scripts/static-check.mjs",
+    "predeploy": "npm run build && npm run check"
   },
   "type": "module",
   "name": "git-user-analysis-web"

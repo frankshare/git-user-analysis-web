@@ -256,7 +256,7 @@
     --shift: calc(var(--stack-i) * 3px);
     --lift: calc(var(--stack-i) * -1.5px);
     transform: rotate(var(--tilt)) translateX(var(--shift))
-      translateY(calc(var(--lift) + var(--rise, 0px)));
+      translateY(var(--lift));
     /* 多层阴影：模拟牌堆里下面压着的几张 */
     box-shadow:
       0 1px 0 rgba(23, 20, 15, 0.05),
@@ -412,13 +412,14 @@
     background: rgba(255, 250, 239, 0.75);
   }
 
-  /* 入场动画：用 opacity + 自定义属性，不占用 transform，
-     否则会盖掉 .stack-card 的抽卡旋转 */
+  /* 入场动画：纯 CSS，不依赖 JS 加类。
+     原则：内容可见性绝不能由 JS 决定——IntersectionObserver 一旦没触发
+     （无头浏览器、禁用脚本、observer 异常），整页内容就永远隐形。
+     这里让 .reveal 自身带 animation（从透明淡入），不透明度由 keyframes 负责；
+     JS 只负责给「进入视口时」的元素加 .in 以获得更准的时机。 */
   .reveal {
-    opacity: 0;
-    --rise: 14px;
-    /* translate 属性独立于 transform，不与抽卡旋转冲突 */
-    translate: 0 var(--rise);
+    opacity: 1;
+    animation: rise 0.75s cubic-bezier(0.16, 1, 0.3, 1) both;
   }
   .reveal.in {
     animation: rise 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -426,16 +427,10 @@
   @keyframes rise {
     from {
       opacity: 0;
-      --rise: 14px;
     }
     to {
       opacity: 1;
-      --rise: 0px;
     }
-  }
-  /* 抽卡卡片的位移走 transform，translate 需归零 */
-  .stack-card.reveal {
-    translate: 0 0;
   }
 
   /* 首屏：印章落下 */
@@ -517,7 +512,6 @@
     .line-up > span {
       animation: none !important;
       opacity: 1 !important;
-      transform: none !important;
     }
     .card,
     .portrait {
