@@ -31,6 +31,7 @@ const add = (file, type, detail) => problems.push({ file: path.relative(DIST, fi
 const HARD_CODED = ['#b23a2b','#f6efdf','#fbf5e7','#f2e9d6','#efe6d2','#17140f','#d8c9a9','#cbbb95','#d5c6a6','#d3c6a5','#cfbd97','#e9dfc9'];
 
 const known = new Set(files.map((f) => '/' + path.relative(DIST, f).split(path.sep).join('/').replace(/index[.]html$/, '')));
+known.add('/'); // 站点根（首页）
 
 for (const f of files) {
   const html = readFileSync(f, 'utf-8');
@@ -58,8 +59,17 @@ for (const f of files) {
 
   for (const m of html.matchAll(/href="(\/[^"#?]*)/g)) {
     const link = m[1];
-    if (link.startsWith('/_astro/') || link === '/favicon.svg') continue;
-    if (!known.has(link) && !existsSync(path.join(DIST, link.replace(/^\//, '')))) add(f, 'dead-link', link);
+    if (link.startsWith('/_astro/') || link.endsWith('/favicon.svg')) continue;
+    // 站点可能带 base 前缀（本地 /，CI /repo-name/）。
+    // 只要去掉任意前缀后能命中 dist 里的某个页面，就算有效。
+    const candidates = [link];
+    const parts = link.split('/').filter(Boolean);
+    for (let i = 0; i < parts.length; i++) candidates.push('/' + parts.slice(i).join('/'));
+    candidates.push('/');
+    const ok = candidates.some(
+      (c) => known.has(c) || existsSync(path.join(DIST, c.replace(/^\//, '')))
+    );
+    if (!ok) add(f, 'dead-link', link);
   }
 
   for (const m of html.matchAll(/<img\b[^>]*>/g)) {
