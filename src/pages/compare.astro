@@ -14,8 +14,35 @@ const noteOf = (key: string) => {
   return N[a]?.[r] || '';
 };
 
-// 对比组按「可替代程度」排序：真替代关系的排前面
-const groups = [...C.groups].sort((a, b) => b.items.length - a.items.length);
+// 分区：把 14 组按主题归到 4 个区，读起来有脉络
+const ZONES: { name: string; hint: string; ids: string[] }[] = [
+  {
+    name: '一 · Skill 生态',
+    hint: 'Skill 从哪来、怎么装、怎么保证有效',
+    ids: ['skill-distribution', 'skill-quality', 'agent-memory'],
+  },
+  {
+    name: '二 · 内容与表达',
+    hint: '做出来的内容像不像人写的、配图配不配得上',
+    ids: ['humanize-writing', 'ai-illustration', 'slide-deck', 'ai-video', 'web-performance'],
+  },
+  {
+    name: '三 · 工具与客户端',
+    hint: '干活的入口在哪、怎么用顺手',
+    ids: ['desktop-client', 'multi-model', 'data-cli', 'web-retrieval', 'voice-input'],
+  },
+  {
+    name: '四 · 方法与素材',
+    hint: '可迁移的思路与现成的资源',
+    ids: ['persona-skills'],
+  },
+];
+
+const groups = C.groups;
+const byId = new Map(C.groups.map((g) => [g.id, g]));
+const zones = ZONES.map((z) => ({ ...z, groups: z.ids.map((id) => byId.get(id)).filter(Boolean) }));
+const orphan = C.groups.filter((g) => !ZONES.some((z) => z.ids.includes(g.id)));
+const totalItems = C.groups.reduce((a, g) => a + g.items.length, 0);
 ---
 
 <BaseLayout title="横向对比 · 星册" active="research"
@@ -24,7 +51,7 @@ const groups = [...C.groups].sort((a, b) => b.items.length - a.items.length);
     <div class="border-b border-slate-800 pb-8">
       <div class="mb-4 flex flex-wrap items-center gap-3">
         <span class="seal">专题 · 横向对比</span>
-        <span class="labelmono">{groups.length} 组 · {groups.reduce((a, g) => a + g.items.length, 0)} 个作品</span>
+        <span class="labelmono">{groups.length} 组 · {totalItems} 个作品</span>
       </div>
       <h1 class="display text-[2.2rem] sm:text-[3.1rem]">
         <span class="line-up"><span>同赛道，怎么选</span></span>
@@ -41,9 +68,21 @@ const groups = [...C.groups].sort((a, b) => b.items.length - a.items.length);
     </div>
   </section>
 
-  <section class="wrap mt-6 space-y-4">
+  <section class="wrap mt-8">
+    <div class="mb-4 flex flex-wrap items-baseline gap-x-4 gap-y-1 border-b border-slate-800 pb-2">
+      <h2 class="font-display text-[19px] font-semibold">{groups.length} 组对比</h2>
+      <span class="labelmono">共 {totalItems} 个作品 · 每个作品只出现在一组</span>
+    </div>
+
+    {zones.map((z) => (
+      <div class="mb-9">
+        <div class="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+          <h3 class="font-display text-[16px] font-semibold text-slate-300">{z.name}</h3>
+          <span class="text-[12px] text-slate-500">{z.hint}</span>
+        </div>
+        <div class="space-y-4">
     {
-      groups.map((g, gi) => (
+      z.groups.map((g, gi) => (
         <article class="overflow-hidden rounded-[2px] border border-slate-800 bg-[#fbf5e7]/55">
           <header class="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-slate-800 px-5 py-3.5">
             <span class="font-mono text-[11px] text-slate-600">{String(gi + 1).padStart(2, '0')}</span>
@@ -90,6 +129,25 @@ const groups = [...C.groups].sort((a, b) => b.items.length - a.items.length);
         </article>
       ))
     }
+        </div>
+      </div>
+    ))}
+    {orphan.length > 0 && (
+      <div class="mb-9">
+        <div class="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+          <h3 class="font-display text-[16px] font-semibold text-slate-300">未归区</h3>
+        </div>
+        <div class="space-y-4">
+          {orphan.map((g) => (
+            <article class="overflow-hidden rounded-[2px] border border-slate-800 bg-[#fbf5e7]/55">
+              <header class="border-b border-slate-800 px-5 py-3.5">
+                <h2 class="font-display text-[19px] font-semibold">{g.title}</h2>
+              </header>
+            </article>
+          ))}
+        </div>
+      </div>
+    )}
   </section>
 
   <section class="wrap mt-10 border-t border-slate-800 pt-6">
