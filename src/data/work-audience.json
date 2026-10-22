@@ -47,7 +47,10 @@
   "hermes-agent-orange-book": "适合：想上手 Hermes Agent 又缺中文资料的人。场景：跟着系统学一遍。",
   "huashu-art-motion": "适合：要给静态图加动效、做解说视频的人。场景：作品集、宣传片。",
   "huashu-skills": "适合：想一次看全他所有 skill、并按分类挑的人。场景：不知道从哪个开始。",
-  "obsidian-ai-orange-book": "适合：Obsidian 用户、想用 AI 整理知识库的人。场景：把笔记变成可问的资料库。"
+  "obsidian-ai-orange-book": "适合：Obsidian 用户、想用 AI 整理知识库的人。场景：把笔记变成可问的资料库。",
+  "steve-jobs-skill": "适合：做产品、拿捏不准该砍功能还是该加的。场景：需求取舍。",
+  "karpathy-skill": "适合：工程师、想用一套可运行的框架想问题。场景：设计系统与技术选型。",
+  "x-mentor-skill": "适合：做 X / 推特内容、想涨粉的人。场景：选题与写作套路。"
  },
  "alirezarezvani": {
   "claude-skills": "适合：想一次拿到大批量现成 skill 的人。场景：先广撒网，挑出要深改的。"
@@ -61,7 +64,8 @@
   "Claude-to-IM-skill": "适合：习惯在 IM 里工作、想把 Agent 接进聊天工具的人。场景：Telegram / Discord 里指挥 Agent。",
   "logo-generator-skill": "适合：起项目名要配图的人。场景：先出几个方向再定。",
   "Youtube-clipper-skill": "适合：做内容二次创作、要剪视频的人。场景：从素材里抽片段。",
-  "guizang-s-prompt": "适合：想研究他怎么写提示词的人。场景：抄思路不抄工具。"
+  "guizang-s-prompt": "适合：想研究他怎么写提示词的人。场景：抄思路不抄工具。",
+  "pilot-harness": "适合：用 DeepSeek Harness 的人想要桌面客户端。场景：把 Harness 装进 GUI。"
  },
  "coleam00": {
   "Archon": "适合：想让 AI 编码结果稳定可复现的团队。场景：多人协作、怕每次生成结果不一样。",
@@ -70,7 +74,8 @@
   "excalidraw-diagram-skill": "适合：需要让 Agent 画架构图、流程图的人。场景：写方案文档配图。",
   "local-ai-packaged": "适合：想在自己机器上跑全套本地 AI 的人。场景：不想给云端 API 花钱。",
   "ai-agents-masterclass": "适合：跟着视频学 AI Agent 编程的人。场景：想要一条完整的教学路径。",
-  "mcp-crawl4ai-rag": "适合：要给 Agent 加联网检索能力的人。场景：让 Agent 能查实时网页。"
+  "mcp-crawl4ai-rag": "适合：要给 Agent 加联网检索能力的人。场景：让 Agent 能查实时网页。",
+  "claude-memory-compiler": "适合：想让 Claude Code 记住项目上下文的团队。场景：换人接手、隔天继续。"
  },
  "steipete": {
   "CodexBar": "适合：同时用 Codex 和 Claude Code、想管用量的人。场景：菜单栏看一眼消耗。",
@@ -99,7 +104,10 @@
   "sqlite-utils": "适合：习惯用命令行处理数据的人。场景：清洗、导出、批量改表。",
   "tools": "适合：想找一批小工具立刻用的人。场景：翻一翻有什么现成的。",
   "claude-code-transcripts": "适合：想把自己或团队的 Agent 会话整理成文章的人。场景：分享工作过程。",
-  "til": "适合：想养成每天记一条学习笔记习惯的人。场景：低摩擦记录。"
+  "til": "适合：想养成每天记一条学习笔记习惯的人。场景：低摩擦记录。",
+  "csvs-to-sqlite": "适合：拿到 CSV 想马上能查的人。场景：一次性转换。",
+  "csv-diff": "适合：要在 CI 里校验数据有没有变的人。场景：数据回归检查。",
+  "datasette-lite": "适合：想让别人不装环境就能看数据的人。场景：发一个链接就行。"
  },
  "numman-ali": {
   "openskills": "适合：换过好几个 Agent、每次都要重装 skill 的人。场景：一条命令装给任意工具。",
@@ -129,7 +137,8 @@
  },
  "mcncarl": {
   "yichen-skills": "适合：做私域运营、要把平台操作变成自动化的人。场景：微信/小红书/抖音流程跑通。",
-  "jianying-headless": "适合：做短视频、要批量用剪映的人。场景：草稿生成与自动导出。"
+  "jianying-headless": "适合：做短视频、要批量用剪映的人。场景：草稿生成与自动导出。",
+  "agent-memory-vault": "适合：多人共享一套 Agent 记忆、需要审计追溯的团队。场景：记忆要能查是谁改的。"
  },
  "kentcdodds": {
   "match-sorter": "适合：前端项目要做搜索/筛选排序的人。场景：加一个可预期的模糊匹配。",

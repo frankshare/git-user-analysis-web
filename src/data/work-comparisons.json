@@ -1,0 +1,224 @@
+{
+  "_note": "横向对比组。每组：同一任务、可互相替代的作品，附差异判断。",
+  "groups": [
+    {
+      "id": "skill-distribution",
+      "title": "Skill 生态入口",
+      "question": "Skill 从哪找、怎么装",
+      "items": [
+        {
+          "key": "hesreallyhim/awesome-claude-code",
+          "role": "人工策展目录",
+          "diff": "只做 Claude Code，靠人工审核与四枚元数据徽章（created-at / last-commit / license / stars）做初筛。质量最高，范围最窄。"
+        },
+        {
+          "key": "wshobson/agents",
+          "role": "多 harness 插件市场",
+          "diff": "同一套 Markdown 源适配七种编码工具，格式差异压在适配层。适合多工具并行的团队，不适合只要 Claude Code 的人。"
+        },
+        {
+          "key": "numman-ali/openskills",
+          "role": "通用加载器",
+          "diff": "解决的是「装」不是「选」：一条命令把 skill 装给任意 Agent，不管内容好坏。和上面两个是上下游，不是替代关系。"
+        },
+        {
+          "key": "sickn33/agentic-awesome-skills",
+          "role": "本地控制面",
+          "diff": "唯一把「选哪些 skill」当工程问题解的：发现 → 选择 → 校验 → 规划四段独立，附 CI 卡点。最接近工具而非清单。"
+        },
+        {
+          "key": "alirezarezvani/claude-skills",
+          "role": "数量型 mega 库",
+          "diff": "380 个 skill 换覆盖面，90.8% 星数集中在单一仓库。适合先广撒网，不适合直接信任——量大意味着质量方差大。"
+        }
+      ],
+      "verdict": "要质量看 hesreallyhim，要多工具看 wshobson，要装得省事看 numman-ali，要管住选择看 sickn33，要数量看 alirezarezvani。五个入口不冲突，但只有 hesreallyhim 与 sickn33 真正在「帮你挑」。"
+    },
+    {
+      "id": "skill-quality",
+      "title": "Skill 的质量与评测",
+      "question": "怎么保证写出来的 skill 真的有效",
+      "items": [
+        {
+          "key": "obra/superpowers",
+          "role": "方法论 + 技能库",
+          "diff": "技能 TDD：先让 agent 违规再修，还配「借口/现实」表堵死新借口。管的是 agent 的行为纪律，不是 skill 本身的质量。"
+        },
+        {
+          "key": "alchaincyf/darwin-skill",
+          "role": "skill 自进化系统",
+          "diff": "唯一做「评估 → 改进 → 测试 → 保留或回滚」闭环的，管的是 skill 自己能不能越用越好。"
+        },
+        {
+          "key": "yaojingang/yao-meta-skill",
+          "role": "skill 制作治理系统",
+          "diff": "最工程化：平台中立中间表示、触发描述单独评测、发布前准入闸门与去敏规则。管的是 skill 的生产与发布，不是消费。"
+        }
+      ],
+      "verdict": "三件事不是一回事：superpowers 管 agent 听不听话，darwin 管单个 skill 会不会变好，yao-meta-skill 管你怎么生产与发布 skill。多数人只需要第一个。"
+    },
+    {
+      "id": "agent-memory",
+      "title": "Agent 记忆与上下文",
+      "question": "怎么让 Agent 记得住、并且记对",
+      "items": [
+        {
+          "key": "coleam00/claude-memory-compiler",
+          "role": "随代码库演化的记忆",
+          "diff": "钩子自动捕获会话，记忆跟着代码库走。自动化程度最高，但绑定 Claude Code。"
+        },
+        {
+          "key": "mcncarl/agent-memory-vault",
+          "role": "Markdown 优先的共享记忆库",
+          "diff": "SQLite + Git + 收尾 + 审计，跨 Claude Code 与 Codex。适合多人共享与追溯，代价是要自己维护这套库。"
+        },
+        {
+          "key": "affaan-m/ECC",
+          "role": "记忆作为套装的一部分",
+          "diff": "memory 只是 skills / instincts / memory 三件套之一，胜在配套齐全与多 harness 覆盖。记忆是附赠品，不是主功能。"
+        }
+      ],
+      "verdict": "单人用选 claude-memory-compiler（省事），团队要追溯与共享选 agent-memory-vault，压根不需要专门造记忆库、直接用 ECC 那套装选 alirezarezvani/claude-skills 那种大库即可。"
+    },
+    {
+      "id": "slide-deck",
+      "title": "AI 出演示与设计稿",
+      "question": "怎么用 AI 做出一份能看的 PPT / 页面",
+      "items": [
+        {
+          "key": "op7418/guizang-ppt-skill",
+          "role": "HTML 幻灯片",
+          "diff": "22 个具名版式 + 9 套不可自定义主题色，规则写死逼 Agent 从表里选。审美最稳，但风格被锁死。"
+        },
+        {
+          "key": "alchaincyf/huashu-design",
+          "role": "HTML 原生设计技能",
+          "diff": "高保真原型、幻灯片、动画都做，交付介质同样是单文件 HTML。覆盖更广，但约束没 guizang 严，容易被 Agent 自由发挥。"
+        },
+        {
+          "key": "op7418/NanoBanana-PPT-Skills",
+          "role": "AI 生成图片视频",
+          "diff": "产出是位图与视频素材，不是 HTML 页面。适合要真动画、转场，不适合要能改文字的文档。"
+        }
+      ],
+      "verdict": "要可编辑的网页型演示选 guizang-ppt-skill（版式最严）或不设限的 huashu-design；要视频素材选 NanoBanana。三者不是替代关系，是「交付格式」的分岔。"
+    },
+    {
+      "id": "desktop-client",
+      "title": "AI 桌面客户端",
+      "question": "在桌面端跟 AI 打交道",
+      "items": [
+        {
+          "key": "lencx/ChatGPT",
+          "role": "第三方 ChatGPT 客户端",
+          "diff": "Rust + Tauri，跨 Mac / Windows / Linux。胜在跨平台与替代官方，功能相对薄。"
+        },
+        {
+          "key": "op7418/CodePilot",
+          "role": "多模型客户端",
+          "diff": "能挂 MCP 与技能扩展，接多家模型。胜在可扩展，代价是学习成本高。"
+        },
+        {
+          "key": "op7418/pilot-harness",
+          "role": "DeepSeek Harness 客户端",
+          "diff": "同作者的 CodePilot 思路搬到 DeepSeek Harness 上。跟 CodePilot 是同源不同宿主，不是真对手。"
+        }
+      ],
+      "verdict": "要跨平台用 ChatGPT 选 lencx，要挂 MCP 与多模型选 CodePilot。真要选一个：CodePilot 功能覆盖更广，lencx 胜在轻。"
+    },
+    {
+      "id": "persona-skills",
+      "title": "人物认知操作系统",
+      "question": "把某个人的思维方式做成可运行的 skill",
+      "items": [
+        {
+          "key": "alchaincyf/nuwa-skill",
+          "role": "生成器",
+          "diff": "不直接给结论，而是给一套「怎么蒸馏任何人」的流程。后面九个都是它的产物。"
+        },
+        {
+          "key": "alchaincyf/zhangxuefeng-skill",
+          "role": "垂直决策类",
+          "diff": "高考志愿、考研、职业规划——有明确决策场景与判据，最实用。"
+        },
+        {
+          "key": "alchaincyf/steve-jobs-skill",
+          "role": "创新决策类",
+          "diff": "6 个心智模型 + 8 条决策启发式，偏产品与品味判断。"
+        },
+        {
+          "key": "alchaincyf/karpathy-skill",
+          "role": "工程方法类",
+          "diff": "明确声明「不是语录合集，是可运行的思维框架」，面向工程实践。"
+        },
+        {
+          "key": "alchaincyf/x-mentor-skill",
+          "role": "内容增长类",
+          "diff": "唯一面向 X 创作者的方法论：选题、写作、增长三段操作手册。"
+        }
+      ],
+      "verdict": "这十个不是互相替代，是同一套方法的十种投喂物。选哪个 = 选你当下缺哪种判断力：缺职业判据选张雪峰，缺产品品味选乔布斯，缺工程方法选 Karpathy，缺内容增长选 X 导师。"
+    },
+    {
+      "id": "data-cli",
+      "title": "命令行里的数据工具",
+      "question": "不写代码地处理数据",
+      "items": [
+        {
+          "key": "simonw/datasette",
+          "role": "数据变网站",
+          "diff": "把 CSV 变成可点开、可分享的网页，是这一组里唯一「面向别人看」的。"
+        },
+        {
+          "key": "simonw/sqlite-utils",
+          "role": "底层数据库操作",
+          "diff": "命令行改表、清洗、导出，是上面那个的地基。"
+        },
+        {
+          "key": "simonw/csvs-to-sqlite",
+          "role": "格式转换",
+          "diff": "只做一件事：CSV 进 SQLite。最小、最容易用对。"
+        },
+        {
+          "key": "simonw/csv-diff",
+          "role": "比对",
+          "diff": "只看差异，CI 里做数据校验特别顺手。"
+        },
+        {
+          "key": "simonw/datasette-lite",
+          "role": "浏览器内运行",
+          "diff": "WebAssembly + Pyodide 版 Datasette，不装 Python 也能跑。适合给别人一个能点的链接。"
+        }
+      ],
+      "verdict": "同一个人的一整套工具链，按需取用：看数据用 datasette，改数据用 sqlite-utils，转换用 csvs-to-sqlite，校验用 csv-diff，零安装用 datasette-lite。五选一不如按需组合。"
+    },
+    {
+      "id": "web-retrieval",
+      "title": "给 Agent 加联网检索",
+      "question": "怎么让 Agent 能查实时的东西",
+      "items": [
+        {
+          "key": "mvanhorn/last30days-skill",
+          "role": "多源调研综述",
+          "diff": "跨 Reddit / X / YouTube / HN / Polymarket 汇总并给出处。范围最广，但只覆盖「近 30 天」的热门讨论。"
+        },
+        {
+          "key": "coleam00/mcp-crawl4ai-rag",
+          "role": "爬取 + RAG 基建",
+          "diff": "给任意 Agent 加联网抓取与检索能力，是工具不是答案——输出质量取决于你喂什么。"
+        },
+        {
+          "key": "wong2/awesome-mcp-servers",
+          "role": "现成 server 清单",
+          "diff": "不造轮子，只告诉你有哪些现成 MCP server 可以接。最快的起步方式。"
+        },
+        {
+          "key": "steipete/summarize",
+          "role": "单点摘要",
+          "diff": "指向 URL / 视频 / 文件拿摘要。轻量、个人用，不是给 Agent 装的。"
+        }
+      ],
+      "verdict": "要「最近大家在说什么」用 last30days-skill；要长期联网能力用 mcp-crawl4ai-rag 配 awesome-mcp-servers 里的 server；只是读不完一篇东西用 summarize 就够。"
+    }
+  ]
+}
