@@ -1,14 +1,15 @@
 ---
 import { ClientRouter } from 'astro:transitions';
+import Boot from '../components/Boot.astro';
 import '../styles/global.css';
 const BASE = import.meta.env.BASE_URL;
 
 interface Props {
   title?: string;
   description?: string;
-  active?: 'people' | 'works' | 'research' | 'about';
+  active?: 'home' | 'people' | 'works' | 'research' | 'about';
   /** 栏目配色主题 */
-  theme?: 'people' | 'works' | 'research' | 'about';
+  theme?: 'home' | 'people' | 'works' | 'research' | 'about';
   /** 页脚用小字说明 */
   note?: string;
 }
@@ -22,7 +23,8 @@ const {
 } = Astro.props;
 
 const nav = [
-  { key: 'people', label: '人物', href: `${BASE}` },
+  { key: 'home', label: '首页', href: `${BASE}` },
+  { key: 'people', label: '人物', href: `${BASE}people/` },
   { key: 'works', label: '作品', href: `${BASE}works/` },
   { key: 'research', label: '研究', href: `${BASE}research/` },
   { key: 'about', label: '关于', href: `${BASE}about/` },
@@ -46,6 +48,7 @@ const nav = [
     />
   </head>
   <body class="min-h-screen flex flex-col" data-theme={theme}>
+    <Boot mark="星册" sub="高星创作者与他们的作品" />
     <!-- 顶部书脊 -->
     <header class="relative z-20 sticky top-0 border-b border-slate-800 bg-[var(--color-slate-950)]/88 backdrop-blur-md">
       <div class="wrap flex h-14 items-center justify-between gap-4">

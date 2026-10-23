@@ -1,0 +1,216 @@
+---
+/**
+ * 启动加载页 —— 「开卷」。
+ *
+ * 纸面自下而上升起揭幕，同时朱红印章盖下、百分比从 0 走到 100。
+ *
+ * 两条硬约束：
+ *  1. 只在首次进入（sessionStorage 标记）时出现，避免每次换页都闪。
+ *  2. **内容可见性绝不能依赖 JS**：脚本没跑时，CSS 兜底动画会在 2.4 秒后自动揭幕；
+ *     揭幕后 boot 必须彻底移除（display:none），否则会挡住页面。
+ */
+interface Props {
+  mark?: string;
+  sub?: string;
+}
+const { mark = '星册', sub = '高星创作者与他们的作品' } = Astro.props;
+---
+
+<div id="boot" class="boot" aria-hidden="true">
+  <div class="boot__sheet"></div>
+  <div class="boot__inner">
+    <div class="boot__seal"><span>{mark}</span></div>
+    <div class="boot__meta">
+      <span class="boot__sub">{sub}</span>
+      <span class="boot__pct" id="boot-pct">0</span>
+    </div>
+    <div class="boot__bar"><i id="boot-bar"></i></div>
+  </div>
+</div>
+
+<style>
+  /* boot 自身完全透明：背景由 sheet 承担，揭幕后不会留一层挡板 */
+  .boot {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+    background: transparent;
+    pointer-events: none;
+  }
+  .boot.is-gone {
+    display: none;
+  }
+
+  /* 纸面：自下而上揭幕 */
+  .boot__sheet {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(1100px 520px at 50% 0%, #fffaef 0%, rgba(255, 250, 239, 0) 62%),
+      repeating-linear-gradient(0deg, rgba(23, 20, 15, 0.03) 0 1px, rgba(23, 20, 15, 0) 1px 30px),
+      var(--color-slate-950);
+    transform: translateY(0);
+    transition: transform 0.95s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  .boot.is-done .boot__sheet {
+    transform: translateY(-101%);
+  }
+
+  .boot__inner {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    justify-items: center;
+    gap: 1.25rem;
+    transition: opacity 0.4s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .boot.is-done .boot__inner {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+
+  .boot__seal {
+    display: grid;
+    place-items: center;
+    width: 72px;
+    height: 72px;
+    border: 2px solid var(--color-seal);
+    border-radius: 4px;
+    color: var(--color-seal);
+    font-family: var(--font-display);
+    font-size: 29px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    background: rgba(178, 58, 43, 0.05);
+    box-shadow: inset 0 0 0 1px rgba(178, 58, 43, 0.32);
+    animation: boot-drop 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  @keyframes boot-drop {
+    0% {
+      opacity: 0;
+      transform: rotate(-6deg) scale(2);
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(-4deg) scale(1);
+    }
+  }
+
+  .boot__meta {
+    display: flex;
+    align-items: baseline;
+    gap: 0.9rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    color: var(--color-slate-500);
+  }
+  .boot__pct {
+    color: var(--color-seal);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .boot__bar {
+    width: min(240px, 52vw);
+    height: 2px;
+    background: var(--color-slate-800);
+    overflow: hidden;
+  }
+  .boot__bar > i {
+    display: block;
+    height: 100%;
+    width: 0;
+    background: var(--color-seal);
+    transition: width 0.22s linear;
+  }
+
+  /* 兜底：脚本没跑时，2.4 秒后纸面也自动揭开。
+     配合 JS 的 is-gone（display:none），boot 不会留下挡板。 */
+  @keyframes boot-failsafe {
+    0%,
+    70% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-101%);
+    }
+  }
+  .boot__sheet {
+    animation: boot-failsafe 2.4s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  }
+  .boot.is-done .boot__sheet {
+    animation: none;
+    transform: translateY(-101%);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .boot__sheet,
+    .boot__inner,
+    .boot__seal,
+    .boot__bar > i {
+      transition: none !important;
+      animation: none !important;
+    }
+    .boot__sheet {
+      transform: translateY(-101%);
+    }
+  }
+</style>
+
+<script>
+  const boot = document.getElementById('boot');
+  const pctEl = document.getElementById('boot-pct');
+  const barEl = document.getElementById('boot-bar');
+
+  if (boot && pctEl && barEl) {
+    // 同一会话内只播一次；换页返回时不重播
+    const KEY = 'starbook-booted';
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (sessionStorage.getItem(KEY)) {
+      boot.classList.add('is-gone');
+    } else {
+      sessionStorage.setItem(KEY, '1');
+      let pct = 0;
+      let done = false;
+
+      const finish = () => {
+        if (done) return;
+        done = true;
+        pctEl.textContent = '100';
+        barEl.style.width = '100%';
+        boot.classList.add('is-done');
+        // 揭幕动画 0.95s，结束后彻底移除（display:none），不留下挡板
+        setTimeout(() => boot.classList.add('is-gone'), 1000);
+      };
+
+      const tick = () => {
+        if (done) return;
+        // 真实进度：已加载资源越多越接近 100；但设上限，保证节奏利落
+        const loaded = performance.getEntriesByType('resource').length;
+        const target = Math.min(96, 46 + Math.round((loaded / 32) * 50));
+        pct = Math.max(pct + 2, target);
+        if (pct >= 100) {
+          finish();
+          return;
+        }
+        pctEl.textContent = String(pct);
+        barEl.style.width = pct + '%';
+        setTimeout(tick, 38 + Math.random() * 40);
+      };
+
+      if (reduce) {
+        finish();
+      } else {
+        setTimeout(tick, 140);
+        // 无论如何，2.8 秒后一定揭开（与 CSS 兜底同节奏）
+        setTimeout(finish, 2800);
+      }
+    }
+  }
+</script>

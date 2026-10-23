@@ -1,0 +1,324 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Avatar from '../components/Avatar.astro';
+import Portrait from '../components/Portrait.astro';
+import NoBadge from '../components/NoBadge.astro';
+import { getAllEntries, getPeopleProfiles } from '../lib/data';
+import { hasCjk, toNum } from '../lib/people';
+const BASE = import.meta.env.BASE_URL;
+
+const users = getAllEntries();
+const profiles = getPeopleProfiles();
+
+type Row = {
+  kind: 'creator' | 'platform';
+  tagline: string;
+  login: string;
+  name: string;
+  x: string;
+  stars: number;
+  strategy: string;
+  zh: boolean;
+  skillCount: number;
+  /** 星数占最高值的比例，用于弧环 */
+  progress: number;
+};
+
+const maxStars = Math.max(...users.map((u) => toNum(u.stats.total_stars_source)), 1);
+
+const rows: Row[] = users
+  .map((u) => {
+    const sample = (u.repos || []).filter((r) => !r.fork).slice(0, 20);
+    const zhDescRatio = sample.length
+      ? sample.filter((r) => hasCjk(r.description || '')).length / sample.length
+      : 0;
+    const stars = toNum(u.stats.total_stars_source);
+    return {
+      kind: u.kind,
+      tagline: profiles[u.profile.login]?.tagline || '',
+      login: u.profile.login,
+      name: u.profile.name || u.profile.login,
+      x: u.profile.x || '',
+      stars,
+      strategy: u.profile.strategy || 'hybrid',
+      zh: hasCjk(u.profile.name || '') || zhDescRatio >= 0.25,
+      skillCount: u.skills?.count || 0,
+      progress: stars / maxStars,
+    };
+  })
+  // 中文优先，同语言内按星数
+  .sort((a, b) => (a.zh === b.zh ? b.stars - a.stars : a.zh ? -1 : 1));
+
+// 统计口径：只算 29 位创作者；平台方单独计
+const totalStars = rows.filter((r) => r.kind === 'creator').reduce((a, r) => a + r.stars, 0);
+const totalWorks = users
+  .filter((u) => u.kind === 'creator')
+  .reduce((a, u) => a + (u.repos || []).filter((r) => !r.fork).length, 0);
+const totalSkills = rows.filter((r) => r.kind === 'creator').reduce((a, r) => a + r.skillCount, 0);
+const zhCount = rows.filter((r) => r.kind === 'creator' && r.zh).length;
+
+// 策略配色：纸墨体系内的低饱和色，靠色相区分「深度 / 广度 / 混合」
+const strategyAccent: Record<string, string> = {
+  depth: '#7a4a2e', // 深棕：单点深挖
+  breadth: '#3f5a72', // 靛青：矩阵铺开
+  hybrid: '#4a6b4e', // 松绿：两者兼有
+};
+
+const strategyLabel: Record<string, string> = {
+  depth: '单点深挖',
+  breadth: '矩阵铺开',
+  hybrid: '两者兼有',
+};
+
+// 创作者与平台方分开：前者表达方法，后者制定标准
+const creatorRows = rows.filter((r) => r.kind === 'creator');
+const platformRows = rows.filter((r) => r.kind === 'platform');
+
+const rest = creatorRows;
+
+const fmt = (n: number) => n.toLocaleString('en-US');
+const kfmt = (n: number) =>
+  n >= 10000 ? `${(n / 10000).toFixed(1).replace('.0', '')}w` : fmt(n);
+---
+
+<BaseLayout title="人物 · 星册" active="people" theme="people">
+  <!-- ============ 封面 ============ -->
+  <section class="wrap pt-10 sm:pt-16">
+    <div class="flex flex-wrap items-end justify-between gap-6 border-b border-slate-800 pb-8">
+      <div class="max-w-2xl">
+        <div class="mb-5 flex items-center gap-3">
+          <span class="seal seal-drop">卷一 · 人物</span>
+          <span class="labelmono">No.01 — 2026.10</span>
+        </div>
+
+        <h1 class="display text-[2.7rem] leading-[0.95] sm:text-[4.1rem]">
+          <span class="line-up"><span style="animation-delay:60ms">高星创作者</span></span>
+          <span class="line-up"
+            ><span style="animation-delay:150ms"
+              >都在<em class="not-italic text-[var(--color-seal)]">做</em>什么</span
+            ></span
+          >
+        </h1>
+
+        <p class="mt-5 max-w-xl text-[15px] leading-[1.9] text-slate-400">
+          收录 <strong class="font-medium text-slate-200">{creatorRows.length} 位</strong>创作者与他们的作品，
+            另加 <strong class="font-medium text-slate-200">{platformRows.length} 家</strong>制定标准的平台方。
+          不看排行榜名次，看三件事：<span class="text-slate-200">他是谁</span>、<span class="text-slate-200"
+            >代表作是哪个</span
+          >、<span class="text-slate-200">往哪看</span>。点开卡片，就是这个人的完整档案。
+        </p>
+      </div>
+
+      <!-- 索引数字 -->
+      <dl class="grid w-full grid-cols-2 gap-x-8 gap-y-4 sm:w-auto sm:grid-cols-4 sm:gap-x-10">
+        {
+          [
+            ['创作者', fmt(creatorRows.length), `中文作品 ${zhCount} / 英文 ${creatorRows.length - zhCount}`],
+            ['作品', fmt(totalWorks), 'source 仓库'],
+            ['Skills', fmt(totalSkills), '可复用技能条目'],
+            ['总星数', kfmt(totalStars), '合计，排除 fork'],
+          ].map(([k, v, s]) => (
+            <div>
+              <dt class="labelmono">{k}</dt>
+              <dd class="font-mono text-[26px] font-medium leading-tight tracking-tight">{v}</dd>
+              <dd class="mt-0.5 text-[14px] text-slate-500">{s}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ 筛选 ============ -->
+  <section class="wrap sticky top-14 z-10 -mx-0 bg-[var(--color-slate-950)]/92 py-3 backdrop-blur-sm">
+    <div class="flex items-center gap-1.5 overflow-x-auto whitespace-nowrap [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <span class="labelmono mr-2 shrink-0">筛选</span>
+      {
+        [
+          ['all', '全部'],
+          ['zh', '中文作品'],
+          ['en', '英文作品'],
+          ['depth', '单点深挖'],
+          ['breadth', '矩阵铺开'],
+          ['hybrid', '两者兼有'],
+          ['platform', '平台方'],
+        ].map(([key, label], i) => (
+          <button
+            type="button"
+            data-filter={key}
+            class:list={[
+              'shrink-0 rounded-[2px] border px-3 py-1 text-[14px] transition-colors',
+              i === 0
+                ? 'border-[var(--color-seal)] bg-[var(--color-seal)] text-[var(--color-slate-900)]'
+                : 'border-slate-800 text-slate-400 hover:border-slate-600 hover:text-slate-200',
+            ]}
+          >
+            {label}
+          </button>
+        ))
+      }
+      <span class="ml-auto hidden shrink-0 font-mono text-[14px] text-slate-500 sm:block" id="count"
+        >{creatorRows.length} / {creatorRows.length}</span
+      >
+    </div>
+  </section>
+
+  <!-- ============ 画廊：统一版式，不分大小 ============ -->
+  <section class="grid-dense wrap mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {
+      rest.map((r, i) => {
+        const accent = strategyAccent[r.strategy] ?? '#b23a2b';
+        const no = String(i + 1).padStart(3, '0');
+
+        return (
+          <a
+            href={`${BASE}u/${r.login}/`}
+            class="card stack-card reveal group relative flex flex-col p-0"
+            style={`--stack-i:${i % 6}`}
+            data-key={`${r.zh ? 'zh' : 'en'} ${r.strategy}`}
+          >
+            {/* 肖像：圆章照居中，弧环显示星数占比 */}
+            <div class="relative overflow-hidden border-b border-slate-800 bg-[var(--color-slate-800)] px-5 pb-5 pt-7">
+              <div class="flex justify-center">
+                <Portrait
+                  login={r.login}
+                  name={r.name}
+                  size={104}
+                  progress={r.progress}
+                  ring="solid"
+                  accent={accent}
+                />
+              </div>
+              <NoBadge no={no} stars={kfmt(r.stars)} />
+            </div>
+
+            {/* 名牌 */}
+            <div class="flex flex-1 flex-col px-5 py-4">
+              <h3 class="truncate font-display text-[18px] font-semibold leading-tight">
+                <span class="ulink">{r.name}</span>
+              </h3>
+
+              <div class="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-[13px] text-slate-500">
+                <span class="truncate">@{r.login}</span>
+                <span style={{ color: accent }}>·</span>
+                <span class="shrink-0" style={{ color: accent }}>
+                  {strategyLabel[r.strategy] ?? r.strategy}
+                </span>
+              </div>
+
+              {r.tagline && (
+                <p class="mt-2.5 font-display text-[14.5px] font-medium leading-[1.5] text-slate-200">
+                  {r.tagline}
+                </p>
+              )}
+
+              <div class="mt-auto flex items-center justify-between pt-4 font-mono text-[12px] text-slate-500">
+                <span>{r.skillCount > 0 ? `${r.skillCount} skills` : ''}</span>
+                {r.x ? (
+                  <span class="rounded-[2px] border border-slate-800 px-1.5 py-0.5 text-slate-400">
+                    X ↗
+                  </span>
+                ) : (
+                  <span class="opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    打开档案 →
+                  </span>
+                )}
+              </div>
+            </div>
+            <span class="stamp">已收录</span>
+          </a>
+        );
+      })
+    }
+  </section>
+
+  <!-- ============ 两条去路 ============ -->
+  <section class="wrap mt-14 grid gap-4 border-t border-slate-800 pt-8 sm:grid-cols-2">
+    <a
+      href={`${BASE}works/`}
+      class="group flex items-start justify-between gap-4 rounded-[2px] p-2 transition-colors hover:bg-[var(--color-slate-900)]/70"
+    >
+      <div>
+        <div class="labelmono">卷二</div>
+        <h3 class="mt-1 font-display text-[22px] font-semibold">作品</h3>
+        <p class="mt-1 max-w-sm text-[14px] leading-relaxed text-slate-400">
+          不按人看，按作品看：{fmt(totalWorks)} 个 source 仓库，按星数排，标着作者与语言。
+        </p>
+      </div>
+      <span class="mt-1 shrink-0 font-mono text-sm text-slate-500 transition-transform duration-300 group-hover:translate-x-1"
+        >→</span
+      >
+    </a>
+    <a
+      href={`${BASE}research/`}
+      class="group flex items-start justify-between gap-4 rounded-[2px] p-2 transition-colors hover:bg-[var(--color-slate-900)]/70"
+    >
+      <div>
+        <div class="labelmono">附录</div>
+        <h3 class="mt-1 font-display text-[22px] font-semibold">研究</h3>
+        <p class="mt-1 max-w-sm text-[14px] leading-relaxed text-slate-400">
+          拆解过程中的副产品：方法收敛、自查清单、SKILL.md 格式实测。想看方法论的进这里。
+        </p>
+      </div>
+      <span class="mt-1 shrink-0 font-mono text-sm text-slate-500 transition-transform duration-300 group-hover:translate-x-1"
+        >→</span
+      >
+    </a>
+  </section>
+
+  <script define:vars={{ TOTAL_CREATORS: creatorRows.length }}>
+    // View Transitions 下脚本只执行一次，必须挂到 astro:page-load 上重新绑定
+    function initGallery() {
+    const buttons = document.querySelectorAll('[data-filter]');
+    const cards = document.querySelectorAll('.card[data-key]');
+    const creatorCards = Array.from(cards).filter(
+      (c) => !(c.dataset.key || '').startsWith('platform')
+    );
+    const count = document.getElementById('count');
+
+    function apply(key) {
+      let n = 0;
+      // 实时查询：避免闭包里持有旧 DOM 引用
+      const live = document.querySelectorAll('.card[data-key]');
+      const liveCreators = Array.from(live).filter(
+        (c) => !(c.dataset.key || '').startsWith('platform')
+      );
+      live.forEach((c) => {
+        const k = c.dataset.key || '';
+        const isPlatform = k.startsWith('platform');
+        const show = key === 'all' || k.split(' ').includes(key);
+        c.style.display = show ? '' : 'none';
+        if (show && !isPlatform) n++;
+      });
+      if (count) count.textContent = `${n} / ${TOTAL_CREATORS}`;
+      const first = live[0];
+      const last = live[live.length - 1];
+      const owner = first ? (first.closest('[data-astro-transition-scope]') ? 'astro-scope' : 'no-scope') : 'none';
+      if (count) count.textContent = `${n} / ${TOTAL_CREATORS}`;
+      // 平台方整栏随筛选显隐
+      const pSection = document.getElementById('platform-section');
+      if (pSection) {
+        const showPlatform = key === 'all' || key === 'platform';
+        pSection.style.display = showPlatform ? '' : 'none';
+      }
+    }
+
+    buttons.forEach((b) => {
+      b.addEventListener('click', () => {
+        buttons.forEach((x) => {
+          x.classList.remove('border-[var(--color-seal)]', 'bg-[var(--color-seal)]', 'text-[var(--color-slate-900)]');
+          x.classList.add('border-slate-800', 'text-slate-400');
+        });
+        b.classList.remove('border-slate-800', 'text-slate-400');
+        b.classList.add('border-[var(--color-seal)]', 'bg-[var(--color-seal)]', 'text-[var(--color-slate-900)]');
+        apply(b.dataset.filter || 'all');
+      });
+    });
+    apply('all');
+    }
+    // 立即执行一次（astro:page-load 可能在监听器注册前就已派发），
+    // 换页回来时再执行一次。DOM 每次都是新的，所以不会重复绑定。
+    initGallery();
+    document.addEventListener('astro:page-load', initGallery);
+  </script>
+</BaseLayout>

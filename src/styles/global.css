@@ -122,6 +122,21 @@
      分栏配色：同一套纸墨结构，每个栏目换色相
      （取自成熟配色的低饱和版本，保持品牌统一）
      ========================================================= */
+  body[data-theme='home'] {
+    --color-slate-950: #eee4ce;
+    --color-slate-900: #faf4e6;
+    --color-slate-800: #ded1b3;
+    --color-slate-700: #c9ba98;
+    --color-slate-600: #a7987c;
+    --color-slate-500: #87795f;
+    --color-slate-400: #6b5f4b;
+    --color-slate-300: #4a4237;
+    --color-slate-200: #302b23;
+    --color-slate-100: #201c16;
+    --color-rule: #ded1b3;
+    --color-seal: #b23a2b;
+  }
+
   body[data-theme='people'] {
     --color-slate-950: #f2e9d6;
     --color-slate-900: #fbf5e7;

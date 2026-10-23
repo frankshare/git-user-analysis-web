@@ -100,7 +100,8 @@ const PROBE = `(() => {
 })()`;
 
 const PAGES = [
-  { path: '/', name: '人物画廊' },
+  { path: '/', name: '首页' },
+  { path: '/people/', name: '人物画廊' },
   { path: '/u/alchaincyf/', name: '人物档案' },
   { path: '/works/', name: '作品总览' },
   { path: '/works/skills/', name: '作品分类' },

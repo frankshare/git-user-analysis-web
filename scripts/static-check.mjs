@@ -28,7 +28,9 @@ const files = walk(DIST);
 const problems = [];
 const add = (file, type, detail) => problems.push({ file: path.relative(DIST, file), type, detail });
 
-const HARD_CODED = ['#b23a2b','#f6efdf','#fbf5e7','#f2e9d6','#efe6d2','#17140f','#d8c9a9','#cbbb95','#d5c6a6','#d3c6a5','#cfbd97','#e9dfc9'];
+// 主题色的旧硬编码值——这些应该走 CSS 变量，否则切换主题时不会跟着变。
+// 注意：卷宗专属色（如 #2f5d78 靛青）不在此列，它们是有意的识别色。
+const HARD_CODED = ['#f6efdf','#fbf5e7','#f2e9d6','#efe6d2','#17140f','#d8c9a9','#cbbb95','#d5c6a6','#d3c6a5','#cfbd97','#e9dfc9','#e6dcc4'];
 
 const known = new Set(files.map((f) => '/' + path.relative(DIST, f).split(path.sep).join('/').replace(/index[.]html$/, '')));
 known.add('/'); // 站点根（首页）
