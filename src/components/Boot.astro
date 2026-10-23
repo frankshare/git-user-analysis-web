@@ -129,8 +129,8 @@ const { mark = '星册', sub = '高星创作者与他们的作品' } = Astro.pro
     transition: width 0.22s linear;
   }
 
-  /* 兜底：脚本没跑时，2.4 秒后纸面也自动揭开。
-     配合 JS 的 is-gone（display:none），boot 不会留下挡板。 */
+  /* 兜底：脚本没跑时（禁用 JS / 脚本报错），2.4 秒后纸面自动揭开。
+     同时整个 boot 淡出移除——绝不能因为脚本没跑就永久挡住内容。 */
   @keyframes boot-failsafe {
     0%,
     70% {
@@ -140,12 +140,31 @@ const { mark = '星册', sub = '高星创作者与他们的作品' } = Astro.pro
       transform: translateY(-101%);
     }
   }
+  @keyframes boot-fade {
+    0%,
+    74% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
   .boot__sheet {
     animation: boot-failsafe 2.4s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  }
+  .boot {
+    animation: boot-fade 2.5s ease 0.15s forwards;
   }
   .boot.is-done .boot__sheet {
     animation: none;
     transform: translateY(-101%);
+  }
+  .boot.is-done {
+    animation: none;
+    opacity: 0;
+    visibility: hidden;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -159,58 +178,73 @@ const { mark = '星册', sub = '高星创作者与他们的作品' } = Astro.pro
     .boot__sheet {
       transform: translateY(-101%);
     }
+    .boot {
+      animation: none;
+      opacity: 0;
+      visibility: hidden;
+    }
   }
 </style>
 
 <script>
-  const boot = document.getElementById('boot');
-  const pctEl = document.getElementById('boot-pct');
-  const barEl = document.getElementById('boot-bar');
+  // 关键：View Transitions 换页后，BaseLayout 会渲染**新的** #boot 元素，
+  // 而模块脚本不会重跑 —— 新 boot 没人控制，会永远停在初始态（0%）盖住页面。
+  // 所以这段逻辑必须挂在 astro:page-load 上，每次换页都重新执行。
+  const KEY = 'starbook-booted';
 
-  if (boot && pctEl && barEl) {
-    // 同一会话内只播一次；换页返回时不重播
-    const KEY = 'starbook-booted';
+  function setupBoot() {
+    const boot = document.getElementById('boot');
+    if (!boot || boot.dataset.bound === '1') return;
+    boot.dataset.bound = '1';
+
+    const pctEl = document.getElementById('boot-pct');
+    const barEl = document.getElementById('boot-bar');
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+    // 本次会话已经播过（首次进入时播的）：直接隐藏，不重播
     if (sessionStorage.getItem(KEY)) {
       boot.classList.add('is-gone');
-    } else {
-      sessionStorage.setItem(KEY, '1');
-      let pct = 0;
-      let done = false;
+      return;
+    }
+    sessionStorage.setItem(KEY, '1');
 
-      const finish = () => {
-        if (done) return;
-        done = true;
-        pctEl.textContent = '100';
-        barEl.style.width = '100%';
-        boot.classList.add('is-done');
-        // 揭幕动画 0.95s，结束后彻底移除（display:none），不留下挡板
-        setTimeout(() => boot.classList.add('is-gone'), 1000);
-      };
+    let pct = 0;
+    let done = false;
 
-      const tick = () => {
-        if (done) return;
-        // 真实进度：已加载资源越多越接近 100；但设上限，保证节奏利落
-        const loaded = performance.getEntriesByType('resource').length;
-        const target = Math.min(96, 46 + Math.round((loaded / 32) * 50));
-        pct = Math.max(pct + 2, target);
-        if (pct >= 100) {
-          finish();
-          return;
-        }
-        pctEl.textContent = String(pct);
-        barEl.style.width = pct + '%';
-        setTimeout(tick, 38 + Math.random() * 40);
-      };
+    const finish = () => {
+      if (done) return;
+      done = true;
+      if (pctEl) pctEl.textContent = '100';
+      if (barEl) barEl.style.width = '100%';
+      boot.classList.add('is-done');
+      // 揭幕动画 0.95s，结束后彻底移除（display:none），不留下挡板
+      setTimeout(() => boot.classList.add('is-gone'), 1000);
+    };
 
-      if (reduce) {
+    const tick = () => {
+      if (done) return;
+      // 真实进度：已加载资源越多越接近 100；但设上限，保证节奏利落
+      const loaded = performance.getEntriesByType('resource').length;
+      const target = Math.min(96, 46 + Math.round((loaded / 32) * 50));
+      pct = Math.max(pct + 2, target);
+      if (pct >= 100) {
         finish();
-      } else {
-        setTimeout(tick, 140);
-        // 无论如何，2.8 秒后一定揭开（与 CSS 兜底同节奏）
-        setTimeout(finish, 2800);
+        return;
       }
+      if (pctEl) pctEl.textContent = String(pct);
+      if (barEl) barEl.style.width = pct + '%';
+      setTimeout(tick, 38 + Math.random() * 40);
+    };
+
+    if (reduce) {
+      finish();
+    } else {
+      setTimeout(tick, 140);
+      // 无论如何，2.8 秒后一定揭开（与 CSS 兜底同节奏）
+      setTimeout(finish, 2800);
     }
   }
+
+  setupBoot();
+  document.addEventListener('astro:page-load', setupBoot);
 </script>
